@@ -1,0 +1,18 @@
+{
+  "targets": [
+    {
+      "ref": "friend1/nlp-hw02-b7-gpu-smoke",
+      "checked_at_utc": "2026-10-20T07:55:07.633409+00:00",
+      "exists": false,
+      "HTTP_status": 403,
+      "inventory_complete": true
+    },
+    {
+      "ref": "friend1/nlp-hw02-b7",
+      "checked_at_utc": "2026-10-20T07:55:09.837353+00:00",
+      "exists": false,
+      "HTTP_status": 403,
+      "inventory_complete": true
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "source": "friend1/nlp-hw02-compact-cache-verified",
+  "mount": "/kaggle/input/nlp-hw02-compact-cache-verified",
+  "manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+  "rows": 9725737,
+  "shards": 60,
+  "all_shard_SHA_verified": true,
+  "order_sha256": "09cf6db8549b7df614fa71516553d23d4cbb3ca97c7911db0c6d599a8277ab7d",
+  "tokenizer_SHA_verified": true,
+  "roundtrip_rows": 50040,
+  "answer_mismatches": 0,
+  "account": "friend1",
+  "verified_in_kernel": "friend1/nlp-hw02-l3-gpu-smoke/3"
+}

@@ -1,0 +1,105 @@
+{
+  "received_on": "2026-10-07",
+  "origin": "User-provided ZIP; checkpoint bytes verified against its manifest",
+  "inspection_performed_now": {
+    "loading": "torch.load(map_location=cpu, weights_only=True)",
+    "runtime": "PyTorch 2.14.1 / CPU",
+    "training_or_inference_executed": false
+  },
+  "config": {
+    "seed": 42,
+    "batch_size_train": 8,
+    "total_steps": 50000,
+    "evaluation_steps": [
+      20000,
+      30000,
+      50000
+    ],
+    "d_model": 128,
+    "encoder_layers": 2,
+    "decoder_layers": 2,
+    "heads": 4,
+    "ffn_dim": 512,
+    "dropout": 0.1,
+    "norm_first": false,
+    "lr": 0.001,
+    "optimizer": "AdamW",
+    "weight_decay": 0.01,
+    "clip_norm": 1.0,
+    "scheduler": null,
+    "tokenizer": "UTF-8 bytes",
+    "max_positions": 2048,
+    "generation_cap": 512,
+    "batch_size_inference": 32
+  },
+  "data_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+  "train_sha256": "1304183967f02f01097d76c12fb24df30916a4ec44e54833cd3509264359300e",
+  "validation_sha256": "0edf2b479ebdc103ec05efc704c7bb0ac8084e41a8a44b58afef224702563050",
+  "source_checkpoint_sha256": "4ed8ff448e62e58ae654b6af9d78a78af2e5309561674592a35511ef17ce001a",
+  "received_files": [
+    {
+      "filename": "hw02-byte-20k-continue-latest.pt",
+      "bytes": 15154475,
+      "sha256": "ac559d52caa55739252fb12606093e1db86d80940d1661d07a1d1930f4f1e36a",
+      "steps": 50000,
+      "optimizer_step_counters": [
+        50000
+      ],
+      "parameters": 1254915,
+      "all_model_and_optimizer_tensors_finite": true,
+      "state_and_rng_schema_present": true,
+      "tracked_in_git": false,
+      "source_filename": "hw02-byte-20k-continue-latest.pt",
+      "repository_relative_path": "work/results/checkpoints/06-longer-training-byte-20k-pairs-latest-step-50000.pt"
+    },
+    {
+      "filename": "hw02-byte-20k-continue-step-20000.pt",
+      "bytes": 15155659,
+      "sha256": "2459d337b31d521bc458571e2b38d032fca513c7510cae31f407feb01577462b",
+      "steps": 20000,
+      "optimizer_step_counters": [
+        20000
+      ],
+      "parameters": 1254915,
+      "all_model_and_optimizer_tensors_finite": true,
+      "state_and_rng_schema_present": true,
+      "tracked_in_git": false,
+      "source_filename": "hw02-byte-20k-continue-step-20000.pt",
+      "repository_relative_path": "work/results/checkpoints/06-longer-training-byte-20k-pairs-step-20000.pt"
+    },
+    {
+      "filename": "hw02-byte-20k-continue-step-30000.pt",
+      "bytes": 15155595,
+      "sha256": "b88b95e547e21b7037731882b4e54e68bac99ceb24a26625ebc7feda88070d01",
+      "steps": 30000,
+      "optimizer_step_counters": [
+        30000
+      ],
+      "parameters": 1254915,
+      "all_model_and_optimizer_tensors_finite": true,
+      "state_and_rng_schema_present": true,
+      "tracked_in_git": false,
+      "source_filename": "hw02-byte-20k-continue-step-30000.pt",
+      "repository_relative_path": "work/results/checkpoints/06-longer-training-byte-20k-pairs-step-30000.pt"
+    },
+    {
+      "filename": "hw02-byte-20k-continue-step-50000.pt",
+      "bytes": 15155595,
+      "sha256": "3dbd745c9662aa2a73b3832e6ed09990dd9f41974c3dd7172eda1f00d5007271",
+      "steps": 50000,
+      "optimizer_step_counters": [
+        50000
+      ],
+      "parameters": 1254915,
+      "all_model_and_optimizer_tensors_finite": true,
+      "state_and_rng_schema_present": true,
+      "tracked_in_git": false,
+      "source_filename": "hw02-byte-20k-continue-step-50000.pt",
+      "repository_relative_path": "work/results/checkpoints/06-longer-training-byte-20k-pairs-step-50000.pt"
+    }
+  ],
+  "latest_and_step50000_states_equal_including_optimizer_and_rng": true,
+  "source_archive_filename": "hw02-byte-20k-continue-10000-to-50000.zip",
+  "source_archive_sha256": "a3c93ccc5995849518a31e10eeace2748343efbf5ccb6ac87f8c14b9f49f9195",
+  "latest_and_step50000_serialized_hashes_differ_but_all_states_match": true
+}

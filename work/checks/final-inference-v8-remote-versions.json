@@ -1,0 +1,15 @@
+{
+  "latest_pushed_version": 3,
+  "source_cells_identical": true,
+  "private": true,
+  "machine_shape": "NvidiaTeslaT4",
+  "versioned_pull_error": "CLI GetKernel /1,/2,/3 returns403; current pull succeeds",
+  "dataset_sources": [
+    "thisarivson/nlp-hw02-26b-inputs",
+    "thisarivson/nlp-hw02-l3-live",
+    "thisarivson/nlp-hw02-p1-weights"
+  ],
+  "kernel_sources": [
+    "thisarivson/nlp-hw02-b4"
+  ]
+}

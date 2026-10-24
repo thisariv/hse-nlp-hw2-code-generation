@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "session_seconds": 1140.2107359709998,
+  "smoke_passed": true,
+  "test_read": false,
+  "rows": 4096,
+  "generated_candidates": 356352,
+  "unique_questions": {
+    "tune2048": 2048,
+    "eval2048": 2048
+  },
+  "cross_split_identical_questions": 0,
+  "primary": "budget-1-8-8",
+  "primary_success": true,
+  "selection_sha256": "ec56bc5287d1ee96377c36599eaea35b72340294e81dfbc27ff6ab6b688e29d9",
+  "CPU_full_reference_steps": 123,
+  "full": {
+    "tune2048": {
+      "seconds": 994.5469397260001,
+      "unique_candidates": 111081,
+      "OOM": [],
+      "peak_allocated_bytes": 8283303936,
+      "peak_reserved_bytes": 12719226880
+    },
+    "eval2048": {
+      "seconds": 1043.345696262,
+      "unique_candidates": 111887,
+      "OOM": [],
+      "peak_allocated_bytes": 8098159104,
+      "peak_reserved_bytes": 14485028864
+    }
+  },
+  "cross_LL_scores": 668904
+}

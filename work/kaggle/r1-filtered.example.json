@@ -1,0 +1,30 @@
+[
+  {
+    "anchor": "C-long2x",
+    "growth": "encoder-deepen",
+    "data": "filtered",
+    "order_source": "OWNER/PRIVATE-D1-ORDER-DATASET",
+    "order_path": "/kaggle/input/datasets/OWNER/PRIVATE-D1-ORDER-DATASET/FILTER/order.npy",
+    "order_sha256": "REPLACE_WITH_D1_ORDER_NPY_SHA256",
+    "order_seed": 2026101701,
+    "q": 0.1,
+    "main_seconds": 34200,
+    "cooldown": "linear",
+    "cooldown_seconds": 3000,
+    "eval_seconds": 2400
+  },
+  {
+    "anchor": "C-long2x",
+    "growth": "none",
+    "data": "filtered",
+    "order_source": "OWNER/PRIVATE-D1-ORDER-DATASET",
+    "order_path": "/kaggle/input/datasets/OWNER/PRIVATE-D1-ORDER-DATASET/FILTER/order.npy",
+    "order_sha256": "REPLACE_WITH_D1_ORDER_NPY_SHA256",
+    "order_seed": 2026101701,
+    "q": 0.1,
+    "main_seconds": 34200,
+    "cooldown": "linear",
+    "cooldown_seconds": 3000,
+    "eval_seconds": 2400
+  }
+]

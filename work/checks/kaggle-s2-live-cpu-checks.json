@@ -1,0 +1,23 @@
+{
+  "mock_create_then_version_private_zip": true,
+  "FP16_weights_no_optimizer": true,
+  "compressed_generations_and_test_answers": true,
+  "normal_final_sync": true,
+  "credential_file_scan": true,
+  "staging_bytes": 49816,
+  "injected_secret_upload_refused": true,
+  "public_target_refused": true,
+  "hung_upload_group_killed": true,
+  "wedged_final_sync_bounded": true,
+  "watchdog_exit_with_hung_final_upload": true,
+  "new_metric_and_periodic_upload_triggers": true,
+  "status": "passed",
+  "wall_seconds": 3.5729725419078022,
+  "network_calls": 0,
+  "GPU_runs": 0,
+  "unverified": [
+    "Kaggle attached Secrets access in committed run",
+    "real Dataset create/version, processing latency and final upload speed",
+    "full-size staging/output and CUDA/driver D-state"
+  ]
+}

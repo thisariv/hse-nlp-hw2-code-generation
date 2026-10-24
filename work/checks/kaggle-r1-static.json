@@ -1,0 +1,296 @@
+{
+  "passed": true,
+  "assemblies": [
+    {
+      "owner": "thisarivson",
+      "smoke": false,
+      "notebook_sha256": "fe4ceeba61e407eb132fc9aa57bea803bd460019c5a0dd6efd71d44131ba646d",
+      "source_modules": 78,
+      "private": true,
+      "hard_wall": 40800
+    },
+    {
+      "owner": "thisarivson",
+      "smoke": true,
+      "notebook_sha256": "98ab2bee62040f95ba212d2fc727842fb12f77ae00e948da07cf7475ffc3b29b",
+      "source_modules": 78,
+      "private": true,
+      "hard_wall": 840
+    },
+    {
+      "owner": "friend1",
+      "smoke": false,
+      "notebook_sha256": "7c5071e140679d134fb2d08795c54139c73e7c1a78005e086c4c638db7ed3d49",
+      "source_modules": 78,
+      "private": true,
+      "hard_wall": 40800
+    },
+    {
+      "owner": "friend1",
+      "smoke": true,
+      "notebook_sha256": "41d4b18e47d0345da89c0b5831490f98a379c048c75ca248f5615883d8a582cb",
+      "source_modules": 78,
+      "private": true,
+      "hard_wall": 840
+    },
+    {
+      "owner": "friend2",
+      "smoke": false,
+      "notebook_sha256": "b26cb6f27ca157acfc5f46635205402ff823f38d08a586b06931ce0435279040",
+      "source_modules": 78,
+      "private": true,
+      "hard_wall": 40800
+    },
+    {
+      "owner": "friend2",
+      "smoke": true,
+      "notebook_sha256": "57d45e6bcca0144a5d03a74fe6484fa4625e303c93f870feefc9ffdc6b70db49",
+      "source_modules": 78,
+      "private": true,
+      "hard_wall": 840
+    }
+  ],
+  "CPU_tests": 15,
+  "inherited_modules_unchanged": true,
+  "nbformat_valid": true,
+  "receipts": {
+    "inherited-regressions": {
+      "passed": true,
+      "suites": {
+        "L2": {
+          "passed": true,
+          "tests": 34,
+          "failures": 0,
+          "errors": 0
+        },
+        "L3": {
+          "passed": true,
+          "tests": 10,
+          "failures": 0,
+          "errors": 0
+        },
+        "P1": {
+          "passed": true,
+          "tests": 17,
+          "failures": 0,
+          "errors": 0
+        }
+      },
+      "GPU": false
+    },
+    "real-resume-C-main": {
+      "passed": true,
+      "model": "C-main",
+      "source": "friend1/nlp-hw02-l3-live/12",
+      "anchor_sha256": "c6ad6dda249f5cd87e598a29fd7714549fc8e25b5f00a45b92bbf3027e2e53e3",
+      "anchor_bytes": 644195795,
+      "initial_digests": {
+        "model": "b6629023cfcfd239aa03637a9c0c12da4ada8e729f016fa76064ee143e84e48a",
+        "optimizer": "52c501bab96feb25d2cb0424b4a454da97cf4d714cfdcf212ea23f5f8c1bfc56",
+        "scaler": "b635f0a978c42057705b6930d3135cfe4d9728f4bf9adc025cc6c32d9d16811c",
+        "state": "100ef899004d99cb041cc658cb17ca4fffd397241b57644a8016aabd9fec35ee",
+        "rng": "6b041ea116104079626d736e2b2a2622689fe1a8aed00f70614b1a0f059cb445"
+      },
+      "steps": [
+        {
+          "model": "254614a3aae02c42f14fe00654a5cdd884f4c1165f44093902c0474df4652f93",
+          "optimizer": "250fe51512a5166ab3ca5c448ad93c9a058b734848b941883da2e248a60b4504",
+          "scaler": "a2f861ea5a67363949708a2ed2425bd9576780a9b24009cca094c2d0a7600e18",
+          "rng": "ec1aeb643b94c44971f0ec2fd12bc891a8774a526c5c7fdb2e33bf457bbabb27",
+          "state": "a64b64b2f1de402add7f5a7c97986dbc61e62328a7e8baee4a97d973b00bdff1"
+        },
+        {
+          "model": "3b29ab3e9d165efcb0397db4026ce74308a146cc1fc8ec5323023c65319db0e0",
+          "optimizer": "9d636c4eec5c0ea34d60155bae09ba447db04b956f7a869a3b65d5264e581a09",
+          "scaler": "7bade8c039e29d08c9e7eafdf93ff7361e99548d3973b69539ba074933c02269",
+          "rng": "ec1aeb643b94c44971f0ec2fd12bc891a8774a526c5c7fdb2e33bf457bbabb27",
+          "state": "4ff44aace36eb1603cbb067cbe2bced412bbd06a4ba0695eb2142ada0732a6c7"
+        }
+      ],
+      "steps_bit_exact": 2,
+      "effective_batch": 128,
+      "downloaded_anchor_removed": true,
+      "kept_only_for_immediate_streaming_upload": true,
+      "seconds": 111.04638604098,
+      "GPU": false,
+      "limitation": "CPU FP32 / autocast disabled / enabled inherited scaler / fused disabled; CUDA pending",
+      "deleted_after_stream_upload": true
+    },
+    "real-resume-C-long2x": {
+      "passed": true,
+      "model": "C-long2x",
+      "source": "friend1/nlp-hw02-l3-live/12",
+      "anchor_sha256": "48f2ba3fa4ffe6a722b45a084d3ee33a27cc4ed02b72433605c9cb1740f5a80b",
+      "anchor_bytes": 644197075,
+      "initial_digests": {
+        "model": "9e9432d9939492b5be03e2baf0099500c69d35dfc80294e3c6386e933fd5ce4d",
+        "optimizer": "9676ac37ce9cb42dc2ae14e32c41e53cccb97f5db20e9edb91aa044f29d8a25d",
+        "scaler": "a6c8e36eac373bed41c1c6c35d2a8c61c1e7a1205e2c6dc457d47d354f8f5cdc",
+        "state": "eb2f6b5dd5c7f28e458ba4ae1f9b6a1948f9e438fe13fcf05111726331e1d0c2",
+        "rng": "6b041ea116104079626d736e2b2a2622689fe1a8aed00f70614b1a0f059cb445"
+      },
+      "steps": [
+        {
+          "model": "7c225cb5b70e8701a26f3c27a2ae7e84ecb1b7403ced67a9501370812d595196",
+          "optimizer": "73dcc180f3044f30840b0a70a45675e4f13d5b0308ff681433d33f7b7969ccdc",
+          "scaler": "0fda60cfa626635e7692c503f791994e39965a79152ddf1154e86868576ca8cd",
+          "rng": "ec1aeb643b94c44971f0ec2fd12bc891a8774a526c5c7fdb2e33bf457bbabb27",
+          "state": "bb64a7e45a1bbc688e4123add9dbcf56ac63ea3c8d4a4e9cfe3eb8a082260424"
+        },
+        {
+          "model": "553418c5b8dcde8ff8505426bbe797006deb600b6d86dee3bb0762c65422f2d8",
+          "optimizer": "68e09268d5a0d630ed73a6f61089db1a4b3473b50f7c25d03a06e81c10338b39",
+          "scaler": "f38c2c095d15e15359b6f5545f249f8c5acb1d5bfacd862ca556c89b9d1dc8d1",
+          "rng": "ec1aeb643b94c44971f0ec2fd12bc891a8774a526c5c7fdb2e33bf457bbabb27",
+          "state": "c7a443d5e075bd0435ceb763d5b7aaf273d27b34c3e4abf6a827db68f6d4bb09"
+        }
+      ],
+      "steps_bit_exact": 2,
+      "effective_batch": 128,
+      "downloaded_anchor_removed": true,
+      "kept_only_for_immediate_streaming_upload": true,
+      "seconds": 154.25173550006002,
+      "GPU": false,
+      "limitation": "CPU FP32 / autocast disabled / enabled inherited scaler / fused disabled; CUDA pending",
+      "deleted_after_stream_upload": true
+    },
+    "real-order": {
+      "passed": true,
+      "rows": 9725737,
+      "slots": 9506623,
+      "source_rule": "strict-two-thirds",
+      "source_order_sha256": "d4628a11d21b21956f93d5ea1a1e213ec0fd93bdb8945e5db3d1aa1beac62566",
+      "new_order_sha256": "c3ebed6e3f394e262b6efc52754b9e33dac7f91afafc4cf36e5d52777ba74c01",
+      "seed": 2026101701,
+      "membership_unchanged": true,
+      "protected_row_excluded": true,
+      "GPU": false,
+      "limitation": "Existing clean-cooldown order validates format; this is not a selected D1 filter"
+    },
+    "cpu-benchmark": {
+      "passed": true,
+      "device": "CPU",
+      "torch": "2.14.1",
+      "threads": 1,
+      "effective_batch": 16,
+      "source_lengths": [
+        51,
+        52,
+        53,
+        53,
+        53,
+        54,
+        54,
+        55,
+        56,
+        57,
+        59,
+        59,
+        60,
+        61,
+        61,
+        62
+      ],
+      "target_lengths": [
+        62,
+        61,
+        60,
+        60,
+        60,
+        59,
+        59,
+        58,
+        57,
+        56,
+        54,
+        54,
+        53,
+        52,
+        52,
+        51
+      ],
+      "q": 0.1,
+      "repeats": 5,
+      "warmup_updates": 3,
+      "results": {
+        "none": {
+          "seconds": [
+            1.6551088748965412,
+            2.020461417036131,
+            1.5754106671083719,
+            1.6897787090856582,
+            1.572157541057095
+          ],
+          "median_seconds": 1.6551088748965412,
+          "parameters": 53646403,
+          "function_identity": null
+        },
+        "encoder-deepen": {
+          "seconds": [
+            3.352150999940932,
+            3.230979915941134,
+            2.9996159998700023,
+            3.177364083006978,
+            3.2901961668394506
+          ],
+          "median_seconds": 3.230979915941134,
+          "parameters": 72589411,
+          "function_identity": {
+            "bit_exact": true,
+            "max_abs": 0.0,
+            "model": "real C512 6/6 -> 12/6"
+          }
+        }
+      },
+      "relative_step_cost": 1.9521253042299702,
+      "T4_baseline_step_seconds": 0.388651379712398,
+      "T4_estimated_deepen_seconds": 0.7586961928604626,
+      "limitation": "CPU FP32/batch16 -> T4 FP16/batch128 ratio is an estimate; memory/fused/graph fallback unmeasured",
+      "GPU": false
+    },
+    "states-copy": {
+      "passed": true,
+      "source": "friend1/nlp-hw02-l3-live/12",
+      "destination": "thisarivson/nlp-hw02-l3-states",
+      "private": true,
+      "files": [
+        {
+          "model": "C-main",
+          "file": "model-C-main__checkpoints__main-7c01611616d0.pt",
+          "bytes": 644195795,
+          "sha256": "c6ad6dda249f5cd87e598a29fd7714549fc8e25b5f00a45b92bbf3027e2e53e3",
+          "local_deleted": true
+        },
+        {
+          "model": "C-long2x",
+          "file": "model-C-long2x__checkpoints__main-2a27307d7a48.pt",
+          "bytes": 644197075,
+          "sha256": "48f2ba3fa4ffe6a722b45a084d3ee33a27cc4ed02b72433605c9cb1740f5a80b",
+          "local_deleted": true
+        }
+      ],
+      "GPU": false,
+      "push": false,
+      "version": 1,
+      "remote_file_bytes_verified": true,
+      "one_full_state_on_disk_at_a_time": true
+    },
+    "live-thisarivson": {
+      "passed": true,
+      "ref": "thisarivson/nlp-hw02-r1-live",
+      "private": true,
+      "already_existed": true,
+      "push": false
+    },
+    "live-friend1": {
+      "passed": true,
+      "ref": "friend1/nlp-hw02-r1-live",
+      "private": true,
+      "already_existed": true,
+      "push": false
+    }
+  },
+  "GPU": false,
+  "push": false,
+  "production_requires": "reviewer T4 smoke and shared inputs; owner Secrets optional"
+}

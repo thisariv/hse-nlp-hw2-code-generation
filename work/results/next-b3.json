@@ -1,0 +1,59 @@
+{
+  "bundle": "kaggle/bundles/b3_thisarivson",
+  "smoke_bundle": "kaggle/bundles/b3_gpu_smoke_thisarivson",
+  "ready": true,
+  "owner": "thisarivson",
+  "kernel": "thisarivson/nlp-hw02-b3",
+  "earliest_launch_utc": "2026-10-17T00:00:00Z",
+  "launch_by": "user",
+  "production_GPU_runs": 0,
+  "production_pushes": 0,
+  "hard_wall_seconds": 40800,
+  "main_cap_seconds_per_GPU": 32400,
+  "probe_main_marks": [
+    37800,
+    48600
+  ],
+  "probe_cooldown_seconds": 900,
+  "final_cooldown_seconds": 3000,
+  "CPU_checks": {
+    "b3-cpu": true,
+    "b3-b2-regressions": true,
+    "b3-real-resume-gpu0": true,
+    "b3-real-resume-gpu1": true,
+    "b3-order": true
+  },
+  "static_check": "checks/b3-static.json",
+  "GPU_smoke_pending": false,
+  "smoke_passed": true,
+  "smoke_receipt": "checks/b3-review-gpu-smoke-v2.json",
+  "launch_command": "KAGGLE_CONFIG_DIR=~/.kaggle kaggle kernels push -p bundles/b3_thisarivson --accelerator NvidiaTeslaT4 --timeout 40800",
+  "launch_working_directory": "work/kaggle",
+  "ETA": {
+    "max_runtime_seconds": 40800,
+    "basis": "first code cell; queue/VM startup/output upload additional",
+    "formula": "actual first-cell start + up to 11h20m code; platform completion may be later",
+    "platform_billing_cap_guaranteed": false,
+    "example_start_utc": "2026-10-17T05:00:00Z",
+    "example_finish_by_utc": "2026-10-17T16:20:00Z",
+    "example_start_msk": "2026-10-17 08:00",
+    "example_finish_by_msk": "2026-10-17 19:20"
+  },
+  "launch_precondition": "After 2026-10-17 00:00 UTC; verify free GPU quota >= 42000 seconds",
+  "smoke_status": "COMPLETE; session complete; exits [0,0]",
+  "smoke_ref": "thisarivson/nlp-hw02-b3-gpu-smoke/2",
+  "smoke_pushes": 2,
+  "smoke_GPU_runs": 2,
+  "smoke_repeats_this_task": 1,
+  "smoke_budget_compliant": true,
+  "smoke_session_wall_seconds": 611.7040579950001,
+  "smoke_quota_delta_seconds": 645.747,
+  "smoke_restore_bit_exact": true,
+  "smoke_independent_200_update_trajectories_bit_exact": false,
+  "diagnosis": "(b) invalid independent-CUDA-trajectory equality gate; four direct before/restore full-state audits passed; no specific kernel localized",
+  "diagnosis_receipts": [
+    "checks/b3-fix-cpu.json",
+    "checks/b3-fix-real-cpu.json",
+    "checks/b3-fix-v1-diagnosis.json"
+  ]
+}

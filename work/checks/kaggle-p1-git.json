@@ -1,0 +1,8 @@
+{
+  "attempted": true,
+  "committed": false,
+  "staged": false,
+  "reason": "Filesystem sandbox denied shared worktree index.lock; git add exited128",
+  "GPU": false,
+  "push": false
+}

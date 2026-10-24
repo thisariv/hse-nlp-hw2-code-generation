@@ -1,0 +1,16 @@
+{
+  "status": "cpu_passed_gpu_unverified",
+  "sequence_budget": 640,
+  "greedy_sequence_budget": 640,
+  "cuda_allocator": "expandable_segments:True,garbage_collection_threshold:0.8",
+  "release_cache_between_batches": true,
+  "cpu_tests": 18,
+  "cpu_seconds": 18.75,
+  "gpu_runs": 0,
+  "push_calls": 0,
+  "patch": "final-package-v11-memory-candidate.patch",
+  "patch_sha256": "629320014b396b6e0c7f5033dfe4bb26b55aada9cea5812580330558f8ac4236",
+  "reason": "budget768 real T4 device peak still 15.18/15.33GB; allocator reserved exceeds allocated by 2.44/3.65GB",
+  "documentation": "https://docs.pytorch.org/docs/2.11/notes/cuda.html#cuda-memory-management",
+  "requires_new_user_authorization_for_gpu": true
+}

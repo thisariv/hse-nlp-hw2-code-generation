@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "actual_embedded_worker": true,
+  "QK_and_standard_models": true,
+  "K8_executed": true,
+  "rows": 20,
+  "coverage": {
+    "original": 4,
+    "dollar-words": 2,
+    "ungroup": 2,
+    "price-trim": 2
+  },
+  "seconds": 2.1117426669225097
+}

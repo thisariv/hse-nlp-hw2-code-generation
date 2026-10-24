@@ -1,0 +1,27 @@
+{
+  "at_utc": "2026-10-20T07:46:06.003350+00:00",
+  "dataset": "friend2/nlp-hw02-e2-b6-inputs",
+  "create_calls": 1,
+  "files": [
+    {
+      "file": "model-GPU1__weights__b6-final-fp16.pt",
+      "bytes": 107364659,
+      "sha256": "ee30794048bb6200cf97ac4d7e5c1606f0e97893ea04f6567c9487f6c04345fa",
+      "source": "friend1/nlp-hw02-b6/1",
+      "original": "model-GPU1/weights/b6-final-fp16.pt"
+    },
+    {
+      "file": "model-GPU0__weights__b6-final-fp16.pt",
+      "bytes": 226949203,
+      "sha256": "cb34c81e6cda83c73bf4662c5c425446be8cdb48c30dd5e9e217fd6cbc1cd496",
+      "source": "friend1/nlp-hw02-b6/1",
+      "original": "model-GPU0/weights/b6-final-fp16.pt"
+    }
+  ],
+  "roundtrip_sha256_passed": true,
+  "dataset_version": 1,
+  "server_private": true,
+  "full_states": false,
+  "temporary_transfer_files_deleted": true,
+  "verified_at_utc": "2026-10-20T07:47:45.726697+00:00"
+}

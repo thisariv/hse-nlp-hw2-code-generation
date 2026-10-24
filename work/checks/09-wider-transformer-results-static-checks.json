@@ -1,0 +1,144 @@
+{
+  "checked_on": "2026-10-08",
+  "device": "CPU",
+  "torch_version": "2.14.1",
+  "tokenizers_version": "0.23.2",
+  "source_code_and_markdown_exact_match": true,
+  "execution_counts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "error_outputs": 0,
+  "zip_crc": true,
+  "all_manifest_hashes": true,
+  "checkpoint_count": 7,
+  "safe_weights_only_load": true,
+  "finite_weights_and_optimizer": true,
+  "config_tokenizer_data_hashes_consistent": true,
+  "latest_equals_step50000_all_states": true,
+  "saved_examples_verified": 2943,
+  "decoded_bytes_token_lengths_AST_flags_aggregates": true,
+  "printed_diagnostics_equal_json": true,
+  "fixed_pairs_equal_across_controls_and_byte06": true,
+  "test_metadata_equal_byte07": true,
+  "byte512_EOS_rows_unchanged_and_capped_rows_are_token_prefixes": true,
+  "width256_parameters_instantiated": 6312960,
+  "new_model_forward_training_generation": false,
+  "new_gpu_measurements": false,
+  "program_exec_eval": false,
+  "restricted_arithmetic_ast_check": true,
+  "test_batch_stats": {
+    "batches": 60,
+    "batches_with_token_cap": 60,
+    "decode_steps_sum": 30720,
+    "active_token_slots": 329315,
+    "total_token_slots": 982528,
+    "fraction_active_slots": 0.3351711096274101,
+    "mean_eos_tokens": 39,
+    "mean_eos_bytes": 150,
+    "scope": "derived from saved lengths and fixed batching, no GPU profiling; finished rows remain in batch"
+  },
+  "diversity": {
+    "2000/train64": {
+      "unique_generated_code_count": 24,
+      "most_common_generated_code_count": 41,
+      "most_common_fraction": 0.640625,
+      "most_common_code": "def solve() -> int:\n    length = 8\n    width = 8\n    perimeter = 2\n    perimeter = width * width\n    result = perimeter\n\n    return result\n"
+    },
+    "2000/validation64": {
+      "unique_generated_code_count": 18,
+      "most_common_generated_code_count": 47,
+      "most_common_fraction": 0.734375,
+      "most_common_code": "def solve() -> int:\n    length = 8\n    width = 8\n    perimeter = 2\n    perimeter = width * width\n    result = perimeter\n\n    return result\n"
+    },
+    "5000/train64": {
+      "unique_generated_code_count": 5,
+      "most_common_generated_code_count": 24,
+      "most_common_fraction": 0.375,
+      "most_common_code": "def solve() -> int:\n    total_students = 200\n    boy_students = 0\n    boy_students * boy_students * boy_students - boy_students\n    boy_students\n    boy_students = boy_students\n    boy_students = boy_students - boy_students\n    boy_students\n    boy_students = boy_students\n    boy_students = boy_students - boy_students\n    boy_students\n    boy_students = boy_students\n    boy_students\n    boy_students = boy_students - boy_students\n    boy_students\n    boy_students = boy_students\n    boy_students ="
+    },
+    "5000/validation64": {
+      "unique_generated_code_count": 7,
+      "most_common_generated_code_count": 26,
+      "most_common_fraction": 0.40625,
+      "most_common_code": "def solve() -> int:\n    total_students = 200\n    boy_students = 0\n    boy_students * boy_students * boy_students - boy_students\n    boy_students\n    boy_students = boy_students\n    boy_students = boy_students - boy_students\n    boy_students\n    boy_students = boy_students\n    boy_students = boy_students - boy_students\n    boy_students\n    boy_students = boy_students\n    boy_students\n    boy_students = boy_students - boy_students\n    boy_students\n    boy_students = boy_students\n    boy_students ="
+    },
+    "10000/train64": {
+      "unique_generated_code_count": 2,
+      "most_common_generated_code_count": 41,
+      "most_common_fraction": 0.640625,
+      "most_common_code": "def solve() -> int:\n    total_students = 60\n    girls = total_students * 0.2\n    boys_students = total_students\n    girls_students = total_students - girls_students\n    result = girls_students\n\n    return result\n"
+    },
+    "10000/validation64": {
+      "unique_generated_code_count": 2,
+      "most_common_generated_code_count": 47,
+      "most_common_fraction": 0.734375,
+      "most_common_code": "def solve() -> int:\n    total_students = 60\n    girls = total_students * 0.2\n    boys_students = total_students\n    girls_students = total_students - girls_students\n    result = girls_students\n\n    return result\n"
+    },
+    "20000/train64": {
+      "unique_generated_code_count": 4,
+      "most_common_generated_code_count": 41,
+      "most_common_fraction": 0.640625,
+      "most_common_code": "def solve() -> int:\n    total_students = 30\n    girls_students = total_students * 0.6\n    boys_students = total_students - boys_students\n    result = boys_students\n    return result\n"
+    },
+    "20000/validation64": {
+      "unique_generated_code_count": 4,
+      "most_common_generated_code_count": 47,
+      "most_common_fraction": 0.734375,
+      "most_common_code": "def solve() -> int:\n    total_students = 30\n    girls_students = total_students * 0.6\n    boys_students = total_students - boys_students\n    result = boys_students\n    return result\n"
+    },
+    "30000/train64": {
+      "unique_generated_code_count": 3,
+      "most_common_generated_code_count": 40,
+      "most_common_fraction": 0.625,
+      "most_common_code": "def solve() -> int:\n    total_students = 24\n    boy_ratio = 3/3\n    girl_ratio = boy_ratio * boy_ratio\n    girl_ratio\n    girl_ratio = boy_ratio\n    girl_ratio = boy_ratio\n    girl_ratio = boy_ratio\n    girl_ratio = boy_ratio\n    girl_ratio = boy_ratio * boy_ratio\n    girl_ratio\n    girl_ratio = boy_ratio\n    girl_ratio = girl_ratio\n    girl_ratio = girl_ratio\n    girl_ratio = girl_ratio\n    girl_ratio = girl_ratio / boy_ratio\n    girl_ratio\n    girl_ratio = boy_ratio\n    girl_ratio = boy_ratio "
+    },
+    "30000/validation64": {
+      "unique_generated_code_count": 4,
+      "most_common_generated_code_count": 44,
+      "most_common_fraction": 0.6875,
+      "most_common_code": "def solve() -> int:\n    total_students = 24\n    boy_ratio = 3/3\n    girl_ratio = boy_ratio * boy_ratio\n    girl_ratio\n    girl_ratio = boy_ratio\n    girl_ratio = boy_ratio\n    girl_ratio = boy_ratio\n    girl_ratio = boy_ratio\n    girl_ratio = boy_ratio * boy_ratio\n    girl_ratio\n    girl_ratio = boy_ratio\n    girl_ratio = girl_ratio\n    girl_ratio = girl_ratio\n    girl_ratio = girl_ratio\n    girl_ratio = girl_ratio / boy_ratio\n    girl_ratio\n    girl_ratio = boy_ratio\n    girl_ratio = boy_ratio "
+    },
+    "50000/train64": {
+      "unique_generated_code_count": 9,
+      "most_common_generated_code_count": 44,
+      "most_common_fraction": 0.6875,
+      "most_common_code": "def solve() -> int:\n    total_students = 30\n    girls = total_students * 0.35\n    girls = total_students - boys\n    result = girls\n\n    return result\n"
+    },
+    "50000/validation64": {
+      "unique_generated_code_count": 8,
+      "most_common_generated_code_count": 51,
+      "most_common_fraction": 0.796875,
+      "most_common_code": "def solve() -> int:\n    total_students = 30\n    girls = total_students * 0.35\n    girls = total_students - boys\n    result = girls\n\n    return result\n"
+    },
+    "validation192_extra": {
+      "unique_generated_code_count": 9,
+      "most_common_generated_code_count": 151,
+      "most_common_fraction": 0.7864583333333334,
+      "most_common_code": "def solve() -> int:\n    total_students = 30\n    girls = total_students * 0.35\n    girls = total_students - boys\n    result = girls\n\n    return result\n"
+    },
+    "validation64_byte512": {
+      "unique_generated_code_count": 4,
+      "most_common_generated_code_count": 51,
+      "most_common_fraction": 0.796875,
+      "most_common_code": "def solve() -> int:\n    total_students = 30\n    girls = total_students * 0.35\n    girls = total_students - boys\n    result = girls\n\n    return result\n"
+    },
+    "test": {
+      "unique_generated_code_count": 31,
+      "most_common_generated_code_count": 1381,
+      "most_common_fraction": 0.7196456487754038,
+      "most_common_code": "def solve() -> int:\n    total_students = 30\n    girls = total_students * 0.35\n    girls = total_students - boys\n    result = girls\n\n    return result\n"
+    }
+  },
+  "test_questions_equal_public_parquet_in_original_order": true,
+  "test_parquet_sha256": "8bde59c8d8bb7edc4e8a503be22fc132c4a47773025d333432e78c5489e6522a"
+}

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "b1_regressions": 20,
+  "clean_submission": 14,
+  "standalone_clean_QK_tests": 3,
+  "v7_full_cpu": "final-inference-v7-cpu.json",
+  "GPU_runs_B2": 0,
+  "kernel_pushes_B2": 0
+}

@@ -1,0 +1,173 @@
+{
+  "torch": "2.14.1",
+  "GPU": false,
+  "push": false,
+  "cache": {
+    "passed": true,
+    "stable_self_and_cross_pointers": true,
+    "initialized_prefix_only": true,
+    "reorder_and_continue": true,
+    "PAD_mask": true,
+    "K4_cross_repeat": true
+  },
+  "decoder": {
+    "passed": true,
+    "greedy_tiny_FP32": {
+      "share_cross": true,
+      "async_eos": true,
+      "compact_done": true,
+      "race_sampler": true,
+      "lean_greedy": true,
+      "all": true
+    },
+    "staggered_EOS_K4_compactions": {
+      "steps": 12,
+      "eos_checks": 6,
+      "compactions": [
+        {
+          "step": 4,
+          "before": 12,
+          "after": 8
+        },
+        {
+          "step": 6,
+          "before": 8,
+          "after": 6
+        },
+        {
+          "step": 8,
+          "before": 6,
+          "after": 4
+        },
+        {
+          "step": 10,
+          "before": 4,
+          "after": 2
+        }
+      ],
+      "async_eos": false,
+      "rng_stream_may_change": true
+    },
+    "sampling_baseline_RNG_exact_without_flags": true,
+    "race_probabilities": [
+      0.0,
+      0.09690000116825104,
+      0.20102499425411224,
+      0.7020750045776367
+    ],
+    "no_EOS_capacity_boundary": true
+  },
+  "real_CPU_FP32": {
+    "passed": true,
+    "real_L3_weights": true,
+    "weight_sha256": "8c11b1038855422b6912e243049a554317978f848edb412ed48aebbe4cb6b886",
+    "dtype": "float32",
+    "test_row_ids": [
+      1287,
+      399,
+      208,
+      460
+    ],
+    "capacity": 512,
+    "baseline_steps": 96,
+    "variants": {
+      "share_cross": {
+        "greedy_bit_exact": true,
+        "steps": 96,
+        "eos_checks": 6,
+        "compactions": [],
+        "async_eos": false,
+        "rng_stream_may_change": false
+      },
+      "async_eos": {
+        "greedy_bit_exact": true,
+        "steps": 96,
+        "eos_checks": 3,
+        "compactions": [],
+        "async_eos": false,
+        "rng_stream_may_change": false
+      },
+      "compact_done": {
+        "greedy_bit_exact": true,
+        "steps": 96,
+        "eos_checks": 6,
+        "compactions": [
+          {
+            "step": 32,
+            "before": 4,
+            "after": 3
+          },
+          {
+            "step": 48,
+            "before": 3,
+            "after": 2
+          },
+          {
+            "step": 64,
+            "before": 2,
+            "after": 1
+          }
+        ],
+        "async_eos": false,
+        "rng_stream_may_change": true
+      },
+      "race_sampler": {
+        "greedy_bit_exact": true,
+        "steps": 96,
+        "eos_checks": 6,
+        "compactions": [],
+        "async_eos": false,
+        "rng_stream_may_change": true
+      },
+      "lean_greedy": {
+        "greedy_bit_exact": true,
+        "steps": 96,
+        "eos_checks": 6,
+        "compactions": [],
+        "async_eos": false,
+        "rng_stream_may_change": false
+      },
+      "all": {
+        "greedy_bit_exact": true,
+        "steps": 96,
+        "eos_checks": 3,
+        "compactions": [
+          {
+            "step": 32,
+            "before": 4,
+            "after": 3
+          },
+          {
+            "step": 64,
+            "before": 3,
+            "after": 1
+          }
+        ],
+        "async_eos": false,
+        "rng_stream_may_change": true
+      }
+    },
+    "seconds": 10.785417499952018
+  },
+  "load_smoke": {
+    "passed": true,
+    "real_executor_service": true,
+    "nice_applied": true,
+    "nice_error": null,
+    "clean_exit": true
+  },
+  "static": {
+    "passed": true,
+    "embedded_sources": 10,
+    "nbformat_and_compile": true,
+    "identity": true,
+    "private_offline_T4_metadata": true,
+    "watchdog": true,
+    "frozen_production_and_P1_unchanged": true,
+    "trace_interval_union": true,
+    "scope": "paired-subset"
+  },
+  "passed": true,
+  "seconds": 13.70840833405964,
+  "GPU_runtime_gate": "pending Torch2.11.0+cu128/T4; local Torch version differs"
+}

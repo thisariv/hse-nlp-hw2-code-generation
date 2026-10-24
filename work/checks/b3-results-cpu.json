@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "scope": "CPU saved journals, no model forwards/execution/sampling/API",
+  "producer_files": 219,
+  "per_example_rows": 66131,
+  "K8_journals": 320,
+  "K8_samples": 81920,
+  "adaptive_configurations": 1264,
+  "eligible_140": 696,
+  "frozen_independent_code_execution_parity_rows": 6144,
+  "graph_fixtures": [
+    "bridge removal splits connected components",
+    "duplicate samples preserve multiplicity",
+    "greedy code retained in winning component"
+  ],
+  "all_input_hashes_rechecked": 269,
+  "checked": [
+    "producer manifests, original rows and saved correctness",
+    "bins/split sums and pair accounting",
+    "C-long inherited L1 cursor origin",
+    "CSV checksum and constrained maximum",
+    "source syntax and note relative links",
+    "git diff --check",
+    "learning curve visually inspected"
+  ],
+  "graph_png_sha256": "05798a5e563b0248f85818e53f614de5ba93984822baaa3c7c7182f6bfa4fe31",
+  "analysis_source_sha256": "ed5571d0a2a0e1187bfd865df2f09128d8ead63ffae5b11d9469c2c6da7f95ab",
+  "result_sha256": "482630fa7ff2154b428c22fda6aefb6c67a2687ae2b02a6fefc836ea8d53d5cc",
+  "limitations": [
+    "B3 per-update main and cooldown journals/PT are not downloaded; intermediate AMP counts and tensor finiteness not audited",
+    "Equal pairs do not equal tokens/FLOPs; W uses long2x; interpolated controls are calculations, not measurements",
+    "15m and50m cooldowns kept separate; no W final15m measurement, so cooldown effect unidentified",
+    "All CIs pointwise descriptive on reused heldout/tune, no multiple-search correction or fresh confirmation"
+  ]
+}

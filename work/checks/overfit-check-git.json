@@ -1,0 +1,62 @@
+{
+  "message": "nlp: check train-heldout overfitting on CPU",
+  "paths": [
+    "work/checks/overfit-check-cpu.json",
+    "work/notes/overfit-check.md",
+    "work/research/check-overfit.py",
+    "work/results/overfit-check.json",
+    "work/results/overfit-check-rows.npz",
+    "work/checks/overfit-check-git.json",
+    "work/checks/overfit-check-navigation.patch"
+  ],
+  "navigation_paths": [
+    "courses/nlp/index.md",
+    "courses/nlp/progress.md",
+    "dashboard.md",
+    "README.md",
+    "work/research/README.md",
+    "courses/nlp/backlog.md",
+    "knowledge/bibliography.md"
+  ],
+  "steps": [
+    {
+      "command": [
+        "git",
+        "diff",
+        "--cached",
+        "--name-only"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "--cached",
+        "--check",
+        "--unidiff-zero",
+        "work/checks/overfit-check-navigation.patch"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "--cached",
+        "--unidiff-zero",
+        "work/checks/overfit-check-navigation.patch"
+      ],
+      "returncode": 128,
+      "stdout": "",
+      "stderr": "fatal: Unable to create '<shared-worktree-git-dir>/index.lock': Operation not permitted\n"
+    }
+  ],
+  "complete": false,
+  "reason": "sandbox denied shared worktree index.lock creation; index unchanged; commit not created",
+  "navigation_patch": "work/checks/overfit-check-navigation.patch"
+}

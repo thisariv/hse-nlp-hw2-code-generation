@@ -1,0 +1,8 @@
+{
+  "ref": "friend1/nlp-hw02-b2-gpu-smoke",
+  "checked_at_utc": "2026-10-16T08:16:22.339329+00:00",
+  "version": 1,
+  "private": true,
+  "backend_timeout_seconds": 900,
+  "pushed_at_utc": "2026-10-16T08:16:26.364459+00:00"
+}

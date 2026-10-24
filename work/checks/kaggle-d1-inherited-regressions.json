@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "tests": 89,
+  "seconds": 25.613,
+  "command": "OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python -m unittest discover -s kaggle -p *_tests.py -q",
+  "scope": "L1 review, L2, L3, L4, P1 and the initial seven D1 CPU tests; later eight-test D1 receipt is separate",
+  "GPU": false,
+  "push": false
+}

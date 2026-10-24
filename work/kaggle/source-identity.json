@@ -1,0 +1,18 @@
+{
+  "code_sha256": "17b0f885d4c20294b34a92e23ac269e3ebc09868253a87aa3f3281263e97b4cc",
+  "modules": {
+    "exp26_protocol.py": "91d6c673a4a1ffb980c92511cd9d2072894d2ff4bd7251a1954178f15baba3c1",
+    "exp26_eval.py": "fc79ed8cea94017e9c6a25216f23409a5bebb1dbe646754313759e7dc75d855c",
+    "exp26_cache.py": "3f15d07c4f1d01e0ac09159b215a9e77bbd861f2e5c47a6632541c01a1f2643b",
+    "exp26_order.py": "98f6e43cf31810d4e86fdbf36b37aaf8dfe7c40ec82d065f82194d7056172783",
+    "exp26_train.py": "0392b8fabcae875eb7972a6c69f6594974603ae81090f4c484fbc47244fb2570",
+    "exp26_fast_exec.py": "061ce3617e66b3b1fc1825cbef52600f04edf3666ceefbc7f982f14383812002",
+    "exp26_input.py": "0b4ed1214cf6f6d751b9d9201bbf0eb8256e1ed03841dd00e9f06b85a5096320",
+    "exp26_core.py": "7247eae92a09a73b62c86fee80c261d3e3a0043cb863d7bc069426d214f575ce",
+    "exp26_exec.py": "0ccc458b2e7dfec27b55f482afb673215f6c06af0f53820cf624d42c5573faa3",
+    "exp26_workflow.py": "0e53a806cb908965bf5cf6ec89ac9da6aa2aefa622ba6f8c8516205c068d2080",
+    "exp26_common.py": "e7a3b34904721d2c6c51fbc0970872596e488b2baa40a04f04add5fb31bbb5a3",
+    "exp26_pack.py": "b91eccaa13f16cd85e9a8ce15abcbf7275e1898850a568ebc1083676e02cd7fb"
+  },
+  "source_notebook": "26b-wsd-data-scaling-with-side-cooldowns.ipynb"
+}

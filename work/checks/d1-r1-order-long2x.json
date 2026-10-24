@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "rows": 9725737,
+  "slots": 11227674,
+  "source_rule": "D1-C",
+  "source_order_sha256": "297631649fc3dac337f000ec5fed7fc553137747ab3744f9a5f2d3ae99e8a78d",
+  "new_order_sha256": "68734ea1e164d3e0bb93cd62cc3ae87f62ee5c58b9c88dc064b0fb9f02dca4f9",
+  "seed": 2026101701,
+  "membership_unchanged": true,
+  "multiplicity_unchanged": true,
+  "filtered_multiplicity": {
+    "format": "nlp-hw02-filtered-long2x-v1",
+    "threshold": 79,
+    "short": 1,
+    "long": 2
+  },
+  "protected_row_excluded": true,
+  "GPU": false,
+  "limitation": "CPU format/membership check only; no evidence of training benefit"
+}

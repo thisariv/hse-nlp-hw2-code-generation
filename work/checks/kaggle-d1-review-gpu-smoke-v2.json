@@ -1,0 +1,81 @@
+{
+  "passed": true,
+  "ref": "thisarivson/nlp-hw02-d1-gpu-smoke/2",
+  "session": {
+    "status": "complete",
+    "worker_status": {
+      "C-main": "complete",
+      "C-long2x": "complete"
+    },
+    "reason": "workers completed",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "failed_workers": [],
+    "unreaped_worker_pids": [],
+    "wall_seconds": 197.55068351199998,
+    "hard_shutdown_seconds": 660,
+    "GPU": true,
+    "training": false
+  },
+  "all_receipts_SHA_verified": 37,
+  "CUDA_CE_parity": true,
+  "no_C_main_CE": true,
+  "CE_rows_per_second_per_GPU": [
+    1224.7718098124474,
+    1244.211563637332
+  ],
+  "full_CE_projected_seconds": 3970.428581912466,
+  "CE_safety": 1.15,
+  "full_CE_conservative_seconds": 4565.9928691993355,
+  "generation": {
+    "C-main": {
+      "rows": 5244,
+      "pipeline_seconds": 40.95522311000002,
+      "GPU_seconds": 32.62762286499992,
+      "pipeline_rows_per_second": 128.04227646167004,
+      "GPU_rows_per_second": 160.7227109893227,
+      "reference_reused": 8,
+      "reference_executed": 5236,
+      "numeric": 5207
+    },
+    "C-long2x": {
+      "rows": 5244,
+      "pipeline_seconds": 46.757422753000014,
+      "GPU_seconds": 41.44570066000017,
+      "pipeline_rows_per_second": 112.15331579975799,
+      "GPU_rows_per_second": 126.52699596079114,
+      "reference_reused": 0,
+      "reference_executed": 0,
+      "numeric": 5197
+    }
+  },
+  "pilot_seconds_per_row_by_bin": [
+    0.015340556351562507,
+    0.021853253871093825,
+    0.01467167859374996,
+    0.025895882669856478
+  ],
+  "full_generation_projected_seconds": 6861.84096315723,
+  "generation_safety": 1.6,
+  "full_generation_conservative_seconds": 10978.94554105157,
+  "maximum_bin_quotas": [
+    212296,
+    116650,
+    44545,
+    15538
+  ],
+  "maximum_generation_rows": 389029,
+  "smoke_selected_rows": 5244,
+  "downloaded_bytes": 117985147,
+  "secrets_or_live_required": false,
+  "models_in_output": false,
+  "Kaggle_working_watchdog_probe": {
+    "passed": true,
+    "actual_forced_exit": true,
+    "child_exit_code": 0,
+    "durable_artifact_preserved": true,
+    "same_working_mount": true
+  }
+}

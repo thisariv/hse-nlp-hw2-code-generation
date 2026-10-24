@@ -1,0 +1,184 @@
+{
+  "date": "2026-10-08",
+  "scope": "New tokenizer probes on unchanged experiment18 BPE; no training or generated program execution. Not a dataset-wide attribution of errors.",
+  "probes": [
+    {
+      "text": "5",
+      "content_token_ids": [
+        20
+      ],
+      "BPE_pieces": [
+        "5"
+      ]
+    },
+    {
+      "text": "five",
+      "content_token_ids": [
+        69,
+        828
+      ],
+      "BPE_pieces": [
+        "f",
+        "ive"
+      ]
+    },
+    {
+      "text": "20",
+      "content_token_ids": [
+        741
+      ],
+      "BPE_pieces": [
+        "20"
+      ]
+    },
+    {
+      "text": " 20",
+      "content_token_ids": [
+        447
+      ],
+      "BPE_pieces": [
+        "Ġ20"
+      ]
+    },
+    {
+      "text": "500",
+      "content_token_ids": [
+        1447
+      ],
+      "BPE_pieces": [
+        "500"
+      ]
+    },
+    {
+      "text": " 500",
+      "content_token_ids": [
+        844
+      ],
+      "BPE_pieces": [
+        "Ġ500"
+      ]
+    },
+    {
+      "text": "1500",
+      "content_token_ids": [
+        817,
+        333
+      ],
+      "BPE_pieces": [
+        "15",
+        "00"
+      ]
+    },
+    {
+      "text": "2500",
+      "content_token_ids": [
+        712,
+        333
+      ],
+      "BPE_pieces": [
+        "25",
+        "00"
+      ]
+    },
+    {
+      "text": "0.3",
+      "content_token_ids": [
+        15,
+        13,
+        18
+      ],
+      "BPE_pieces": [
+        "0",
+        ".",
+        "3"
+      ]
+    },
+    {
+      "text": "30%",
+      "content_token_ids": [
+        1133,
+        4
+      ],
+      "BPE_pieces": [
+        "30",
+        "%"
+      ]
+    },
+    {
+      "text": "1000",
+      "content_token_ids": [
+        2396
+      ],
+      "BPE_pieces": [
+        "1000"
+      ]
+    },
+    {
+      "text": "12345",
+      "content_token_ids": [
+        927,
+        18,
+        1909
+      ],
+      "BPE_pieces": [
+        "12",
+        "3",
+        "45"
+      ]
+    },
+    {
+      "text": "12346",
+      "content_token_ids": [
+        927,
+        18,
+        19,
+        21
+      ],
+      "BPE_pieces": [
+        "12",
+        "3",
+        "4",
+        "6"
+      ]
+    },
+    {
+      "text": "def solve() -> int:\n    result = 5 * 4\n    return result\n",
+      "content_token_ids": [
+        321,
+        320,
+        322,
+        323,
+        311,
+        25,
+        258,
+        281,
+        261,
+        352,
+        310,
+        356,
+        258,
+        319,
+        281,
+        198
+      ],
+      "BPE_pieces": [
+        "def",
+        "Ġsolve",
+        "()",
+        "Ġ->",
+        "Ġint",
+        ":",
+        "ĊĠĠĠ",
+        "Ġresult",
+        "Ġ=",
+        "Ġ5",
+        "Ġ*",
+        "Ġ4",
+        "ĊĠĠĠ",
+        "Ġreturn",
+        "Ġresult",
+        "Ċ"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "resources": [
+    {
+      "ref": "friend1/nlp-hw02-b5-gpu-smoke/2",
+      "dataset_sources": [
+        "thisarivson/nlp-hw02-26b-inputs",
+        "friend1/nlp-hw02-l3-live",
+        "friend1/nlp-hw02-b5-inputs"
+      ],
+      "kernel_sources": [
+        "thisarivson/nlp-hw02-compact-cache-verified"
+      ]
+    },
+    {
+      "ref": "friend1/nlp-hw02-b5/1",
+      "dataset_sources": [
+        "thisarivson/nlp-hw02-26b-inputs",
+        "friend1/nlp-hw02-l3-live",
+        "friend1/nlp-hw02-b5-inputs"
+      ],
+      "kernel_sources": [
+        "thisarivson/nlp-hw02-compact-cache-verified"
+      ]
+    }
+  ],
+  "passed": true
+}

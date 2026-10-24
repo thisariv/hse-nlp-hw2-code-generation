@@ -1,0 +1,32 @@
+{
+  "files": [
+    {
+      "source": "friend1/nlp-hw02-b5/6",
+      "file": "b1-output-manifest.json",
+      "sha256": "f662a966b5031a93bb46d25530a2710753a26f69e5262af80eca05ac6c6aa525",
+      "bytes": 65965,
+      "local": "results/kaggle-runs/nlp-hw02-b5/v9-pinned-6/b1-output-manifest.json"
+    },
+    {
+      "source": "friend1/nlp-hw02-b5/6",
+      "file": "model-GPU0/weights/b5-final-125641-fp16.pt",
+      "sha256": "30ff358be26dc3b0e9093fd73f3f56539ac00c33b8eaf00f9963c015ba14755a",
+      "bytes": 226951233,
+      "local": "results/kaggle-runs/nlp-hw02-b5/v9-pinned-6/model-GPU0/weights/b5-final-125641-fp16.pt"
+    },
+    {
+      "source": "friend1/nlp-hw02-b5/6",
+      "file": "model-GPU1/weights/b5-final-113690-fp16.pt",
+      "sha256": "32475040a951f74869663b740d0047ddfdc233309d55d5eb0dfb28c2068860c7",
+      "bytes": 107366185,
+      "local": "results/kaggle-runs/nlp-hw02-b5/v9-pinned-6/model-GPU1/weights/b5-final-113690-fp16.pt"
+    },
+    {
+      "source": "friend1/nlp-hw02-kaggle-p1/3",
+      "file": "model-pilot-b/weights/long-truncation-fp16.pt",
+      "sha256": "8439037720dda16dda6b73fe676860d5498bbcba4cacebc0d709bbb22db464a5",
+      "bytes": 107366185,
+      "local": "results/kaggle-runs/nlp-hw02-kaggle-p1/v9-pinned-3/model-pilot-b/weights/long-truncation-fp16.pt"
+    }
+  ]
+}

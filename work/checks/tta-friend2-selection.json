@@ -1,0 +1,31 @@
+{
+  "at_utc": "2026-10-19T12:46:54.271776+00:00",
+  "selection_sha256": "2f9c4a585c24a6f5913183d3cbbe60d02952ca58fd159a0e70916e3888ca31da",
+  "selected_rules": [
+    "dollar-words"
+  ],
+  "eval_journals_opened": false,
+  "tune": {
+    "rules": [
+      "dollar-words"
+    ],
+    "n": 2048,
+    "original_mean": 0.748046875,
+    "mixed_mean": 0.74853515625,
+    "delta_pp": 0.048828125,
+    "ci95_pp": [
+      -0.1953125,
+      0.29296875
+    ],
+    "gains": 4,
+    "losses": 3,
+    "original_sum": 1532.0,
+    "mixed_sum": 1533.0,
+    "bootstrap": "paired tasks;20000;seed2026101902;percentile95",
+    "mean_samples": 5.81640625,
+    "max_samples": 10,
+    "early_stops": 1224,
+    "mean_variant_samples": 0.31640625
+  },
+  "next_action": "separate confirm process"
+}

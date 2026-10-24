@@ -1,0 +1,24 @@
+{
+  "files": [
+    "work/notes/b7-plan.md",
+    "work/results/next-b7.json",
+    "work/checks/b7-cpu.json",
+    "work/checks/b7-quota.json",
+    "work/checks/b7-regressions.json",
+    "work/checks/b7-static.json",
+    "work/kaggle/b7_budget.py",
+    "work/kaggle/build_b7.py",
+    "work/kaggle/b7_tests.py",
+    "work/kaggle/b7_static_check.py",
+    "work/kaggle/b7_review_api.py",
+    "work/kaggle/b7_review_output.py",
+    "work/kaggle/notebooks/nlp-hw02-b7.ipynb",
+    "work/kaggle/notebooks/nlp-hw02-b7-gpu-smoke.ipynb"
+  ],
+  "add_exit_code": 128,
+  "add_stdout": "",
+  "add_stderr": "fatal: Unable to create '<vault>/.git/worktrees/study1/index.lock': Operation not permitted\n",
+  "commit_message": "Prepare B7 doubled cooldown from frozen B6 runtime",
+  "index_unchanged": true,
+  "foreign_files_staged": false
+}

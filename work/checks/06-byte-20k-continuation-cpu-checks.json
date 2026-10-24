@@ -1,0 +1,63 @@
+{
+  "checked_on": "2026-10-07",
+  "origin": "agent short CPU continuation checks using user step-10000 checkpoint; not the GPU experiment",
+  "notebook_sha256": "9af56e48e4d4cfeb75b631af54750226efd5627a5e21087c94571939f7d363d5",
+  "format_and_nine_code_cells_compile": true,
+  "data_encoding_and_model_cells_identical_to_experiment05": true,
+  "source_checkpoint_sha256": "4ed8ff448e62e58ae654b6af9d78a78af2e5309561674592a35511ef17ce001a",
+  "source_checkpoint_unchanged": true,
+  "data": {
+    "training_examples": 20000,
+    "validation_examples": 64,
+    "train_sha256": "1304183967f02f01097d76c12fb24df30916a4ec44e54833cd3509264359300e",
+    "validation_sha256": "0edf2b479ebdc103ec05efc704c7bb0ac8084e41a8a44b58afef224702563050"
+  },
+  "restore_checks": {
+    "exact_source_weights_loaded": true,
+    "adamw_counters_start_at_10000": true,
+    "python_and_cpu_torch_rng_restored": true,
+    "cuda_rng_restore_tested_on_gpu": false,
+    "wrong_hash_step_config_data_and_adam_counter_rejected": true
+  },
+  "return_metric_checks": {
+    "valid_python_scope_cases": 9,
+    "malformed_python_case": 1,
+    "nested_function_or_class_return_ignored": true,
+    "bare_return_and_return_none_ignored": true,
+    "programs_executed": false
+  },
+  "cpu_smoke": {
+    "full_model_parameters": 1254915,
+    "real_updates_in_training_cell": 4,
+    "start_step": 10000,
+    "end_step": 10004,
+    "generation_cap_override_for_check_only": 8,
+    "diagnostic_steps": [
+      10000,
+      10002,
+      10004
+    ],
+    "train64_validation64_at_all_controls": true,
+    "weights_adam_and_rng_equal_same_updates_without_diagnostics": true,
+    "intermediate_checkpoint_reload_then_two_updates_matches_continuous_cpu_updates": true,
+    "evaluation_and_checkpoint_delays_excluded_from_training_timer": true,
+    "loss_delay_excluded_from_greedy_timer": true,
+    "checkpoint_json_counters_and_rng_consistent": true,
+    "finite_loss_and_gradients": true,
+    "repeat_train_cell_rejected": true
+  },
+  "archive": {
+    "zip_integrity_and_all_member_hashes_verified": true,
+    "json_and_all_saved_control_and_latest_checkpoints_included": true,
+    "download_call_checked_with_stub_only": true,
+    "notebook_outputs_saved_separately": true,
+    "partial_run_json_and_manifest_counters_consistent": true,
+    "interrupted_latest_write_preserves_previous_checkpoint": true
+  },
+  "runtime": {
+    "torch": "2.14.1",
+    "device": "CPU"
+  },
+  "full_40000_update_or_t4_continuation_executed": false,
+  "cpu_or_gpu_speed_benchmarked": false
+}

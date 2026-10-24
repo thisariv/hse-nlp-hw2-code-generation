@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-08",
+  "device": "CPU",
+  "scope": "Fresh re-selection of cached pinned public data,50k batch-index reconstruction and BPE lengths only; no model training or fresh-heldout scoring.",
+  "training_updates": 0,
+  "pinned_shard_SHA256_and_bytes_verified": true,
+  "all_saved_data_hashes_and_split_metadata_reproduced": true,
+  "fresh1024_reserved_pairs_equal": true,
+  "fresh1024_evaluated": false,
+  "seed42_sampled_batch_plans": 50000,
+  "pair_presentations": 400000,
+  "unique_train_rows_seen": 275423,
+  "per_row_seen_flags_equal_checkpoint": true,
+  "python_rng_equal_checkpoint": true,
+  "useful_target_tokens": 26319335,
+  "target_slots_with_padding": 45012176,
+  "target_padding_fraction": 0.4152841000177374,
+  "note": "Reconstructs saved T4 coverage; CPU elapsed time is not a training/inference measurement."
+}

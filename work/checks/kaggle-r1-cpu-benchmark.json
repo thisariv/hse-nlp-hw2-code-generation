@@ -1,0 +1,81 @@
+{
+  "passed": true,
+  "device": "CPU",
+  "torch": "2.14.1",
+  "threads": 1,
+  "effective_batch": 16,
+  "source_lengths": [
+    51,
+    52,
+    53,
+    53,
+    53,
+    54,
+    54,
+    55,
+    56,
+    57,
+    59,
+    59,
+    60,
+    61,
+    61,
+    62
+  ],
+  "target_lengths": [
+    62,
+    61,
+    60,
+    60,
+    60,
+    59,
+    59,
+    58,
+    57,
+    56,
+    54,
+    54,
+    53,
+    52,
+    52,
+    51
+  ],
+  "q": 0.1,
+  "repeats": 5,
+  "warmup_updates": 3,
+  "results": {
+    "none": {
+      "seconds": [
+        1.6551088748965412,
+        2.020461417036131,
+        1.5754106671083719,
+        1.6897787090856582,
+        1.572157541057095
+      ],
+      "median_seconds": 1.6551088748965412,
+      "parameters": 53646403,
+      "function_identity": null
+    },
+    "encoder-deepen": {
+      "seconds": [
+        3.352150999940932,
+        3.230979915941134,
+        2.9996159998700023,
+        3.177364083006978,
+        3.2901961668394506
+      ],
+      "median_seconds": 3.230979915941134,
+      "parameters": 72589411,
+      "function_identity": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "model": "real C512 6/6 -> 12/6"
+      }
+    }
+  },
+  "relative_step_cost": 1.9521253042299702,
+  "T4_baseline_step_seconds": 0.388651379712398,
+  "T4_estimated_deepen_seconds": 0.7586961928604626,
+  "limitation": "CPU FP32/batch16 -> T4 FP16/batch128 ratio is an estimate; memory/fused/graph fallback unmeasured",
+  "GPU": false
+}

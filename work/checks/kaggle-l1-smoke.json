@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "checks": [
+    "tiny full cache/source/provenance/order/finite roundtrip",
+    "two real independent CPU workers",
+    "multiple cooldowns, real4Dgreedy/restoration/exec/CE/test timing and subsequent backward",
+    "FP16 evaluated weights exclude optimizer; stable Adam steps/cursor exclude branches",
+    "exact resume model/Adam/RNG/cursor versus uninterrupted4updates",
+    "effective batch accumulation independent full4 versus3+1 tokenweighted oracle",
+    "secrets absent/oneGPU/wrongGPU gates; correct T4x2 passes",
+    "mockprivate create/version, exact full resume from live, latest evaluated artifacts, secret byte rejection and size limit",
+    "real hung subprocess group timeout",
+    "D lags1pp but slope12pp versusC10pp -> continue both"
+  ],
+  "parameter_counts": {
+    "C": 53646403,
+    "D": 103902979
+  },
+  "micro_accumulation_max_weight_diff": 8.193014946300536e-05,
+  "micro_accumulation_max_gradient_diff": 4.470348358154297e-08,
+  "two_process_exit_codes": [
+    0,
+    0
+  ],
+  "tiny_roundtrip": 32,
+  "not_verified": [
+    "real Kaggle Secrets/live private upload",
+    "T4 FP16/fused/memory/backend/throughput",
+    "full GPU quality/test1919 timing",
+    "long watchdog CUDA D-state"
+  ]
+}

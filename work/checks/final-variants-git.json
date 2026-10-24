@@ -1,0 +1,7 @@
+{
+  "attempted": true,
+  "add_exit_code": 128,
+  "commit_created": false,
+  "reason": "Sandbox prohibits creating shared worktree index.lock; no bypass attempted",
+  "staged_index_empty": true
+}

@@ -1,0 +1,761 @@
+{
+  "passed": true,
+  "account": "friend1",
+  "source": "friend1/nlp-hw02-l3-live/12",
+  "datasets": {
+    "friend1/nlp-hw02-l3-live": {
+      "private": true,
+      "version": 12
+    },
+    "friend1/nlp-hw02-p1-live": {
+      "private": true,
+      "version": 1
+    }
+  },
+  "files": [
+    {
+      "name": "anchor-preflight.json",
+      "bytes": 603
+    },
+    {
+      "name": "boot-manifest.json",
+      "bytes": 81
+    },
+    {
+      "name": "gpu0-old991-index.json",
+      "bytes": 8866
+    },
+    {
+      "name": "gpu1-old991-index.json",
+      "bytes": 8866
+    },
+    {
+      "name": "input-preflight.json",
+      "bytes": 896
+    },
+    {
+      "name": "l2-live-sync-status.json",
+      "bytes": 144
+    },
+    {
+      "name": "model-C-long2x__checkpoints__main-2a27307d7a48.pt",
+      "bytes": 644197075
+    },
+    {
+      "name": "model-C-long2x__identity.json",
+      "bytes": 2624
+    },
+    {
+      "name": "model-C-long2x__latest.json",
+      "bytes": 3280
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__checkpoint.json",
+      "bytes": 193
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__complete.json",
+      "bytes": 160408
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__heldout4k-execution.json",
+      "bytes": 253531
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__heldout4k-generations.json",
+      "bytes": 5400776
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__heldout4k-per-example.json",
+      "bytes": 2281392
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-00000.json",
+      "bytes": 213957
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-00032.json",
+      "bytes": 214629
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-00064.json",
+      "bytes": 203339
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-00096.json",
+      "bytes": 214457
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-00128.json",
+      "bytes": 204976
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-00160.json",
+      "bytes": 213783
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-00192.json",
+      "bytes": 220005
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-00224.json",
+      "bytes": 209962
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-00256.json",
+      "bytes": 203949
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-00288.json",
+      "bytes": 223948
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-00320.json",
+      "bytes": 207690
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-00352.json",
+      "bytes": 212285
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-00384.json",
+      "bytes": 215780
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-00416.json",
+      "bytes": 220112
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-00448.json",
+      "bytes": 203056
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-00480.json",
+      "bytes": 209503
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-00512.json",
+      "bytes": 212912
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-00544.json",
+      "bytes": 204504
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-00576.json",
+      "bytes": 204949
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-00608.json",
+      "bytes": 212125
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-00640.json",
+      "bytes": 215721
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-00672.json",
+      "bytes": 200592
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-00704.json",
+      "bytes": 194376
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-00736.json",
+      "bytes": 210606
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-00768.json",
+      "bytes": 213538
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-00800.json",
+      "bytes": 216397
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-00832.json",
+      "bytes": 211240
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-00864.json",
+      "bytes": 223086
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-00896.json",
+      "bytes": 220563
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-00928.json",
+      "bytes": 212742
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-00960.json",
+      "bytes": 216977
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-00992.json",
+      "bytes": 208695
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-01024.json",
+      "bytes": 207827
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-01056.json",
+      "bytes": 212600
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-01088.json",
+      "bytes": 204234
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-01120.json",
+      "bytes": 208208
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-01152.json",
+      "bytes": 209344
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-01184.json",
+      "bytes": 213043
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-01216.json",
+      "bytes": 208445
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-01248.json",
+      "bytes": 215477
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-01280.json",
+      "bytes": 206740
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-01312.json",
+      "bytes": 223652
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-01344.json",
+      "bytes": 223697
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-01376.json",
+      "bytes": 209567
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-01408.json",
+      "bytes": 211859
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-01440.json",
+      "bytes": 205945
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-01472.json",
+      "bytes": 226149
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-01504.json",
+      "bytes": 213482
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-01536.json",
+      "bytes": 210900
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-01568.json",
+      "bytes": 215953
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-01600.json",
+      "bytes": 212518
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-01632.json",
+      "bytes": 215452
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-01664.json",
+      "bytes": 211382
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-01696.json",
+      "bytes": 214224
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-01728.json",
+      "bytes": 216989
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-01760.json",
+      "bytes": 205689
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-01792.json",
+      "bytes": 212567
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-01824.json",
+      "bytes": 212381
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-01856.json",
+      "bytes": 211015
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-01888.json",
+      "bytes": 199416
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-01920.json",
+      "bytes": 204590
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-01952.json",
+      "bytes": 205985
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-01984.json",
+      "bytes": 223098
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__batch-02016.json",
+      "bytes": 204596
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__k8-tune2048__summary.json",
+      "bytes": 563
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__metrics.json",
+      "bytes": 141798
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__old991-execution.json",
+      "bytes": 61777
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__old991-generations.json",
+      "bytes": 1285691
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__old991-per-example.json",
+      "bytes": 549065
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__partial-metrics.json",
+      "bytes": 139335
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__test-answers.jsonl",
+      "bytes": 838475
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__test-execution.json",
+      "bytes": 119405
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__evaluation__test-generations.json",
+      "bytes": 2581133
+    },
+    {
+      "name": "model-C-long2x__points__l2-62280__training.json",
+      "bytes": 501
+    },
+    {
+      "name": "model-C-long2x__progress.json",
+      "bytes": 959550
+    },
+    {
+      "name": "model-C-long2x__stability-policy.json",
+      "bytes": 119
+    },
+    {
+      "name": "model-C-long2x__summary.json",
+      "bytes": 1264668
+    },
+    {
+      "name": "model-C-long2x__weights__l2-62280-fp16.pt",
+      "bytes": 107364659
+    },
+    {
+      "name": "model-C-main__checkpoints__main-7c01611616d0.pt",
+      "bytes": 644195795
+    },
+    {
+      "name": "model-C-main__identity.json",
+      "bytes": 1443
+    },
+    {
+      "name": "model-C-main__latest.json",
+      "bytes": 2039
+    },
+    {
+      "name": "model-C-main__points__l2-62280__checkpoint.json",
+      "bytes": 193
+    },
+    {
+      "name": "model-C-main__points__l2-62280__complete.json",
+      "bytes": 160057
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__heldout4k-execution.json",
+      "bytes": 253651
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__heldout4k-generations.json",
+      "bytes": 5300848
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__heldout4k-per-example.json",
+      "bytes": 2260257
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-00000.json",
+      "bytes": 212352
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-00032.json",
+      "bytes": 214234
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-00064.json",
+      "bytes": 200587
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-00096.json",
+      "bytes": 212822
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-00128.json",
+      "bytes": 200207
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-00160.json",
+      "bytes": 212768
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-00192.json",
+      "bytes": 214154
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-00224.json",
+      "bytes": 209428
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-00256.json",
+      "bytes": 199708
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-00288.json",
+      "bytes": 218894
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-00320.json",
+      "bytes": 206042
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-00352.json",
+      "bytes": 212814
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-00384.json",
+      "bytes": 210970
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-00416.json",
+      "bytes": 218474
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-00448.json",
+      "bytes": 203370
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-00480.json",
+      "bytes": 208579
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-00512.json",
+      "bytes": 212214
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-00544.json",
+      "bytes": 199488
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-00576.json",
+      "bytes": 208342
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-00608.json",
+      "bytes": 209927
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-00640.json",
+      "bytes": 213903
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-00672.json",
+      "bytes": 200220
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-00704.json",
+      "bytes": 193749
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-00736.json",
+      "bytes": 211029
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-00768.json",
+      "bytes": 210437
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-00800.json",
+      "bytes": 209292
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-00832.json",
+      "bytes": 214274
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-00864.json",
+      "bytes": 222597
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-00896.json",
+      "bytes": 217548
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-00928.json",
+      "bytes": 206015
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-00960.json",
+      "bytes": 214816
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-00992.json",
+      "bytes": 206937
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-01024.json",
+      "bytes": 205482
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-01056.json",
+      "bytes": 213222
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-01088.json",
+      "bytes": 205106
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-01120.json",
+      "bytes": 206365
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-01152.json",
+      "bytes": 203647
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-01184.json",
+      "bytes": 213348
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-01216.json",
+      "bytes": 200648
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-01248.json",
+      "bytes": 209255
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-01280.json",
+      "bytes": 206736
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-01312.json",
+      "bytes": 217542
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-01344.json",
+      "bytes": 215143
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-01376.json",
+      "bytes": 205591
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-01408.json",
+      "bytes": 207413
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-01440.json",
+      "bytes": 199982
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-01472.json",
+      "bytes": 222153
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-01504.json",
+      "bytes": 210264
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-01536.json",
+      "bytes": 206826
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-01568.json",
+      "bytes": 212570
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-01600.json",
+      "bytes": 206265
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-01632.json",
+      "bytes": 209213
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-01664.json",
+      "bytes": 207837
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-01696.json",
+      "bytes": 210547
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-01728.json",
+      "bytes": 211617
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-01760.json",
+      "bytes": 202145
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-01792.json",
+      "bytes": 210961
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-01824.json",
+      "bytes": 209130
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-01856.json",
+      "bytes": 204306
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-01888.json",
+      "bytes": 196995
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-01920.json",
+      "bytes": 204300
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-01952.json",
+      "bytes": 206777
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-01984.json",
+      "bytes": 219183
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__batch-02016.json",
+      "bytes": 200513
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__k8-tune2048__summary.json",
+      "bytes": 564
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__metrics.json",
+      "bytes": 141485
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__old991-execution.json",
+      "bytes": 61801
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__old991-generations.json",
+      "bytes": 1259903
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__old991-per-example.json",
+      "bytes": 543337
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__partial-metrics.json",
+      "bytes": 139020
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__test-answers.jsonl",
+      "bytes": 826873
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__test-execution.json",
+      "bytes": 119241
+    },
+    {
+      "name": "model-C-main__points__l2-62280__evaluation__test-generations.json",
+      "bytes": 2523111
+    },
+    {
+      "name": "model-C-main__points__l2-62280__training.json",
+      "bytes": 500
+    },
+    {
+      "name": "model-C-main__progress.json",
+      "bytes": 959149
+    },
+    {
+      "name": "model-C-main__stability-policy.json",
+      "bytes": 119
+    },
+    {
+      "name": "model-C-main__summary.json",
+      "bytes": 1262527
+    },
+    {
+      "name": "model-C-main__weights__l2-62280-fp16.pt",
+      "bytes": 107363571
+    },
+    {
+      "name": "recover-manifest.json",
+      "bytes": 57890
+    },
+    {
+      "name": "session-live.json",
+      "bytes": 116
+    },
+    {
+      "name": "session-summary.json",
+      "bytes": 4409
+    },
+    {
+      "name": "startup-gate.json",
+      "bytes": 72
+    },
+    {
+      "name": "weighted-order__order.json",
+      "bytes": 954
+    },
+    {
+      "name": "weighted-order__order.npy",
+      "bytes": 44911372
+    },
+    {
+      "name": "weighted-order__split.json",
+      "bytes": 48287
+    }
+  ],
+  "required_full_state": [
+    "model-C-long2x__checkpoints__main-2a27307d7a48.pt"
+  ],
+  "push": false
+}

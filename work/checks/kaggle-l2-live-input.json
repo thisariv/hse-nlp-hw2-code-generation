@@ -1,0 +1,25 @@
+{
+  "dataset": "thisarivson/nlp-hw02-l1-live",
+  "version": 7,
+  "private": true,
+  "files": [
+    {
+      "file": "model-C__checkpoints__main-5746a4a2897e.pt",
+      "bytes": 644049235
+    },
+    {
+      "file": "model-C__latest.json",
+      "bytes": 1986
+    },
+    {
+      "file": "recover-manifest.json",
+      "bytes": 12585
+    }
+  ],
+  "checked_current": true,
+  "input_26b": {
+    "ref": "thisarivson/nlp-hw02-26b-inputs",
+    "private": true,
+    "version": 1
+  }
+}

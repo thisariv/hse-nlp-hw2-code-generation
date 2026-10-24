@@ -1,0 +1,157 @@
+{
+  "passed": true,
+  "GPU": false,
+  "source_checkpoint_sha256": "c1fb59136ff63ce9dcab6390290187c450ef7f7f97e4d0a69b0f32a4a1c795f0",
+  "source_initial_digests": {
+    "model": "d34f3a6f7bbb63d5f5e6a90beced0c80ad3918a941ed36e975473e077d7c2c52",
+    "optimizer": "f9be3c6c17ab6352373fbf5feb982dc3068448d079f86cd4f01637a58c8c7cde",
+    "scaler": "fe0178b17269f379f140336d59b03fc5bb7cbe62a3aff939387cf3eb7cd71dd1",
+    "rng": "90c2f65cb00abe7b4f70a3f6e5afba4fd3e1ad848be244128c5d0a466e5dedd6",
+    "state": "659a7c7d54394a15ffe698be38a3deb291e36c8bacb36c2b5dd70b17c52172f5"
+  },
+  "model_spec": {
+    "d_model": 768,
+    "heads": 12,
+    "encoder_layers": 6,
+    "decoder_layers": 6,
+    "swiglu_dim": 2048,
+    "vocab": 8195,
+    "qk_norm": "layernorm"
+  },
+  "main_updates_per_route": 3,
+  "effective_batch": 128,
+  "control": {
+    "model": "1b95e6411456c3be2e008268b64bc221218ed0f73c2710160e19d91d49427490",
+    "optimizer": "9e02576e6bb27d5cfdc5000d187e2e1ebcf0207e1cd3809b3ed6957a00ed90c3",
+    "scaler": "cdb5220ff589e1101db76a3b35c24c05c35c5daa442429e1f60174df6fa738ab",
+    "scaler_enabled": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+    "training": "e167955d2c4e57dc7cd7a179ca945f7f75e8035f393f91bd8bbe12f2b78d6029",
+    "grad_enabled": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+    "inference_mode": "60a33e6cf5151f2d52eddae9685cfa270426aa89d8dbc7dfb854606f1d1a40fe",
+    "rng_torch_cpu": "71fe992d9f992ade2e543e9d42087195b0156f07ce389748a5c680b45bd50a5d",
+    "rng_torch_cuda": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rng_python": "b4bc70dd9a8cc501bec2b4a8b836bd968f88aae35332687da0658ad213baf8cf",
+    "rng_numpy": "5a90c5c2820b88e646915d6c842100db4376b19622f7c6d4006f172b9d412b11"
+  },
+  "continuation": {
+    "model": "1b95e6411456c3be2e008268b64bc221218ed0f73c2710160e19d91d49427490",
+    "optimizer": "9e02576e6bb27d5cfdc5000d187e2e1ebcf0207e1cd3809b3ed6957a00ed90c3",
+    "scaler": "cdb5220ff589e1101db76a3b35c24c05c35c5daa442429e1f60174df6fa738ab",
+    "scaler_enabled": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+    "training": "e167955d2c4e57dc7cd7a179ca945f7f75e8035f393f91bd8bbe12f2b78d6029",
+    "grad_enabled": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+    "inference_mode": "60a33e6cf5151f2d52eddae9685cfa270426aa89d8dbc7dfb854606f1d1a40fe",
+    "rng_torch_cpu": "71fe992d9f992ade2e543e9d42087195b0156f07ce389748a5c680b45bd50a5d",
+    "rng_torch_cuda": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rng_python": "b4bc70dd9a8cc501bec2b4a8b836bd968f88aae35332687da0658ad213baf8cf",
+    "rng_numpy": "5a90c5c2820b88e646915d6c842100db4376b19622f7c6d4006f172b9d412b11"
+  },
+  "restore_audits": [
+    {
+      "tag": "b3-probe-027001",
+      "passed": true,
+      "before": {
+        "model": "44ad6172b7fa93b2065e8e79be8c75c26b8c6c65d996eb2e3bf74163b4a9b046",
+        "optimizer": "f3312432904fb9c4984b1ab8595a1074b490f4d330432f9f18767c46d74a2e8f",
+        "scaler": "17941702d03a9b156fde4b48dc361c9ff5b4f41fa99fb60bd0d18dea0037d690",
+        "scaler_enabled": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "training": "e167955d2c4e57dc7cd7a179ca945f7f75e8035f393f91bd8bbe12f2b78d6029",
+        "grad_enabled": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "inference_mode": "60a33e6cf5151f2d52eddae9685cfa270426aa89d8dbc7dfb854606f1d1a40fe",
+        "rng_torch_cpu": "71fe992d9f992ade2e543e9d42087195b0156f07ce389748a5c680b45bd50a5d",
+        "rng_torch_cuda": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "rng_python": "b4bc70dd9a8cc501bec2b4a8b836bd968f88aae35332687da0658ad213baf8cf",
+        "rng_numpy": "5a90c5c2820b88e646915d6c842100db4376b19622f7c6d4006f172b9d412b11",
+        "state": "08c7acaa66141c40435107a97adbbedb7e4f885c6cf409753cf811542e46b19f"
+      },
+      "restored": {
+        "model": "44ad6172b7fa93b2065e8e79be8c75c26b8c6c65d996eb2e3bf74163b4a9b046",
+        "optimizer": "f3312432904fb9c4984b1ab8595a1074b490f4d330432f9f18767c46d74a2e8f",
+        "scaler": "17941702d03a9b156fde4b48dc361c9ff5b4f41fa99fb60bd0d18dea0037d690",
+        "scaler_enabled": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "training": "e167955d2c4e57dc7cd7a179ca945f7f75e8035f393f91bd8bbe12f2b78d6029",
+        "grad_enabled": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "inference_mode": "60a33e6cf5151f2d52eddae9685cfa270426aa89d8dbc7dfb854606f1d1a40fe",
+        "rng_torch_cpu": "71fe992d9f992ade2e543e9d42087195b0156f07ce389748a5c680b45bd50a5d",
+        "rng_torch_cuda": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "rng_python": "b4bc70dd9a8cc501bec2b4a8b836bd968f88aae35332687da0658ad213baf8cf",
+        "rng_numpy": "5a90c5c2820b88e646915d6c842100db4376b19622f7c6d4006f172b9d412b11",
+        "state": "08c7acaa66141c40435107a97adbbedb7e4f885c6cf409753cf811542e46b19f"
+      },
+      "different": []
+    },
+    {
+      "tag": "b3-probe-027002",
+      "passed": true,
+      "before": {
+        "model": "0efce8f37f320037dbfc93e63fb2e24c49d0b85bf6d320a3a24981d58473bc4b",
+        "optimizer": "279d19457d7cc214c789ac6924981ff0bfb28e5c748b2a1cf95c286bd223e707",
+        "scaler": "ff437116300eb2023f52acb3ac2ba5989888ab31607bd0c2c69479f40cf78b96",
+        "scaler_enabled": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "training": "e167955d2c4e57dc7cd7a179ca945f7f75e8035f393f91bd8bbe12f2b78d6029",
+        "grad_enabled": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "inference_mode": "60a33e6cf5151f2d52eddae9685cfa270426aa89d8dbc7dfb854606f1d1a40fe",
+        "rng_torch_cpu": "71fe992d9f992ade2e543e9d42087195b0156f07ce389748a5c680b45bd50a5d",
+        "rng_torch_cuda": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "rng_python": "b4bc70dd9a8cc501bec2b4a8b836bd968f88aae35332687da0658ad213baf8cf",
+        "rng_numpy": "5a90c5c2820b88e646915d6c842100db4376b19622f7c6d4006f172b9d412b11",
+        "state": "e71cee70caaee8a0701005e6b74e4aba95b1e00abbc62cbeb5bbbe3c6531f03d"
+      },
+      "restored": {
+        "model": "0efce8f37f320037dbfc93e63fb2e24c49d0b85bf6d320a3a24981d58473bc4b",
+        "optimizer": "279d19457d7cc214c789ac6924981ff0bfb28e5c748b2a1cf95c286bd223e707",
+        "scaler": "ff437116300eb2023f52acb3ac2ba5989888ab31607bd0c2c69479f40cf78b96",
+        "scaler_enabled": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "training": "e167955d2c4e57dc7cd7a179ca945f7f75e8035f393f91bd8bbe12f2b78d6029",
+        "grad_enabled": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "inference_mode": "60a33e6cf5151f2d52eddae9685cfa270426aa89d8dbc7dfb854606f1d1a40fe",
+        "rng_torch_cpu": "71fe992d9f992ade2e543e9d42087195b0156f07ce389748a5c680b45bd50a5d",
+        "rng_torch_cuda": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "rng_python": "b4bc70dd9a8cc501bec2b4a8b836bd968f88aae35332687da0658ad213baf8cf",
+        "rng_numpy": "5a90c5c2820b88e646915d6c842100db4376b19622f7c6d4006f172b9d412b11",
+        "state": "e71cee70caaee8a0701005e6b74e4aba95b1e00abbc62cbeb5bbbe3c6531f03d"
+      },
+      "different": []
+    },
+    {
+      "tag": "b3-final-027003",
+      "passed": true,
+      "before": {
+        "model": "1b95e6411456c3be2e008268b64bc221218ed0f73c2710160e19d91d49427490",
+        "optimizer": "9e02576e6bb27d5cfdc5000d187e2e1ebcf0207e1cd3809b3ed6957a00ed90c3",
+        "scaler": "cdb5220ff589e1101db76a3b35c24c05c35c5daa442429e1f60174df6fa738ab",
+        "scaler_enabled": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "training": "e167955d2c4e57dc7cd7a179ca945f7f75e8035f393f91bd8bbe12f2b78d6029",
+        "grad_enabled": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "inference_mode": "60a33e6cf5151f2d52eddae9685cfa270426aa89d8dbc7dfb854606f1d1a40fe",
+        "rng_torch_cpu": "71fe992d9f992ade2e543e9d42087195b0156f07ce389748a5c680b45bd50a5d",
+        "rng_torch_cuda": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "rng_python": "b4bc70dd9a8cc501bec2b4a8b836bd968f88aae35332687da0658ad213baf8cf",
+        "rng_numpy": "5a90c5c2820b88e646915d6c842100db4376b19622f7c6d4006f172b9d412b11",
+        "state": "bd49d4b302527a145da7ef15101ffab07a8610ab981f393ce34a89b536c4f9d0"
+      },
+      "restored": {
+        "model": "1b95e6411456c3be2e008268b64bc221218ed0f73c2710160e19d91d49427490",
+        "optimizer": "9e02576e6bb27d5cfdc5000d187e2e1ebcf0207e1cd3809b3ed6957a00ed90c3",
+        "scaler": "cdb5220ff589e1101db76a3b35c24c05c35c5daa442429e1f60174df6fa738ab",
+        "scaler_enabled": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "training": "e167955d2c4e57dc7cd7a179ca945f7f75e8035f393f91bd8bbe12f2b78d6029",
+        "grad_enabled": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "inference_mode": "60a33e6cf5151f2d52eddae9685cfa270426aa89d8dbc7dfb854606f1d1a40fe",
+        "rng_torch_cpu": "71fe992d9f992ade2e543e9d42087195b0156f07ce389748a5c680b45bd50a5d",
+        "rng_torch_cuda": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "rng_python": "b4bc70dd9a8cc501bec2b4a8b836bd968f88aae35332687da0658ad213baf8cf",
+        "rng_numpy": "5a90c5c2820b88e646915d6c842100db4376b19622f7c6d4006f172b9d412b11",
+        "state": "bd49d4b302527a145da7ef15101ffab07a8610ab981f393ce34a89b536c4f9d0"
+      },
+      "different": []
+    }
+  ],
+  "disposable_eval_output_digests": [
+    "9bde7ec6c1a0de74c45b1e4b452bd7fea83f5d48fdff9f5dfe78a57d1969477e",
+    "8df7a4aa9c43db2ce31cda10894300b3a42272cf53b2386c1f742df66670a14e",
+    "8205f3f3dbfdd90bf0e7e8497adac191a45899dce303173549cc5fb97762d046"
+  ],
+  "seconds": 264.84706641710363,
+  "limitation": "Real B2 full model/Adam/CPU GradScaler; synthetic short rows, FP32/no-autocast, fused=False; evaluation metrics are fixtures, not quality measurements"
+}

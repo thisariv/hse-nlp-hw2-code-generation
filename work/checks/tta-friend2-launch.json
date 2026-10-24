@@ -1,0 +1,25 @@
+{
+  "ref": "friend2/nlp-hw02-tta",
+  "push_calls": 1,
+  "requested_at_utc": "2026-10-19T12:25:57.955964+00:00",
+  "original_before_push": {
+    "ref": "thisarivson/nlp-hw02-tta",
+    "status": "QUEUED",
+    "at_utc": "2026-10-19T12:25:57.955940+00:00"
+  },
+  "owned_inventory_count": 10,
+  "target_absent": true,
+  "quota_before": {
+    "total_seconds": 108000.0,
+    "used_seconds": 0.0,
+    "reserved_seconds": 0.0,
+    "free_seconds": 108000.0
+  },
+  "notebook_sha256": "7326f671384e8e616b15b6590e2b186328412a023c03116c871f3d9e7a942c9b",
+  "timeout_seconds": 1200,
+  "CLI_returncode": 0,
+  "push_accepted": true,
+  "push_finished_at_utc": "2026-10-19T12:26:00.306726+00:00",
+  "version": 1,
+  "server_version_verified": true
+}

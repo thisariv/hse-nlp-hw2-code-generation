@@ -1,0 +1,149 @@
+test_b3_cpu_adapter_handles_loaded_fused_amp_protocol (b3_tests.Tests.test_b3_cpu_adapter_handles_loaded_fused_amp_protocol) ... /tmp/nlp-l2-analysis-env/lib/python3.14/site-packages/torch/nn/modules/transformer.py:144: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = TransformerEncoder(
+ok
+test_b3_direct_restore_audit_rejects_each_omitted_field (b3_tests.Tests.test_b3_direct_restore_audit_rejects_each_omitted_field) ... /tmp/nlp-l2-analysis-env/lib/python3.14/site-packages/torch/nn/modules/transformer.py:144: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = TransformerEncoder(
+ok
+test_b3_embedded_watchdog_uses_actual_first_cell_deadlines (b3_tests.Tests.test_b3_embedded_watchdog_uses_actual_first_cell_deadlines) ... ok
+test_b3_final_linear_restore_and_history (b3_tests.Tests.test_b3_final_linear_restore_and_history) ... ok
+test_b3_incomplete_eval_retains_uncooled_latest (b3_tests.Tests.test_b3_incomplete_eval_retains_uncooled_latest) ... ok
+test_b3_main_stops_for_full_final_reserve (b3_tests.Tests.test_b3_main_stops_for_full_final_reserve) ... ok
+test_b3_mini_final_checks_actual_frozen_tune_ids (b3_tests.Tests.test_b3_mini_final_checks_actual_frozen_tune_ids) ... ok
+test_b3_output_download_reads_every_page_and_excludes_PT (b3_tests.Tests.test_b3_output_download_reads_every_page_and_excludes_PT) ... ok
+test_b3_partial_worker_and_notebook_publish_without_exception (b3_tests.Tests.test_b3_partial_worker_and_notebook_publish_without_exception) ... B3 RESULT W-lr1000 partial; B3 evaluation incomplete final_complete False
+ok
+test_b3_preflight_reports_each_actual_mount (b3_tests.Tests.test_b3_preflight_reports_each_actual_mount) ... ok
+test_b3_probe_cannot_spend_final_reserve (b3_tests.Tests.test_b3_probe_cannot_spend_final_reserve) ... ok
+test_b3_ready_gate_requires_passed_smoke_of_identical_modules (b3_tests.Tests.test_b3_ready_gate_requires_passed_smoke_of_identical_modules) ... ok
+test_b3_recovery_keeps_history_and_halves_lr (b3_tests.Tests.test_b3_recovery_keeps_history_and_halves_lr) ... ok
+test_b3_rejects_wrong_latest_without_loading (b3_tests.Tests.test_b3_rejects_wrong_latest_without_loading) ... ok
+test_b3_smoke_runs_hundreds_and_restores_full_protocol_on_cpu (b3_tests.Tests.test_b3_smoke_runs_hundreds_and_restores_full_protocol_on_cpu) ... {
+  "status": "partial",
+  "exit_codes": [
+    0,
+    0
+  ]
+}
+B3 SMOKE W-lr1000 strict real B2 resume
+B3 SMOKE W-lr1000 no-evaluation control 200 updates
+B3 SMOKE W-lr1000 independent no-evaluation replay 8 updates
+B3 SMOKE W-lr1000 continuation with probe and final K8
+B3 W-lr1000 2100 1.6 pairs 268800 LR 0.001
+B3 W-lr1000 2200 3.3 pairs 281600 LR 0.001
+B3 SMOKE W-lr1000 bit-exact restore passed; injected overflow and recovery
+B3 SMOKE W-lr1000 strict real B2 resume
+B3 SMOKE W-lr1000 no-evaluation control 200 updates
+B3 SMOKE W-lr1000 independent no-evaluation replay 8 updates
+B3 SMOKE W-lr1000 continuation with probe and final K8
+B3 W-lr1000 2100 1.7 pairs 268800 LR 0.001
+B3 W-lr1000 2200 3.3 pairs 281600 LR 0.001
+B3 SMOKE W-lr1000 bit-exact restore passed; injected overflow and recovery
+ok
+test_b3_two_cumulative_probes_and_final_bit_exact (b3_tests.Tests.test_b3_two_cumulative_probes_and_final_bit_exact) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 22.883s
+
+OK
+test_b2_transfer_materialize_and_strict_resume (b1_ev_b2_tests.Tests.test_b2_transfer_materialize_and_strict_resume) ... /tmp/nlp-l2-analysis-env/lib/python3.14/site-packages/torch/nn/modules/transformer.py:144: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = TransformerEncoder(
+ok
+test_cached_logits_match_full_prefix_training_eval_and_clean_v7 (b1_ev_b2_tests.Tests.test_cached_logits_match_full_prefix_training_eval_and_clean_v7) ... ok
+test_ev_frozen_runtime_and_cooldown_only_cpu (b1_ev_b2_tests.Tests.test_ev_frozen_runtime_and_cooldown_only_cpu) ... ok
+test_headwise_norm_forward_backward_and_masks (b1_ev_b2_tests.Tests.test_headwise_norm_forward_backward_and_masks) ... ok
+test_pair_probe_and_end_budget_reserve_restore (b1_ev_b2_tests.Tests.test_pair_probe_and_end_budget_reserve_restore) ... ok
+test_qk_zloss_cpu_amp_overflow_skips_adam (b1_ev_b2_tests.Tests.test_qk_zloss_cpu_amp_overflow_skips_adam) ... ok
+test_resume_qk_adam_rng_warmup_and_recovery (b1_ev_b2_tests.Tests.test_resume_qk_adam_rng_warmup_and_recovery) ... ok
+test_strict_model_spec_load_v7_clean_and_legacy (b1_ev_b2_tests.Tests.test_strict_model_spec_load_v7_clean_and_legacy) ... ok
+test_z_loss_mask_fp32_shift_gradient_and_microbatch_weight (b1_ev_b2_tests.Tests.test_z_loss_mask_fp32_shift_gradient_and_microbatch_weight) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 4.390s
+
+OK
+test_attention_matches_explicit_headwise_math_and_single_scale (b2_review_tests.ReviewTests.test_attention_matches_explicit_headwise_math_and_single_scale) ... /tmp/nlp-l2-analysis-env/lib/python3.14/site-packages/torch/nn/modules/transformer.py:144: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = TransformerEncoder(
+ok
+test_builder_and_push_receipt_use_canonical_title_slug (b2_review_tests.ReviewTests.test_builder_and_push_receipt_use_canonical_title_slug) ... ok
+test_half_norm_and_cached_prefix_v7_and_clean (b2_review_tests.ReviewTests.test_half_norm_and_cached_prefix_v7_and_clean) ... ok
+test_pair_branch_cannot_spend_end_main_reserve (b2_review_tests.ReviewTests.test_pair_branch_cannot_spend_end_main_reserve) ... ok
+test_recovery_thresholds_ignore_isolated_amp_skips (b2_review_tests.ReviewTests.test_recovery_thresholds_ignore_isolated_amp_skips) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 1.662s
+
+OK
+test_C_marks_end_main_timed_q0_and_restore (b1_tests.Tests.test_C_marks_end_main_timed_q0_and_restore) ... /tmp/nlp-l2-analysis-env/lib/python3.14/site-packages/torch/nn/modules/transformer.py:144: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = TransformerEncoder(
+ok
+test_bit_exact_full_resume_dropout_rng_adam_and_warmup (b1_tests.Tests.test_bit_exact_full_resume_dropout_rng_adam_and_warmup) ... ok
+test_disposable_probe_restores_all_numerics_and_eval_failure (b1_tests.Tests.test_disposable_probe_restores_all_numerics_and_eval_failure) ... ok
+test_dropout_attention_ffn_residual_and_eval (b1_tests.Tests.test_dropout_attention_ffn_residual_and_eval) ... ok
+test_final_cooldown_sqrt_truncation_stable_never_overwritten (b1_tests.Tests.test_final_cooldown_sqrt_truncation_stable_never_overwritten) ... ok
+test_incomplete_old991_or_deadline_cannot_report_complete (b1_tests.Tests.test_incomplete_old991_or_deadline_cannot_report_complete) ... ok
+test_intermediate_evaluator_runs_both_splits (b1_tests.Tests.test_intermediate_evaluator_runs_both_splits) ... ok
+test_nan_update_never_steps_adam_and_threshold_rollback (b1_tests.Tests.test_nan_update_never_steps_adam_and_threshold_rollback) ... ok
+test_output_download_explicit_version_and_streamed_exact_file (b1_tests.Tests.test_output_download_explicit_version_and_streamed_exact_file) ... ok
+test_probe_allocates_adam_and_restores_model_rng (b1_tests.Tests.test_probe_allocates_adam_and_restores_model_rng) ... ok
+test_real_parameter_counts_and_normalized_init (b1_tests.Tests.test_real_parameter_counts_and_normalized_init) ... ok
+test_recovery_restores_checkpoint_and_persists_halving (b1_tests.Tests.test_recovery_restores_checkpoint_and_persists_halving) ... ok
+test_requested_shapes_match_measured_specs_and_micro_caps (b1_tests.Tests.test_requested_shapes_match_measured_specs_and_micro_caps) ... ok
+test_stable_tamper_recipe_and_counters_rejected (b1_tests.Tests.test_stable_tamper_recipe_and_counters_rejected) ... ok
+test_transfer_cli_account_env_and_private_roundtrip_stub (b1_tests.Tests.test_transfer_cli_account_env_and_private_roundtrip_stub) ... ok
+test_transfer_dataset_single_file_zip_and_private_create_cli (b1_tests.Tests.test_transfer_dataset_single_file_zip_and_private_create_cli) ... ok
+test_v7_model_spec_load_for_both_architecture_shapes (b1_tests.Tests.test_v7_model_spec_load_for_both_architecture_shapes) ... ok
+test_warmup_AMP_skip_changes_group_lr_without_changing_weights_moments (b1_tests.Tests.test_warmup_AMP_skip_changes_group_lr_without_changing_weights_moments) ... ok
+test_watchdog_output_transfers_without_aggregate_manifest (b1_tests.Tests.test_watchdog_output_transfers_without_aggregate_manifest) ... ok
+test_weighted_order_reproducible_new_seed_and_tamper (b1_tests.Tests.test_weighted_order_reproducible_new_seed_and_tamper) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 15.606s
+
+OK
+test_both_pilot_branches_same_stream_and_full_restore (p1_tests.Tests.test_both_pilot_branches_same_stream_and_full_restore) ... /tmp/nlp-l2-analysis-env/lib/python3.14/site-packages/torch/nn/modules/transformer.py:144: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = TransformerEncoder(
+P1 PILOT a 3 3 LR 0.0 CE 3.1419275999069214
+P1 PILOT b 3 3 LR 0.0 CE 3.112417697906494
+ok
+test_budget_expired_pilot_saves_partial_weights_without_complete (p1_tests.Tests.test_budget_expired_pilot_saves_partial_weights_without_complete) ... ok
+test_failed_A_evaluation_does_not_stop_B_or_overwrite_stable (p1_tests.Tests.test_failed_A_evaluation_does_not_stop_B_or_overwrite_stable) ... P1 PILOT a 3 3 LR 0.0 CE 3.1419275999069214
+P1 PILOT b 3 3 LR 0.0 CE 3.112417697906494
+ok
+test_full_state_fingerprint_detects_tensor_and_rng_corruption (p1_tests.Tests.test_full_state_fingerprint_detects_tensor_and_rng_corruption) ... ok
+test_graph_mask_global_token_weighted_gradient_and_OOM_fallback (p1_tests.Tests.test_graph_mask_global_token_weighted_gradient_and_OOM_fallback) ... ok
+test_graph_partial_backward_NaN_restores_scaler_and_clears_gradients (p1_tests.Tests.test_graph_partial_backward_NaN_restores_scaler_and_clears_gradients) ... ok
+test_live_snapshot_retains_both_pilot_FP16_points_and_reviewer (p1_tests.Tests.test_live_snapshot_retains_both_pilot_FP16_points_and_reviewer) ... ok
+test_mask_stratification_determinism_top_losses_and_ties (p1_tests.Tests.test_mask_stratification_determinism_top_losses_and_ties) ... ok
+test_missing_or_false_K8_cannot_mark_complete (p1_tests.Tests.test_missing_or_false_K8_cannot_mark_complete) ... ok
+test_nonfinite_selection_is_rejected_before_adam (p1_tests.Tests.test_nonfinite_selection_is_rejected_before_adam) ... ok
+test_p1_supervisor_healthy_worker_completes_after_sibling_crash (p1_tests.Tests.test_p1_supervisor_healthy_worker_completes_after_sibling_crash) ... P1 GPU 0 status None 
+P1 GPU 1 status None 
+P1 worker failed 0 ; other worker continues independently
+P1 GPU 0 status 1 
+P1 GPU 1 status None 
+P1 GPU 0 status 1 
+P1 GPU 1 status None 
+P1 GPU 0 status 1 
+P1 GPU 1 status None 
+P1 GPU 0 status 1 
+P1 GPU 1 status None 
+P1 GPU 0 status 1 
+P1 GPU 1 status None 
+P1 GPU 0 status 1 
+P1 GPU 1 status None 
+P1 GPU 0 status 1 
+P1 GPU 1 status None 
+ok
+test_reverse_source_target_PAD_BOS_EOS (p1_tests.Tests.test_reverse_source_target_PAD_BOS_EOS) ... ok
+test_reviewer_failed_or_partial_CE_cannot_mark_complete_and_keeps_weights (p1_tests.Tests.test_reviewer_failed_or_partial_CE_cannot_mark_complete_and_keeps_weights) ... ok
+test_reviewer_real_WSD_keeps_uncooled_resumable_state (p1_tests.Tests.test_reviewer_real_WSD_keeps_uncooled_resumable_state) ... P1 REVIEWER 100 CE 1.3421024084091187 LR 0.0015
+P1 REVIEWER 200 CE 0.7682552635669708 LR 0.0015
+ok
+test_scorer_exp_beta_zero_and_reference_independence (p1_tests.Tests.test_scorer_exp_beta_zero_and_reference_independence) ... ok
+test_sqrt_schedule_bounds_monotonicity_and_zero_endpoint (p1_tests.Tests.test_sqrt_schedule_bounds_monotonicity_and_zero_endpoint) ... ok
+test_truncated_loss_normalization_matches_manual_retained_batch (p1_tests.Tests.test_truncated_loss_normalization_matches_manual_retained_batch) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 6.437s
+
+OK

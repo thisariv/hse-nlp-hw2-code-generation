@@ -1,0 +1,37 @@
+{
+  "checked_at": "2026-10-13T09:29:37.375793+00:00",
+  "account": "friend1",
+  "auth_selection": "KAGGLE_CONFIG_DIR=~/.kaggle-friend",
+  "CLI": "2.2.4",
+  "initial_checks": {
+    "thisarivson/nlp-hw02-l2-live": "403",
+    "thisarivson/nlp-hw02-26b-inputs": "403",
+    "thisarivson/nlp-hw02-compact-cache-verified": "kernels.get denied"
+  },
+  "after_sharing": {
+    "thisarivson/nlp-hw02-l2-live": {
+      "datasets_files_exit_code": 0,
+      "latest_states_visible": true
+    },
+    "thisarivson/nlp-hw02-26b-inputs": {
+      "datasets_files_exit_code": 0,
+      "evaluation_inputs_visible": true
+    },
+    "thisarivson/nlp-hw02-compact-cache-verified/2": {
+      "kernels_output_file_pattern_manifest_exit_code": 0,
+      "manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+      "shard_manifests_downloaded": 60
+    }
+  },
+  "chosen_cache_source": "thisarivson/nlp-hw02-compact-cache-verified/2",
+  "fallback": "friend1/nlp-hw02-compact-cache-verified",
+  "private_live_created": "friend1/nlp-hw02-l3-live",
+  "credential_values_read_or_printed": false,
+  "GPU_runs": 0,
+  "kernel_pushes": 0,
+  "real_full_states_CPU_verified_and_removed": [
+    "C-main",
+    "C-long2x"
+  ],
+  "temporary_download_and_upload_staging_removed": true
+}

@@ -1,0 +1,372 @@
+{
+  "read_on": "2026-10-07",
+  "origin": "user-supplied saved Colab outputs; not rerun by agent",
+  "source_filename": "baseline_first_try_overfit16pairs_results.ipynb",
+  "source_sha256": "4400ca9ae7c3eb910d13b58f7fb86c98d0b6666993f97b87c18b572f59218108",
+  "all_code_cells_match_prepared_diagnostic_ignoring_surrounding_blank_lines": true,
+  "saved_colab_result": {
+    "gpu": "Tesla T4",
+    "torch_version": "2.11.0+cu130",
+    "dtype": "torch.float32",
+    "parameters": 1254915,
+    "seed": 42,
+    "training_examples": 16,
+    "small_train_sha256": "d09cd3121ebfaac0707b52136008a00f6389fed0b3eec3b4a1c502e739bdeb6b",
+    "training_log": [
+      {
+        "step": 0,
+        "train_batch_loss": null,
+        "fixed_train_loss": 5.672550678253174,
+        "token_accuracy": 0.00583608215674758,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 0.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 1,
+        "train_batch_loss": 5.686527252197266,
+        "fixed_train_loss": 4.6454973220825195,
+        "token_accuracy": 0.22760720551013947,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 0.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 50,
+        "train_batch_loss": 1.8135669231414795,
+        "fixed_train_loss": 1.728915810585022,
+        "token_accuracy": 0.49758943915367126,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 0.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 100,
+        "train_batch_loss": 1.235414981842041,
+        "fixed_train_loss": 1.2258189916610718,
+        "token_accuracy": 0.5810707807540894,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 0.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 150,
+        "train_batch_loss": 1.1671385765075684,
+        "fixed_train_loss": 1.0556126832962036,
+        "token_accuracy": 0.6079674959182739,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 0.9375,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 200,
+        "train_batch_loss": 1.007800579071045,
+        "fixed_train_loss": 0.9563343524932861,
+        "token_accuracy": 0.6346105337142944,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 0.9375,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 250,
+        "train_batch_loss": 0.999079704284668,
+        "fixed_train_loss": 0.9136324524879456,
+        "token_accuracy": 0.6541486978530884,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 0.3125,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 300,
+        "train_batch_loss": 1.0194631814956665,
+        "fixed_train_loss": 0.8317664861679077,
+        "token_accuracy": 0.6828216314315796,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 0.6875,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 350,
+        "train_batch_loss": 0.9822124242782593,
+        "fixed_train_loss": 0.787639319896698,
+        "token_accuracy": 0.6970311999320984,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 0.875,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 400,
+        "train_batch_loss": 0.7759005427360535,
+        "fixed_train_loss": 0.6784367561340332,
+        "token_accuracy": 0.7437198758125305,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 450,
+        "train_batch_loss": 0.7637560963630676,
+        "fixed_train_loss": 0.631649374961853,
+        "token_accuracy": 0.7665567398071289,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 0.8125,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 500,
+        "train_batch_loss": 0.667407751083374,
+        "fixed_train_loss": 0.5293980240821838,
+        "token_accuracy": 0.8102004528045654,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 0.625,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 550,
+        "train_batch_loss": 0.6230428218841553,
+        "fixed_train_loss": 0.44335809350013733,
+        "token_accuracy": 0.8490231037139893,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 600,
+        "train_batch_loss": 0.5342585444450378,
+        "fixed_train_loss": 0.3553803265094757,
+        "token_accuracy": 0.8858157992362976,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 650,
+        "train_batch_loss": 0.40884920954704285,
+        "fixed_train_loss": 0.24498797953128815,
+        "token_accuracy": 0.9304745197296143,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 700,
+        "train_batch_loss": 0.39926669001579285,
+        "fixed_train_loss": 0.2533225417137146,
+        "token_accuracy": 0.9248921871185303,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 750,
+        "train_batch_loss": 0.32931751012802124,
+        "fixed_train_loss": 0.19280917942523956,
+        "token_accuracy": 0.9467140436172485,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 800,
+        "train_batch_loss": 0.2599092721939087,
+        "fixed_train_loss": 0.12440512329339981,
+        "token_accuracy": 0.9657447338104248,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 850,
+        "train_batch_loss": 0.22206920385360718,
+        "fixed_train_loss": 0.14512813091278076,
+        "token_accuracy": 0.9652372598648071,
+        "teacher_forced_sequence_exact_count": 1,
+        "eos_target_accuracy": 0.9375,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 900,
+        "train_batch_loss": 0.21367260813713074,
+        "fixed_train_loss": 0.12177395075559616,
+        "token_accuracy": 0.9616848826408386,
+        "teacher_forced_sequence_exact_count": 1,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 950,
+        "train_batch_loss": 0.1279728263616562,
+        "fixed_train_loss": 0.06983383744955063,
+        "token_accuracy": 0.9789393544197083,
+        "teacher_forced_sequence_exact_count": 2,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 1000,
+        "train_batch_loss": 0.15742948651313782,
+        "fixed_train_loss": 0.046085555106401443,
+        "token_accuracy": 0.9885815978050232,
+        "teacher_forced_sequence_exact_count": 3,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      }
+    ],
+    "greedy_history": [
+      {
+        "step": 250,
+        "examples": 16,
+        "mean_generated_tokens": 510.1875,
+        "exact_code_match_count": 0,
+        "exact_tokens_with_eos_count": 0,
+        "eos_emitted_count": 1,
+        "early_eos_count": 1,
+        "reached_cap_count": 15,
+        "parses_as_python_count": 2,
+        "defines_solve_count": 2
+      },
+      {
+        "step": 500,
+        "examples": 16,
+        "mean_generated_tokens": 395.25,
+        "exact_code_match_count": 0,
+        "exact_tokens_with_eos_count": 0,
+        "eos_emitted_count": 7,
+        "early_eos_count": 7,
+        "reached_cap_count": 9,
+        "parses_as_python_count": 0,
+        "defines_solve_count": 0
+      },
+      {
+        "step": 750,
+        "examples": 16,
+        "mean_generated_tokens": 286.5,
+        "exact_code_match_count": 0,
+        "exact_tokens_with_eos_count": 0,
+        "eos_emitted_count": 14,
+        "early_eos_count": 14,
+        "reached_cap_count": 2,
+        "parses_as_python_count": 0,
+        "defines_solve_count": 0
+      },
+      {
+        "step": 1000,
+        "examples": 16,
+        "mean_generated_tokens": 273.6875,
+        "exact_code_match_count": 3,
+        "exact_tokens_with_eos_count": 3,
+        "eos_emitted_count": 15,
+        "early_eos_count": 15,
+        "reached_cap_count": 1,
+        "parses_as_python_count": 4,
+        "defines_solve_count": 4
+      }
+    ],
+    "summary": {
+      "actual_steps": 1000,
+      "max_steps": 1000,
+      "memorization_passed": false,
+      "last_teacher_forcing": {
+        "step": 1000,
+        "train_batch_loss": 0.15742948651313782,
+        "fixed_train_loss": 0.046085555106401443,
+        "token_accuracy": 0.9885815978050232,
+        "teacher_forced_sequence_exact_count": 3,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      "last_greedy": {
+        "examples": 16,
+        "mean_generated_tokens": 273.6875,
+        "exact_code_match_count": 3,
+        "exact_tokens_with_eos_count": 3,
+        "eos_emitted_count": 15,
+        "early_eos_count": 15,
+        "reached_cap_count": 1,
+        "parses_as_python_count": 4,
+        "defines_solve_count": 4
+      },
+      "wall_seconds_including_diagnostics_and_checkpointing": 44.74856897499998
+    },
+    "printed_failures": [
+      {
+        "question": "A group of tourists went on a hike. They hiked for 5 hours and took a 30 minute break. If they hiked in total for 10 miles, what was their average speed in miles/hour?",
+        "reference_code": "def solve() -> int:\n    total_time = 5.5 #hours\n    total_distance_travelled = 10 #miles\n    average_speed = total_distance_travelled / total_time\n    result = average_speed\n\n    return result\n",
+        "generated_code": "def solve() -> int:\n    total_time = 5.5 #hours\n    total_distance_travelled = 10 #miles\n    average_speed = total_distance_travelled / total_time\n    result = averaged\n red\n\n    ret rn resuresult\n",
+        "expected_tokens": 194,
+        "generated_tokens": 198,
+        "exact_code_match": false,
+        "exact_tokens_with_eos": false,
+        "first_mismatch_token_position_0_based": 167,
+        "eos_emitted": true,
+        "early_eos": true,
+        "reached_cap": false,
+        "parses_as_python": false,
+        "defines_solve": false
+      },
+      {
+        "question": "A ball is kicked and its height above the ground is given by the equation h(t) = -16t^2 + 32t + 15. What is the maximum height of the ball above the ground?",
+        "reference_code": "def solve() -> int:\n    a = -16\n    b = 32\n    c = 15\n    t_max = -b / (2 * a)\n    h_max = -a * (t_max**2) + b * t_max + c\n    result = h_max\n\n    return result\n",
+        "generated_code": "def solve() -> int:\n    a = -16\n    b = 32\n    c = 15\n    t_max = -b / (2 * a)\n    h_max = -a * (t_max**2) + b * t_max + c\n    result = h_max\n\n    returet resuret ret\n",
+        "expected_tokens": 162,
+        "generated_tokens": 168,
+        "exact_code_match": false,
+        "exact_tokens_with_eos": false,
+        "first_mismatch_token_position_0_based": 152,
+        "eos_emitted": true,
+        "early_eos": true,
+        "reached_cap": false,
+        "parses_as_python": false,
+        "defines_solve": false
+      },
+      {
+        "question": "Student: In preparation for her party, Sarah buys 10 trays of food and 8 cases of beverages. Each tray costs $50 and each case of beverages costs $20. What is the total cost of the trays and beverages?",
+        "reference_code": "def solve() -> int:\n    trays = 10\n    tray_cost = 50\n    cases = 8\n    case_cost = 20\n    tray_total = trays * tray_cost\n    case_total = cases * case_cost\n    total_cost = tray_total + case_total\n    result = total_cost\n\n    return result\n",
+        "generated_code": "def solve() -> int:\n    trays = 10\n    tray_cost = 50\n    cases = 8\n    case_cost = 20\n    tray_total = tray_costray_cost\n    case_total = cases * case_cost\n    total_cost = tray_total + case_total\n    result = total_costal_cosurn = =  resultosultalt\n",
+        "expected_tokens": 242,
+        "generated_tokens": 252,
+        "exact_code_match": false,
+        "exact_tokens_with_eos": false,
+        "first_mismatch_token_position_0_based": 108,
+        "eos_emitted": true,
+        "early_eos": true,
+        "reached_cap": false,
+        "parses_as_python": false,
+        "defines_solve": false
+      }
+    ],
+    "functional_quality_evaluated": false,
+    "generalization_evaluated": false
+  },
+  "derived_checks_performed_now": {
+    "teacher_forced_errors_rounded_from_float32_accuracy": 45,
+    "teacher_forced_correct_tokens_derived": 3896,
+    "printed_example_checks": [
+      {
+        "reference_bytes": 193,
+        "generated_bytes": 197,
+        "first_mismatch_token_position_0_based": 167,
+        "parses_as_python": false
+      },
+      {
+        "reference_bytes": 161,
+        "generated_bytes": 167,
+        "first_mismatch_token_position_0_based": 152,
+        "parses_as_python": false
+      },
+      {
+        "reference_bytes": 241,
+        "generated_bytes": 251,
+        "first_mismatch_token_position_0_based": 108,
+        "parses_as_python": false
+      }
+    ],
+    "pair_presentations": 8000,
+    "mean_presentations_per_pair": 500.0,
+    "criterion_16_exact_programs_including_eos_reached": false
+  },
+  "available_generation_details": "aggregates for 16 at four steps; only three final failures printed",
+  "full_results_json_and_checkpoint_provided": false,
+  "programs_executed_now": 0,
+  "gpu_training_or_inference_rerun_now": false
+}

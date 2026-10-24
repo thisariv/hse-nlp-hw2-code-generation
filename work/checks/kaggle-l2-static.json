@@ -1,0 +1,75 @@
+{
+  "passed": true,
+  "artifacts": {
+    "l2": {
+      "notebook_sha256": "462004d22c3af462676e9d7c40691aa545eb8f792d467cbfcaf9a03bea8f136d",
+      "metadata": {
+        "id": "thisarivson/nlp-hw02-kaggle-l2",
+        "title": "nlp hw02 kaggle l2",
+        "code_file": "nlp-hw02-kaggle-l2.ipynb",
+        "language": "python",
+        "kernel_type": "notebook",
+        "is_private": true,
+        "enable_gpu": true,
+        "enable_tpu": false,
+        "enable_internet": true,
+        "dataset_sources": [
+          "thisarivson/nlp-hw02-26b-inputs",
+          "thisarivson/nlp-hw02-l1-live"
+        ],
+        "kernel_sources": [
+          "thisarivson/nlp-hw02-compact-cache-verified/2"
+        ],
+        "competition_sources": [],
+        "machine_shape": "NvidiaTeslaT4"
+      },
+      "limits": {
+        "session_timeout_seconds": 43200,
+        "kind": "l2",
+        "budget_seconds": 39600,
+        "watchdog_exit_seconds": 41040
+      }
+    },
+    "l2_gpu_smoke": {
+      "notebook_sha256": "7ed107ee75558d39cacd5cd29ac0d3090cb4bfa35915b52369f89f2c63c14462",
+      "metadata": {
+        "id": "thisarivson/nlp-hw02-l2-gpu-smoke",
+        "title": "nlp hw02 l2 gpu smoke",
+        "code_file": "nlp-hw02-l2-gpu-smoke.ipynb",
+        "language": "python",
+        "kernel_type": "notebook",
+        "is_private": true,
+        "enable_gpu": true,
+        "enable_tpu": false,
+        "enable_internet": true,
+        "dataset_sources": [
+          "thisarivson/nlp-hw02-26b-inputs",
+          "thisarivson/nlp-hw02-l1-live"
+        ],
+        "kernel_sources": [
+          "thisarivson/nlp-hw02-compact-cache-verified/2"
+        ],
+        "competition_sources": [],
+        "machine_shape": "NvidiaTeslaT4"
+      },
+      "limits": {
+        "session_timeout_seconds": 1080,
+        "kind": "l2_gpu_smoke",
+        "budget_seconds": 900,
+        "watchdog_exit_seconds": 1020
+      }
+    }
+  },
+  "GPU": false,
+  "production_push": false,
+  "smoke_push": false,
+  "private_live_precreated": {
+    "dataset": "thisarivson/nlp-hw02-l2-live",
+    "private": true,
+    "version": 1,
+    "status": "ready",
+    "created_before_training": true,
+    "training_started": false
+  },
+  "cache_versioned_status": "COMPLETE via kaggle_versioned.py status thisarivson/nlp-hw02-compact-cache-verified/2"
+}

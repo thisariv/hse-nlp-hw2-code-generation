@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "models": {
+    "C-long2x": {
+      "spec": {
+        "d_model": 512,
+        "heads": 8,
+        "encoder_layers": 6,
+        "decoder_layers": 6,
+        "swiglu_dim": 1368,
+        "vocab": 8195
+      },
+      "keys": 212,
+      "sha256": "d10bf0018d0b14fd6cc3c8b9c7121f127b5cec97057544fd63e5824253a55057",
+      "parameter_count": 53646403,
+      "FP16_resident_bytes": 107292806,
+      "QK_norm_keys": 0
+    },
+    "pilot-b": {
+      "spec": {
+        "d_model": 512,
+        "heads": 8,
+        "encoder_layers": 6,
+        "decoder_layers": 6,
+        "swiglu_dim": 1368,
+        "vocab": 8195
+      },
+      "keys": 212,
+      "sha256": "8439037720dda16dda6b73fe676860d5498bbcba4cacebc0d709bbb22db464a5",
+      "parameter_count": 53646403,
+      "FP16_resident_bytes": 107292806,
+      "QK_norm_keys": 0
+    },
+    "W600": {
+      "spec": {
+        "d_model": 768,
+        "heads": 12,
+        "encoder_layers": 6,
+        "decoder_layers": 6,
+        "swiglu_dim": 2048,
+        "vocab": 8195,
+        "qk_norm": "layernorm"
+      },
+      "keys": 284,
+      "sha256": "777b21996352df7c489af4efc17f6b8922ff6e005775f0f601d12143c8c1496c",
+      "parameter_count": 113426435,
+      "FP16_resident_bytes": 226852870,
+      "QK_norm_keys": 72
+    }
+  },
+  "mixed_resident_bytes": 441438482,
+  "W_self_KV_1024_cap512_bytes": 9663676416,
+  "actual_GPU_peak": "measured by cold run"
+}

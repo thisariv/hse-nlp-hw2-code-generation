@@ -1,0 +1,14 @@
+{
+  "nlp-hw02-kaggle-l4": {
+    "passed": true,
+    "actual_worker_deadline_seconds": 37380.0,
+    "actual_hard_deadline_seconds": 37800.0,
+    "legacy_3h40_ceiling_overridden": true
+  },
+  "nlp-hw02-l4-gpu-smoke": {
+    "passed": true,
+    "actual_worker_deadline_seconds": 900.0,
+    "actual_hard_deadline_seconds": 1020.0,
+    "legacy_3h40_ceiling_overridden": true
+  }
+}

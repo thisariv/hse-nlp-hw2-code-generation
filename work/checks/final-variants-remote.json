@@ -1,0 +1,29 @@
+{
+  "ref": "friend1/nlp-hw02-variants",
+  "version": 1,
+  "checked_at_utc": "2026-10-20T17:16:46.917784+00:00",
+  "read_only": true,
+  "notebook_sha256": "8a50a626ee602575ccc348871c7b1344905f7a897b0eebaa1240d54c8dd6bca7",
+  "remote_notebook_sha256": "c1edd6d1bd4ccc5e928685429f403b4a02f5089dcf1b4581120e52465167d62a",
+  "code_cells_sha256": [
+    "0d932530edca88476cfba33fc89f983b8a3d3ad65f8a6b63466b617a26a57afb",
+    "ffcd87c2902dc7d4e5446b8f562b9d7cd6c67fe06f471eb69dd1309fd3c553d3",
+    "cdbd1e05307a6a2dbae9f341b0823d50d96a6c5efd9a0a9adaebf1a140500949"
+  ],
+  "private": true,
+  "exact_code_parity": true,
+  "current_version": 1,
+  "kernel_sources": [
+    "friend1/nlp-hw02-kaggle-p1",
+    "friend1/nlp-hw02-b6",
+    "friend1/nlp-hw02-b7"
+  ],
+  "bundle_pinned_kernel_sources": [
+    "friend1/nlp-hw02-b6/1",
+    "friend1/nlp-hw02-b7/1",
+    "friend1/nlp-hw02-kaggle-p1/3"
+  ],
+  "machine_shape": "NvidiaTeslaT4",
+  "enable_internet": false,
+  "metadata_source_versions": "API omits version suffixes; executed weight SHA checked separately"
+}

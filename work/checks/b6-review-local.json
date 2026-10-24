@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "B6_tests": 12,
+  "historical_tests": 141,
+  "historical_skipped": 1,
+  "training_sources_unchanged": true,
+  "files": {
+    "b6_review_api.py": "b354d07232a9db973b8b320b59c420472db0a0861b2660fd3217f1be35e65c98",
+    "b6_tests.py": "0814b08dc4dfd577d054342ebb1a23f8183213c4c7371e7365354f59b8bd697d",
+    "b6_static_check.py": "0bd43a258c872d435a67a52341c5dc564d7d302803ee7f97ff3db2b3d0dffab6",
+    "b6_review_output.py": "280fd79327d91dbe2f733f08115ae7d6bbbc942f4a4c03c09d06d994554489d4",
+    "b6_review_extra_output.py": "43defffee0e92d1ff70357f07a719a3e0b042035c536ae844c094e475f5c7001"
+  }
+}

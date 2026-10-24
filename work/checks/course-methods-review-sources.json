@@ -1,0 +1,1348 @@
+{
+  "date": "2026-10-12",
+  "course_branch": "2026",
+  "course_commit": "afb4290ba2155fc826758253ec46fcb368edd49c",
+  "repository_head_at_start": "8dc6f3e2da564dd68ed43291298cd0e592fd67d1",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1491,
+      "git_blob_sha1": "d58d7e4cfb4ad0a5fe5852dffa263d0f5006012e",
+      "sha256": "4a9ec38f835ce946137188e5bd17ef5e017cef0c5d150764312604a2f770d71a",
+      "url": "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/README.md"
+    },
+    {
+      "path": "homeworks/hw1_n_gram_generaiton.ipynb",
+      "bytes": 22203,
+      "git_blob_sha1": "2e671169c06c9ec9cc0c8ca82173678fd21c9afa",
+      "sha256": "65de943e0aca1d6dbbb1e6e1d43a540623cd4a7ef99b49e74a198e03bab35073",
+      "url": "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/homeworks/hw1_n_gram_generaiton.ipynb",
+      "cells": 24
+    },
+    {
+      "path": "homeworks/hw2_code_generation.md",
+      "bytes": 7882,
+      "git_blob_sha1": "d6aba844aa2722bf49ca03fcc4207d8d9d89ad19",
+      "sha256": "9381b7ab7b5d2cab501095c68a59240a3d2893506958f0e2159683c5d905ae75",
+      "url": "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/homeworks/hw2_code_generation.md"
+    },
+    {
+      "path": "week01_classification_generation/lecture1.pdf",
+      "bytes": 2628398,
+      "git_blob_sha1": "9e1fea2972731bcb03a3f84e0eea4003f44debdc",
+      "sha256": "abc70902362ccc47e95dbc57d27987e68c148b5dcb19dd932daef5166fac1537",
+      "url": "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week01_classification_generation/lecture1.pdf",
+      "pages": 86
+    },
+    {
+      "path": "week01_classification_generation/seminar1.ipynb",
+      "bytes": 433379,
+      "git_blob_sha1": "2894f9f658f2f9661afa88c509781bfc5cdef6b3",
+      "sha256": "59cab8f21cfc49af1a06511cc0b9762208ee1d416be286f0c28c0b154727552a",
+      "url": "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week01_classification_generation/seminar1.ipynb",
+      "cells": 78
+    },
+    {
+      "path": "week02_transformer/lecture2.pdf",
+      "bytes": 1122503,
+      "git_blob_sha1": "e3d680de48b1b058caf9ae398edd223a2f2b9209",
+      "sha256": "5fdaf8a26426b11ab7a5ea5454251314dc6816ec1c79c2bdf02c664a408a6ca7",
+      "url": "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week02_transformer/lecture2.pdf",
+      "pages": 49
+    },
+    {
+      "path": "week02_transformer/seminar2.ipynb",
+      "bytes": 1223103,
+      "git_blob_sha1": "4c5e3ea043c578593a7d658563490327bf1ed4a9",
+      "sha256": "7cacf02c7b9a7a33b846fea1400787f2e401e6d73601783e9de0c70b6dd2c2f1",
+      "url": "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week02_transformer/seminar2.ipynb",
+      "cells": 111
+    },
+    {
+      "path": "week03_bert_gpt/lecture3.pdf",
+      "bytes": 18159535,
+      "git_blob_sha1": "c104d0331bc3386982ebd19c063086092c1df465",
+      "sha256": "1f6968c9787b0804f5d0d8c3f7ee65be4a5fd3584caa6762650f313b49df9882",
+      "url": "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week03_bert_gpt/lecture3.pdf",
+      "pages": 47
+    },
+    {
+      "path": "week03_bert_gpt/seminar3.ipynb",
+      "bytes": 332400,
+      "git_blob_sha1": "8114339b9d6f1e12e8a3a6200dbab47254fcd7fe",
+      "sha256": "3b57abf6527f55d2c0e28de3e8ee5f4985da79eabeec29c448b41939074c3b19",
+      "url": "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week03_bert_gpt/seminar3.ipynb",
+      "cells": 72
+    },
+    {
+      "path": "week04_modern_llms/lecture4.pdf",
+      "bytes": 6779613,
+      "git_blob_sha1": "90d1ee46471a2fc275c64231826a66b5a838b34b",
+      "sha256": "a915f6dcc20c8f60e46595bfe9a444a90bc0cca22af2461a52dd87a371741ca1",
+      "url": "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/lecture4.pdf",
+      "pages": 52
+    },
+    {
+      "path": "week04_modern_llms/seminar4.pdf",
+      "bytes": 8414577,
+      "git_blob_sha1": "9df4f7ff7c2df62764add2e93a7b1cd8234a97ec",
+      "sha256": "aea8e783ddbcf766b78683fde761d806780b56d34e370fff71ceaa7b15a5d86c",
+      "url": "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/seminar4.pdf",
+      "pages": 45
+    },
+    {
+      "path": "week05_peft/lecture5.pdf",
+      "bytes": 3440273,
+      "git_blob_sha1": "c6b4e2795335fbfcdcf4196ae66f3e9d2a1a0ca1",
+      "sha256": "e16fb9cf564d7667384c332f93c678a652e667042ab3ed0508d455bdec53239a",
+      "url": "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week05_peft/lecture5.pdf",
+      "pages": 30
+    },
+    {
+      "path": "week05_peft/seminar5.ipynb",
+      "bytes": 1155512,
+      "git_blob_sha1": "de922a0615a78e8526b1b4589f46b586db9182bc",
+      "sha256": "2c2c4e0dc1c259f0bcd60279ace3948e1805dae3a48009e4a4f8c9c76e2a2fe5",
+      "url": "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week05_peft/seminar5.ipynb",
+      "cells": 63
+    },
+    {
+      "path": "week06_speed_up/lecture6.pdf",
+      "bytes": 3699488,
+      "git_blob_sha1": "f02e52a688fe4d22642b2f296a4f73bdb08651c9",
+      "sha256": "00851e4dc1227d956ffa375af4e6b420dc7e4a8d9e18c0a577134cb3270584a2",
+      "url": "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week06_speed_up/lecture6.pdf",
+      "pages": 56
+    },
+    {
+      "path": "week06_speed_up/seminar6.ipynb",
+      "bytes": 114361,
+      "git_blob_sha1": "42fa59f3d9367a3092cbbe7be701789abf6dd04f",
+      "sha256": "f2f9de66d117883775bf08d852281d3a1dc2baa2c677ea4c63fc5dd691fdd183",
+      "url": "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week06_speed_up/seminar6.ipynb",
+      "cells": 70
+    }
+  ],
+  "summary": {
+    "files": 15,
+    "pdf_pages": 365,
+    "notebook_cells": 418,
+    "method_families_or_grouped_variants": 79,
+    "seminar4_all_45_pages_visually_reviewed": true,
+    "video_recordings_transcribed": false,
+    "gpu_runs": 0,
+    "kaggle_calls": 0
+  },
+  "primary_source_receipts": [
+    {
+      "id": "course",
+      "url": "https://github.com/ashaba1in/hse-nlp/tree/afb4290ba2155fc826758253ec46fcb368edd49c",
+      "kind": "course_local_snapshot",
+      "read": true
+    },
+    {
+      "id": "l1",
+      "url": "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week01_classification_generation/lecture1.pdf",
+      "kind": "course_local_snapshot",
+      "read": true
+    },
+    {
+      "id": "s1",
+      "url": "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week01_classification_generation/seminar1.ipynb",
+      "kind": "course_local_snapshot",
+      "read": true
+    },
+    {
+      "id": "hw1",
+      "url": "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/homeworks/hw1_n_gram_generaiton.ipynb",
+      "kind": "course_local_snapshot",
+      "read": true
+    },
+    {
+      "id": "l2",
+      "url": "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week02_transformer/lecture2.pdf",
+      "kind": "course_local_snapshot",
+      "read": true
+    },
+    {
+      "id": "s2",
+      "url": "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week02_transformer/seminar2.ipynb",
+      "kind": "course_local_snapshot",
+      "read": true
+    },
+    {
+      "id": "l3",
+      "url": "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week03_bert_gpt/lecture3.pdf",
+      "kind": "course_local_snapshot",
+      "read": true
+    },
+    {
+      "id": "s3",
+      "url": "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week03_bert_gpt/seminar3.ipynb",
+      "kind": "course_local_snapshot",
+      "read": true
+    },
+    {
+      "id": "l4",
+      "url": "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/lecture4.pdf",
+      "kind": "course_local_snapshot",
+      "read": true
+    },
+    {
+      "id": "s4",
+      "url": "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/seminar4.pdf",
+      "kind": "course_local_snapshot",
+      "read": true
+    },
+    {
+      "id": "l5",
+      "url": "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week05_peft/lecture5.pdf",
+      "kind": "course_local_snapshot",
+      "read": true
+    },
+    {
+      "id": "s5",
+      "url": "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week05_peft/seminar5.ipynb",
+      "kind": "course_local_snapshot",
+      "read": true
+    },
+    {
+      "id": "l6",
+      "url": "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week06_speed_up/lecture6.pdf",
+      "kind": "course_local_snapshot",
+      "read": true
+    },
+    {
+      "id": "s6",
+      "url": "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week06_speed_up/seminar6.ipynb",
+      "kind": "course_local_snapshot",
+      "read": true
+    },
+    {
+      "id": "hw2",
+      "url": "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/homeworks/hw2_code_generation.md",
+      "kind": "course_local_snapshot",
+      "read": true
+    },
+    {
+      "id": "transformer",
+      "url": "https://arxiv.org/abs/1706.03762",
+      "resolved_url": "https://arxiv.org/abs/1706.03762",
+      "status": 200,
+      "bytes": 43644,
+      "title": "Attention Is All You Need"
+    },
+    {
+      "id": "tips",
+      "url": "https://arxiv.org/abs/1804.00247",
+      "resolved_url": "https://arxiv.org/abs/1804.00247",
+      "status": 200,
+      "bytes": 42587,
+      "title": "Training Tips for the Transformer Model"
+    },
+    {
+      "id": "olmo",
+      "url": "https://arxiv.org/abs/2501.00656",
+      "resolved_url": "https://arxiv.org/abs/2501.00656",
+      "status": 200,
+      "bytes": 48717,
+      "title": "2 OLMo 2 Furious"
+    },
+    {
+      "id": "dedup",
+      "url": "https://aclanthology.org/2022.acl-long.577/",
+      "resolved_url": "https://aclanthology.org/2022.acl-long.577/",
+      "status": 200,
+      "bytes": 42909,
+      "title": "Deduplicating Training Data Makes Language Models Better - ACL Anthology"
+    },
+    {
+      "id": "smooth",
+      "url": "https://arxiv.org/abs/1512.00567",
+      "resolved_url": "https://arxiv.org/abs/1512.00567",
+      "status": 200,
+      "bytes": 43047,
+      "title": "Rethinking the Inception Architecture for Computer Vision"
+    },
+    {
+      "id": "smooth-analysis",
+      "url": "https://arxiv.org/abs/1906.02629",
+      "resolved_url": "https://arxiv.org/abs/1906.02629",
+      "status": 200,
+      "bytes": 43562,
+      "title": "When Does Label Smoothing Help?"
+    },
+    {
+      "id": "batch-growth",
+      "url": "https://arxiv.org/abs/1711.00489",
+      "resolved_url": "https://arxiv.org/abs/1711.00489",
+      "status": 200,
+      "bytes": 42881,
+      "title": "Don't Decay the Learning Rate, Increase the Batch Size"
+    },
+    {
+      "id": "adafactor",
+      "url": "https://arxiv.org/abs/1804.04235",
+      "resolved_url": "https://arxiv.org/abs/1804.04235",
+      "status": 200,
+      "bytes": 42739,
+      "title": "Adafactor: Adaptive Learning Rates with Sublinear Memory Cost"
+    },
+    {
+      "id": "lamb",
+      "url": "https://arxiv.org/abs/1904.00962",
+      "resolved_url": "https://arxiv.org/abs/1904.00962",
+      "status": 200,
+      "bytes": 46641,
+      "title": "Large Batch Optimization for Deep Learning: Training BERT in 76 minutes"
+    },
+    {
+      "id": "soups",
+      "url": "https://arxiv.org/abs/2203.05482",
+      "resolved_url": "https://arxiv.org/abs/2203.05482",
+      "status": 200,
+      "bytes": 45475,
+      "title": "Model soups: averaging weights of multiple fine-tuned models improves accuracy without increasing inference time"
+    },
+    {
+      "id": "shaw",
+      "url": "https://aclanthology.org/N18-2074/",
+      "resolved_url": "https://aclanthology.org/N18-2074/",
+      "status": 200,
+      "bytes": 40983,
+      "title": "Self-Attention with Relative Position Representations - ACL Anthology"
+    },
+    {
+      "id": "t5",
+      "url": "https://arxiv.org/abs/1910.10683",
+      "resolved_url": "https://arxiv.org/abs/1910.10683",
+      "status": 200,
+      "bytes": 44633,
+      "title": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer"
+    },
+    {
+      "id": "rope",
+      "url": "https://arxiv.org/abs/2104.09864",
+      "resolved_url": "https://arxiv.org/abs/2104.09864",
+      "status": 200,
+      "bytes": 43899,
+      "title": "RoFormer: Enhanced Transformer with Rotary Position Embedding"
+    },
+    {
+      "id": "pi",
+      "url": "https://arxiv.org/abs/2306.15595",
+      "resolved_url": "https://arxiv.org/abs/2306.15595",
+      "status": 200,
+      "bytes": 42075,
+      "title": "Extending Context Window of Large Language Models via Positional Interpolation"
+    },
+    {
+      "id": "alibi",
+      "url": "https://arxiv.org/abs/2108.12409",
+      "resolved_url": "https://arxiv.org/abs/2108.12409",
+      "status": 200,
+      "bytes": 41821,
+      "title": "Train Short, Test Long: Attention with Linear Biases Enables Input Length Extrapolation"
+    },
+    {
+      "id": "rms",
+      "url": "https://arxiv.org/abs/1910.07467",
+      "resolved_url": "https://arxiv.org/abs/1910.07467",
+      "status": 200,
+      "bytes": 42837,
+      "title": "Root Mean Square Layer Normalization"
+    },
+    {
+      "id": "mqa",
+      "url": "https://arxiv.org/abs/1911.02150",
+      "resolved_url": "https://arxiv.org/abs/1911.02150",
+      "status": 200,
+      "bytes": 40572,
+      "title": "Fast Transformer Decoding: One Write-Head is All You Need"
+    },
+    {
+      "id": "gqa",
+      "url": "https://arxiv.org/abs/2305.13245",
+      "resolved_url": "https://arxiv.org/abs/2305.13245",
+      "status": 200,
+      "bytes": 41223,
+      "title": "GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints"
+    },
+    {
+      "id": "mistral",
+      "url": "https://arxiv.org/abs/2310.06825",
+      "resolved_url": "https://arxiv.org/abs/2310.06825",
+      "status": 200,
+      "bytes": 42369,
+      "title": "Mistral 7B"
+    },
+    {
+      "id": "glu",
+      "url": "https://arxiv.org/abs/2002.05202",
+      "resolved_url": "https://arxiv.org/abs/2002.05202",
+      "status": 200,
+      "bytes": 40173,
+      "title": "GLU Variants Improve Transformer"
+    },
+    {
+      "id": "moe",
+      "url": "https://arxiv.org/abs/1701.06538",
+      "resolved_url": "https://arxiv.org/abs/1701.06538",
+      "status": 200,
+      "bytes": 44764,
+      "title": "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer"
+    },
+    {
+      "id": "switch",
+      "url": "https://www.jmlr.org/papers/v23/21-0998.html",
+      "resolved_url": "https://www.jmlr.org/papers/v23/21-0998.html",
+      "status": 200,
+      "bytes": 6261,
+      "title": "Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity"
+    },
+    {
+      "id": "albert",
+      "url": "https://arxiv.org/abs/1909.11942",
+      "resolved_url": "https://arxiv.org/abs/1909.11942",
+      "status": 200,
+      "bytes": 43085,
+      "title": "ALBERT: A Lite BERT for Self-supervised Learning of Language Representations"
+    },
+    {
+      "id": "tying",
+      "url": "https://arxiv.org/abs/1608.05859",
+      "resolved_url": "https://arxiv.org/abs/1608.05859",
+      "status": 200,
+      "bytes": 40331,
+      "title": "Using the Output Embedding to Improve Language Models"
+    },
+    {
+      "id": "instability",
+      "url": "https://arxiv.org/abs/2309.14322",
+      "resolved_url": "https://arxiv.org/abs/2309.14322",
+      "status": 200,
+      "bytes": 45111,
+      "title": "Small-scale proxies for large-scale Transformer training instabilities"
+    },
+    {
+      "id": "wordpiece",
+      "url": "https://huggingface.co/learn/llm-course/en/chapter6/6",
+      "resolved_url": "https://huggingface.co/learn/llm-course/en/chapter6/6",
+      "status": 200,
+      "bytes": 192041,
+      "title": "WordPiece tokenization · Hugging Face"
+    },
+    {
+      "id": "bpe",
+      "url": "https://aclanthology.org/P16-1162/",
+      "resolved_url": "https://aclanthology.org/P16-1162/",
+      "status": 200,
+      "bytes": 35948,
+      "title": "Neural Machine Translation of Rare Words with Subword Units - ACL Anthology"
+    },
+    {
+      "id": "gnmt",
+      "url": "https://arxiv.org/abs/1609.08144",
+      "resolved_url": "https://arxiv.org/abs/1609.08144",
+      "status": 200,
+      "bytes": 49907,
+      "title": "Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation"
+    },
+    {
+      "id": "nucleus",
+      "url": "https://arxiv.org/abs/1904.09751",
+      "resolved_url": "https://arxiv.org/abs/1904.09751",
+      "status": 200,
+      "bytes": 42332,
+      "title": "The Curious Case of Neural Text Degeneration"
+    },
+    {
+      "id": "distill",
+      "url": "https://arxiv.org/abs/1503.02531",
+      "resolved_url": "https://arxiv.org/abs/1503.02531",
+      "status": 200,
+      "bytes": 41301,
+      "title": "Distilling the Knowledge in a Neural Network"
+    },
+    {
+      "id": "speculative",
+      "url": "https://arxiv.org/abs/2211.17192",
+      "resolved_url": "https://arxiv.org/abs/2211.17192",
+      "status": 200,
+      "bytes": 41908,
+      "title": "Fast Inference from Transformers via Speculative Decoding"
+    },
+    {
+      "id": "gpt3",
+      "url": "https://arxiv.org/abs/2005.14165",
+      "resolved_url": "https://arxiv.org/abs/2005.14165",
+      "status": 200,
+      "bytes": 49045,
+      "title": "Language Models are Few-Shot Learners"
+    },
+    {
+      "id": "checkpointing",
+      "url": "https://pytorch.org/blog/activation-checkpointing-techniques/",
+      "resolved_url": "https://pytorch.org/blog/activation-checkpointing-techniques/",
+      "status": 200,
+      "bytes": 204819,
+      "title": "Current and New Activation Checkpointing Techniques in PyTorch - PyTorch"
+    },
+    {
+      "id": "async-checkpoint",
+      "url": "https://docs.pytorch.org/tutorials/recipes/distributed_async_checkpoint_recipe.html",
+      "error": "HTTP Error 403: Forbidden",
+      "fallback": "Public official page successfully opened via web tool after urllib HTTP403.",
+      "verified_via_web": true
+    },
+    {
+      "id": "playbook",
+      "url": "https://huggingface.co/spaces/nanotron/ultrascale-playbook",
+      "resolved_url": "https://huggingface.co/spaces/nanotron/ultrascale-playbook",
+      "status": 200,
+      "bytes": 22977,
+      "title": "The Ultra-Scale Playbook - a Hugging Face Space by nanotron",
+      "article_source_url": "https://huggingface.co/spaces/nanotron/ultrascale-playbook/raw/main/src/index.html",
+      "article_source_sha256": "bb018234c65bb0de02d451319df3049fda2398ab9cdcad7a1290fd00afcee567",
+      "relevant_sections_read": [
+        "parallelism",
+        "memory accounting",
+        "fusion",
+        "activation recomputation"
+      ]
+    },
+    {
+      "id": "ddp",
+      "url": "https://docs.pytorch.org/docs/stable/notes/ddp.html",
+      "error": "HTTP Error 403: Forbidden",
+      "fallback": "Public official page successfully opened via web tool after urllib HTTP403.",
+      "verified_via_web": true
+    },
+    {
+      "id": "zero",
+      "url": "https://arxiv.org/abs/1910.02054",
+      "resolved_url": "https://arxiv.org/abs/1910.02054",
+      "status": 200,
+      "bytes": 44751,
+      "title": "ZeRO: Memory Optimizations Toward Training Trillion Parameter Models"
+    },
+    {
+      "id": "fsdp",
+      "url": "https://docs.pytorch.org/tutorials/intermediate/FSDP_tutorial.html",
+      "error": "HTTP Error 403: Forbidden",
+      "fallback": "Public official page successfully opened via web tool after urllib HTTP403.",
+      "verified_via_web": true
+    },
+    {
+      "id": "megatron",
+      "url": "https://arxiv.org/abs/1909.08053",
+      "resolved_url": "https://arxiv.org/abs/1909.08053",
+      "status": 200,
+      "bytes": 44456,
+      "title": "Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism"
+    },
+    {
+      "id": "gpipe",
+      "url": "https://arxiv.org/abs/1811.06965",
+      "resolved_url": "https://arxiv.org/abs/1811.06965",
+      "status": 200,
+      "bytes": 45105,
+      "title": "GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism"
+    },
+    {
+      "id": "ring",
+      "url": "https://arxiv.org/abs/2310.01889",
+      "resolved_url": "https://arxiv.org/abs/2310.01889",
+      "status": 200,
+      "bytes": 41535,
+      "title": "Ring Attention with Blockwise Transformers for Near-Infinite Context"
+    },
+    {
+      "id": "gshard",
+      "url": "https://arxiv.org/abs/2006.16668",
+      "resolved_url": "https://arxiv.org/abs/2006.16668",
+      "status": 200,
+      "bytes": 43230,
+      "title": "GShard: Scaling Giant Models with Conditional Computation and Automatic Sharding"
+    },
+    {
+      "id": "bnb",
+      "url": "https://huggingface.co/docs/bitsandbytes/en/optimizers",
+      "resolved_url": "https://huggingface.co/docs/bitsandbytes/en/optimizers",
+      "status": 200,
+      "bytes": 108940,
+      "title": "8-bit optimizers · Hugging Face"
+    },
+    {
+      "id": "llmint8",
+      "url": "https://arxiv.org/abs/2208.07339",
+      "resolved_url": "https://arxiv.org/abs/2208.07339",
+      "status": 200,
+      "bytes": 43612,
+      "title": "LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale"
+    },
+    {
+      "id": "ort-quant",
+      "url": "https://onnxruntime.ai/docs/performance/model-optimizations/quantization.html",
+      "resolved_url": "https://onnxruntime.ai/docs/performance/model-optimizations/quantization.html",
+      "status": 200,
+      "bytes": 67813,
+      "title": "Quantize ONNX models | onnxruntime"
+    },
+    {
+      "id": "qbert",
+      "url": "https://arxiv.org/abs/1909.05840",
+      "resolved_url": "https://arxiv.org/abs/1909.05840",
+      "status": 200,
+      "bytes": 44388,
+      "title": "Q-BERT: Hessian Based Ultra Low Precision Quantization of BERT"
+    },
+    {
+      "id": "qat",
+      "url": "https://arxiv.org/abs/1712.05877",
+      "resolved_url": "https://arxiv.org/abs/1712.05877",
+      "status": 200,
+      "bytes": 43217,
+      "title": "Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference"
+    },
+    {
+      "id": "zeroquant",
+      "url": "https://arxiv.org/abs/2206.01861",
+      "resolved_url": "https://arxiv.org/abs/2206.01861",
+      "status": 200,
+      "bytes": 42886,
+      "title": "ZeroQuant: Efficient and Affordable Post-Training Quantization for Large-Scale Transformers"
+    },
+    {
+      "id": "gptq",
+      "url": "https://arxiv.org/abs/2210.17323",
+      "resolved_url": "https://arxiv.org/abs/2210.17323",
+      "status": 200,
+      "bytes": 44603,
+      "title": "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers"
+    },
+    {
+      "id": "awq",
+      "url": "https://arxiv.org/abs/2306.00978",
+      "resolved_url": "https://arxiv.org/abs/2306.00978",
+      "status": 200,
+      "bytes": 44966,
+      "title": "AWQ: Activation-aware Weight Quantization for LLM Compression and Acceleration"
+    },
+    {
+      "id": "lpft",
+      "url": "https://arxiv.org/abs/2202.10054",
+      "resolved_url": "https://arxiv.org/abs/2202.10054",
+      "status": 200,
+      "bytes": 43508,
+      "title": "Fine-Tuning can Distort Pretrained Features and Underperform Out-of-Distribution"
+    },
+    {
+      "id": "adapters",
+      "url": "https://arxiv.org/abs/1902.00751",
+      "resolved_url": "https://arxiv.org/abs/1902.00751",
+      "status": 200,
+      "bytes": 43348,
+      "title": "Parameter-Efficient Transfer Learning for NLP"
+    },
+    {
+      "id": "prompt",
+      "url": "https://arxiv.org/abs/2104.08691",
+      "resolved_url": "https://arxiv.org/abs/2104.08691",
+      "status": 200,
+      "bytes": 42343,
+      "title": "The Power of Scale for Parameter-Efficient Prompt Tuning"
+    },
+    {
+      "id": "prefix",
+      "url": "https://arxiv.org/abs/2101.00190",
+      "resolved_url": "https://arxiv.org/abs/2101.00190",
+      "status": 200,
+      "bytes": 40471,
+      "title": "Prefix-Tuning: Optimizing Continuous Prompts for Generation"
+    },
+    {
+      "id": "lora",
+      "url": "https://arxiv.org/abs/2106.09685",
+      "resolved_url": "https://arxiv.org/abs/2106.09685",
+      "status": 200,
+      "bytes": 44248,
+      "title": "LoRA: Low-Rank Adaptation of Large Language Models"
+    },
+    {
+      "id": "bitfit",
+      "url": "https://arxiv.org/abs/2106.10199",
+      "resolved_url": "https://arxiv.org/abs/2106.10199",
+      "status": 200,
+      "bytes": 42122,
+      "title": "BitFit: Simple Parameter-efficient Fine-tuning for Transformer-based Masked Language-models"
+    },
+    {
+      "id": "qlora",
+      "url": "https://arxiv.org/abs/2305.14314",
+      "resolved_url": "https://arxiv.org/abs/2305.14314",
+      "status": 200,
+      "bytes": 44173,
+      "title": "QLoRA: Efficient Finetuning of Quantized LLMs"
+    },
+    {
+      "id": "bert",
+      "url": "https://aclanthology.org/N19-1423/",
+      "resolved_url": "https://aclanthology.org/N19-1423/",
+      "status": 200,
+      "bytes": 42305,
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding - ACL Anthology"
+    },
+    {
+      "id": "roberta",
+      "url": "https://arxiv.org/abs/1907.11692",
+      "resolved_url": "https://arxiv.org/abs/1907.11692",
+      "status": 200,
+      "bytes": 42170,
+      "title": "RoBERTa: A Robustly Optimized BERT Pretraining Approach"
+    },
+    {
+      "id": "electra",
+      "url": "https://arxiv.org/abs/2003.10555",
+      "resolved_url": "https://arxiv.org/abs/2003.10555",
+      "status": 200,
+      "bytes": 43580,
+      "title": "ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators"
+    },
+    {
+      "id": "tinybert",
+      "url": "https://arxiv.org/abs/1909.10351",
+      "resolved_url": "https://arxiv.org/abs/1909.10351",
+      "status": 200,
+      "bytes": 44770,
+      "title": "TinyBERT: Distilling BERT for Natural Language Understanding"
+    },
+    {
+      "id": "packing",
+      "url": "https://huggingface.co/docs/trl/sft_trainer",
+      "title": "SFT Trainer: sequence packing",
+      "verified_via_web": true
+    },
+    {
+      "id": "pinmem",
+      "url": "https://docs.pytorch.org/tutorials/intermediate/pinmem_nonblock.html",
+      "title": "A guide on good usage of non_blocking and pin_memory",
+      "verified_via_web": true
+    },
+    {
+      "id": "offload",
+      "url": "https://www.deepspeed.ai/tutorials/zero-offload/",
+      "title": "ZeRO-Offload",
+      "verified_via_web": true
+    }
+  ],
+  "method_sources": [
+    {
+      "id": "D01",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/seminar4.pdf",
+        "https://arxiv.org/abs/2501.00656"
+      ]
+    },
+    {
+      "id": "D02",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/seminar4.pdf",
+        "https://arxiv.org/abs/2501.00656"
+      ]
+    },
+    {
+      "id": "D03",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week03_bert_gpt/lecture3.pdf",
+        "https://aclanthology.org/2022.acl-long.577/"
+      ]
+    },
+    {
+      "id": "D04",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week03_bert_gpt/lecture3.pdf",
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/seminar4.pdf",
+        "https://arxiv.org/abs/2501.00656"
+      ]
+    },
+    {
+      "id": "D05",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week02_transformer/lecture2.pdf",
+        "https://arxiv.org/abs/1706.03762",
+        "https://arxiv.org/abs/1512.00567",
+        "https://arxiv.org/abs/1906.02629"
+      ]
+    },
+    {
+      "id": "D06",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week02_transformer/lecture2.pdf",
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week03_bert_gpt/lecture3.pdf",
+        "https://arxiv.org/abs/1706.03762",
+        "https://arxiv.org/abs/1804.00247"
+      ]
+    },
+    {
+      "id": "D07",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week03_bert_gpt/lecture3.pdf",
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/seminar4.pdf",
+        "https://arxiv.org/abs/1804.00247",
+        "https://arxiv.org/abs/1711.00489"
+      ]
+    },
+    {
+      "id": "D08",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week03_bert_gpt/lecture3.pdf",
+        "https://arxiv.org/abs/1706.03762",
+        "https://arxiv.org/abs/1804.00247"
+      ]
+    },
+    {
+      "id": "D09",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week03_bert_gpt/lecture3.pdf",
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/seminar4.pdf",
+        "https://arxiv.org/abs/2501.00656"
+      ]
+    },
+    {
+      "id": "D10",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week03_bert_gpt/lecture3.pdf",
+        "https://arxiv.org/abs/1804.04235"
+      ]
+    },
+    {
+      "id": "D11",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week03_bert_gpt/lecture3.pdf",
+        "https://arxiv.org/abs/1904.00962"
+      ]
+    },
+    {
+      "id": "D12",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week02_transformer/lecture2.pdf",
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week03_bert_gpt/lecture3.pdf",
+        "https://arxiv.org/abs/1706.03762",
+        "https://arxiv.org/abs/1804.00247"
+      ]
+    },
+    {
+      "id": "D13",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week03_bert_gpt/lecture3.pdf",
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/seminar4.pdf",
+        "https://arxiv.org/abs/1804.00247",
+        "https://arxiv.org/abs/2501.00656",
+        "https://arxiv.org/abs/2203.05482"
+      ]
+    },
+    {
+      "id": "A01",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week02_transformer/lecture2.pdf",
+        "https://arxiv.org/abs/1706.03762"
+      ]
+    },
+    {
+      "id": "A02",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/lecture4.pdf",
+        "https://aclanthology.org/N18-2074/"
+      ]
+    },
+    {
+      "id": "A03",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/lecture4.pdf",
+        "https://arxiv.org/abs/1910.10683"
+      ]
+    },
+    {
+      "id": "A04",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/lecture4.pdf",
+        "https://arxiv.org/abs/2104.09864"
+      ]
+    },
+    {
+      "id": "A05",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/lecture4.pdf",
+        "https://arxiv.org/abs/2306.15595"
+      ]
+    },
+    {
+      "id": "A06",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/lecture4.pdf",
+        "https://arxiv.org/abs/2108.12409"
+      ]
+    },
+    {
+      "id": "A07",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/lecture4.pdf",
+        "https://arxiv.org/abs/1910.07467"
+      ]
+    },
+    {
+      "id": "A08",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/lecture4.pdf",
+        "https://arxiv.org/abs/1910.07467"
+      ]
+    },
+    {
+      "id": "A09",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/lecture4.pdf",
+        "https://arxiv.org/abs/1911.02150"
+      ]
+    },
+    {
+      "id": "A10",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/lecture4.pdf",
+        "https://arxiv.org/abs/2305.13245"
+      ]
+    },
+    {
+      "id": "A11",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/lecture4.pdf",
+        "https://arxiv.org/abs/2310.06825"
+      ]
+    },
+    {
+      "id": "A12",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/lecture4.pdf",
+        "https://arxiv.org/abs/2002.05202"
+      ]
+    },
+    {
+      "id": "A13",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/lecture4.pdf",
+        "https://arxiv.org/abs/1701.06538",
+        "https://www.jmlr.org/papers/v23/21-0998.html"
+      ]
+    },
+    {
+      "id": "A14",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/lecture4.pdf",
+        "https://arxiv.org/abs/1701.06538"
+      ]
+    },
+    {
+      "id": "A15",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/lecture4.pdf",
+        "https://www.jmlr.org/papers/v23/21-0998.html"
+      ]
+    },
+    {
+      "id": "A16",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week03_bert_gpt/lecture3.pdf",
+        "https://arxiv.org/abs/1909.11942"
+      ]
+    },
+    {
+      "id": "A17",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week03_bert_gpt/lecture3.pdf",
+        "https://arxiv.org/abs/1909.11942"
+      ]
+    },
+    {
+      "id": "A18",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week02_transformer/lecture2.pdf",
+        "https://arxiv.org/abs/1706.03762",
+        "https://arxiv.org/abs/1608.05859"
+      ]
+    },
+    {
+      "id": "A19",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/seminar4.pdf",
+        "https://arxiv.org/abs/2501.00656",
+        "https://arxiv.org/abs/2309.14322"
+      ]
+    },
+    {
+      "id": "A20",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/seminar4.pdf",
+        "https://arxiv.org/abs/2501.00656"
+      ]
+    },
+    {
+      "id": "A21",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/seminar4.pdf",
+        "https://arxiv.org/abs/2501.00656",
+        "https://arxiv.org/abs/2309.14322"
+      ]
+    },
+    {
+      "id": "A22",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/seminar4.pdf",
+        "https://arxiv.org/abs/2501.00656"
+      ]
+    },
+    {
+      "id": "A23",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week02_transformer/lecture2.pdf",
+        "https://arxiv.org/abs/1706.03762"
+      ]
+    },
+    {
+      "id": "T01",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week01_classification_generation/seminar1.ipynb",
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week02_transformer/seminar2.ipynb",
+        "https://huggingface.co/learn/llm-course/en/chapter6/6"
+      ]
+    },
+    {
+      "id": "T02",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week01_classification_generation/seminar1.ipynb",
+        "https://aclanthology.org/P16-1162/"
+      ]
+    },
+    {
+      "id": "T03",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week02_transformer/seminar2.ipynb",
+        "https://aclanthology.org/P16-1162/",
+        "https://arxiv.org/abs/1609.08144"
+      ]
+    },
+    {
+      "id": "I01",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week02_transformer/lecture2.pdf",
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week02_transformer/seminar2.ipynb",
+        "https://arxiv.org/abs/1609.08144"
+      ]
+    },
+    {
+      "id": "I02",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week02_transformer/lecture2.pdf",
+        "https://arxiv.org/abs/1904.09751"
+      ]
+    },
+    {
+      "id": "I03",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week02_transformer/lecture2.pdf",
+        "https://arxiv.org/abs/1904.09751"
+      ]
+    },
+    {
+      "id": "I04",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week02_transformer/lecture2.pdf",
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week03_bert_gpt/lecture3.pdf",
+        "https://arxiv.org/abs/1609.08144",
+        "https://arxiv.org/abs/1804.00247"
+      ]
+    },
+    {
+      "id": "I05",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week02_transformer/lecture2.pdf",
+        "https://arxiv.org/abs/1706.03762",
+        "https://arxiv.org/abs/1503.02531"
+      ]
+    },
+    {
+      "id": "I06",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week06_speed_up/lecture6.pdf",
+        "https://arxiv.org/abs/2211.17192"
+      ]
+    },
+    {
+      "id": "I07",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week01_classification_generation/lecture1.pdf",
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/homeworks/hw1_n_gram_generaiton.ipynb",
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week06_speed_up/lecture6.pdf",
+        "https://arxiv.org/abs/2211.17192"
+      ]
+    },
+    {
+      "id": "I08",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week03_bert_gpt/lecture3.pdf",
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week05_peft/lecture5.pdf",
+        "https://arxiv.org/abs/2005.14165"
+      ]
+    },
+    {
+      "id": "E01",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/seminar4.pdf",
+        "https://pytorch.org/blog/activation-checkpointing-techniques/"
+      ]
+    },
+    {
+      "id": "E02",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/seminar4.pdf",
+        "https://pytorch.org/blog/activation-checkpointing-techniques/"
+      ]
+    },
+    {
+      "id": "E03",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week06_speed_up/lecture6.pdf",
+        "https://arxiv.org/abs/2206.01861",
+        "https://arxiv.org/abs/2501.00656"
+      ]
+    },
+    {
+      "id": "E04",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/seminar4.pdf",
+        "https://docs.pytorch.org/tutorials/recipes/distributed_async_checkpoint_recipe.html",
+        "https://arxiv.org/abs/2501.00656"
+      ]
+    },
+    {
+      "id": "E05",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/seminar4.pdf",
+        "https://arxiv.org/abs/2501.00656"
+      ]
+    },
+    {
+      "id": "E06",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/seminar4.pdf",
+        "https://huggingface.co/docs/trl/sft_trainer"
+      ]
+    },
+    {
+      "id": "E07",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/seminar4.pdf",
+        "https://docs.pytorch.org/tutorials/intermediate/pinmem_nonblock.html"
+      ]
+    },
+    {
+      "id": "E08",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/seminar4.pdf",
+        "https://docs.pytorch.org/docs/stable/notes/ddp.html"
+      ]
+    },
+    {
+      "id": "E09",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/seminar4.pdf",
+        "https://arxiv.org/abs/1910.02054",
+        "https://docs.pytorch.org/tutorials/intermediate/FSDP_tutorial.html"
+      ]
+    },
+    {
+      "id": "E10",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/seminar4.pdf",
+        "https://arxiv.org/abs/1909.08053"
+      ]
+    },
+    {
+      "id": "E11",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/seminar4.pdf",
+        "https://arxiv.org/abs/1811.06965",
+        "https://huggingface.co/spaces/nanotron/ultrascale-playbook"
+      ]
+    },
+    {
+      "id": "E12",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/seminar4.pdf",
+        "https://arxiv.org/abs/2310.01889"
+      ]
+    },
+    {
+      "id": "E13",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/seminar4.pdf",
+        "https://arxiv.org/abs/2006.16668"
+      ]
+    },
+    {
+      "id": "E14",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/seminar4.pdf",
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week06_speed_up/seminar6.ipynb",
+        "https://www.deepspeed.ai/tutorials/zero-offload/",
+        "https://huggingface.co/docs/bitsandbytes/en/optimizers"
+      ]
+    },
+    {
+      "id": "Q01",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week06_speed_up/lecture6.pdf",
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week06_speed_up/seminar6.ipynb",
+        "https://arxiv.org/abs/2208.07339"
+      ]
+    },
+    {
+      "id": "Q02",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week06_speed_up/lecture6.pdf",
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week06_speed_up/seminar6.ipynb",
+        "https://onnxruntime.ai/docs/performance/model-optimizations/quantization.html",
+        "https://arxiv.org/abs/1909.05840"
+      ]
+    },
+    {
+      "id": "Q03",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week06_speed_up/lecture6.pdf",
+        "https://arxiv.org/abs/1712.05877"
+      ]
+    },
+    {
+      "id": "Q04",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week06_speed_up/lecture6.pdf",
+        "https://arxiv.org/abs/2208.07339"
+      ]
+    },
+    {
+      "id": "Q05",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week06_speed_up/lecture6.pdf",
+        "https://arxiv.org/abs/2206.01861"
+      ]
+    },
+    {
+      "id": "Q06",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week06_speed_up/lecture6.pdf",
+        "https://arxiv.org/abs/2210.17323"
+      ]
+    },
+    {
+      "id": "Q07",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week06_speed_up/lecture6.pdf",
+        "https://arxiv.org/abs/2306.00978"
+      ]
+    },
+    {
+      "id": "Q08",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week06_speed_up/lecture6.pdf",
+        "https://arxiv.org/abs/1909.05840"
+      ]
+    },
+    {
+      "id": "P01",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week05_peft/lecture5.pdf",
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week05_peft/seminar5.ipynb",
+        "https://arxiv.org/abs/2202.10054"
+      ]
+    },
+    {
+      "id": "P02",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week05_peft/lecture5.pdf",
+        "https://arxiv.org/abs/1902.00751"
+      ]
+    },
+    {
+      "id": "P03",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week05_peft/lecture5.pdf",
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week05_peft/seminar5.ipynb",
+        "https://arxiv.org/abs/2104.08691"
+      ]
+    },
+    {
+      "id": "P04",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week05_peft/lecture5.pdf",
+        "https://arxiv.org/abs/2104.08691",
+        "https://arxiv.org/abs/2101.00190"
+      ]
+    },
+    {
+      "id": "P05",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week05_peft/lecture5.pdf",
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week05_peft/seminar5.ipynb",
+        "https://arxiv.org/abs/2106.09685"
+      ]
+    },
+    {
+      "id": "P06",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week05_peft/lecture5.pdf",
+        "https://arxiv.org/abs/2106.10199"
+      ]
+    },
+    {
+      "id": "P07",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week05_peft/lecture5.pdf",
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week06_speed_up/seminar6.ipynb",
+        "https://arxiv.org/abs/2305.14314"
+      ]
+    },
+    {
+      "id": "X01",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week03_bert_gpt/lecture3.pdf",
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week03_bert_gpt/seminar3.ipynb",
+        "https://aclanthology.org/N19-1423/",
+        "https://arxiv.org/abs/1907.11692",
+        "https://arxiv.org/abs/1909.11942",
+        "https://arxiv.org/abs/2003.10555"
+      ]
+    },
+    {
+      "id": "X02",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week06_speed_up/lecture6.pdf",
+        "https://arxiv.org/abs/1503.02531",
+        "https://arxiv.org/abs/1909.10351"
+      ]
+    },
+    {
+      "id": "X03",
+      "sources": [
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week01_classification_generation/seminar1.ipynb",
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week04_modern_llms/seminar4.pdf",
+        "https://github.com/ashaba1in/hse-nlp/blob/afb4290ba2155fc826758253ec46fcb368edd49c/week06_speed_up/lecture6.pdf",
+        "https://arxiv.org/abs/2501.00656",
+        "https://arxiv.org/abs/1609.08144"
+      ]
+    }
+  ],
+  "limitations": [
+    "Effect ranges and implementation/GPU prices are judgement, not measured C results.",
+    "Course video recordings and recursively referenced literature are outside this audit.",
+    "C 62.9% and D NaN are user-provided context; new L1/L2 logs were not downloaded."
+  ]
+}

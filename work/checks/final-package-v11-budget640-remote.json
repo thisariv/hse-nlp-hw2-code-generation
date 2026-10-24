@@ -1,0 +1,11 @@
+{
+  "ref": "thisarivson/nlp-hw02-final-package-v11-budget640",
+  "private": true,
+  "all_code_cells_exact": true,
+  "machine_shape": "NvidiaTeslaT4",
+  "current_version": 1,
+  "dataset_sources": [
+    "thisarivson/nlp-hw02-final-weights"
+  ],
+  "checked_at_utc": "2026-10-20T08:49:29.588145+00:00"
+}

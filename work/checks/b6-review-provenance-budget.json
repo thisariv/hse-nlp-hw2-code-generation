@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "source": "friend1/nlp-hw02-b5/6",
+  "pre_final_blob_available": false,
+  "rows": [
+    {
+      "gpu": "0",
+      "sha256": "3b11360d5242e0e8b3fc1ac38254f0d4d544fba8bb62ee4c7bb034943e6cdc32",
+      "anchor_metadata_exact": true,
+      "N": 16500,
+      "expected_wall_seconds": 17347.32735130181
+    },
+    {
+      "gpu": "1",
+      "sha256": "69dff4405d2236097f48733adbfc9e3bfd5d20b501a3fcfd1dae62ec2ce63074",
+      "anchor_metadata_exact": true,
+      "N": 32900,
+      "expected_wall_seconds": 17394.73781678945
+    }
+  ]
+}

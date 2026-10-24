@@ -1,0 +1,11 @@
+{
+  "checked_at_utc": "2026-10-20T07:46:36.614731+00:00",
+  "owner": "friend1",
+  "method": "KAGGLE_CONFIG_DIR=~/.kaggle-friend kaggle quota --csv; SDK/CLI authentication only",
+  "CLI_remaining_hours": 14.11,
+  "user_quota_hours": 14.1,
+  "free_seconds_conservative": 50760.0,
+  "reset_utc": "2026-10-24T00:00:00",
+  "GPU_runs": 0,
+  "pushes": 0
+}

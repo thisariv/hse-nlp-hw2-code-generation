@@ -1,0 +1,162 @@
+{
+  "date": "2026-10-08",
+  "scope": "Fresh CPU/meta shape and Parameter identity audit of trusted prepared18 model; baseline parameter shapes matched saved100k checkpoint. No forward/training/inference or GPU timing.",
+  "source_notebook_sha256": "5e1f5e6c6e7eee3667a56a7fb7dac21cfd467a1f7ca23319b0c8f4b2f2466fd5",
+  "source_checkpoint_sha256": "688f09648bb99c4bb29061fe75360ea3ab7b9847250dc9755d086950ac61507e",
+  "baseline_components": {
+    "shared_encoder_decoder_token_embedding": 1048576,
+    "separate_output_head_weight": 1048576,
+    "output_head_bias": 4096,
+    "shared_absolute_position_table": 524288,
+    "encoder_layers": 1576096,
+    "decoder_layers": 2103456,
+    "final_norms": 1024
+  },
+  "baseline_component_fractions": {
+    "shared_encoder_decoder_token_embedding": 0.16627931758903108,
+    "separate_output_head_weight": 0.16627931758903108,
+    "output_head_bias": 0.0006495285843321527,
+    "shared_absolute_position_table": 0.08313965879451554,
+    "encoder_layers": 0.24993149503212123,
+    "decoder_layers": 0.33355830026488587,
+    "final_norms": 0.00016238214608303817
+  },
+  "variants": [
+    {
+      "name": "baseline18",
+      "encoder_layers": 2,
+      "decoder_layers": 2,
+      "d_model": 256,
+      "swiglu_dim": 680,
+      "head_tied": false,
+      "learned_absolute_positions": true,
+      "normalization": "LayerNorm",
+      "parameters": 6306112,
+      "delta_vs18": 0,
+      "head_weight_is_token_weight": false
+    },
+    {
+      "name": "decoder4",
+      "encoder_layers": 2,
+      "decoder_layers": 4,
+      "d_model": 256,
+      "swiglu_dim": 680,
+      "head_tied": false,
+      "learned_absolute_positions": true,
+      "normalization": "LayerNorm",
+      "parameters": 8409568,
+      "delta_vs18": 2103456,
+      "head_weight_is_token_weight": false
+    },
+    {
+      "name": "encoder4",
+      "encoder_layers": 4,
+      "decoder_layers": 2,
+      "d_model": 256,
+      "swiglu_dim": 680,
+      "head_tied": false,
+      "learned_absolute_positions": true,
+      "normalization": "LayerNorm",
+      "parameters": 7882208,
+      "delta_vs18": 1576096,
+      "head_weight_is_token_weight": false
+    },
+    {
+      "name": "both4",
+      "encoder_layers": 4,
+      "decoder_layers": 4,
+      "d_model": 256,
+      "swiglu_dim": 680,
+      "head_tied": false,
+      "learned_absolute_positions": true,
+      "normalization": "LayerNorm",
+      "parameters": 9985664,
+      "delta_vs18": 3679552,
+      "head_weight_is_token_weight": false
+    },
+    {
+      "name": "deep_thin_4plus4",
+      "encoder_layers": 4,
+      "decoder_layers": 4,
+      "d_model": 192,
+      "swiglu_dim": 512,
+      "head_tied": false,
+      "learned_absolute_positions": true,
+      "normalization": "LayerNorm",
+      "parameters": 6126336,
+      "delta_vs18": -179776,
+      "head_weight_is_token_weight": false
+    },
+    {
+      "name": "tied_baseline",
+      "encoder_layers": 2,
+      "decoder_layers": 2,
+      "d_model": 256,
+      "swiglu_dim": 680,
+      "head_tied": true,
+      "learned_absolute_positions": true,
+      "normalization": "LayerNorm",
+      "parameters": 5257536,
+      "delta_vs18": -1048576,
+      "head_weight_is_token_weight": true
+    },
+    {
+      "name": "decoder4_tied",
+      "encoder_layers": 2,
+      "decoder_layers": 4,
+      "d_model": 256,
+      "swiglu_dim": 680,
+      "head_tied": true,
+      "learned_absolute_positions": true,
+      "normalization": "LayerNorm",
+      "parameters": 7360992,
+      "delta_vs18": 1054880,
+      "head_weight_is_token_weight": true
+    },
+    {
+      "name": "both4_tied",
+      "encoder_layers": 4,
+      "decoder_layers": 4,
+      "d_model": 256,
+      "swiglu_dim": 680,
+      "head_tied": true,
+      "learned_absolute_positions": true,
+      "normalization": "LayerNorm",
+      "parameters": 8937088,
+      "delta_vs18": 2630976,
+      "head_weight_is_token_weight": true
+    },
+    {
+      "name": "RMS_baseline",
+      "encoder_layers": 2,
+      "decoder_layers": 2,
+      "d_model": 256,
+      "swiglu_dim": 680,
+      "head_tied": false,
+      "learned_absolute_positions": true,
+      "normalization": "RMSNorm",
+      "parameters": 6303040,
+      "delta_vs18": -3072,
+      "head_weight_is_token_weight": false
+    },
+    {
+      "name": "no_absolute_positions_blueprint",
+      "encoder_layers": 2,
+      "decoder_layers": 2,
+      "d_model": 256,
+      "swiglu_dim": 680,
+      "head_tied": false,
+      "learned_absolute_positions": false,
+      "normalization": "LayerNorm",
+      "parameters": 5781824,
+      "delta_vs18": -524288,
+      "head_weight_is_token_weight": false
+    }
+  ],
+  "GQA4query2KV_projection_parameter_savings_formula": 394752,
+  "relative_bucket_bias_alternative": {
+    "parameters_if_remove_absolute_table_and_use_two_shared32bucket4head_tables": 5782080,
+    "scope": "Analytical shape budget only; not an implemented attention model"
+  },
+  "limits": "Alternative shapes are parameter blueprints, not validated functional models. Tying needs validated initialization/logit scaling/PAD handling. Removing positions alone is not a valid recommended positional scheme. GQA and relative bias are formulas only."
+}

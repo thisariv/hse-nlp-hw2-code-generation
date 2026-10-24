@@ -1,0 +1,89 @@
+{
+  "passed": true,
+  "artifacts": {
+    "l3": {
+      "notebook_sha256": "50ccfc3bc4facd977dabed68bbf5cd9ffe873374ec9d5b9c80fb77384fa7852a",
+      "metadata": {
+        "id": "friend1/nlp-hw02-kaggle-l3",
+        "title": "nlp hw02 kaggle l3",
+        "code_file": "nlp-hw02-kaggle-l3.ipynb",
+        "language": "python",
+        "kernel_type": "notebook",
+        "is_private": true,
+        "enable_gpu": true,
+        "enable_tpu": false,
+        "enable_internet": true,
+        "dataset_sources": [
+          "thisarivson/nlp-hw02-26b-inputs",
+          "thisarivson/nlp-hw02-l2-live"
+        ],
+        "kernel_sources": [
+          "thisarivson/nlp-hw02-compact-cache-verified/2"
+        ],
+        "competition_sources": [],
+        "machine_shape": "NvidiaTeslaT4"
+      },
+      "limits": {
+        "session_timeout_seconds": 43200,
+        "kind": "l3",
+        "budget_seconds": 40260,
+        "watchdog_exit_seconds": 40800
+      },
+      "embedded_modules": 46
+    },
+    "l3_gpu_smoke": {
+      "notebook_sha256": "542f3f60ba5453ae101b4d00c9898829e2466e9d507c0d89a2c2c7088aa16c75",
+      "metadata": {
+        "id": "friend1/nlp-hw02-l3-gpu-smoke",
+        "title": "nlp hw02 l3 gpu smoke",
+        "code_file": "nlp-hw02-l3-gpu-smoke.ipynb",
+        "language": "python",
+        "kernel_type": "notebook",
+        "is_private": true,
+        "enable_gpu": true,
+        "enable_tpu": false,
+        "enable_internet": true,
+        "dataset_sources": [
+          "thisarivson/nlp-hw02-26b-inputs",
+          "thisarivson/nlp-hw02-l2-live",
+          "friend1/nlp-hw02-compact-cache-verified"
+        ],
+        "kernel_sources": [
+          "thisarivson/nlp-hw02-compact-cache-verified/2"
+        ],
+        "competition_sources": [],
+        "machine_shape": "NvidiaTeslaT4"
+      },
+      "limits": {
+        "session_timeout_seconds": 1080,
+        "kind": "l3_gpu_smoke",
+        "budget_seconds": 900,
+        "watchdog_exit_seconds": 1020
+      },
+      "embedded_modules": 46
+    }
+  },
+  "L2_modules_unchanged": true,
+  "real_CPU_anchors_verified": {
+    "C-main": "d0de7f7bd5c479159a8d6189ab5af58897edf35bdba2e9439b0b745ab72bd29c",
+    "C-long2x": "a0ba33fef996f6a0c63e4059909a17796c67e1a94dadf1cc04c6afe1e94c40d2"
+  },
+  "L2_regressions": {
+    "passed": true,
+    "tests": 34,
+    "failures": 0,
+    "errors": 0,
+    "GPU": false
+  },
+  "L3_regressions": {
+    "passed": true,
+    "tests": 10,
+    "failures": 0,
+    "errors": 0,
+    "GPU": false
+  },
+  "nbformat_valid": true,
+  "GPU": false,
+  "smoke_push": false,
+  "production_push": false
+}

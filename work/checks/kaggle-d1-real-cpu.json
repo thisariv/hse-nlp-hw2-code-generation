@@ -1,0 +1,186 @@
+{
+  "passed": true,
+  "GPU": false,
+  "push": false,
+  "actual_cache_rows": 9725737,
+  "models": {
+    "C-main": {
+      "weight_sha256": "8c11b1038855422b6912e243049a554317978f848edb412ed48aebbe4cb6b886",
+      "loss_rows": 16,
+      "row_ids": [
+        0,
+        2,
+        4,
+        5,
+        1,
+        3,
+        6,
+        9,
+        8,
+        20,
+        39,
+        60,
+        14,
+        18,
+        58,
+        67
+      ],
+      "sum_NLL": 279.4995255470276,
+      "tokens": 1269,
+      "token_CE": 0.22025178372859955,
+      "max_row_NLL_error": 0.0,
+      "generation_rows": [
+        18,
+        0
+      ],
+      "generated_answers": [
+        null,
+        1.8181818181818181
+      ],
+      "references": [
+        6999.0,
+        1.8181818181818181
+      ],
+      "EOS_complete": true,
+      "execution_statuses": [
+        "execution_error",
+        "numeric"
+      ],
+      "cached_and_executed_reference": true,
+      "generation": {
+        "phase": "generation",
+        "rows": 2,
+        "seconds": 1.8027302920818329,
+        "execution": {
+          "workers": 2,
+          "worker_history": [
+            2
+          ],
+          "service_state": {
+            "workers": 2,
+            "nice_requested_increment": 10,
+            "nice": 0,
+            "nice_applied": false,
+            "nice_error": "[Errno 1] Operation not permitted"
+          },
+          "requested_candidates": 3,
+          "unique_programs": 3,
+          "deduplicated": 0,
+          "completed_unique": 3,
+          "service_wall_seconds": 1.7666494171135128,
+          "sum_worker_task_wall_seconds": 0.0014464580453932285,
+          "sum_worker_task_cpu_seconds": 0.0014440000000000008,
+          "first_submit_to_last_result_seconds": 0.002079749945551157,
+          "service_wall_includes_GPU_wait": true,
+          "wall_limit": 3.0,
+          "cpu_limit": 2.0,
+          "memory_bytes": 805306368,
+          "overlap": true,
+          "isolation": "fresh numeric namespaces / pristine SymPy fork",
+          "error": null
+        },
+        "OOM_retries": 0,
+        "cap": 512,
+        "effective_batch": 2,
+        "complete": true,
+        "interruption": null,
+        "target_rows": 2,
+        "GPU_seconds": 1.7240889579989016,
+        "GPU_rows_per_second": 1.1600329499942625,
+        "pipeline_rows_per_second": 1.109397989798801,
+        "reference_reused": 1,
+        "reference_executed": 1
+      },
+      "seconds": 3.900581708876416
+    },
+    "C-long2x": {
+      "weight_sha256": "d10bf0018d0b14fd6cc3c8b9c7121f127b5cec97057544fd63e5824253a55057",
+      "loss_rows": 16,
+      "row_ids": [
+        0,
+        2,
+        4,
+        5,
+        1,
+        3,
+        6,
+        9,
+        8,
+        20,
+        39,
+        60,
+        14,
+        18,
+        58,
+        67
+      ],
+      "sum_NLL": 259.8959017395973,
+      "tokens": 1269,
+      "token_CE": 0.2048036903142929,
+      "max_row_NLL_error": 0.0,
+      "generation_rows": [
+        18,
+        0
+      ],
+      "generated_answers": [
+        1.0,
+        1.8181818181818181
+      ],
+      "references": [
+        6999.0,
+        1.8181818181818181
+      ],
+      "EOS_complete": true,
+      "execution_statuses": [
+        "numeric",
+        "numeric"
+      ],
+      "cached_and_executed_reference": true,
+      "generation": {
+        "phase": "generation",
+        "rows": 2,
+        "seconds": 2.3614307909738272,
+        "execution": {
+          "workers": 2,
+          "worker_history": [
+            2
+          ],
+          "service_state": {
+            "workers": 2,
+            "nice_requested_increment": 10,
+            "nice": 0,
+            "nice_applied": false,
+            "nice_error": "[Errno 1] Operation not permitted"
+          },
+          "requested_candidates": 3,
+          "unique_programs": 3,
+          "deduplicated": 0,
+          "completed_unique": 3,
+          "service_wall_seconds": 2.3113831661175936,
+          "sum_worker_task_wall_seconds": 0.0026353751309216022,
+          "sum_worker_task_cpu_seconds": 0.002452999999999983,
+          "first_submit_to_last_result_seconds": 0.0050981659442186356,
+          "service_wall_includes_GPU_wait": true,
+          "wall_limit": 3.0,
+          "cpu_limit": 2.0,
+          "memory_bytes": 805306368,
+          "overlap": true,
+          "isolation": "fresh numeric namespaces / pristine SymPy fork",
+          "error": null
+        },
+        "OOM_retries": 0,
+        "cap": 512,
+        "effective_batch": 2,
+        "complete": true,
+        "interruption": null,
+        "target_rows": 2,
+        "GPU_seconds": 2.2461669160984457,
+        "GPU_rows_per_second": 0.8904057778012181,
+        "pipeline_rows_per_second": 0.8469231116897363,
+        "reference_reused": 1,
+        "reference_executed": 1
+      },
+      "seconds": 4.762507334118709
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "passed": true,
+  "artifacts": {
+    "p1": {
+      "notebook_sha256": "a7332aae31a52923ca8d68c6a973735cb11cf0a12f168276968d5c71451f13a6",
+      "modules": 52,
+      "metadata": {
+        "id": "friend1/nlp-hw02-kaggle-p1",
+        "title": "nlp hw02 kaggle p1",
+        "code_file": "nlp-hw02-kaggle-p1.ipynb",
+        "language": "python",
+        "kernel_type": "notebook",
+        "is_private": true,
+        "enable_gpu": true,
+        "enable_tpu": false,
+        "enable_internet": true,
+        "dataset_sources": [
+          "thisarivson/nlp-hw02-26b-inputs",
+          "friend1/nlp-hw02-l3-live",
+          "friend1/nlp-hw02-compact-cache-verified"
+        ],
+        "kernel_sources": [],
+        "competition_sources": [],
+        "machine_shape": "NvidiaTeslaT4"
+      },
+      "limits": {
+        "session_timeout_seconds": 43200,
+        "kind": "p1",
+        "budget_seconds": 37380,
+        "watchdog_exit_seconds": 37800
+      }
+    },
+    "p1_gpu_smoke": {
+      "notebook_sha256": "6a1d0f132a3118ba836a5f229e8e049425d6092aa51e56e731ea43f388623a09",
+      "modules": 52,
+      "metadata": {
+        "id": "friend1/nlp-hw02-p1-gpu-smoke",
+        "title": "nlp hw02 p1 gpu smoke",
+        "code_file": "nlp-hw02-p1-gpu-smoke.ipynb",
+        "language": "python",
+        "kernel_type": "notebook",
+        "is_private": true,
+        "enable_gpu": true,
+        "enable_tpu": false,
+        "enable_internet": true,
+        "dataset_sources": [
+          "thisarivson/nlp-hw02-26b-inputs",
+          "friend1/nlp-hw02-l3-live",
+          "friend1/nlp-hw02-compact-cache-verified"
+        ],
+        "kernel_sources": [],
+        "competition_sources": [],
+        "machine_shape": "NvidiaTeslaT4"
+      },
+      "limits": {
+        "session_timeout_seconds": 1080,
+        "kind": "p1_gpu_smoke",
+        "budget_seconds": 900,
+        "watchdog_exit_seconds": 1020
+      }
+    }
+  },
+  "regressions": {
+    "l2": 34,
+    "l3": 10,
+    "l4": 5,
+    "p1": 12
+  },
+  "inherited_modules_unchanged": true,
+  "pinned_latest_manifest_verified": true,
+  "private_live": {
+    "private": true,
+    "account": "friend1",
+    "ref": "friend1/nlp-hw02-p1-live",
+    "status": "ready (file listing verified; status endpoint denied)",
+    "status_endpoint_http": 403,
+    "already_existed": false,
+    "push": false
+  },
+  "CPU_resume": "48f2ba3fa4ffe6a722b45a084d3ee33a27cc4ed02b72433605c9cb1740f5a80b",
+  "scorer_smoke_candidates": 128,
+  "nbformat_valid": true,
+  "hard_wall_seconds": 37800,
+  "GPU": false,
+  "push": false
+}

@@ -1,0 +1,24 @@
+{
+  "ref": "friend1/nlp-hw02-variants",
+  "version": 1,
+  "output": "results/kaggle-runs/nlp-hw02-variants/1",
+  "output_downloaded_by": "orchestrator (user-provided context)",
+  "push_at_utc_reported_by_user": "2026-10-20T16:25:00+00:00",
+  "audited_at_utc": "2026-10-20T17:16:46.932680+00:00",
+  "private": true,
+  "exact_code_parity": true,
+  "current_version": 1,
+  "kernel_sources": [
+    "friend1/nlp-hw02-kaggle-p1",
+    "friend1/nlp-hw02-b6",
+    "friend1/nlp-hw02-b7"
+  ],
+  "bundle_pinned_kernel_sources": [
+    "friend1/nlp-hw02-b6/1",
+    "friend1/nlp-hw02-b7/1",
+    "friend1/nlp-hw02-kaggle-p1/3"
+  ],
+  "machine_shape": "NvidiaTeslaT4",
+  "enable_internet": false,
+  "metadata_source_versions": "API omits version suffixes; executed weight SHA checked separately"
+}

@@ -1,0 +1,9 @@
+{
+  "file": "seed-evidence.npz",
+  "bytes": 29642620,
+  "sha256": "6fd712d4b805e8cd49b709e01260aef15ae28875dfc31e659f0a4d81c9c52d36",
+  "cache_manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+  "rows": 9725737,
+  "duplicate_reference_rows": 1250497,
+  "receipt_sha256": "60b437c3ef2c7db186af13270c6ff523a8a6919191b4f212d237fb6c035e90bc"
+}

@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "budget_seconds": 11700,
+  "train_deadline_reserve_seconds": 1200,
+  "packaging_seconds": 300,
+  "targets": [
+    {
+      "A_point": "p006250",
+      "seconds": 928.1166084509971,
+      "actual_pairs": 960000
+    },
+    {
+      "A_point": "p012500",
+      "seconds": 2018.225873703993,
+      "actual_pairs": 1920000
+    },
+    {
+      "A_point": "p025000",
+      "seconds": 4203.38492590799,
+      "actual_pairs": 3840000
+    },
+    {
+      "A_point": "p050000",
+      "seconds": 7312.883812298975,
+      "actual_pairs": 6400000
+    }
+  ],
+  "original12_modules_byte_identical": true,
+  "notebook_cells_compile": true,
+  "protocol_embedded": true,
+  "private_T4x2_metadata": true,
+  "previous_source": [
+    "thisarivson/nlp-hw02-kaggle-s1/1"
+  ],
+  "notebook_sha256": "1fd6c62f770159f8996650f20a2b5abb8d2a6774b478f255d5866cd79cbe7559",
+  "port_sha256": "a701758cb9bbeeb5e624e5d9f98ec180833d959faa342d6fa8de94da88f9d84b"
+}

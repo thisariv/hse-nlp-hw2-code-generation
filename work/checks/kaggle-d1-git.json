@@ -1,0 +1,9 @@
+{
+  "commit_created": false,
+  "attempted": true,
+  "index_changed": false,
+  "reason": "filesystem sandbox denied creation of worktree index.lock",
+  "staged_files": [],
+  "GPU": false,
+  "push": false
+}

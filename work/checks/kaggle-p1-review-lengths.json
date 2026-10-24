@@ -1,0 +1,10 @@
+{
+  "rows": 9725737,
+  "empty_questions": 0,
+  "max_source": 234,
+  "max_target": 379,
+  "min_source": 7,
+  "cache_manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+  "reverse_max_encoder_tokens": 381,
+  "reverse_max_decoder_tokens": 233
+}

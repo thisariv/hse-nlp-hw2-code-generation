@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "account": "friend1",
+  "ref": "friend1/nlp-hw02-l4-live",
+  "status": "ready",
+  "status_endpoint_http": null,
+  "already_existed": true,
+  "push": false
+}

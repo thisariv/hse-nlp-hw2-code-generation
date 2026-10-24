@@ -1,0 +1,277 @@
+{
+  "date": "2026-10-09",
+  "scope": "New local tokenization boundary probes only. Existing experiment18 BPE vocabulary and merges frozen; Qwen pretokenization regex substituted for diagnosis. This is not a newly trained candidate tokenizer or a quality/speed evaluation.",
+  "source_tokenizer_sha256": "73614c921b43aa6ef715bb23bba583b96785a82304c1964f74ab11d8deef7f86",
+  "source_pre_tokenizer": {
+    "type": "ByteLevel",
+    "add_prefix_space": false,
+    "trim_offsets": false,
+    "use_regex": true
+  },
+  "qwen_pattern_source": "https://raw.githubusercontent.com/huggingface/transformers/v4.43.1/src/transformers/models/qwen2/tokenization_qwen2.py",
+  "normalization": "None: source bytes, whitespace and decomposed Unicode preserved.",
+  "probes": [
+    {
+      "text": "5",
+      "old_pieces": [
+        "5"
+      ],
+      "qwen_boundaries_with_frozen_old_merges": [
+        "5"
+      ]
+    },
+    {
+      "text": "five",
+      "old_pieces": [
+        "f",
+        "ive"
+      ],
+      "qwen_boundaries_with_frozen_old_merges": [
+        "f",
+        "ive"
+      ]
+    },
+    {
+      "text": "500",
+      "old_pieces": [
+        "500"
+      ],
+      "qwen_boundaries_with_frozen_old_merges": [
+        "5",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "text": " 500",
+      "old_pieces": [
+        "Ġ500"
+      ],
+      "qwen_boundaries_with_frozen_old_merges": [
+        "Ġ",
+        "5",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "text": "1500",
+      "old_pieces": [
+        "15",
+        "00"
+      ],
+      "qwen_boundaries_with_frozen_old_merges": [
+        "1",
+        "5",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "text": "2500",
+      "old_pieces": [
+        "25",
+        "00"
+      ],
+      "qwen_boundaries_with_frozen_old_merges": [
+        "2",
+        "5",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "text": "12345",
+      "old_pieces": [
+        "12",
+        "3",
+        "45"
+      ],
+      "qwen_boundaries_with_frozen_old_merges": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "text": "12346",
+      "old_pieces": [
+        "12",
+        "3",
+        "4",
+        "6"
+      ],
+      "qwen_boundaries_with_frozen_old_merges": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "6"
+      ]
+    },
+    {
+      "text": "0.3",
+      "old_pieces": [
+        "0",
+        ".",
+        "3"
+      ],
+      "qwen_boundaries_with_frozen_old_merges": [
+        "0",
+        ".",
+        "3"
+      ]
+    },
+    {
+      "text": "-12.50",
+      "old_pieces": [
+        "-",
+        "12",
+        ".",
+        "50"
+      ],
+      "qwen_boundaries_with_frozen_old_merges": [
+        "-",
+        "1",
+        "2",
+        ".",
+        "5",
+        "0"
+      ]
+    },
+    {
+      "text": "30%",
+      "old_pieces": [
+        "30",
+        "%"
+      ],
+      "qwen_boundaries_with_frozen_old_merges": [
+        "3",
+        "0",
+        "%"
+      ]
+    },
+    {
+      "text": "1000",
+      "old_pieces": [
+        "1000"
+      ],
+      "qwen_boundaries_with_frozen_old_merges": [
+        "1",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "text": "1e-3",
+      "old_pieces": [
+        "1",
+        "e",
+        "-",
+        "3"
+      ],
+      "qwen_boundaries_with_frozen_old_merges": [
+        "1",
+        "e",
+        "-",
+        "3"
+      ]
+    },
+    {
+      "text": "def solve():\n    return 500\n",
+      "old_pieces": [
+        "def",
+        "Ġsolve",
+        "()",
+        ":",
+        "ĊĠĠĠ",
+        "Ġreturn",
+        "Ġ500",
+        "Ċ"
+      ],
+      "qwen_boundaries_with_frozen_old_merges": [
+        "def",
+        "Ġsolve",
+        "()",
+        ":",
+        "Ċ",
+        "ĠĠĠ",
+        "Ġreturn",
+        "Ġ",
+        "5",
+        "0",
+        "0",
+        "Ċ"
+      ]
+    },
+    {
+      "text": "Привет 👋 é\t\r\n",
+      "old_pieces": [
+        "Ð",
+        "Ł",
+        "Ñ",
+        "Ģ",
+        "Ð",
+        "¸",
+        "Ð",
+        "²",
+        "Ð",
+        "µ",
+        "Ñ",
+        "Ĥ",
+        "Ġ",
+        "ð",
+        "Ł",
+        "ĳ",
+        "ĭ",
+        "Ġe",
+        "Ì",
+        "ģ",
+        "ĉ",
+        "č",
+        "Ċ"
+      ],
+      "qwen_boundaries_with_frozen_old_merges": [
+        "Ð",
+        "Ł",
+        "Ñ",
+        "Ģ",
+        "Ð",
+        "¸",
+        "Ð",
+        "²",
+        "Ð",
+        "µ",
+        "Ñ",
+        "Ĥ",
+        "Ġ",
+        "ð",
+        "Ł",
+        "ĳ",
+        "ĭ",
+        "Ġe",
+        "Ì",
+        "ģ",
+        "ĉ",
+        "č",
+        "Ċ"
+      ]
+    }
+  ],
+  "parameter_budgets": {
+    "4096": 6306112,
+    "8192": 8407360,
+    "16384": 12609856,
+    "32100": 20672164,
+    "151936": 82148032
+  },
+  "parameter_formula": "N(V) = baseline18 6306112 + (V-4096)*(2*256+1). Shared source/target embedding, separate output matrix and output bias; other model parameters fixed.",
+  "budget_limits": "151936 is the padded Qwen model vocabulary from config; an imported tokenizer's actual length and special tokens must be read before exact budgeting. No imported tokenizers or model weights downloaded here.",
+  "training_updates": 0,
+  "model_forward_or_generation": false,
+  "GPU_speed_measured": false,
+  "error_cause_attribution": "No dataset-wide attribution of numerical errors to tokenization."
+}

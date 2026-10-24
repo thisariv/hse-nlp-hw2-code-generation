@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "torch": "2.14.1",
+  "independent": 5,
+  "B2": 9,
+  "B1": 20,
+  "clean": 14,
+  "total": 48,
+  "static_bundles": 3
+}

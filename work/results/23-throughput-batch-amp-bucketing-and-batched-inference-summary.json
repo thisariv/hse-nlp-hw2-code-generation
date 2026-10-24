@@ -1,0 +1,1791 @@
+{
+  "date": "2026-10-10",
+  "experiment": 23,
+  "source_notebook": {
+    "name": "23_throughput_batch_amp_bucketing_and_batched_inference.ipynb",
+    "bytes": 223891,
+    "sha256": "4e17849e9a9897c640c300a6aa8fdc6d3a5e61059fd60ac2d7cd3c4bf39b4f97"
+  },
+  "source_archive": {
+    "name": "hw02-throughput-batch-amp-bucketing-and-batched-inference-results.zip",
+    "bytes": 8557040,
+    "sha256": "f12714c49cc56298e1888b480bfb77a3268b13f0d452c0b2e22bca256d2123ba"
+  },
+  "stored_notebook": "23-throughput-batch-amp-bucketing-and-batched-inference-results.ipynb",
+  "raw_archive_members_local_ignored": "generations/23-throughput-batch-amp-bucketing-and-batched-inference/",
+  "manifest": {
+    "files": 78,
+    "CRC_and_all_SHA256_verified": true
+  },
+  "saved_T4": {
+    "status": "completed_with_report",
+    "runtime": {
+      "gpu": "Tesla T4",
+      "torch": "2.11.0+cu130",
+      "cuda": "13.0",
+      "tokenizers": "0.23.2",
+      "pyarrow": "23.0.1",
+      "sympy": "1.14.0",
+      "cpu_threads": 2,
+      "SDPA_enabled_flags": {
+        "flash": true,
+        "mem_efficient": true,
+        "math": true,
+        "cudnn": true
+      },
+      "TF32": false
+    },
+    "protocol": {
+      "total_budget_minutes": 60,
+      "work_minutes": 59,
+      "inference_reserve_minutes": 20,
+      "train_warmup": 50,
+      "train_measured": 200,
+      "bucket_chunk_pairs": 4096,
+      "train_LR": 0.0001,
+      "train_seed": 230042,
+      "numeric_workers": 2,
+      "program_wall_seconds": 1.0,
+      "program_CPU_seconds": 2.0,
+      "parent_task_seconds": 3.0,
+      "train_memory_limit_bytes": 14000000000,
+      "train_selection": "useful target tokens/s, finite loss/grads,200 steps, no measured AMP skips",
+      "inference_selection": "minimum test full wall; exec-match drop<=0.005 versus control, denom991",
+      "cap": 512,
+      "done_CPU_check_every_optimized": 16,
+      "quality_training": false
+    },
+    "model_parameters": {
+      "A": 12086912,
+      "B": 31940096,
+      "C": 53643328
+    },
+    "input": {
+      "source": "user-upload",
+      "files": [
+        {
+          "kind": "checkpoint",
+          "zip_member": "latest.pt",
+          "sha256": "13f8ae4ae2ee2c15fc9d034cf8773de420226e073550c9774adb1846f3e27b23",
+          "bytes": 146269451
+        },
+        {
+          "kind": "tokenizer",
+          "zip_member": "tokenizer.json",
+          "sha256": "261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d",
+          "bytes": 545866
+        }
+      ],
+      "zip_sha256": "4db40c0313f10afbf11d4a76beb2de59a729e1af9c6d40f08240c6f55697c615",
+      "verified_before_data_and_weights": true
+    },
+    "data": {
+      "revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+      "train_rows": 500000,
+      "heldout_rows": 1024,
+      "test_rows": 1919,
+      "train_sha256": "61483f4dc6970ff5f2b1afffa45d57391dcfc01ab6ec4f140c6e6b6c792c8c38",
+      "locations_sha256": "c2332a54a923ffa85da9ac91ec0a39a2e4ead7f7c2e328abecef702e1d306ba7",
+      "heldout_sha256": "e187bc297218365f1a1452a15376e0ff2fceaf8a5a5517820549854b90564743",
+      "shards": [
+        {
+          "path": "data/train/part-00000.parquet",
+          "bytes": 26169796,
+          "sha256": "91831d582faa12d73b1a6b3878e496446cd5df074f17ee4ffea8cc2887c708ec"
+        },
+        {
+          "path": "data/train/part-00001.parquet",
+          "bytes": 26166175,
+          "sha256": "5222d657a1af07a531f1b22503f35741a6547f0831509897d0a279bc8f67d068"
+        },
+        {
+          "path": "data/train/part-00002.parquet",
+          "bytes": 26162244,
+          "sha256": "c6082401ea966aeaa8375018ae1f1d9c7c55cc30e421c45cc933ceacd97dc3de"
+        }
+      ],
+      "selection_seconds": 10.624278942000274,
+      "filter_reference_non_number": false,
+      "fresh_heldout_not_evaluated": true,
+      "bpe_cache_seconds": 131.28920033799977,
+      "source_tokens": 24187619,
+      "target_tokens": 32988665
+    },
+    "reference_exec": {
+      "programs": 1024,
+      "unique_programs": 1023,
+      "statuses": {
+        "numeric": 991,
+        "non_number": 33
+      },
+      "pool_restarts": 0,
+      "seconds": 2.0193926299998566,
+      "complete": true
+    },
+    "batch_plans": {
+      "random8_sha256": "2b40c3494d5fb5008f1cc48395df3a072f0f9722b272978117986abe0c4d9a83",
+      "bucketed_sha256": {
+        "32": "8e2d932a605f31875c8f67d4f7c32dd534506f8b0af41642d0e636c5fe040214",
+        "128": "a3c1022ca4f721a86eb7af5c0775d477f5f4fd5bf0c66cecfb19f20a27f0a40b",
+        "256": "6913056b405a193ffdf7bad18652280b63c498f7885ac1ca858132e64a7c8bf3"
+      },
+      "shared_across_models_and_FP32_AMP": true
+    },
+    "train": [
+      {
+        "model_spec": {
+          "d_model": 256,
+          "heads": 4,
+          "encoder_layers": 4,
+          "decoder_layers": 4,
+          "swiglu_dim": 680
+        },
+        "precision": "fp32",
+        "batch_pairs": 8,
+        "warmup_planned": 50,
+        "measured_planned": 200,
+        "fused_adamw": false,
+        "status": "ok",
+        "completed_warmup": 50,
+        "completed_measured": 200,
+        "parameters": 12086912,
+        "sdpa": {
+          "status": "observed",
+          "operators": [
+            "aten::_scaled_dot_product_efficient_attention",
+            "aten::_scaled_dot_product_efficient_attention_backward",
+            "aten::scaled_dot_product_attention"
+          ],
+          "scope": "one warmup forward/backward for this shape/dtype, outside measured steps; backend may change with shapes"
+        },
+        "warmup_seconds": 3.8944869729998572,
+        "seconds": 9.099459402999855,
+        "ms_per_step": 45.497297014999276,
+        "pairs_per_second": 175.83462150207754,
+        "useful_target_tokens_per_second": 11546.949697402993,
+        "useful_source_tokens_per_second": 8494.900254680682,
+        "useful_source_plus_target_tokens_per_second": 20041.849952083674,
+        "counts": {
+          "source_tokens": 77299,
+          "target_tokens": 105071,
+          "source_slots": 124576,
+          "target_slots": 168888,
+          "pairs": 1600
+        },
+        "source_padding_fraction": 0.37950327510917026,
+        "target_padding_fraction": 0.37786580455686614,
+        "total_padding_fraction": 0.3785609137747731,
+        "all_warmup_losses_finite": true,
+        "all_measured_losses_finite": true,
+        "all_measured_gradient_norms_finite": true,
+        "warmup_AMP_skipped_updates": 0,
+        "measured_nonfinite_gradient_norm_steps": 0,
+        "AMP_skip_diagnostic": null,
+        "measured_AMP_skipped_updates": 0,
+        "final_scale": null,
+        "peak_allocated_bytes": 620841984,
+        "peak_reserved_bytes": 981467136,
+        "id": "A-fp32-b8-random-control",
+        "model": "A",
+        "bucketed": false,
+        "fused": false
+      },
+      {
+        "model_spec": {
+          "d_model": 256,
+          "heads": 4,
+          "encoder_layers": 4,
+          "decoder_layers": 4,
+          "swiglu_dim": 680
+        },
+        "precision": "amp_fp16",
+        "batch_pairs": 8,
+        "warmup_planned": 50,
+        "measured_planned": 200,
+        "fused_adamw": false,
+        "status": "ok",
+        "completed_warmup": 50,
+        "completed_measured": 200,
+        "parameters": 12086912,
+        "sdpa": {
+          "status": "observed",
+          "operators": [
+            "aten::_scaled_dot_product_efficient_attention",
+            "aten::_scaled_dot_product_efficient_attention_backward",
+            "aten::scaled_dot_product_attention"
+          ],
+          "scope": "one warmup forward/backward for this shape/dtype, outside measured steps; backend may change with shapes"
+        },
+        "warmup_seconds": 3.7733067449999,
+        "seconds": 10.721245959000498,
+        "ms_per_step": 53.60622979500249,
+        "pairs_per_second": 149.23638596844225,
+        "useful_target_tokens_per_second": 9800.26019380637,
+        "useful_source_tokens_per_second": 7209.889624359135,
+        "useful_source_plus_target_tokens_per_second": 17010.149818165508,
+        "counts": {
+          "source_tokens": 77299,
+          "target_tokens": 105071,
+          "source_slots": 124576,
+          "target_slots": 168888,
+          "pairs": 1600
+        },
+        "source_padding_fraction": 0.37950327510917026,
+        "target_padding_fraction": 0.37786580455686614,
+        "total_padding_fraction": 0.3785609137747731,
+        "all_warmup_losses_finite": true,
+        "all_measured_losses_finite": true,
+        "all_measured_gradient_norms_finite": true,
+        "warmup_AMP_skipped_updates": 0,
+        "measured_nonfinite_gradient_norm_steps": 0,
+        "AMP_skip_diagnostic": "GradScaler one-device found_inf, stored on device beforeclip, host read outside timer",
+        "measured_AMP_skipped_updates": 0,
+        "final_scale": 65536.0,
+        "peak_allocated_bytes": 489932800,
+        "peak_reserved_bytes": 694157312,
+        "id": "A-amp_fp16-b8-random",
+        "model": "A",
+        "bucketed": false,
+        "fused": false
+      },
+      {
+        "model_spec": {
+          "d_model": 256,
+          "heads": 4,
+          "encoder_layers": 4,
+          "decoder_layers": 4,
+          "swiglu_dim": 680
+        },
+        "precision": "fp32",
+        "batch_pairs": 32,
+        "warmup_planned": 50,
+        "measured_planned": 200,
+        "fused_adamw": true,
+        "status": "ok",
+        "completed_warmup": 50,
+        "completed_measured": 200,
+        "parameters": 12086912,
+        "sdpa": {
+          "status": "observed",
+          "operators": [
+            "aten::_scaled_dot_product_efficient_attention",
+            "aten::_scaled_dot_product_efficient_attention_backward",
+            "aten::scaled_dot_product_attention"
+          ],
+          "scope": "one warmup forward/backward for this shape/dtype, outside measured steps; backend may change with shapes"
+        },
+        "warmup_seconds": 4.966998701000193,
+        "seconds": 16.421842490000472,
+        "ms_per_step": 82.10921245000236,
+        "pairs_per_second": 389.7248438411868,
+        "useful_target_tokens_per_second": 25730.486713491053,
+        "useful_source_tokens_per_second": 18800.874517460503,
+        "useful_source_plus_target_tokens_per_second": 44531.36123095156,
+        "counts": {
+          "source_tokens": 308745,
+          "target_tokens": 422542,
+          "source_slots": 430432,
+          "target_slots": 529184,
+          "pairs": 6400
+        },
+        "source_padding_fraction": 0.28270899933090476,
+        "target_padding_fraction": 0.20152158795428432,
+        "total_padding_fraction": 0.23793788348672806,
+        "all_warmup_losses_finite": true,
+        "all_measured_losses_finite": true,
+        "all_measured_gradient_norms_finite": true,
+        "warmup_AMP_skipped_updates": 0,
+        "measured_nonfinite_gradient_norm_steps": 0,
+        "AMP_skip_diagnostic": null,
+        "measured_AMP_skipped_updates": 0,
+        "final_scale": null,
+        "peak_allocated_bytes": 2336521216,
+        "peak_reserved_bytes": 2810183680,
+        "id": "A-fp32-b32-bucketed",
+        "model": "A",
+        "bucketed": true,
+        "fused": true
+      },
+      {
+        "model_spec": {
+          "d_model": 256,
+          "heads": 4,
+          "encoder_layers": 4,
+          "decoder_layers": 4,
+          "swiglu_dim": 680
+        },
+        "precision": "amp_fp16",
+        "batch_pairs": 32,
+        "warmup_planned": 50,
+        "measured_planned": 200,
+        "fused_adamw": true,
+        "status": "ok",
+        "completed_warmup": 50,
+        "completed_measured": 200,
+        "parameters": 12086912,
+        "sdpa": {
+          "status": "observed",
+          "operators": [
+            "aten::_scaled_dot_product_efficient_attention",
+            "aten::_scaled_dot_product_efficient_attention_backward",
+            "aten::scaled_dot_product_attention"
+          ],
+          "scope": "one warmup forward/backward for this shape/dtype, outside measured steps; backend may change with shapes"
+        },
+        "warmup_seconds": 3.757278737999968,
+        "seconds": 10.678281856000012,
+        "ms_per_step": 53.39140928000006,
+        "pairs_per_second": 599.3473562794101,
+        "useful_target_tokens_per_second": 39570.22353390852,
+        "useful_source_tokens_per_second": 28913.359299138512,
+        "useful_source_plus_target_tokens_per_second": 68483.58283304702,
+        "counts": {
+          "source_tokens": 308745,
+          "target_tokens": 422542,
+          "source_slots": 430432,
+          "target_slots": 529184,
+          "pairs": 6400
+        },
+        "source_padding_fraction": 0.28270899933090476,
+        "target_padding_fraction": 0.20152158795428432,
+        "total_padding_fraction": 0.23793788348672806,
+        "all_warmup_losses_finite": true,
+        "all_measured_losses_finite": true,
+        "all_measured_gradient_norms_finite": true,
+        "warmup_AMP_skipped_updates": 0,
+        "measured_nonfinite_gradient_norm_steps": 0,
+        "AMP_skip_diagnostic": "GradScaler one-device found_inf, stored on device beforeclip, host read outside timer",
+        "measured_AMP_skipped_updates": 0,
+        "final_scale": 65536.0,
+        "peak_allocated_bytes": 1607066112,
+        "peak_reserved_bytes": 1843396608,
+        "id": "A-amp_fp16-b32-bucketed",
+        "model": "A",
+        "bucketed": true,
+        "fused": true
+      },
+      {
+        "model_spec": {
+          "d_model": 256,
+          "heads": 4,
+          "encoder_layers": 4,
+          "decoder_layers": 4,
+          "swiglu_dim": 680
+        },
+        "precision": "fp32",
+        "batch_pairs": 128,
+        "warmup_planned": 50,
+        "measured_planned": 200,
+        "fused_adamw": true,
+        "status": "ok",
+        "completed_warmup": 50,
+        "completed_measured": 200,
+        "parameters": 12086912,
+        "sdpa": {
+          "status": "observed",
+          "operators": [
+            "aten::_scaled_dot_product_efficient_attention",
+            "aten::_scaled_dot_product_efficient_attention_backward",
+            "aten::scaled_dot_product_attention"
+          ],
+          "scope": "one warmup forward/backward for this shape/dtype, outside measured steps; backend may change with shapes"
+        },
+        "warmup_seconds": 17.7806280599998,
+        "seconds": 64.98910014199964,
+        "ms_per_step": 324.9455007099982,
+        "pairs_per_second": 393.9122090329702,
+        "useful_target_tokens_per_second": 26022.594501305615,
+        "useful_source_tokens_per_second": 19080.0764634475,
+        "useful_source_plus_target_tokens_per_second": 45102.67096475312,
+        "counts": {
+          "source_tokens": 1239997,
+          "target_tokens": 1691185,
+          "source_slots": 1920256,
+          "target_slots": 2273664,
+          "pairs": 25600
+        },
+        "source_padding_fraction": 0.35425432858952144,
+        "target_padding_fraction": 0.256185170720036,
+        "total_padding_fraction": 0.30108776514573476,
+        "all_warmup_losses_finite": true,
+        "all_measured_losses_finite": true,
+        "all_measured_gradient_norms_finite": true,
+        "warmup_AMP_skipped_updates": 0,
+        "measured_nonfinite_gradient_norm_steps": 0,
+        "AMP_skip_diagnostic": null,
+        "measured_AMP_skipped_updates": 0,
+        "final_scale": null,
+        "peak_allocated_bytes": 9192039936,
+        "peak_reserved_bytes": 14365491200,
+        "id": "A-fp32-b128-bucketed",
+        "model": "A",
+        "bucketed": true,
+        "fused": true
+      },
+      {
+        "model_spec": {
+          "d_model": 256,
+          "heads": 4,
+          "encoder_layers": 4,
+          "decoder_layers": 4,
+          "swiglu_dim": 680
+        },
+        "precision": "amp_fp16",
+        "batch_pairs": 128,
+        "warmup_planned": 50,
+        "measured_planned": 200,
+        "fused_adamw": true,
+        "status": "ok",
+        "completed_warmup": 50,
+        "completed_measured": 200,
+        "parameters": 12086912,
+        "sdpa": {
+          "status": "observed",
+          "operators": [
+            "aten::_scaled_dot_product_efficient_attention",
+            "aten::_scaled_dot_product_efficient_attention_backward",
+            "aten::scaled_dot_product_attention"
+          ],
+          "scope": "one warmup forward/backward for this shape/dtype, outside measured steps; backend may change with shapes"
+        },
+        "warmup_seconds": 7.849906717999602,
+        "seconds": 25.902836570999625,
+        "ms_per_step": 129.51418285499813,
+        "pairs_per_second": 988.308748728366,
+        "useful_target_tokens_per_second": 65289.567625710224,
+        "useful_source_tokens_per_second": 47871.08919909874,
+        "useful_source_plus_target_tokens_per_second": 113160.65682480896,
+        "counts": {
+          "source_tokens": 1239997,
+          "target_tokens": 1691185,
+          "source_slots": 1920256,
+          "target_slots": 2273664,
+          "pairs": 25600
+        },
+        "source_padding_fraction": 0.35425432858952144,
+        "target_padding_fraction": 0.256185170720036,
+        "total_padding_fraction": 0.30108776514573476,
+        "all_warmup_losses_finite": true,
+        "all_measured_losses_finite": true,
+        "all_measured_gradient_norms_finite": true,
+        "warmup_AMP_skipped_updates": 0,
+        "measured_nonfinite_gradient_norm_steps": 0,
+        "AMP_skip_diagnostic": "GradScaler one-device found_inf, stored on device beforeclip, host read outside timer",
+        "measured_AMP_skipped_updates": 0,
+        "final_scale": 65536.0,
+        "peak_allocated_bytes": 6102896640,
+        "peak_reserved_bytes": 8980004864,
+        "id": "A-amp_fp16-b128-bucketed",
+        "model": "A",
+        "bucketed": true,
+        "fused": true
+      },
+      {
+        "model_spec": {
+          "d_model": 256,
+          "heads": 4,
+          "encoder_layers": 4,
+          "decoder_layers": 4,
+          "swiglu_dim": 680
+        },
+        "precision": "fp32",
+        "batch_pairs": 256,
+        "warmup_planned": 50,
+        "measured_planned": 200,
+        "fused_adamw": true,
+        "status": "oom",
+        "completed_warmup": 11,
+        "completed_measured": 0,
+        "parameters": 12086912,
+        "sdpa": {
+          "status": "observed",
+          "operators": [
+            "aten::_scaled_dot_product_efficient_attention",
+            "aten::_scaled_dot_product_efficient_attention_backward",
+            "aten::scaled_dot_product_attention"
+          ],
+          "scope": "one warmup forward/backward for this shape/dtype, outside measured steps; backend may change with shapes"
+        },
+        "error": "CUDA out of memory. Tried to allocate 1.58 GiB. GPU 0 has a total capacity of 14.56 GiB of which 1.25 GiB is free. Including non-PyTorch memory, this process has 13.31 GiB memory in use. Of the allocated memory 10.73 GiB is allocated by PyTorch, and 2.43 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:T",
+        "peak_allocated_bytes": 12826772992,
+        "peak_reserved_bytes": 14833156096,
+        "id": "A-fp32-b256-bucketed",
+        "model": "A",
+        "bucketed": true,
+        "fused": true
+      },
+      {
+        "model_spec": {
+          "d_model": 256,
+          "heads": 4,
+          "encoder_layers": 4,
+          "decoder_layers": 4,
+          "swiglu_dim": 680
+        },
+        "precision": "amp_fp16",
+        "batch_pairs": 256,
+        "warmup_planned": 50,
+        "measured_planned": 200,
+        "fused_adamw": true,
+        "status": "oom",
+        "completed_warmup": 50,
+        "completed_measured": 180,
+        "parameters": 12086912,
+        "sdpa": {
+          "status": "observed",
+          "operators": [
+            "aten::_scaled_dot_product_efficient_attention",
+            "aten::_scaled_dot_product_efficient_attention_backward",
+            "aten::scaled_dot_product_attention"
+          ],
+          "scope": "one warmup forward/backward for this shape/dtype, outside measured steps; backend may change with shapes"
+        },
+        "warmup_seconds": 15.509228076,
+        "error": "CUDA out of memory. Tried to allocate 2.25 GiB. GPU 0 has a total capacity of 14.56 GiB of which 539.81 MiB is free. Including non-PyTorch memory, this process has 14.03 GiB memory in use. Of the allocated memory 11.87 GiB is allocated by PyTorch, and 2.02 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments",
+        "peak_allocated_bytes": 12741191680,
+        "peak_reserved_bytes": 14996733952,
+        "id": "A-amp_fp16-b256-bucketed",
+        "model": "A",
+        "bucketed": true,
+        "fused": true
+      },
+      {
+        "model_spec": {
+          "d_model": 384,
+          "heads": 6,
+          "encoder_layers": 6,
+          "decoder_layers": 6,
+          "swiglu_dim": 1024
+        },
+        "precision": "fp32",
+        "batch_pairs": 32,
+        "warmup_planned": 50,
+        "measured_planned": 200,
+        "fused_adamw": true,
+        "status": "ok",
+        "completed_warmup": 50,
+        "completed_measured": 200,
+        "parameters": 31940096,
+        "sdpa": {
+          "status": "observed",
+          "operators": [
+            "aten::_scaled_dot_product_efficient_attention",
+            "aten::_scaled_dot_product_efficient_attention_backward",
+            "aten::scaled_dot_product_attention"
+          ],
+          "scope": "one warmup forward/backward for this shape/dtype, outside measured steps; backend may change with shapes"
+        },
+        "warmup_seconds": 11.43977473699988,
+        "seconds": 39.861869221000234,
+        "ms_per_step": 199.30934610500117,
+        "pairs_per_second": 160.55443773891866,
+        "useful_target_tokens_per_second": 10600.155192355964,
+        "useful_source_tokens_per_second": 7745.3718562035065,
+        "useful_source_plus_target_tokens_per_second": 18345.52704855947,
+        "counts": {
+          "source_tokens": 308745,
+          "target_tokens": 422542,
+          "source_slots": 430432,
+          "target_slots": 529184,
+          "pairs": 6400
+        },
+        "source_padding_fraction": 0.28270899933090476,
+        "target_padding_fraction": 0.20152158795428432,
+        "total_padding_fraction": 0.23793788348672806,
+        "all_warmup_losses_finite": true,
+        "all_measured_losses_finite": true,
+        "all_measured_gradient_norms_finite": true,
+        "warmup_AMP_skipped_updates": 0,
+        "measured_nonfinite_gradient_norm_steps": 0,
+        "AMP_skip_diagnostic": null,
+        "measured_AMP_skipped_updates": 0,
+        "final_scale": null,
+        "peak_allocated_bytes": 4220139520,
+        "peak_reserved_bytes": 5356126208,
+        "id": "B-fp32-b32-bucketed",
+        "model": "B",
+        "bucketed": true,
+        "fused": true
+      },
+      {
+        "model_spec": {
+          "d_model": 384,
+          "heads": 6,
+          "encoder_layers": 6,
+          "decoder_layers": 6,
+          "swiglu_dim": 1024
+        },
+        "precision": "amp_fp16",
+        "batch_pairs": 32,
+        "warmup_planned": 50,
+        "measured_planned": 200,
+        "fused_adamw": true,
+        "status": "ok",
+        "completed_warmup": 50,
+        "completed_measured": 200,
+        "parameters": 31940096,
+        "sdpa": {
+          "status": "observed",
+          "operators": [
+            "aten::_scaled_dot_product_efficient_attention",
+            "aten::_scaled_dot_product_efficient_attention_backward",
+            "aten::scaled_dot_product_attention"
+          ],
+          "scope": "one warmup forward/backward for this shape/dtype, outside measured steps; backend may change with shapes"
+        },
+        "warmup_seconds": 5.9372581279999395,
+        "seconds": 17.810180550000496,
+        "ms_per_step": 89.05090275000248,
+        "pairs_per_second": 359.34503763353604,
+        "useful_target_tokens_per_second": 23724.745451835875,
+        "useful_source_tokens_per_second": 17335.309944400953,
+        "useful_source_plus_target_tokens_per_second": 41060.05539623683,
+        "counts": {
+          "source_tokens": 308745,
+          "target_tokens": 422542,
+          "source_slots": 430432,
+          "target_slots": 529184,
+          "pairs": 6400
+        },
+        "source_padding_fraction": 0.28270899933090476,
+        "target_padding_fraction": 0.20152158795428432,
+        "total_padding_fraction": 0.23793788348672806,
+        "all_warmup_losses_finite": true,
+        "all_measured_losses_finite": true,
+        "all_measured_gradient_norms_finite": true,
+        "warmup_AMP_skipped_updates": 0,
+        "measured_nonfinite_gradient_norm_steps": 0,
+        "AMP_skip_diagnostic": "GradScaler one-device found_inf, stored on device beforeclip, host read outside timer",
+        "measured_AMP_skipped_updates": 0,
+        "final_scale": 65536.0,
+        "peak_allocated_bytes": 2866655744,
+        "peak_reserved_bytes": 3309305856,
+        "id": "B-amp_fp16-b32-bucketed",
+        "model": "B",
+        "bucketed": true,
+        "fused": true
+      },
+      {
+        "model_spec": {
+          "d_model": 384,
+          "heads": 6,
+          "encoder_layers": 6,
+          "decoder_layers": 6,
+          "swiglu_dim": 1024
+        },
+        "precision": "fp32",
+        "batch_pairs": 128,
+        "warmup_planned": 50,
+        "measured_planned": 200,
+        "fused_adamw": true,
+        "status": "oom",
+        "completed_warmup": 17,
+        "completed_measured": 0,
+        "parameters": 31940096,
+        "sdpa": {
+          "status": "observed",
+          "operators": [
+            "aten::_scaled_dot_product_efficient_attention",
+            "aten::_scaled_dot_product_efficient_attention_backward",
+            "aten::scaled_dot_product_attention"
+          ],
+          "scope": "one warmup forward/backward for this shape/dtype, outside measured steps; backend may change with shapes"
+        },
+        "error": "CUDA out of memory. Tried to allocate 808.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 337.81 MiB is free. Including non-PyTorch memory, this process has 14.23 GiB memory in use. Of the allocated memory 12.84 GiB is allocated by PyTorch, and 1.24 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segmen",
+        "peak_allocated_bytes": 13788582912,
+        "peak_reserved_bytes": 15118368768,
+        "id": "B-fp32-b128-bucketed",
+        "model": "B",
+        "bucketed": true,
+        "fused": true
+      },
+      {
+        "model_spec": {
+          "d_model": 384,
+          "heads": 6,
+          "encoder_layers": 6,
+          "decoder_layers": 6,
+          "swiglu_dim": 1024
+        },
+        "precision": "amp_fp16",
+        "batch_pairs": 128,
+        "warmup_planned": 50,
+        "measured_planned": 200,
+        "fused_adamw": true,
+        "status": "ok",
+        "completed_warmup": 50,
+        "completed_measured": 200,
+        "parameters": 31940096,
+        "sdpa": {
+          "status": "observed",
+          "operators": [
+            "aten::_scaled_dot_product_efficient_attention",
+            "aten::_scaled_dot_product_efficient_attention_backward",
+            "aten::scaled_dot_product_attention"
+          ],
+          "scope": "one warmup forward/backward for this shape/dtype, outside measured steps; backend may change with shapes"
+        },
+        "warmup_seconds": 16.436299530999804,
+        "seconds": 57.81438325699946,
+        "ms_per_step": 289.0719162849973,
+        "pairs_per_second": 442.79638660506964,
+        "useful_target_tokens_per_second": 29251.97683908964,
+        "useful_source_tokens_per_second": 21447.898085981506,
+        "useful_source_plus_target_tokens_per_second": 50699.87492507114,
+        "counts": {
+          "source_tokens": 1239997,
+          "target_tokens": 1691185,
+          "source_slots": 1920256,
+          "target_slots": 2273664,
+          "pairs": 25600
+        },
+        "source_padding_fraction": 0.35425432858952144,
+        "target_padding_fraction": 0.256185170720036,
+        "total_padding_fraction": 0.30108776514573476,
+        "all_warmup_losses_finite": true,
+        "all_measured_losses_finite": true,
+        "all_measured_gradient_norms_finite": true,
+        "warmup_AMP_skipped_updates": 0,
+        "measured_nonfinite_gradient_norm_steps": 0,
+        "AMP_skip_diagnostic": "GradScaler one-device found_inf, stored on device beforeclip, host read outside timer",
+        "measured_AMP_skipped_updates": 0,
+        "final_scale": 65536.0,
+        "peak_allocated_bytes": 10391053824,
+        "peak_reserved_bytes": 13495173120,
+        "id": "B-amp_fp16-b128-bucketed",
+        "model": "B",
+        "bucketed": true,
+        "fused": true
+      },
+      {
+        "model_spec": {
+          "d_model": 384,
+          "heads": 6,
+          "encoder_layers": 6,
+          "decoder_layers": 6,
+          "swiglu_dim": 1024
+        },
+        "precision": "fp32",
+        "batch_pairs": 256,
+        "warmup_planned": 50,
+        "measured_planned": 200,
+        "fused_adamw": true,
+        "status": "oom",
+        "completed_warmup": 0,
+        "completed_measured": 0,
+        "parameters": 31940096,
+        "error": "CUDA out of memory. Tried to allocate 1016.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 403.81 MiB is free. Including non-PyTorch memory, this process has 14.17 GiB memory in use. Of the allocated memory 13.75 GiB is allocated by PyTorch, and 276.61 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_seg",
+        "peak_allocated_bytes": 14780793344,
+        "peak_reserved_bytes": 15049162752,
+        "id": "B-fp32-b256-bucketed",
+        "model": "B",
+        "bucketed": true,
+        "fused": true
+      },
+      {
+        "model_spec": {
+          "d_model": 384,
+          "heads": 6,
+          "encoder_layers": 6,
+          "decoder_layers": 6,
+          "swiglu_dim": 1024
+        },
+        "precision": "amp_fp16",
+        "batch_pairs": 256,
+        "warmup_planned": 50,
+        "measured_planned": 200,
+        "fused_adamw": true,
+        "status": "oom",
+        "completed_warmup": 8,
+        "completed_measured": 0,
+        "parameters": 31940096,
+        "sdpa": {
+          "status": "observed",
+          "operators": [
+            "aten::_scaled_dot_product_efficient_attention",
+            "aten::_scaled_dot_product_efficient_attention_backward",
+            "aten::scaled_dot_product_attention"
+          ],
+          "scope": "one warmup forward/backward for this shape/dtype, outside measured steps; backend may change with shapes"
+        },
+        "error": "CUDA out of memory. Tried to allocate 1.16 GiB. GPU 0 has a total capacity of 14.56 GiB of which 637.81 MiB is free. Including non-PyTorch memory, this process has 13.94 GiB memory in use. Of the allocated memory 12.33 GiB is allocated by PyTorch, and 1.46 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments",
+        "peak_allocated_bytes": 13235313152,
+        "peak_reserved_bytes": 14854127616,
+        "id": "B-amp_fp16-b256-bucketed",
+        "model": "B",
+        "bucketed": true,
+        "fused": true
+      },
+      {
+        "model_spec": {
+          "d_model": 512,
+          "heads": 8,
+          "encoder_layers": 6,
+          "decoder_layers": 6,
+          "swiglu_dim": 1368
+        },
+        "precision": "fp32",
+        "batch_pairs": 32,
+        "warmup_planned": 50,
+        "measured_planned": 200,
+        "fused_adamw": true,
+        "status": "budget_warmup",
+        "completed_warmup": 12,
+        "completed_measured": 0,
+        "parameters": 53643328,
+        "sdpa": {
+          "status": "observed",
+          "operators": [
+            "aten::_scaled_dot_product_efficient_attention",
+            "aten::_scaled_dot_product_efficient_attention_backward",
+            "aten::scaled_dot_product_attention"
+          ],
+          "scope": "one warmup forward/backward for this shape/dtype, outside measured steps; backend may change with shapes"
+        },
+        "peak_allocated_bytes": 5140706304,
+        "peak_reserved_bytes": 6027214848,
+        "id": "C-fp32-b32-bucketed",
+        "model": "C",
+        "bucketed": true,
+        "fused": true
+      },
+      {
+        "status": "budget_not_started",
+        "completed_warmup": 0,
+        "completed_measured": 0,
+        "id": "C-amp_fp16-b32-bucketed",
+        "model": "C",
+        "precision": "amp_fp16",
+        "batch_pairs": 32,
+        "bucketed": true,
+        "fused": true
+      },
+      {
+        "status": "budget_not_started",
+        "completed_warmup": 0,
+        "completed_measured": 0,
+        "id": "C-fp32-b128-bucketed",
+        "model": "C",
+        "precision": "fp32",
+        "batch_pairs": 128,
+        "bucketed": true,
+        "fused": true
+      },
+      {
+        "status": "budget_not_started",
+        "completed_warmup": 0,
+        "completed_measured": 0,
+        "id": "C-amp_fp16-b128-bucketed",
+        "model": "C",
+        "precision": "amp_fp16",
+        "batch_pairs": 128,
+        "bucketed": true,
+        "fused": true
+      },
+      {
+        "status": "budget_not_started",
+        "completed_warmup": 0,
+        "completed_measured": 0,
+        "id": "C-fp32-b256-bucketed",
+        "model": "C",
+        "precision": "fp32",
+        "batch_pairs": 256,
+        "bucketed": true,
+        "fused": true
+      },
+      {
+        "status": "budget_not_started",
+        "completed_warmup": 0,
+        "completed_measured": 0,
+        "id": "C-amp_fp16-b256-bucketed",
+        "model": "C",
+        "precision": "amp_fp16",
+        "batch_pairs": 256,
+        "bucketed": true,
+        "fused": true
+      }
+    ],
+    "inference": [
+      {
+        "id": "control-fp32-b32",
+        "config": {
+          "id": "control-fp32-b32",
+          "path": "control",
+          "batch_pairs": 32,
+          "precision": "fp32"
+        },
+        "status": "ok",
+        "heldout": {
+          "split": "heldout",
+          "id": "control-fp32-b32",
+          "path": "control",
+          "batch_pairs": 32,
+          "precision": "fp32",
+          "status": "ok",
+          "examples_planned": 1024,
+          "weight_loads": 1,
+          "examples": 1024,
+          "seconds_historical_scope": 38.77791557699993,
+          "seconds_full_wall": 39.18587795400026,
+          "answers_per_second": 26.40678295270099,
+          "decode_steps_sum": 7137,
+          "decode_row_steps_sum": 228384,
+          "generated_tokens_including_eos": 63503,
+          "token_identical_count": 1024,
+          "token_identical_fraction": 1.0,
+          "answer_file": "control-fp32-b32-heldout-answers.jsonl",
+          "peak_allocated_bytes": 232139264,
+          "peak_reserved_bytes": 291504128,
+          "historical_timer": "encode/sort, H2D, encoder/KV decode, CPU token/UTF8 decoding, AST and reference-token diagnostics; excludes warmup/load/exec/file",
+          "full_timer": "torch.load, tokenizer restore, strict model restore/cast/H2D, warmup, generation/diagnostics, order restore and answers write; excludes download/cache/exec scoring",
+          "exec_match": {
+            "denominator": 991,
+            "matches": 189,
+            "accuracy": 0.19071644803229063,
+            "reference_statuses": {
+              "numeric": 991,
+              "non_number": 33
+            },
+            "generation_statuses": {
+              "numeric": 951,
+              "execution_error": 54,
+              "non_number": 12,
+              "syntax_error": 7
+            },
+            "rel_tol": 1e-06,
+            "abs_tol": 1e-06
+          },
+          "exec_seconds_outside_timers": 1.738389542999812,
+          "exec_complete": true
+        },
+        "test": {
+          "split": "test",
+          "id": "control-fp32-b32",
+          "path": "control",
+          "batch_pairs": 32,
+          "precision": "fp32",
+          "status": "ok",
+          "examples_planned": 1919,
+          "weight_loads": 1,
+          "examples": 1919,
+          "seconds_historical_scope": 70.87654636200023,
+          "seconds_full_wall": 71.21665250700016,
+          "answers_per_second": 27.07524701046739,
+          "decode_steps_sum": 13333,
+          "decode_row_steps_sum": 426557,
+          "generated_tokens_including_eos": 123466,
+          "token_identical_count": 1919,
+          "token_identical_fraction": 1.0,
+          "answer_file": "control-fp32-b32-test-answers.jsonl",
+          "peak_allocated_bytes": 252803072,
+          "peak_reserved_bytes": 308281344,
+          "historical_timer": "encode/sort, H2D, encoder/KV decode, CPU token/UTF8 decoding, AST and reference-token diagnostics; excludes warmup/load/exec/file",
+          "full_timer": "torch.load, tokenizer restore, strict model restore/cast/H2D, warmup, generation/diagnostics, order restore and answers write; excludes download/cache/exec scoring"
+        }
+      },
+      {
+        "id": "sorted-fp32-b64",
+        "config": {
+          "id": "sorted-fp32-b64",
+          "path": "preallocated",
+          "batch_pairs": 64,
+          "precision": "fp32"
+        },
+        "status": "ok",
+        "heldout": {
+          "split": "heldout",
+          "id": "sorted-fp32-b64",
+          "path": "preallocated",
+          "batch_pairs": 64,
+          "precision": "fp32",
+          "status": "ok",
+          "examples_planned": 1024,
+          "weight_loads": 1,
+          "examples": 1024,
+          "seconds_historical_scope": 18.81898006199981,
+          "seconds_full_wall": 19.203036872999746,
+          "answers_per_second": 54.41315079916101,
+          "decode_steps_sum": 3456,
+          "decode_row_steps_sum": 221184,
+          "generated_tokens_including_eos": 63503,
+          "token_identical_count": 1024,
+          "token_identical_fraction": 1.0,
+          "answer_file": "sorted-fp32-b64-heldout-answers.jsonl",
+          "peak_allocated_bytes": 414571520,
+          "peak_reserved_bytes": 499122176,
+          "historical_timer": "encode/sort, H2D, encoder/KV decode, CPU token/UTF8 decoding, AST and reference-token diagnostics; excludes warmup/load/exec/file",
+          "full_timer": "torch.load, tokenizer restore, strict model restore/cast/H2D, warmup, generation/diagnostics, order restore and answers write; excludes download/cache/exec scoring",
+          "exec_match": {
+            "denominator": 991,
+            "matches": 189,
+            "accuracy": 0.19071644803229063,
+            "reference_statuses": {
+              "numeric": 991,
+              "non_number": 33
+            },
+            "generation_statuses": {
+              "numeric": 951,
+              "execution_error": 54,
+              "non_number": 12,
+              "syntax_error": 7
+            },
+            "rel_tol": 1e-06,
+            "abs_tol": 1e-06
+          },
+          "exec_seconds_outside_timers": 1.3064226930000586,
+          "exec_complete": true
+        },
+        "test": {
+          "split": "test",
+          "id": "sorted-fp32-b64",
+          "path": "preallocated",
+          "batch_pairs": 64,
+          "precision": "fp32",
+          "status": "ok",
+          "examples_planned": 1919,
+          "weight_loads": 1,
+          "examples": 1919,
+          "seconds_historical_scope": 38.20072109299963,
+          "seconds_full_wall": 38.59222653799998,
+          "answers_per_second": 50.23465382572742,
+          "decode_steps_sum": 7104,
+          "decode_row_steps_sum": 454144,
+          "generated_tokens_including_eos": 123466,
+          "token_identical_count": 1919,
+          "token_identical_fraction": 1.0,
+          "answer_file": "sorted-fp32-b64-test-answers.jsonl",
+          "peak_allocated_bytes": 452977664,
+          "peak_reserved_bytes": 547356672,
+          "historical_timer": "encode/sort, H2D, encoder/KV decode, CPU token/UTF8 decoding, AST and reference-token diagnostics; excludes warmup/load/exec/file",
+          "full_timer": "torch.load, tokenizer restore, strict model restore/cast/H2D, warmup, generation/diagnostics, order restore and answers write; excludes download/cache/exec scoring"
+        }
+      },
+      {
+        "id": "sorted-fp16-b64",
+        "config": {
+          "id": "sorted-fp16-b64",
+          "path": "preallocated",
+          "batch_pairs": 64,
+          "precision": "fp16"
+        },
+        "status": "ok",
+        "heldout": {
+          "split": "heldout",
+          "id": "sorted-fp16-b64",
+          "path": "preallocated",
+          "batch_pairs": 64,
+          "precision": "fp16",
+          "status": "ok",
+          "examples_planned": 1024,
+          "weight_loads": 1,
+          "examples": 1024,
+          "seconds_historical_scope": 18.401623253000253,
+          "seconds_full_wall": 19.056646556000487,
+          "answers_per_second": 55.647264696229676,
+          "decode_steps_sum": 3488,
+          "decode_row_steps_sum": 223232,
+          "generated_tokens_including_eos": 63483,
+          "token_identical_count": 997,
+          "token_identical_fraction": 0.9736328125,
+          "answer_file": "sorted-fp16-b64-heldout-answers.jsonl",
+          "peak_allocated_bytes": 216404992,
+          "peak_reserved_bytes": 266338304,
+          "historical_timer": "encode/sort, H2D, encoder/KV decode, CPU token/UTF8 decoding, AST and reference-token diagnostics; excludes warmup/load/exec/file",
+          "full_timer": "torch.load, tokenizer restore, strict model restore/cast/H2D, warmup, generation/diagnostics, order restore and answers write; excludes download/cache/exec scoring",
+          "exec_match": {
+            "denominator": 991,
+            "matches": 191,
+            "accuracy": 0.1927346115035318,
+            "reference_statuses": {
+              "numeric": 991,
+              "non_number": 33
+            },
+            "generation_statuses": {
+              "numeric": 952,
+              "execution_error": 53,
+              "non_number": 12,
+              "syntax_error": 7
+            },
+            "rel_tol": 1e-06,
+            "abs_tol": 1e-06
+          },
+          "exec_seconds_outside_timers": 1.2708657330003916,
+          "exec_complete": true
+        },
+        "test": {
+          "split": "test",
+          "id": "sorted-fp16-b64",
+          "path": "preallocated",
+          "batch_pairs": 64,
+          "precision": "fp16",
+          "status": "ok",
+          "examples_planned": 1919,
+          "weight_loads": 1,
+          "examples": 1919,
+          "seconds_historical_scope": 40.06526932500037,
+          "seconds_full_wall": 40.45782100499946,
+          "answers_per_second": 47.896845131215954,
+          "decode_steps_sum": 7472,
+          "decode_row_steps_sum": 477696,
+          "generated_tokens_including_eos": 123771,
+          "token_identical_count": 1859,
+          "token_identical_fraction": 0.9687337154768109,
+          "answer_file": "sorted-fp16-b64-test-answers.jsonl",
+          "peak_allocated_bytes": 235627008,
+          "peak_reserved_bytes": 310378496,
+          "historical_timer": "encode/sort, H2D, encoder/KV decode, CPU token/UTF8 decoding, AST and reference-token diagnostics; excludes warmup/load/exec/file",
+          "full_timer": "torch.load, tokenizer restore, strict model restore/cast/H2D, warmup, generation/diagnostics, order restore and answers write; excludes download/cache/exec scoring"
+        }
+      },
+      {
+        "id": "sorted-fp32-b128",
+        "config": {
+          "id": "sorted-fp32-b128",
+          "path": "preallocated",
+          "batch_pairs": 128,
+          "precision": "fp32"
+        },
+        "status": "ok",
+        "heldout": {
+          "split": "heldout",
+          "id": "sorted-fp32-b128",
+          "path": "preallocated",
+          "batch_pairs": 128,
+          "precision": "fp32",
+          "status": "ok",
+          "examples_planned": 1024,
+          "weight_loads": 1,
+          "examples": 1024,
+          "seconds_historical_scope": 15.144558285999665,
+          "seconds_full_wall": 15.752749466999376,
+          "answers_per_second": 67.61504565944543,
+          "decode_steps_sum": 2192,
+          "decode_row_steps_sum": 280576,
+          "generated_tokens_including_eos": 63503,
+          "token_identical_count": 1024,
+          "token_identical_fraction": 1.0,
+          "answer_file": "sorted-fp32-b128-heldout-answers.jsonl",
+          "peak_allocated_bytes": 762611712,
+          "peak_reserved_bytes": 905969664,
+          "historical_timer": "encode/sort, H2D, encoder/KV decode, CPU token/UTF8 decoding, AST and reference-token diagnostics; excludes warmup/load/exec/file",
+          "full_timer": "torch.load, tokenizer restore, strict model restore/cast/H2D, warmup, generation/diagnostics, order restore and answers write; excludes download/cache/exec scoring",
+          "exec_match": {
+            "denominator": 991,
+            "matches": 189,
+            "accuracy": 0.19071644803229063,
+            "reference_statuses": {
+              "numeric": 991,
+              "non_number": 33
+            },
+            "generation_statuses": {
+              "numeric": 951,
+              "execution_error": 54,
+              "non_number": 12,
+              "syntax_error": 7
+            },
+            "rel_tol": 1e-06,
+            "abs_tol": 1e-06
+          },
+          "exec_seconds_outside_timers": 1.3176482140006556,
+          "exec_complete": true
+        },
+        "test": {
+          "split": "test",
+          "id": "sorted-fp32-b128",
+          "path": "preallocated",
+          "batch_pairs": 128,
+          "precision": "fp32",
+          "status": "ok",
+          "examples_planned": 1919,
+          "weight_loads": 1,
+          "examples": 1919,
+          "seconds_historical_scope": 32.44714644599935,
+          "seconds_full_wall": 32.815295770000375,
+          "answers_per_second": 59.14233484888184,
+          "decode_steps_sum": 4688,
+          "decode_row_steps_sum": 599552,
+          "generated_tokens_including_eos": 123466,
+          "token_identical_count": 1919,
+          "token_identical_fraction": 1.0,
+          "answer_file": "sorted-fp32-b128-test-answers.jsonl",
+          "peak_allocated_bytes": 841559552,
+          "peak_reserved_bytes": 1033895936,
+          "historical_timer": "encode/sort, H2D, encoder/KV decode, CPU token/UTF8 decoding, AST and reference-token diagnostics; excludes warmup/load/exec/file",
+          "full_timer": "torch.load, tokenizer restore, strict model restore/cast/H2D, warmup, generation/diagnostics, order restore and answers write; excludes download/cache/exec scoring"
+        }
+      },
+      {
+        "id": "sorted-fp16-b128",
+        "config": {
+          "id": "sorted-fp16-b128",
+          "path": "preallocated",
+          "batch_pairs": 128,
+          "precision": "fp16"
+        },
+        "status": "ok",
+        "heldout": {
+          "split": "heldout",
+          "id": "sorted-fp16-b128",
+          "path": "preallocated",
+          "batch_pairs": 128,
+          "precision": "fp16",
+          "status": "ok",
+          "examples_planned": 1024,
+          "weight_loads": 1,
+          "examples": 1024,
+          "seconds_historical_scope": 12.441940165999767,
+          "seconds_full_wall": 12.807422736999797,
+          "answers_per_second": 82.30227652101209,
+          "decode_steps_sum": 2224,
+          "decode_row_steps_sum": 284672,
+          "generated_tokens_including_eos": 63460,
+          "token_identical_count": 990,
+          "token_identical_fraction": 0.966796875,
+          "answer_file": "sorted-fp16-b128-heldout-answers.jsonl",
+          "peak_allocated_bytes": 390217728,
+          "peak_reserved_bytes": 486539264,
+          "historical_timer": "encode/sort, H2D, encoder/KV decode, CPU token/UTF8 decoding, AST and reference-token diagnostics; excludes warmup/load/exec/file",
+          "full_timer": "torch.load, tokenizer restore, strict model restore/cast/H2D, warmup, generation/diagnostics, order restore and answers write; excludes download/cache/exec scoring",
+          "exec_match": {
+            "denominator": 991,
+            "matches": 191,
+            "accuracy": 0.1927346115035318,
+            "reference_statuses": {
+              "numeric": 991,
+              "non_number": 33
+            },
+            "generation_statuses": {
+              "numeric": 953,
+              "execution_error": 52,
+              "non_number": 11,
+              "syntax_error": 8
+            },
+            "rel_tol": 1e-06,
+            "abs_tol": 1e-06
+          },
+          "exec_seconds_outside_timers": 1.280045921999772,
+          "exec_complete": true
+        },
+        "test": {
+          "split": "test",
+          "id": "sorted-fp16-b128",
+          "path": "preallocated",
+          "batch_pairs": 128,
+          "precision": "fp16",
+          "status": "ok",
+          "examples_planned": 1919,
+          "weight_loads": 1,
+          "examples": 1919,
+          "seconds_historical_scope": 26.401020993000202,
+          "seconds_full_wall": 26.78181349500028,
+          "answers_per_second": 72.68658286013982,
+          "decode_steps_sum": 5072,
+          "decode_row_steps_sum": 648704,
+          "generated_tokens_including_eos": 123728,
+          "token_identical_count": 1854,
+          "token_identical_fraction": 0.9661281917665451,
+          "answer_file": "sorted-fp16-b128-test-answers.jsonl",
+          "peak_allocated_bytes": 430124032,
+          "peak_reserved_bytes": 549453824,
+          "historical_timer": "encode/sort, H2D, encoder/KV decode, CPU token/UTF8 decoding, AST and reference-token diagnostics; excludes warmup/load/exec/file",
+          "full_timer": "torch.load, tokenizer restore, strict model restore/cast/H2D, warmup, generation/diagnostics, order restore and answers write; excludes download/cache/exec scoring"
+        }
+      },
+      {
+        "id": "sorted-fp32-b256",
+        "config": {
+          "id": "sorted-fp32-b256",
+          "path": "preallocated",
+          "batch_pairs": 256,
+          "precision": "fp32"
+        },
+        "status": "ok",
+        "heldout": {
+          "split": "heldout",
+          "id": "sorted-fp32-b256",
+          "path": "preallocated",
+          "batch_pairs": 256,
+          "precision": "fp32",
+          "status": "ok",
+          "examples_planned": 1024,
+          "weight_loads": 1,
+          "examples": 1024,
+          "seconds_historical_scope": 15.25533249,
+          "seconds_full_wall": 15.643068035999931,
+          "answers_per_second": 67.1240696111501,
+          "decode_steps_sum": 1232,
+          "decode_row_steps_sum": 315392,
+          "generated_tokens_including_eos": 63503,
+          "token_identical_count": 1024,
+          "token_identical_fraction": 1.0,
+          "answer_file": "sorted-fp32-b256-heldout-answers.jsonl",
+          "peak_allocated_bytes": 1456332288,
+          "peak_reserved_bytes": 1889533952,
+          "historical_timer": "encode/sort, H2D, encoder/KV decode, CPU token/UTF8 decoding, AST and reference-token diagnostics; excludes warmup/load/exec/file",
+          "full_timer": "torch.load, tokenizer restore, strict model restore/cast/H2D, warmup, generation/diagnostics, order restore and answers write; excludes download/cache/exec scoring",
+          "exec_match": {
+            "denominator": 991,
+            "matches": 189,
+            "accuracy": 0.19071644803229063,
+            "reference_statuses": {
+              "numeric": 991,
+              "non_number": 33
+            },
+            "generation_statuses": {
+              "numeric": 951,
+              "execution_error": 54,
+              "non_number": 12,
+              "syntax_error": 7
+            },
+            "rel_tol": 1e-06,
+            "abs_tol": 1e-06
+          },
+          "exec_seconds_outside_timers": 1.6291063799999392,
+          "exec_complete": true
+        },
+        "test": {
+          "split": "test",
+          "id": "sorted-fp32-b256",
+          "path": "preallocated",
+          "batch_pairs": 256,
+          "precision": "fp32",
+          "status": "ok",
+          "examples_planned": 1919,
+          "weight_loads": 1,
+          "examples": 1919,
+          "seconds_historical_scope": 38.24114270100017,
+          "seconds_full_wall": 38.90188214800037,
+          "answers_per_second": 50.18155485060361,
+          "decode_steps_sum": 3504,
+          "decode_row_steps_sum": 830976,
+          "generated_tokens_including_eos": 123466,
+          "token_identical_count": 1919,
+          "token_identical_fraction": 1.0,
+          "answer_file": "sorted-fp32-b256-test-answers.jsonl",
+          "peak_allocated_bytes": 1333529088,
+          "peak_reserved_bytes": 1539309568,
+          "historical_timer": "encode/sort, H2D, encoder/KV decode, CPU token/UTF8 decoding, AST and reference-token diagnostics; excludes warmup/load/exec/file",
+          "full_timer": "torch.load, tokenizer restore, strict model restore/cast/H2D, warmup, generation/diagnostics, order restore and answers write; excludes download/cache/exec scoring"
+        }
+      },
+      {
+        "id": "sorted-fp16-b256",
+        "config": {
+          "id": "sorted-fp16-b256",
+          "path": "preallocated",
+          "batch_pairs": 256,
+          "precision": "fp16"
+        },
+        "status": "ok",
+        "heldout": {
+          "split": "heldout",
+          "id": "sorted-fp16-b256",
+          "path": "preallocated",
+          "batch_pairs": 256,
+          "precision": "fp16",
+          "status": "ok",
+          "examples_planned": 1024,
+          "weight_loads": 1,
+          "examples": 1024,
+          "seconds_historical_scope": 6.630062948000159,
+          "seconds_full_wall": 7.000494419999995,
+          "answers_per_second": 154.44800570240008,
+          "decode_steps_sum": 1232,
+          "decode_row_steps_sum": 315392,
+          "generated_tokens_including_eos": 63454,
+          "token_identical_count": 994,
+          "token_identical_fraction": 0.970703125,
+          "answer_file": "sorted-fp16-b256-heldout-answers.jsonl",
+          "peak_allocated_bytes": 738629120,
+          "peak_reserved_bytes": 979369984,
+          "historical_timer": "encode/sort, H2D, encoder/KV decode, CPU token/UTF8 decoding, AST and reference-token diagnostics; excludes warmup/load/exec/file",
+          "full_timer": "torch.load, tokenizer restore, strict model restore/cast/H2D, warmup, generation/diagnostics, order restore and answers write; excludes download/cache/exec scoring",
+          "exec_match": {
+            "denominator": 991,
+            "matches": 190,
+            "accuracy": 0.1917255297679112,
+            "reference_statuses": {
+              "numeric": 991,
+              "non_number": 33
+            },
+            "generation_statuses": {
+              "numeric": 952,
+              "execution_error": 53,
+              "non_number": 12,
+              "syntax_error": 7
+            },
+            "rel_tol": 1e-06,
+            "abs_tol": 1e-06
+          },
+          "exec_seconds_outside_timers": 1.5380303689998982,
+          "exec_complete": true
+        },
+        "test": {
+          "split": "test",
+          "id": "sorted-fp16-b256",
+          "path": "preallocated",
+          "batch_pairs": 256,
+          "precision": "fp16",
+          "status": "ok",
+          "examples_planned": 1919,
+          "weight_loads": 1,
+          "examples": 1919,
+          "seconds_historical_scope": 20.67770408100023,
+          "seconds_full_wall": 21.37782262699966,
+          "answers_per_second": 92.80527434200391,
+          "decode_steps_sum": 3888,
+          "decode_row_steps_sum": 929280,
+          "generated_tokens_including_eos": 123804,
+          "token_identical_count": 1850,
+          "token_identical_fraction": 0.9640437727983324,
+          "answer_file": "sorted-fp16-b256-test-answers.jsonl",
+          "peak_allocated_bytes": 676381184,
+          "peak_reserved_bytes": 794820608,
+          "historical_timer": "encode/sort, H2D, encoder/KV decode, CPU token/UTF8 decoding, AST and reference-token diagnostics; excludes warmup/load/exec/file",
+          "full_timer": "torch.load, tokenizer restore, strict model restore/cast/H2D, warmup, generation/diagnostics, order restore and answers write; excludes download/cache/exec scoring"
+        }
+      },
+      {
+        "id": "sorted-fp32-b512",
+        "config": {
+          "id": "sorted-fp32-b512",
+          "path": "preallocated",
+          "batch_pairs": 512,
+          "precision": "fp32"
+        },
+        "status": "ok",
+        "heldout": {
+          "split": "heldout",
+          "id": "sorted-fp32-b512",
+          "path": "preallocated",
+          "batch_pairs": 512,
+          "precision": "fp32",
+          "status": "ok",
+          "examples_planned": 1024,
+          "weight_loads": 1,
+          "examples": 1024,
+          "seconds_historical_scope": 15.995138774000225,
+          "seconds_full_wall": 16.34498118800002,
+          "answers_per_second": 64.01945081367417,
+          "decode_steps_sum": 624,
+          "decode_row_steps_sum": 319488,
+          "generated_tokens_including_eos": 63503,
+          "token_identical_count": 1024,
+          "token_identical_fraction": 1.0,
+          "answer_file": "sorted-fp32-b512-heldout-answers.jsonl",
+          "peak_allocated_bytes": 2846394880,
+          "peak_reserved_bytes": 3776970752,
+          "historical_timer": "encode/sort, H2D, encoder/KV decode, CPU token/UTF8 decoding, AST and reference-token diagnostics; excludes warmup/load/exec/file",
+          "full_timer": "torch.load, tokenizer restore, strict model restore/cast/H2D, warmup, generation/diagnostics, order restore and answers write; excludes download/cache/exec scoring",
+          "exec_match": {
+            "denominator": 991,
+            "matches": 189,
+            "accuracy": 0.19071644803229063,
+            "reference_statuses": {
+              "numeric": 991,
+              "non_number": 33
+            },
+            "generation_statuses": {
+              "numeric": 951,
+              "execution_error": 54,
+              "non_number": 12,
+              "syntax_error": 7
+            },
+            "rel_tol": 1e-06,
+            "abs_tol": 1e-06
+          },
+          "exec_seconds_outside_timers": 1.3191384100000505,
+          "exec_complete": true
+        },
+        "test": {
+          "split": "test",
+          "id": "sorted-fp32-b512",
+          "path": "preallocated",
+          "batch_pairs": 512,
+          "precision": "fp32",
+          "status": "ok",
+          "examples_planned": 1919,
+          "weight_loads": 1,
+          "examples": 1919,
+          "seconds_historical_scope": 39.58660319899991,
+          "seconds_full_wall": 39.96137333600018,
+          "answers_per_second": 48.475995537007336,
+          "decode_steps_sum": 1840,
+          "decode_row_steps_sum": 876032,
+          "generated_tokens_including_eos": 123466,
+          "token_identical_count": 1919,
+          "token_identical_fraction": 1.0,
+          "answer_file": "sorted-fp32-b512-test-answers.jsonl",
+          "peak_allocated_bytes": 2526134784,
+          "peak_reserved_bytes": 3531603968,
+          "historical_timer": "encode/sort, H2D, encoder/KV decode, CPU token/UTF8 decoding, AST and reference-token diagnostics; excludes warmup/load/exec/file",
+          "full_timer": "torch.load, tokenizer restore, strict model restore/cast/H2D, warmup, generation/diagnostics, order restore and answers write; excludes download/cache/exec scoring"
+        }
+      },
+      {
+        "id": "sorted-fp16-b512",
+        "config": {
+          "id": "sorted-fp16-b512",
+          "path": "preallocated",
+          "batch_pairs": 512,
+          "precision": "fp16"
+        },
+        "status": "ok",
+        "heldout": {
+          "split": "heldout",
+          "id": "sorted-fp16-b512",
+          "path": "preallocated",
+          "batch_pairs": 512,
+          "precision": "fp16",
+          "status": "ok",
+          "examples_planned": 1024,
+          "weight_loads": 1,
+          "examples": 1024,
+          "seconds_historical_scope": 5.525518540999656,
+          "seconds_full_wall": 5.88551416700011,
+          "answers_per_second": 185.3219733861832,
+          "decode_steps_sum": 624,
+          "decode_row_steps_sum": 319488,
+          "generated_tokens_including_eos": 63466,
+          "token_identical_count": 998,
+          "token_identical_fraction": 0.974609375,
+          "answer_file": "sorted-fp16-b512-heldout-answers.jsonl",
+          "peak_allocated_bytes": 1433879040,
+          "peak_reserved_bytes": 1793064960,
+          "historical_timer": "encode/sort, H2D, encoder/KV decode, CPU token/UTF8 decoding, AST and reference-token diagnostics; excludes warmup/load/exec/file",
+          "full_timer": "torch.load, tokenizer restore, strict model restore/cast/H2D, warmup, generation/diagnostics, order restore and answers write; excludes download/cache/exec scoring",
+          "exec_match": {
+            "denominator": 991,
+            "matches": 190,
+            "accuracy": 0.1917255297679112,
+            "reference_statuses": {
+              "numeric": 991,
+              "non_number": 33
+            },
+            "generation_statuses": {
+              "numeric": 951,
+              "execution_error": 54,
+              "non_number": 11,
+              "syntax_error": 8
+            },
+            "rel_tol": 1e-06,
+            "abs_tol": 1e-06
+          },
+          "exec_seconds_outside_timers": 1.4722560430000158,
+          "exec_complete": true
+        },
+        "test": {
+          "split": "test",
+          "id": "sorted-fp16-b512",
+          "path": "preallocated",
+          "batch_pairs": 512,
+          "precision": "fp16",
+          "status": "ok",
+          "examples_planned": 1919,
+          "weight_loads": 1,
+          "examples": 1919,
+          "seconds_historical_scope": 15.186942571000145,
+          "seconds_full_wall": 15.566698473999168,
+          "answers_per_second": 126.35854722097781,
+          "decode_steps_sum": 2048,
+          "decode_row_steps_sum": 982528,
+          "generated_tokens_including_eos": 123747,
+          "token_identical_count": 1860,
+          "token_identical_fraction": 0.969254820218864,
+          "answer_file": "sorted-fp16-b512-test-answers.jsonl",
+          "peak_allocated_bytes": 1274182144,
+          "peak_reserved_bytes": 1818230784,
+          "historical_timer": "encode/sort, H2D, encoder/KV decode, CPU token/UTF8 decoding, AST and reference-token diagnostics; excludes warmup/load/exec/file",
+          "full_timer": "torch.load, tokenizer restore, strict model restore/cast/H2D, warmup, generation/diagnostics, order restore and answers write; excludes download/cache/exec scoring"
+        }
+      }
+    ],
+    "inference_SDPA_preflight_outside_timers": {
+      "fp32": {
+        "status": "observed",
+        "operators": [
+          "aten::_scaled_dot_product_efficient_attention",
+          "aten::scaled_dot_product_attention"
+        ],
+        "scope": "one warmup forward/backward for this shape/dtype, outside measured steps; backend may change with shapes"
+      },
+      "fp16": {
+        "status": "observed",
+        "operators": [
+          "aten::_scaled_dot_product_efficient_attention",
+          "aten::scaled_dot_product_attention"
+        ],
+        "scope": "one warmup forward/backward for this shape/dtype, outside measured steps; backend may change with shapes"
+      }
+    },
+    "elapsed_seconds_since_first_cell": 2729.3630927430004,
+    "elapsed_seconds_at_pack": 2729.381853653,
+    "within60min_at_pack_start": true
+  },
+  "completion": {
+    "train_status_counts": {
+      "ok": 9,
+      "oom": 5,
+      "budget_warmup": 1,
+      "budget_not_started": 5
+    },
+    "train_completed_50_plus_200": 9,
+    "inference_completed": 9,
+    "model_C_no_completed_measurement": true
+  },
+  "decision": {
+    "train_id": "A-amp_fp16-b128-bucketed",
+    "train_ids_by_model": {
+      "A": "A-amp_fp16-b128-bucketed",
+      "B": "B-amp_fp16-b128-bucketed",
+      "C": null
+    },
+    "inference_id": "sorted-fp16-b512",
+    "train_rule": "useful target tokens/s, finite loss/grads,200 steps, no measured AMP skips",
+    "inference_rule": "minimum test full wall; exec-match drop<=0.005 versus control, denom991",
+    "train_target_throughput_speedup": 5.654269684780423,
+    "train_pairs_throughput_speedup": 5.620672085427095,
+    "inference_test_full_wall_speedup": 4.574936209238736,
+    "inference_historical_scope_speedup": 4.666939776103506
+  },
+  "new_CPU_verification": {
+    "new_check_device": "CPU execution only; no new model training/inference",
+    "reference991_reproduced": true,
+    "scores": {
+      "control-fp32-b32": {
+        "matches": 189,
+        "denominator": 991,
+        "new_CPU_matches": 189,
+        "identical_heldout_tokens": 1024,
+        "gains_vs_control": 0,
+        "losses_vs_control": 0,
+        "paired_McNemar_exact_p": 1.0,
+        "reference_and_execution_rows_exact": true,
+        "test_original_order_verified": true
+      },
+      "sorted-fp32-b64": {
+        "matches": 189,
+        "denominator": 991,
+        "new_CPU_matches": 189,
+        "identical_heldout_tokens": 1024,
+        "gains_vs_control": 0,
+        "losses_vs_control": 0,
+        "paired_McNemar_exact_p": 1.0,
+        "reference_and_execution_rows_exact": true,
+        "test_original_order_verified": true
+      },
+      "sorted-fp16-b64": {
+        "matches": 191,
+        "denominator": 991,
+        "new_CPU_matches": 191,
+        "identical_heldout_tokens": 997,
+        "gains_vs_control": 2,
+        "losses_vs_control": 0,
+        "paired_McNemar_exact_p": 0.5,
+        "reference_and_execution_rows_exact": true,
+        "test_original_order_verified": true
+      },
+      "sorted-fp32-b128": {
+        "matches": 189,
+        "denominator": 991,
+        "new_CPU_matches": 189,
+        "identical_heldout_tokens": 1024,
+        "gains_vs_control": 0,
+        "losses_vs_control": 0,
+        "paired_McNemar_exact_p": 1.0,
+        "reference_and_execution_rows_exact": true,
+        "test_original_order_verified": true
+      },
+      "sorted-fp16-b128": {
+        "matches": 191,
+        "denominator": 991,
+        "new_CPU_matches": 191,
+        "identical_heldout_tokens": 990,
+        "gains_vs_control": 2,
+        "losses_vs_control": 0,
+        "paired_McNemar_exact_p": 0.5,
+        "reference_and_execution_rows_exact": true,
+        "test_original_order_verified": true
+      },
+      "sorted-fp32-b256": {
+        "matches": 189,
+        "denominator": 991,
+        "new_CPU_matches": 189,
+        "identical_heldout_tokens": 1024,
+        "gains_vs_control": 0,
+        "losses_vs_control": 0,
+        "paired_McNemar_exact_p": 1.0,
+        "reference_and_execution_rows_exact": true,
+        "test_original_order_verified": true
+      },
+      "sorted-fp16-b256": {
+        "matches": 190,
+        "denominator": 991,
+        "new_CPU_matches": 190,
+        "identical_heldout_tokens": 994,
+        "gains_vs_control": 1,
+        "losses_vs_control": 0,
+        "paired_McNemar_exact_p": 1.0,
+        "reference_and_execution_rows_exact": true,
+        "test_original_order_verified": true
+      },
+      "sorted-fp32-b512": {
+        "matches": 189,
+        "denominator": 991,
+        "new_CPU_matches": 189,
+        "identical_heldout_tokens": 1024,
+        "gains_vs_control": 0,
+        "losses_vs_control": 0,
+        "paired_McNemar_exact_p": 1.0,
+        "reference_and_execution_rows_exact": true,
+        "test_original_order_verified": true
+      },
+      "sorted-fp16-b512": {
+        "matches": 190,
+        "denominator": 991,
+        "new_CPU_matches": 190,
+        "identical_heldout_tokens": 998,
+        "gains_vs_control": 1,
+        "losses_vs_control": 0,
+        "paired_McNemar_exact_p": 1.0,
+        "reference_and_execution_rows_exact": true,
+        "test_original_order_verified": true
+      }
+    },
+    "new_model_updates": 0,
+    "new_GPU_measurements": false,
+    "new_T4_control_all1024_tokens_equal_saved22": true,
+    "train_rates_padding_counts_and_choice_verified": true,
+    "inference_choice_and_winner_files_verified": true,
+    "all_passed": true
+  },
+  "CPU_train50k_audit": {
+    "provenance": "Preparation-time CPU audit copied to Colab results; not repeated by this run or the current analysis.",
+    "finite": 48210,
+    "no_finite_answer_in_executor": 1790,
+    "fraction": 0.0358,
+    "AST_blocked_unknown": 60,
+    "known_non_number_or_runtime_error": 1730,
+    "reference_filtering_applied_in_23": false
+  },
+  "interpretation": [
+    "A AMP batch128 + bucketing + fused AdamW is the fastest completed training throughput candidate under both 14e9-byte peak limits.",
+    "B AMP batch128 completed with finite losses, zero measured skipped updates and 13.495 GB peak reserved; limited memory headroom.",
+    "A FP32 batch128 completed but reserved14.365 GB exceeds the predetermined threshold.",
+    "A AMP batch8 is slower than the same-run FP32 batch8 control. This does not extend to larger batches.",
+    "Sorted FP16 batch512 is fastest greedy inference: 190/991, versus control189/991; 998/1024 heldout and1860/1919 test token-identical.",
+    "All sorted FP32 variants are fully token-identical to control; batch128 is the fastest FP32 variant.",
+    "All new CPU execution matches reproduce saved Colab execution exactly; new model updates and GPU measurements are zero."
+  ],
+  "limits": [
+    "Throughput uses newly initialized short-run models; it does not establish quality or convergence speed for batch128 or models B/C.",
+    "Only9/20 train configs completed. Five OOMs; C has12 warmup steps in one config and five configs not started due reserved phase budget.",
+    "Batch, bucketing and fused AdamW changed together in the main grid; compare FP32/AMP on identical batch plans to isolate precision.",
+    "Inference uses fixed22/100k weights, greedy cap512, one timing repetition per variant. No beam or sampling.",
+    "Full wall includes load, restoration, warmup, generation and answer-file writing; excludes HF download, caching and exec scoring.",
+    "The one/two extra exec matches with FP16 are not significant (paired exact McNemar p1.0/0.5).",
+    "FP16 changes some sequences despite preserved exec-match; test has no official quality labels.",
+    "Observed SDPA operator is efficient_attention for profiled shapes; enabled flash flag does not establish FlashAttention use.",
+    "Fresh heldout1024 remains unscored; official bot file format and official leaderboard score remain unknown."
+  ]
+}

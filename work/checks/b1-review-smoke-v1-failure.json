@@ -1,0 +1,92 @@
+{
+  "passed": false,
+  "session": {
+    "status": "partial",
+    "worker_status": {
+      "GPU0": "missing",
+      "GPU1": "missing"
+    },
+    "reason": "workers completed",
+    "failed_workers": [
+      0,
+      1
+    ],
+    "exit_codes": [
+      1,
+      1
+    ],
+    "unreaped_worker_pids": [],
+    "wall_seconds": 324.281951292,
+    "comparison": {
+      "status": "offline E/W at equal main time; compare historical C curve; no online selection"
+    },
+    "output_policy": "individual files; no ZIP; full stable states + all evaluated FP16 weights",
+    "hard_shutdown_seconds": 840,
+    "server_ceiling_seconds": 900
+  },
+  "small_files_SHA_verified": 14,
+  "failure": "GPU smoke assertion hashes optimizer param_groups.lr, which warmup advances even on AMP skip",
+  "regression": "test_warmup_AMP_skip_changes_group_lr_without_changing_weights_moments",
+  "workers": [
+    {
+      "passed": false,
+      "model": "E",
+      "parameter_count": 108694019,
+      "memory_probe": {
+        "micro_batch": 64,
+        "attempts": [
+          {
+            "micro_batch": 64,
+            "status": "passed",
+            "peak_reserved_bytes": 14382268416,
+            "peak_allocated_bytes": 13200660992,
+            "Adam_step_verified": true,
+            "probe_seconds": 2.8840387360000364
+          }
+        ]
+      },
+      "shape_bench_ratio": 1.082430920986423,
+      "main_attempts": 256,
+      "AMP_skips": 0,
+      "nonfinite_skips": 0,
+      "seconds_per_step": 0.5791529351562446,
+      "training_pairs_per_second": 221.01243424669516,
+      "target_tokens_per_second": 14270.032573987362,
+      "peak_reserved_bytes": 12673089536,
+      "peak_allocated_bytes": 10473952768,
+      "CUDA_next_update_bit_exact": true,
+      "peak_lr_attempts": 16,
+      "peak_lr_AMP_skips": 0
+    },
+    {
+      "passed": false,
+      "model": "W",
+      "parameter_count": 113421827,
+      "memory_probe": {
+        "micro_batch": 32,
+        "attempts": [
+          {
+            "micro_batch": 32,
+            "status": "passed",
+            "peak_reserved_bytes": 8803844096,
+            "peak_allocated_bytes": 8066351104,
+            "Adam_step_verified": true,
+            "probe_seconds": 3.1039744400000018
+          }
+        ]
+      },
+      "shape_bench_ratio": 1.0220283222300677,
+      "main_attempts": 256,
+      "AMP_skips": 0,
+      "nonfinite_skips": 0,
+      "seconds_per_step": 0.6612090002187525,
+      "training_pairs_per_second": 193.58478175229442,
+      "target_tokens_per_second": 12499.120924345836,
+      "peak_reserved_bytes": 7767851008,
+      "peak_allocated_bytes": 6871592448,
+      "CUDA_next_update_bit_exact": true,
+      "peak_lr_attempts": 16,
+      "peak_lr_AMP_skips": 0
+    }
+  ]
+}

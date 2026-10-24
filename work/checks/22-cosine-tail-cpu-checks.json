@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-09",
+  "notebook_sha256": "4caefb22072195c9512dcf6234d09ee3c9354bfbd2125017579ef49eff0fcff2",
+  "runtime": {
+    "device": "CPU",
+    "torch": "2.14.1",
+    "tokenizers": "0.23.2"
+  },
+  "source_checkpoint_sha256": "cbdc205be3842f02ea7eabc024d2417934aac2dd3de47da1058b1ccb2ff4eaa1",
+  "model_parameters": 12086912,
+  "full500k_data_selection_and_hash_identity_executed": true,
+  "source_PT_and_ZIP_load_equivalent_wrong100k_rejected": true,
+  "same_checkpoint_tokenizer_loaded_no_refitting": true,
+  "lazy_cached_pairs_used": 32,
+  "source_model_AdamW_scheduler_counter_Python_CPU_RNG_coverage_exact": true,
+  "baseline1024_loss_delta_vs_saved21": -4.587380861731383e-06,
+  "baseline_full1024_preserves_numerical_state_RNG_and_coverage": true,
+  "reference_denominators": [
+    223,
+    888
+  ],
+  "training_updates": 6,
+  "training_update_breakdown": {
+    "online_control": 2,
+    "notebook_continuation": 2,
+    "checkpoint75001_resume": 1,
+    "interruption_at75001": 1
+  },
+  "two_updates_75001_75002_equal_online_without_diagnostics": true,
+  "new_cosine_function_retained_after_loading_original_scheduler_state": true,
+  "checkpoint75001_resume_exact": true,
+  "larger1024_teacher_forced_loss_path_and_full_greedy_paths": true,
+  "primary_constant21_comparison_and_original_plus_augassign_manual74": true,
+  "timer_rates_count_added_work_and_chain_adds_only_source75k_prefix": true,
+  "rerun_guard": true,
+  "interruption_at_completed_checkpoint_keeps_exact_state": true,
+  "partial_and_complete_ZIP_CRC_manifest_SHA_checkpoint": true,
+  "fresh1024_reserved_unchanged_and_unscored": true,
+  "elapsed_seconds": 124.23548449994996,
+  "limits": [
+    "CPU6updates/cap4/test2 implementation check, not25000-step training or new quality/speed results.",
+    "Full1024 teacher-forced losses used; shortened generation is not a quality measurement.",
+    "Unchanged full500k BPE cache/round-trip not rebuilt; only actual next batches lazily encoded, notebook builds the full cache.",
+    "Historical100k controls temporarily aliased to smoke75002 to check comparison wiring; no quality claim at equal budget for this smoke.",
+    "No T4/GPU/CUDA RNG restore/full1919 inference or browser upload-download executed; Colab files UI mocked.",
+    "Exact interrupted state checked at a completed-update checkpoint boundary; arbitrary interruption inside an optimizer step is outside this check.",
+    "Generated/supplied Python programs were never executed."
+  ]
+}

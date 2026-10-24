@@ -1,0 +1,3147 @@
+{
+  "experiment": 27,
+  "status": "complete",
+  "source": {
+    "id": "kaggle-s1-v1",
+    "ref": "thisarivson/nlp-hw02-kaggle-s1/1",
+    "version": 1,
+    "version_label": "v1",
+    "Kaggle_status": "COMPLETE",
+    "output": "kaggle-runs/nlp-hw02-kaggle-s1/1",
+    "download": {
+      "ref": "thisarivson/nlp-hw02-kaggle-s1/1",
+      "version_label": "v1",
+      "files": 1951,
+      "CLI_224_compatibility": true,
+      "path": "kaggle-runs/nlp-hw02-kaggle-s1/1"
+    },
+    "archive": {
+      "file": "s1-results.zip",
+      "bytes": 350077134,
+      "sha256": "e834fe795d2212bedb0b22c17fa4953e26f62f561d829578b6eb9aee01a6ae43",
+      "manifest_files": 1906,
+      "CRC": "passed",
+      "all_SHA_bytes": "passed"
+    },
+    "summary_SHA256": {
+      "s1-summary.json": "e5d57eef047b0f59c7c2112c2f6b030112a8d3d23b675a346f92e5d9c1d7511a",
+      "gpu0-a26/26b-final-summary.json": "5d1dfd1ac61f0d64fc4f6c20184f73bc452da3e6b4f30a0ef46b76f64cb31656",
+      "gpu0-exp27/27-summary.json": "84f9bd012f54b62e1d221b73f3529d8cde4ed8d41420844a1df2eeb932976c26",
+      "gpu1-exp28/28-summary.json": "0affb9d2f055acbce643cfcf89fa0136372694f8263b3e66d5f69178ac501f63"
+    }
+  },
+  "model_sha256": "13e45e3d1999ce617ffc14b71a932e41cd039aa379082a45c9882be51ea689e8",
+  "table": [
+    {
+      "config": {
+        "name": "greedy",
+        "mode": "greedy",
+        "k": 0,
+        "temperature": null,
+        "greedy_vote": false
+      },
+      "heldout4k": {
+        "exec": {
+          "denominator": 4096,
+          "matches": 2538,
+          "accuracy": 0.61962890625,
+          "reference_statuses": {
+            "numeric": 4096
+          },
+          "generation_statuses": {
+            "numeric": 4050,
+            "execution_error": 35,
+            "syntax_error": 8,
+            "non_number": 1,
+            "timeout": 2
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 0,
+          "losses": 0,
+          "discordant": 0,
+          "exact_two_sided_p": 1.0,
+          "delta_percentage_points": 0.0
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 2013,
+            "matches": 1566,
+            "accuracy": 0.7779433681073026
+          },
+          "60–90": {
+            "denominator": 1457,
+            "matches": 768,
+            "accuracy": 0.5271105010295127
+          },
+          "90–120": {
+            "denominator": 488,
+            "matches": 176,
+            "accuracy": 0.36065573770491804
+          },
+          "≥120": {
+            "denominator": 138,
+            "matches": 28,
+            "accuracy": 0.2028985507246377
+          }
+        },
+        "executed_candidates_used": 4096,
+        "mean_winning_length": 61.458740234375
+      },
+      "old991": {
+        "exec": {
+          "denominator": 991,
+          "matches": 634,
+          "accuracy": 0.6397578203834511,
+          "reference_statuses": {
+            "numeric": 991,
+            "non_number": 33
+          },
+          "generation_statuses": {
+            "numeric": 1014,
+            "execution_error": 9,
+            "non_number": 1
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 0,
+          "losses": 0,
+          "discordant": 0,
+          "exact_two_sided_p": 1.0,
+          "delta_percentage_points": 0.0
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 495,
+            "matches": 394,
+            "accuracy": 0.795959595959596
+          },
+          "60–90": {
+            "denominator": 345,
+            "matches": 192,
+            "accuracy": 0.5565217391304348
+          },
+          "90–120": {
+            "denominator": 115,
+            "matches": 36,
+            "accuracy": 0.3130434782608696
+          },
+          "≥120": {
+            "denominator": 36,
+            "matches": 12,
+            "accuracy": 0.3333333333333333
+          }
+        },
+        "executed_candidates_used": 1024,
+        "mean_winning_length": 60.9609375
+      },
+      "full_test1919_seconds": 13.002573614000084,
+      "test_measured": true
+    },
+    {
+      "config": {
+        "name": "vote-t0.7-k4-g0",
+        "mode": "vote",
+        "temperature": 0.7,
+        "k": 4,
+        "greedy_vote": false
+      },
+      "heldout4k": {
+        "exec": {
+          "denominator": 4096,
+          "matches": 2622,
+          "accuracy": 0.64013671875,
+          "reference_statuses": {
+            "numeric": 4096
+          },
+          "generation_statuses": {
+            "numeric": 4096
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 188,
+          "losses": 104,
+          "discordant": 292,
+          "exact_two_sided_p": 1.0110335009782474e-06,
+          "delta_percentage_points": 2.05078125
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 2013,
+            "matches": 1595,
+            "accuracy": 0.7923497267759563
+          },
+          "60–90": {
+            "denominator": 1457,
+            "matches": 800,
+            "accuracy": 0.5490734385724091
+          },
+          "90–120": {
+            "denominator": 488,
+            "matches": 195,
+            "accuracy": 0.39959016393442626
+          },
+          "≥120": {
+            "denominator": 138,
+            "matches": 32,
+            "accuracy": 0.2318840579710145
+          }
+        },
+        "executed_candidates_used": 20480,
+        "mean_winning_length": 60.657958984375
+      },
+      "old991": {
+        "exec": {
+          "denominator": 991,
+          "matches": 653,
+          "accuracy": 0.6589303733602422,
+          "reference_statuses": {
+            "numeric": 991,
+            "non_number": 33
+          },
+          "generation_statuses": {
+            "numeric": 1024
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 45,
+          "losses": 26,
+          "discordant": 71,
+          "exact_two_sided_p": 0.03192716208321237,
+          "delta_percentage_points": 1.917255297679112
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 495,
+            "matches": 403,
+            "accuracy": 0.8141414141414142
+          },
+          "60–90": {
+            "denominator": 345,
+            "matches": 198,
+            "accuracy": 0.5739130434782609
+          },
+          "90–120": {
+            "denominator": 115,
+            "matches": 37,
+            "accuracy": 0.3217391304347826
+          },
+          "≥120": {
+            "denominator": 36,
+            "matches": 15,
+            "accuracy": 0.4166666666666667
+          }
+        },
+        "executed_candidates_used": 5120,
+        "mean_winning_length": 60.78515625
+      },
+      "full_test1919_seconds": null,
+      "test_measured": false
+    },
+    {
+      "config": {
+        "name": "vote-t0.7-k4-g1",
+        "mode": "vote",
+        "temperature": 0.7,
+        "k": 4,
+        "greedy_vote": true
+      },
+      "heldout4k": {
+        "exec": {
+          "denominator": 4096,
+          "matches": 2616,
+          "accuracy": 0.638671875,
+          "reference_statuses": {
+            "numeric": 4096
+          },
+          "generation_statuses": {
+            "numeric": 4096
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 119,
+          "losses": 41,
+          "discordant": 160,
+          "exact_two_sided_p": 5.212205484279746e-10,
+          "delta_percentage_points": 1.904296875
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 2013,
+            "matches": 1592,
+            "accuracy": 0.7908594138102335
+          },
+          "60–90": {
+            "denominator": 1457,
+            "matches": 804,
+            "accuracy": 0.5518188057652711
+          },
+          "90–120": {
+            "denominator": 488,
+            "matches": 190,
+            "accuracy": 0.38934426229508196
+          },
+          "≥120": {
+            "denominator": 138,
+            "matches": 30,
+            "accuracy": 0.21739130434782608
+          }
+        },
+        "executed_candidates_used": 20480,
+        "mean_winning_length": 60.689697265625
+      },
+      "old991": {
+        "exec": {
+          "denominator": 991,
+          "matches": 651,
+          "accuracy": 0.656912209889001,
+          "reference_statuses": {
+            "numeric": 991,
+            "non_number": 33
+          },
+          "generation_statuses": {
+            "numeric": 1024
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 28,
+          "losses": 11,
+          "discordant": 39,
+          "exact_two_sided_p": 0.009475304279476404,
+          "delta_percentage_points": 1.715438950554995
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 495,
+            "matches": 398,
+            "accuracy": 0.804040404040404
+          },
+          "60–90": {
+            "denominator": 345,
+            "matches": 200,
+            "accuracy": 0.5797101449275363
+          },
+          "90–120": {
+            "denominator": 115,
+            "matches": 39,
+            "accuracy": 0.3391304347826087
+          },
+          "≥120": {
+            "denominator": 36,
+            "matches": 14,
+            "accuracy": 0.3888888888888889
+          }
+        },
+        "executed_candidates_used": 5120,
+        "mean_winning_length": 60.5732421875
+      },
+      "full_test1919_seconds": null,
+      "test_measured": false
+    },
+    {
+      "config": {
+        "name": "fallback-k4",
+        "mode": "fallback",
+        "temperature": 0.7,
+        "k": 4,
+        "greedy_vote": false
+      },
+      "heldout4k": {
+        "exec": {
+          "denominator": 4096,
+          "matches": 2548,
+          "accuracy": 0.6220703125,
+          "reference_statuses": {
+            "numeric": 4096
+          },
+          "generation_statuses": {
+            "numeric": 4096
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 10,
+          "losses": 0,
+          "discordant": 10,
+          "exact_two_sided_p": 0.001953125,
+          "delta_percentage_points": 0.244140625
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 2013,
+            "matches": 1571,
+            "accuracy": 0.7804272230501739
+          },
+          "60–90": {
+            "denominator": 1457,
+            "matches": 770,
+            "accuracy": 0.5284831846259437
+          },
+          "90–120": {
+            "denominator": 488,
+            "matches": 179,
+            "accuracy": 0.3668032786885246
+          },
+          "≥120": {
+            "denominator": 138,
+            "matches": 28,
+            "accuracy": 0.2028985507246377
+          }
+        },
+        "executed_candidates_used": 20480,
+        "mean_winning_length": 60.441650390625
+      },
+      "old991": {
+        "exec": {
+          "denominator": 991,
+          "matches": 634,
+          "accuracy": 0.6397578203834511,
+          "reference_statuses": {
+            "numeric": 991,
+            "non_number": 33
+          },
+          "generation_statuses": {
+            "numeric": 1024
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 0,
+          "losses": 0,
+          "discordant": 0,
+          "exact_two_sided_p": 1.0,
+          "delta_percentage_points": 0.0
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 495,
+            "matches": 394,
+            "accuracy": 0.795959595959596
+          },
+          "60–90": {
+            "denominator": 345,
+            "matches": 192,
+            "accuracy": 0.5565217391304348
+          },
+          "90–120": {
+            "denominator": 115,
+            "matches": 36,
+            "accuracy": 0.3130434782608696
+          },
+          "≥120": {
+            "denominator": 36,
+            "matches": 12,
+            "accuracy": 0.3333333333333333
+          }
+        },
+        "executed_candidates_used": 5120,
+        "mean_winning_length": 60.5244140625
+      },
+      "full_test1919_seconds": null,
+      "test_measured": false
+    },
+    {
+      "config": {
+        "name": "vote-t0.7-k8-g0",
+        "mode": "vote",
+        "temperature": 0.7,
+        "k": 8,
+        "greedy_vote": false
+      },
+      "heldout4k": {
+        "exec": {
+          "denominator": 4096,
+          "matches": 2668,
+          "accuracy": 0.6513671875,
+          "reference_statuses": {
+            "numeric": 4096
+          },
+          "generation_statuses": {
+            "numeric": 4096
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 216,
+          "losses": 86,
+          "discordant": 302,
+          "exact_two_sided_p": 4.6285856982436774e-14,
+          "delta_percentage_points": 3.173828125
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 2013,
+            "matches": 1603,
+            "accuracy": 0.7963238946845504
+          },
+          "60–90": {
+            "denominator": 1457,
+            "matches": 821,
+            "accuracy": 0.5634866163349348
+          },
+          "90–120": {
+            "denominator": 488,
+            "matches": 208,
+            "accuracy": 0.4262295081967213
+          },
+          "≥120": {
+            "denominator": 138,
+            "matches": 36,
+            "accuracy": 0.2608695652173913
+          }
+        },
+        "executed_candidates_used": 36864,
+        "mean_winning_length": 60.600341796875
+      },
+      "old991": {
+        "exec": {
+          "denominator": 991,
+          "matches": 670,
+          "accuracy": 0.6760847628657921,
+          "reference_statuses": {
+            "numeric": 991,
+            "non_number": 33
+          },
+          "generation_statuses": {
+            "numeric": 1024
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 60,
+          "losses": 24,
+          "discordant": 84,
+          "exact_two_sided_p": 0.00010714768358467153,
+          "delta_percentage_points": 3.632694248234107
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 495,
+            "matches": 407,
+            "accuracy": 0.8222222222222222
+          },
+          "60–90": {
+            "denominator": 345,
+            "matches": 203,
+            "accuracy": 0.5884057971014492
+          },
+          "90–120": {
+            "denominator": 115,
+            "matches": 43,
+            "accuracy": 0.3739130434782609
+          },
+          "≥120": {
+            "denominator": 36,
+            "matches": 17,
+            "accuracy": 0.4722222222222222
+          }
+        },
+        "executed_candidates_used": 9216,
+        "mean_winning_length": 60.283203125
+      },
+      "full_test1919_seconds": null,
+      "test_measured": false
+    },
+    {
+      "config": {
+        "name": "vote-t0.7-k8-g1",
+        "mode": "vote",
+        "temperature": 0.7,
+        "k": 8,
+        "greedy_vote": true
+      },
+      "heldout4k": {
+        "exec": {
+          "denominator": 4096,
+          "matches": 2664,
+          "accuracy": 0.650390625,
+          "reference_statuses": {
+            "numeric": 4096
+          },
+          "generation_statuses": {
+            "numeric": 4096
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 165,
+          "losses": 39,
+          "discordant": 204,
+          "exact_two_sided_p": 1.215144601607246e-19,
+          "delta_percentage_points": 3.076171875
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 2013,
+            "matches": 1605,
+            "accuracy": 0.797317436661699
+          },
+          "60–90": {
+            "denominator": 1457,
+            "matches": 819,
+            "accuracy": 0.5621139327385037
+          },
+          "90–120": {
+            "denominator": 488,
+            "matches": 207,
+            "accuracy": 0.42418032786885246
+          },
+          "≥120": {
+            "denominator": 138,
+            "matches": 33,
+            "accuracy": 0.2391304347826087
+          }
+        },
+        "executed_candidates_used": 36864,
+        "mean_winning_length": 60.567626953125
+      },
+      "old991": {
+        "exec": {
+          "denominator": 991,
+          "matches": 670,
+          "accuracy": 0.6760847628657921,
+          "reference_statuses": {
+            "numeric": 991,
+            "non_number": 33
+          },
+          "generation_statuses": {
+            "numeric": 1024
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 47,
+          "losses": 11,
+          "discordant": 58,
+          "exact_two_sided_p": 2.031594536044956e-06,
+          "delta_percentage_points": 3.632694248234107
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 495,
+            "matches": 405,
+            "accuracy": 0.8181818181818182
+          },
+          "60–90": {
+            "denominator": 345,
+            "matches": 206,
+            "accuracy": 0.5971014492753624
+          },
+          "90–120": {
+            "denominator": 115,
+            "matches": 43,
+            "accuracy": 0.3739130434782609
+          },
+          "≥120": {
+            "denominator": 36,
+            "matches": 16,
+            "accuracy": 0.4444444444444444
+          }
+        },
+        "executed_candidates_used": 9216,
+        "mean_winning_length": 60.298828125
+      },
+      "full_test1919_seconds": null,
+      "test_measured": false
+    },
+    {
+      "config": {
+        "name": "fallback-k8",
+        "mode": "fallback",
+        "temperature": 0.7,
+        "k": 8,
+        "greedy_vote": false
+      },
+      "heldout4k": {
+        "exec": {
+          "denominator": 4096,
+          "matches": 2548,
+          "accuracy": 0.6220703125,
+          "reference_statuses": {
+            "numeric": 4096
+          },
+          "generation_statuses": {
+            "numeric": 4096
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 10,
+          "losses": 0,
+          "discordant": 10,
+          "exact_two_sided_p": 0.001953125,
+          "delta_percentage_points": 0.244140625
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 2013,
+            "matches": 1571,
+            "accuracy": 0.7804272230501739
+          },
+          "60–90": {
+            "denominator": 1457,
+            "matches": 770,
+            "accuracy": 0.5284831846259437
+          },
+          "90–120": {
+            "denominator": 488,
+            "matches": 179,
+            "accuracy": 0.3668032786885246
+          },
+          "≥120": {
+            "denominator": 138,
+            "matches": 28,
+            "accuracy": 0.2028985507246377
+          }
+        },
+        "executed_candidates_used": 36864,
+        "mean_winning_length": 60.441650390625
+      },
+      "old991": {
+        "exec": {
+          "denominator": 991,
+          "matches": 634,
+          "accuracy": 0.6397578203834511,
+          "reference_statuses": {
+            "numeric": 991,
+            "non_number": 33
+          },
+          "generation_statuses": {
+            "numeric": 1024
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 0,
+          "losses": 0,
+          "discordant": 0,
+          "exact_two_sided_p": 1.0,
+          "delta_percentage_points": 0.0
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 495,
+            "matches": 394,
+            "accuracy": 0.795959595959596
+          },
+          "60–90": {
+            "denominator": 345,
+            "matches": 192,
+            "accuracy": 0.5565217391304348
+          },
+          "90–120": {
+            "denominator": 115,
+            "matches": 36,
+            "accuracy": 0.3130434782608696
+          },
+          "≥120": {
+            "denominator": 36,
+            "matches": 12,
+            "accuracy": 0.3333333333333333
+          }
+        },
+        "executed_candidates_used": 9216,
+        "mean_winning_length": 60.5244140625
+      },
+      "full_test1919_seconds": null,
+      "test_measured": false
+    },
+    {
+      "config": {
+        "name": "vote-t0.7-k16-g0",
+        "mode": "vote",
+        "temperature": 0.7,
+        "k": 16,
+        "greedy_vote": false
+      },
+      "heldout4k": {
+        "exec": {
+          "denominator": 4096,
+          "matches": 2707,
+          "accuracy": 0.660888671875,
+          "reference_statuses": {
+            "numeric": 4096
+          },
+          "generation_statuses": {
+            "numeric": 4096
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 251,
+          "losses": 82,
+          "discordant": 333,
+          "exact_two_sided_p": 4.52284755916596e-21,
+          "delta_percentage_points": 4.1259765625
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 2013,
+            "matches": 1624,
+            "accuracy": 0.8067560854446101
+          },
+          "60–90": {
+            "denominator": 1457,
+            "matches": 840,
+            "accuracy": 0.5765271105010296
+          },
+          "90–120": {
+            "denominator": 488,
+            "matches": 207,
+            "accuracy": 0.42418032786885246
+          },
+          "≥120": {
+            "denominator": 138,
+            "matches": 36,
+            "accuracy": 0.2608695652173913
+          }
+        },
+        "executed_candidates_used": 69632,
+        "mean_winning_length": 60.83984375
+      },
+      "old991": {
+        "exec": {
+          "denominator": 991,
+          "matches": 684,
+          "accuracy": 0.6902119071644803,
+          "reference_statuses": {
+            "numeric": 991,
+            "non_number": 33
+          },
+          "generation_statuses": {
+            "numeric": 1024
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 64,
+          "losses": 14,
+          "discordant": 78,
+          "exact_two_sided_p": 8.582179419760152e-09,
+          "delta_percentage_points": 5.045408678102926
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 495,
+            "matches": 407,
+            "accuracy": 0.8222222222222222
+          },
+          "60–90": {
+            "denominator": 345,
+            "matches": 214,
+            "accuracy": 0.6202898550724638
+          },
+          "90–120": {
+            "denominator": 115,
+            "matches": 46,
+            "accuracy": 0.4
+          },
+          "≥120": {
+            "denominator": 36,
+            "matches": 17,
+            "accuracy": 0.4722222222222222
+          }
+        },
+        "executed_candidates_used": 17408,
+        "mean_winning_length": 60.1875
+      },
+      "full_test1919_seconds": 309.5298260280001,
+      "test_measured": true
+    },
+    {
+      "config": {
+        "name": "vote-t0.7-k16-g1",
+        "mode": "vote",
+        "temperature": 0.7,
+        "k": 16,
+        "greedy_vote": true
+      },
+      "heldout4k": {
+        "exec": {
+          "denominator": 4096,
+          "matches": 2703,
+          "accuracy": 0.659912109375,
+          "reference_statuses": {
+            "numeric": 4096
+          },
+          "generation_statuses": {
+            "numeric": 4096
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 224,
+          "losses": 59,
+          "discordant": 283,
+          "exact_two_sided_p": 8.429808642454672e-24,
+          "delta_percentage_points": 4.0283203125
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 2013,
+            "matches": 1620,
+            "accuracy": 0.8047690014903129
+          },
+          "60–90": {
+            "denominator": 1457,
+            "matches": 841,
+            "accuracy": 0.577213452299245
+          },
+          "90–120": {
+            "denominator": 488,
+            "matches": 207,
+            "accuracy": 0.42418032786885246
+          },
+          "≥120": {
+            "denominator": 138,
+            "matches": 35,
+            "accuracy": 0.2536231884057971
+          }
+        },
+        "executed_candidates_used": 69632,
+        "mean_winning_length": 60.76708984375
+      },
+      "old991": {
+        "exec": {
+          "denominator": 991,
+          "matches": 676,
+          "accuracy": 0.6821392532795156,
+          "reference_statuses": {
+            "numeric": 991,
+            "non_number": 33
+          },
+          "generation_statuses": {
+            "numeric": 1024
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 53,
+          "losses": 11,
+          "discordant": 64,
+          "exact_two_sided_p": 1.0058579844832594e-07,
+          "delta_percentage_points": 4.238143289606458
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 495,
+            "matches": 404,
+            "accuracy": 0.8161616161616162
+          },
+          "60–90": {
+            "denominator": 345,
+            "matches": 211,
+            "accuracy": 0.6115942028985507
+          },
+          "90–120": {
+            "denominator": 115,
+            "matches": 43,
+            "accuracy": 0.3739130434782609
+          },
+          "≥120": {
+            "denominator": 36,
+            "matches": 18,
+            "accuracy": 0.5
+          }
+        },
+        "executed_candidates_used": 17408,
+        "mean_winning_length": 60.3388671875
+      },
+      "full_test1919_seconds": null,
+      "test_measured": false
+    },
+    {
+      "config": {
+        "name": "fallback-k16",
+        "mode": "fallback",
+        "temperature": 0.7,
+        "k": 16,
+        "greedy_vote": false
+      },
+      "heldout4k": {
+        "exec": {
+          "denominator": 4096,
+          "matches": 2548,
+          "accuracy": 0.6220703125,
+          "reference_statuses": {
+            "numeric": 4096
+          },
+          "generation_statuses": {
+            "numeric": 4096
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 10,
+          "losses": 0,
+          "discordant": 10,
+          "exact_two_sided_p": 0.001953125,
+          "delta_percentage_points": 0.244140625
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 2013,
+            "matches": 1571,
+            "accuracy": 0.7804272230501739
+          },
+          "60–90": {
+            "denominator": 1457,
+            "matches": 770,
+            "accuracy": 0.5284831846259437
+          },
+          "90–120": {
+            "denominator": 488,
+            "matches": 179,
+            "accuracy": 0.3668032786885246
+          },
+          "≥120": {
+            "denominator": 138,
+            "matches": 28,
+            "accuracy": 0.2028985507246377
+          }
+        },
+        "executed_candidates_used": 69632,
+        "mean_winning_length": 60.441650390625
+      },
+      "old991": {
+        "exec": {
+          "denominator": 991,
+          "matches": 634,
+          "accuracy": 0.6397578203834511,
+          "reference_statuses": {
+            "numeric": 991,
+            "non_number": 33
+          },
+          "generation_statuses": {
+            "numeric": 1024
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 0,
+          "losses": 0,
+          "discordant": 0,
+          "exact_two_sided_p": 1.0,
+          "delta_percentage_points": 0.0
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 495,
+            "matches": 394,
+            "accuracy": 0.795959595959596
+          },
+          "60–90": {
+            "denominator": 345,
+            "matches": 192,
+            "accuracy": 0.5565217391304348
+          },
+          "90–120": {
+            "denominator": 115,
+            "matches": 36,
+            "accuracy": 0.3130434782608696
+          },
+          "≥120": {
+            "denominator": 36,
+            "matches": 12,
+            "accuracy": 0.3333333333333333
+          }
+        },
+        "executed_candidates_used": 17408,
+        "mean_winning_length": 60.5244140625
+      },
+      "full_test1919_seconds": null,
+      "test_measured": false
+    },
+    {
+      "config": {
+        "name": "vote-t0.7-k32-g0",
+        "mode": "vote",
+        "temperature": 0.7,
+        "k": 32,
+        "greedy_vote": false
+      },
+      "heldout4k": {
+        "exec": {
+          "denominator": 4096,
+          "matches": 2726,
+          "accuracy": 0.66552734375,
+          "reference_statuses": {
+            "numeric": 4096
+          },
+          "generation_statuses": {
+            "numeric": 4096
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 254,
+          "losses": 66,
+          "discordant": 320,
+          "exact_two_sided_p": 3.728828843366294e-27,
+          "delta_percentage_points": 4.58984375
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 2013,
+            "matches": 1627,
+            "accuracy": 0.8082463984103329
+          },
+          "60–90": {
+            "denominator": 1457,
+            "matches": 848,
+            "accuracy": 0.5820178448867536
+          },
+          "90–120": {
+            "denominator": 488,
+            "matches": 209,
+            "accuracy": 0.42827868852459017
+          },
+          "≥120": {
+            "denominator": 138,
+            "matches": 42,
+            "accuracy": 0.30434782608695654
+          }
+        },
+        "executed_candidates_used": 135168,
+        "mean_winning_length": 60.840087890625
+      },
+      "old991": {
+        "exec": {
+          "denominator": 991,
+          "matches": 678,
+          "accuracy": 0.6841574167507568,
+          "reference_statuses": {
+            "numeric": 991,
+            "non_number": 33
+          },
+          "generation_statuses": {
+            "numeric": 1024
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 55,
+          "losses": 11,
+          "discordant": 66,
+          "exact_two_sided_p": 3.601449657605633e-08,
+          "delta_percentage_points": 4.439959636730575
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 495,
+            "matches": 407,
+            "accuracy": 0.8222222222222222
+          },
+          "60–90": {
+            "denominator": 345,
+            "matches": 210,
+            "accuracy": 0.6086956521739131
+          },
+          "90–120": {
+            "denominator": 115,
+            "matches": 44,
+            "accuracy": 0.3826086956521739
+          },
+          "≥120": {
+            "denominator": 36,
+            "matches": 17,
+            "accuracy": 0.4722222222222222
+          }
+        },
+        "executed_candidates_used": 33792,
+        "mean_winning_length": 60.828125
+      },
+      "full_test1919_seconds": 493.330049102,
+      "test_measured": true
+    },
+    {
+      "config": {
+        "name": "vote-t0.7-k32-g1",
+        "mode": "vote",
+        "temperature": 0.7,
+        "k": 32,
+        "greedy_vote": true
+      },
+      "heldout4k": {
+        "exec": {
+          "denominator": 4096,
+          "matches": 2725,
+          "accuracy": 0.665283203125,
+          "reference_statuses": {
+            "numeric": 4096
+          },
+          "generation_statuses": {
+            "numeric": 4096
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 245,
+          "losses": 58,
+          "discordant": 303,
+          "exact_two_sided_p": 1.667796562971122e-28,
+          "delta_percentage_points": 4.5654296875
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 2013,
+            "matches": 1625,
+            "accuracy": 0.8072528564331843
+          },
+          "60–90": {
+            "denominator": 1457,
+            "matches": 853,
+            "accuracy": 0.5854495538778312
+          },
+          "90–120": {
+            "denominator": 488,
+            "matches": 208,
+            "accuracy": 0.4262295081967213
+          },
+          "≥120": {
+            "denominator": 138,
+            "matches": 39,
+            "accuracy": 0.2826086956521739
+          }
+        },
+        "executed_candidates_used": 135168,
+        "mean_winning_length": 60.904052734375
+      },
+      "old991": {
+        "exec": {
+          "denominator": 991,
+          "matches": 677,
+          "accuracy": 0.6831483350151363,
+          "reference_statuses": {
+            "numeric": 991,
+            "non_number": 33
+          },
+          "generation_statuses": {
+            "numeric": 1024
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 52,
+          "losses": 9,
+          "discordant": 61,
+          "exact_two_sided_p": 1.802802378388091e-08,
+          "delta_percentage_points": 4.339051463168516
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 495,
+            "matches": 406,
+            "accuracy": 0.8202020202020202
+          },
+          "60–90": {
+            "denominator": 345,
+            "matches": 210,
+            "accuracy": 0.6086956521739131
+          },
+          "90–120": {
+            "denominator": 115,
+            "matches": 44,
+            "accuracy": 0.3826086956521739
+          },
+          "≥120": {
+            "denominator": 36,
+            "matches": 17,
+            "accuracy": 0.4722222222222222
+          }
+        },
+        "executed_candidates_used": 33792,
+        "mean_winning_length": 60.796875
+      },
+      "full_test1919_seconds": 499.7512852089999,
+      "test_measured": true
+    },
+    {
+      "config": {
+        "name": "fallback-k32",
+        "mode": "fallback",
+        "temperature": 0.7,
+        "k": 32,
+        "greedy_vote": false
+      },
+      "heldout4k": {
+        "exec": {
+          "denominator": 4096,
+          "matches": 2548,
+          "accuracy": 0.6220703125,
+          "reference_statuses": {
+            "numeric": 4096
+          },
+          "generation_statuses": {
+            "numeric": 4096
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 10,
+          "losses": 0,
+          "discordant": 10,
+          "exact_two_sided_p": 0.001953125,
+          "delta_percentage_points": 0.244140625
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 2013,
+            "matches": 1571,
+            "accuracy": 0.7804272230501739
+          },
+          "60–90": {
+            "denominator": 1457,
+            "matches": 770,
+            "accuracy": 0.5284831846259437
+          },
+          "90–120": {
+            "denominator": 488,
+            "matches": 179,
+            "accuracy": 0.3668032786885246
+          },
+          "≥120": {
+            "denominator": 138,
+            "matches": 28,
+            "accuracy": 0.2028985507246377
+          }
+        },
+        "executed_candidates_used": 135168,
+        "mean_winning_length": 60.441650390625
+      },
+      "old991": {
+        "exec": {
+          "denominator": 991,
+          "matches": 634,
+          "accuracy": 0.6397578203834511,
+          "reference_statuses": {
+            "numeric": 991,
+            "non_number": 33
+          },
+          "generation_statuses": {
+            "numeric": 1024
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 0,
+          "losses": 0,
+          "discordant": 0,
+          "exact_two_sided_p": 1.0,
+          "delta_percentage_points": 0.0
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 495,
+            "matches": 394,
+            "accuracy": 0.795959595959596
+          },
+          "60–90": {
+            "denominator": 345,
+            "matches": 192,
+            "accuracy": 0.5565217391304348
+          },
+          "90–120": {
+            "denominator": 115,
+            "matches": 36,
+            "accuracy": 0.3130434782608696
+          },
+          "≥120": {
+            "denominator": 36,
+            "matches": 12,
+            "accuracy": 0.3333333333333333
+          }
+        },
+        "executed_candidates_used": 33792,
+        "mean_winning_length": 60.5244140625
+      },
+      "full_test1919_seconds": null,
+      "test_measured": false
+    },
+    {
+      "config": {
+        "name": "vote-t0.5-k4-g0",
+        "mode": "vote",
+        "temperature": 0.5,
+        "k": 4,
+        "greedy_vote": false
+      },
+      "heldout4k": {
+        "exec": {
+          "denominator": 4096,
+          "matches": 2620,
+          "accuracy": 0.6396484375,
+          "reference_statuses": {
+            "numeric": 4096
+          },
+          "generation_statuses": {
+            "numeric": 4093,
+            "execution_error": 2,
+            "syntax_error": 1
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 159,
+          "losses": 77,
+          "discordant": 236,
+          "exact_two_sided_p": 1.0105881624124954e-07,
+          "delta_percentage_points": 2.001953125
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 2013,
+            "matches": 1591,
+            "accuracy": 0.7903626428216592
+          },
+          "60–90": {
+            "denominator": 1457,
+            "matches": 802,
+            "accuracy": 0.55044612216884
+          },
+          "90–120": {
+            "denominator": 488,
+            "matches": 195,
+            "accuracy": 0.39959016393442626
+          },
+          "≥120": {
+            "denominator": 138,
+            "matches": 32,
+            "accuracy": 0.2318840579710145
+          }
+        },
+        "executed_candidates_used": 20480,
+        "mean_winning_length": 60.80859375
+      },
+      "old991": {
+        "exec": {
+          "denominator": 991,
+          "matches": 662,
+          "accuracy": 0.6680121089808274,
+          "reference_statuses": {
+            "numeric": 991,
+            "non_number": 33
+          },
+          "generation_statuses": {
+            "numeric": 1024
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 44,
+          "losses": 16,
+          "discordant": 60,
+          "exact_two_sided_p": 0.00039404324272610154,
+          "delta_percentage_points": 2.825428859737639
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 495,
+            "matches": 401,
+            "accuracy": 0.8101010101010101
+          },
+          "60–90": {
+            "denominator": 345,
+            "matches": 205,
+            "accuracy": 0.5942028985507246
+          },
+          "90–120": {
+            "denominator": 115,
+            "matches": 45,
+            "accuracy": 0.391304347826087
+          },
+          "≥120": {
+            "denominator": 36,
+            "matches": 11,
+            "accuracy": 0.3055555555555556
+          }
+        },
+        "executed_candidates_used": 5120,
+        "mean_winning_length": 60.9814453125
+      },
+      "full_test1919_seconds": null,
+      "test_measured": false
+    },
+    {
+      "config": {
+        "name": "vote-t0.5-k4-g1",
+        "mode": "vote",
+        "temperature": 0.5,
+        "k": 4,
+        "greedy_vote": true
+      },
+      "heldout4k": {
+        "exec": {
+          "denominator": 4096,
+          "matches": 2613,
+          "accuracy": 0.637939453125,
+          "reference_statuses": {
+            "numeric": 4096
+          },
+          "generation_statuses": {
+            "numeric": 4093,
+            "execution_error": 2,
+            "syntax_error": 1
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 115,
+          "losses": 40,
+          "discordant": 155,
+          "exact_two_sided_p": 1.329622194827003e-09,
+          "delta_percentage_points": 1.8310546875
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 2013,
+            "matches": 1594,
+            "accuracy": 0.791852955787382
+          },
+          "60–90": {
+            "denominator": 1457,
+            "matches": 799,
+            "accuracy": 0.5483870967741935
+          },
+          "90–120": {
+            "denominator": 488,
+            "matches": 187,
+            "accuracy": 0.3831967213114754
+          },
+          "≥120": {
+            "denominator": 138,
+            "matches": 33,
+            "accuracy": 0.2391304347826087
+          }
+        },
+        "executed_candidates_used": 20480,
+        "mean_winning_length": 60.745361328125
+      },
+      "old991": {
+        "exec": {
+          "denominator": 991,
+          "matches": 653,
+          "accuracy": 0.6589303733602422,
+          "reference_statuses": {
+            "numeric": 991,
+            "non_number": 33
+          },
+          "generation_statuses": {
+            "numeric": 1024
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 26,
+          "losses": 7,
+          "discordant": 33,
+          "exact_two_sided_p": 0.0013187271542847157,
+          "delta_percentage_points": 1.917255297679112
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 495,
+            "matches": 399,
+            "accuracy": 0.806060606060606
+          },
+          "60–90": {
+            "denominator": 345,
+            "matches": 202,
+            "accuracy": 0.5855072463768116
+          },
+          "90–120": {
+            "denominator": 115,
+            "matches": 41,
+            "accuracy": 0.3565217391304348
+          },
+          "≥120": {
+            "denominator": 36,
+            "matches": 11,
+            "accuracy": 0.3055555555555556
+          }
+        },
+        "executed_candidates_used": 5120,
+        "mean_winning_length": 60.869140625
+      },
+      "full_test1919_seconds": null,
+      "test_measured": false
+    },
+    {
+      "config": {
+        "name": "vote-t0.5-k8-g0",
+        "mode": "vote",
+        "temperature": 0.5,
+        "k": 8,
+        "greedy_vote": false
+      },
+      "heldout4k": {
+        "exec": {
+          "denominator": 4096,
+          "matches": 2653,
+          "accuracy": 0.647705078125,
+          "reference_statuses": {
+            "numeric": 4096
+          },
+          "generation_statuses": {
+            "numeric": 4095,
+            "execution_error": 1
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 181,
+          "losses": 66,
+          "discordant": 247,
+          "exact_two_sided_p": 1.4586191292115705e-13,
+          "delta_percentage_points": 2.8076171875
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 2013,
+            "matches": 1600,
+            "accuracy": 0.7948335817188277
+          },
+          "60–90": {
+            "denominator": 1457,
+            "matches": 817,
+            "accuracy": 0.5607412491420728
+          },
+          "90–120": {
+            "denominator": 488,
+            "matches": 200,
+            "accuracy": 0.4098360655737705
+          },
+          "≥120": {
+            "denominator": 138,
+            "matches": 36,
+            "accuracy": 0.2608695652173913
+          }
+        },
+        "executed_candidates_used": 36864,
+        "mean_winning_length": 60.622802734375
+      },
+      "old991": {
+        "exec": {
+          "denominator": 991,
+          "matches": 669,
+          "accuracy": 0.6750756811301716,
+          "reference_statuses": {
+            "numeric": 991,
+            "non_number": 33
+          },
+          "generation_statuses": {
+            "numeric": 1024
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 51,
+          "losses": 16,
+          "discordant": 67,
+          "exact_two_sided_p": 2.1689238760717064e-05,
+          "delta_percentage_points": 3.5317860746720484
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 495,
+            "matches": 407,
+            "accuracy": 0.8222222222222222
+          },
+          "60–90": {
+            "denominator": 345,
+            "matches": 206,
+            "accuracy": 0.5971014492753624
+          },
+          "90–120": {
+            "denominator": 115,
+            "matches": 43,
+            "accuracy": 0.3739130434782609
+          },
+          "≥120": {
+            "denominator": 36,
+            "matches": 13,
+            "accuracy": 0.3611111111111111
+          }
+        },
+        "executed_candidates_used": 9216,
+        "mean_winning_length": 60.5576171875
+      },
+      "full_test1919_seconds": null,
+      "test_measured": false
+    },
+    {
+      "config": {
+        "name": "vote-t0.5-k8-g1",
+        "mode": "vote",
+        "temperature": 0.5,
+        "k": 8,
+        "greedy_vote": true
+      },
+      "heldout4k": {
+        "exec": {
+          "denominator": 4096,
+          "matches": 2653,
+          "accuracy": 0.647705078125,
+          "reference_statuses": {
+            "numeric": 4096
+          },
+          "generation_statuses": {
+            "numeric": 4095,
+            "execution_error": 1
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 153,
+          "losses": 38,
+          "discordant": 191,
+          "exact_two_sided_p": 1.4855617955810385e-17,
+          "delta_percentage_points": 2.8076171875
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 2013,
+            "matches": 1602,
+            "accuracy": 0.7958271236959762
+          },
+          "60–90": {
+            "denominator": 1457,
+            "matches": 821,
+            "accuracy": 0.5634866163349348
+          },
+          "90–120": {
+            "denominator": 488,
+            "matches": 196,
+            "accuracy": 0.4016393442622951
+          },
+          "≥120": {
+            "denominator": 138,
+            "matches": 34,
+            "accuracy": 0.2463768115942029
+          }
+        },
+        "executed_candidates_used": 36864,
+        "mean_winning_length": 60.704833984375
+      },
+      "old991": {
+        "exec": {
+          "denominator": 991,
+          "matches": 670,
+          "accuracy": 0.6760847628657921,
+          "reference_statuses": {
+            "numeric": 991,
+            "non_number": 33
+          },
+          "generation_statuses": {
+            "numeric": 1024
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 44,
+          "losses": 8,
+          "discordant": 52,
+          "exact_two_sided_p": 4.0393217393130953e-07,
+          "delta_percentage_points": 3.632694248234107
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 495,
+            "matches": 404,
+            "accuracy": 0.8161616161616162
+          },
+          "60–90": {
+            "denominator": 345,
+            "matches": 208,
+            "accuracy": 0.6028985507246377
+          },
+          "90–120": {
+            "denominator": 115,
+            "matches": 44,
+            "accuracy": 0.3826086956521739
+          },
+          "≥120": {
+            "denominator": 36,
+            "matches": 14,
+            "accuracy": 0.3888888888888889
+          }
+        },
+        "executed_candidates_used": 9216,
+        "mean_winning_length": 60.7431640625
+      },
+      "full_test1919_seconds": null,
+      "test_measured": false
+    },
+    {
+      "config": {
+        "name": "vote-t0.5-k16-g0",
+        "mode": "vote",
+        "temperature": 0.5,
+        "k": 16,
+        "greedy_vote": false
+      },
+      "heldout4k": {
+        "exec": {
+          "denominator": 4096,
+          "matches": 2680,
+          "accuracy": 0.654296875,
+          "reference_statuses": {
+            "numeric": 4096
+          },
+          "generation_statuses": {
+            "numeric": 4096
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 196,
+          "losses": 54,
+          "discordant": 250,
+          "exact_two_sided_p": 4.1844931740247936e-20,
+          "delta_percentage_points": 3.466796875
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 2013,
+            "matches": 1610,
+            "accuracy": 0.7998012916045703
+          },
+          "60–90": {
+            "denominator": 1457,
+            "matches": 829,
+            "accuracy": 0.5689773507206589
+          },
+          "90–120": {
+            "denominator": 488,
+            "matches": 204,
+            "accuracy": 0.4180327868852459
+          },
+          "≥120": {
+            "denominator": 138,
+            "matches": 37,
+            "accuracy": 0.26811594202898553
+          }
+        },
+        "executed_candidates_used": 69632,
+        "mean_winning_length": 60.883544921875
+      },
+      "old991": {
+        "exec": {
+          "denominator": 991,
+          "matches": 670,
+          "accuracy": 0.6760847628657921,
+          "reference_statuses": {
+            "numeric": 991,
+            "non_number": 33
+          },
+          "generation_statuses": {
+            "numeric": 1024
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 52,
+          "losses": 16,
+          "discordant": 68,
+          "exact_two_sided_p": 1.4074155775977473e-05,
+          "delta_percentage_points": 3.632694248234107
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 495,
+            "matches": 407,
+            "accuracy": 0.8222222222222222
+          },
+          "60–90": {
+            "denominator": 345,
+            "matches": 206,
+            "accuracy": 0.5971014492753624
+          },
+          "90–120": {
+            "denominator": 115,
+            "matches": 41,
+            "accuracy": 0.3565217391304348
+          },
+          "≥120": {
+            "denominator": 36,
+            "matches": 16,
+            "accuracy": 0.4444444444444444
+          }
+        },
+        "executed_candidates_used": 17408,
+        "mean_winning_length": 60.8271484375
+      },
+      "full_test1919_seconds": null,
+      "test_measured": false
+    },
+    {
+      "config": {
+        "name": "vote-t0.5-k16-g1",
+        "mode": "vote",
+        "temperature": 0.5,
+        "k": 16,
+        "greedy_vote": true
+      },
+      "heldout4k": {
+        "exec": {
+          "denominator": 4096,
+          "matches": 2676,
+          "accuracy": 0.6533203125,
+          "reference_statuses": {
+            "numeric": 4096
+          },
+          "generation_statuses": {
+            "numeric": 4096
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 179,
+          "losses": 41,
+          "discordant": 220,
+          "exact_two_sided_p": 9.378520427702546e-22,
+          "delta_percentage_points": 3.369140625
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 2013,
+            "matches": 1605,
+            "accuracy": 0.797317436661699
+          },
+          "60–90": {
+            "denominator": 1457,
+            "matches": 830,
+            "accuracy": 0.5696636925188744
+          },
+          "90–120": {
+            "denominator": 488,
+            "matches": 204,
+            "accuracy": 0.4180327868852459
+          },
+          "≥120": {
+            "denominator": 138,
+            "matches": 37,
+            "accuracy": 0.26811594202898553
+          }
+        },
+        "executed_candidates_used": 69632,
+        "mean_winning_length": 61.01953125
+      },
+      "old991": {
+        "exec": {
+          "denominator": 991,
+          "matches": 672,
+          "accuracy": 0.6781029263370333,
+          "reference_statuses": {
+            "numeric": 991,
+            "non_number": 33
+          },
+          "generation_statuses": {
+            "numeric": 1024
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 48,
+          "losses": 10,
+          "discordant": 58,
+          "exact_two_sided_p": 4.5166191631196284e-07,
+          "delta_percentage_points": 3.834510595358224
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 495,
+            "matches": 404,
+            "accuracy": 0.8161616161616162
+          },
+          "60–90": {
+            "denominator": 345,
+            "matches": 210,
+            "accuracy": 0.6086956521739131
+          },
+          "90–120": {
+            "denominator": 115,
+            "matches": 43,
+            "accuracy": 0.3739130434782609
+          },
+          "≥120": {
+            "denominator": 36,
+            "matches": 15,
+            "accuracy": 0.4166666666666667
+          }
+        },
+        "executed_candidates_used": 17408,
+        "mean_winning_length": 60.8232421875
+      },
+      "full_test1919_seconds": null,
+      "test_measured": false
+    },
+    {
+      "config": {
+        "name": "vote-t1.0-k4-g0",
+        "mode": "vote",
+        "temperature": 1.0,
+        "k": 4,
+        "greedy_vote": false
+      },
+      "heldout4k": {
+        "exec": {
+          "denominator": 4096,
+          "matches": 2470,
+          "accuracy": 0.60302734375,
+          "reference_statuses": {
+            "numeric": 4096
+          },
+          "generation_statuses": {
+            "numeric": 4093,
+            "execution_error": 3
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 170,
+          "losses": 238,
+          "discordant": 408,
+          "exact_two_sided_p": 0.0008878803429482092,
+          "delta_percentage_points": -1.66015625
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 2013,
+            "matches": 1537,
+            "accuracy": 0.7635370094386488
+          },
+          "60–90": {
+            "denominator": 1457,
+            "matches": 737,
+            "accuracy": 0.5058339052848319
+          },
+          "90–120": {
+            "denominator": 488,
+            "matches": 166,
+            "accuracy": 0.3401639344262295
+          },
+          "≥120": {
+            "denominator": 138,
+            "matches": 30,
+            "accuracy": 0.21739130434782608
+          }
+        },
+        "executed_candidates_used": 20480,
+        "mean_winning_length": 61.191162109375
+      },
+      "old991": {
+        "exec": {
+          "denominator": 991,
+          "matches": 615,
+          "accuracy": 0.62058526740666,
+          "reference_statuses": {
+            "numeric": 991,
+            "non_number": 33
+          },
+          "generation_statuses": {
+            "numeric": 1023,
+            "execution_error": 1
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 42,
+          "losses": 61,
+          "discordant": 103,
+          "exact_two_sided_p": 0.07561910758625791,
+          "delta_percentage_points": -1.917255297679112
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 495,
+            "matches": 396,
+            "accuracy": 0.8
+          },
+          "60–90": {
+            "denominator": 345,
+            "matches": 176,
+            "accuracy": 0.5101449275362319
+          },
+          "90–120": {
+            "denominator": 115,
+            "matches": 32,
+            "accuracy": 0.2782608695652174
+          },
+          "≥120": {
+            "denominator": 36,
+            "matches": 11,
+            "accuracy": 0.3055555555555556
+          }
+        },
+        "executed_candidates_used": 5120,
+        "mean_winning_length": 60.5107421875
+      },
+      "full_test1919_seconds": null,
+      "test_measured": false
+    },
+    {
+      "config": {
+        "name": "vote-t1.0-k4-g1",
+        "mode": "vote",
+        "temperature": 1.0,
+        "k": 4,
+        "greedy_vote": true
+      },
+      "heldout4k": {
+        "exec": {
+          "denominator": 4096,
+          "matches": 2579,
+          "accuracy": 0.629638671875,
+          "reference_statuses": {
+            "numeric": 4096
+          },
+          "generation_statuses": {
+            "numeric": 4093,
+            "execution_error": 3
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 89,
+          "losses": 48,
+          "discordant": 137,
+          "exact_two_sided_p": 0.0005809879886357793,
+          "delta_percentage_points": 1.0009765625
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 2013,
+            "matches": 1574,
+            "accuracy": 0.7819175360158966
+          },
+          "60–90": {
+            "denominator": 1457,
+            "matches": 791,
+            "accuracy": 0.5428963623884695
+          },
+          "90–120": {
+            "denominator": 488,
+            "matches": 184,
+            "accuracy": 0.3770491803278688
+          },
+          "≥120": {
+            "denominator": 138,
+            "matches": 30,
+            "accuracy": 0.21739130434782608
+          }
+        },
+        "executed_candidates_used": 20480,
+        "mean_winning_length": 60.631591796875
+      },
+      "old991": {
+        "exec": {
+          "denominator": 991,
+          "matches": 643,
+          "accuracy": 0.6488395560040363,
+          "reference_statuses": {
+            "numeric": 991,
+            "non_number": 33
+          },
+          "generation_statuses": {
+            "numeric": 1023,
+            "execution_error": 1
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 18,
+          "losses": 9,
+          "discordant": 27,
+          "exact_two_sided_p": 0.12207812070846558,
+          "delta_percentage_points": 0.9081735620585267
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 495,
+            "matches": 398,
+            "accuracy": 0.804040404040404
+          },
+          "60–90": {
+            "denominator": 345,
+            "matches": 197,
+            "accuracy": 0.5710144927536231
+          },
+          "90–120": {
+            "denominator": 115,
+            "matches": 35,
+            "accuracy": 0.30434782608695654
+          },
+          "≥120": {
+            "denominator": 36,
+            "matches": 13,
+            "accuracy": 0.3611111111111111
+          }
+        },
+        "executed_candidates_used": 5120,
+        "mean_winning_length": 60.337890625
+      },
+      "full_test1919_seconds": null,
+      "test_measured": false
+    },
+    {
+      "config": {
+        "name": "vote-t1.0-k8-g0",
+        "mode": "vote",
+        "temperature": 1.0,
+        "k": 8,
+        "greedy_vote": false
+      },
+      "heldout4k": {
+        "exec": {
+          "denominator": 4096,
+          "matches": 2547,
+          "accuracy": 0.621826171875,
+          "reference_statuses": {
+            "numeric": 4096
+          },
+          "generation_statuses": {
+            "numeric": 4095,
+            "execution_error": 1
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 183,
+          "losses": 174,
+          "discordant": 357,
+          "exact_two_sided_p": 0.672059337886129,
+          "delta_percentage_points": 0.2197265625
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 2013,
+            "matches": 1569,
+            "accuracy": 0.7794336810730254
+          },
+          "60–90": {
+            "denominator": 1457,
+            "matches": 768,
+            "accuracy": 0.5271105010295127
+          },
+          "90–120": {
+            "denominator": 488,
+            "matches": 178,
+            "accuracy": 0.36475409836065575
+          },
+          "≥120": {
+            "denominator": 138,
+            "matches": 32,
+            "accuracy": 0.2318840579710145
+          }
+        },
+        "executed_candidates_used": 36864,
+        "mean_winning_length": 60.591552734375
+      },
+      "old991": {
+        "exec": {
+          "denominator": 991,
+          "matches": 650,
+          "accuracy": 0.6559031281533805,
+          "reference_statuses": {
+            "numeric": 991,
+            "non_number": 33
+          },
+          "generation_statuses": {
+            "numeric": 1024
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 56,
+          "losses": 40,
+          "discordant": 96,
+          "exact_two_sided_p": 0.1253456971884925,
+          "delta_percentage_points": 1.6145307769929365
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 495,
+            "matches": 402,
+            "accuracy": 0.8121212121212121
+          },
+          "60–90": {
+            "denominator": 345,
+            "matches": 198,
+            "accuracy": 0.5739130434782609
+          },
+          "90–120": {
+            "denominator": 115,
+            "matches": 37,
+            "accuracy": 0.3217391304347826
+          },
+          "≥120": {
+            "denominator": 36,
+            "matches": 13,
+            "accuracy": 0.3611111111111111
+          }
+        },
+        "executed_candidates_used": 9216,
+        "mean_winning_length": 60.109375
+      },
+      "full_test1919_seconds": null,
+      "test_measured": false
+    },
+    {
+      "config": {
+        "name": "vote-t1.0-k8-g1",
+        "mode": "vote",
+        "temperature": 1.0,
+        "k": 8,
+        "greedy_vote": true
+      },
+      "heldout4k": {
+        "exec": {
+          "denominator": 4096,
+          "matches": 2599,
+          "accuracy": 0.634521484375,
+          "reference_statuses": {
+            "numeric": 4096
+          },
+          "generation_statuses": {
+            "numeric": 4095,
+            "execution_error": 1
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 125,
+          "losses": 64,
+          "discordant": 189,
+          "exact_two_sided_p": 1.080414196291547e-05,
+          "delta_percentage_points": 1.4892578125
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 2013,
+            "matches": 1582,
+            "accuracy": 0.7858917039244908
+          },
+          "60–90": {
+            "denominator": 1457,
+            "matches": 799,
+            "accuracy": 0.5483870967741935
+          },
+          "90–120": {
+            "denominator": 488,
+            "matches": 186,
+            "accuracy": 0.38114754098360654
+          },
+          "≥120": {
+            "denominator": 138,
+            "matches": 32,
+            "accuracy": 0.2318840579710145
+          }
+        },
+        "executed_candidates_used": 36864,
+        "mean_winning_length": 60.554931640625
+      },
+      "old991": {
+        "exec": {
+          "denominator": 991,
+          "matches": 658,
+          "accuracy": 0.6639757820383451,
+          "reference_statuses": {
+            "numeric": 991,
+            "non_number": 33
+          },
+          "generation_statuses": {
+            "numeric": 1024
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 35,
+          "losses": 11,
+          "discordant": 46,
+          "exact_two_sided_p": 0.0005355850721002753,
+          "delta_percentage_points": 2.4217961654894045
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 495,
+            "matches": 406,
+            "accuracy": 0.8202020202020202
+          },
+          "60–90": {
+            "denominator": 345,
+            "matches": 203,
+            "accuracy": 0.5884057971014492
+          },
+          "90–120": {
+            "denominator": 115,
+            "matches": 37,
+            "accuracy": 0.3217391304347826
+          },
+          "≥120": {
+            "denominator": 36,
+            "matches": 12,
+            "accuracy": 0.3333333333333333
+          }
+        },
+        "executed_candidates_used": 9216,
+        "mean_winning_length": 60.54296875
+      },
+      "full_test1919_seconds": null,
+      "test_measured": false
+    },
+    {
+      "config": {
+        "name": "vote-t1.0-k16-g0",
+        "mode": "vote",
+        "temperature": 1.0,
+        "k": 16,
+        "greedy_vote": false
+      },
+      "heldout4k": {
+        "exec": {
+          "denominator": 4096,
+          "matches": 2638,
+          "accuracy": 0.64404296875,
+          "reference_statuses": {
+            "numeric": 4096
+          },
+          "generation_statuses": {
+            "numeric": 4096
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 228,
+          "losses": 128,
+          "discordant": 356,
+          "exact_two_sided_p": 1.2881542778705427e-07,
+          "delta_percentage_points": 2.44140625
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 2013,
+            "matches": 1596,
+            "accuracy": 0.7928464977645305
+          },
+          "60–90": {
+            "denominator": 1457,
+            "matches": 810,
+            "accuracy": 0.5559368565545642
+          },
+          "90–120": {
+            "denominator": 488,
+            "matches": 198,
+            "accuracy": 0.4057377049180328
+          },
+          "≥120": {
+            "denominator": 138,
+            "matches": 34,
+            "accuracy": 0.2463768115942029
+          }
+        },
+        "executed_candidates_used": 69632,
+        "mean_winning_length": 60.112548828125
+      },
+      "old991": {
+        "exec": {
+          "denominator": 991,
+          "matches": 668,
+          "accuracy": 0.6740665993945509,
+          "reference_statuses": {
+            "numeric": 991,
+            "non_number": 33
+          },
+          "generation_statuses": {
+            "numeric": 1024
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 63,
+          "losses": 29,
+          "discordant": 92,
+          "exact_two_sided_p": 0.0005090902243497337,
+          "delta_percentage_points": 3.43087790110999
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 495,
+            "matches": 406,
+            "accuracy": 0.8202020202020202
+          },
+          "60–90": {
+            "denominator": 345,
+            "matches": 208,
+            "accuracy": 0.6028985507246377
+          },
+          "90–120": {
+            "denominator": 115,
+            "matches": 39,
+            "accuracy": 0.3391304347826087
+          },
+          "≥120": {
+            "denominator": 36,
+            "matches": 15,
+            "accuracy": 0.4166666666666667
+          }
+        },
+        "executed_candidates_used": 17408,
+        "mean_winning_length": 59.5048828125
+      },
+      "full_test1919_seconds": null,
+      "test_measured": false
+    },
+    {
+      "config": {
+        "name": "vote-t1.0-k16-g1",
+        "mode": "vote",
+        "temperature": 1.0,
+        "k": 16,
+        "greedy_vote": true
+      },
+      "heldout4k": {
+        "exec": {
+          "denominator": 4096,
+          "matches": 2651,
+          "accuracy": 0.647216796875,
+          "reference_statuses": {
+            "numeric": 4096
+          },
+          "generation_statuses": {
+            "numeric": 4096
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 183,
+          "losses": 70,
+          "discordant": 253,
+          "exact_two_sided_p": 7.897527656112749e-13,
+          "delta_percentage_points": 2.7587890625
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 2013,
+            "matches": 1601,
+            "accuracy": 0.7953303527074019
+          },
+          "60–90": {
+            "denominator": 1457,
+            "matches": 815,
+            "accuracy": 0.5593685655456417
+          },
+          "90–120": {
+            "denominator": 488,
+            "matches": 201,
+            "accuracy": 0.41188524590163933
+          },
+          "≥120": {
+            "denominator": 138,
+            "matches": 34,
+            "accuracy": 0.2463768115942029
+          }
+        },
+        "executed_candidates_used": 69632,
+        "mean_winning_length": 60.359130859375
+      },
+      "old991": {
+        "exec": {
+          "denominator": 991,
+          "matches": 668,
+          "accuracy": 0.6740665993945509,
+          "reference_statuses": {
+            "numeric": 991,
+            "non_number": 33
+          },
+          "generation_statuses": {
+            "numeric": 1024
+          },
+          "rel_tol": 1e-06,
+          "abs_tol": 1e-06
+        },
+        "McNemar_against_greedy": {
+          "gains": 48,
+          "losses": 14,
+          "discordant": 62,
+          "exact_two_sided_p": 1.7428522601631996e-05,
+          "delta_percentage_points": 3.43087790110999
+        },
+        "length_accuracy": {
+          "<60": {
+            "denominator": 495,
+            "matches": 406,
+            "accuracy": 0.8202020202020202
+          },
+          "60–90": {
+            "denominator": 345,
+            "matches": 205,
+            "accuracy": 0.5942028985507246
+          },
+          "90–120": {
+            "denominator": 115,
+            "matches": 40,
+            "accuracy": 0.34782608695652173
+          },
+          "≥120": {
+            "denominator": 36,
+            "matches": 17,
+            "accuracy": 0.4722222222222222
+          }
+        },
+        "executed_candidates_used": 17408,
+        "mean_winning_length": 59.89453125
+      },
+      "full_test1919_seconds": null,
+      "test_measured": false
+    }
+  ],
+  "split_resources": {
+    "heldout4k": {
+      "generation": {
+        "load_generate_seconds": 1600.5271649210003,
+        "new_batches": 256,
+        "resumed_batches": 0,
+        "batch_candidate_rows": 512,
+        "question_batch": 16,
+        "cross_KV": "shared5D broadcast; no physical expansion",
+        "peak_reserved_bytes": 15474884608
+      },
+      "execution": {
+        "programs": 266240,
+        "statuses": {
+          "numeric": 250911,
+          "execution_error": 12702,
+          "syntax_error": 2505,
+          "timeout": 90,
+          "non_number": 24,
+          "blocked_import": 1,
+          "blocked_name": 5,
+          "non_finite": 2
+        },
+        "seconds": 75.1339752810004,
+        "chunk_retries": 3,
+        "pool_restarts": 2,
+        "chunk_rows": 2000,
+        "workers": 2,
+        "wall_limit": 1.0,
+        "cpu_limit": 2.0,
+        "candidate_count": 266240,
+        "reused_candidates": 0,
+        "committed_distinct_program_calls": 192566,
+        "new_committed_distinct_program_calls": 192566,
+        "failed_chunk_extra_calls_unknown": true
+      },
+      "candidate_count": 266240
+    },
+    "old1024": {
+      "generation": {
+        "load_generate_seconds": 339.0699040180002,
+        "new_batches": 64,
+        "resumed_batches": 0,
+        "batch_candidate_rows": 512,
+        "question_batch": 16,
+        "cross_KV": "shared5D broadcast; no physical expansion",
+        "peak_reserved_bytes": 15472787456
+      },
+      "execution": {
+        "programs": 66560,
+        "statuses": {
+          "numeric": 62801,
+          "execution_error": 3082,
+          "timeout": 14,
+          "syntax_error": 649,
+          "non_number": 11,
+          "blocked_name": 2,
+          "non_finite": 1
+        },
+        "seconds": 13.363200377999874,
+        "chunk_retries": 0,
+        "pool_restarts": 0,
+        "chunk_rows": 2000,
+        "workers": 2,
+        "wall_limit": 1.0,
+        "cpu_limit": 2.0,
+        "candidate_count": 66560,
+        "reused_candidates": 0,
+        "committed_distinct_program_calls": 48227,
+        "new_committed_distinct_program_calls": 48227,
+        "failed_chunk_extra_calls_unknown": false
+      },
+      "candidate_count": 66560
+    }
+  },
+  "test": [
+    {
+      "config": {
+        "name": "greedy",
+        "mode": "greedy",
+        "k": 0,
+        "temperature": null,
+        "greedy_vote": false
+      },
+      "exec": {
+        "denominator": 4096,
+        "matches": 2538,
+        "accuracy": 0.61962890625,
+        "reference_statuses": {
+          "numeric": 4096
+        },
+        "generation_statuses": {
+          "numeric": 4050,
+          "execution_error": 35,
+          "syntax_error": 8,
+          "non_number": 1,
+          "timeout": 2
+        },
+        "rel_tol": 1e-06,
+        "abs_tol": 1e-06
+      },
+      "McNemar_against_greedy": {
+        "gains": 0,
+        "losses": 0,
+        "discordant": 0,
+        "exact_two_sided_p": 1.0,
+        "delta_percentage_points": 0.0
+      },
+      "length_accuracy": {
+        "<60": {
+          "denominator": 2013,
+          "matches": 1566,
+          "accuracy": 0.7779433681073026
+        },
+        "60–90": {
+          "denominator": 1457,
+          "matches": 768,
+          "accuracy": 0.5271105010295127
+        },
+        "90–120": {
+          "denominator": 488,
+          "matches": 176,
+          "accuracy": 0.36065573770491804
+        },
+        "≥120": {
+          "denominator": 138,
+          "matches": 28,
+          "accuracy": 0.2028985507246377
+        }
+      },
+      "executed_candidates_used": 4096,
+      "mean_winning_length": 61.458740234375,
+      "timing": {
+        "config": {
+          "name": "greedy",
+          "mode": "greedy",
+          "k": 0,
+          "temperature": null,
+          "greedy_vote": false
+        },
+        "full_pipeline_seconds": 13.002573614000084,
+        "rows": 1919,
+        "executed_candidates": 0,
+        "answers_sha256": "cf04c1eadf15a51c2377ca9e087cb3025a2467ea439bf12c662eeee9cb4bb77e",
+        "model_sha256": "13e45e3d1999ce617ffc14b71a932e41cd039aa379082a45c9882be51ea689e8",
+        "tokenizer_sha256": "261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d",
+        "components": {
+          "full_seconds": 12.271837806999883,
+          "generation_seconds": 11.83798382499981,
+          "rows": 1919,
+          "decode_steps_sum": 1744,
+          "decode_row_steps_sum": 826880,
+          "answers_sha256": "cf04c1eadf15a51c2377ca9e087cb3025a2467ea439bf12c662eeee9cb4bb77e",
+          "peak_reserved_bytes": 1803550720,
+          "timer": "model state load,restore,tokenizer,FP16/H2D,warmup,sorted greedy/order restore/answers write; download/cache/exec/CE/JSON dump outside",
+          "model_sha256": "13e45e3d1999ce617ffc14b71a932e41cd039aa379082a45c9882be51ea689e8",
+          "tokenizer_sha256": "261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d"
+        },
+        "complete": true,
+        "timer": "test read, checkpoint/tokenizer load, encoder/decode, candidate execution, voting, final answer write; SHA/report outside"
+      }
+    },
+    {
+      "config": {
+        "name": "vote-t0.7-k32-g0",
+        "mode": "vote",
+        "temperature": 0.7,
+        "k": 32,
+        "greedy_vote": false
+      },
+      "exec": {
+        "denominator": 4096,
+        "matches": 2726,
+        "accuracy": 0.66552734375,
+        "reference_statuses": {
+          "numeric": 4096
+        },
+        "generation_statuses": {
+          "numeric": 4096
+        },
+        "rel_tol": 1e-06,
+        "abs_tol": 1e-06
+      },
+      "McNemar_against_greedy": {
+        "gains": 254,
+        "losses": 66,
+        "discordant": 320,
+        "exact_two_sided_p": 3.728828843366294e-27,
+        "delta_percentage_points": 4.58984375
+      },
+      "length_accuracy": {
+        "<60": {
+          "denominator": 2013,
+          "matches": 1627,
+          "accuracy": 0.8082463984103329
+        },
+        "60–90": {
+          "denominator": 1457,
+          "matches": 848,
+          "accuracy": 0.5820178448867536
+        },
+        "90–120": {
+          "denominator": 488,
+          "matches": 209,
+          "accuracy": 0.42827868852459017
+        },
+        "≥120": {
+          "denominator": 138,
+          "matches": 42,
+          "accuracy": 0.30434782608695654
+        }
+      },
+      "executed_candidates_used": 135168,
+      "mean_winning_length": 60.840087890625,
+      "timing": {
+        "config": {
+          "name": "vote-t0.7-k32-g0",
+          "mode": "vote",
+          "temperature": 0.7,
+          "k": 32,
+          "greedy_vote": false
+        },
+        "full_pipeline_seconds": 493.330049102,
+        "rows": 1919,
+        "executed_candidates": 63327,
+        "answers_sha256": "9989451a384bd0ac3466b1a972c56ed4e9c862dcb6f442c70538cd4de35c2c4e",
+        "model_sha256": "13e45e3d1999ce617ffc14b71a932e41cd039aa379082a45c9882be51ea689e8",
+        "tokenizer_sha256": "261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d",
+        "components": {
+          "load_generate_seconds": 453.51921093300007,
+          "new_batches": 120,
+          "resumed_batches": 0,
+          "batch_candidate_rows": 512,
+          "question_batch": 16,
+          "cross_KV": "shared5D broadcast; no physical expansion",
+          "peak_reserved_bytes": 15474884608,
+          "execution": {
+            "programs": 63327,
+            "statuses": {
+              "numeric": 61252,
+              "execution_error": 1800,
+              "syntax_error": 215,
+              "timeout": 52,
+              "non_number": 8
+            },
+            "seconds": 38.66398378399981,
+            "chunk_retries": 2,
+            "pool_restarts": 1,
+            "chunk_rows": 2000,
+            "workers": 2,
+            "wall_limit": 1.0,
+            "cpu_limit": 2.0,
+            "candidate_count": 63327,
+            "reused_candidates": 0,
+            "committed_distinct_program_calls": 48903,
+            "new_committed_distinct_program_calls": 48903,
+            "failed_chunk_extra_calls_unknown": true
+          }
+        },
+        "complete": true,
+        "timer": "test read, checkpoint/tokenizer load, encoder/decode, candidate execution, voting, final answer write; SHA/report outside"
+      }
+    },
+    {
+      "config": {
+        "name": "vote-t0.7-k32-g1",
+        "mode": "vote",
+        "temperature": 0.7,
+        "k": 32,
+        "greedy_vote": true
+      },
+      "exec": {
+        "denominator": 4096,
+        "matches": 2725,
+        "accuracy": 0.665283203125,
+        "reference_statuses": {
+          "numeric": 4096
+        },
+        "generation_statuses": {
+          "numeric": 4096
+        },
+        "rel_tol": 1e-06,
+        "abs_tol": 1e-06
+      },
+      "McNemar_against_greedy": {
+        "gains": 245,
+        "losses": 58,
+        "discordant": 303,
+        "exact_two_sided_p": 1.667796562971122e-28,
+        "delta_percentage_points": 4.5654296875
+      },
+      "length_accuracy": {
+        "<60": {
+          "denominator": 2013,
+          "matches": 1625,
+          "accuracy": 0.8072528564331843
+        },
+        "60–90": {
+          "denominator": 1457,
+          "matches": 853,
+          "accuracy": 0.5854495538778312
+        },
+        "90–120": {
+          "denominator": 488,
+          "matches": 208,
+          "accuracy": 0.4262295081967213
+        },
+        "≥120": {
+          "denominator": 138,
+          "matches": 39,
+          "accuracy": 0.2826086956521739
+        }
+      },
+      "executed_candidates_used": 135168,
+      "mean_winning_length": 60.904052734375,
+      "timing": {
+        "config": {
+          "name": "vote-t0.7-k32-g1",
+          "mode": "vote",
+          "temperature": 0.7,
+          "k": 32,
+          "greedy_vote": true
+        },
+        "full_pipeline_seconds": 499.7512852089999,
+        "rows": 1919,
+        "executed_candidates": 63327,
+        "answers_sha256": "6e55cf29bf9c44dd84df83b44ba32f18307f929deab10ecf0f813e72c7061ae7",
+        "model_sha256": "13e45e3d1999ce617ffc14b71a932e41cd039aa379082a45c9882be51ea689e8",
+        "tokenizer_sha256": "261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d",
+        "components": {
+          "load_generate_seconds": 453.23267470300016,
+          "new_batches": 120,
+          "resumed_batches": 0,
+          "batch_candidate_rows": 512,
+          "question_batch": 16,
+          "cross_KV": "shared5D broadcast; no physical expansion",
+          "peak_reserved_bytes": 15472787456,
+          "execution": {
+            "programs": 63327,
+            "statuses": {
+              "numeric": 61252,
+              "execution_error": 1800,
+              "syntax_error": 215,
+              "timeout": 52,
+              "non_number": 8
+            },
+            "seconds": 45.34725581900011,
+            "chunk_retries": 4,
+            "pool_restarts": 2,
+            "chunk_rows": 2000,
+            "workers": 2,
+            "wall_limit": 1.0,
+            "cpu_limit": 2.0,
+            "candidate_count": 63327,
+            "reused_candidates": 0,
+            "committed_distinct_program_calls": 48903,
+            "new_committed_distinct_program_calls": 48903,
+            "failed_chunk_extra_calls_unknown": true
+          }
+        },
+        "complete": true,
+        "timer": "test read, checkpoint/tokenizer load, encoder/decode, candidate execution, voting, final answer write; SHA/report outside"
+      }
+    },
+    {
+      "config": {
+        "name": "vote-t0.7-k16-g0",
+        "mode": "vote",
+        "temperature": 0.7,
+        "k": 16,
+        "greedy_vote": false
+      },
+      "exec": {
+        "denominator": 4096,
+        "matches": 2707,
+        "accuracy": 0.660888671875,
+        "reference_statuses": {
+          "numeric": 4096
+        },
+        "generation_statuses": {
+          "numeric": 4096
+        },
+        "rel_tol": 1e-06,
+        "abs_tol": 1e-06
+      },
+      "McNemar_against_greedy": {
+        "gains": 251,
+        "losses": 82,
+        "discordant": 333,
+        "exact_two_sided_p": 4.52284755916596e-21,
+        "delta_percentage_points": 4.1259765625
+      },
+      "length_accuracy": {
+        "<60": {
+          "denominator": 2013,
+          "matches": 1624,
+          "accuracy": 0.8067560854446101
+        },
+        "60–90": {
+          "denominator": 1457,
+          "matches": 840,
+          "accuracy": 0.5765271105010296
+        },
+        "90–120": {
+          "denominator": 488,
+          "matches": 207,
+          "accuracy": 0.42418032786885246
+        },
+        "≥120": {
+          "denominator": 138,
+          "matches": 36,
+          "accuracy": 0.2608695652173913
+        }
+      },
+      "executed_candidates_used": 69632,
+      "mean_winning_length": 60.83984375,
+      "timing": {
+        "config": {
+          "name": "vote-t0.7-k16-g0",
+          "mode": "vote",
+          "temperature": 0.7,
+          "k": 16,
+          "greedy_vote": false
+        },
+        "full_pipeline_seconds": 309.5298260280001,
+        "rows": 1919,
+        "executed_candidates": 32623,
+        "answers_sha256": "bb06af27b1b71d1bc1fe830ec823f433650e05358aefd424da85ea80ab27df0a",
+        "model_sha256": "13e45e3d1999ce617ffc14b71a932e41cd039aa379082a45c9882be51ea689e8",
+        "tokenizer_sha256": "261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d",
+        "components": {
+          "load_generate_seconds": 292.6877734740001,
+          "new_batches": 60,
+          "resumed_batches": 0,
+          "batch_candidate_rows": 512,
+          "question_batch": 32,
+          "cross_KV": "shared5D broadcast; no physical expansion",
+          "peak_reserved_bytes": 15472787456,
+          "execution": {
+            "programs": 32623,
+            "statuses": {
+              "numeric": 31615,
+              "execution_error": 881,
+              "timeout": 19,
+              "syntax_error": 105,
+              "non_number": 3
+            },
+            "seconds": 16.019021198000246,
+            "chunk_retries": 1,
+            "pool_restarts": 1,
+            "chunk_rows": 2000,
+            "workers": 2,
+            "wall_limit": 1.0,
+            "cpu_limit": 2.0,
+            "candidate_count": 32623,
+            "reused_candidates": 0,
+            "committed_distinct_program_calls": 26559,
+            "new_committed_distinct_program_calls": 26559,
+            "failed_chunk_extra_calls_unknown": true
+          }
+        },
+        "complete": true,
+        "timer": "test read, checkpoint/tokenizer load, encoder/decode, candidate execution, voting, final answer write; SHA/report outside"
+      }
+    }
+  ],
+  "decision": {
+    "accepted": false,
+    "config": {
+      "name": "greedy",
+      "mode": "greedy",
+      "k": 0,
+      "temperature": null,
+      "greedy_vote": false
+    },
+    "delta_pp": 0.0,
+    "full_test_seconds": 13.002573614000084,
+    "selection": "max exec4k among top3 measured alternatives with fulltest<=120s and gain>=1.5pp"
+  },
+  "wall_seconds": 3368.168053971,
+  "local_verification": {
+    "CPU_exec_report": "../checks/kaggle-s1-v1-cpu-audit.json",
+    "CPU_model_report": "../checks/kaggle-s1-v1-model-cpu-checks.json",
+    "all_saved_execution_results_exact": true,
+    "new_training_updates": 0,
+    "new_GPU_runs": 0
+  },
+  "limitations": [
+    "only greedy and top3 heldout alternatives timed; k4/k8 alternatives not timed",
+    "greedy timer does not execute programs; candidate execution count is0 despite general timer label",
+    "one seed; repeated heldout search; fresh/official test gold not evaluated",
+    "no GPU utilisation telemetry or actual SDPA backend trace"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-09",
+  "device": "CPU",
+  "torch": "2.14.1",
+  "training_updates": 0,
+  "checkpoint_sha256": "5d115cf06c55f8d6245b5244d4cd622e38480fd5ef7dfe8806ba8bbcd70d4833",
+  "scope": "new forward/permutation64, complete greedy3 on saved user weights; no optimizer steps or GPU measurements",
+  "validation64_loss": {
+    "correct": 0.7445893895211827,
+    "rotated": 2.3387564876364926,
+    "reversed": 2.403256508374306
+  },
+  "rotated_minus_correct": 1.5941670981153098,
+  "teacher_forcing_correct_rotated_reproduces_saved_T4_within_1e-5": true,
+  "CPU_full_cached_greedy_equal": true,
+  "full_greedy_answer_matches_saved_T4": [
+    {
+      "validation_index": 31,
+      "tokens": 51,
+      "complete_answer_equal_saved_T4": true
+    },
+    {
+      "validation_index": 24,
+      "tokens": 92,
+      "complete_answer_equal_saved_T4": true
+    },
+    {
+      "validation_index": 42,
+      "tokens": 51,
+      "complete_answer_equal_saved_T4": true
+    }
+  ],
+  "model_weights_unchanged": true,
+  "limits": "Three full answers only, not1919 parity. Cases: gained6-hour travel, lostheight48-to45 and undefined name. Semantic labels from fixed manual audit. Not official functional evaluation; causes unresolved."
+}

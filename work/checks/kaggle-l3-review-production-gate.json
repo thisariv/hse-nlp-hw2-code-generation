@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "ref": "friend1/nlp-hw02-kaggle-l3/1",
+  "status": "ERROR",
+  "expected_error": true,
+  "gate": {
+    "passed": false,
+    "reason": "Kaggle Secrets unavailable: KAGGLE_USERNAME, KAGGLE_KEY",
+    "action": "Attach both Secrets and use Edit -> Save Version -> Save & Run All"
+  },
+  "training_started": false,
+  "anchor_load_started": false,
+  "worker_spawned": false,
+  "log_has_expected_Secrets_refusal": true,
+  "source_port_sha256": "78013232b9f8b072e273d1b6f34f243a493e34c87c8ebe48d770f63bcbd49b5b",
+  "private": true
+}

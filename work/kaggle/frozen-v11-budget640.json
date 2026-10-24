@@ -1,0 +1,66 @@
+{
+  "models": [
+    {
+      "name": "C-long2x-B6",
+      "filename": "c-long2x-b6-fp16.pt",
+      "sha256": "ee30794048bb6200cf97ac4d7e5c1606f0e97893ea04f6567c9487f6c04345fa",
+      "dataset": "friend1/nlp-hw02-b6",
+      "source_kind": "notebooks",
+      "source_ref": "friend1/nlp-hw02-b6/1",
+      "K1": 1,
+      "K2": 1
+    },
+    {
+      "name": "pilot-b",
+      "filename": "p1-b-fp16.pt",
+      "sha256": "8439037720dda16dda6b73fe676860d5498bbcba4cacebc0d709bbb22db464a5",
+      "dataset": "friend1/nlp-hw02-kaggle-p1",
+      "source_kind": "notebooks",
+      "source_ref": "friend1/nlp-hw02-kaggle-p1/3",
+      "K1": 1,
+      "K2": 8
+    },
+    {
+      "name": "W-B6",
+      "filename": "w-b6-fp16.pt",
+      "sha256": "cb34c81e6cda83c73bf4662c5c425446be8cdb48c30dd5e9e217fd6cbc1cd496",
+      "dataset": "friend1/nlp-hw02-b6",
+      "source_kind": "notebooks",
+      "source_ref": "friend1/nlp-hw02-b6/1",
+      "K1": 1,
+      "K2": 8
+    }
+  ],
+  "unanimity_threshold": 1.0,
+  "sequence_budget": 640,
+  "greedy_sequence_budget": 640,
+  "scorer_enabled": false,
+  "scorer_weight": 0.0,
+  "device": "cuda:0",
+  "budget_seconds": 180.0,
+  "cap": 512,
+  "seed": 270042,
+  "temperature": 0.7,
+  "tail_workers": 4,
+  "generation_workers": 2,
+  "expected_tune_matches": 1547,
+  "tokenizer_sha256": "261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d",
+  "decoder": {
+    "share_cross": true,
+    "async_eos": true,
+    "eos_every": 32,
+    "compact_done": true,
+    "compact_fraction": 0.25,
+    "race_sampler": true,
+    "lean_greedy": true
+  },
+  "guards": {
+    "generation": 160.0,
+    "execution": 166.0,
+    "verification": 170.0,
+    "supervisor": 172.0,
+    "greedy": 130.0
+  },
+  "cuda_allocator": "expandable_segments:True,garbage_collection_threshold:0.8",
+  "release_cache_between_batches": true
+}

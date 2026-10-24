@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-08",
+  "scope": "New CPU reconstruction of all50000 additional sampled row-index batches from exact restored17 Python RNG and per-row flags; no model training or target tokenization rerun.",
+  "training_updates": 0,
+  "additional_batch_plans": 50000,
+  "checkpoints": [
+    {
+      "step": 75000,
+      "unique_train_rows_seen": 349535,
+      "per_row_seen_flags_exact": true,
+      "Python_RNG_state_exact": true
+    },
+    {
+      "step": 100000,
+      "unique_train_rows_seen": 399353,
+      "per_row_seen_flags_exact": true,
+      "Python_RNG_state_exact": true
+    }
+  ],
+  "additional_useful_target_tokens": 26334174,
+  "additional_target_slots": 45054328,
+  "additional_target_padding_fraction": 0.4155017915259994,
+  "new_train_rows_seen_in_second_half": 123930,
+  "additional_log_rates_consistent": true,
+  "fresh1024_evaluated": false,
+  "limits": "Useful target counts checked for checkpoint/log consistency; prior17 full pinned data/BPE audit unchanged. Not fresh GPU speed measurement."
+}

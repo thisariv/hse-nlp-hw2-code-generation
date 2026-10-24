@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-09",
+  "notebook_sha256": "e435094c9bda22cef96bffa2e2b1a1f54eccb292132d215b0d283d2e64bcf593",
+  "cells": 21,
+  "code_cells": 11,
+  "all_code_cells_parse": true,
+  "execution_counts_and_outputs_empty": true,
+  "factor": "decoder2 to4; encoder2 and all other training hyperparameters unchanged from19",
+  "unchanged_source_cells": [
+    1,
+    10,
+    14
+  ],
+  "unchanged_model_except_depth_argument_names": true,
+  "unchanged_pinned_data_selection_and_BPE_fitting_cache_except_added_identity_assertions": true,
+  "unchanged_LR_SwiGLU_KV_numeric_diagnostics_and_checkpoint_functions": true,
+  "saved19_baseline_payload_matches_received_full_results": true,
+  "saved19_reference_counts": [
+    113,
+    127,
+    136
+  ],
+  "saved18_baseline_payload_preserved": true,
+  "no_old_checkpoint_load": true,
+  "fresh1024_unscored": true,
+  "new_run_and_archive_names": true,
+  "local_absolute_paths_absent": true,
+  "expected_parameters": 10510816,
+  "parameter_increase_vs19": 2103456,
+  "limits": [
+    "Static checks, no100k/GPU training or new quality/speed result."
+  ]
+}

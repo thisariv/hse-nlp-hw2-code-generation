@@ -1,0 +1,19 @@
+{
+  "committed": false,
+  "add_exit": 128,
+  "add_output": "fatal: Unable to create '<vault>/.git/worktrees/study1/index.lock': Operation not permitted",
+  "files": [
+    "work/notes/architecture-decision.md",
+    "work/research/analyze-architecture-decision.py",
+    "work/research/write-architecture-note.py",
+    "work/results/architecture-decision.json",
+    "work/results/architecture-shape-bench.json",
+    "work/results/next-shape-bench.json",
+    "work/checks/architecture-decision-cpu.py",
+    "work/checks/architecture-decision-cpu.json",
+    "work/checks/architecture-measured-navigation.patch"
+  ],
+  "navigation_patch": "work/checks/architecture-measured-navigation.patch",
+  "foreign_changes_staged": false,
+  "submission_modified": false
+}

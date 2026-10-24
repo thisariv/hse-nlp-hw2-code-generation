@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-08",
+  "device": "CPU",
+  "torch": "2.14.1",
+  "training_updates": 0,
+  "scope": "new forward/permutation64, complete greedy3 on saved user weights; no optimizer steps or GPU measurements",
+  "validation64_loss": {
+    "correct": 1.547453603909249,
+    "rotated": 1.6158627676643473,
+    "reversed": 1.6052997318201925
+  },
+  "rotated_minus_correct": 0.06840916375509831,
+  "teacher_forcing_correct_rotated_reproduces_saved_T4_within_1e-5": true,
+  "CPU_full_cached_greedy_equal": true,
+  "full_greedy_answer_matches_saved_T4": [
+    {
+      "validation_index": 0,
+      "tokens": 39,
+      "complete_answer_equal_saved_T4": true
+    },
+    {
+      "validation_index": 2,
+      "tokens": 39,
+      "complete_answer_equal_saved_T4": true
+    },
+    {
+      "validation_index": 35,
+      "tokens": 41,
+      "complete_answer_equal_saved_T4": true
+    }
+  ],
+  "model_weights_unchanged": true,
+  "limits": "Three full answers only, not1919 parity. Not official functional evaluation; causes unresolved."
+}

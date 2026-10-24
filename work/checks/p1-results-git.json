@@ -1,0 +1,29 @@
+{
+  "message": "nlp: analyze P1 cooldown, truncation and reviewer results",
+  "paths": [
+    ".gitignore",
+    "courses/nlp/backlog.md",
+    "courses/nlp/index.md",
+    "courses/nlp/progress.md",
+    "README.md",
+    "dashboard.md",
+    "knowledge/bibliography.md",
+    "work/research/README.md",
+    "work/research/score-reviewer.py",
+    "work/research/analyze-p1-results.py",
+    "work/checks/p1-results-cpu.py",
+    "work/checks/p1-results-cpu.json",
+    "work/notes/p1-results.md",
+    "work/results/p1-results.json",
+    "work/results/p1-comparison.png",
+    "work/results/p1-reviewer-ce.png",
+    "work/results/p1-reviewer-selectors.png",
+    "work/results/p1-reviewer/identity.json",
+    "work/results/p1-reviewer/benchmark.json",
+    "work/results/p1-reviewer/summary.json",
+    "work/checks/p1-results-git.json"
+  ],
+  "add_exit_code": 128,
+  "stdout": "",
+  "stderr": "fatal: Unable to create '<vault>/.git/worktrees/study1/index.lock': Operation not permitted\n"
+}

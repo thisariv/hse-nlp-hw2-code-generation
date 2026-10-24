@@ -1,0 +1,84 @@
+{
+  "passed": true,
+  "torch": "2.11.0",
+  "notebook_sha256": "108ca8a3a7f1158e320ba3ccee668ae1d9ea7fcad0ba1e1c44a66cbaf37f1438",
+  "checks": {
+    "unit": {
+      "passed": true,
+      "slow_prefix_rows": 3,
+      "identical_copies": true,
+      "EOS_padding_compaction": true,
+      "teacher_forcing_padding": true,
+      "soup_FP32_keys_shapes": true
+    },
+    "real": {
+      "passed": true,
+      "vocabulary": {
+        "vocab": 8195,
+        "PAD": 0,
+        "BOS": 1,
+        "EOS": 2,
+        "offset": 3,
+        "representation": 30,
+        "representation_source_sha256": "51c18fd6b9d158086c96da9f23dd72030da84e27cff18b51028934b0f21d519c",
+        "shared_cache_manifest": true,
+        "token_table_sha256": "eb0080fcc2bda85916b20a1e76c6ef57c2c3460e1e3995fd9339644fdb49e713"
+      },
+      "real_models": 3,
+      "real_rows": [
+        0,
+        1,
+        2
+      ],
+      "slow_cached_greedy_exact": true,
+      "slow_prefix_steps": 123,
+      "slow_reference_all_EOS": true,
+      "identical_three_greedy_bytes": true,
+      "generated_greedy_TF_sum_max_abs_error": 3.5762786865234375e-06,
+      "TF_sum_errors_by_model": {
+        "C": 3.5762786865234375e-06,
+        "P": 4.76837158203125e-06,
+        "W": 3.337860107421875e-06
+      },
+      "canonical_greedy_checks": {
+        "C": {
+          "equal_token_paths": 3,
+          "rows": 3,
+          "sum_LP_error_vs_generation": 3.5762786865234375e-06
+        },
+        "P": {
+          "equal_token_paths": 3,
+          "rows": 3,
+          "sum_LP_error_vs_generation": 4.76837158203125e-06
+        },
+        "W": {
+          "equal_token_paths": 3,
+          "rows": 3,
+          "sum_LP_error_vs_generation": 3.337860107421875e-06
+        }
+      },
+      "soups": {
+        "0.3": 212,
+        "0.5": 212,
+        "0.7": 212
+      }
+    },
+    "static": {
+      "passed": true,
+      "nbformat": true,
+      "private": true,
+      "internet": false,
+      "frozen_v10": true,
+      "timeout": 4200
+    },
+    "pipeline": {
+      "passed": true,
+      "embedded_worker": true,
+      "executor": true,
+      "gzip": true,
+      "unique_LL": true,
+      "candidates_per_row": 87,
+      "seconds": 2.3935313327237964
+    }
+  }
+}

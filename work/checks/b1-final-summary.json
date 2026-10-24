@@ -1,0 +1,992 @@
+{
+  "source": "friend2/nlp-hw02-kaggle-b1/1",
+  "status": "ERROR",
+  "reason": "Final assert: incomplete evaluations",
+  "models": {
+    "E": {
+      "status": "partial; main target or evaluation incomplete",
+      "main_seconds": 34200.371796821746,
+      "updates": 51472,
+      "cursor": 6588416,
+      "lr_factor": 0.25,
+      "stability": {
+        "total": 54,
+        "consecutive": 0,
+        "window": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "escalations": 2,
+        "history": [
+          {
+            "reason": "nonfinite threshold",
+            "restored_updates": 22244,
+            "restored_cursor": 2847232,
+            "old_lr_factor": 1.0,
+            "escalation": 1,
+            "action": "rollback and halve LR",
+            "new_lr_factor": 0.5
+          },
+          {
+            "reason": "nonfinite threshold",
+            "restored_updates": 36147,
+            "restored_cursor": 4626816,
+            "old_lr_factor": 0.5,
+            "escalation": 2,
+            "action": "rollback and halve LR",
+            "new_lr_factor": 0.25
+          }
+        ],
+        "amp_total": 11,
+        "amp_consecutive": 0
+      },
+      "points": [
+        {
+          "tag": "probe-009000",
+          "complete": true,
+          "training": {
+            "anchor": {
+              "file": "checkpoints/main-675e02281788.pt",
+              "bytes": 1304582339,
+              "sha256": "f4539d13b7a6775b7f54385c2e4f6f2c5b6ab8b09e277a41927bf0b560d669e3",
+              "updates": 13957,
+              "cursor": 1786496,
+              "main_seconds": 9000.194075758976,
+              "model_spec": {
+                "d_model": 768,
+                "heads": 12,
+                "encoder_layers": 8,
+                "decoder_layers": 4,
+                "swiglu_dim": 2048,
+                "vocab": 8195
+              },
+              "identity": {
+                "model": "E",
+                "recipe": {
+                  "architecture": {
+                    "d_model": 768,
+                    "heads": 12,
+                    "encoder_layers": 8,
+                    "decoder_layers": 4,
+                    "swiglu_dim": 2048,
+                    "vocab": 8195
+                  },
+                  "normalized_token_init": true,
+                  "seed": 42,
+                  "dropout": 0.0,
+                  "peak_lr": 0.001,
+                  "warmup_updates": 1000,
+                  "effective_batch": 128,
+                  "weight_decay": 0.01,
+                  "clip": 1.0,
+                  "AMP": "FP16+GradScaler",
+                  "fused_AdamW": true,
+                  "main_truncation_q": 0.0,
+                  "main_schedule": "warmup then constant; emergency factor persists",
+                  "torch": "2.11.0+cu128",
+                  "CUDA": "12.8",
+                  "implementation_sha256": {
+                    "b1_runtime.py": "eaa7d9a81151e660b324779f127142a474471c67abd14d35600012687f440b36",
+                    "b1_data.py": "cba9f8278c5a696949ff2de501b7b7fd04e5ea69b257e10188fe6193889bbfc3",
+                    "exp26_core.py": "7247eae92a09a73b62c86fee80c261d3e3a0043cb863d7bc069426d214f575ce",
+                    "exp26_train.py": "0392b8fabcae875eb7972a6c69f6594974603ae81090f4c484fbc47244fb2570",
+                    "exp26_order.py": "98f6e43cf31810d4e86fdbf36b37aaf8dfe7c40ec82d065f82194d7056172783",
+                    "l1_runtime.py": "cbcf26636a1a1a62d13ee8fe82a4e9deb420db13f2e811a0fb51832c3811f038",
+                    "l2_runtime.py": "43ce7e35dbfbb5712a427e4aa9f8fb39532d873dde38cd029b9ba8a9fa771ed3",
+                    "p1_math.py": "0e3fa4b4c388cf58ec4411719af8dab693fe84aa3a0e7f39a63567fcae8545db",
+                    "r1_growth.py": "8d9cb97fe328e35b17a7345bef27cd6fa256f77d52afc27f16d48c660e18d5c0",
+                    "s3_representation.py": "51c18fd6b9d158086c96da9f23dd72030da84e27cff18b51028934b0f21d519c"
+                  }
+                },
+                "recipe_sha256": "5d166937703ed32e4c547aae015293bf4ee3dfc6c3ee9e6bf0ff08d74d7507a7",
+                "cache_manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+                "order_sha256": "8e9595f655ed2b4456bf5b94e9b5b6b3db040e3f5696a4dc0ef364588048bee8",
+                "order_seed": 2026101501,
+                "cpu_test": false
+              },
+              "purpose": "uncooled full B1 stable"
+            },
+            "main_seconds": 9000.194075758976,
+            "final": false,
+            "at_end": false,
+            "target_main_seconds": 9000.0,
+            "cooldown_target_seconds": 900.0,
+            "planned_updates": null,
+            "cooldown": "C timed linear",
+            "q": 0.0,
+            "completed_updates": 1387,
+            "cooldown_seconds": 900.110267786984,
+            "endpoint_lr": 3.217270689067631e-07
+          },
+          "metrics": {
+            "weights_sha256": "cfccdcfa2cbb28a205df7fea24bce6fdfcb2a098d84c278cd3fcd9838fc3a2a9",
+            "splits": {
+              "heldout4k": {
+                "exec": {
+                  "denominator": 4096,
+                  "matches": 2041,
+                  "accuracy": 0.498291015625,
+                  "reference_statuses": {
+                    "numeric": 4096
+                  },
+                  "generation_statuses": {
+                    "numeric": 4039,
+                    "execution_error": 47,
+                    "syntax_error": 9,
+                    "missing_solve": 1
+                  },
+                  "rel_tol": 1e-06,
+                  "abs_tol": 1e-06
+                },
+                "CE": {
+                  "CE": 0.39609094770052194,
+                  "tokens": 215035,
+                  "seconds": 5.485279090000404,
+                  "forward": "FP16 evaluated weights on GPU; FP32 softmax/sum",
+                  "representation": 30,
+                  "comparable_to_raw_CE": false,
+                  "batch": 16,
+                  "OOM_retries": []
+                },
+                "generation": {
+                  "seconds": 41.62302719299987,
+                  "batch": 256,
+                  "OOM_attempts": [],
+                  "SDPA_dimensions": 4,
+                  "precision": "FP16",
+                  "peak_reserved_bytes": 14942208000,
+                  "sequences_per_second": 98.40706638196806
+                }
+              },
+              "old991": {
+                "exec": {
+                  "denominator": 991,
+                  "matches": 505,
+                  "accuracy": 0.5095862764883956,
+                  "reference_statuses": {
+                    "numeric": 991
+                  },
+                  "generation_statuses": {
+                    "numeric": 977,
+                    "syntax_error": 3,
+                    "execution_error": 11
+                  },
+                  "rel_tol": 1e-06,
+                  "abs_tol": 1e-06
+                },
+                "CE": {
+                  "CE": 0.40143300303893653,
+                  "tokens": 51689,
+                  "seconds": 1.3029970990010042,
+                  "forward": "FP16 evaluated weights on GPU; FP32 softmax/sum",
+                  "representation": 30,
+                  "comparable_to_raw_CE": false,
+                  "batch": 16,
+                  "OOM_retries": []
+                },
+                "generation": {
+                  "seconds": 12.710223976000634,
+                  "batch": 256,
+                  "OOM_attempts": [],
+                  "SDPA_dimensions": 4,
+                  "precision": "FP16",
+                  "peak_reserved_bytes": 14942208000,
+                  "sequences_per_second": 77.96872831440264
+                }
+              }
+            },
+            "fresh_evaluated": 0
+          }
+        },
+        {
+          "tag": "probe-028370",
+          "complete": false,
+          "training": {
+            "anchor": {
+              "file": "checkpoints/main-ce826bccd0c0.pt",
+              "bytes": 1304609155,
+              "sha256": "1fcba1882d88d630a7a94b9a5c32ab7979b422a110c751de13a4f12536222222",
+              "updates": 42390,
+              "cursor": 5425920,
+              "main_seconds": 28370.069636812615,
+              "model_spec": {
+                "d_model": 768,
+                "heads": 12,
+                "encoder_layers": 8,
+                "decoder_layers": 4,
+                "swiglu_dim": 2048,
+                "vocab": 8195
+              },
+              "identity": {
+                "model": "E",
+                "recipe": {
+                  "architecture": {
+                    "d_model": 768,
+                    "heads": 12,
+                    "encoder_layers": 8,
+                    "decoder_layers": 4,
+                    "swiglu_dim": 2048,
+                    "vocab": 8195
+                  },
+                  "normalized_token_init": true,
+                  "seed": 42,
+                  "dropout": 0.0,
+                  "peak_lr": 0.001,
+                  "warmup_updates": 1000,
+                  "effective_batch": 128,
+                  "weight_decay": 0.01,
+                  "clip": 1.0,
+                  "AMP": "FP16+GradScaler",
+                  "fused_AdamW": true,
+                  "main_truncation_q": 0.0,
+                  "main_schedule": "warmup then constant; emergency factor persists",
+                  "torch": "2.11.0+cu128",
+                  "CUDA": "12.8",
+                  "implementation_sha256": {
+                    "b1_runtime.py": "eaa7d9a81151e660b324779f127142a474471c67abd14d35600012687f440b36",
+                    "b1_data.py": "cba9f8278c5a696949ff2de501b7b7fd04e5ea69b257e10188fe6193889bbfc3",
+                    "exp26_core.py": "7247eae92a09a73b62c86fee80c261d3e3a0043cb863d7bc069426d214f575ce",
+                    "exp26_train.py": "0392b8fabcae875eb7972a6c69f6594974603ae81090f4c484fbc47244fb2570",
+                    "exp26_order.py": "98f6e43cf31810d4e86fdbf36b37aaf8dfe7c40ec82d065f82194d7056172783",
+                    "l1_runtime.py": "cbcf26636a1a1a62d13ee8fe82a4e9deb420db13f2e811a0fb51832c3811f038",
+                    "l2_runtime.py": "43ce7e35dbfbb5712a427e4aa9f8fb39532d873dde38cd029b9ba8a9fa771ed3",
+                    "p1_math.py": "0e3fa4b4c388cf58ec4411719af8dab693fe84aa3a0e7f39a63567fcae8545db",
+                    "r1_growth.py": "8d9cb97fe328e35b17a7345bef27cd6fa256f77d52afc27f16d48c660e18d5c0",
+                    "s3_representation.py": "51c18fd6b9d158086c96da9f23dd72030da84e27cff18b51028934b0f21d519c"
+                  }
+                },
+                "recipe_sha256": "5d166937703ed32e4c547aae015293bf4ee3dfc6c3ee9e6bf0ff08d74d7507a7",
+                "cache_manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+                "order_sha256": "8e9595f655ed2b4456bf5b94e9b5b6b3db040e3f5696a4dc0ef364588048bee8",
+                "order_seed": 2026101501,
+                "cpu_test": false
+              },
+              "purpose": "uncooled full B1 stable"
+            },
+            "main_seconds": 28370.069636812615,
+            "final": false,
+            "at_end": false,
+            "target_main_seconds": 28370.0,
+            "cooldown_target_seconds": 900.0,
+            "planned_updates": null,
+            "cooldown": "C timed linear",
+            "q": 0.0,
+            "completed_updates": 1401,
+            "cooldown_seconds": 900.4862504230041,
+            "endpoint_lr": 5.1572461387788814e-08
+          },
+          "metrics": null
+        },
+        {
+          "tag": "end-main-034200",
+          "complete": false,
+          "training": {
+            "anchor": {
+              "file": "checkpoints/main-af9221d17c55.pt",
+              "bytes": 1304610243,
+              "sha256": "657205443035e983e123348056f30f396ed92e33f2c7f7774ae52d2083e4f647",
+              "updates": 51472,
+              "cursor": 6588416,
+              "main_seconds": 34200.371796821746,
+              "model_spec": {
+                "d_model": 768,
+                "heads": 12,
+                "encoder_layers": 8,
+                "decoder_layers": 4,
+                "swiglu_dim": 2048,
+                "vocab": 8195
+              },
+              "identity": {
+                "model": "E",
+                "recipe": {
+                  "architecture": {
+                    "d_model": 768,
+                    "heads": 12,
+                    "encoder_layers": 8,
+                    "decoder_layers": 4,
+                    "swiglu_dim": 2048,
+                    "vocab": 8195
+                  },
+                  "normalized_token_init": true,
+                  "seed": 42,
+                  "dropout": 0.0,
+                  "peak_lr": 0.001,
+                  "warmup_updates": 1000,
+                  "effective_batch": 128,
+                  "weight_decay": 0.01,
+                  "clip": 1.0,
+                  "AMP": "FP16+GradScaler",
+                  "fused_AdamW": true,
+                  "main_truncation_q": 0.0,
+                  "main_schedule": "warmup then constant; emergency factor persists",
+                  "torch": "2.11.0+cu128",
+                  "CUDA": "12.8",
+                  "implementation_sha256": {
+                    "b1_runtime.py": "eaa7d9a81151e660b324779f127142a474471c67abd14d35600012687f440b36",
+                    "b1_data.py": "cba9f8278c5a696949ff2de501b7b7fd04e5ea69b257e10188fe6193889bbfc3",
+                    "exp26_core.py": "7247eae92a09a73b62c86fee80c261d3e3a0043cb863d7bc069426d214f575ce",
+                    "exp26_train.py": "0392b8fabcae875eb7972a6c69f6594974603ae81090f4c484fbc47244fb2570",
+                    "exp26_order.py": "98f6e43cf31810d4e86fdbf36b37aaf8dfe7c40ec82d065f82194d7056172783",
+                    "l1_runtime.py": "cbcf26636a1a1a62d13ee8fe82a4e9deb420db13f2e811a0fb51832c3811f038",
+                    "l2_runtime.py": "43ce7e35dbfbb5712a427e4aa9f8fb39532d873dde38cd029b9ba8a9fa771ed3",
+                    "p1_math.py": "0e3fa4b4c388cf58ec4411719af8dab693fe84aa3a0e7f39a63567fcae8545db",
+                    "r1_growth.py": "8d9cb97fe328e35b17a7345bef27cd6fa256f77d52afc27f16d48c660e18d5c0",
+                    "s3_representation.py": "51c18fd6b9d158086c96da9f23dd72030da84e27cff18b51028934b0f21d519c"
+                  }
+                },
+                "recipe_sha256": "5d166937703ed32e4c547aae015293bf4ee3dfc6c3ee9e6bf0ff08d74d7507a7",
+                "cache_manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+                "order_sha256": "8e9595f655ed2b4456bf5b94e9b5b6b3db040e3f5696a4dc0ef364588048bee8",
+                "order_seed": 2026101501,
+                "cpu_test": false
+              },
+              "purpose": "uncooled full B1 stable"
+            },
+            "main_seconds": 34200.371796821746,
+            "final": false,
+            "at_end": true,
+            "target_main_seconds": 34200.0,
+            "cooldown_target_seconds": 900.0,
+            "planned_updates": null,
+            "cooldown": "C timed linear",
+            "q": 0.0,
+            "completed_updates": 1400,
+            "cooldown_seconds": 900.7662407671087,
+            "endpoint_lr": 1.2608741637665233e-08
+          },
+          "metrics": null
+        }
+      ],
+      "summary_sha256": "ce353ff4151611659a0cd4309a82ffe273685a3438c18ed2578ac2197cf77645"
+    },
+    "W": {
+      "status": "partial; main target or evaluation incomplete",
+      "main_seconds": 34200.43953105576,
+      "updates": 53789,
+      "cursor": 6884992,
+      "lr_factor": 0.25,
+      "stability": {
+        "total": 91,
+        "consecutive": 0,
+        "window": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "escalations": 2,
+        "history": [
+          {
+            "reason": "nonfinite threshold",
+            "restored_updates": 33073,
+            "restored_cursor": 4233344,
+            "old_lr_factor": 1.0,
+            "escalation": 1,
+            "action": "rollback and halve LR",
+            "new_lr_factor": 0.5
+          },
+          {
+            "reason": "nonfinite threshold",
+            "restored_updates": 37429,
+            "restored_cursor": 4790912,
+            "old_lr_factor": 0.5,
+            "escalation": 2,
+            "action": "rollback and halve LR",
+            "new_lr_factor": 0.25
+          }
+        ],
+        "amp_total": 12,
+        "amp_consecutive": 0
+      },
+      "points": [
+        {
+          "tag": "probe-009000",
+          "complete": true,
+          "training": {
+            "anchor": {
+              "file": "checkpoints/main-fa147e7f1183.pt",
+              "bytes": 1361330259,
+              "sha256": "aa4a145fc607c1a55807750188ceb55598e7d475784c2a091677bf89a0bc8091",
+              "updates": 14455,
+              "cursor": 1850240,
+              "main_seconds": 9000.058214696994,
+              "model_spec": {
+                "d_model": 768,
+                "heads": 12,
+                "encoder_layers": 6,
+                "decoder_layers": 6,
+                "swiglu_dim": 2048,
+                "vocab": 8195
+              },
+              "identity": {
+                "model": "W",
+                "recipe": {
+                  "architecture": {
+                    "d_model": 768,
+                    "heads": 12,
+                    "encoder_layers": 6,
+                    "decoder_layers": 6,
+                    "swiglu_dim": 2048,
+                    "vocab": 8195
+                  },
+                  "normalized_token_init": true,
+                  "seed": 42,
+                  "dropout": 0.0,
+                  "peak_lr": 0.001,
+                  "warmup_updates": 1000,
+                  "effective_batch": 128,
+                  "weight_decay": 0.01,
+                  "clip": 1.0,
+                  "AMP": "FP16+GradScaler",
+                  "fused_AdamW": true,
+                  "main_truncation_q": 0.0,
+                  "main_schedule": "warmup then constant; emergency factor persists",
+                  "torch": "2.11.0+cu128",
+                  "CUDA": "12.8",
+                  "implementation_sha256": {
+                    "b1_runtime.py": "eaa7d9a81151e660b324779f127142a474471c67abd14d35600012687f440b36",
+                    "b1_data.py": "cba9f8278c5a696949ff2de501b7b7fd04e5ea69b257e10188fe6193889bbfc3",
+                    "exp26_core.py": "7247eae92a09a73b62c86fee80c261d3e3a0043cb863d7bc069426d214f575ce",
+                    "exp26_train.py": "0392b8fabcae875eb7972a6c69f6594974603ae81090f4c484fbc47244fb2570",
+                    "exp26_order.py": "98f6e43cf31810d4e86fdbf36b37aaf8dfe7c40ec82d065f82194d7056172783",
+                    "l1_runtime.py": "cbcf26636a1a1a62d13ee8fe82a4e9deb420db13f2e811a0fb51832c3811f038",
+                    "l2_runtime.py": "43ce7e35dbfbb5712a427e4aa9f8fb39532d873dde38cd029b9ba8a9fa771ed3",
+                    "p1_math.py": "0e3fa4b4c388cf58ec4411719af8dab693fe84aa3a0e7f39a63567fcae8545db",
+                    "r1_growth.py": "8d9cb97fe328e35b17a7345bef27cd6fa256f77d52afc27f16d48c660e18d5c0",
+                    "s3_representation.py": "51c18fd6b9d158086c96da9f23dd72030da84e27cff18b51028934b0f21d519c"
+                  }
+                },
+                "recipe_sha256": "34a4c114bc13d49c1b0a99ee3fb9ae5201745049e4fab0ff08697c21c3828e7c",
+                "cache_manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+                "order_sha256": "8e9595f655ed2b4456bf5b94e9b5b6b3db040e3f5696a4dc0ef364588048bee8",
+                "order_seed": 2026101501,
+                "cpu_test": false
+              },
+              "purpose": "uncooled full B1 stable"
+            },
+            "main_seconds": 9000.058214696994,
+            "final": false,
+            "at_end": false,
+            "target_main_seconds": 9000.0,
+            "cooldown_target_seconds": 900.0,
+            "planned_updates": null,
+            "cooldown": "C timed linear",
+            "q": 0.0,
+            "completed_updates": 1441,
+            "cooldown_seconds": 900.5449585100232,
+            "endpoint_lr": 1.0630761441965398e-07
+          },
+          "metrics": {
+            "weights_sha256": "741c46f4c72acb878e58202e065d4a2a60be35ae4fb3620b6f627fcd50912b4b",
+            "splits": {
+              "heldout4k": {
+                "exec": {
+                  "denominator": 4096,
+                  "matches": 2047,
+                  "accuracy": 0.499755859375,
+                  "reference_statuses": {
+                    "numeric": 4096
+                  },
+                  "generation_statuses": {
+                    "numeric": 4022,
+                    "execution_error": 63,
+                    "syntax_error": 10,
+                    "timeout_or_worker_exit": 1
+                  },
+                  "rel_tol": 1e-06,
+                  "abs_tol": 1e-06
+                },
+                "CE": {
+                  "CE": 0.3956095901522254,
+                  "tokens": 215035,
+                  "seconds": 5.235084763000486,
+                  "forward": "FP16 evaluated weights on GPU; FP32 softmax/sum",
+                  "representation": 30,
+                  "comparable_to_raw_CE": false,
+                  "batch": 16,
+                  "OOM_retries": []
+                },
+                "generation": {
+                  "seconds": 65.44367868200061,
+                  "batch": 256,
+                  "OOM_attempts": [],
+                  "SDPA_dimensions": 4,
+                  "precision": "FP16",
+                  "peak_reserved_bytes": 9997123584,
+                  "sequences_per_second": 62.58816867405941
+                }
+              },
+              "old991": {
+                "exec": {
+                  "denominator": 991,
+                  "matches": 512,
+                  "accuracy": 0.5166498486377397,
+                  "reference_statuses": {
+                    "numeric": 991
+                  },
+                  "generation_statuses": {
+                    "numeric": 977,
+                    "execution_error": 12,
+                    "syntax_error": 2
+                  },
+                  "rel_tol": 1e-06,
+                  "abs_tol": 1e-06
+                },
+                "CE": {
+                  "CE": 0.4001695944042472,
+                  "tokens": 51689,
+                  "seconds": 1.2797750829995493,
+                  "forward": "FP16 evaluated weights on GPU; FP32 softmax/sum",
+                  "representation": 30,
+                  "comparable_to_raw_CE": false,
+                  "batch": 16,
+                  "OOM_retries": []
+                },
+                "generation": {
+                  "seconds": 17.950898641000094,
+                  "batch": 256,
+                  "OOM_attempts": [],
+                  "SDPA_dimensions": 4,
+                  "precision": "FP16",
+                  "peak_reserved_bytes": 9997123584,
+                  "sequences_per_second": 55.206149832328876
+                }
+              }
+            },
+            "fresh_evaluated": 0
+          }
+        },
+        {
+          "tag": "probe-028370",
+          "complete": false,
+          "training": {
+            "anchor": {
+              "file": "checkpoints/main-8cc98f348c29.pt",
+              "bytes": 1361357139,
+              "sha256": "aa10f0caaaf1717d86f5a80fdf76029b5adb3ee119a017b248a0f3236195b54f",
+              "updates": 44393,
+              "cursor": 5682304,
+              "main_seconds": 28370.24910281477,
+              "model_spec": {
+                "d_model": 768,
+                "heads": 12,
+                "encoder_layers": 6,
+                "decoder_layers": 6,
+                "swiglu_dim": 2048,
+                "vocab": 8195
+              },
+              "identity": {
+                "model": "W",
+                "recipe": {
+                  "architecture": {
+                    "d_model": 768,
+                    "heads": 12,
+                    "encoder_layers": 6,
+                    "decoder_layers": 6,
+                    "swiglu_dim": 2048,
+                    "vocab": 8195
+                  },
+                  "normalized_token_init": true,
+                  "seed": 42,
+                  "dropout": 0.0,
+                  "peak_lr": 0.001,
+                  "warmup_updates": 1000,
+                  "effective_batch": 128,
+                  "weight_decay": 0.01,
+                  "clip": 1.0,
+                  "AMP": "FP16+GradScaler",
+                  "fused_AdamW": true,
+                  "main_truncation_q": 0.0,
+                  "main_schedule": "warmup then constant; emergency factor persists",
+                  "torch": "2.11.0+cu128",
+                  "CUDA": "12.8",
+                  "implementation_sha256": {
+                    "b1_runtime.py": "eaa7d9a81151e660b324779f127142a474471c67abd14d35600012687f440b36",
+                    "b1_data.py": "cba9f8278c5a696949ff2de501b7b7fd04e5ea69b257e10188fe6193889bbfc3",
+                    "exp26_core.py": "7247eae92a09a73b62c86fee80c261d3e3a0043cb863d7bc069426d214f575ce",
+                    "exp26_train.py": "0392b8fabcae875eb7972a6c69f6594974603ae81090f4c484fbc47244fb2570",
+                    "exp26_order.py": "98f6e43cf31810d4e86fdbf36b37aaf8dfe7c40ec82d065f82194d7056172783",
+                    "l1_runtime.py": "cbcf26636a1a1a62d13ee8fe82a4e9deb420db13f2e811a0fb51832c3811f038",
+                    "l2_runtime.py": "43ce7e35dbfbb5712a427e4aa9f8fb39532d873dde38cd029b9ba8a9fa771ed3",
+                    "p1_math.py": "0e3fa4b4c388cf58ec4411719af8dab693fe84aa3a0e7f39a63567fcae8545db",
+                    "r1_growth.py": "8d9cb97fe328e35b17a7345bef27cd6fa256f77d52afc27f16d48c660e18d5c0",
+                    "s3_representation.py": "51c18fd6b9d158086c96da9f23dd72030da84e27cff18b51028934b0f21d519c"
+                  }
+                },
+                "recipe_sha256": "34a4c114bc13d49c1b0a99ee3fb9ae5201745049e4fab0ff08697c21c3828e7c",
+                "cache_manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+                "order_sha256": "8e9595f655ed2b4456bf5b94e9b5b6b3db040e3f5696a4dc0ef364588048bee8",
+                "order_seed": 2026101501,
+                "cpu_test": false
+              },
+              "purpose": "uncooled full B1 stable"
+            },
+            "main_seconds": 28370.24910281477,
+            "final": false,
+            "at_end": false,
+            "target_main_seconds": 28370.0,
+            "cooldown_target_seconds": 900.0,
+            "planned_updates": null,
+            "cooldown": "C timed linear",
+            "q": 0.0,
+            "completed_updates": 1458,
+            "cooldown_seconds": 900.8258596270025,
+            "endpoint_lr": 4.9658888332887454e-08
+          },
+          "metrics": null
+        },
+        {
+          "tag": "end-main-034200",
+          "complete": true,
+          "training": {
+            "anchor": {
+              "file": "checkpoints/main-df3372b2d497.pt",
+              "bytes": 1361358291,
+              "sha256": "fc5ae1b3f188fcc0eee503397764316e0daed4f616ff1ef44a0a1d7f0ed6b618",
+              "updates": 53789,
+              "cursor": 6884992,
+              "main_seconds": 34200.43953105576,
+              "model_spec": {
+                "d_model": 768,
+                "heads": 12,
+                "encoder_layers": 6,
+                "decoder_layers": 6,
+                "swiglu_dim": 2048,
+                "vocab": 8195
+              },
+              "identity": {
+                "model": "W",
+                "recipe": {
+                  "architecture": {
+                    "d_model": 768,
+                    "heads": 12,
+                    "encoder_layers": 6,
+                    "decoder_layers": 6,
+                    "swiglu_dim": 2048,
+                    "vocab": 8195
+                  },
+                  "normalized_token_init": true,
+                  "seed": 42,
+                  "dropout": 0.0,
+                  "peak_lr": 0.001,
+                  "warmup_updates": 1000,
+                  "effective_batch": 128,
+                  "weight_decay": 0.01,
+                  "clip": 1.0,
+                  "AMP": "FP16+GradScaler",
+                  "fused_AdamW": true,
+                  "main_truncation_q": 0.0,
+                  "main_schedule": "warmup then constant; emergency factor persists",
+                  "torch": "2.11.0+cu128",
+                  "CUDA": "12.8",
+                  "implementation_sha256": {
+                    "b1_runtime.py": "eaa7d9a81151e660b324779f127142a474471c67abd14d35600012687f440b36",
+                    "b1_data.py": "cba9f8278c5a696949ff2de501b7b7fd04e5ea69b257e10188fe6193889bbfc3",
+                    "exp26_core.py": "7247eae92a09a73b62c86fee80c261d3e3a0043cb863d7bc069426d214f575ce",
+                    "exp26_train.py": "0392b8fabcae875eb7972a6c69f6594974603ae81090f4c484fbc47244fb2570",
+                    "exp26_order.py": "98f6e43cf31810d4e86fdbf36b37aaf8dfe7c40ec82d065f82194d7056172783",
+                    "l1_runtime.py": "cbcf26636a1a1a62d13ee8fe82a4e9deb420db13f2e811a0fb51832c3811f038",
+                    "l2_runtime.py": "43ce7e35dbfbb5712a427e4aa9f8fb39532d873dde38cd029b9ba8a9fa771ed3",
+                    "p1_math.py": "0e3fa4b4c388cf58ec4411719af8dab693fe84aa3a0e7f39a63567fcae8545db",
+                    "r1_growth.py": "8d9cb97fe328e35b17a7345bef27cd6fa256f77d52afc27f16d48c660e18d5c0",
+                    "s3_representation.py": "51c18fd6b9d158086c96da9f23dd72030da84e27cff18b51028934b0f21d519c"
+                  }
+                },
+                "recipe_sha256": "34a4c114bc13d49c1b0a99ee3fb9ae5201745049e4fab0ff08697c21c3828e7c",
+                "cache_manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+                "order_sha256": "8e9595f655ed2b4456bf5b94e9b5b6b3db040e3f5696a4dc0ef364588048bee8",
+                "order_seed": 2026101501,
+                "cpu_test": false
+              },
+              "purpose": "uncooled full B1 stable"
+            },
+            "main_seconds": 34200.43953105576,
+            "final": false,
+            "at_end": true,
+            "target_main_seconds": 34200.0,
+            "cooldown_target_seconds": 900.0,
+            "planned_updates": null,
+            "cooldown": "C timed linear",
+            "q": 0.0,
+            "completed_updates": 1447,
+            "cooldown_seconds": 900.0774504610017,
+            "endpoint_lr": 7.698819722160022e-08
+          },
+          "metrics": {
+            "weights_sha256": "80957caffa9068747764789e0605f66e4baf0cde7bbb008103ee204b0754e11a",
+            "splits": {
+              "heldout4k": {
+                "exec": {
+                  "denominator": 4096,
+                  "matches": 2488,
+                  "accuracy": 0.607421875,
+                  "reference_statuses": {
+                    "numeric": 4096
+                  },
+                  "generation_statuses": {
+                    "numeric": 4063,
+                    "execution_error": 21,
+                    "syntax_error": 12
+                  },
+                  "rel_tol": 1e-06,
+                  "abs_tol": 1e-06
+                },
+                "CE": {
+                  "CE": 0.3006700568833691,
+                  "tokens": 215035,
+                  "seconds": 5.099317943997448,
+                  "forward": "FP16 evaluated weights on GPU; FP32 softmax/sum",
+                  "representation": 30,
+                  "comparable_to_raw_CE": false,
+                  "batch": 16,
+                  "OOM_retries": []
+                },
+                "generation": {
+                  "seconds": 49.02047978000337,
+                  "batch": 256,
+                  "OOM_attempts": [],
+                  "SDPA_dimensions": 4,
+                  "precision": "FP16",
+                  "peak_reserved_bytes": 9997123584,
+                  "sequences_per_second": 83.55691373038859
+                }
+              },
+              "old991": {
+                "exec": {
+                  "denominator": 991,
+                  "matches": 633,
+                  "accuracy": 0.6387487386478304,
+                  "reference_statuses": {
+                    "numeric": 991
+                  },
+                  "generation_statuses": {
+                    "numeric": 981,
+                    "execution_error": 8,
+                    "syntax_error": 2
+                  },
+                  "rel_tol": 1e-06,
+                  "abs_tol": 1e-06
+                },
+                "CE": {
+                  "CE": 0.3059283170571106,
+                  "tokens": 51689,
+                  "seconds": 1.2093179669973324,
+                  "forward": "FP16 evaluated weights on GPU; FP32 softmax/sum",
+                  "representation": 30,
+                  "comparable_to_raw_CE": false,
+                  "batch": 16,
+                  "OOM_retries": []
+                },
+                "generation": {
+                  "seconds": 10.782352809997974,
+                  "batch": 256,
+                  "OOM_attempts": [],
+                  "SDPA_dimensions": 4,
+                  "precision": "FP16",
+                  "peak_reserved_bytes": 9997123584,
+                  "sequences_per_second": 91.90943919782441
+                }
+              }
+            },
+            "fresh_evaluated": 0
+          }
+        }
+      ],
+      "summary_sha256": "90ca7eee88a60ed74c72c4bcc842992a2a6146f59424a2b75f36a9e0005e60dd"
+    }
+  }
+}

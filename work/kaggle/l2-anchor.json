@@ -1,0 +1,56 @@
+{
+  "file": "model-C__checkpoints__main-5746a4a2897e.pt",
+  "sha256": "1da28095d960fb0958ff26883bc6dc832e4307c9bab4023a5621b1f9f6ff01dc",
+  "bytes": 644049235,
+  "updates": 47155,
+  "cursor": 6035840,
+  "main_seconds": 17569.935878398,
+  "model_spec": {
+    "d_model": 512,
+    "heads": 8,
+    "encoder_layers": 6,
+    "decoder_layers": 6,
+    "swiglu_dim": 1368,
+    "vocab": 8195
+  },
+  "identity": {
+    "model": "C",
+    "recipe": {
+      "architecture": {
+        "d_model": 512,
+        "heads": 8,
+        "encoder_layers": 6,
+        "decoder_layers": 6,
+        "swiglu_dim": 1368,
+        "vocab": 8195
+      },
+      "representation": 30,
+      "normalized_token_init": true,
+      "seed": 42,
+      "dropout": 0.0,
+      "AMP": "FP16+GradScaler",
+      "fused_AdamW": true,
+      "weight_decay": 0.01,
+      "clip": 1.0,
+      "effective_batch": 128,
+      "peak_lr": 0.0015,
+      "warmup_updates": 1000,
+      "main_schedule": "constant",
+      "data_policy": "fixed bucketed permutation, circular continuation without dropping tail",
+      "implementation_sha256": {
+        "l1_runtime.py": "cbcf26636a1a1a62d13ee8fe82a4e9deb420db13f2e811a0fb51832c3811f038",
+        "exp26_core.py": "7247eae92a09a73b62c86fee80c261d3e3a0043cb863d7bc069426d214f575ce",
+        "exp26_train.py": "0392b8fabcae875eb7972a6c69f6594974603ae81090f4c484fbc47244fb2570",
+        "exp26_order.py": "98f6e43cf31810d4e86fdbf36b37aaf8dfe7c40ec82d065f82194d7056172783",
+        "s3_representation.py": "51c18fd6b9d158086c96da9f23dd72030da84e27cff18b51028934b0f21d519c"
+      },
+      "torch": "2.11.0+cu128",
+      "CUDA": "12.8"
+    },
+    "recipe_sha256": "7d74147e9569f965730dd1055f5f83bfc0585232b5bf39e56dc9a796833fd819",
+    "cache_manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+    "order_sha256": "09cf6db8549b7df614fa71516553d23d4cbb3ca97c7911db0c6d599a8277ab7d",
+    "smoke": false
+  },
+  "purpose": "constant-LR main resume; never evaluated cooldown weights"
+}

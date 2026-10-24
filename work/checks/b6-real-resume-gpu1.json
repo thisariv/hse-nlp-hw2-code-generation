@@ -1,0 +1,80 @@
+{
+  "passed": true,
+  "gpu": "1",
+  "checkpoint_sha256": "69dff4405d2236097f48733adbfc9e3bfd5d20b501a3fcfd1dae62ec2ce63074",
+  "checkpoint_bytes": 644258195,
+  "final_anchor_sha256": "cd26644d4961c953410504510d8f5a7eaddbda8b31da51ad8cf14b7841096cad",
+  "final_anchor_metadata_exact": true,
+  "post_restore_generations_numerically_exact": true,
+  "pre_final_blob_available": false,
+  "initial_full_state_digests": {
+    "model": "9d5b972fa38ab432a33702b86499e0a8e25c00931da846b1dd2b3f1cb1f7edd7",
+    "optimizer": "141eea569fe1a5ddce4906e06e1b576da62284708c93950b80dfd40f1f74a02f",
+    "scaler": "ba59336d1c6b12073eb605a91772bd13ff66a4f14e89fe7019ca937ea4756ab5",
+    "rng": "6b041ea116104079626d736e2b2a2622689fe1a8aed00f70614b1a0f059cb445",
+    "state": "0033aea35926109ae55f716d548f4b9b943a85f6ff2ad1f7af2250ba2ce60c18",
+    "scheduler": "469414488a68779fbaefc62a1ce63e613c019ae6a05b31f9b63fab465b7e2290"
+  },
+  "restores": [
+    {
+      "route": "P1 q0 uninterrupted control",
+      "fields_exact": true,
+      "CUDA_rng_bytes_sha256": "5f1e97909a837bbed6637cdf36e7f873380e0b5eaebbbaab112398d7f458e0ed"
+    },
+    {
+      "route": "B6 adapter with disk resume",
+      "fields_exact": true,
+      "CUDA_rng_bytes_sha256": "5f1e97909a837bbed6637cdf36e7f873380e0b5eaebbbaab112398d7f458e0ed"
+    }
+  ],
+  "steps": [
+    {
+      "model": "9ac3b28164a98c1814fa668bfe422397ebe9f8ca263b6517505da9c5346c85ba",
+      "optimizer": "ad34e48062cb28c00a4d86e7adcdf2516edcdac6cdcc3fda42b0b2c0285953e6",
+      "scaler": "15b52aeb4fd01451a392d3c9dd791b5ea17218a13125c657d00f000ba4cc4eaf",
+      "rng": "ec1aeb643b94c44971f0ec2fd12bc891a8774a526c5c7fdb2e33bf457bbabb27",
+      "main_state": "0033aea35926109ae55f716d548f4b9b943a85f6ff2ad1f7af2250ba2ce60c18",
+      "cooldown": "bcaef46dd93bf9f5e367e3c7e2c17e1a55aa6da1e0ed49da32fd08499b8edf81",
+      "CE": 0.2455635964870453,
+      "z_loss": null,
+      "lr": 0.0014917302323037005,
+      "batch_sha256": "fe87e9c2455053349529461bd8b3ad5e0c7eb2a0bc245e91128977a956cb9356"
+    },
+    {
+      "model": "fc75e581878184d5a5a37f71c7266a6be1700fe84584a22aee7b51686a3b798f",
+      "optimizer": "d120e2eaf747fbe260ac087f88bedfc512ae473ecc2fca2f3a83ca5d969814f4",
+      "scaler": "4329116e7d02cc049c91023a45ea0bfd50564f9db63a7d59d272653713ca3ccf",
+      "rng": "ec1aeb643b94c44971f0ec2fd12bc891a8774a526c5c7fdb2e33bf457bbabb27",
+      "main_state": "0033aea35926109ae55f716d548f4b9b943a85f6ff2ad1f7af2250ba2ce60c18",
+      "cooldown": "2f8f611303583ac91ea4e2bbdd6688b41fd4b299e53901850417ed0b78b092f0",
+      "CE": 0.21166068315505981,
+      "z_loss": null,
+      "lr": 0.0014883047823662184,
+      "batch_sha256": "c7ae847356f1fdc6139aea3edbd3e3c3c05e0aa76a815ab4ce62ce6a39ee1efc"
+    }
+  ],
+  "steps_bit_exact": 2,
+  "effective_batch": 128,
+  "N": 32900,
+  "main_added_updates": 0,
+  "inherited_main_state_unchanged": true,
+  "q": 0.0,
+  "disk_resume_between_steps": true,
+  "production_serializer": true,
+  "opaque_CUDA_rng_preserved": true,
+  "GPU": false,
+  "seconds": 54.43328454112634,
+  "modules": {
+    "b5_state.py": "4726c03ecd13f24416d01dbfddbd658b18932e6b6532a30cec26c0a0c5c9af86",
+    "b5_resume.py": "6190602dea97726a462a2fa8922831640fce8561a2906ca16c5d84f41fba0782",
+    "b6_state.py": "aad13645c115257b42d9a639bd96771baa824600bcb41f637053b414de561efa",
+    "b6_runtime.py": "f7958189e07cb6b19939ac0739db8dec09a6f52fbe6cb92bf6438b75ce36a534",
+    "p1_math.py": "0e3fa4b4c388cf58ec4411719af8dab693fe84aa3a0e7f39a63567fcae8545db"
+  },
+  "C_overrides": {
+    "exp27b_fast.py": "d33b61e9cef0257fd749856f7c8cf29000815bc2d65f230f4414e2da97b23ba4",
+    "exp26_core.py": "7247eae92a09a73b62c86fee80c261d3e3a0043cb863d7bc069426d214f575ce"
+  },
+  "script_sha256": "0efa17ae4441cb38e3287e137468213b0225bb67d96b472cdf2869969869a2ce",
+  "limitation": "CPU FP32/no autocast; original enabled scaler; fused disabled after exact load; CUDA execution belongs to reviewer"
+}

@@ -1,0 +1,79 @@
+{
+  "vote": {
+    "missing_long_and_unexecuted_samples_do_not_discard_votes": true,
+    "no_executed_samples_returns_greedy": true
+  },
+  "guards": [
+    {
+      "small_budget_seconds": 8.0,
+      "seconds": 1.2679250000510365,
+      "partial_vote_count": 2,
+      "greedy_only_count": 1,
+      "partial_sample_winners_preserved": true,
+      "independent_reexecution_completed": true,
+      "OOM_halves_batch_and_restores_CPU_RNG": false,
+      "GPU_decoder": "mock; executor real"
+    },
+    {
+      "small_budget_seconds": 8.0,
+      "seconds": 1.0765217919833958,
+      "partial_vote_count": 1,
+      "greedy_only_count": 2,
+      "partial_sample_winners_preserved": true,
+      "independent_reexecution_completed": true,
+      "OOM_halves_batch_and_restores_CPU_RNG": true,
+      "GPU_decoder": "mock; executor real"
+    }
+  ],
+  "GPU_used": false,
+  "Kaggle_push": false,
+  "relative_decoder_benchmark": {
+    "device": "CPU FP32",
+    "MPS_available": false,
+    "scope": "tiny random model, 1024 total lanes, cap48; relative only, not a T4 forecast",
+    "model_width": 32,
+    "decoder_layers": 2,
+    "vocab": 8195,
+    "cases": {
+      "greedy": {
+        "v2": {
+          "seconds": [
+            2.7537121248897165,
+            3.244553792057559
+          ],
+          "median_seconds": 2.9991329584736377,
+          "lanes_per_batch": 256
+        },
+        "v3": {
+          "seconds": [
+            1.4292309579905123,
+            2.091890042182058
+          ],
+          "median_seconds": 1.7605605000862852,
+          "lanes_per_batch": 1024
+        },
+        "speedup": 1.7035103072723998
+      },
+      "sampling": {
+        "v2": {
+          "seconds": [
+            12.599053791956976,
+            12.42491833306849
+          ],
+          "median_seconds": 12.511986062512733,
+          "lanes_per_batch": 256
+        },
+        "v3": {
+          "seconds": [
+            13.522199166938663,
+            12.375846542185172
+          ],
+          "median_seconds": 12.949022854561917,
+          "lanes_per_batch": 1024
+        },
+        "speedup": 0.9662494385130213
+      }
+    },
+    "EOS_stops_at_first_check_and_greedy_tokens_exact": true
+  }
+}

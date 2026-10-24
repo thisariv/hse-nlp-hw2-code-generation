@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "nbformat": true,
+  "all_20_v10_embedded_sources_exact": true,
+  "only_config_changes": [
+    [
+      1,
+      "K2",
+      5,
+      8
+    ],
+    [
+      2,
+      "K2",
+      6,
+      8
+    ]
+  ],
+  "private": true,
+  "single_T4_GPU0": true,
+  "version_pinned_mounts": true,
+  "fixed_orchestrator_config_exact": true,
+  "guards": [
+    160,
+    166,
+    170,
+    172
+  ],
+  "session_timeout_seconds": 720,
+  "maximum_T4_pair_quota_seconds": 1440,
+  "notebook_sha256": "18f2cdb96dd70b2fac8b6693067bc7dce2087d49bc5d638999a349a44b67dcb6"
+}

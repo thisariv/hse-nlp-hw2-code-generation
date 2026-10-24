@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "GPU": false,
+  "model_forwards": 0,
+  "training_updates": 0,
+  "models": {
+    "deep": {
+      "stable_sha256": "b61a5dac5de9a7ffd7298166e610470a1052b5495c7743f3359dbbc6c53ea6bc",
+      "model_spec": {
+        "d_model": 512,
+        "heads": 8,
+        "encoder_layers": 12,
+        "decoder_layers": 6,
+        "swiglu_dim": 1368,
+        "vocab": 8195
+      },
+      "stable_updates": 268690,
+      "stable_cursor": 28356480,
+      "main_wall_s_excluding_final_save": 34200.3713862,
+      "main_AMP_skips": 28,
+      "cumulative_AMP_skips": 112,
+      "nonfinite_skips": 0,
+      "escalations": 0,
+      "parameter_groups": 2,
+      "finite_model_tensors": 296,
+      "finite_optimizer_states": 296,
+      "finite_nonnegative_second_moments": true,
+      "stable_has_no_terminal_cooldown": true,
+      "scaler": {
+        "scale": 2097152.0,
+        "growth_factor": 2.0,
+        "backoff_factor": 0.5,
+        "growth_interval": 2000,
+        "_growth_tracker": 722
+      },
+      "FP16_sha256": "7dd5772d160f9adab2b891d4af11f2c2ee9004c444321c440bd582fae42ea5dd",
+      "finite_FP16_tensors": 296
+    },
+    "control": {
+      "stable_sha256": "250b290888eb89a402830a6172998f5f8ed833d8699dd7d952a8ee18637c43fb",
+      "model_spec": {
+        "d_model": 512,
+        "heads": 8,
+        "encoder_layers": 6,
+        "decoder_layers": 6,
+        "swiglu_dim": 1368,
+        "vocab": 8195
+      },
+      "stable_updates": 295858,
+      "stable_cursor": 31833984,
+      "main_wall_s_excluding_final_save": 34200.202146064,
+      "main_AMP_skips": 40,
+      "cumulative_AMP_skips": 124,
+      "nonfinite_skips": 0,
+      "escalations": 0,
+      "parameter_groups": 1,
+      "finite_model_tensors": 212,
+      "finite_optimizer_states": 212,
+      "finite_nonnegative_second_moments": true,
+      "stable_has_no_terminal_cooldown": true,
+      "scaler": {
+        "scale": 2097152.0,
+        "growth_factor": 2.0,
+        "backoff_factor": 0.5,
+        "growth_interval": 2000,
+        "_growth_tracker": 461
+      },
+      "FP16_sha256": "5ded17d774f71968ed601986edce7a0c847d872070cef4353fbb0199fc3332aa",
+      "finite_FP16_tensors": 212
+    }
+  },
+  "source_sha256": "abe1cbb6ab53772b38284f10301c6e61f2aad8f59ef68bca4ce38e86eedf4d0b"
+}

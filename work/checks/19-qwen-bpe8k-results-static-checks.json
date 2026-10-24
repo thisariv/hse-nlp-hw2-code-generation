@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-09",
+  "source_code_matches_prepared": true,
+  "cells": 21,
+  "code_cells": 11,
+  "execution_counts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "saved_outputs_errors": 0,
+  "rows_checked": 5887,
+  "checkpoint_inventory": [
+    {
+      "source_member": "step-50000.pt",
+      "local_file": "checkpoints/19-qwen-style-bpe-8k-swiglu-500k-pairs-step-50000.pt",
+      "bytes": 102037103,
+      "sha256": "e8dbf943481fafc9b9fc7303c4a6aa55e1e22da7b50f6175746eda6f7742bd77",
+      "steps": 50000,
+      "finite_model_and_AdamW": true,
+      "unique_train_rows_seen": 275423,
+      "same_Python_RNG_seen_rows_as18": true
+    },
+    {
+      "source_member": "step-75000.pt",
+      "local_file": "checkpoints/19-qwen-style-bpe-8k-swiglu-500k-pairs-step-75000.pt",
+      "bytes": 102037231,
+      "sha256": "08c6dc61332f256f1b8994c52bfb60c935608866790e25c0e43a16d9360b94b1",
+      "steps": 75000,
+      "finite_model_and_AdamW": true,
+      "unique_train_rows_seen": 349535,
+      "same_Python_RNG_seen_rows_as18": true
+    },
+    {
+      "source_member": "step-100000.pt",
+      "local_file": "checkpoints/19-qwen-style-bpe-8k-swiglu-500k-pairs-step-100000.pt",
+      "bytes": 102037480,
+      "sha256": "024d1b9c0662ef60b81be25de3180db4148b894c9fd6e8a4343758299a8be664",
+      "steps": 100000,
+      "finite_model_and_AdamW": true,
+      "unique_train_rows_seen": 399353,
+      "same_Python_RNG_seen_rows_as18": true
+    },
+    {
+      "source_member": "latest.pt",
+      "local_file": "checkpoints/19-qwen-style-bpe-8k-swiglu-500k-pairs-latest-step-100000.pt",
+      "bytes": 102035915,
+      "sha256": "014736c3180d5bfcf77fcff16d7c358a01ed92051bb306d528f0f302e476374a",
+      "steps": 100000,
+      "finite_model_and_AdamW": true,
+      "unique_train_rows_seen": 399353,
+      "same_Python_RNG_seen_rows_as18": true
+    }
+  ],
+  "CRC_manifest_SHA_all_members": true,
+  "latest_equals100000_state": true,
+  "historical18_source_hash_verified": true,
+  "same_LM_data_hyperparameters_and_sampling_RNG_coverage_as18": true,
+  "weighted_byte_NLL_and_reference_proxy_verified": true,
+  "fresh1024_reserved_unchanged": true,
+  "raw_token_CE_cross_tokenizer_not_compared": true,
+  "new_training_updates": 0,
+  "comparison": {
+    "reference_agreements": {
+      "18": 142,
+      "19": 136,
+      "denominator": 888
+    },
+    "byte_nll": {
+      "18": 0.251605382453931,
+      "19": 0.254695704394066
+    },
+    "train_seconds": {
+      "18_chain17_18": 2111.8943490980027,
+      "19": 2237.7189688820004
+    },
+    "test_seconds": {
+      "18": 46.63507939300007,
+      "19": 40.61133490500015
+    },
+    "timing_scope": "Saved separate T4 runs, not paired speed benchmark; test timer excludes preparation/loss/checkpoint loading."
+  }
+}

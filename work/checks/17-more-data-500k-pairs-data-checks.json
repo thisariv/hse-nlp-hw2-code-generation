@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-08",
+  "train_sha256": "61483f4dc6970ff5f2b1afffa45d57391dcfc01ab6ec4f140c6e6b6c792c8c38",
+  "train_locations_sha256": "c2332a54a923ffa85da9ac91ec0a39a2e4ead7f7c2e328abecef702e1d306ba7",
+  "fresh_heldout_sha256": "eaf5f7c00559d6b1e5650a0dd879e5b4a214931ee803f8c1f6efd956c54971b2",
+  "train_pairs": 500000,
+  "unique_train_questions": 485373,
+  "duplicate_question_rows": 14627,
+  "old100k_prefix_exact": true,
+  "old1024_pairs_exact": true,
+  "all_heldout_hash_questions_excluded": true,
+  "train_heldout_test_overlaps": 0,
+  "fresh_heldout_reserved": {
+    "examples": 1024,
+    "pairs_sha256": "eaf5f7c00559d6b1e5650a0dd879e5b4a214931ee803f8c1f6efd956c54971b2",
+    "file": "fresh-heldout-reserved.json",
+    "train_question_overlap": 0,
+    "old_heldout_question_overlap": 0,
+    "selection": "first1024 distinct eligible hash-heldout questions from shard1 onward; no old-heldout/test copies",
+    "scope": "reserved for final comparison of both15 and17; not evaluated or used to tune this run"
+  },
+  "shards": [
+    {
+      "shard": 0,
+      "path": "data/train/part-00000.parquet",
+      "bytes": 26169796,
+      "sha256": "91831d582faa12d73b1a6b3878e496446cd5df074f17ee4ffea8cc2887c708ec",
+      "source_rows": 200000,
+      "rows_scanned": 200000,
+      "question_over512": 694,
+      "code_512_or_more": 5418,
+      "eligible_rows": 194060,
+      "test_copies_excluded": 0,
+      "hash_heldout_rows_excluded": 19541,
+      "accepted_train_pairs": 174519
+    },
+    {
+      "shard": 1,
+      "path": "data/train/part-00001.parquet",
+      "bytes": 26166175,
+      "sha256": "5222d657a1af07a531f1b22503f35741a6547f0831509897d0a279bc8f67d068",
+      "source_rows": 200000,
+      "rows_scanned": 200000,
+      "question_over512": 682,
+      "code_512_or_more": 5369,
+      "eligible_rows": 194120,
+      "test_copies_excluded": 0,
+      "hash_heldout_rows_excluded": 19275,
+      "accepted_train_pairs": 174845
+    },
+    {
+      "shard": 2,
+      "path": "data/train/part-00002.parquet",
+      "bytes": 26162244,
+      "sha256": "c6082401ea966aeaa8375018ae1f1d9c7c55cc30e421c45cc933ceacd97dc3de",
+      "source_rows": 200000,
+      "rows_scanned": 172788,
+      "question_over512": 604,
+      "code_512_or_more": 4806,
+      "eligible_rows": 167523,
+      "test_copies_excluded": 0,
+      "hash_heldout_rows_excluded": 16887,
+      "accepted_train_pairs": 150636
+    }
+  ],
+  "setup_seconds_cached_public_files": 6.648016541032121,
+  "optimizer_updates": 0,
+  "scope": "CPU selection/checks on public pinned data; no GPU/model training or new quality results."
+}

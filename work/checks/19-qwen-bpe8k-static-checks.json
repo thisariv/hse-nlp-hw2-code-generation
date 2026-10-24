@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-09",
+  "notebook_sha256": "11651074a534aff02e42e24059f82de1c6903e3649c55197cfc01815cd927aba",
+  "cells": 21,
+  "code_cells": 11,
+  "syntax_no_outputs_relative_paths": true,
+  "model_LR_named_definitions_exactly_unchanged_from15": [
+    "SwiGLUInput",
+    "replace_ffn_with_swiglu",
+    "SimpleTransformer",
+    "learning_rate_for_update",
+    "learning_rate_multiplier"
+  ],
+  "KV_inference_and_test_cells_exactly_unchanged_from15": true,
+  "encode_decode_online_batches_metrics_and_RNG_preservation_exact": true,
+  "standalone_no_checkpoint_loaded": true,
+  "default_train_pairs": 500000,
+  "default_updates": 100000,
+  "batch_size": 8,
+  "train_pair_presentations_default": 800000,
+  "mean_pair_presentations_default": 1.6,
+  "saved18_same_update_presentations": 800000,
+  "data_selection_scope": "same500k old heldout1024/hash/byte filters as18; all500k also used for new BPE training, with20k and100k prefix checks",
+  "default_evaluation_steps": [
+    2000,
+    5000,
+    10000,
+    20000,
+    30000,
+    50000,
+    75000,
+    100000
+  ],
+  "default_full_heldout_steps": [
+    50000,
+    75000,
+    100000
+  ],
+  "default_tokenizer_vocab": 8192,
+  "tokenizer_training_pairs": 500000,
+  "comparison_token_CE_explicitly_not_comparable": true,
+  "LR_samples": {
+    "1": 1e-06,
+    "999": 0.000999,
+    "1000": 0.001,
+    "1001": 0.0009999999990751099,
+    "25000": 0.000564423209907245,
+    "49999": 0.00010000000092489007,
+    "50000": 0.0001,
+    "50001": 0.0001,
+    "75000": 0.0001,
+    "100000": 0.0001
+  },
+  "fresh_heldout_is_reserved_not_scored": true,
+  "new_full_T4_training_performed": false,
+  "new_full_test1919_generation_performed": false
+}

@@ -1,0 +1,50 @@
+{
+  "ZIP_SHA256": "0a184d0a86a34098d2313926a2f83448e21c5972abd55fecc96a28a8cfebaae1",
+  "notebook_SHA256": "38b6eddb06b47bdd5fdd24048fe49dec3b1a4edd14ae564d991831c229af2087",
+  "modules_identical": true,
+  "protocol_code_SHA256": "35532789452eed2ff8e60943c291870bcf606261fd9fbeb8dae9045d6d190779",
+  "training_data_evaluation_cells_identical": true,
+  "notebook_errors": 0,
+  "new_LM_updates": 0,
+  "new_GPU_runs": 0,
+  "CPU_CE_or_greedy_reruns": 0,
+  "CRC_manifest_SHA_verified_files": 95,
+  "data_plan_hashes_unique_length_hashheldout_no_test_old_fresh_overlap": true,
+  "fresh_evaluations": 0,
+  "models": {
+    "control22": {
+      "finite_FP32_strict_load": true,
+      "parameters": 12086912,
+      "file_SHA256": "cfb2a0fca3bd1de459f20012c664a3e8b3f86ecdc1534368aa6d2489a0a0b74e"
+    },
+    "R1": {
+      "finite_FP32_strict_load": true,
+      "parameters": 12086912,
+      "file_SHA256": "87eba0d9622234dc60dba38fc2d4ffbc91692ff57672b8044b08f5cd0ff49d53"
+    },
+    "R2": {
+      "finite_FP32_strict_load": true,
+      "parameters": 12086912,
+      "file_SHA256": "8fea476f2359a8199e943871adac3d86d6886b72b513576e7e2287275980ff29"
+    },
+    "R3": {
+      "finite_FP32_strict_load": true,
+      "parameters": 12086912,
+      "file_SHA256": "1ea0990291df6ca8456e7d7a50d574370ac2a3081c3fd0a932578065bdf9a206"
+    },
+    "R4": {
+      "finite_FP32_strict_load": true,
+      "parameters": 12086912,
+      "file_SHA256": "36067394d3432bd9faf4ce9044382733b0596861898200b46bfc6c4b855a4079"
+    },
+    "R5": {
+      "finite_FP32_strict_load": true,
+      "parameters": 12086912,
+      "file_SHA256": "0459432561dc0b19605d7516062e70ef9c45a4dcbb21b8cd8ee2a59687f7de09"
+    }
+  },
+  "common_initial_R5_only_token_scale_verified": true,
+  "counts_updates_schedule_saved_exec_McNemar_bins_decisions_verified": true,
+  "generated_tokens_decode_EOS_order_answer_SHA_verified": true,
+  "initial_model_finite_FP32_strict_load": true
+}

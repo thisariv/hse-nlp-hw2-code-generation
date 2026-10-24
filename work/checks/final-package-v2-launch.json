@@ -1,0 +1,15 @@
+{
+  "ref": "thisarivson/nlp-hw02-final-package-v2-budget640",
+  "push_calls": 1,
+  "requested_at_utc": "2026-10-21T06:55:27.212850+00:00",
+  "private": true,
+  "notebook_sha256": "d56514953a10f3e029d5b1c6b46065ec24a16644bf5b80ee610765270e1ea484",
+  "free_quota_seconds": 27763.418,
+  "timeout_seconds": 720,
+  "dataset_version": 4,
+  "version": 1,
+  "accepted": true,
+  "finished_at_utc": "2026-10-21T06:55:28.909188+00:00",
+  "requested_ref": "thisarivson/nlp-hw02-final-package-v2",
+  "slug_binding": "Kaggle created slug from title; owned inventory and exact server code verified"
+}

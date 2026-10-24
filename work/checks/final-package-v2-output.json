@@ -1,0 +1,51 @@
+{
+  "audit_passed": true,
+  "targets_passed": true,
+  "memory_target_passed": true,
+  "ref": "thisarivson/nlp-hw02-final-package-v2-budget640",
+  "version": 1,
+  "private": true,
+  "own_push_calls": 1,
+  "test_seconds": 122.65776955000001,
+  "tune_seconds": 107.98668362500001,
+  "tune_matches": 1560,
+  "tune_n": 2048,
+  "tune_accuracy_pp": 76.171875,
+  "peak_memory_bytes": {
+    "test": {
+      "peak_device_used_bytes": 11759976448,
+      "peak_allocated_bytes": 11008209408,
+      "peak_reserved_bytes": 11123294208,
+      "total_device_memory_bytes": 15636037632
+    },
+    "tune": {
+      "peak_device_used_bytes": 9123856384,
+      "peak_allocated_bytes": 8412472320,
+      "peak_reserved_bytes": 8487174144,
+      "total_device_memory_bytes": 15636037632
+    }
+  },
+  "byte_exact_with_variant_v2": false,
+  "independent_test_previous_tune_execution": true,
+  "changed_code": 279,
+  "changed_numeric": 159,
+  "answers_sha256": "f9c772e41fae010c2fe9e50723cfda524dc4346c653f0319a86561ca0e7329ed",
+  "question_order_verified": true,
+  "model_sha256": {
+    "W-B7": "3378c368f601c7cd046d40de22cf5cc6f5081deff190819bb4f616f0eb2761ac",
+    "C-long2x-B7": "bcb41c54d031b70523d357dd7d14dc24ec7d1393a6cb8714d8eacfe761cca32b",
+    "pilot-b": "8439037720dda16dda6b73fe676860d5498bbcba4cacebc0d709bbb22db464a5"
+  },
+  "tune_journal_replay_exact": true,
+  "executed_notebook": "results/kaggle-runs/nlp-hw02-final-package-v2/1/__notebook__.ipynb",
+  "submission": "submissions/final-package-v2.jsonl",
+  "gates": {
+    "test_time": true,
+    "complete": true,
+    "reexecution": true,
+    "no_oom": true,
+    "memory": true,
+    "tune": true
+  },
+  "dataset_manifest_sha256": "775c56a2684e9d5c81734c4699bdf0304351bd3244b922958b8f4fedbbf2d83c"
+}

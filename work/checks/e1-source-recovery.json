@@ -1,0 +1,16 @@
+{
+  "at_utc": "2026-10-19T17:04:23.676813+00:00",
+  "version": 4,
+  "all_code_cells_exact": true,
+  "recovered": [
+    {
+      "file": "final_split.py",
+      "sha256": "23659f25e6bfee015395c890f7b9fd521fae007eb0ab97efea74466110ad58c1"
+    },
+    {
+      "file": "final_representation.py",
+      "sha256": "9a97a8818ae1a9977801f1c68cc011cc427af9d6d954acde5efb15e2e8334305"
+    }
+  ],
+  "origin": "SOURCES literal from exact server notebook; candidate journals untouched"
+}

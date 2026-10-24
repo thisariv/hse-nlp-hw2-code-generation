@@ -1,0 +1,22 @@
+{
+  "ref": "thisarivson/nlp-hw02-b4",
+  "checked_at_utc": "2026-10-17T18:45:19.532439+00:00",
+  "passed": true,
+  "kernel_inputs": [
+    {
+      "ref": "thisarivson/nlp-hw02-b3/1",
+      "private": true,
+      "source_sha256": "0fc97f0ce77da7535b89dded5509b63f6356102f6b5a78d7b369bda13d73236e"
+    },
+    {
+      "ref": "thisarivson/nlp-hw02-compact-cache-verified/2",
+      "private": true,
+      "source_sha256": "64228242935f70e28be7d07533532df54c7dbbc253fefb1a27025981825277dd"
+    }
+  ],
+  "dataset": {
+    "ref": "thisarivson/nlp-hw02-26b-inputs",
+    "private": true,
+    "ready": true
+  }
+}

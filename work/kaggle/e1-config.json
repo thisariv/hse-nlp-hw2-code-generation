@@ -1,0 +1,55 @@
+{
+  "models": [
+    {
+      "name": "C-long2x-B6",
+      "filename": "b6-final-fp16.pt",
+      "relative_path": "model-GPU1/weights/b6-final-fp16.pt",
+      "sha256": "ee30794048bb6200cf97ac4d7e5c1606f0e97893ea04f6567c9487f6c04345fa",
+      "dataset": "friend1/nlp-hw02-b6",
+      "source_kind": "notebooks",
+      "source_ref": "friend1/nlp-hw02-b6/1",
+      "K1": 1,
+      "K2": 1
+    },
+    {
+      "name": "pilot-b",
+      "filename": "long-truncation-fp16.pt",
+      "sha256": "8439037720dda16dda6b73fe676860d5498bbcba4cacebc0d709bbb22db464a5",
+      "dataset": "friend1/nlp-hw02-kaggle-p1",
+      "relative_path": "model-pilot-b/weights/long-truncation-fp16.pt",
+      "source_kind": "notebooks",
+      "source_ref": "friend1/nlp-hw02-kaggle-p1/3",
+      "K1": 1,
+      "K2": 5
+    },
+    {
+      "name": "W-B6",
+      "filename": "b6-final-fp16.pt",
+      "relative_path": "model-GPU0/weights/b6-final-fp16.pt",
+      "sha256": "cb34c81e6cda83c73bf4662c5c425446be8cdb48c30dd5e9e217fd6cbc1cd496",
+      "dataset": "friend1/nlp-hw02-b6",
+      "source_kind": "notebooks",
+      "source_ref": "friend1/nlp-hw02-b6/1",
+      "K1": 1,
+      "K2": 6
+    }
+  ],
+  "seed": 2026101903,
+  "K07": 16,
+  "K10": 8,
+  "KE": 8,
+  "alphas": [
+    0.3,
+    0.5,
+    0.7
+  ],
+  "cap": 512,
+  "single_lanes": 512,
+  "ensemble_lanes": 256,
+  "max_batch": 512,
+  "ll_batch": 32,
+  "ll_token_budget": 4096,
+  "workers": 2,
+  "smoke_rows": 64,
+  "output": "/kaggle/working/e1"
+}

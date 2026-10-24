@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-09",
+  "source_code_matches_prepared": true,
+  "cells": 21,
+  "code_cells": 11,
+  "execution_counts": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    8,
+    9,
+    10,
+    11
+  ],
+  "execution_count_metadata_partly_missing_in_received_notebook": true,
+  "saved_outputs_errors": 0,
+  "rows_checked": 5887,
+  "checkpoint_inventory": [
+    {
+      "source_member": "step-50000.pt",
+      "local_file": "checkpoints/20-deeper-decoder-4-layers-qwen-bpe-8k-swiglu-500k-pairs-step-50000.pt",
+      "bytes": 127325615,
+      "sha256": "6f8de94ec5237ef7387660b4cbe8a82ca30ece87f7c68b8165aa0b6474aa3ead",
+      "steps": 50000,
+      "finite_model_and_AdamW": true,
+      "unique_train_rows_seen": 275423,
+      "same_Python_RNG_seen_rows_as19": true
+    },
+    {
+      "source_member": "step-75000.pt",
+      "local_file": "checkpoints/20-deeper-decoder-4-layers-qwen-bpe-8k-swiglu-500k-pairs-step-75000.pt",
+      "bytes": 127325743,
+      "sha256": "c1fe1a1dbc2d08138bdff8880ed24496d64fb78b3cc36a299c2620fe1ef4e8c4",
+      "steps": 75000,
+      "finite_model_and_AdamW": true,
+      "unique_train_rows_seen": 349535,
+      "same_Python_RNG_seen_rows_as19": true
+    },
+    {
+      "source_member": "step-100000.pt",
+      "local_file": "checkpoints/20-deeper-decoder-4-layers-qwen-bpe-8k-swiglu-500k-pairs-step-100000.pt",
+      "bytes": 127326152,
+      "sha256": "e6acfde6e616f1e8e5e9d32fb33a7595b3a4bc1a3aca7b9d9673c1c500cdcfdf",
+      "steps": 100000,
+      "finite_model_and_AdamW": true,
+      "unique_train_rows_seen": 399353,
+      "same_Python_RNG_seen_rows_as19": true
+    },
+    {
+      "source_member": "latest.pt",
+      "local_file": "checkpoints/20-deeper-decoder-4-layers-qwen-bpe-8k-swiglu-500k-pairs-latest-step-100000.pt",
+      "bytes": 127323787,
+      "sha256": "61131a5b9002ab54549f7d9c3ab2536c84dd7e830f270efb9bd64d9b8823e3bd",
+      "steps": 100000,
+      "finite_model_and_AdamW": true,
+      "unique_train_rows_seen": 399353,
+      "same_Python_RNG_seen_rows_as19": true
+    }
+  ],
+  "CRC_manifest_SHA_all_members": true,
+  "latest_equals100000_state": true,
+  "historical19_and18_source_hash_verified": true,
+  "same_LM_data_hyperparameters_except_decoder_depth_and_sampling_RNG_coverage_as19": true,
+  "same_tokenizer_and_LR_as19": true,
+  "weighted_byte_NLL_and_reference_proxy_verified": true,
+  "fresh1024_reserved_unchanged": true,
+  "raw_token_CE_19_20_comparable_and_18_not_compared": true,
+  "new_training_updates": 0,
+  "comparison": {
+    "reference_agreements": {
+      "18": 142,
+      "19": 136,
+      "20": 170,
+      "denominator": 888
+    },
+    "byte_nll": {
+      "18": 0.251605382453931,
+      "19": 0.254695704394066,
+      "20": 0.2192506373712695
+    },
+    "train_seconds": {
+      "18_chain17_18": 2111.8943490980027,
+      "19": 2237.7189688820004,
+      "20": 3404.7507965739874
+    },
+    "test_seconds": {
+      "18": 46.63507939300007,
+      "19": 40.61133490500015,
+      "20": 51.74478179700054
+    },
+    "timing_scope": "Saved separate T4 runs, not paired speed benchmark; test timer excludes preparation/loss/checkpoint loading."
+  }
+}

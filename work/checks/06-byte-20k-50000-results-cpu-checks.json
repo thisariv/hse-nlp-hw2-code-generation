@@ -1,0 +1,17 @@
+{
+  "performed_on": "2026-10-07",
+  "runtime": "PyTorch 2.14.1 / CPU / FP32",
+  "checkpoint_sha256": "3dbd745c9662aa2a73b3832e6ed09990dd9f41974c3dd7172eda1f00d5007271",
+  "split": "same validation64, same references and fixed checkpoint50000",
+  "batch_size": 16,
+  "loss_scope": "token-weighted cross-entropy with gold decoder prefixes; PAD excluded, EOS included",
+  "saved_user_t4_original_questions_loss": 0.7666764174224789,
+  "measured_now_cpu_original_questions_loss": 0.7666764002657238,
+  "measured_now_cpu_cyclic_shift_by_one_questions_loss": 1.0516871781392745,
+  "measured_now_cpu_reversed_questions_loss": 1.070511621299631,
+  "interpretation": "Source sensitivity under teacher forcing only. Does not measure functional accuracy or greedy prompt use.",
+  "training_or_autoregressive_generation_performed": false,
+  "generated_or_reference_programs_executed": false,
+  "cpu_or_gpu_speed_benchmark_performed": false,
+  "training_data_or_targets_created": false
+}

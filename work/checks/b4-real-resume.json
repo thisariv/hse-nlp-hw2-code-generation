@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "source": "thisarivson/nlp-hw02-b3/1",
+  "model": "W-lr600",
+  "checkpoint_sha256": "e32b8649d41ef73133fd2dcf031a649bf8af6a07013f76bc057b897643b119c0",
+  "checkpoint_bytes": 1361617533,
+  "updates": 73416,
+  "cursor": 9397248,
+  "main_seconds": 59400.86158832819,
+  "full_initial_digests": {
+    "model": "4874d2abd9a745fd195f8a9c0d51ab7ba36606d73675fecfc14e33cf236f5838",
+    "optimizer": "f07a4d7977ccbde810a62e4d434fbd2f2c443313aef7136263e89e5f36c431df",
+    "scaler": "6b5eaa70497fced12a4a459f1d2d85965bcc278fb5c55b7e0ac01d07be4b8aa0",
+    "rng": "90c2f65cb00abe7b4f70a3f6e5afba4fd3e1ad848be244128c5d0a466e5dedd6",
+    "state": "659fedbfa3e8ee72ec54cfd58c7d5bf5e7f32b0ad25dad985ef3c8b2857be9f2",
+    "scheduler": "42010aaabe87fde13c471a9f1b9b12c89145608259e93075201762a86bec5d22"
+  },
+  "restored_fields": [
+    "model",
+    "optimizer",
+    "scaler",
+    "rng",
+    "state",
+    "scheduler"
+  ],
+  "next_update": {
+    "model": "db25ba95aa3fa8c26d8e7631802e8a9ca80dd53cfc52332f57d41d1bbe235670",
+    "optimizer": "a382622081b7da819fa854c60fe027ee1742321166bb4bcaffaae45a157f213e",
+    "scaler": "903f9daed727981ee65f7fca06d628924c25f00f2847fed13df5031f1b666804",
+    "rng": "4026cbd6a8dac2fcd96b68db45f7795e67cb76fb37d48ab42834a4f1ec4a8ab7",
+    "state": "40a38eca630a7d7e42eff97e3d3c8e359dd696b6a0ed24db884ea6c9a6e227af",
+    "CE": 0.23559700697660446,
+    "z_loss": 0.0005713771533919498
+  },
+  "next_batch_sha256": "fae71c934d4f63c3c33c5ee8604d952c84b9989aabcca359d51a7291aadf070a",
+  "steps_bit_exact": 1,
+  "effective_batch": 128,
+  "constant_lr": 0.0006,
+  "seconds": 105.98514712508768,
+  "GPU": false,
+  "limitation": "CPU FP32, CPU GradScaler from B2, fused disabled after load audit; CUDA RNG bytes checked, CUDA replay pending reviewer"
+}

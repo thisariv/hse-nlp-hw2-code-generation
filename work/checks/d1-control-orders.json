@@ -1,0 +1,66 @@
+{
+  "rule": "protected-only control; no D1 exclusions",
+  "excluded_by_C": 0,
+  "protected": [
+    8545870
+  ],
+  "kept_unique_rows": 9725736,
+  "selection_sha256": "61a35a3063153e9a9061735e2e667a356df762064915d73e6878e76c1e768638",
+  "evidence_sha256": "eff54fd41fa96f72c4b37822d13c2a08f298163e057774c4b918c3e72c716b29",
+  "orders": {
+    "C-main": {
+      "path": "results/d1-labels/r1-control/C-main",
+      "rows": 9725737,
+      "slots": 9725736,
+      "batch": 128,
+      "chunk": 4096,
+      "rule": "protected-control",
+      "cache_manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+      "selected_cache_indices_sha256": "61a35a3063153e9a9061735e2e667a356df762064915d73e6878e76c1e768638",
+      "seed": 2026101201,
+      "parent_order_sha256": "09cf6db8549b7df614fa71516553d23d4cbb3ca97c7911db0c6d599a8277ab7d",
+      "order_policy": "stable filtering of inherited order; R1 reshuffles at seed 2026101701",
+      "selected_unique_rows": 9725736,
+      "excluded_unique_rows": 1,
+      "sampling": "uniform",
+      "evidence_sha256": "eff54fd41fa96f72c4b37822d13c2a08f298163e057774c4b918c3e72c716b29",
+      "file": {
+        "file": "order.npy",
+        "bytes": 38903072,
+        "sha256": "0457bf4eb6d7f1c0e04787ac3378a906cdd4abcf0afd87cdf29df2c3463ebb81"
+      },
+      "excluded_slots": 1
+    },
+    "C-long2x": {
+      "path": "results/d1-labels/r1-control/C-long2x",
+      "rows": 9725737,
+      "slots": 11227810,
+      "batch": 128,
+      "chunk": 4096,
+      "rule": "protected-control",
+      "cache_manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+      "selected_cache_indices_sha256": "61a35a3063153e9a9061735e2e667a356df762064915d73e6878e76c1e768638",
+      "seed": 2026101302,
+      "parent_order_sha256": "72bc3dfd3a3e738979c489c0cf8f41cde092c41d4ae90f2de8378a034603a4db",
+      "order_policy": "stable filtering of inherited order; R1 reshuffles at seed 2026101701",
+      "selected_unique_rows": 9725736,
+      "excluded_unique_rows": 1,
+      "sampling": "long2x",
+      "evidence_sha256": "eff54fd41fa96f72c4b37822d13c2a08f298163e057774c4b918c3e72c716b29",
+      "file": {
+        "file": "order.npy",
+        "bytes": 44911368,
+        "sha256": "1699ddbe107fc7951aa94cce085ce9d994f53d20f109a0961e1d0c6757530ade"
+      },
+      "filtered_multiplicity": {
+        "format": "nlp-hw02-filtered-long2x-v1",
+        "threshold": 79,
+        "short": 1,
+        "long": 2
+      },
+      "excluded_slots": 1
+    }
+  },
+  "private": true,
+  "uploaded": false
+}

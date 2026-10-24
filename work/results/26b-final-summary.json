@@ -1,0 +1,510 @@
+{
+  "experiment": "26b-final",
+  "status": "complete",
+  "source": {
+    "id": "kaggle-s1-v1",
+    "ref": "thisarivson/nlp-hw02-kaggle-s1/1",
+    "version": 1,
+    "version_label": "v1",
+    "Kaggle_status": "COMPLETE",
+    "output": "kaggle-runs/nlp-hw02-kaggle-s1/1",
+    "download": {
+      "ref": "thisarivson/nlp-hw02-kaggle-s1/1",
+      "version_label": "v1",
+      "files": 1951,
+      "CLI_224_compatibility": true,
+      "path": "kaggle-runs/nlp-hw02-kaggle-s1/1"
+    },
+    "archive": {
+      "file": "s1-results.zip",
+      "bytes": 350077134,
+      "sha256": "e834fe795d2212bedb0b22c17fa4953e26f62f561d829578b6eb9aee01a6ae43",
+      "manifest_files": 1906,
+      "CRC": "passed",
+      "all_SHA_bytes": "passed"
+    },
+    "summary_SHA256": {
+      "s1-summary.json": "e5d57eef047b0f59c7c2112c2f6b030112a8d3d23b675a346f92e5d9c1d7511a",
+      "gpu0-a26/26b-final-summary.json": "5d1dfd1ac61f0d64fc4f6c20184f73bc452da3e6b4f30a0ef46b76f64cb31656",
+      "gpu0-exp27/27-summary.json": "84f9bd012f54b62e1d221b73f3529d8cde4ed8d41420844a1df2eeb932976c26",
+      "gpu1-exp28/28-summary.json": "0affb9d2f055acbce643cfcf89fa0136372694f8263b3e66d5f69178ac501f63"
+    }
+  },
+  "table": [
+    {
+      "point": "p006250",
+      "nominal_M_pairs": 0.8,
+      "actual_M_pairs": 0.96,
+      "exec4k": 1888,
+      "exec991": 465,
+      "accuracy4k": 0.4609375,
+      "CE4k": 0.4411327532426107,
+      "unique_fraction_of_cache": 0.13562250943741946,
+      "target_tokens": 64315631,
+      "compute_updates_total": 7500,
+      "train_seconds_total": 928.1166084509971
+    },
+    {
+      "point": "p012500",
+      "nominal_M_pairs": 1.6,
+      "actual_M_pairs": 1.92,
+      "exec4k": 2210,
+      "exec991": 537,
+      "accuracy4k": 0.53955078125,
+      "CE4k": 0.3791724736010504,
+      "unique_fraction_of_cache": 0.27124501887483893,
+      "target_tokens": 128585103,
+      "compute_updates_total": 16250,
+      "train_seconds_total": 2018.225873703993
+    },
+    {
+      "point": "p025000",
+      "nominal_M_pairs": 3.2,
+      "actual_M_pairs": 3.84,
+      "exec4k": 2446,
+      "exec991": 601,
+      "accuracy4k": 0.59716796875,
+      "CE4k": 0.33662729078345627,
+      "unique_fraction_of_cache": 0.5424900377496779,
+      "target_tokens": 257218481,
+      "compute_updates_total": 33750,
+      "train_seconds_total": 4203.38492590799
+    },
+    {
+      "point": "p050000",
+      "nominal_M_pairs": 6.4,
+      "actual_M_pairs": 6.4,
+      "exec4k": 2538,
+      "exec991": 634,
+      "accuracy4k": 0.61962890625,
+      "CE4k": 0.3149237286406813,
+      "unique_fraction_of_cache": 0.9041500629161298,
+      "target_tokens": 428540676,
+      "compute_updates_total": 58750,
+      "train_seconds_total": 7312.883812298975
+    }
+  ],
+  "final_metrics": {
+    "heldout4k": {
+      "exec": {
+        "denominator": 4096,
+        "matches": 2538,
+        "accuracy": 0.61962890625,
+        "reference_statuses": {
+          "numeric": 4096
+        },
+        "generation_statuses": {
+          "numeric": 4050,
+          "execution_error": 35,
+          "syntax_error": 8,
+          "non_number": 1,
+          "timeout": 2
+        },
+        "rel_tol": 1e-06,
+        "abs_tol": 1e-06
+      },
+      "CE": {
+        "CE": 0.3149237286406813,
+        "useful_target_tokens": 269613,
+        "rows": 4096,
+        "precision": "FP32",
+        "batch": 32,
+        "seconds": 4.425345810999943
+      },
+      "length_accuracy": {
+        "<60": {
+          "denominator": 2013,
+          "matches": 1566,
+          "accuracy": 0.7779433681073026
+        },
+        "60–90": {
+          "denominator": 1457,
+          "matches": 768,
+          "accuracy": 0.5271105010295127
+        },
+        "90–120": {
+          "denominator": 488,
+          "matches": 176,
+          "accuracy": 0.36065573770491804
+        },
+        "≥120": {
+          "denominator": 138,
+          "matches": 28,
+          "accuracy": 0.2028985507246377
+        }
+      },
+      "generation_time": {
+        "full_seconds": 18.43178130199999,
+        "generation_seconds": 17.994170622999945,
+        "rows": 4096,
+        "decode_steps_sum": 2576,
+        "decode_row_steps_sum": 1318912,
+        "answers_sha256": "97b77a256046d1d8bc1b3d1c7714aede1239ee74342ad6452dae2c3b9d6fe980",
+        "peak_reserved_bytes": 2082471936,
+        "timer": "model state load,restore,tokenizer,FP16/H2D,warmup,sorted greedy/order restore/answers write; download/cache/exec/CE/JSON dump outside",
+        "model_sha256": "bc3fcff41aae3c22b1e508b38cf721542f1c6790869180950480b8077f8cf7b6",
+        "tokenizer_sha256": "261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d"
+      },
+      "McNemar_against_D0": {
+        "gains": 953,
+        "losses": 92,
+        "discordant": 1045,
+        "exact_two_sided_p": 4.3632202582736583e-181,
+        "delta_percentage_points": 21.0205078125
+      },
+      "McNemar_against_previous": {
+        "gains": 286,
+        "losses": 194,
+        "discordant": 480,
+        "exact_two_sided_p": 3.107566560625169e-05,
+        "delta_percentage_points": 2.24609375
+      }
+    },
+    "old1024": {
+      "exec": {
+        "denominator": 991,
+        "matches": 634,
+        "accuracy": 0.6397578203834511,
+        "reference_statuses": {
+          "numeric": 991,
+          "non_number": 33
+        },
+        "generation_statuses": {
+          "numeric": 1014,
+          "execution_error": 9,
+          "non_number": 1
+        },
+        "rel_tol": 1e-06,
+        "abs_tol": 1e-06
+      },
+      "CE": {
+        "CE": 0.33101758611429916,
+        "useful_target_tokens": 67962,
+        "rows": 1024,
+        "precision": "FP32",
+        "batch": 32,
+        "seconds": 1.3145606360000102
+      },
+      "length_accuracy": {
+        "<60": {
+          "denominator": 495,
+          "matches": 394,
+          "accuracy": 0.795959595959596
+        },
+        "60–90": {
+          "denominator": 345,
+          "matches": 192,
+          "accuracy": 0.5565217391304348
+        },
+        "90–120": {
+          "denominator": 115,
+          "matches": 36,
+          "accuracy": 0.3130434782608696
+        },
+        "≥120": {
+          "denominator": 36,
+          "matches": 12,
+          "accuracy": 0.3333333333333333
+        }
+      },
+      "generation_time": {
+        "full_seconds": 5.312629294000089,
+        "generation_seconds": 4.934613329999934,
+        "rows": 1024,
+        "decode_steps_sum": 608,
+        "decode_row_steps_sum": 311296,
+        "answers_sha256": "a8623aad34bdef452f716c070df7f0825b2e23978cf3fb3c217ddbda700c1bda",
+        "peak_reserved_bytes": 2032140288,
+        "timer": "model state load,restore,tokenizer,FP16/H2D,warmup,sorted greedy/order restore/answers write; download/cache/exec/CE/JSON dump outside",
+        "model_sha256": "bc3fcff41aae3c22b1e508b38cf721542f1c6790869180950480b8077f8cf7b6",
+        "tokenizer_sha256": "261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d"
+      },
+      "McNemar_against_D0": {
+        "gains": 235,
+        "losses": 23,
+        "discordant": 258,
+        "exact_two_sided_p": 1.9747723782329704e-45,
+        "delta_percentage_points": 21.39253279515641
+      },
+      "McNemar_against_previous": {
+        "gains": 72,
+        "losses": 39,
+        "discordant": 111,
+        "exact_two_sided_p": 0.002238345717908815,
+        "delta_percentage_points": 3.3299697275479314
+      }
+    }
+  },
+  "previous_3_84M_metrics": {
+    "heldout4k": {
+      "exec": {
+        "denominator": 4096,
+        "matches": 2446,
+        "accuracy": 0.59716796875,
+        "reference_statuses": {
+          "numeric": 4096
+        },
+        "generation_statuses": {
+          "numeric": 4028,
+          "execution_error": 45,
+          "syntax_error": 16,
+          "non_number": 5,
+          "timeout": 2
+        },
+        "rel_tol": 1e-06,
+        "abs_tol": 1e-06
+      },
+      "CE": {
+        "CE": 0.33662729078345627,
+        "useful_target_tokens": 269613,
+        "rows": 4096,
+        "precision": "FP32",
+        "batch": 32,
+        "seconds": 5.534178421999968
+      },
+      "length_accuracy": {
+        "<60": {
+          "denominator": 2013,
+          "matches": 1555,
+          "accuracy": 0.7724788872329856
+        },
+        "60–90": {
+          "denominator": 1457,
+          "matches": 708,
+          "accuracy": 0.48592999313658203
+        },
+        "90–120": {
+          "denominator": 488,
+          "matches": 158,
+          "accuracy": 0.3237704918032787
+        },
+        "≥120": {
+          "denominator": 138,
+          "matches": 25,
+          "accuracy": 0.18115942028985507
+        }
+      },
+      "generation_time": {
+        "full_seconds": 26.432855001999997,
+        "generation_seconds": 25.95480405499984,
+        "rows": 4096,
+        "decode_steps_sum": 3280,
+        "decode_row_steps_sum": 1679360,
+        "answers_sha256": "369a584de500fff71a9e4d935b8d0ebebc5a417b55162f4cc64b890bd238c679",
+        "peak_reserved_bytes": 2036334592,
+        "timer": "model state load,restore,tokenizer,FP16/H2D,warmup,sorted greedy/order restore/answers write; download/cache/exec/CE/JSON dump outside",
+        "model_sha256": "a509c6ea8540e5ec21bc392677e9368596397048ffc9ee742d0091c8fd47c63e",
+        "tokenizer_sha256": "261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d"
+      },
+      "McNemar_against_D0": {
+        "gains": 866,
+        "losses": 97,
+        "discordant": 963,
+        "exact_two_sided_p": 5.194655974071e-155,
+        "delta_percentage_points": 18.7744140625
+      },
+      "McNemar_against_previous": {
+        "gains": 405,
+        "losses": 169,
+        "discordant": 574,
+        "exact_two_sided_p": 2.4408070452533644e-23,
+        "delta_percentage_points": 5.76171875
+      }
+    },
+    "old1024": {
+      "exec": {
+        "denominator": 991,
+        "matches": 601,
+        "accuracy": 0.6064581231079718,
+        "reference_statuses": {
+          "numeric": 991,
+          "non_number": 33
+        },
+        "generation_statuses": {
+          "numeric": 999,
+          "syntax_error": 7,
+          "execution_error": 17,
+          "non_number": 1
+        },
+        "rel_tol": 1e-06,
+        "abs_tol": 1e-06
+      },
+      "CE": {
+        "CE": 0.35438073965046646,
+        "useful_target_tokens": 67962,
+        "rows": 1024,
+        "precision": "FP32",
+        "batch": 32,
+        "seconds": 1.4507107870003892
+      },
+      "length_accuracy": {
+        "<60": {
+          "denominator": 495,
+          "matches": 384,
+          "accuracy": 0.7757575757575758
+        },
+        "60–90": {
+          "denominator": 345,
+          "matches": 180,
+          "accuracy": 0.5217391304347826
+        },
+        "90–120": {
+          "denominator": 115,
+          "matches": 28,
+          "accuracy": 0.24347826086956523
+        },
+        "≥120": {
+          "denominator": 36,
+          "matches": 9,
+          "accuracy": 0.25
+        }
+      },
+      "generation_time": {
+        "full_seconds": 8.870241945000089,
+        "generation_seconds": 8.437375264000366,
+        "rows": 1024,
+        "decode_steps_sum": 1024,
+        "decode_row_steps_sum": 524288,
+        "answers_sha256": "0edc2a5a2eeea407ef840d712a1ea2cded48621326af51618f54b42ec9726de8",
+        "peak_reserved_bytes": 2036334592,
+        "timer": "model state load,restore,tokenizer,FP16/H2D,warmup,sorted greedy/order restore/answers write; download/cache/exec/CE/JSON dump outside",
+        "model_sha256": "a509c6ea8540e5ec21bc392677e9368596397048ffc9ee742d0091c8fd47c63e",
+        "tokenizer_sha256": "261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d"
+      },
+      "McNemar_against_D0": {
+        "gains": 207,
+        "losses": 28,
+        "discordant": 235,
+        "exact_two_sided_p": 6.303511459077362e-35,
+        "delta_percentage_points": 18.062563067608476
+      },
+      "McNemar_against_previous": {
+        "gains": 100,
+        "losses": 36,
+        "discordant": 136,
+        "exact_two_sided_p": 3.720215400245007e-08,
+        "delta_percentage_points": 6.458123107971746
+      }
+    }
+  },
+  "totals": {
+    "committed_main_updates": 50000,
+    "committed_branch_updates": 0,
+    "phase": "complete",
+    "all_compute_updates": 58750,
+    "train_seconds": 7312.883812298975,
+    "pairs_per_second": 1028.3220946779836,
+    "useful_source_tokens_per_second": 50129.83747717342,
+    "useful_target_tokens_per_second": 68856.42708463884,
+    "all_compute_presentations": 7520000,
+    "checkpoint_io_seconds_committed": 89.31489381999859,
+    "AMP_skips": 10,
+    "successful_optimizer_steps_all_compute": 58740,
+    "AMP_skips_final_trajectory": 9,
+    "successful_optimizer_steps_final_trajectory": 49991,
+    "finite_loss": true,
+    "finite_successful_grad": true,
+    "finite_loss_and_grad": false,
+    "unique_main_rows_seen": 6400000,
+    "unique_trajectory_rows_seen": 6400000,
+    "recorded_session_wall_seconds": 7616.430821596,
+    "wall_timer_scope": "training controller, evaluations and checkpoint I/O per completed/interrupted Python call; setup/cache copy/D0 outside; kernel killed without finally has only heartbeat/last checkpoint",
+    "uncommitted_work_after_last_checkpoint_may_be_repeated": true
+  },
+  "S1_new_training": {
+    "attempted_updates": 3125,
+    "presentations": 400000,
+    "pure_train_seconds": 369.3103495250025,
+    "AMP_skips": 1,
+    "successful_optimizer_steps": 3124
+  },
+  "decision": {
+    "status": "complete",
+    "compatibility_0_8M_delta_pp": 5.1513671875,
+    "compatible_with_D0_primary4k": false,
+    "mean_nominal_slope_pp_per_doubling": 5.289713541666667,
+    "data_compute_remain_main_lever_by_rule": true,
+    "last_nominal_segment_delta_pp": 2.24609375,
+    "capacity_hint_next_model_B_by_rule": false,
+    "actual_exposure_mean_slope_pp_per_doubling": 5.798078228979127,
+    "actual_exposure_last_slope_pp_per_doubling": 3.0477593089555324,
+    "interpretation": "Thresholds are registered heuristics, not proof of capacity. One seed; filtered data/global permutation/WSD differ from25; fresh untouched."
+  },
+  "test1919": {
+    "full_seconds": 12.546968960000072,
+    "generation_seconds": 12.148829356000078,
+    "rows": 1919,
+    "decode_steps_sum": 1744,
+    "decode_row_steps_sum": 826880,
+    "answers_sha256": "cf04c1eadf15a51c2377ca9e087cb3025a2467ea439bf12c662eeee9cb4bb77e",
+    "peak_reserved_bytes": 1803550720,
+    "timer": "model state load,restore,tokenizer,FP16/H2D,warmup,sorted greedy/order restore/answers write; download/cache/exec/CE/JSON dump outside",
+    "model_sha256": "13e45e3d1999ce617ffc14b71a932e41cd039aa379082a45c9882be51ea689e8",
+    "tokenizer_sha256": "261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d",
+    "CPU_execution_statuses": {
+      "numeric": 1892,
+      "execution_error": 23,
+      "syntax_error": 3,
+      "non_number": 1
+    }
+  },
+  "latest_checkpoint": {
+    "file": "checkpoints/complete-058750-a57762e322.pt",
+    "sha256": "13e45e3d1999ce617ffc14b71a932e41cd039aa379082a45c9882be51ea689e8",
+    "bytes": 145350699,
+    "model_tensor_sha256": "f570b1fac50df92e1ca7b71f03eb90ec6159146a5575aaed82341cec046d5b5a",
+    "main_updates": 50000,
+    "branch_updates": 0,
+    "phase": "complete",
+    "data_cursor": 6400000,
+    "role": "complete",
+    "identity": {
+      "protocol_sha256": "37d304c4d4ae5492ea82797262f2ece3d7a7744ade470ef1c90cbd8b71167d58",
+      "code_sha256": "17b0f885d4c20294b34a92e23ac269e3ebc09868253a87aa3f3281263e97b4cc",
+      "cache_manifest_sha256": "2c691fef64fea8b4186b8acae54561d5620080286196a4390a23108776e80add",
+      "order_sha256": "737dac5a146ad15bb0ec70cb06fea59493277e4332dea440b2bdf2a6316c1637",
+      "tokenizer_sha256": "261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d",
+      "initial_sha256": "daedd90fe51fef95dc151bc28e2f1ed0c66de80e5aa50a9ad8723ec50204c647",
+      "smoke": false,
+      "fused_adamw": true,
+      "torch": "2.11.0+cu130",
+      "CUDA": "13.0"
+    }
+  },
+  "local_verification": {
+    "CPU_exec_report": "../checks/kaggle-s1-v1-cpu-audit.json",
+    "CPU_model_report": "../checks/kaggle-s1-v1-model-cpu-checks.json",
+    "all_saved_execution_results_exact": true,
+    "new_training_updates": 0,
+    "new_GPU_runs": 0,
+    "full_CPU_CE": {
+      "heldout4k": {
+        "CE": 0.3149203963180559,
+        "useful_target_tokens": 269613,
+        "rows": 4096,
+        "precision": "FP32",
+        "batch": 32,
+        "seconds": 64.115032290807,
+        "saved_GPU_CE": 0.3149237286406813,
+        "absolute_difference": 3.3323226253934024e-06
+      },
+      "old1024": {
+        "CE": 0.3310143674038433,
+        "useful_target_tokens": 67962,
+        "rows": 1024,
+        "precision": "FP32",
+        "batch": 32,
+        "seconds": 16.633829792030156,
+        "saved_GPU_CE": 0.33101758611429916,
+        "absolute_difference": 3.21871045583233e-06
+      }
+    },
+    "full_checkpoint_state_verified": true
+  },
+  "limitations": [
+    "one seed; repeated heldout selection; not official pass@1",
+    "first point differs from D0 by5.151pp, outside registered1pp compatibility",
+    "CUDA runtime migrated13.0 to12.8; not bitwise cross-runtime equivalence",
+    "GPU times are saved S1 measurements, not repeated on CPU"
+  ]
+}

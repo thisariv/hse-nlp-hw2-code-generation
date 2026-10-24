@@ -1,0 +1,106 @@
+{
+  "read_on": "2026-10-07",
+  "origin": "user-supplied saved Colab outputs; not rerun by agent",
+  "source_filename": "baseline_first_try_results.ipynb",
+  "source_sha256": "8245534ebf473a5cd4ca7b9b4e38a52a455230e31d5d513abe016a805247a8ad",
+  "all_code_cells_match_initial_baseline_ignoring_surrounding_blank_lines": true,
+  "saved_colab_result": {
+    "seed": 42,
+    "steps": 200,
+    "training_examples": 512,
+    "validation_examples": 64,
+    "training_seconds": 6.600604578999992,
+    "parameters": 1254915,
+    "torch_version": "2.11.0+cu130",
+    "gpu": "Tesla T4",
+    "dtype": "torch.float32",
+    "tokenizer": "UTF-8 bytes",
+    "batch_size_inference": 32,
+    "max_new_tokens": 512,
+    "test_examples": 1919,
+    "completed": 928,
+    "seconds": 181.070659234,
+    "answers_per_second": 5.125071085099068,
+    "generated_tokens": 475136,
+    "tokens_per_second": 2624.036395570723,
+    "mean_generated_tokens": 512.0,
+    "complete": false,
+    "within_180_seconds": false,
+    "peak_gpu_memory_mib": 605.16259765625,
+    "functional_quality_evaluated": false,
+    "training_log": [
+      {
+        "step": 1,
+        "train_loss": 5.694677352905273,
+        "validation_loss_16": 4.621847629547119
+      },
+      {
+        "step": 50,
+        "train_loss": 2.2204556465148926,
+        "validation_loss_16": 2.168325185775757
+      },
+      {
+        "step": 100,
+        "train_loss": 1.994066596031189,
+        "validation_loss_16": 2.0713958740234375
+      },
+      {
+        "step": 150,
+        "train_loss": 1.9554744958877563,
+        "validation_loss_16": 2.0181307792663574
+      },
+      {
+        "step": 200,
+        "train_loss": 1.8489019870758057,
+        "validation_loss_16": 2.020599365234375
+      }
+    ],
+    "examples": [
+      {
+        "question": "Mark has 10 crayons. He gives 2 crayons to his younger sister and loses another 4 while he was playing. How many crayons does Mark have left?",
+        "generated_code": "def solve() -> int:\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ",
+        "parses_as_python": false
+      },
+      {
+        "question": "Student: Allen's father can mow the lawn in 2 hours. Allen's mother can mow the lawn in 4 hours. If they both work together to mow the lawn, how much time will it take?",
+        "generated_code": "def solve() -> int:\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ",
+        "parses_as_python": false
+      },
+      {
+        "question": "Every morning, Sarah jogs around a circular track that is 0.4 miles long, while her sister, Liz, runs at three times her speed. During their workout, how many times does Liz circle the track?",
+        "generated_code": "def solve() -> int:\n                                                                                                                                                                                                                                                                                                                                                                                                                                  tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_ta",
+        "parses_as_python": true
+      }
+    ]
+  },
+  "derived_checks_performed_now": {
+    "required_answers_per_second_180": 10.661111111111111,
+    "full_test_seconds_extrapolation_not_measured": 374.4338308944461,
+    "required_speedup_at_same_output_lengths": 2.0801879494135895,
+    "training_pair_presentations": 1600,
+    "equivalent_training_dataset_passes": 3.125,
+    "processed_batches_32": 29,
+    "decoder_prefix_calls_for_processed_test": 14848,
+    "all_processed_outputs_reached_cap": true,
+    "eos_at_final_position_fraction": null,
+    "example_ast_checks": [
+      {
+        "bytes": 512,
+        "parses_as_python": false,
+        "return_nodes_if_parses": null
+      },
+      {
+        "bytes": 512,
+        "parses_as_python": false,
+        "return_nodes_if_parses": null
+      },
+      {
+        "bytes": 512,
+        "parses_as_python": true,
+        "return_nodes_if_parses": 0
+      }
+    ]
+  },
+  "programs_executed_now": 0,
+  "gpu_training_or_inference_rerun_now": false
+}

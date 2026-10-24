@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "source": "friend2/nlp-hw02-b2/1",
+  "dataset": "thisarivson/nlp-hw02-b2-states",
+  "version": 1,
+  "private": true,
+  "transfer_sha256": "f42252b28725a998945f8e086bb3042395fa7460b83b645c225ecd25de2996bc",
+  "files": [
+    {
+      "file": "weighted-order__order.npy",
+      "original": "weighted-order/order.npy",
+      "bytes": 44911372,
+      "sha256": "8e9595f655ed2b4456bf5b94e9b5b6b3db040e3f5696a4dc0ef364588048bee8"
+    },
+    {
+      "file": "weighted-order__order.json",
+      "original": "weighted-order/order.json",
+      "bytes": 449,
+      "sha256": "d6d78e00071c7a74c46613265002556194c12c76d6b752d498a81e7340144049"
+    },
+    {
+      "file": "model-GPU0__latest.json",
+      "original": "model-GPU0/latest.json",
+      "bytes": 2528,
+      "sha256": "ae5b362e5977d3f12cdb1ab9f4b3a5447e2c580c603907205ad8fa628d2894e7"
+    },
+    {
+      "file": "model-GPU0__checkpoints__main-4b21b0d306c4.pt",
+      "original": "model-GPU0/checkpoints/main-4b21b0d306c4.pt",
+      "bytes": 1361526973,
+      "sha256": "c1fb59136ff63ce9dcab6390290187c450ef7f7f97e4d0a69b0f32a4a1c795f0"
+    },
+    {
+      "file": "model-GPU1__latest.json",
+      "original": "model-GPU1/latest.json",
+      "bytes": 2529,
+      "sha256": "71c85f25208a7fa3a07e97fe748d818dd7dc7d6d01535f4b4d39bcde69b5377c"
+    },
+    {
+      "file": "model-GPU1__checkpoints__main-612d2a094343.pt",
+      "original": "model-GPU1/checkpoints/main-612d2a094343.pt",
+      "bytes": 1361526717,
+      "sha256": "a3895df2ebb62fcd6ec6a39532685b097b8968b4c72b55dcedfb804dbf215bb3"
+    },
+    {
+      "file": "b1-transfer.json",
+      "bytes": 1634,
+      "sha256": "f42252b28725a998945f8e086bb3042395fa7460b83b645c225ecd25de2996bc"
+    }
+  ],
+  "remote_SHA_verified": true,
+  "local_payload_deleted": true,
+  "streaming_one_payload": true,
+  "real_CPU_checks": true
+}

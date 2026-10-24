@@ -1,0 +1,101 @@
+{
+  "at_utc": "2026-10-19T17:11:35.165261+00:00",
+  "branch": "codex/nlp-hw2-code-generation",
+  "files": [
+    "work/checks/e1-analysis-cpu.json",
+    "work/checks/e1-bibliography.patch",
+    "work/checks/e1-build.json",
+    "work/checks/e1-cpu.json",
+    "work/checks/e1-download.json",
+    "work/checks/e1-final.json",
+    "work/checks/e1-launch.json",
+    "work/checks/e1-observations.json",
+    "work/checks/e1-selection.json",
+    "work/checks/e1-source-recovery.json",
+    "work/checks/e1-versions.json",
+    "work/checks/e1-weights.json",
+    "work/kaggle/build_e1.py",
+    "work/kaggle/e1-config.json",
+    "work/kaggle/e1-source-identity.json",
+    "work/kaggle/e1-timing-reference.json",
+    "work/kaggle/e1_api.py",
+    "work/kaggle/e1_checks.py",
+    "work/kaggle/e1_download.py",
+    "work/kaggle/e1_watch.py",
+    "work/kaggle/notebooks/nlp-hw02-e1-ensembles.ipynb",
+    "work/kaggle/src/e1_decode.py",
+    "work/kaggle/src/e1_worker.py",
+    "work/notes/e1-ensembles.md",
+    "work/research/e1-analysis-checks.py",
+    "work/research/e1-analysis.py",
+    "work/research/e1-report.py",
+    "work/research/e1_policies.py",
+    "work/results/e1-confirm.json",
+    "work/results/e1-experiment.json",
+    "work/results/e1-selection.json",
+    "work/results/e1-throughput.json",
+    "work/results/e1-tune.json",
+    "work/results/e1-v11-policy.json",
+    "work/results/next-e1.json"
+  ],
+  "bibliography_own_hunk_only": true,
+  "prior_attempts": [
+    {
+      "at_utc": "2026-10-19T16:06:47.154293+00:00",
+      "files": [
+        "work/kaggle/build_e1.py",
+        "work/kaggle/e1-config.json",
+        "work/kaggle/e1-source-identity.json",
+        "work/kaggle/e1-timing-reference.json",
+        "work/kaggle/e1_api.py",
+        "work/kaggle/e1_checks.py",
+        "work/kaggle/e1_watch.py",
+        "work/kaggle/notebooks/nlp-hw02-e1-ensembles.ipynb",
+        "work/kaggle/src/e1_decode.py",
+        "work/kaggle/src/e1_worker.py",
+        "work/research/e1_policies.py",
+        "work/research/e1-analysis.py",
+        "work/research/e1-analysis-checks.py",
+        "work/notes/e1-ensembles.md",
+        "work/checks/e1-cpu.json",
+        "work/checks/e1-analysis-cpu.json",
+        "work/checks/e1-build.json",
+        "work/checks/e1-weights.json",
+        "work/checks/e1-bibliography.patch"
+      ],
+      "bibliography_own_hunk_only": true,
+      "index_before": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "add": {
+        "returncode": 128,
+        "stdout": "",
+        "stderr": "fatal: Unable to create '<vault>/.git/worktrees/study1/index.lock': Operation not permitted\n"
+      },
+      "status": "add_failed",
+      "index_after": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    }
+  ],
+  "index_before": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "add": {
+    "returncode": 128,
+    "stdout": "",
+    "stderr": "fatal: Unable to create '<vault>/.git/worktrees/study1/index.lock': Operation not permitted\n"
+  },
+  "status": "add_failed",
+  "index_after": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "latest_version": 3,
+  "status": "RUNNING",
+  "has_output": false,
+  "output_count": 0,
+  "used_seconds": 575.00015,
+  "reserved_seconds": 0.0,
+  "code_exact": true,
+  "known_own_versions": [
+    1
+  ]
+}

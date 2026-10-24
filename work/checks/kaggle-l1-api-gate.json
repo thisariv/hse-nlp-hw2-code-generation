@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "API_version": 1,
+  "API_status": "ERROR expected after os._exit",
+  "gate": {
+    "passed": false,
+    "reason": "Kaggle Secrets unavailable: KAGGLE_USERNAME, KAGGLE_KEY",
+    "action": "Attach both Secrets and use Edit -> Save Version -> Save & Run All"
+  },
+  "exit_log_seconds": 13.345266642,
+  "last_log_seconds": 19.576220161,
+  "training_started": false,
+  "server_source_exact": true,
+  "server_private_GPU_T4_internet": true,
+  "cache_source": "thisarivson/nlp-hw02-compact-cache-verified/2",
+  "notebook_sha256": "50ac26d9db2bd31ecc66b317fcdc9be756763982bbdc1ede883a32ccb932cb62"
+}

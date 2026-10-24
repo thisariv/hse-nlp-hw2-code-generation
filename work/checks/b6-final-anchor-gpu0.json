@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "sha256": "65e6e27d74e95d7130afbaf6316249933cd108cb93bd453ff720b65868cd1943",
+  "final_anchor": {
+    "file": "checkpoints/main-0d745e8a1c9e.pt",
+    "bytes": 1361738941,
+    "sha256": "894413495ceba5cd840a6ed73f3d41bb4896ccb5925134b6c5752672b86d9695",
+    "updates": 154559,
+    "cursor": 19783552,
+    "main_seconds": 125641.96956177584,
+    "model_spec": {
+      "d_model": 768,
+      "heads": 12,
+      "encoder_layers": 6,
+      "decoder_layers": 6,
+      "swiglu_dim": 2048,
+      "vocab": 8195,
+      "qk_norm": "layernorm"
+    },
+    "identity": {
+      "model": "W-lr600",
+      "recipe": {
+        "architecture": {
+          "d_model": 768,
+          "heads": 12,
+          "encoder_layers": 6,
+          "decoder_layers": 6,
+          "swiglu_dim": 2048,
+          "vocab": 8195,
+          "qk_norm": "layernorm"
+        },
+        "normalized_token_init": true,
+        "seed": 42,
+        "dropout": 0.0,
+        "peak_lr": 0.0006,
+        "warmup_updates": 2000,
+        "z_loss": 0.0001,
+        "qk_norm": "headwise LayerNorm",
+        "effective_batch": 128,
+        "weight_decay": 0.01,
+        "clip": 1.0,
+        "AMP": "FP16+GradScaler",
+        "fused_AdamW": true,
+        "main_truncation_q": 0.0,
+        "main_schedule": "warmup then constant; emergency factor persists",
+        "torch": "2.11.0+cu128",
+        "CUDA": "12.8",
+        "implementation_sha256": {
+          "b2_runtime.py": "e95682ce5680b2f4466df811ca1e46912295c9babd7d9adab21dbc42ae4c9db3",
+          "b2_optim.py": "48357f22193299e3d758dd0dcb4e28ed91ef147cba5786ff5da500569c394f32",
+          "qk_attention.py": "68215829f8a88abf611f92303315b625625ea694d34be952c7b9f7278e3f68fd",
+          "b1_data.py": "cba9f8278c5a696949ff2de501b7b7fd04e5ea69b257e10188fe6193889bbfc3",
+          "exp26_core.py": "b9dd4c542ca41b5a70fb556e477e45e1ae76c3afedac7c31a4b487030bec4c9e",
+          "exp26_train.py": "0392b8fabcae875eb7972a6c69f6594974603ae81090f4c484fbc47244fb2570",
+          "exp26_order.py": "98f6e43cf31810d4e86fdbf36b37aaf8dfe7c40ec82d065f82194d7056172783",
+          "l1_runtime.py": "cbcf26636a1a1a62d13ee8fe82a4e9deb420db13f2e811a0fb51832c3811f038",
+          "l2_runtime.py": "43ce7e35dbfbb5712a427e4aa9f8fb39532d873dde38cd029b9ba8a9fa771ed3",
+          "s3_representation.py": "51c18fd6b9d158086c96da9f23dd72030da84e27cff18b51028934b0f21d519c"
+        }
+      },
+      "recipe_sha256": "81f2eb4b21dba22ea36840abd870e115f75f66e7ae8d78252cad1ad21ff0a0a9",
+      "cache_manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+      "order_sha256": "8e9595f655ed2b4456bf5b94e9b5b6b3db040e3f5696a4dc0ef364588048bee8",
+      "order_seed": 2026101501,
+      "cpu_test": false
+    },
+    "purpose": "uncooled full B2 stable"
+  },
+  "final_anchor_metadata_exact": true,
+  "pre_final_blob_available": false,
+  "provenance": {
+    "fields": {
+      "model": "811fbac23c6cd09402e9bf3bd1784f189115433aa557f726cbb48717795ccac2",
+      "optimizer": "9fa0e1c483f11dfeddd5caf608c8db68c8c8c7ee93e28dc8465ea8f1376a67bc",
+      "scaler": "095a22f8a75199ebfd753b51e1ec3601debad34d59e1b3b151cabb2775855b35",
+      "rng": "90c2f65cb00abe7b4f70a3f6e5afba4fd3e1ad848be244128c5d0a466e5dedd6",
+      "scheduler": "42010aaabe87fde13c471a9f1b9b12c89145608259e93075201762a86bec5d22",
+      "identity": "1aa7bc10d5d48306ac5b047a4a3a648c17abbc5b7511377042f5667c0c192867",
+      "model_spec": "e87158eead9e025d843b6704c0549cb9e7918c32270a0e9e898f82ec0556a8be"
+    },
+    "main_state": "5ca0155fd5109990ab6c80f7139d7176ad941916139880e2634dccede7be2acd",
+    "b5_points": 2,
+    "b5_sessions": 0,
+    "b5_branch_seconds": 3900.9516654601357,
+    "b5_branch_attempted_updates": 4899
+  },
+  "limitation": "B5 pruned pre-final anchor PT. Exact final receipt/counters/identity + both retained post-restore numeric states checked; no claim of direct pre-final tensor comparison."
+}

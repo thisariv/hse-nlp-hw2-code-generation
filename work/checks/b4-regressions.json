@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "suites": [
+    {
+      "suite": "b3_tests",
+      "passed": true,
+      "tests": 16,
+      "failures": []
+    },
+    {
+      "suite": "b1_ev_b2_tests",
+      "passed": true,
+      "tests": 9,
+      "failures": []
+    },
+    {
+      "suite": "b2_review_tests",
+      "passed": true,
+      "tests": 5,
+      "failures": []
+    },
+    {
+      "suite": "b1_tests",
+      "passed": true,
+      "tests": 20,
+      "failures": []
+    },
+    {
+      "suite": "p1_tests",
+      "passed": true,
+      "tests": 17,
+      "failures": []
+    }
+  ],
+  "GPU": false
+}

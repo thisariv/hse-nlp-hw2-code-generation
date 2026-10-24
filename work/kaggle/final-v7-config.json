@@ -1,0 +1,34 @@
+{
+  "models": [
+    {
+      "name": "C-main",
+      "filename": "model-C-main__weights__l2-62280-fp16.pt",
+      "sha256": "8c11b1038855422b6912e243049a554317978f848edb412ed48aebbe4cb6b886",
+      "dataset": "thisarivson/nlp-hw02-l3-live",
+      "K1": 1,
+      "K2": 3
+    },
+    {
+      "name": "C-long2x",
+      "filename": "model-C-long2x__weights__l2-62280-fp16.pt",
+      "sha256": "d10bf0018d0b14fd6cc3c8b9c7121f127b5cec97057544fd63e5824253a55057",
+      "dataset": "thisarivson/nlp-hw02-l3-live",
+      "K1": 1,
+      "K2": 5
+    },
+    {
+      "name": "pilot-b",
+      "filename": "model-pilot-b__weights__long-truncation-fp16.pt",
+      "sha256": "8439037720dda16dda6b73fe676860d5498bbcba4cacebc0d709bbb22db464a5",
+      "dataset": "thisarivson/nlp-hw02-p1-weights",
+      "K1": 1,
+      "K2": 4
+    }
+  ],
+  "unanimity_threshold": 1.0,
+  "sequence_budget": 1024,
+  "greedy_sequence_budget": 1024,
+  "scorer_enabled": false,
+  "scorer_weight": 0.0,
+  "expected_matches": 1535
+}

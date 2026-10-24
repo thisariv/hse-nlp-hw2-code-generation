@@ -1,0 +1,24 @@
+{
+  "passed": false,
+  "results": [
+    {
+      "suite": "l2_tests.py",
+      "passed": false,
+      "seconds": 10.49668712518178,
+      "tail": "ees/nlp-transformer/study/work/kaggle/src/l2_session.py\", line 55, in launch\n    survivors=stop_workers(processes,watchdog)\n  File \"work/kaggle/src/session_runner.py\", line 60, in stop_workers\n    while time.monotonic()<until and any(group_alive(p.pid) for p in processes):\n                                     ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"work/kaggle/src/session_runner.py\", line 60, in <genexpr>\n    while time.monotonic()<until and any(group_alive(p.pid) for p in processes):\n                                         ~~~~~~~~~~~^^^^^^^\n  File \"work/kaggle/src/session_runner.py\", line 53, in group_alive\n    try:os.killpg(group,0);return True\n        ~~~~~~~~~^^^^^^^^^\nPermissionError: [Errno 1] Operation not permitted\n\n----------------------------------------------------------------------\nRan 34 tests in 8.552s\n\nFAILED (errors=1)\n"
+    },
+    {
+      "suite": "l3_tests.py",
+      "passed": true,
+      "seconds": 4.229161374969408,
+      "tail": "and_counters) ... ok\ntest_legacy_GPU_smoke_preserves_own_cursor_and_old_points (__main__.Tests.test_legacy_GPU_smoke_preserves_own_cursor_and_old_points) ... ok\ntest_owner_qualified_mounts_disambiguate_original_and_fallback_cache (__main__.Tests.test_owner_qualified_mounts_disambiguate_original_and_fallback_cache) ... ok\ntest_real_failed_eval_reports_partial_and_preserves_resumable_state (__main__.Tests.test_real_failed_eval_reports_partial_and_preserves_resumable_state) ... /tmp/nlp-s3-env/lib/python3.13/site-packages/torch/nn/modules/transformer.py:145: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True\n  self.encoder = TransformerEncoder(\n/tmp/nlp-s3-env/lib/python3.13/site-packages/torch/nn/modules/transformer.py:145: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True\n  self.encoder = TransformerEncoder(\nok\ntest_worker_without_L3_kind_keeps_both_L2_routes (__main__.Tests.test_worker_without_L3_kind_keeps_both_L2_routes) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 2.627s\n\nOK\n"
+    },
+    {
+      "suite": "p1_tests.py",
+      "passed": true,
+      "seconds": 8.053659917088225,
+      "tail": "\ntest_nonfinite_selection_is_rejected_before_adam (__main__.Tests.test_nonfinite_selection_is_rejected_before_adam) ... ok\ntest_p1_supervisor_healthy_worker_completes_after_sibling_crash (__main__.Tests.test_p1_supervisor_healthy_worker_completes_after_sibling_crash) ... ok\ntest_reverse_source_target_PAD_BOS_EOS (__main__.Tests.test_reverse_source_target_PAD_BOS_EOS) ... ok\ntest_reviewer_failed_or_partial_CE_cannot_mark_complete_and_keeps_weights (__main__.Tests.test_reviewer_failed_or_partial_CE_cannot_mark_complete_and_keeps_weights) ... ok\ntest_reviewer_real_WSD_keeps_uncooled_resumable_state (__main__.Tests.test_reviewer_real_WSD_keeps_uncooled_resumable_state) ... ok\ntest_scorer_exp_beta_zero_and_reference_independence (__main__.Tests.test_scorer_exp_beta_zero_and_reference_independence) ... ok\ntest_sqrt_schedule_bounds_monotonicity_and_zero_endpoint (__main__.Tests.test_sqrt_schedule_bounds_monotonicity_and_zero_endpoint) ... ok\ntest_truncated_loss_normalization_matches_manual_retained_batch (__main__.Tests.test_truncated_loss_normalization_matches_manual_retained_batch) ... ok\n\n----------------------------------------------------------------------\nRan 17 tests in 6.619s\n\nOK\n"
+    }
+  ],
+  "local_sandbox_limitation": "L2: 33/34 pass; supervisor-error shutdown test cannot use os.killpg in local sandbox. Frozen modules unchanged; CUDA session supervision tested remotely."
+}

@@ -1,0 +1,483 @@
+{
+  "train_n": 120000,
+  "train_population": 9725737,
+  "sampling": "2000 uniform without replacement per shard; seed2026101901",
+  "cache_manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+  "sample_ids_sha256": "1e967d6d0c57a1dacacff4d0de4bb31d35c7817d67c9e439115b105ea2b3ba15",
+  "tokenizer_sha256": "261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d",
+  "pre_tokenizer": {
+    "type": "Sequence",
+    "pretokenizers": [
+      {
+        "type": "Split",
+        "pattern": {
+          "Regex": "(?i:'s|'t|'re|'ve|'m|'ll|'d)|[^\\r\\n\\p{L}\\p{N}]?\\p{L}+|\\p{N}| ?[^\\s\\p{L}\\p{N}]+[\\r\\n]*|\\s*[\\r\\n]+|\\s+(?!\\S)|\\s+"
+        },
+        "behavior": "Isolated",
+        "invert": true
+      },
+      {
+        "type": "ByteLevel",
+        "add_prefix_space": false,
+        "trim_offsets": false,
+        "use_regex": false
+      }
+    ]
+  },
+  "forms": {
+    "grouped": 2859,
+    "ungrouped-4plus": 5902,
+    "dollar-prefix": 34385,
+    "dollar-words": 854,
+    "space-before-punctuation": 16,
+    "no-space-before-question": 118164,
+    "decimal": 10672,
+    "trailing-zero-decimal": 5198,
+    "integer-decimal": 1571,
+    "percent-symbol": 16277,
+    "percent-words": 453
+  },
+  "examples": {
+    "grouped": [
+      "ts to buy a house that costs $300,000. He can afford to make a down payment of 20%",
+      "vious project. If he charged $10,500 on his recent project, how much did he charg",
+      "Alice wants to have $18,000 in her savings account after 5 years. How mu"
+    ],
+    "ungrouped-4plus": [
+      "erdue bill. If she gets paid $7000 per month and is taxed 15%, how much is her ",
+      "A store has 3000 items. 20% of the items are electronics and ",
+      "ncert costs $50. If they sell 5000 tickets, they will make a gross revenue of h"
+    ],
+    "dollar-prefix": [
+      "verdue bill. If she gets paid $7000 per month and is taxed 15%, how much is h",
+      "A store is selling a bike for $300. If the original price was $450, what is t",
+      "around it. If the fence costs $2 per foot, how much will the fence cost?"
+    ],
+    "dollar-words": [
+      " each row. If each book costs 10 dollars, what is the total cost of the books on the ",
+      "Maria buys 5 dresses at 50 dollars each, 2 of them are for her sister and the r",
+      "Max has 20 dollars, 35 euros, and 2500 yen. If there are 0.85 d"
+    ],
+    "space-before-punctuation": [
+      "ots. How much land, in sq. ft. , does each plot have now?",
+      "ABLE NAMES MUST BE MEANINGFUL! ! ! ** Possible questions and programs: Adam l",
+      "e named Alpha, Beta, Gamma,... , Iota. If a tourist from earth visits Rigel a"
+    ],
+    "no-space-before-question": [
+      "15%, how much is her water bill?",
+      "ms are not electronics or books?",
+      "what is the area of the picture?"
+    ],
+    "decimal": [
+      "ll including tax and tip was $110.25, how much does each person owe?",
+      " During his flight, he drinks 1.8 pounds of water per hour and eats 1/10th the",
+      "total. If each hot dog costs $2.50, what is the cost of each burger?"
+    ],
+    "trailing-zero-decimal": [
+      "total. If each hot dog costs $2.50, what is the cost of each burger?",
+      "pany charges $40 per day and $0.20 per mile driven. If Lauren rents the car for",
+      "cost $2 each and rulers cost $1.50 each. If he pays with a $20 bill, how much c"
+    ],
+    "integer-decimal": [
+      "r 10% off. If each can costs $2.00, how much will all the energy drinks cost af",
+      "lace sells a large pizza for $12.00 today. When the price of cheese goes up by 2",
+      "ants to buy a new laptop for $800.00, a wireless mouse for $30.00, a backpack for"
+    ],
+    "percent-symbol": [
+      "$7000 per month and is taxed 15%, how much is her water bill?",
+      "A store has 3000 items. 20% of the items are electronics and 35% are boo",
+      "00 loaves of bread for sale. 30% of them are whole wheat, and half as many ar"
+    ],
+    "percent-words": [
+      " bottles. On the second day, 15 percent of the remaining bottles are sold, and on th",
+      "a total of 100 employees. If 20 percent of the employees are part-time, and 60 perce",
+      " plays 18 games in a season. 50 percent of the games end in a draw. How many games e"
+    ]
+  },
+  "train_rule_changes": {
+    "dollar-words": 23905,
+    "dollar-symbol": 836,
+    "ungroup": 2198,
+    "punctuation": 11,
+    "price-trim": 3386
+  },
+  "coverage": {
+    "tune2048": {
+      "dollar-words": 462,
+      "dollar-symbol": 32,
+      "ungroup": 49,
+      "punctuation": 0,
+      "price-trim": 70
+    },
+    "eval2048": {
+      "dollar-words": 456,
+      "dollar-symbol": 19,
+      "ungroup": 49,
+      "punctuation": 0,
+      "price-trim": 58
+    }
+  },
+  "shards": [
+    {
+      "shard": 0,
+      "rows": 168801,
+      "surveyed": 2000,
+      "source_sha256": "b1dde58f3ed90a7c80e2edb67e2bb37aee13de7013d4d4b13c07f80cccf7b967"
+    },
+    {
+      "shard": 1,
+      "rows": 169127,
+      "surveyed": 2000,
+      "source_sha256": "c860ab7ae524737e6eec69574a4d73d5435302615db0b20a070984f052009431"
+    },
+    {
+      "shard": 2,
+      "rows": 168830,
+      "surveyed": 2000,
+      "source_sha256": "a0a80948a902cf52dc250f2d98c2e5a8abbfdd56e1c3486f6209955b14ba8e92"
+    },
+    {
+      "shard": 3,
+      "rows": 169073,
+      "surveyed": 2000,
+      "source_sha256": "700eeac9d7b6489c8194c129dbfa4bd80bfe63902bc38cc9e677648ca6148976"
+    },
+    {
+      "shard": 4,
+      "rows": 168979,
+      "surveyed": 2000,
+      "source_sha256": "1f16910537edb68888628ba7ab6c28fdd2c2242dd7593e46c40f55e5b7bff062"
+    },
+    {
+      "shard": 5,
+      "rows": 169288,
+      "surveyed": 2000,
+      "source_sha256": "058de38441bd1d8336abd30ca173c908f23de2bd8b9d55452800dd8f92bc0df6"
+    },
+    {
+      "shard": 6,
+      "rows": 169221,
+      "surveyed": 2000,
+      "source_sha256": "1271322c0ac48c13d9a9fce4e6c4fdd9ea77e26d40c0b7992581e3a79775ac83"
+    },
+    {
+      "shard": 7,
+      "rows": 168892,
+      "surveyed": 2000,
+      "source_sha256": "68ef4b305816ca1e829406b7c3c1abb84431ef0ab34901af060e66a9ac33b40c"
+    },
+    {
+      "shard": 8,
+      "rows": 168909,
+      "surveyed": 2000,
+      "source_sha256": "44d7b6348b1007a359d31861cc4354f1ee0b98d19f92b9404e588cf88a8630b7"
+    },
+    {
+      "shard": 9,
+      "rows": 169229,
+      "surveyed": 2000,
+      "source_sha256": "2a66021ceb5cde329d687d8fadff149ac0d520ae7fe4d3a9ee4ca04c28eca78b"
+    },
+    {
+      "shard": 10,
+      "rows": 169091,
+      "surveyed": 2000,
+      "source_sha256": "d53b065f184eae94fc86ffa5ba1b2dfa997f1f91cba897532d782485597f43f4"
+    },
+    {
+      "shard": 11,
+      "rows": 169109,
+      "surveyed": 2000,
+      "source_sha256": "1e1fb848d4e75cbd3ed4c27107ddf00ca0c72b5372380b008c9a3ea054fbb213"
+    },
+    {
+      "shard": 12,
+      "rows": 168985,
+      "surveyed": 2000,
+      "source_sha256": "fa0569f34e9f0cc80c7e835c02ebace8b82c1b5a6f6c80f90ff6040deea9aa5a"
+    },
+    {
+      "shard": 13,
+      "rows": 169145,
+      "surveyed": 2000,
+      "source_sha256": "a493d1939843d238299e1df668ab2e0281c3a9dece048c9e685c8abea01d3c86"
+    },
+    {
+      "shard": 14,
+      "rows": 171525,
+      "surveyed": 2000,
+      "source_sha256": "ec0b9ef702d24f49a6501a87cf47455ffa7c53398620aa454daab5285131abc1"
+    },
+    {
+      "shard": 15,
+      "rows": 171802,
+      "surveyed": 2000,
+      "source_sha256": "95ce49553ec0ca4bd0f0268e77e43f932cc6ffbbf6743b2a9d5a7e8ed77da8c5"
+    },
+    {
+      "shard": 16,
+      "rows": 171786,
+      "surveyed": 2000,
+      "source_sha256": "ee9f6a1346153d500b0fa57662e0b7ea4f2357bb5c45838f6088b482626a3fd0"
+    },
+    {
+      "shard": 17,
+      "rows": 171815,
+      "surveyed": 2000,
+      "source_sha256": "8949172728c95143e3ff80cfa0727fc018d43a963a1441beeb3c2e639393e341"
+    },
+    {
+      "shard": 18,
+      "rows": 171963,
+      "surveyed": 2000,
+      "source_sha256": "0be39ba7997b2ec09da7fee9f195cdf1bba5c3ec95720e6217a2967e8a6e3844"
+    },
+    {
+      "shard": 19,
+      "rows": 172020,
+      "surveyed": 2000,
+      "source_sha256": "616e338bba98e518cbaaa07dc32618521bfcae66c5fd8e7932f2e879ad8034ca"
+    },
+    {
+      "shard": 20,
+      "rows": 172077,
+      "surveyed": 2000,
+      "source_sha256": "27fcebbfc6871f14c239c378f93b197a5a31faf4180f37baffd115c3b8792980"
+    },
+    {
+      "shard": 21,
+      "rows": 171675,
+      "surveyed": 2000,
+      "source_sha256": "f4fdc14be0f75b8b98ed9cc0364d29d39c14601092c35d7c14a46324d00ce67d"
+    },
+    {
+      "shard": 22,
+      "rows": 171875,
+      "surveyed": 2000,
+      "source_sha256": "fb835f82bda818905e76353c7c37804e718ee91db42056a0b68f66b79fe3269c"
+    },
+    {
+      "shard": 23,
+      "rows": 171845,
+      "surveyed": 2000,
+      "source_sha256": "fea46989f4614bccfaccfd12cacdb02f25919ff82081491f1fb6dfa69448185a"
+    },
+    {
+      "shard": 24,
+      "rows": 171796,
+      "surveyed": 2000,
+      "source_sha256": "a54472563e52f514653c6ad73453ce76c7472cb0605a8ac5f220b6f0fda97fa0"
+    },
+    {
+      "shard": 25,
+      "rows": 172061,
+      "surveyed": 2000,
+      "source_sha256": "db335e8249279a228bc60665875ff4bad23bcab0f532d9577416a5c22a0336e0"
+    },
+    {
+      "shard": 26,
+      "rows": 171660,
+      "surveyed": 2000,
+      "source_sha256": "4c6ae3f66ee9252113d544d72b86c104411e6f4e832f0bf1d3ef7f6ec8606d13"
+    },
+    {
+      "shard": 27,
+      "rows": 171913,
+      "surveyed": 2000,
+      "source_sha256": "012eda6f67a685d1fb4c8affa89934350571373c9f44f7fa91c053f6aee838d7"
+    },
+    {
+      "shard": 28,
+      "rows": 171762,
+      "surveyed": 2000,
+      "source_sha256": "0ddbed94ed2e7cebde79b48734154b89258d681721858286328f6548c54056b6"
+    },
+    {
+      "shard": 29,
+      "rows": 163039,
+      "surveyed": 2000,
+      "source_sha256": "6c1fddc5ff68b3f160bc0d3a65a86502408ed1b6f487c4b63e5c091a8bafc396"
+    },
+    {
+      "shard": 30,
+      "rows": 158264,
+      "surveyed": 2000,
+      "source_sha256": "d2dbe646ba91d82f6716b222b946e9d6a9fa07e2857a6e811136b9ea2982a8f0"
+    },
+    {
+      "shard": 31,
+      "rows": 158357,
+      "surveyed": 2000,
+      "source_sha256": "601db6e132921180bfa84c14aeee41ecb564dbf300cbdab184af17eaf14385a5"
+    },
+    {
+      "shard": 32,
+      "rows": 158054,
+      "surveyed": 2000,
+      "source_sha256": "3058f5e8a4d04822216861ed4dcc0e6608597c4c37fd6a3fdc7abe4a41073175"
+    },
+    {
+      "shard": 33,
+      "rows": 158481,
+      "surveyed": 2000,
+      "source_sha256": "7533ec012c6af42e6acc448f30360b772ac00ebf5096c1061fd8b8b5f7f0b325"
+    },
+    {
+      "shard": 34,
+      "rows": 158061,
+      "surveyed": 2000,
+      "source_sha256": "f3cfd10b26508412a52437ce7b348208c8aed6673d5e945be4f6f1bbc75f66e0"
+    },
+    {
+      "shard": 35,
+      "rows": 158795,
+      "surveyed": 2000,
+      "source_sha256": "ae5a1c51f81d74d963b1412b6f746acf648873bd36529f9585ba37429c1fdb55"
+    },
+    {
+      "shard": 36,
+      "rows": 161881,
+      "surveyed": 2000,
+      "source_sha256": "24a348eae7fde423049594ddfd1cb99cc31d9c34d01079e4c856d2d4c87b7673"
+    },
+    {
+      "shard": 37,
+      "rows": 171890,
+      "surveyed": 2000,
+      "source_sha256": "eabf06a742cafed738402b65442a1460e15c0b42e942732cddd99a735cfdf175"
+    },
+    {
+      "shard": 38,
+      "rows": 171953,
+      "surveyed": 2000,
+      "source_sha256": "ec6e54a99af3839862b7c734ba98c6fc325d0d34732f0df15d3cf8902f4c42ed"
+    },
+    {
+      "shard": 39,
+      "rows": 171643,
+      "surveyed": 2000,
+      "source_sha256": "8286a66937c98de14794360e1dd234775476e7535fe9a830219963e154f40ba7"
+    },
+    {
+      "shard": 40,
+      "rows": 172076,
+      "surveyed": 2000,
+      "source_sha256": "60b1a84ad6b273cfb3ebeb490615c4959d6bb4eb704ee468bed9d129195c03d8"
+    },
+    {
+      "shard": 41,
+      "rows": 171723,
+      "surveyed": 2000,
+      "source_sha256": "6e942c9713bfbeb15b7c7ee69951f449f33a00ae15938318966b5681a0012c1f"
+    },
+    {
+      "shard": 42,
+      "rows": 171843,
+      "surveyed": 2000,
+      "source_sha256": "891dc7aec57c528cbbd431e8ee00016c415aa5d8824079ceb4d031a9ec5aec5c"
+    },
+    {
+      "shard": 43,
+      "rows": 171999,
+      "surveyed": 2000,
+      "source_sha256": "31f7b28f9d6ec768bb8cb282dabb9a7652c4685810320f23e3ea9eedf9822b04"
+    },
+    {
+      "shard": 44,
+      "rows": 171736,
+      "surveyed": 2000,
+      "source_sha256": "f80885373373e61054c36605cccde1e4936be74efb76e40df6cdd12089354c23"
+    },
+    {
+      "shard": 45,
+      "rows": 171821,
+      "surveyed": 2000,
+      "source_sha256": "4a294f896c847d86c15060584c5127571ffa615775edaa7fe658ed204bac338b"
+    },
+    {
+      "shard": 46,
+      "rows": 171656,
+      "surveyed": 2000,
+      "source_sha256": "818b585cee597466461119859bda6226990fe5fe947495d0d532e17dbad0a4dc"
+    },
+    {
+      "shard": 47,
+      "rows": 171378,
+      "surveyed": 2000,
+      "source_sha256": "61b07fc6d6b01e1523950951fd2c61330cdc576f6e304e3a70214dbe7f90aec2"
+    },
+    {
+      "shard": 48,
+      "rows": 171818,
+      "surveyed": 2000,
+      "source_sha256": "633117b2fc7d0dc451c5d431bc10f555cbc11e584d0ddc6ee6efc4b74b126e01"
+    },
+    {
+      "shard": 49,
+      "rows": 171806,
+      "surveyed": 2000,
+      "source_sha256": "0f03ed4b1a8602071f7e666d0e63028fb40de0da413c2f4379496e012136355d"
+    },
+    {
+      "shard": 50,
+      "rows": 171543,
+      "surveyed": 2000,
+      "source_sha256": "d46f28c9a1b5ccb5b4d0f9874a4ac47bfb1a5201a7c964cbf8179c43d3d8a692"
+    },
+    {
+      "shard": 51,
+      "rows": 171647,
+      "surveyed": 2000,
+      "source_sha256": "941eb5c53417a2c45480a7e45c8446ceb477afc7dbd87ad837273915fdacd42e"
+    },
+    {
+      "shard": 52,
+      "rows": 129473,
+      "surveyed": 2000,
+      "source_sha256": "013ac595b650925db421f85f811e3b483958bd2e270ea5230b7cc022159f88a8"
+    },
+    {
+      "shard": 53,
+      "rows": 129229,
+      "surveyed": 2000,
+      "source_sha256": "aef906e896e30b7662ebc7c832965b112bb7e5d6b2f620a760f2fcac3a7aaca6"
+    },
+    {
+      "shard": 54,
+      "rows": 129428,
+      "surveyed": 2000,
+      "source_sha256": "388038c39de19b0d81ef4ae34b75636f23319eb256e301323927c2edc45a7c04"
+    },
+    {
+      "shard": 55,
+      "rows": 128892,
+      "surveyed": 2000,
+      "source_sha256": "850b2caffccc6656f980d24c142887406faf67b9ebc67791eebd305573a8cb05"
+    },
+    {
+      "shard": 56,
+      "rows": 129862,
+      "surveyed": 2000,
+      "source_sha256": "b3201d7c94104d3a2b62c3f600a036a5085a6b866ccf026f5ec401accbde04ae"
+    },
+    {
+      "shard": 57,
+      "rows": 129300,
+      "surveyed": 2000,
+      "source_sha256": "9471f0449dc0bf8355cf55f5839234ca6b0afb36406eb217daadad110e103430"
+    },
+    {
+      "shard": 58,
+      "rows": 129122,
+      "surveyed": 2000,
+      "source_sha256": "a63d9e1e86d72f4d523e707be9a015f8e138c6163487b7d61b6441e05313a9a4"
+    },
+    {
+      "shard": 59,
+      "rows": 24713,
+      "surveyed": 2000,
+      "source_sha256": "d7540b8d0f8b2cf10bde314face4b8f72611da2bc9100606139706ed2a9359aa"
+    }
+  ],
+  "invariants": "numeric multiset + idempotence checked for every sampled train and covered heldout question"
+}

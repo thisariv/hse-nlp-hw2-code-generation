@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "owner": "thisarivson",
+  "inputs": [
+    "thisarivson/nlp-hw02-26b-inputs",
+    "thisarivson/nlp-hw02-compact-cache-verified/2"
+  ],
+  "cache_private": true,
+  "dataset_private": true,
+  "GPU_runs": 0
+}

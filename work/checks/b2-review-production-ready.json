@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "canonical_ref": "friend2/nlp-hw02-b2/1",
+  "private": true,
+  "modules_SHA_exact_to_smoke": true,
+  "module_count": 92,
+  "source_port_sha256": "5b37d0d6deacdcbcd98bf0878ebdabd50e1e54647328b96246067b802abe4676",
+  "hard_seconds": 31500,
+  "worker_seconds": 31200,
+  "quota_free_seconds_at_push": 33568.076,
+  "quota_margin_seconds": 2068.076000000001,
+  "smoke": "../checks/b2-review-gpu-smoke-v1.json",
+  "status": {
+    "ref": "friend2/nlp-hw02-b2/1",
+    "checked_at_utc": "2026-10-16T08:29:20.620637+00:00",
+    "status": "RUNNING"
+  },
+  "ETA_UTC": "2026-10-16 17:10–17:20",
+  "ETA_Moscow": "2026-10-16 20:10–20:20",
+  "EV_touched": false
+}

@@ -1,0 +1,18 @@
+{
+  "ref": "thisarivson/nlp-hw02-b3-gpu-smoke",
+  "checked_at_utc": "2026-10-16T19:35:21.526051+00:00",
+  "free_seconds": 2652.0,
+  "reset_utc": "2026-10-17 00:00:00",
+  "dataset": "thisarivson/nlp-hw02-b2-states",
+  "private": true,
+  "inventory_verified": true,
+  "files": {
+    "b1-transfer.json": 1634,
+    "model-GPU0__checkpoints__main-4b21b0d306c4.pt": 1361526973,
+    "model-GPU0__latest.json": 2528,
+    "model-GPU1__checkpoints__main-612d2a094343.pt": 1361526717,
+    "model-GPU1__latest.json": 2529,
+    "weighted-order__order.json": 449,
+    "weighted-order__order.npy": 44911372
+  }
+}

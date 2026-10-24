@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "GPU_used": false,
+  "weights": [
+    {
+      "model": "C-main",
+      "file": "results/kaggle-runs/nlp-hw02-kaggle-l2/1/model-C-main/weights/l2-28800-fp16.pt",
+      "bytes": 107363571,
+      "sha256": "3806a5827004fd88f533a7307abc0c1e387faafc5672f4224392b363c4d2ad3d",
+      "format": "nlp-hw02-model-only-v1",
+      "optimizer_included": false,
+      "tensor_count": 212,
+      "tensor_elements": 53646403,
+      "floating_dtype": "FP16",
+      "all_finite": true,
+      "model_spec": {
+        "d_model": 512,
+        "heads": 8,
+        "encoder_layers": 6,
+        "decoder_layers": 6,
+        "swiglu_dim": 1368,
+        "vocab": 8195
+      },
+      "device": "CPU",
+      "model_forward": false
+    },
+    {
+      "model": "C-long2x",
+      "file": "results/kaggle-runs/nlp-hw02-kaggle-l2/1/model-C-long2x/weights/l2-28800-fp16.pt",
+      "bytes": 107364659,
+      "sha256": "6227ee2fc8dd12e186137be229fef2b1ceba659848c35bedd90cec6502f41548",
+      "format": "nlp-hw02-model-only-v1",
+      "optimizer_included": false,
+      "tensor_count": 212,
+      "tensor_elements": 53646403,
+      "floating_dtype": "FP16",
+      "all_finite": true,
+      "model_spec": {
+        "d_model": 512,
+        "heads": 8,
+        "encoder_layers": 6,
+        "decoder_layers": 6,
+        "swiglu_dim": 1368,
+        "vocab": 8195
+      },
+      "device": "CPU",
+      "model_forward": false
+    }
+  ]
+}

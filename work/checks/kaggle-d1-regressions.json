@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "tests": 13,
+  "failures": 0,
+  "errors": 0,
+  "GPU": false,
+  "push": false,
+  "torch": "2.14.1",
+  "numpy": "2.5.4",
+  "synthetic_analysis_and_L2_orders": true,
+  "frozen_v6_decoder_and_executor": true
+}

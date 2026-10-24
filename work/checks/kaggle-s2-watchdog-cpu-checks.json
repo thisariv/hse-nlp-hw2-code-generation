@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "case": "group-kill",
+      "passed": true,
+      "wall_seconds": 24.183171625016257,
+      "notebook_exit_code": 0,
+      "workers_and_grandchildren": 6,
+      "running_survivors": [],
+      "partial_metric_preserved": true,
+      "output_bytes": 6574
+    },
+    {
+      "case": "blocked-report",
+      "passed": true,
+      "wall_seconds": 29.075096916174516,
+      "notebook_exit_code": 0,
+      "workers_and_grandchildren": 6,
+      "running_survivors": [],
+      "partial_metric_preserved": true,
+      "output_bytes": 3809
+    },
+    {
+      "case": "unreapable",
+      "passed": true,
+      "wall_seconds": 29.183259291108698,
+      "notebook_exit_code": 0,
+      "workers_and_grandchildren": 6,
+      "running_survivors": [],
+      "partial_metric_preserved": true,
+      "output_bytes": 6142
+    },
+    {
+      "case": "blocked-setup",
+      "passed": true,
+      "wall_seconds": 8.123236541869119,
+      "notebook_exit_code": 0,
+      "workers_and_grandchildren": 3,
+      "running_survivors": [],
+      "partial_metric_preserved": true,
+      "output_bytes": 9048
+    }
+  ],
+  "production_budget_seconds": 11700,
+  "production_worker_deadline_seconds": 11400,
+  "production_watchdog_exit_seconds": 12000,
+  "session_ceiling_seconds": 13200,
+  "GPU_runs": 0,
+  "unverified": [
+    "Real CUDA/driver D-state and Kaggle output collection after os._exit(0)"
+  ],
+  "fixtures": "TERM ignored; libc sleep / busy loop; multiprocessing spawn pool grandchildren; unreapable leader proxy; blocked report; actual first-cell watchdog"
+}

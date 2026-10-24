@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "GPU": false,
+  "new_training_updates": 0,
+  "checks": [
+    "BOS/PAD not scored; EOS included; token count and mean/sum agree",
+    "Variable-length padded batch agrees with single-example forward",
+    "Duplicate candidates retain vote multiplicity",
+    "Reviewer changes cluster selection; reference mutation cannot change selection",
+    "Identical normalized questions remain together in CV folds",
+    "All immutable score chunks verified by SHA and finite sum/mean/token contract",
+    "Real L3 saved baseline vote replay and result references agree",
+    "All trained reviewer model tensors finite FP16; all2048 tasks scored"
+  ],
+  "scorer_sha256": "623b78d85e9368b8f550ad49c0d6848ec5bb9c20a2d492dbacb5204338fb9f83",
+  "real_scored_pairs": 26291,
+  "real_scored_candidates": 34816,
+  "score_summary_sha256": "19f9be9b2b6b7c057be9129459e930c3b987bc3da551dacc9b527785e79c4dc0",
+  "analysis_sha256": "a3cb38426c9991b287a29189676d1cbf013895ec7eb53cbd41b5380776397dfb"
+}

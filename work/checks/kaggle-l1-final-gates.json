@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "heartbeat_trigger": [
+    "full-state-heartbeat"
+  ],
+  "insurance_expiry_stops": true,
+  "actual_notebook_failed_live_probe_exits_before_data_training": true,
+  "stderr_empty": true
+}

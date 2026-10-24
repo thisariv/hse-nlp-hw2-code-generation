@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-07",
+  "reference_branch": "codex/nlp-hw2-code-generation",
+  "reference_head": "903c22545ec0a066ef8d0e5218944c86469d80b8",
+  "reference_notebook": "work/notebooks/07-kv-cache-byte-20k-pairs-checkpoint-50000.ipynb",
+  "reference_notebook_sha256": "6175ffc4f8a88e85506783ebb7de40be3d143010a513e1d13a71ec53b715d483",
+  "torch": "2.14.1",
+  "device": "CPU",
+  "method": "Instantiate exact baseline class from notebook. Vary vocabulary/width or parameter layout. No forward, gradients, optimization, decoding or performance timing. SwiGLU count registers two input and one output Linear; forward is not implemented/tested.",
+  "variants": [
+    {
+      "name": "byte-reference",
+      "vocab_size": 259,
+      "d_model": 128,
+      "layers_encoder": 2,
+      "layers_decoder": 2,
+      "ffn_hidden": 512,
+      "pre_ln": false,
+      "swiglu_parameter_layout_only": false,
+      "tied_head": false,
+      "parameters": 1254915
+    },
+    {
+      "name": "bpe-4096",
+      "vocab_size": 4096,
+      "d_model": 128,
+      "layers_encoder": 2,
+      "layers_decoder": 2,
+      "ffn_hidden": 512,
+      "pre_ln": false,
+      "swiglu_parameter_layout_only": false,
+      "tied_head": false,
+      "parameters": 2241024
+    },
+    {
+      "name": "bpe-2048",
+      "vocab_size": 2048,
+      "d_model": 128,
+      "layers_encoder": 2,
+      "layers_decoder": 2,
+      "ffn_hidden": 512,
+      "pre_ln": false,
+      "swiglu_parameter_layout_only": false,
+      "tied_head": false,
+      "parameters": 1714688
+    },
+    {
+      "name": "byte-width-256",
+      "vocab_size": 259,
+      "d_model": 256,
+      "layers_encoder": 2,
+      "layers_decoder": 2,
+      "ffn_hidden": 1024,
+      "pre_ln": false,
+      "swiglu_parameter_layout_only": false,
+      "tied_head": false,
+      "parameters": 4344579
+    },
+    {
+      "name": "byte-pre-ln",
+      "vocab_size": 259,
+      "d_model": 128,
+      "layers_encoder": 2,
+      "layers_decoder": 2,
+      "ffn_hidden": 512,
+      "pre_ln": true,
+      "swiglu_parameter_layout_only": false,
+      "tied_head": false,
+      "parameters": 1254915
+    },
+    {
+      "name": "byte-swiglu-344",
+      "vocab_size": 259,
+      "d_model": 128,
+      "layers_encoder": 2,
+      "layers_decoder": 2,
+      "ffn_hidden": 344,
+      "pre_ln": false,
+      "swiglu_parameter_layout_only": true,
+      "tied_head": false,
+      "parameters": 1259715
+    },
+    {
+      "name": "bpe-4096-tied-head",
+      "vocab_size": 4096,
+      "d_model": 128,
+      "layers_encoder": 2,
+      "layers_decoder": 2,
+      "ffn_hidden": 512,
+      "pre_ln": false,
+      "swiglu_parameter_layout_only": false,
+      "tied_head": true,
+      "parameters": 1716736
+    }
+  ],
+  "warning": "These are parameter counts only, not observed quality/speed. Pre-LN cache path needs its own correctness work; tied/BPE/SwiGLU variants are separate factors."
+}

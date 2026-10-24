@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "check": "new4D logits agree with original and5D; greedy token-identical FP32/FP16 on tiny CPU",
+      "passed": true
+    },
+    {
+      "check": "real sampling/resume/reference tokens/full greedy and vote timers include execution; incomplete test retry preserves files",
+      "passed": true
+    },
+    {
+      "check": "real S1 reference receipts reused without program execution; identity tamper rejected",
+      "passed": true
+    },
+    {
+      "check": "two independent M/B processes; branch resume after scratch deletion; latest/final retention; model-only points; no ZIP",
+      "passed": true,
+      "workers": [
+        {
+          "passed": true,
+          "experiment": 29,
+          "pid": 70016,
+          "branches": 2,
+          "resume_model_optimizer_scheduler_rng_parity": true,
+          "resume_after_anchor_scratch_deletion": true,
+          "full_checkpoints": 2,
+          "model_only_points": 2
+        },
+        {
+          "passed": true,
+          "experiment": 28,
+          "pid": 70017,
+          "branches": 2,
+          "resume_model_optimizer_scheduler_rng_parity": true,
+          "resume_after_anchor_scratch_deletion": true,
+          "full_checkpoints": 2,
+          "model_only_points": 2
+        }
+      ],
+      "output_bytes": 65826063
+    },
+    {
+      "check": "session report recovers points from incremental training/metrics receipts",
+      "passed": true
+    },
+    {
+      "check": "registered largest-k/120s and2pp final decision boundaries; gates and missing timing yield pending",
+      "passed": true
+    }
+  ],
+  "torch_CPU": "2.14.1",
+  "GPU_runs": 0,
+  "full_M_updates": 0,
+  "full_B_updates": 0,
+  "unverified": [
+    "T4 FP16 backend, memory2048/1024, fusedAdamW and B128/OOM96",
+    "full heldout gates2707±45 and token identity",
+    "test1919 selected vote<=120s",
+    "both models reaching7313s within11700s"
+  ]
+}

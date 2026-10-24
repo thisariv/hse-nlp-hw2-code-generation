@@ -1,0 +1,76 @@
+--- a/courses/nlp/index.md
++++ b/courses/nlp/index.md
+@@ -1,4 +1,6 @@
+ # NLP — Глубинное обучение для обработки текстов
++
++ДЗ2: [[work/notes/architecture-decision|Выбор архитектуры за180с]] —384K8 journals, кривая0…16, v7 mean6,59/74,95%; decoder×1,5/2/2,5 стоит≈0,73/1,07/3,37п.п. голоса при guard160. Предварительно6+6/d768 и8+4/d768, без обещания выигрыша/обязательных40ч;13форм shape bench CPU-ready, private thisarivson/nlp-hw02-shape-bench, GPU/push0.
+ 
+ ДЗ2: [[work/notes/r1-review|R1: независимое ревью и запуск]] — smokev1 COMPLETE348,65с; base/deep0,3509/0,4641с (1,323×), выбран encoder12. CUDA AMP/FP16 identity/Adam/scaler/stable/v7 прошли;15CPU tests. Private friend2 R1v1 RUNNING: C-long2x12vs6, ordinary weighted order/q10%,9ч30мин main+20мин cooldown, Secrets optional; early anchors passed. ETA≈18:20–18:40UTC, hard≈19:42UTC.
+ 
+--- a/courses/nlp/progress.md
++++ b/courses/nlp/progress.md
+@@ -1,4 +1,6 @@
+ # NLP — текущее состояние
++
++2026-10-15 — ДЗ2: [[work/notes/architecture-decision|архитектура с учётом180с]]:11 публичных работ,384K8 журнала/all2048/6моделей, single0…8 и mixed0…16; v7 1535/2048 приmean6,586, decoder×1,5/2/2,5 теряет≈0,73/1,07/3,37п.п. vote в сценарии guard160. CPU/static13форм passed, private shape bench ready:true/≤20мин, GPU/push0. Кандидаты6+6/d768 и8+4/d768 условные: центральный прогноз не обещает выигрыша над v7; следующий шаг — пользовательский T4 bench, пересчётtokens/time и quality pilot до расходования40GPU-ч/модель. B1/overfit файлы не изменялись.
+ 
+ 2026-10-15 — ДЗ2: [[work/notes/r1-review|R1: независимое ревью и запуск]] — smokev1 COMPLETE348,65с; base/deep0,3509/0,4641с (1,323×), выбран encoder12. CUDA AMP/FP16 identity/Adam/scaler/stable/v7 прошли;15CPU tests. Private friend2 R1v1 RUNNING: C-long2x12vs6, ordinary weighted order/q10%,9ч30мин main+20мин cooldown, Secrets optional; early anchors passed. ETA≈18:20–18:40UTC, hard≈19:42UTC. Следующий шаг — после завершения скачать журналы/FP16 и сравнить paired greedy eval2048, bins/old991, K8 и test timing; stable сохранить для продолжения.
+ 
+--- a/README.md
++++ b/README.md
+@@ -1,4 +1,6 @@
+ # ДЗ 2 — генерация кода
++
++[Архитектура с учётом180с](work/notes/architecture-decision.md): литература,384K8 journals/кривая0…16, цена замедления decoder, прогнозы40GPU-ч и early-stop. Предварительно6+6/d768 и8+4/d768; выигрыша над v7 пока не обещают. [Shape bench](work/kaggle/notebooks/nlp-hw02-shape-bench.ipynb),13форм/однаT4/≤20мин, [ready:true](work/results/next-shape-bench.json), без push.
+ 
+ [R1 review и запуск](work/notes/r1-review.md): smoke COMPLETE5мин49с,0,3509/0,4641с на T4,12слоёв; private friend2 R1v1 RUNNING, q10%/исходный weighted order,9,5ч main+20мин cooldown, Secrets optional. Ранние anchors прошли; hard≈19:42UTC.
+ 
+--- a/dashboard.md
++++ b/dashboard.md
+@@ -1,4 +1,6 @@
+ # Учебный dashboard
++
++NLP ДЗ2: [[work/notes/architecture-decision|Архитектура и180с]] —384журнала, adaptive v7 74,95% при6,59samples; более дорогой decoder теряет0,7–3,4п.п. vote. Кандидаты6+6/d768 и8+4/d768 условные;13форм private shape bench ready, GPU/push0, послеT4 пересчитать до40ч обучения.
+ 
+ NLP ДЗ2: [[work/notes/d1-results|D1: результаты]] — полный CE9,73M, paired greedy135 324, A38 644; по дублям13,66% точности, CE-порог ухудшает. Ручные30:13–14 ошибок reference (proxy). C121 — резерв, оба order типа и protected-only control проверены R1 loader; R1 без D1-удалений. Следующая полезная разметка —11 097 strict-minority за10–20мин; full greedy18,55ч без safety.
+ 
+--- a/courses/nlp/backlog.md
++++ b/courses/nlp/backlog.md
+@@ -1,6 +1,8 @@
+ # NLP — backlog
+ 
+ ## Ближайшие темы
++
++- [ ] ДЗ2: один пользовательский T4 [[work/notes/architecture-decision|shape bench]]13форм/≤20мин; подставить summary.json в `research/analyze-architecture-decision.py --bench`, затем quality gate по итоговому adaptive vote/time. Проверить неизвестные size/shape elasticity и гибрид new greedy+C;80GPU-ч без раннего сигнала не расходовать. Bundle ready:true, push0.
+ 
+ - [ ] При необходимости отдельно разобрать код семинара 1: обучение BPE и LSTM на TinyStories, сравнение метрик генерации. Исходный ноутбук не запускался.
+ 
+--- a/work/research/README.md
++++ b/work/research/README.md
+@@ -178,3 +178,7 @@
+ Полный trained reviewer CPU pass выполнен:34816candidates/26291unique pairs/all2048tasks,≈9мин вместе с анализом; jointCV full17 Δ0 [−0,39;+0,39]п.п. [Summary](../results/p1-reviewer/summary.json), identity и benchmark сохранены; score chunks/progress ignored локально. `--benchmark-only` измеряет пять length-quantile batches; `--max-tasks 1024 --subset-seed 2026101402` даёт случайную подвыборку задач при слишком долгомCPU. Для P1 она не понадобилась. Веса должны иметь identity model=reviewer; `--inputs`/`--journals` задают pinned local snapshots. Current tiny smoke136candidates, исторический smoke128 — [receipt](../checks/reviewer-score-cpu-smoke.json); оба не измеряют качество random reviewer.
+ 
+ [analyze-p1-results.py](analyze-p1-results.py) проверяет COMPLETE/weights/start+restore+stream receipts, greedy4096/991, fixed split/bins, frozen K8/mixed и adaptive replay,31372строки truncation, reverse CE и scoring summary; пишет [p1-results.json](../results/p1-results.json) и3графика. Нужны NumPy/Matplotlib, без Torch-forward/нового исполнения программ. Запуск из корня: `python work/research/analyze-p1-results.py`. Все immutable score chunk SHA, sum/mean/count, реальные FP16 finite и отсутствие gold в selection проверяет [p1-results-cpu.py](../checks/p1-results-cpu.py).
++
++## Архитектура и бюджет инференса
++
++[Решение](../notes/architecture-decision.md): `prepare-shape-lengths.py` проверяет реальные cache offsets/order и сохраняет компактные joint lengths; `analyze-architecture-decision.py` воспроизводит384K8 журнала/кривые0…16, adaptive v6/v7,18hybrid pools и сценарии40GPU-ч. SingleK9–16 не наблюдались. `write-architecture-note.py` обновляет таблицы заметки из JSON. После пользовательского T4: `python research/analyze-architecture-decision.py --bench /path/to/shape-bench/summary.json`, затем writer. Новый sampling/execution/GPU/push не вызываются; [shape bench](../kaggle/notebooks/nlp-hw02-shape-bench.ipynb) имеет отдельные CPU/static checks.
+--- a/knowledge/bibliography.md
++++ b/knowledge/bibliography.md
+@@ -1,4 +1,16 @@
+ # Библиография
++
++- <a id="nlp-hw02-architecture-decision"></a> **nlp-hw02-architecture-decision**. Собственный CPU-разбор15.10.2026: [[work/notes/architecture-decision|выбор формы с учётом180с]], [384K8 журнала/кривые/сценарии](../work/results/architecture-decision.json), [CPU/static shape bench](../work/checks/shape-bench-cpu.json). Реальные cache lengths/order и T4 profilev2/v5 phases; новые13форм измерены только по параметрам наCPU. GPU/push0; прогнозы и ранжирование — гипотезы.
++- <a id="ghorbani2021-nmt-scaling"></a> **ghorbani2021-nmt-scaling**. Ghorbani B. et al. «Scaling Laws for Neural Machine Translation».2021/ICLR2022. [arXiv v1](https://arxiv.org/html/2109.07740v1),§2.2–2.3/4: раздельная ёмкость encoder/decoder, CE и generation. [[work/notes/architecture-decision|Перенос на ДЗ2]].
++- <a id="kasai2021-deep-encoder"></a> **kasai2021-deep-encoder**. Kasai J. et al. «Deep Encoder, Shallow Decoder: Reevaluating Non-autoregressive Machine Translation».ICLR2021. [Final v4](https://arxiv.org/html/2006.10369v4),§2–5. [[work/notes/architecture-decision|Throughput и ограничения переноса distillation]].
++- <a id="kaplan2020-scaling"></a> **kaplan2020-scaling**. Kaplan J. et al. «Scaling Laws for Neural Language Models».2020. [arXiv](https://arxiv.org/abs/2001.08361). [[work/notes/architecture-decision|N/D/compute и depth/width]].
++- <a id="tay2022-scale-efficiently"></a> **tay2022-scale-efficiently**. Tay Y. et al. «Scale Efficiently: Insights from Pre-training and Fine-tuning Transformers».ICLR2022. [v2](https://arxiv.org/html/2109.10686v2),§4.1–4.4. [[work/notes/architecture-decision|DeepNarrow и hardware frontier]].
++- <a id="tay2022-scaling-architectures"></a> **tay2022-scaling-architectures**. Tay Y. et al. «Scaling Laws vs Model Architectures: How does Inductive Bias Influence Scaling?».2022/FindingsEMNLP2023. [v1](https://arxiv.org/html/2207.10551v1). [[work/notes/architecture-decision|Зависимость scaling от архитектуры]].
++- <a id="sardana2023-beyond-chinchilla"></a> **sardana2023-beyond-chinchilla**. Sardana N., Frankle J. «Beyond Chinchilla-Optimal: Accounting for Inference in Language Model Scaling Laws».2023. [Двухавторская v1](https://arxiv.org/html/2401.00448v1),§2–3; поздняя версия расширена. [[work/notes/architecture-decision|Inference-aware objective]].
++- <a id="brown2024-monkeys"></a> **brown2024-monkeys**. Brown B. et al. «Large Language Monkeys: Scaling Inference Compute with Repeated Sampling».2024. [v1](https://arxiv.org/html/2407.21787v1),§2/4. [[work/notes/architecture-decision|Coverage против выбранного ответа]].
++- <a id="snell2024-test-time"></a> **snell2024-test-time**. Snell C., Lee J., Xu K., Kumar A. «Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters».2024. [v1](https://arxiv.org/html/2408.03314v1),§3–5/App.C. [[work/notes/architecture-decision|Адаптивное распределение compute и цена difficulty]].
++- <a id="wu2024-inference-scaling"></a> **wu2024-inference-scaling**. Wu Y. et al. «Inference Scaling Laws: An Empirical Analysis of Compute-Optimal Inference for Problem-Solving with Language Models».2024. [v1](https://arxiv.org/html/2408.00724v1),§3–4. [[work/notes/architecture-decision|Выбор model+inference policy]].
++- <a id="muennighoff2023-data-constrained"></a> **muennighoff2023-data-constrained**. Muennighoff N. et al. «Scaling Data-Constrained Language Models».2023. [v2](https://arxiv.org/html/2305.16264v2),§3/5/6. [[work/notes/architecture-decision|Повторы эпох и diminishing returns]]; Hoffmann2022/Chinchilla зарегистрирована ниже как `hoffmann2022-chinchilla`.
+ 
+ - <a id="nlp-hw02-d1-results"></a> **nlp-hw02-d1-results**. Собственные train-only измерения15.10.2026: [[work/notes/d1-results|полные результаты]], [[work/notes/d1-manual-review|30 ручных разборов]], [diagnostics](../work/results/d1-results.json), [orders/SHA](../work/checks/d1-filtered-orders.json). D1 COMPLETE, CE9 725 737, paired135 324,1271 receipts; A precision-proxy121/886=13,66%, CE хуже, C121 строка. Ручная оценка13–14/30 reference errors — proxy; исходный T4 code не сохранён,60 CPU replay answers совпали. R1 protected-only control рекомендован; реальное улучшение фильтром не измерено.
+ 

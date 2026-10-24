@@ -1,0 +1,513 @@
+{
+  "date": "2026-10-09",
+  "notebook_sha256": "11651074a534aff02e42e24059f82de1c6903e3649c55197cfc01815cd927aba",
+  "initial_smoke_notebook_sha256": "b68be91137ba94b5fca1149a21591da08f1bb9b46f7040fa32b3a83c5f031a7f",
+  "runtime": {
+    "device": "CPU",
+    "torch": "2.14.1",
+    "tokenizers": "0.23.2"
+  },
+  "model_parameters": 8407360,
+  "data": {
+    "revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+    "training_examples": 500000,
+    "shards_used": [
+      {
+        "shard": 0,
+        "path": "data/train/part-00000.parquet",
+        "bytes": 26169796,
+        "sha256": "91831d582faa12d73b1a6b3878e496446cd5df074f17ee4ffea8cc2887c708ec",
+        "source_rows": 200000,
+        "rows_scanned": 200000,
+        "question_over512": 694,
+        "code_512_or_more": 5418,
+        "eligible_rows": 194060,
+        "test_copies_excluded": 0,
+        "hash_heldout_rows_excluded": 19541,
+        "accepted_train_pairs": 174519
+      },
+      {
+        "shard": 1,
+        "path": "data/train/part-00001.parquet",
+        "bytes": 26166175,
+        "sha256": "5222d657a1af07a531f1b22503f35741a6547f0831509897d0a279bc8f67d068",
+        "source_rows": 200000,
+        "rows_scanned": 200000,
+        "question_over512": 682,
+        "code_512_or_more": 5369,
+        "eligible_rows": 194120,
+        "test_copies_excluded": 0,
+        "hash_heldout_rows_excluded": 19275,
+        "accepted_train_pairs": 174845
+      },
+      {
+        "shard": 2,
+        "path": "data/train/part-00002.parquet",
+        "bytes": 26162244,
+        "sha256": "c6082401ea966aeaa8375018ae1f1d9c7c55cc30e421c45cc933ceacd97dc3de",
+        "source_rows": 200000,
+        "rows_scanned": 172788,
+        "question_over512": 604,
+        "code_512_or_more": 4806,
+        "eligible_rows": 167523,
+        "test_copies_excluded": 0,
+        "hash_heldout_rows_excluded": 16887,
+        "accepted_train_pairs": 150636
+      }
+    ],
+    "selection": "first500k eligible non-hash-heldout, non-test rows across consecutive pinned shards0..; original100k exact prefix; question<=512/code<512 UTF8 bytes; duplicate train questions retained as before",
+    "train_sha256": "61483f4dc6970ff5f2b1afffa45d57391dcfc01ab6ec4f140c6e6b6c792c8c38",
+    "train_locations_sha256": "c2332a54a923ffa85da9ac91ec0a39a2e4ead7f7c2e328abecef702e1d306ba7",
+    "base20k_sha256": "1304183967f02f01097d76c12fb24df30916a4ec44e54833cd3509264359300e",
+    "base100k_sha256": "7a141e91ce958206be7e18d3c50b5ccf72a10f1d94890c5f0c3927aa497e47b9",
+    "base20k_prefix_unchanged": true,
+    "base100k_prefix_unchanged": true,
+    "train64_sha256": "125106742b04a01ebe70f106730c0bd9a30f52244bef86b4215f27591d200203",
+    "unique_train_questions": 485373,
+    "duplicate_question_rows": 14627,
+    "validation_examples": 64,
+    "validation64_sha256": "0edf2b479ebdc103ec05efc704c7bb0ac8084e41a8a44b58afef224702563050",
+    "extra_heldout_examples": 192,
+    "extra_heldout_sha256": "a2140e9f3e05f8ea10e4647b3a28335d4c9e240c083c14e8b23cf30a6dbe8bfc",
+    "new_heldout_examples": 768,
+    "new_heldout_sha256": "e8273f55b276a9c5d73e18ff89bc8cbf550dbfec2a25380063635fa39d3fd3bd",
+    "total_heldout_examples": 1024,
+    "heldout1024_sha256": "e187bc297218365f1a1452a15376e0ff2fceaf8a5a5517820549854b90564743",
+    "heldout256_sha256": "6735359ee7a7e1b0738f8180d810b3aaff855307ec1b067c504e099295ff37f8",
+    "question_overlap_train_heldout": 0,
+    "question_overlap_train_test": 0,
+    "fresh_heldout_reserved": {
+      "examples": 1024,
+      "pairs_sha256": "eaf5f7c00559d6b1e5650a0dd879e5b4a214931ee803f8c1f6efd956c54971b2",
+      "file": "fresh-heldout-reserved.json",
+      "train_question_overlap": 0,
+      "old_heldout_question_overlap": 0,
+      "selection": "first1024 distinct eligible hash-heldout questions from shard1 onward; no old-heldout/test copies",
+      "scope": "reserved for final comparison of selected models; not evaluated or used to tune this run"
+    },
+    "total_pair_presentations_planned": 800000,
+    "mean_pair_presentations_planned": 1.6,
+    "download_and_selection_seconds": 6.762965624919161,
+    "intervention_scope": "same pinned train500k/heldout as18; tokenizer component changes"
+  },
+  "tokenization": {
+    "kind": "own byte-level BPE with Qwen-style pretokenization",
+    "loaded_from_experiment": null,
+    "tokenizer_training_performed": true,
+    "target_model_vocabulary": 8192,
+    "actual_model_vocabulary": 8192,
+    "content_id_offset": 3,
+    "special_ids": {
+      "pad": 0,
+      "bos": 1,
+      "eos": 2
+    },
+    "normalizer": null,
+    "add_prefix_space": false,
+    "use_regex": false,
+    "qwen_regex": "(?i:'s|'t|'re|'ve|'m|'ll|'d)|[^\\r\\n\\p{L}\\p{N}]?\\p{L}+|\\p{N}| ?[^\\s\\p{L}\\p{N}]+[\\r\\n]*|\\s*[\\r\\n]+|\\s+(?!\\S)|\\s+",
+    "min_frequency": 2,
+    "tokenizer_training_seconds": 99.55861499998719,
+    "training_corpus": "all current500000 allowed train questions and codes; no heldout/test",
+    "training_pairs": 500000,
+    "training_texts": 1000000,
+    "training_corpus_sha256": "61483f4dc6970ff5f2b1afffa45d57391dcfc01ab6ec4f140c6e6b6c792c8c38",
+    "training_corpus_utf8_bytes": 198974144,
+    "tokenizer_sha256": "261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d",
+    "train_round_trip": {
+      "question": {
+        "utf8_bytes": {
+          "count": 500000,
+          "mean": 173.67401,
+          "min": 11,
+          "p50": 159,
+          "p95": 311,
+          "max": 512
+        },
+        "bpe_tokens": {
+          "count": 500000,
+          "mean": 46.375238,
+          "min": 5,
+          "p50": 43,
+          "p95": 81,
+          "max": 232
+        },
+        "total_bytes_per_bpe_token": 3.744972909896441
+      },
+      "code": {
+        "utf8_bytes": {
+          "count": 500000,
+          "mean": 224.274278,
+          "min": 54,
+          "p50": 205,
+          "p95": 405,
+          "max": 511
+        },
+        "bpe_tokens": {
+          "count": 500000,
+          "mean": 64.97733,
+          "min": 13,
+          "p50": 60,
+          "p95": 113,
+          "max": 291
+        },
+        "total_bytes_per_bpe_token": 3.4515773116562345
+      }
+    },
+    "validation64_round_trip": {
+      "question": {
+        "utf8_bytes": {
+          "count": 64,
+          "mean": 180.078125,
+          "min": 89,
+          "p50": 166,
+          "p95": 263,
+          "max": 359
+        },
+        "bpe_tokens": {
+          "count": 64,
+          "mean": 47.265625,
+          "min": 25,
+          "p50": 45,
+          "p95": 72,
+          "max": 102
+        },
+        "total_bytes_per_bpe_token": 3.809917355371901
+      },
+      "code": {
+        "utf8_bytes": {
+          "count": 64,
+          "mean": 221.34375,
+          "min": 82,
+          "p50": 208,
+          "p95": 338,
+          "max": 447
+        },
+        "bpe_tokens": {
+          "count": 64,
+          "mean": 63.75,
+          "min": 28,
+          "p50": 58,
+          "p95": 97,
+          "max": 134
+        },
+        "total_bytes_per_bpe_token": 3.472058823529412
+      }
+    },
+    "extra192_round_trip": {
+      "question": {
+        "utf8_bytes": {
+          "count": 192,
+          "mean": 171.68229166666666,
+          "min": 62,
+          "p50": 151,
+          "p95": 312,
+          "max": 489
+        },
+        "bpe_tokens": {
+          "count": 192,
+          "mean": 46.026041666666664,
+          "min": 18,
+          "p50": 41,
+          "p95": 86,
+          "max": 126
+        },
+        "total_bytes_per_bpe_token": 3.730112028969107
+      },
+      "code": {
+        "utf8_bytes": {
+          "count": 192,
+          "mean": 218.74479166666666,
+          "min": 77,
+          "p50": 198,
+          "p95": 386,
+          "max": 500
+        },
+        "bpe_tokens": {
+          "count": 192,
+          "mean": 64.05208333333333,
+          "min": 26,
+          "p50": 59,
+          "p95": 113,
+          "max": 126
+        },
+        "total_bytes_per_bpe_token": 3.4151081476662872
+      }
+    },
+    "new768_round_trip": {
+      "question": {
+        "utf8_bytes": {
+          "count": 768,
+          "mean": 173.32552083333334,
+          "min": 52,
+          "p50": 156,
+          "p95": 315,
+          "max": 464
+        },
+        "bpe_tokens": {
+          "count": 768,
+          "mean": 46.2265625,
+          "min": 16,
+          "p50": 42,
+          "p95": 83,
+          "max": 131
+        },
+        "total_bytes_per_bpe_token": 3.749478902597037
+      },
+      "code": {
+        "utf8_bytes": {
+          "count": 768,
+          "mean": 229.16276041666666,
+          "min": 64,
+          "p50": 205,
+          "p95": 422,
+          "max": 511
+        },
+        "bpe_tokens": {
+          "count": 768,
+          "mean": 65.83333333333333,
+          "min": 18,
+          "p50": 61,
+          "p95": 116,
+          "max": 150
+        },
+        "total_bytes_per_bpe_token": 3.48095332278481
+      }
+    },
+    "probe_round_trip_count": 17,
+    "loading_and_audit_seconds": 262.83886079117656,
+    "cache": {
+      "pairs": 500000,
+      "ids": 56676284,
+      "build_seconds_excluding_round_trip_audit": 133.22469033417292,
+      "dtype": "Python integer IDs, CPU tensors assembled per step as16/B",
+      "scope": "cache setup and audits excluded from train timer; both counted in setup wall time"
+    },
+    "digit_probes": [
+      {
+        "text": "0",
+        "pieces": [
+          "0"
+        ],
+        "content_ids": [
+          15
+        ]
+      },
+      {
+        "text": "500",
+        "pieces": [
+          "5",
+          "0",
+          "0"
+        ],
+        "content_ids": [
+          20,
+          15,
+          15
+        ]
+      },
+      {
+        "text": " 500",
+        "pieces": [
+          "Ġ",
+          "5",
+          "0",
+          "0"
+        ],
+        "content_ids": [
+          220,
+          20,
+          15,
+          15
+        ]
+      },
+      {
+        "text": "1500",
+        "pieces": [
+          "1",
+          "5",
+          "0",
+          "0"
+        ],
+        "content_ids": [
+          16,
+          20,
+          15,
+          15
+        ]
+      },
+      {
+        "text": "12345",
+        "pieces": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "content_ids": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      {
+        "text": "12346",
+        "pieces": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "6"
+        ],
+        "content_ids": [
+          16,
+          17,
+          18,
+          19,
+          21
+        ]
+      },
+      {
+        "text": "-12.50",
+        "pieces": [
+          "-",
+          "1",
+          "2",
+          ".",
+          "5",
+          "0"
+        ],
+        "content_ids": [
+          12,
+          16,
+          17,
+          13,
+          20,
+          15
+        ]
+      },
+      {
+        "text": "30%",
+        "pieces": [
+          "3",
+          "0",
+          "%"
+        ],
+        "content_ids": [
+          18,
+          15,
+          4
+        ]
+      },
+      {
+        "text": "1e-3",
+        "pieces": [
+          "1",
+          "e",
+          "-",
+          "3"
+        ],
+        "content_ids": [
+          16,
+          68,
+          12,
+          18
+        ]
+      }
+    ],
+    "saved_bpe4k18_train_lengths": {
+      "question": {
+        "utf8_bytes": {
+          "count": 500000,
+          "mean": 173.67401,
+          "min": 11,
+          "p50": 159,
+          "p95": 311,
+          "max": 512
+        },
+        "bpe_tokens": {
+          "count": 500000,
+          "mean": 44.37005,
+          "min": 4,
+          "p50": 40,
+          "p95": 81,
+          "max": 233
+        },
+        "total_bytes_per_bpe_token": 3.914217135207195
+      },
+      "code": {
+        "utf8_bytes": {
+          "count": 500000,
+          "mean": 224.274278,
+          "min": 54,
+          "p50": 205,
+          "p95": 405,
+          "max": 511
+        },
+        "bpe_tokens": {
+          "count": 500000,
+          "mean": 64.812624,
+          "min": 14,
+          "p50": 58,
+          "p95": 121,
+          "max": 294
+        },
+        "total_bytes_per_bpe_token": 3.460348681454403
+      }
+    },
+    "online_cached_batch_parity_count": 17
+  },
+  "initial_phase": {
+    "full500k_pinned_selection_and_byte_round_trip": true,
+    "all17_online_cache_parity_batches": true,
+    "tokenizer_training_pairs": 500000,
+    "model_LR_named_definitions_and_KV_exactly_unchanged_from15": true,
+    "same_current_initial_weights_RNG_reproducibility": true,
+    "row_vs_index_sampling_20_private_batches": true,
+    "total_optimizer_updates": 11,
+    "controlled_interruption_updates": 1,
+    "notebook_updates": 4,
+    "online_control_updates": 4,
+    "checkpoint_resume_updates": 2,
+    "cached_vs_online_with_diagnostics_weights_AdamW_LR_RNG_coverage_exact": true,
+    "checkpoint2_to4_weights_AdamW_LR_RNG_coverage_exact": true,
+    "initial_final_KV_full_prefix_greedy_parity": true,
+    "early64_full1024_controls_executed": true,
+    "byte_NLL_weighting_paired_reference_logic": true,
+    "fixed_numeric_denominators": {
+      "heldout256": 223,
+      "heldout1024": 888
+    },
+    "rerun_guard": true,
+    "partial_archive_CRC_manifest_SHA256": true,
+    "failure_after_checks": "Final cell16 referenced old saved_swiglu15 comparison key; changed to saved_bpe4k18 before delivery."
+  },
+  "retest_phase": {
+    "changed_cell": 16,
+    "all_other_notebook_cells_identical_to_initial_smoke": true,
+    "final_validation64_byte512": true,
+    "final_comparison_saved_bpe4k18_link": true,
+    "test_rows_generated": 2,
+    "test_metadata_source_order_checked": true,
+    "full_archive_CRC_manifest_SHA256_with_tokenizer_fresh_test": true,
+    "no_optimizer_updates_in_retest": true,
+    "weights_AdamW_scheduler_RNG_preserved": true,
+    "fresh1024_reserved_unchanged_unscored": true,
+    "seconds": 21.813653292134404
+  },
+  "generation_cap_during_model_smoke": 4,
+  "limits": [
+    "CPU implementation checks, not100000-step LM training/quality/T4 timing.",
+    "Saved old18 controls were aliased to step4 solely to test comparison plumbing.",
+    "Full1919 generation and Colab browser download not performed; only2 test rows and mock download.",
+    "Tokenizer corpus and round-trip were audited on all500k; tokenizer fitting on CPU was performed, not a saved user result."
+  ],
+  "final_cells_retest_notebook_sha256": "6e77c560cf5a31770e30d107224e33afec524ffddbf865aba7fee7391a6e5f1c",
+  "metadata_only_update_after_execution": {
+    "colab_name": "19-qwen-style-bpe-8k-swiglu-500k-pairs-100000-steps.ipynb",
+    "all_cells_identical_to_final_retest": true
+  }
+}

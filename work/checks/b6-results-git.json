@@ -1,0 +1,69 @@
+{
+  "paths": [
+    "work/notes/b6-results.md",
+    "work/research/analyze-b6-results.py",
+    "work/results/b6-results.json",
+    "work/results/b6-ensemble-grid.csv.gz",
+    "work/checks/b6-results-cpu.json",
+    "work/checks/b6-results-download.json",
+    "work/checks/b6-results-validation.json",
+    "work/checks/b6-results-git.json",
+    "work/checks/b6-results-bibliography.patch",
+    "courses/nlp/index.md",
+    "courses/nlp/progress.md",
+    "courses/nlp/backlog.md",
+    "README.md",
+    "dashboard.md"
+  ],
+  "bibliography_staged_only_via_patch": "work/checks/b6-results-bibliography.patch",
+  "message": "nlp: analyze B6 cooldown and correct ensemble selection bias",
+  "foreign_v10_changes_excluded": true,
+  "staged_before": {
+    "command": [
+      "git",
+      "diff",
+      "--cached",
+      "--name-only"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "bibliography_patch_check": {
+    "command": [
+      "git",
+      "apply",
+      "--cached",
+      "--check",
+      "work/checks/b6-results-bibliography.patch"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "add": {
+    "command": [
+      "git",
+      "add",
+      "--",
+      "work/notes/b6-results.md",
+      "work/research/analyze-b6-results.py",
+      "work/results/b6-results.json",
+      "work/results/b6-ensemble-grid.csv.gz",
+      "work/checks/b6-results-cpu.json",
+      "work/checks/b6-results-download.json",
+      "work/checks/b6-results-validation.json",
+      "work/checks/b6-results-git.json",
+      "work/checks/b6-results-bibliography.patch",
+      "courses/nlp/index.md",
+      "courses/nlp/progress.md",
+      "courses/nlp/backlog.md",
+      "README.md",
+      "dashboard.md"
+    ],
+    "returncode": 128,
+    "stdout": "",
+    "stderr": "fatal: Unable to create '<vault>/.git/worktrees/study1/index.lock': Operation not permitted\n"
+  },
+  "commit_skipped": "Staging blocked; no commit can be created"
+}

@@ -1,0 +1,139 @@
+{
+  "date": "2026-10-09",
+  "notebook_sha256": "4caefb22072195c9512dcf6234d09ee3c9354bfbd2125017579ef49eff0fcff2",
+  "cells": 25,
+  "code_cells": 13,
+  "syntax_and_empty_outputs_counts": true,
+  "relative_paths": true,
+  "model_SwiGLU_KV_loss_batching_coverage_optimizer_update_unchanged": true,
+  "original_reference888_AST_and_evaluation_state_preserver_unchanged": true,
+  "all25000_LR_values_checked_monotonic_no_restart": true,
+  "LR_probes": {
+    "75001": 0.0001,
+    "80000": 9.140842374708975e-05,
+    "85000": 6.890899169515747e-05,
+    "87500": 5.500282754648823e-05,
+    "90000": 4.109638659590678e-05,
+    "95000": 1.8594900060676975e-05,
+    "99999": 1.0000000355334183e-05,
+    "100000": 1e-05,
+    "100001": 1e-05
+  },
+  "saved_manual74_original_and_augassign_all8_controls_reproduced": {
+    "18/75000": {
+      "original": {
+        "scored": 74,
+        "correct": 15,
+        "wrong": 57,
+        "unknown": 2
+      },
+      "augassign": {
+        "scored": 74,
+        "correct": 15,
+        "wrong": 59,
+        "unknown": 0
+      }
+    },
+    "18/100000": {
+      "original": {
+        "scored": 74,
+        "correct": 14,
+        "wrong": 59,
+        "unknown": 1
+      },
+      "augassign": {
+        "scored": 74,
+        "correct": 14,
+        "wrong": 60,
+        "unknown": 0
+      }
+    },
+    "19/75000": {
+      "original": {
+        "scored": 74,
+        "correct": 13,
+        "wrong": 58,
+        "unknown": 3
+      },
+      "augassign": {
+        "scored": 74,
+        "correct": 13,
+        "wrong": 59,
+        "unknown": 2
+      }
+    },
+    "19/100000": {
+      "original": {
+        "scored": 74,
+        "correct": 12,
+        "wrong": 60,
+        "unknown": 2
+      },
+      "augassign": {
+        "scored": 74,
+        "correct": 13,
+        "wrong": 60,
+        "unknown": 1
+      }
+    },
+    "20/75000": {
+      "original": {
+        "scored": 74,
+        "correct": 11,
+        "wrong": 61,
+        "unknown": 2
+      },
+      "augassign": {
+        "scored": 74,
+        "correct": 11,
+        "wrong": 62,
+        "unknown": 1
+      }
+    },
+    "20/100000": {
+      "original": {
+        "scored": 74,
+        "correct": 13,
+        "wrong": 60,
+        "unknown": 1
+      },
+      "augassign": {
+        "scored": 74,
+        "correct": 14,
+        "wrong": 60,
+        "unknown": 0
+      }
+    },
+    "21/75000": {
+      "original": {
+        "scored": 74,
+        "correct": 17,
+        "wrong": 54,
+        "unknown": 3
+      },
+      "augassign": {
+        "scored": 74,
+        "correct": 18,
+        "wrong": 55,
+        "unknown": 1
+      }
+    },
+    "21/100000": {
+      "original": {
+        "scored": 74,
+        "correct": 18,
+        "wrong": 54,
+        "unknown": 2
+      },
+      "augassign": {
+        "scored": 74,
+        "correct": 19,
+        "wrong": 55,
+        "unknown": 0
+      }
+    }
+  },
+  "no_supplied_program_execution": true,
+  "source_checkpoint_sha256": "cbdc205be3842f02ea7eabc024d2417934aac2dd3de47da1058b1ccb2ff4eaa1",
+  "limits": "Static checks and rescoring saved generations only; no training, GPU or new quality/speed measurements."
+}

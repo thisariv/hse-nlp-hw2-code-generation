@@ -1,0 +1,1089 @@
+[
+  {
+    "at_utc": "2026-10-19T14:36:26.268479+00:00",
+    "version": 1,
+    "status": "QUEUED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 53515.615,
+      "used_seconds": 54484.385,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    }
+  },
+  {
+    "at_utc": "2026-10-19T14:37:13.606647+00:00",
+    "version": 1,
+    "status": "QUEUED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 53515.615,
+      "used_seconds": 54484.385,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    }
+  },
+  {
+    "at_utc": "2026-10-19T14:37:45.278486+00:00",
+    "version": 1,
+    "status": "QUEUED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 53515.615,
+      "used_seconds": 54484.385,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 1.7e-05,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T14:38:08.283846+00:00",
+    "version": 1,
+    "status": "QUEUED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 53515.615,
+      "used_seconds": 54484.385,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 102.014637,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T14:39:02.585191+00:00",
+    "version": 1,
+    "status": "QUEUED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 53515.615,
+      "used_seconds": 54484.385,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 156.316064,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T14:40:01.119955+00:00",
+    "version": 1,
+    "status": "QUEUED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 53515.615,
+      "used_seconds": 54484.385,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 214.849963,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T14:41:16.070326+00:00",
+    "version": 1,
+    "status": "QUEUED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 53515.615,
+      "used_seconds": 54484.385,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 289.800278,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T14:42:20.874389+00:00",
+    "version": 1,
+    "status": "QUEUED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 53515.615,
+      "used_seconds": 54484.385,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 354.604029,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T14:43:22.358348+00:00",
+    "version": 1,
+    "status": "QUEUED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 53515.615,
+      "used_seconds": 54484.385,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 416.088226,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T14:44:23.805244+00:00",
+    "version": 1,
+    "status": "QUEUED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 53515.615,
+      "used_seconds": 54484.385,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 477.534796,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T14:45:29.674241+00:00",
+    "version": 1,
+    "status": "QUEUED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 53515.615,
+      "used_seconds": 54484.385,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 543.403575,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T14:46:31.178522+00:00",
+    "version": 1,
+    "status": "QUEUED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 53515.615,
+      "used_seconds": 54484.385,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 604.908613,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T14:47:40.267693+00:00",
+    "version": 1,
+    "status": "QUEUED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 53515.615,
+      "used_seconds": 54484.385,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 673.997699,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T14:48:45.327992+00:00",
+    "version": 1,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 53515.615,
+      "used_seconds": 54484.385,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 2.4e-05,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T14:49:54.294814+00:00",
+    "version": 2,
+    "status": "QUEUED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 53515.615,
+      "used_seconds": 54484.385,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 2.5e-05,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T14:50:53.811356+00:00",
+    "version": 2,
+    "status": "QUEUED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 53515.615,
+      "used_seconds": 54484.385,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 59.5166,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T14:51:57.511655+00:00",
+    "version": 2,
+    "status": "QUEUED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 53515.615,
+      "used_seconds": 54484.385,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 123.216925,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T14:53:15.702700+00:00",
+    "version": 2,
+    "status": "QUEUED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 53515.615,
+      "used_seconds": 54484.385,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 201.407976,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T14:54:21.506953+00:00",
+    "version": 2,
+    "status": "QUEUED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 53515.615,
+      "used_seconds": 54484.385,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 267.212178,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T14:55:30.196511+00:00",
+    "version": 2,
+    "status": "QUEUED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 53515.615,
+      "used_seconds": 54484.385,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 335.901007,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T14:56:24.974696+00:00",
+    "version": 2,
+    "status": "QUEUED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 53515.615,
+      "used_seconds": 54484.385,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 390.679838,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T14:57:22.461885+00:00",
+    "version": 2,
+    "status": "QUEUED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 53515.615,
+      "used_seconds": 54484.385,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 448.166889,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T14:58:18.774304+00:00",
+    "version": 2,
+    "status": "QUEUED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 53515.615,
+      "used_seconds": 54484.385,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 504.4796,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T14:59:34.484603+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 53509.081103,
+      "used_seconds": 54490.918897,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 4.2e-05,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:00:31.214845+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 53452.13528,
+      "used_seconds": 54547.86472,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 56.730561,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:01:34.858545+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 53388.467142,
+      "used_seconds": 54611.532858,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 120.375079,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:01:58.502351+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 53366.586604,
+      "used_seconds": 54633.413396,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "listing_binding": "versioned empty; latest fallback with current version verified",
+    "status_observed_seconds": 144.018912,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:02:52.459298+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 53312.35123,
+      "used_seconds": 54687.64877,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "listing_binding": "versioned empty; latest fallback with current version verified",
+    "status_observed_seconds": 197.97582,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:03:48.387952+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 53256.370675,
+      "used_seconds": 54743.629325,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "listing_binding": "versioned empty; latest fallback with current version verified",
+    "status_observed_seconds": 253.903993,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:04:53.881016+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 53190.832907,
+      "used_seconds": 54809.167093,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "listing_binding": "versioned empty; latest fallback with current version verified",
+    "status_observed_seconds": 319.397331,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:06:06.948131+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 53117.670507,
+      "used_seconds": 54882.329493,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "listing_binding": "versioned empty; latest fallback with current version verified",
+    "status_observed_seconds": 392.463678,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:07:08.991769+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 53056.116417,
+      "used_seconds": 54943.883583,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "listing_binding": "versioned empty; latest fallback with current version verified",
+    "status_observed_seconds": 454.507856,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:08:20.516921+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 52985.049174,
+      "used_seconds": 55014.950826,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "listing_binding": "versioned empty; latest fallback with current version verified",
+    "status_observed_seconds": 526.033122,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:09:40.275264+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 52904.412328,
+      "used_seconds": 55095.587672,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "listing_binding": "versioned empty; latest fallback with current version verified",
+    "status_observed_seconds": 605.791887,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:10:45.249881+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 52839.386265,
+      "used_seconds": 55160.613735,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "listing_binding": "versioned empty; latest fallback with current version verified",
+    "status_observed_seconds": 670.764288,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:11:41.692581+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 52782.911752,
+      "used_seconds": 55217.088248,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "listing_binding": "versioned empty; latest fallback with current version verified",
+    "status_observed_seconds": 727.209012,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:12:38.147239+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 52726.596846,
+      "used_seconds": 55273.403154,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "listing_binding": "versioned empty; latest fallback with current version verified",
+    "status_observed_seconds": 783.662393,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:13:38.417534+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 52667.068438,
+      "used_seconds": 55332.931562,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "listing_binding": "versioned empty; latest fallback with current version verified",
+    "status_observed_seconds": 843.933207,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:14:41.851739+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 52603.316578,
+      "used_seconds": 55396.683422,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "listing_binding": "versioned empty; latest fallback with current version verified",
+    "status_observed_seconds": 907.367532,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:15:39.418119+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 52571.74,
+      "used_seconds": 55428.26,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "listing_binding": "versioned empty; latest fallback with current version verified",
+    "status_observed_seconds": 964.934656,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:16:38.908154+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 52517.210417,
+      "used_seconds": 55482.789583,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "listing_binding": "versioned empty; latest fallback with current version verified",
+    "status_observed_seconds": 1024.424543,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:17:43.257409+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 52452.999982,
+      "used_seconds": 55547.000018,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "listing_binding": "versioned empty; latest fallback with current version verified",
+    "status_observed_seconds": 1088.77395,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:18:39.168466+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 52396.886995,
+      "used_seconds": 55603.113005,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "listing_binding": "versioned empty; latest fallback with current version verified",
+    "status_observed_seconds": 1144.685,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:19:48.331799+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 52328.421016,
+      "used_seconds": 55671.578984,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "listing_binding": "versioned empty; latest fallback with current version verified",
+    "status_observed_seconds": 1213.848413,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:21:09.062766+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 52247.024703,
+      "used_seconds": 55752.975297,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "listing_binding": "versioned empty; latest fallback with current version verified",
+    "status_observed_seconds": 1294.578872,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:22:10.388229+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 52197.172142,
+      "used_seconds": 55802.827858,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "listing_binding": "versioned empty; latest fallback with current version verified",
+    "status_observed_seconds": 1355.904836,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:23:16.526016+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "listing_binding": "versioned empty; latest fallback with current version verified",
+    "status_observed_seconds": 1422.041612,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:24:17.878693+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "listing_binding": "versioned empty; latest fallback with current version verified",
+    "status_observed_seconds": 1483.394208,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:25:14.392629+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "listing_binding": "versioned empty; latest fallback with current version verified",
+    "status_observed_seconds": 1539.908805,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:26:12.022153+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "listing_binding": "versioned empty; latest fallback with current version verified",
+    "status_observed_seconds": 1597.538,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:27:09.914754+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "listing_binding": "versioned empty; latest fallback with current version verified",
+    "status_observed_seconds": 1655.43055,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:28:11.506647+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "listing_binding": "versioned empty; latest fallback with current version verified",
+    "status_observed_seconds": 1717.022628,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:29:30.646844+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "listing_binding": "versioned empty; latest fallback with current version verified",
+    "status_observed_seconds": 1796.161974,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:30:32.965687+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "listing_binding": "versioned empty; latest fallback with current version verified",
+    "status_observed_seconds": 1858.48211,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:31:42.076530+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "listing_binding": "versioned empty; latest fallback with current version verified",
+    "status_observed_seconds": 1927.592263,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:32:47.257301+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "listing_binding": "versioned empty; latest fallback with current version verified",
+    "status_observed_seconds": 1992.773602,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:33:50.271378+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "listing_binding": "versioned empty; latest fallback with current version verified",
+    "status_observed_seconds": 2055.78757,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:34:59.738117+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "listing_binding": "versioned empty; latest fallback with current version verified",
+    "status_observed_seconds": 2125.254647,
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-19T15:36:04.239403+00:00",
+    "version": 2,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "own_push_calls": 1,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "output_visible": false,
+    "log_chars": 0,
+    "listing_binding": "versioned empty; latest fallback with current version verified",
+    "status_observed_seconds": 2189.755697,
+    "wait_threshold_crossed": false
+  }
+]

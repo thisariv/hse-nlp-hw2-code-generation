@@ -1,0 +1,126 @@
+{
+  "ZIP_SHA256": "b0f0cdd628966024e7634169340f989948604cee8c715f0d867eaa24bcd5e65d",
+  "ZIP_bytes": 691182608,
+  "notebook_SHA256": "5d104fcccc6423a6451aed3bc1cf20484cf5aaf584962836d9c50e1539995362",
+  "modules_identical": true,
+  "protocol_code_SHA256": "85961ee88a307ac5d0457686ea3a7770aab878d6ada0e98f5841dfd1de52fa35",
+  "cell_source_differences": [
+    {
+      "cell": 4,
+      "change": "INPUT_MODE auto -> drive"
+    }
+  ],
+  "notebook_errors": 0,
+  "notebook_execution_counts": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    null,
+    null,
+    12
+  ],
+  "notebook_output_limitation": "Cells12/14 have null execution_count,14 no output; ZIP contains final receipts/decision/test and is authoritative for completed scores.",
+  "new_LM_updates": 0,
+  "new_GPU_runs": 0,
+  "CPU_CE_or_greedy_reruns": 0,
+  "CRC_manifest_SHA_verified_files": 86,
+  "data_plan_hashes_unique_length_hashheldout_no_test_old_fresh_overlap": true,
+  "train_corpus_reloaded_locally": false,
+  "fresh_evaluations": 0,
+  "models": {
+    "R5": {
+      "finite_FP32_strict_load": true,
+      "parameters": 12086912,
+      "file_SHA256": "0459432561dc0b19605d7516062e70ef9c45a4dcbb21b8cd8ee2a59687f7de09"
+    },
+    "L1": {
+      "finite_FP32_strict_load": true,
+      "parameters": 12086912,
+      "file_SHA256": "fef9cecc4ea376c0b824c7a24a8754a99e862d401a1411cab4608a34d196ed81",
+      "full_checkpoint": true,
+      "optimizer_parameters": 144,
+      "all_optimizer_steps": 6250,
+      "finite_optimizer_moments": true,
+      "scheduler_last_update": 6250,
+      "GradScaler": {
+        "scale": 8192.0,
+        "growth_factor": 2.0,
+        "backoff_factor": 0.5,
+        "growth_interval": 2000,
+        "_growth_tracker": 250
+      },
+      "RNG_states_present": true,
+      "model_tensor_SHA256": "54f08713e8a234f8b6aacd971e953995406df5e42d862e3847aaea88a640064c",
+      "checkpoint_bytes": 145223339
+    },
+    "L2": {
+      "finite_FP32_strict_load": true,
+      "parameters": 12086912,
+      "file_SHA256": "c9f83b87015638a15842d93354f570975008fa2937ae92f9d29d7210c167d08f",
+      "full_checkpoint": true,
+      "optimizer_parameters": 144,
+      "all_optimizer_steps": 6250,
+      "finite_optimizer_moments": true,
+      "scheduler_last_update": 6250,
+      "GradScaler": {
+        "scale": 8192.0,
+        "growth_factor": 2.0,
+        "backoff_factor": 0.5,
+        "growth_interval": 2000,
+        "_growth_tracker": 250
+      },
+      "RNG_states_present": true,
+      "model_tensor_SHA256": "4151697a66cec6e108808b68dce132d74028ad8798ff8ddd0d9b24889da68c09",
+      "checkpoint_bytes": 145223339
+    },
+    "L3": {
+      "finite_FP32_strict_load": true,
+      "parameters": 12086912,
+      "file_SHA256": "17ec316fa33f61a8202e8b0c55f4e3c6bc21f8ac244ced4b9e6986e2e6f45a12",
+      "full_checkpoint": true,
+      "optimizer_parameters": 144,
+      "all_optimizer_steps": 6250,
+      "finite_optimizer_moments": true,
+      "scheduler_last_update": 6250,
+      "GradScaler": {
+        "scale": 8192.0,
+        "growth_factor": 2.0,
+        "backoff_factor": 0.5,
+        "growth_interval": 2000,
+        "_growth_tracker": 250
+      },
+      "RNG_states_present": true,
+      "model_tensor_SHA256": "06cf79a6d4dd2fee58c9f1141f33b10add7fc1a4f4bdb8659784219e14bef7a6",
+      "checkpoint_bytes": 145223339
+    },
+    "D0": {
+      "finite_FP32_strict_load": true,
+      "parameters": 12086912,
+      "file_SHA256": "597451d05c0130b4aef09eb0d504180b8056ca9f1368a0961454310e99ffb4c6",
+      "full_checkpoint": true,
+      "optimizer_parameters": 144,
+      "all_optimizer_steps": 6250,
+      "finite_optimizer_moments": true,
+      "scheduler_last_update": 6250,
+      "GradScaler": {
+        "scale": 8192.0,
+        "growth_factor": 2.0,
+        "backoff_factor": 0.5,
+        "growth_interval": 2000,
+        "_growth_tracker": 250
+      },
+      "RNG_states_present": true,
+      "model_tensor_SHA256": "994f4a36e2100aeee5d267cbeb8551d5026340138c1615f72236acd100a7c9b8",
+      "checkpoint_bytes": 145223339
+    }
+  },
+  "common_normalized_initial_verified": true,
+  "counts_updates_schedule_saved_exec_McNemar_bins_decisions_verified": true,
+  "generated_tokens_decode_EOS_order_answer_SHA_verified": true,
+  "R5_replay_runs": 0,
+  "stored_notebook_SHA256": "36913bf4a2a47021062c22f5fe4b59741e6e3bf03fa3f8daf5d2b6d4f38db4f6",
+  "only_Colab_metadata_removed": true
+}

@@ -1,0 +1,472 @@
+{
+  "GPU": false,
+  "push": false,
+  "fixtures": [
+    {
+      "case": "complete",
+      "seconds": 1.4492904169019312,
+      "real_executor": true,
+      "real_winner_reexecution": true,
+      "adaptive": {
+        "K1": 2,
+        "K2": 6,
+        "unanimity_threshold": 1.0,
+        "stopped_rows": [
+          0
+        ],
+        "escalated_rows": [
+          1,
+          2
+        ],
+        "undecided_rows": [],
+        "stage2_waves": [
+          {
+            "questions": 2,
+            "pending_stage1_rows": 0,
+            "row_ids": [
+              1,
+              2
+            ],
+            "leader_fraction_min": 0.4,
+            "leader_fraction_max": 0.4
+          }
+        ],
+        "stage2_order": [
+          1,
+          2
+        ],
+        "stage2_priority": "stage1_leader_fraction_then_length_then_id",
+        "stage1_leader_fractions": {
+          "1": 0.4,
+          "2": 0.4
+        },
+        "mean_sample_count": 9.333333333333334,
+        "scorer_enabled": false
+      },
+      "partial": 0
+    },
+    {
+      "case": "guard1",
+      "seconds": 1.4015301251783967,
+      "real_executor": true,
+      "real_winner_reexecution": true,
+      "adaptive": {
+        "K1": 2,
+        "K2": 6,
+        "unanimity_threshold": 1.0,
+        "stopped_rows": [],
+        "escalated_rows": [],
+        "undecided_rows": [
+          0,
+          1,
+          2
+        ],
+        "stage2_waves": [],
+        "stage2_order": [],
+        "stage2_priority": "stage1_leader_fraction_then_length_then_id",
+        "stage1_leader_fractions": {},
+        "mean_sample_count": 2.0,
+        "scorer_enabled": false
+      },
+      "partial": 3
+    },
+    {
+      "case": "guard2",
+      "seconds": 1.3466268330812454,
+      "real_executor": true,
+      "real_winner_reexecution": true,
+      "adaptive": {
+        "K1": 2,
+        "K2": 6,
+        "unanimity_threshold": 1.0,
+        "stopped_rows": [
+          0
+        ],
+        "escalated_rows": [
+          1,
+          2
+        ],
+        "undecided_rows": [],
+        "stage2_waves": [
+          {
+            "questions": 2,
+            "pending_stage1_rows": 0,
+            "row_ids": [
+              1,
+              2
+            ],
+            "leader_fraction_min": 0.4,
+            "leader_fraction_max": 0.4
+          }
+        ],
+        "stage2_order": [
+          1,
+          2
+        ],
+        "stage2_priority": "stage1_leader_fraction_then_length_then_id",
+        "stage1_leader_fractions": {
+          "1": 0.4,
+          "2": 0.4
+        },
+        "mean_sample_count": 6.666666666666667,
+        "scorer_enabled": false
+      },
+      "partial": 2
+    },
+    {
+      "case": "oom",
+      "seconds": 1.3865237499121577,
+      "real_executor": true,
+      "real_winner_reexecution": true,
+      "adaptive": {
+        "K1": 2,
+        "K2": 6,
+        "unanimity_threshold": 1.0,
+        "stopped_rows": [
+          0
+        ],
+        "escalated_rows": [
+          1,
+          2
+        ],
+        "undecided_rows": [],
+        "stage2_waves": [
+          {
+            "questions": 2,
+            "pending_stage1_rows": 0,
+            "row_ids": [
+              1,
+              2
+            ],
+            "leader_fraction_min": 0.4,
+            "leader_fraction_max": 0.4
+          }
+        ],
+        "stage2_order": [
+          1,
+          2
+        ],
+        "stage2_priority": "stage1_leader_fraction_then_length_then_id",
+        "stage1_leader_fractions": {
+          "1": 0.4,
+          "2": 0.4
+        },
+        "mean_sample_count": 9.333333333333334,
+        "scorer_enabled": false
+      },
+      "partial": 0
+    },
+    {
+      "case": "priority",
+      "seconds": 1.1010379169601947,
+      "real_executor": false,
+      "real_winner_reexecution": true,
+      "adaptive": {
+        "K1": 2,
+        "K2": 6,
+        "unanimity_threshold": 1.0,
+        "stopped_rows": [
+          0
+        ],
+        "escalated_rows": [
+          1,
+          2
+        ],
+        "undecided_rows": [],
+        "stage2_waves": [
+          {
+            "questions": 1,
+            "pending_stage1_rows": 0,
+            "row_ids": [
+              2
+            ],
+            "leader_fraction_min": 0.2,
+            "leader_fraction_max": 0.2
+          },
+          {
+            "questions": 1,
+            "pending_stage1_rows": 0,
+            "row_ids": [
+              1
+            ],
+            "leader_fraction_min": 0.6,
+            "leader_fraction_max": 0.6
+          }
+        ],
+        "stage2_order": [
+          2,
+          1
+        ],
+        "stage2_priority": "stage1_leader_fraction_then_length_then_id",
+        "stage1_leader_fractions": {
+          "1": 0.6,
+          "2": 0.2
+        },
+        "mean_sample_count": 9.333333333333334,
+        "scorer_enabled": false
+      },
+      "partial": 0
+    },
+    {
+      "case": "priority_guard",
+      "seconds": 1.3440709998831153,
+      "real_executor": true,
+      "real_winner_reexecution": true,
+      "adaptive": {
+        "K1": 2,
+        "K2": 6,
+        "unanimity_threshold": 1.0,
+        "stopped_rows": [
+          0
+        ],
+        "escalated_rows": [
+          1,
+          2
+        ],
+        "undecided_rows": [],
+        "stage2_waves": [
+          {
+            "questions": 1,
+            "pending_stage1_rows": 0,
+            "row_ids": [
+              2
+            ],
+            "leader_fraction_min": 0.2,
+            "leader_fraction_max": 0.2
+          }
+        ],
+        "stage2_order": [
+          2,
+          1
+        ],
+        "stage2_priority": "stage1_leader_fraction_then_length_then_id",
+        "stage1_leader_fractions": {
+          "1": 0.6,
+          "2": 0.2
+        },
+        "mean_sample_count": 6.666666666666667,
+        "scorer_enabled": false
+      },
+      "partial": 1
+    }
+  ],
+  "v3_v4_v5_regressions": true,
+  "real_pipeline": {
+    "passed": true,
+    "real_tiny_CPU_decoder": true,
+    "real_tokenizer_pack_execution": true,
+    "K1": 2,
+    "K2": 6,
+    "cap": 16,
+    "seconds": 1.4139111251570284,
+    "GPU": false
+  },
+  "decoder": {
+    "cache": {
+      "passed": true,
+      "stable_self_and_cross_pointers": true,
+      "initialized_prefix_only": true,
+      "reorder_and_continue": true,
+      "PAD_mask": true,
+      "K4_cross_repeat": true
+    },
+    "tiny_decoder": {
+      "passed": true,
+      "greedy_tiny_FP32": {
+        "share_cross": true,
+        "async_eos": true,
+        "compact_done": true,
+        "race_sampler": true,
+        "lean_greedy": true,
+        "all": true
+      },
+      "staggered_EOS_K4_compactions": {
+        "steps": 12,
+        "eos_checks": 6,
+        "compactions": [
+          {
+            "step": 4,
+            "before": 12,
+            "after": 8
+          },
+          {
+            "step": 6,
+            "before": 8,
+            "after": 6
+          },
+          {
+            "step": 8,
+            "before": 6,
+            "after": 4
+          },
+          {
+            "step": 10,
+            "before": 4,
+            "after": 2
+          }
+        ],
+        "async_eos": false,
+        "rng_stream_may_change": true
+      },
+      "sampling_baseline_RNG_exact_without_flags": true,
+      "race_probabilities": [
+        0.0,
+        0.09690000116825104,
+        0.20102499425411224,
+        0.7020750045776367
+      ],
+      "no_EOS_capacity_boundary": true
+    },
+    "real_L3_FP32_subset": {
+      "passed": true,
+      "real_L3_weights": true,
+      "weight_sha256": "8c11b1038855422b6912e243049a554317978f848edb412ed48aebbe4cb6b886",
+      "dtype": "float32",
+      "test_row_ids": [
+        1287,
+        399,
+        208,
+        460
+      ],
+      "capacity": 512,
+      "baseline_steps": 96,
+      "variants": {
+        "all": {
+          "greedy_bit_exact": true,
+          "steps": 96,
+          "eos_checks": 3,
+          "compactions": [
+            {
+              "step": 32,
+              "before": 4,
+              "after": 3
+            },
+            {
+              "step": 64,
+              "before": 3,
+              "after": 1
+            }
+          ],
+          "async_eos": false,
+          "rng_stream_may_change": true
+        }
+      },
+      "seconds": 4.4850152500439435
+    },
+    "passed": true,
+    "production_all_options_identical": true,
+    "K6_one_hot_sampling_tokens_LP_exact": true,
+    "GPU": false,
+    "async_CUDA_branch": "covered by existing T4 profile; CPU uses synchronous fallback"
+  },
+  "executor": {
+    "passed": true,
+    "pending_queue_and_cache_preserved": true,
+    "parent_priority_unchanged": true,
+    "workers": 4,
+    "worker_history": [
+      2,
+      4
+    ],
+    "service_state": {
+      "workers": 4,
+      "nice_requested_increment": 10,
+      "nice": 0,
+      "nice_applied": false,
+      "nice_error": "[Errno 1] Operation not permitted"
+    },
+    "requested_candidates": 36,
+    "unique_programs": 32,
+    "deduplicated": 4,
+    "completed_unique": 32,
+    "service_wall_seconds": 0.2086458329576999,
+    "sum_worker_task_wall_seconds": 0.06936395796947181,
+    "sum_worker_task_cpu_seconds": 0.06742299999999996,
+    "first_submit_to_last_result_seconds": 0.20653058402240276,
+    "service_wall_includes_GPU_wait": true,
+    "wall_limit": 3.0,
+    "cpu_limit": 2.0,
+    "memory_bytes": 805306368,
+    "overlap": true,
+    "isolation": "fresh numeric namespaces / pristine SymPy fork",
+    "error": null
+  },
+  "static": {
+    "passed": true,
+    "nbformat_compile_identity_frozen_base": true,
+    "private_offline_T4_account_mounts_title": true,
+    "budgets_watchdog_one_test_one_tune": true,
+    "L3_weight_SHA": true,
+    "P1_unchanged": true
+  },
+  "suite": {
+    "passed": true,
+    "one_cold_test_then_tune_mocked": true,
+    "no_gold_in_test": true,
+    "custom_pair_without_L3_journals": false
+  },
+  "custom_weights_builder": {
+    "passed": true,
+    "one_cold_test_then_tune_mocked": true,
+    "no_gold_in_test": true,
+    "custom_pair_without_L3_journals": true
+  },
+  "all_winners_reexecution": {
+    "checked_rows": 2048,
+    "complete": true,
+    "mismatch_rows": [],
+    "execution": {
+      "workers": 4,
+      "worker_history": [
+        4
+      ],
+      "service_state": {
+        "workers": 4,
+        "nice_requested_increment": 10,
+        "nice": 0,
+        "nice_applied": false,
+        "nice_error": "[Errno 1] Operation not permitted"
+      },
+      "requested_candidates": 2048,
+      "unique_programs": 2041,
+      "deduplicated": 7,
+      "completed_unique": 2041,
+      "service_wall_seconds": 0.7457842919975519,
+      "sum_worker_task_wall_seconds": 1.2323947129771113,
+      "sum_worker_task_cpu_seconds": 1.0239950000000022,
+      "first_submit_to_last_result_seconds": 0.7287592920474708,
+      "service_wall_includes_GPU_wait": true,
+      "wall_limit": 3.0,
+      "cpu_limit": 2.0,
+      "memory_bytes": 805306368,
+      "overlap": true,
+      "isolation": "fresh numeric namespaces / pristine SymPy fork",
+      "error": null
+    }
+  },
+  "passed": true,
+  "K1": 2,
+  "K2": 6,
+  "known_FP16_greedy_difference_accepted": [
+    {
+      "variant": "all",
+      "load_workers": 0,
+      "nice": 0,
+      "rows": 1919,
+      "mismatch_rows": [
+        274
+      ]
+    },
+    {
+      "variant": "all",
+      "load_workers": 2,
+      "nice": 10,
+      "rows": 1919,
+      "mismatch_rows": [
+        358,
+        1563,
+        274
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+--- a/knowledge/bibliography.md
++++ b/knowledge/bibliography.md
+@@ -1,4 +1,6 @@
+ # Библиография
++
++- <a id="kaggle-b6-results"></a> **kaggle-b6-results**. Собственный CPU-разбор19.10.2026 `friend1/nlp-hw02-b6/1`, старт10:05UTC по сообщению пользователя: [[work/notes/b6-results|Результаты B6, поправка на отбор и календарь]]. Локальный COMPLETE snapshot:186producer SHA/49400q0 cooldown updates/512K8 journals; W2966/C2974из4096. [Агрегаты и folds](../work/results/b6-results.json), [анализатор](../work/research/analyze-b6-results.py), [CPU receipt](../work/checks/b6-results-cpu.json). Измерения — producer output; CI,86310-policy replay, grouped split-half OOF и рекомендации — собственные расчёты. Два step-журнала скачаны read-only сexactmanifest/SHA; новых GPU/forwards/sampling/исполнений программ нет.
+ 
+ - <a id="nlp-hw02-ensemble-inference-v9"></a> **nlp-hw02-ensemble-inference-v9**. Собственная private сборка и CPU-аудит19.10.2026: [[work/notes/final-inference#V9: C-long2x B5 / P1-B / W B5|Финальный ансамбль v9]], [конфиг](../work/kaggle/final-v9-config.json). C-long2x B5/P1-B/W B5, greedy C-long2x, K1/1/1→1/6/5; CPU tune replay1547 против v8 1541, CI включает0; все20модулей v8 сохранены. Веса закреплены output B5v6/P1v3 и SHA; v1–v5 отменены без output (один собственный push); внешний интерактивный прогон того же кода прошёл: test93,8968с, tune1532/2048,179,4437с session.1919code-only JSONL,1166code/231numeric отличий отv8; CPU/source/model SHA/format/order gates passed. Дополнительный replay свежих GPU candidates недоступен без raw tune journal; источник и граница проверки указаны в заметке.
+ 

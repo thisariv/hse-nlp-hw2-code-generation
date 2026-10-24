@@ -1,0 +1,254 @@
+{
+  "status": "complete",
+  "complete": true,
+  "success": false,
+  "ref": "friend2/nlp-hw02-tta",
+  "version": 1,
+  "own_push_calls": 1,
+  "cancel_calls": 0,
+  "delete_calls": 0,
+  "previous_attempt": {
+    "ref": "thisarivson/nlp-hw02-tta",
+    "version_at_transfer": 3,
+    "status_before_new_push": "QUEUED"
+  },
+  "output_files": 310,
+  "raw_output": "results/kaggle-runs/nlp-hw02-tta/friend2",
+  "source_identity_exact": true,
+  "notebook_sha256": "7326f671384e8e616b15b6590e2b186328412a023c03116c871f3d9e7a942c9b",
+  "pre_registration_sha256": "9df6a4301e121ca0375e68de7a25107a2f183cb63a765e84bc9b8fbb86c01f68",
+  "train_survey_n": 120000,
+  "rules": [
+    "dollar-words",
+    "ungroup",
+    "price-trim"
+  ],
+  "coverage": {
+    "tune2048": {
+      "dollar-words": 462,
+      "ungroup": 49,
+      "price-trim": 70
+    },
+    "eval2048": {
+      "dollar-words": 456,
+      "ungroup": 49,
+      "price-trim": 58
+    }
+  },
+  "quota_used_delta_seconds": 874.634,
+  "worker_seconds": 834.639382904,
+  "records": 15720,
+  "executor": {
+    "workers": 2,
+    "worker_history": [
+      2
+    ],
+    "service_state": {
+      "workers": 2,
+      "nice_requested_increment": 10,
+      "nice": 10,
+      "nice_applied": true,
+      "nice_error": null
+    },
+    "requested_candidates": 141480,
+    "unique_programs": 96824,
+    "deduplicated": 44656,
+    "completed_unique": 96824,
+    "service_wall_seconds": 833.7625754359999,
+    "sum_worker_task_wall_seconds": 150.31042245498512,
+    "sum_worker_task_cpu_seconds": 141.71223922903184,
+    "first_submit_to_last_result_seconds": 825.248237841,
+    "service_wall_includes_GPU_wait": true,
+    "wall_limit": 3.0,
+    "cpu_limit": 2.0,
+    "memory_bytes": 805306368,
+    "overlap": true,
+    "isolation": "fresh numeric namespaces / pristine SymPy fork",
+    "error": null
+  },
+  "selected_policy": [
+    "dollar-words"
+  ],
+  "selection_sha256": "2f9c4a585c24a6f5913183d3cbbe60d02952ca58fd159a0e70916e3888ca31da",
+  "selection_frozen_before_eval": true,
+  "tune": {
+    "rules": [
+      "dollar-words"
+    ],
+    "n": 2048,
+    "original_mean": 0.748046875,
+    "mixed_mean": 0.74853515625,
+    "delta_pp": 0.048828125,
+    "ci95_pp": [
+      -0.1953125,
+      0.29296875
+    ],
+    "gains": 4,
+    "losses": 3,
+    "original_sum": 1532.0,
+    "mixed_sum": 1533.0,
+    "bootstrap": "paired tasks;20000;seed2026101902;percentile95",
+    "mean_samples": 5.81640625,
+    "max_samples": 10,
+    "early_stops": 1224,
+    "mean_variant_samples": 0.31640625
+  },
+  "eval": {
+    "rules": [
+      "dollar-words"
+    ],
+    "n": 2048,
+    "original_mean": 0.75634765625,
+    "mixed_mean": 0.755859375,
+    "delta_pp": -0.048828125,
+    "ci95_pp": [
+      -0.390625,
+      0.29296875
+    ],
+    "gains": 6,
+    "losses": 7,
+    "original_sum": 1549.0,
+    "mixed_sum": 1548.0,
+    "bootstrap": "paired tasks;20000;seed2026101902;percentile95",
+    "mean_samples": 5.86767578125,
+    "max_samples": 10,
+    "early_stops": 1209,
+    "mean_variant_samples": 0.369140625
+  },
+  "paired_ci": {
+    "tune": [
+      -0.1953125,
+      0.29296875
+    ],
+    "eval": [
+      -0.390625,
+      0.29296875
+    ]
+  },
+  "price_of_shift": {
+    "tune2048": {
+      "all": {
+        "greedy": {
+          "delta_pp": 0.09765625,
+          "ci95_pp": [
+            -0.244140625,
+            0.439453125
+          ]
+        },
+        "per_sample": {
+          "delta_pp": 0.10986328125,
+          "ci95_pp": [
+            -0.164794921875,
+            0.390625
+          ]
+        }
+      },
+      "applicable": {
+        "greedy": {
+          "delta_pp": 0.4329004329004329,
+          "ci95_pp": [
+            -1.0822510822510822,
+            1.948051948051948
+          ]
+        },
+        "per_sample": {
+          "delta_pp": 0.487012987012987,
+          "ci95_pp": [
+            -0.7305194805194805,
+            1.7045454545454544
+          ]
+        }
+      }
+    },
+    "eval2048": {
+      "all": {
+        "greedy": {
+          "delta_pp": 0.0,
+          "ci95_pp": [
+            -0.390625,
+            0.390625
+          ]
+        },
+        "per_sample": {
+          "delta_pp": -0.10986328125,
+          "ci95_pp": [
+            -0.384521484375,
+            0.164794921875
+          ]
+        }
+      },
+      "applicable": {
+        "greedy": {
+          "delta_pp": 0.0,
+          "ci95_pp": [
+            -1.7543859649122806,
+            1.7543859649122806
+          ]
+        },
+        "per_sample": {
+          "delta_pp": -0.4934210526315789,
+          "ci95_pp": [
+            -1.7543859649122806,
+            0.7401315789473684
+          ]
+        }
+      }
+    },
+    "selected_rule": "dollar-words",
+    "primary_changed_model": "P1-B",
+    "all_models_and_rules_details": [
+      "tta-tune.json: diagnostics",
+      "tta-confirm.json: diagnostics"
+    ]
+  },
+  "correlations": {
+    "details": "tta-tune.json and tta-confirm.json: diagnostics; all/applicable; 28 within +64 cross pairs; none constant",
+    "tune2048": {
+      "all": {
+        "n": 2048,
+        "within": 0.6878402761769102,
+        "cross": 0.7172714821096984,
+        "within_finite": 28,
+        "cross_finite": 64,
+        "within_total": 28,
+        "cross_total": 64
+      },
+      "applicable": {
+        "n": 462,
+        "within": 0.706652285618763,
+        "cross": 0.6998658088954942,
+        "within_finite": 28,
+        "cross_finite": 64,
+        "within_total": 28,
+        "cross_total": 64
+      }
+    },
+    "eval2048": {
+      "all": {
+        "n": 2048,
+        "within": 0.6748462909652263,
+        "cross": 0.7042747346823331,
+        "within_finite": 28,
+        "cross_finite": 64,
+        "within_total": 28,
+        "cross_total": 64
+      },
+      "applicable": {
+        "n": 456,
+        "within": 0.6683814767260882,
+        "cross": 0.6575064875013876,
+        "within_finite": 28,
+        "cross_finite": 64,
+        "within_total": 28,
+        "cross_total": 64
+      }
+    }
+  },
+  "single_model": {
+    "details": "tta-tune.json: all7 mixtures K4/K8; tta-confirm.json: selected mixture K4/K8",
+    "all_selected_policy_CI_include_zero": true
+  },
+  "decision": "retain_v8",
+  "reason": "Eval delta below +0.4 pp and paired 95% CI includes zero; no v10 proposal",
+  "local_analysis_inputs": "Four original mounted input JSONs materialized locally; all SHA equal runtime summary and v8; experiment unchanged"
+}

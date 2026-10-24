@@ -1,0 +1,110 @@
+{
+  "passed": true,
+  "sha256": "d88828d066a620a87a12b6731e1ac934cdab486cfcecf4ed48ba6922e5f239e0",
+  "final_anchor": {
+    "file": "checkpoints/main-e69e238eacf8.pt",
+    "sha256": "cd26644d4961c953410504510d8f5a7eaddbda8b31da51ad8cf14b7841096cad",
+    "bytes": 644225299,
+    "updates": 293688,
+    "cursor": 31556224,
+    "main_seconds": 113690.72837862006,
+    "l2_main_seconds": 96120.79250022187,
+    "identity": {
+      "model": "C-long2x",
+      "recipe": {
+        "architecture": {
+          "d_model": 512,
+          "heads": 8,
+          "encoder_layers": 6,
+          "decoder_layers": 6,
+          "swiglu_dim": 1368,
+          "vocab": 8195
+        },
+        "representation": 30,
+        "normalized_token_init": true,
+        "seed": 42,
+        "dropout": 0.0,
+        "AMP": "FP16+GradScaler",
+        "fused_AdamW": true,
+        "weight_decay": 0.01,
+        "clip": 1.0,
+        "effective_batch": 128,
+        "peak_lr": 0.0015,
+        "warmup_updates": 1000,
+        "main_schedule": "constant",
+        "data_policy": "fixed bucketed weighted order; long rows twice, others once; circular",
+        "implementation_sha256": {
+          "l1_runtime.py": "cbcf26636a1a1a62d13ee8fe82a4e9deb420db13f2e811a0fb51832c3811f038",
+          "exp26_core.py": "7247eae92a09a73b62c86fee80c261d3e3a0043cb863d7bc069426d214f575ce",
+          "exp26_train.py": "0392b8fabcae875eb7972a6c69f6594974603ae81090f4c484fbc47244fb2570",
+          "exp26_order.py": "98f6e43cf31810d4e86fdbf36b37aaf8dfe7c40ec82d065f82194d7056172783",
+          "s3_representation.py": "51c18fd6b9d158086c96da9f23dd72030da84e27cff18b51028934b0f21d519c"
+        },
+        "torch": "2.11.0+cu128",
+        "CUDA": "12.8",
+        "sampler": {
+          "seed": 2026101302,
+          "rows": 9725737,
+          "slots": 11227811,
+          "batch": 128,
+          "chunk": 4096,
+          "length_source": "verified compact target-offsets",
+          "original_lengths_available": false,
+          "threshold": 79,
+          "heldout_original_ge90": 626,
+          "heldout_rows": 4096,
+          "target_long_fraction": 0.15283203125,
+          "train_long_rows": 1502074,
+          "train_long_fraction": 0.15444320569227812,
+          "fraction_error": 0.0016111744422781238,
+          "weighted_long_fraction": 0.2675631073590391,
+          "multiplicity": {
+            "short": 1,
+            "long": 2
+          },
+          "cache_manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+          "file": {
+            "file": "order.npy",
+            "sha256": "72bc3dfd3a3e738979c489c0cf8f41cde092c41d4ae90f2de8378a034603a4db",
+            "bytes": 44911372
+          },
+          "selection": "nearest attainable threshold; higher threshold wins ties; no loss reweighting",
+          "lengths_sha256": "06b94974710dca43173fa06467c643c1d5a45996e8cc6c62f18b4f67b6578f83"
+        }
+      },
+      "recipe_sha256": "783f2efc69fb7990ef487e3704abc12efc191bd5a69fd352eb2064787d887fc7",
+      "cache_manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+      "order_sha256": "72bc3dfd3a3e738979c489c0cf8f41cde092c41d4ae90f2de8378a034603a4db",
+      "smoke": false,
+      "parent_recipe_sha256": "7d74147e9569f965730dd1055f5f83bfc0585232b5bf39e56dc9a796833fd819"
+    },
+    "model_spec": {
+      "d_model": 512,
+      "heads": 8,
+      "encoder_layers": 6,
+      "decoder_layers": 6,
+      "swiglu_dim": 1368,
+      "vocab": 8195
+    },
+    "purpose": "stable full L2 resume; uncooled; model/AdamW/scaler/all RNG/history"
+  },
+  "final_anchor_metadata_exact": true,
+  "pre_final_blob_available": false,
+  "provenance": {
+    "fields": {
+      "model": "9d5b972fa38ab432a33702b86499e0a8e25c00931da846b1dd2b3f1cb1f7edd7",
+      "optimizer": "141eea569fe1a5ddce4906e06e1b576da62284708c93950b80dfd40f1f74a02f",
+      "scaler": "ba59336d1c6b12073eb605a91772bd13ff66a4f14e89fe7019ca937ea4756ab5",
+      "rng": "6b041ea116104079626d736e2b2a2622689fe1a8aed00f70614b1a0f059cb445",
+      "scheduler": "469414488a68779fbaefc62a1ce63e613c019ae6a05b31f9b63fab465b7e2290",
+      "identity": "32d879cf03cc4860fe4d2ae712f85aaea10869bd2cf6411cac6d0402b62edd74",
+      "model_spec": "15516c6f460518d8a48fcf29bbd96a46e47c5fde53edf2e5ecfe6c3393d48349"
+    },
+    "main_state": "a0b840b31697cf5badb1549b217d119f90855a305594e7eacb83112453e9f3da",
+    "b5_points": 2,
+    "b5_sessions": 0,
+    "b5_branch_seconds": 3900.4895519996207,
+    "b5_branch_attempted_updates": 9732
+  },
+  "limitation": "B5 pruned pre-final anchor PT. Exact final receipt/counters/identity + both retained post-restore numeric states checked; no claim of direct pre-final tensor comparison."
+}

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "rows": 9725737,
+  "slots": 9506623,
+  "source_rule": "strict-two-thirds",
+  "source_order_sha256": "d4628a11d21b21956f93d5ea1a1e213ec0fd93bdb8945e5db3d1aa1beac62566",
+  "new_order_sha256": "c3ebed6e3f394e262b6efc52754b9e33dac7f91afafc4cf36e5d52777ba74c01",
+  "seed": 2026101701,
+  "membership_unchanged": true,
+  "protected_row_excluded": true,
+  "GPU": false,
+  "limitation": "Existing clean-cooldown order validates format; this is not a selected D1 filter"
+}

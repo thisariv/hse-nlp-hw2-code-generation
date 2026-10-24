@@ -1,0 +1,123 @@
+{
+  "private": true,
+  "weights": {
+    "C-long2x-B6": {
+      "filename": "c-long2x-b6-fp16.pt",
+      "sha256": "ee30794048bb6200cf97ac4d7e5c1606f0e97893ea04f6567c9487f6c04345fa"
+    },
+    "pilot-b": {
+      "filename": "p1-b-fp16.pt",
+      "sha256": "8439037720dda16dda6b73fe676860d5498bbcba4cacebc0d709bbb22db464a5"
+    },
+    "W-B6": {
+      "filename": "w-b6-fp16.pt",
+      "sha256": "cb34c81e6cda83c73bf4662c5c425446be8cdb48c30dd5e9e217fd6cbc1cd496"
+    }
+  },
+  "files": {
+    "c-long2x-b6-fp16.pt": {
+      "bytes": 107364659,
+      "sha256": "ee30794048bb6200cf97ac4d7e5c1606f0e97893ea04f6567c9487f6c04345fa"
+    },
+    "p1-b-fp16.pt": {
+      "bytes": 107366185,
+      "sha256": "8439037720dda16dda6b73fe676860d5498bbcba4cacebc0d709bbb22db464a5"
+    },
+    "test.json": {
+      "bytes": 394703,
+      "sha256": "20cacb334e3fc81291433d2173d9085b17a15e1834bd84aea67b350403182503"
+    },
+    "tokenizer.json": {
+      "bytes": 545866,
+      "sha256": "261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d"
+    },
+    "tune2048-reference.json": {
+      "bytes": 110191,
+      "sha256": "4c3150885e004b9cc37f9ac2f33346476c273307564af2010ce5cdbc1c1db054"
+    },
+    "tune2048.json": {
+      "bytes": 411849,
+      "sha256": "8881aae28735dd8f4c22aa6dc284e0374162a1328ed2603133b0d866bffc8e71"
+    },
+    "w-b6-fp16.pt": {
+      "bytes": 226949203,
+      "sha256": "cb34c81e6cda83c73bf4662c5c425446be8cdb48c30dd5e9e217fd6cbc1cd496"
+    }
+  },
+  "code_files": {
+    "code/hw2_codegen/__init__.py": {
+      "bytes": 100,
+      "sha256": "20ee77e6b3205f95c73b40638798bdb44009c6080992a97a4c0e200e620ea7ad"
+    },
+    "code/hw2_codegen/_numeric.py": {
+      "bytes": 8900,
+      "sha256": "15f64631a2dfe3d668f45421c5baf0dccd1701ef8313faa3b42266b4a5127a01"
+    },
+    "code/hw2_codegen/_qk_attention.py": {
+      "bytes": 192,
+      "sha256": "6b2465c786a61d5049cbe648f5f801874aebc23e6da0f4e1c05231c0b01d56a6"
+    },
+    "code/hw2_codegen/_service.py": {
+      "bytes": 4940,
+      "sha256": "add12b48d765cb620e2174430fe7eb0921537744bd56927908228859d8d1ccce"
+    },
+    "code/hw2_codegen/_worker.py": {
+      "bytes": 3783,
+      "sha256": "0fef60ead05ca4ae5712f95f506d21b8aa58f84bac586dea1c138d388194e442"
+    },
+    "code/hw2_codegen/config.json": {
+      "bytes": 1832,
+      "sha256": "b20f2c299d31c322f7113b0e5f5f37174eb838764f1d32f2f339df59db19a67c"
+    },
+    "code/hw2_codegen/config.py": {
+      "bytes": 388,
+      "sha256": "c81d9bf8cae9bb62fa61c2c85fd1ada0ff20b4aa162a0e3bf5161bcc58fbf6fc"
+    },
+    "code/hw2_codegen/data.py": {
+      "bytes": 7147,
+      "sha256": "a38d14e7f2fba7d93046bb743fda3b1227ef57e3322ad7d892d72253005a6a3b"
+    },
+    "code/hw2_codegen/decode.py": {
+      "bytes": 12377,
+      "sha256": "266e5ed0b05ca7463949e7359b00b0d096392d546e2ffbb8debd73d5415711ae"
+    },
+    "code/hw2_codegen/dry_run.py": {
+      "bytes": 1320,
+      "sha256": "8141fe9e8c7b21de08afe5b9ad78786681384ec9da8e6cbb1df310f5ae30b200"
+    },
+    "code/hw2_codegen/execute.py": {
+      "bytes": 5814,
+      "sha256": "6bdb14f783d58b639129fd2119e359ee69add7ef12d0c45359911dc86cf6c19c"
+    },
+    "code/hw2_codegen/model.py": {
+      "bytes": 9658,
+      "sha256": "f9f7f5346781db23506181f508902a48fed10aa91ebb1732848e3d4dbd0da429"
+    },
+    "code/hw2_codegen/pipeline.py": {
+      "bytes": 17709,
+      "sha256": "c32b362d158940677eaf26ca79f06ed800db72638ea93e315063194fe57ed5c9"
+    },
+    "code/hw2_codegen/runner.py": {
+      "bytes": 5042,
+      "sha256": "02eb927219e12d3fa16180e58240e718b773d19fb27845f31944e05a39846b91"
+    },
+    "code/hw2_codegen/tokenizer_repr.py": {
+      "bytes": 5584,
+      "sha256": "c0b65b5fbbc21d6473b1c8daebd8638fc991795d84582c7b03742e03d51c1938"
+    },
+    "code/hw2_codegen/train.py": {
+      "bytes": 11957,
+      "sha256": "e3d8b647f7677bb842b588d284db578d88f18fe1823ea9d4988c0740c44c018b"
+    },
+    "code/hw2_codegen/vote.py": {
+      "bytes": 4586,
+      "sha256": "1a4a9837bf1801da116478a790b8781fe499d542110fddc88a25b92d16f2108d"
+    },
+    "code/hw2_codegen/worker.py": {
+      "bytes": 1091,
+      "sha256": "c7942540ad801689dc43c88c192185882f53774c44cd4849b30421c0c6b6c717"
+    }
+  },
+  "manifest_sha256": "57581a3abcb05442e58c7f25a19a3b6f8476482f18224b1d842ebe590097ed2a",
+  "notebook_sha256": "9b1a4f6ae5ae6708e55501601a9d3763615d3fefc28fc3a6f497ed1351fd878c"
+}

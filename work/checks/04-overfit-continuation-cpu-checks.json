@@ -1,0 +1,39 @@
+{
+  "checked_on": "2026-10-07",
+  "origin": "agent local CPU code checks, not user T4 results",
+  "format_and_compile": true,
+  "notebook_cell_equals_python_file": true,
+  "no_model_optimizer_initialization_or_reseeding_in_continuation": true,
+  "empty_runtime_and_optimizer_counter_mismatch_rejected": true,
+  "full_model_parameters": 1254915,
+  "training_pairs": 16,
+  "small_train_sha256": "d09cd3121ebfaac0707b52136008a00f6389fed0b3eec3b4a1c502e739bdeb6b",
+  "cpu_smoke": {
+    "initial_real_updates": 1,
+    "continuation_real_updates": 2,
+    "synthetic_counter_from": 1000,
+    "synthetic_counter_to": 1002,
+    "generation_cap_override_for_smoke_only": 8,
+    "model_and_optimizer_objects_preserved": true,
+    "parameters_adam_moments_and_rng_equal_uninterrupted_two_updates": true,
+    "old_history_and_output_files_preserved": true,
+    "checkpoint_steps_metrics_and_rng_consistent": true,
+    "idle_gap_excluded_from_time": true,
+    "repeat_after_completion_is_noop": true,
+    "finite_loss_and_gradients": true
+  },
+  "early_stop": {
+    "synthetic_start_step": 1249,
+    "real_updates": 1,
+    "controlled_exact_outputs_including_eos": 16,
+    "stopped_at_step": 1250,
+    "limit_was": 1300,
+    "not_a_model_memorization_result": true
+  },
+  "runtime": {
+    "torch": "2.14.1",
+    "device": "CPU"
+  },
+  "gpu_continuation_executed": false,
+  "actual_user_weights_or_optimizer_provided": false
+}

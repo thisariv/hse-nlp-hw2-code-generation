@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "ref": "friend2/nlp-hw02-kaggle-b1/1",
+  "workers": [
+    {
+      "model": "E",
+      "updates": 100,
+      "main_seconds": 60.3,
+      "CE": 3.8122564554214478,
+      "lr": 0.0001
+    },
+    {
+      "model": "W",
+      "updates": 100,
+      "main_seconds": 60.7,
+      "CE": 3.730291724205017,
+      "lr": 0.0001
+    }
+  ],
+  "T4x2_gate": true,
+  "live_sync": false,
+  "cache_SHA_preflight_completed": true,
+  "log_sha256": "587332804cd01fbaf0a9f9d173ffe745af28747bba96f0c8ab6c704a382b0b0e",
+  "note": "Both workers run after full cache preflight; startup full stable publication precedes main in B1.run"
+}

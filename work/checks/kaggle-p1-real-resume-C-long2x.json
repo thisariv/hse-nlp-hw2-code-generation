@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "source": "friend1/nlp-hw02-l3-live/12",
+  "anchor_sha256": "48f2ba3fa4ffe6a722b45a084d3ee33a27cc4ed02b72433605c9cb1740f5a80b",
+  "anchor_bytes": 644197075,
+  "initial_full_state_digests": {
+    "model": "9e9432d9939492b5be03e2baf0099500c69d35dfc80294e3c6386e933fd5ce4d",
+    "optimizer": "9676ac37ce9cb42dc2ae14e32c41e53cccb97f5db20e9edb91aa044f29d8a25d",
+    "scaler": "a6c8e36eac373bed41c1c6c35d2a8c61c1e7a1205e2c6dc457d47d354f8f5cdc",
+    "rng": "6b041ea116104079626d736e2b2a2622689fe1a8aed00f70614b1a0f059cb445",
+    "state": "eb2f6b5dd5c7f28e458ba4ae1f9b6a1948f9e438fe13fcf05111726331e1d0c2"
+  },
+  "restores": [
+    {
+      "model": "9e9432d9939492b5be03e2baf0099500c69d35dfc80294e3c6386e933fd5ce4d",
+      "optimizer": "9676ac37ce9cb42dc2ae14e32c41e53cccb97f5db20e9edb91aa044f29d8a25d",
+      "scaler": "a6c8e36eac373bed41c1c6c35d2a8c61c1e7a1205e2c6dc457d47d354f8f5cdc",
+      "state": "eb2f6b5dd5c7f28e458ba4ae1f9b6a1948f9e438fe13fcf05111726331e1d0c2"
+    },
+    {
+      "model": "9e9432d9939492b5be03e2baf0099500c69d35dfc80294e3c6386e933fd5ce4d",
+      "optimizer": "9676ac37ce9cb42dc2ae14e32c41e53cccb97f5db20e9edb91aa044f29d8a25d",
+      "scaler": "a6c8e36eac373bed41c1c6c35d2a8c61c1e7a1205e2c6dc457d47d354f8f5cdc",
+      "state": "eb2f6b5dd5c7f28e458ba4ae1f9b6a1948f9e438fe13fcf05111726331e1d0c2"
+    }
+  ],
+  "steps": [
+    {
+      "model": "66465f1dd2962d427e0774946ce8ede93078d0396d92d96a6fe0ac6c0d2b596c",
+      "optimizer": "415191dbe620fa2a51e0583bb6d40afeda0ac121e30f4027d83d74a8a4c41232",
+      "scaler": "0fda60cfa626635e7692c503f791994e39965a79152ddf1154e86868576ca8cd",
+      "rng": "ec1aeb643b94c44971f0ec2fd12bc891a8774a526c5c7fdb2e33bf457bbabb27",
+      "indices_sha256": "8d5e0b5fe54fe55dbc3fb627764dc5fad2258730220c27ad9974f6b08e5bafd0"
+    },
+    {
+      "model": "62cb02a5a99e41151b1698211aa04ff86c7c6fe23b25c3c250387fe55154f3e7",
+      "optimizer": "59fca9dec76d3e4fa345bb8850afec5cfc26ace6f30aba08042303357413e43b",
+      "scaler": "f38c2c095d15e15359b6f5545f249f8c5acb1d5bfacd862ca556c89b9d1dc8d1",
+      "rng": "ec1aeb643b94c44971f0ec2fd12bc891a8774a526c5c7fdb2e33bf457bbabb27",
+      "indices_sha256": "18bd31d4d8efbba46694bdef0e6b478af47441d3c65667d567ea8ac771a2b632"
+    }
+  ],
+  "steps_bit_exact": 2,
+  "effective_batch": 128,
+  "pilot_updates": 31372,
+  "full_restore_before_both_branches": true,
+  "downloaded_anchor_removed": true,
+  "seconds": 113.51907983305864,
+  "GPU": false,
+  "limitation": "CPU FP32/no autocast, enabled CPU GradScaler from L3, fused disabled; CUDA smoke still required"
+}

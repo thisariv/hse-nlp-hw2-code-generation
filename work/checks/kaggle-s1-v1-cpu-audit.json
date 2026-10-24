@@ -1,0 +1,446 @@
+{
+  "date": "2026-10-11",
+  "new_training_updates": 0,
+  "new_GPU_runs": 0,
+  "root": "results/kaggle-runs/nlp-hw02-kaggle-s1/1",
+  "checks": {
+    "archive_and_unpacked_members": "passed",
+    "input_SHA_order_tokens_scores_CE_denominators_length_bins": "passed",
+    "candidate_batches_chunks_SHA_flat_order": "passed"
+  },
+  "execution_differences": {},
+  "archive": {
+    "file": "s1-results.zip",
+    "bytes": 350077134,
+    "sha256": "e834fe795d2212bedb0b22c17fa4953e26f62f561d829578b6eb9aee01a6ae43",
+    "manifest_files": 1906,
+    "CRC": "passed",
+    "all_SHA_bytes": "passed"
+  },
+  "session": {
+    "status": "partial",
+    "exit_codes": [
+      0,
+      1
+    ],
+    "wall_seconds": 3884.921061,
+    "budget_seconds": 10800,
+    "GPU_launch": true,
+    "processes": 2
+  },
+  "CPU_execution": {
+    "programs": 325391,
+    "statuses": {
+      "numeric": 302792,
+      "non_number": 151,
+      "execution_error": 18714,
+      "syntax_error": 3543,
+      "timeout": 180,
+      "blocked_import": 1,
+      "blocked_name": 7,
+      "non_finite": 3
+    },
+    "seconds": 137.87894520815462,
+    "chunk_retries": 2,
+    "pool_restarts": 1,
+    "chunk_rows": 2000,
+    "workers": 2,
+    "wall_limit": 1.0,
+    "cpu_limit": 2.0,
+    "total_saved_program_rows": 531755,
+    "unique_programs": 325391
+  },
+  "reference_replay": {
+    "heldout4k": {
+      "numeric": 4096,
+      "different_indices": []
+    },
+    "old1024": {
+      "numeric": 991,
+      "different_indices": []
+    }
+  },
+  "greedy_replay": {
+    "gpu0-a26/D0/heldout4k": {
+      "matches": 1677,
+      "denominator": 4096,
+      "different_match_indices": [],
+      "different_execution_indices": []
+    },
+    "gpu0-a26/D0/old1024": {
+      "matches": 422,
+      "denominator": 991,
+      "different_match_indices": [],
+      "different_execution_indices": []
+    },
+    "gpu0-a26/D0-kaggle-2.11.0+cu128/heldout4k": {
+      "matches": 1677,
+      "denominator": 4096,
+      "different_match_indices": [],
+      "different_execution_indices": []
+    },
+    "gpu0-a26/D0-kaggle-2.11.0+cu128/old1024": {
+      "matches": 422,
+      "denominator": 991,
+      "different_match_indices": [],
+      "different_execution_indices": []
+    },
+    "gpu0-a26/points/p006250/evaluation/heldout4k": {
+      "matches": 1888,
+      "denominator": 4096,
+      "different_match_indices": [],
+      "different_execution_indices": []
+    },
+    "gpu0-a26/points/p006250/evaluation/old1024": {
+      "matches": 465,
+      "denominator": 991,
+      "different_match_indices": [],
+      "different_execution_indices": []
+    },
+    "gpu0-a26/points/p012500/evaluation/heldout4k": {
+      "matches": 2210,
+      "denominator": 4096,
+      "different_match_indices": [],
+      "different_execution_indices": []
+    },
+    "gpu0-a26/points/p012500/evaluation/old1024": {
+      "matches": 537,
+      "denominator": 991,
+      "different_match_indices": [],
+      "different_execution_indices": []
+    },
+    "gpu0-a26/points/p025000/evaluation/heldout4k": {
+      "matches": 2446,
+      "denominator": 4096,
+      "different_match_indices": [],
+      "different_execution_indices": []
+    },
+    "gpu0-a26/points/p025000/evaluation/old1024": {
+      "matches": 601,
+      "denominator": 991,
+      "different_match_indices": [],
+      "different_execution_indices": []
+    },
+    "gpu0-a26/points/p050000/evaluation/heldout4k": {
+      "matches": 2538,
+      "denominator": 4096,
+      "different_match_indices": [],
+      "different_execution_indices": []
+    },
+    "gpu0-a26/points/p050000/evaluation/old1024": {
+      "matches": 634,
+      "denominator": 991,
+      "different_match_indices": [],
+      "different_execution_indices": []
+    }
+  },
+  "voting_replay": {
+    "heldout4k/greedy": {
+      "matches": 2538,
+      "denominator": 4096,
+      "different_match_indices": []
+    },
+    "heldout4k/vote-t0.7-k4-g0": {
+      "matches": 2622,
+      "denominator": 4096,
+      "different_match_indices": []
+    },
+    "heldout4k/vote-t0.7-k4-g1": {
+      "matches": 2616,
+      "denominator": 4096,
+      "different_match_indices": []
+    },
+    "heldout4k/fallback-k4": {
+      "matches": 2548,
+      "denominator": 4096,
+      "different_match_indices": []
+    },
+    "heldout4k/vote-t0.7-k8-g0": {
+      "matches": 2668,
+      "denominator": 4096,
+      "different_match_indices": []
+    },
+    "heldout4k/vote-t0.7-k8-g1": {
+      "matches": 2664,
+      "denominator": 4096,
+      "different_match_indices": []
+    },
+    "heldout4k/fallback-k8": {
+      "matches": 2548,
+      "denominator": 4096,
+      "different_match_indices": []
+    },
+    "heldout4k/vote-t0.7-k16-g0": {
+      "matches": 2707,
+      "denominator": 4096,
+      "different_match_indices": []
+    },
+    "heldout4k/vote-t0.7-k16-g1": {
+      "matches": 2703,
+      "denominator": 4096,
+      "different_match_indices": []
+    },
+    "heldout4k/fallback-k16": {
+      "matches": 2548,
+      "denominator": 4096,
+      "different_match_indices": []
+    },
+    "heldout4k/vote-t0.7-k32-g0": {
+      "matches": 2726,
+      "denominator": 4096,
+      "different_match_indices": []
+    },
+    "heldout4k/vote-t0.7-k32-g1": {
+      "matches": 2725,
+      "denominator": 4096,
+      "different_match_indices": []
+    },
+    "heldout4k/fallback-k32": {
+      "matches": 2548,
+      "denominator": 4096,
+      "different_match_indices": []
+    },
+    "heldout4k/vote-t0.5-k4-g0": {
+      "matches": 2620,
+      "denominator": 4096,
+      "different_match_indices": []
+    },
+    "heldout4k/vote-t0.5-k4-g1": {
+      "matches": 2613,
+      "denominator": 4096,
+      "different_match_indices": []
+    },
+    "heldout4k/vote-t0.5-k8-g0": {
+      "matches": 2653,
+      "denominator": 4096,
+      "different_match_indices": []
+    },
+    "heldout4k/vote-t0.5-k8-g1": {
+      "matches": 2653,
+      "denominator": 4096,
+      "different_match_indices": []
+    },
+    "heldout4k/vote-t0.5-k16-g0": {
+      "matches": 2680,
+      "denominator": 4096,
+      "different_match_indices": []
+    },
+    "heldout4k/vote-t0.5-k16-g1": {
+      "matches": 2676,
+      "denominator": 4096,
+      "different_match_indices": []
+    },
+    "heldout4k/vote-t1.0-k4-g0": {
+      "matches": 2470,
+      "denominator": 4096,
+      "different_match_indices": []
+    },
+    "heldout4k/vote-t1.0-k4-g1": {
+      "matches": 2579,
+      "denominator": 4096,
+      "different_match_indices": []
+    },
+    "heldout4k/vote-t1.0-k8-g0": {
+      "matches": 2547,
+      "denominator": 4096,
+      "different_match_indices": []
+    },
+    "heldout4k/vote-t1.0-k8-g1": {
+      "matches": 2599,
+      "denominator": 4096,
+      "different_match_indices": []
+    },
+    "heldout4k/vote-t1.0-k16-g0": {
+      "matches": 2638,
+      "denominator": 4096,
+      "different_match_indices": []
+    },
+    "heldout4k/vote-t1.0-k16-g1": {
+      "matches": 2651,
+      "denominator": 4096,
+      "different_match_indices": []
+    },
+    "old1024/greedy": {
+      "matches": 634,
+      "denominator": 991,
+      "different_match_indices": []
+    },
+    "old1024/vote-t0.7-k4-g0": {
+      "matches": 653,
+      "denominator": 991,
+      "different_match_indices": []
+    },
+    "old1024/vote-t0.7-k4-g1": {
+      "matches": 651,
+      "denominator": 991,
+      "different_match_indices": []
+    },
+    "old1024/fallback-k4": {
+      "matches": 634,
+      "denominator": 991,
+      "different_match_indices": []
+    },
+    "old1024/vote-t0.7-k8-g0": {
+      "matches": 670,
+      "denominator": 991,
+      "different_match_indices": []
+    },
+    "old1024/vote-t0.7-k8-g1": {
+      "matches": 670,
+      "denominator": 991,
+      "different_match_indices": []
+    },
+    "old1024/fallback-k8": {
+      "matches": 634,
+      "denominator": 991,
+      "different_match_indices": []
+    },
+    "old1024/vote-t0.7-k16-g0": {
+      "matches": 684,
+      "denominator": 991,
+      "different_match_indices": []
+    },
+    "old1024/vote-t0.7-k16-g1": {
+      "matches": 676,
+      "denominator": 991,
+      "different_match_indices": []
+    },
+    "old1024/fallback-k16": {
+      "matches": 634,
+      "denominator": 991,
+      "different_match_indices": []
+    },
+    "old1024/vote-t0.7-k32-g0": {
+      "matches": 678,
+      "denominator": 991,
+      "different_match_indices": []
+    },
+    "old1024/vote-t0.7-k32-g1": {
+      "matches": 677,
+      "denominator": 991,
+      "different_match_indices": []
+    },
+    "old1024/fallback-k32": {
+      "matches": 634,
+      "denominator": 991,
+      "different_match_indices": []
+    },
+    "old1024/vote-t0.5-k4-g0": {
+      "matches": 662,
+      "denominator": 991,
+      "different_match_indices": []
+    },
+    "old1024/vote-t0.5-k4-g1": {
+      "matches": 653,
+      "denominator": 991,
+      "different_match_indices": []
+    },
+    "old1024/vote-t0.5-k8-g0": {
+      "matches": 669,
+      "denominator": 991,
+      "different_match_indices": []
+    },
+    "old1024/vote-t0.5-k8-g1": {
+      "matches": 670,
+      "denominator": 991,
+      "different_match_indices": []
+    },
+    "old1024/vote-t0.5-k16-g0": {
+      "matches": 670,
+      "denominator": 991,
+      "different_match_indices": []
+    },
+    "old1024/vote-t0.5-k16-g1": {
+      "matches": 672,
+      "denominator": 991,
+      "different_match_indices": []
+    },
+    "old1024/vote-t1.0-k4-g0": {
+      "matches": 615,
+      "denominator": 991,
+      "different_match_indices": []
+    },
+    "old1024/vote-t1.0-k4-g1": {
+      "matches": 643,
+      "denominator": 991,
+      "different_match_indices": []
+    },
+    "old1024/vote-t1.0-k8-g0": {
+      "matches": 650,
+      "denominator": 991,
+      "different_match_indices": []
+    },
+    "old1024/vote-t1.0-k8-g1": {
+      "matches": 658,
+      "denominator": 991,
+      "different_match_indices": []
+    },
+    "old1024/vote-t1.0-k16-g0": {
+      "matches": 668,
+      "denominator": 991,
+      "different_match_indices": []
+    },
+    "old1024/vote-t1.0-k16-g1": {
+      "matches": 668,
+      "denominator": 991,
+      "different_match_indices": []
+    },
+    "gpu0-exp27/test/vote-t0.7-k16-g0": {
+      "rows": 1919,
+      "different_selected_program_indices": []
+    },
+    "gpu0-exp27/test/vote-t0.7-k32-g0": {
+      "rows": 1919,
+      "different_selected_program_indices": []
+    },
+    "gpu0-exp27/test/vote-t0.7-k32-g1": {
+      "rows": 1919,
+      "different_selected_program_indices": []
+    }
+  },
+  "candidate_execution_replay": {
+    "gpu0-exp27/heldout4k": {
+      "programs": 266240,
+      "different_execution_count": 0,
+      "different_indices": []
+    },
+    "gpu0-exp27/old1024": {
+      "programs": 66560,
+      "different_execution_count": 0,
+      "different_indices": []
+    },
+    "gpu0-exp27/test/vote-t0.7-k16-g0": {
+      "programs": 32623,
+      "different_execution_count": 0,
+      "different_indices": []
+    },
+    "gpu0-exp27/test/vote-t0.7-k32-g0": {
+      "programs": 63327,
+      "different_execution_count": 0,
+      "different_indices": []
+    },
+    "gpu0-exp27/test/vote-t0.7-k32-g1": {
+      "programs": 63327,
+      "different_execution_count": 0,
+      "different_indices": []
+    }
+  },
+  "test_numeric_replay": {
+    "gpu0-a26/test/test-generations.json": {
+      "numeric": 1892,
+      "execution_error": 23,
+      "syntax_error": 3,
+      "non_number": 1
+    },
+    "gpu0-exp27/test/greedy/test-generations.json": {
+      "numeric": 1892,
+      "execution_error": 23,
+      "syntax_error": 3,
+      "non_number": 1
+    }
+  },
+  "all_match_sets_and_test_winners_exact": true,
+  "all_reference_values_and_finite_indices_exact": true,
+  "wall_seconds": 177.23078837501816,
+  "status": "passed"
+}

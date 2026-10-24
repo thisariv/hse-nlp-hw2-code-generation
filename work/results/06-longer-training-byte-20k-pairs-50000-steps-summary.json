@@ -1,0 +1,1210 @@
+{
+  "source_notebook": {
+    "original_name": "06_longer_training_byte_20k_pairs_continue_to_50000_steps.ipynb",
+    "bytes": 414109,
+    "sha256": "51bc3f0da39a647a8825632de27e1766ef8de7baca5627af6029bb26e19b3c25"
+  },
+  "source_archive": {
+    "original_name": "hw02-byte-20k-continue-10000-to-50000.zip",
+    "bytes": 49526861,
+    "sha256": "a3c93ccc5995849518a31e10eeace2748343efbf5ccb6ac87f8c14b9f49f9195"
+  },
+  "archive_manifest": {
+    "experiment": "06-byte-20k-continue-10000-to-50000",
+    "start_step": 10000,
+    "actual_steps": 50000,
+    "run_finished": true,
+    "latest_checkpoint_step": 50000,
+    "source_checkpoint_sha256": "4ed8ff448e62e58ae654b6af9d78a78af2e5309561674592a35511ef17ce001a",
+    "notebook_with_outputs_included": false,
+    "files": [
+      {
+        "filename": "hw02-byte-20k-continue-results.json",
+        "bytes": 963210,
+        "sha256": "598f09e0f60d1f77a362bc6883b01ec4c8f3b032a7b0ed8380291c37195c7634"
+      },
+      {
+        "filename": "hw02-byte-20k-continue-latest.pt",
+        "bytes": 15154475,
+        "sha256": "ac559d52caa55739252fb12606093e1db86d80940d1661d07a1d1930f4f1e36a"
+      },
+      {
+        "filename": "hw02-byte-20k-continue-step-20000.pt",
+        "bytes": 15155659,
+        "sha256": "2459d337b31d521bc458571e2b38d032fca513c7510cae31f407feb01577462b"
+      },
+      {
+        "filename": "hw02-byte-20k-continue-step-30000.pt",
+        "bytes": 15155595,
+        "sha256": "b88b95e547e21b7037731882b4e54e68bac99ceb24a26625ebc7feda88070d01"
+      },
+      {
+        "filename": "hw02-byte-20k-continue-step-50000.pt",
+        "bytes": 15155595,
+        "sha256": "3dbd745c9662aa2a73b3832e6ed09990dd9f41974c3dd7172eda1f00d5007271"
+      }
+    ]
+  },
+  "archive_entries": [
+    {
+      "original_name": "hw02-byte-20k-continue-results.json",
+      "bytes": 963210,
+      "sha256": "598f09e0f60d1f77a362bc6883b01ec4c8f3b032a7b0ed8380291c37195c7634"
+    },
+    {
+      "original_name": "hw02-byte-20k-continue-latest.pt",
+      "bytes": 15154475,
+      "sha256": "ac559d52caa55739252fb12606093e1db86d80940d1661d07a1d1930f4f1e36a"
+    },
+    {
+      "original_name": "hw02-byte-20k-continue-step-20000.pt",
+      "bytes": 15155659,
+      "sha256": "2459d337b31d521bc458571e2b38d032fca513c7510cae31f407feb01577462b"
+    },
+    {
+      "original_name": "hw02-byte-20k-continue-step-30000.pt",
+      "bytes": 15155595,
+      "sha256": "b88b95e547e21b7037731882b4e54e68bac99ceb24a26625ebc7feda88070d01"
+    },
+    {
+      "original_name": "hw02-byte-20k-continue-step-50000.pt",
+      "bytes": 15155595,
+      "sha256": "3dbd745c9662aa2a73b3832e6ed09990dd9f41974c3dd7172eda1f00d5007271"
+    },
+    {
+      "original_name": "manifest.json",
+      "bytes": 1210,
+      "sha256": "e043e1ba33c20f9d6817afe8d8549eab9c4988c11f03dd4d2a223cea55645582"
+    },
+    {
+      "original_name": "README.txt",
+      "bytes": 254,
+      "sha256": "e86c4faaed20bb0e3e76f4a406583222a58198d2821556b340493d9829d3c211"
+    }
+  ],
+  "notebook_source_cells_match_prepared": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "notebook_error_outputs": 0,
+  "static_checks_scope": "AST parsing only; generated and reference programs were not executed",
+  "diagnostics": [
+    {
+      "step": 10000,
+      "split": "train_64",
+      "summary": {
+        "split": "train_64",
+        "examples": 64,
+        "loss": 1.3372655806706149,
+        "mean_generated_tokens": 491.5625,
+        "min_generated_tokens": 154,
+        "max_generated_tokens": 512,
+        "seconds": 12.142844521999962,
+        "answers_per_second": 5.270593713363219,
+        "generated_tokens": 31460,
+        "tokens_per_second": 2590.8262222251074,
+        "batch_size_inference": 32,
+        "max_new_tokens": 512,
+        "timer_scope": "encoding, transfers, greedy, CPU decoding and AST/return/exact checks; loss/checkpoint excluded",
+        "peak_gpu_memory_mib": 497.05126953125,
+        "eos_emitted_count": 4,
+        "eos_emitted_fraction": 0.0625,
+        "early_eos_count": 4,
+        "early_eos_fraction": 0.0625,
+        "reached_cap_count": 60,
+        "reached_cap_fraction": 0.9375,
+        "parses_as_python_count": 14,
+        "parses_as_python_fraction": 0.21875,
+        "defines_solve_count": 14,
+        "defines_solve_fraction": 0.21875,
+        "solve_has_value_return_count": 0,
+        "solve_has_value_return_fraction": 0.0,
+        "exact_code_match_count": 0,
+        "exact_code_match_fraction": 0.0,
+        "exact_tokens_with_eos_count": 0,
+        "exact_tokens_with_eos_fraction": 0.0
+      },
+      "derived_batch_max_lengths": [
+        512,
+        512
+      ],
+      "derived_decoder_iterations": 1024,
+      "derived_processed_generation_slots": 32768,
+      "derived_active_generation_slots": 31460,
+      "derived_finished_padding_slots": 1308,
+      "derived_full_prefix_positions_processed": 8404992,
+      "derived_useful_slot_fraction": 0.9600830078125,
+      "possibly_unbound_name_examples": [
+        {
+          "index": 10,
+          "names": [
+            "juice_pr_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_r_per_r_per_per_per_per_per_per_r_ricer_r_per_ricer_per_per_per_pericer_r_per_per_per_r_per_r_pericer_per_per_per_ricer_per_pericer_per_per_r_per_per_per_pericer_per_per_per_per_p"
+          ]
+        }
+      ]
+    },
+    {
+      "step": 10000,
+      "split": "validation_64",
+      "summary": {
+        "split": "validation_64",
+        "examples": 64,
+        "loss": 1.3713495915319747,
+        "mean_generated_tokens": 485.78125,
+        "min_generated_tokens": 151,
+        "max_generated_tokens": 512,
+        "seconds": 11.918084881000027,
+        "answers_per_second": 5.36999028275337,
+        "generated_tokens": 31090,
+        "tokens_per_second": 2608.6405920437855,
+        "batch_size_inference": 32,
+        "max_new_tokens": 512,
+        "timer_scope": "encoding, transfers, greedy, CPU decoding and AST/return/exact checks; loss/checkpoint excluded",
+        "peak_gpu_memory_mib": 495.6044921875,
+        "eos_emitted_count": 5,
+        "eos_emitted_fraction": 0.078125,
+        "early_eos_count": 5,
+        "early_eos_fraction": 0.078125,
+        "reached_cap_count": 59,
+        "reached_cap_fraction": 0.921875,
+        "parses_as_python_count": 31,
+        "parses_as_python_fraction": 0.484375,
+        "defines_solve_count": 31,
+        "defines_solve_fraction": 0.484375,
+        "solve_has_value_return_count": 0,
+        "solve_has_value_return_fraction": 0.0,
+        "exact_code_match_count": 0,
+        "exact_code_match_fraction": 0.0,
+        "exact_tokens_with_eos_count": 0,
+        "exact_tokens_with_eos_fraction": 0.0
+      },
+      "derived_batch_max_lengths": [
+        512,
+        512
+      ],
+      "derived_decoder_iterations": 1024,
+      "derived_processed_generation_slots": 32768,
+      "derived_active_generation_slots": 31090,
+      "derived_finished_padding_slots": 1678,
+      "derived_full_prefix_positions_processed": 8404992,
+      "derived_useful_slot_fraction": 0.94879150390625,
+      "possibly_unbound_name_examples": [
+        {
+          "index": 28,
+          "names": [
+            "cost_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per"
+          ]
+        }
+      ]
+    },
+    {
+      "step": 20000,
+      "split": "train_64",
+      "summary": {
+        "split": "train_64",
+        "examples": 64,
+        "loss": 1.039464962331105,
+        "mean_generated_tokens": 267.484375,
+        "min_generated_tokens": 84,
+        "max_generated_tokens": 512,
+        "seconds": 12.723426694000068,
+        "answers_per_second": 5.030091463503319,
+        "generated_tokens": 17119,
+        "tokens_per_second": 1345.4708713080206,
+        "batch_size_inference": 32,
+        "max_new_tokens": 512,
+        "timer_scope": "encoding, transfers, greedy, CPU decoding and AST/return/exact checks; loss/checkpoint excluded",
+        "peak_gpu_memory_mib": 512.56787109375,
+        "eos_emitted_count": 44,
+        "eos_emitted_fraction": 0.6875,
+        "early_eos_count": 44,
+        "early_eos_fraction": 0.6875,
+        "reached_cap_count": 20,
+        "reached_cap_fraction": 0.3125,
+        "parses_as_python_count": 1,
+        "parses_as_python_fraction": 0.015625,
+        "defines_solve_count": 1,
+        "defines_solve_fraction": 0.015625,
+        "solve_has_value_return_count": 0,
+        "solve_has_value_return_fraction": 0.0,
+        "exact_code_match_count": 0,
+        "exact_code_match_fraction": 0.0,
+        "exact_tokens_with_eos_count": 0,
+        "exact_tokens_with_eos_fraction": 0.0
+      },
+      "derived_batch_max_lengths": [
+        512,
+        512
+      ],
+      "derived_decoder_iterations": 1024,
+      "derived_processed_generation_slots": 32768,
+      "derived_active_generation_slots": 17119,
+      "derived_finished_padding_slots": 15649,
+      "derived_full_prefix_positions_processed": 8404992,
+      "derived_useful_slot_fraction": 0.522430419921875,
+      "possibly_unbound_name_examples": []
+    },
+    {
+      "step": 20000,
+      "split": "validation_64",
+      "summary": {
+        "split": "validation_64",
+        "examples": 64,
+        "loss": 1.0544824767766163,
+        "mean_generated_tokens": 261.6875,
+        "min_generated_tokens": 99,
+        "max_generated_tokens": 512,
+        "seconds": 12.390079700000001,
+        "answers_per_second": 5.165422785779175,
+        "generated_tokens": 16748,
+        "tokens_per_second": 1351.7265752535877,
+        "batch_size_inference": 32,
+        "max_new_tokens": 512,
+        "timer_scope": "encoding, transfers, greedy, CPU decoding and AST/return/exact checks; loss/checkpoint excluded",
+        "peak_gpu_memory_mib": 511.4765625,
+        "eos_emitted_count": 46,
+        "eos_emitted_fraction": 0.71875,
+        "early_eos_count": 46,
+        "early_eos_fraction": 0.71875,
+        "reached_cap_count": 18,
+        "reached_cap_fraction": 0.28125,
+        "parses_as_python_count": 3,
+        "parses_as_python_fraction": 0.046875,
+        "defines_solve_count": 3,
+        "defines_solve_fraction": 0.046875,
+        "solve_has_value_return_count": 0,
+        "solve_has_value_return_fraction": 0.0,
+        "exact_code_match_count": 0,
+        "exact_code_match_fraction": 0.0,
+        "exact_tokens_with_eos_count": 0,
+        "exact_tokens_with_eos_fraction": 0.0
+      },
+      "derived_batch_max_lengths": [
+        512,
+        512
+      ],
+      "derived_decoder_iterations": 1024,
+      "derived_processed_generation_slots": 32768,
+      "derived_active_generation_slots": 16748,
+      "derived_finished_padding_slots": 16020,
+      "derived_full_prefix_positions_processed": 8404992,
+      "derived_useful_slot_fraction": 0.5111083984375,
+      "possibly_unbound_name_examples": [
+        {
+          "index": 14,
+          "names": [
+            "candy_cardy_cars",
+            "cardy_cayondy_cars",
+            "cay_cars_cars_cars",
+            "cayoy_cars"
+          ]
+        },
+        {
+          "index": 16,
+          "names": [
+            "flour_nedededeffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+          ]
+        }
+      ]
+    },
+    {
+      "step": 30000,
+      "split": "train_64",
+      "summary": {
+        "split": "train_64",
+        "examples": 64,
+        "loss": 0.8945305746695245,
+        "mean_generated_tokens": 208.75,
+        "min_generated_tokens": 102,
+        "max_generated_tokens": 512,
+        "seconds": 12.785956084999953,
+        "answers_per_second": 5.0054919299373015,
+        "generated_tokens": 13360,
+        "tokens_per_second": 1044.8964403744117,
+        "batch_size_inference": 32,
+        "max_new_tokens": 512,
+        "timer_scope": "encoding, transfers, greedy, CPU decoding and AST/return/exact checks; loss/checkpoint excluded",
+        "peak_gpu_memory_mib": 514.09130859375,
+        "eos_emitted_count": 59,
+        "eos_emitted_fraction": 0.921875,
+        "early_eos_count": 59,
+        "early_eos_fraction": 0.921875,
+        "reached_cap_count": 5,
+        "reached_cap_fraction": 0.078125,
+        "parses_as_python_count": 18,
+        "parses_as_python_fraction": 0.28125,
+        "defines_solve_count": 18,
+        "defines_solve_fraction": 0.28125,
+        "solve_has_value_return_count": 17,
+        "solve_has_value_return_fraction": 0.265625,
+        "exact_code_match_count": 0,
+        "exact_code_match_fraction": 0.0,
+        "exact_tokens_with_eos_count": 0,
+        "exact_tokens_with_eos_fraction": 0.0
+      },
+      "derived_batch_max_lengths": [
+        512,
+        512
+      ],
+      "derived_decoder_iterations": 1024,
+      "derived_processed_generation_slots": 32768,
+      "derived_active_generation_slots": 13360,
+      "derived_finished_padding_slots": 19408,
+      "derived_full_prefix_positions_processed": 8404992,
+      "derived_useful_slot_fraction": 0.40771484375,
+      "possibly_unbound_name_examples": [
+        {
+          "index": 7,
+          "names": [
+            "carries",
+            "carrries"
+          ]
+        },
+        {
+          "index": 9,
+          "names": [
+            "firs_flours",
+            "result"
+          ]
+        },
+        {
+          "index": 13,
+          "names": [
+            "discount_percent",
+            "profit_prevenue"
+          ]
+        },
+        {
+          "index": 22,
+          "names": [
+            "jennnnnnnnnnnnnnnnnne_j_jennnnnnnnnnew_j_j_jennnnnnnew_j_j_jennnnnnew_j_j_j_jennnnnnnew_j_j_j_jew_jew_jew_jennnnnnnnnnnnnnnew_j_j_j_j_jew_j_jew_jew_jew_jew_jew_jew_jew_jennnnnnew_j_jew_jew_jew_jew_jew_jew_jew_jennnnew_jew_jew_jew_jew_jew_jew_jew_jew_jew_jew_jew_jewnnnnnnnnnnnew_jennnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnennnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnen_jennnnnnnennnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn"
+          ]
+        },
+        {
+          "index": 30,
+          "names": [
+            "pare",
+            "total_payme"
+          ]
+        },
+        {
+          "index": 31,
+          "names": [
+            "girls_students",
+            "total_gents"
+          ]
+        },
+        {
+          "index": 38,
+          "names": [
+            "botles",
+            "total_botles"
+          ]
+        },
+        {
+          "index": 42,
+          "names": [
+            "time_time"
+          ]
+        },
+        {
+          "index": 57,
+          "names": [
+            "time_time"
+          ]
+        }
+      ]
+    },
+    {
+      "step": 30000,
+      "split": "validation_64",
+      "summary": {
+        "split": "validation_64",
+        "examples": 64,
+        "loss": 0.9123152217476282,
+        "mean_generated_tokens": 199.109375,
+        "min_generated_tokens": 117,
+        "max_generated_tokens": 512,
+        "seconds": 10.01095779600007,
+        "answers_per_second": 6.3929946868392085,
+        "generated_tokens": 12743,
+        "tokens_per_second": 1272.9051764748754,
+        "batch_size_inference": 32,
+        "max_new_tokens": 512,
+        "timer_scope": "encoding, transfers, greedy, CPU decoding and AST/return/exact checks; loss/checkpoint excluded",
+        "peak_gpu_memory_mib": 512.4189453125,
+        "eos_emitted_count": 62,
+        "eos_emitted_fraction": 0.96875,
+        "early_eos_count": 62,
+        "early_eos_fraction": 0.96875,
+        "reached_cap_count": 2,
+        "reached_cap_fraction": 0.03125,
+        "parses_as_python_count": 11,
+        "parses_as_python_fraction": 0.171875,
+        "defines_solve_count": 11,
+        "defines_solve_fraction": 0.171875,
+        "solve_has_value_return_count": 11,
+        "solve_has_value_return_fraction": 0.171875,
+        "exact_code_match_count": 0,
+        "exact_code_match_fraction": 0.0,
+        "exact_tokens_with_eos_count": 0,
+        "exact_tokens_with_eos_fraction": 0.0
+      },
+      "derived_batch_max_lengths": [
+        512,
+        404
+      ],
+      "derived_decoder_iterations": 916,
+      "derived_processed_generation_slots": 29312,
+      "derived_active_generation_slots": 12743,
+      "derived_finished_padding_slots": 16569,
+      "derived_full_prefix_positions_processed": 6820416,
+      "derived_useful_slot_fraction": 0.4347366266375546,
+      "possibly_unbound_name_examples": [
+        {
+          "index": 24,
+          "names": [
+            "total_sersers"
+          ]
+        },
+        {
+          "index": 29,
+          "names": [
+            "result"
+          ]
+        },
+        {
+          "index": 35,
+          "names": [
+            "price_per_pencencils",
+            "profit_pevencils"
+          ]
+        },
+        {
+          "index": 52,
+          "names": [
+            "discount_perice"
+          ]
+        },
+        {
+          "index": 56,
+          "names": [
+            "weight_weight"
+          ]
+        },
+        {
+          "index": 61,
+          "names": [
+            "price_price",
+            "total_price"
+          ]
+        }
+      ]
+    },
+    {
+      "step": 50000,
+      "split": "train_64",
+      "summary": {
+        "split": "train_64",
+        "examples": 64,
+        "loss": 0.7314579359850433,
+        "mean_generated_tokens": 191.890625,
+        "min_generated_tokens": 108,
+        "max_generated_tokens": 512,
+        "seconds": 10.03636012700008,
+        "answers_per_second": 6.376813823950529,
+        "generated_tokens": 12281,
+        "tokens_per_second": 1223.650790186507,
+        "batch_size_inference": 32,
+        "max_new_tokens": 512,
+        "timer_scope": "encoding, transfers, greedy, CPU decoding and AST/return/exact checks; loss/checkpoint excluded",
+        "peak_gpu_memory_mib": 511.83056640625,
+        "eos_emitted_count": 62,
+        "eos_emitted_fraction": 0.96875,
+        "early_eos_count": 62,
+        "early_eos_fraction": 0.96875,
+        "reached_cap_count": 2,
+        "reached_cap_fraction": 0.03125,
+        "parses_as_python_count": 37,
+        "parses_as_python_fraction": 0.578125,
+        "defines_solve_count": 37,
+        "defines_solve_fraction": 0.578125,
+        "solve_has_value_return_count": 37,
+        "solve_has_value_return_fraction": 0.578125,
+        "exact_code_match_count": 0,
+        "exact_code_match_fraction": 0.0,
+        "exact_tokens_with_eos_count": 0,
+        "exact_tokens_with_eos_fraction": 0.0
+      },
+      "derived_batch_max_lengths": [
+        512,
+        392
+      ],
+      "derived_decoder_iterations": 904,
+      "derived_processed_generation_slots": 28928,
+      "derived_active_generation_slots": 12281,
+      "derived_finished_padding_slots": 16647,
+      "derived_full_prefix_positions_processed": 6667392,
+      "derived_useful_slot_fraction": 0.4245367809734513,
+      "possibly_unbound_name_examples": [
+        {
+          "index": 3,
+          "names": [
+            "bananana",
+            "banananana",
+            "bananananas",
+            "banananas",
+            "nana",
+            "nanana"
+          ]
+        },
+        {
+          "index": 5,
+          "names": [
+            "discount_percentage"
+          ]
+        },
+        {
+          "index": 9,
+          "names": [
+            "result",
+            "total_salats",
+            "total_salles",
+            "total_salls"
+          ]
+        },
+        {
+          "index": 15,
+          "names": [
+            "boooks_books"
+          ]
+        },
+        {
+          "index": 18,
+          "names": [
+            "price_of_cost"
+          ]
+        },
+        {
+          "index": 19,
+          "names": [
+            "result"
+          ]
+        },
+        {
+          "index": 22,
+          "names": [
+            "jary_money"
+          ]
+        },
+        {
+          "index": 30,
+          "names": [
+            "initerest_rate"
+          ]
+        },
+        {
+          "index": 31,
+          "names": [
+            "girl_girls",
+            "girl_percentage_girls",
+            "result"
+          ]
+        },
+        {
+          "index": 37,
+          "names": [
+            "cd_per_per_cer_per_dacer_per_ducentage_per_cer_per_dace",
+            "cd_price_per_cer_per_dace",
+            "cds_per_per_car",
+            "cds_price",
+            "total_price_per_per_per_day"
+          ]
+        },
+        {
+          "index": 38,
+          "names": [
+            "hours_per_hours"
+          ]
+        },
+        {
+          "index": 39,
+          "names": [
+            "piza_price",
+            "pizas",
+            "total_pices"
+          ]
+        },
+        {
+          "index": 42,
+          "names": [
+            "speed"
+          ]
+        },
+        {
+          "index": 45,
+          "names": [
+            "speed"
+          ]
+        },
+        {
+          "index": 46,
+          "names": [
+            "prod_red_red"
+          ]
+        },
+        {
+          "index": 50,
+          "names": [
+            "result"
+          ]
+        },
+        {
+          "index": 52,
+          "names": [
+            "total_stotal_students"
+          ]
+        },
+        {
+          "index": 56,
+          "names": [
+            "appples"
+          ]
+        },
+        {
+          "index": 59,
+          "names": [
+            "total_cures",
+            "tuesday_comers"
+          ]
+        },
+        {
+          "index": 62,
+          "names": [
+            "result"
+          ]
+        }
+      ]
+    },
+    {
+      "step": 50000,
+      "split": "validation_64",
+      "summary": {
+        "split": "validation_64",
+        "examples": 64,
+        "loss": 0.7666764174224789,
+        "mean_generated_tokens": 210.90625,
+        "min_generated_tokens": 90,
+        "max_generated_tokens": 512,
+        "seconds": 12.39726070200004,
+        "answers_per_second": 5.162430760988589,
+        "generated_tokens": 13498,
+        "tokens_per_second": 1088.7889126847497,
+        "batch_size_inference": 32,
+        "max_new_tokens": 512,
+        "timer_scope": "encoding, transfers, greedy, CPU decoding and AST/return/exact checks; loss/checkpoint excluded",
+        "peak_gpu_memory_mib": 512.98828125,
+        "eos_emitted_count": 61,
+        "eos_emitted_fraction": 0.953125,
+        "early_eos_count": 61,
+        "early_eos_fraction": 0.953125,
+        "reached_cap_count": 3,
+        "reached_cap_fraction": 0.046875,
+        "parses_as_python_count": 41,
+        "parses_as_python_fraction": 0.640625,
+        "defines_solve_count": 41,
+        "defines_solve_fraction": 0.640625,
+        "solve_has_value_return_count": 40,
+        "solve_has_value_return_fraction": 0.625,
+        "exact_code_match_count": 0,
+        "exact_code_match_fraction": 0.0,
+        "exact_tokens_with_eos_count": 0,
+        "exact_tokens_with_eos_fraction": 0.0
+      },
+      "derived_batch_max_lengths": [
+        512,
+        512
+      ],
+      "derived_decoder_iterations": 1024,
+      "derived_processed_generation_slots": 32768,
+      "derived_active_generation_slots": 13498,
+      "derived_finished_padding_slots": 19270,
+      "derived_full_prefix_positions_processed": 8404992,
+      "derived_useful_slot_fraction": 0.41192626953125,
+      "possibly_unbound_name_examples": [
+        {
+          "index": 2,
+          "names": [
+            "total_pairs",
+            "total_partime"
+          ]
+        },
+        {
+          "index": 5,
+          "names": [
+            "discount_amount"
+          ]
+        },
+        {
+          "index": 7,
+          "names": [
+            "john_jewekers"
+          ]
+        },
+        {
+          "index": 9,
+          "names": [
+            "total_tal_total_tanter",
+            "total_tanut"
+          ]
+        },
+        {
+          "index": 11,
+          "names": [
+            "discount"
+          ]
+        },
+        {
+          "index": 13,
+          "names": [
+            "result"
+          ]
+        },
+        {
+          "index": 15,
+          "names": [
+            "friend_friend",
+            "total_frend"
+          ]
+        },
+        {
+          "index": 17,
+          "names": [
+            "total_lotal_sold"
+          ]
+        },
+        {
+          "index": 21,
+          "names": [
+            "ma_books"
+          ]
+        },
+        {
+          "index": 23,
+          "names": [
+            "balookies",
+            "result"
+          ]
+        },
+        {
+          "index": 36,
+          "names": [
+            "flour_per_flour"
+          ]
+        },
+        {
+          "index": 39,
+          "names": [
+            "result"
+          ]
+        },
+        {
+          "index": 40,
+          "names": [
+            "pieces_per_pizas",
+            "piza_pieces",
+            "piza_pieces_per_per_pizas",
+            "piza_pieces_per_per_pppperson"
+          ]
+        },
+        {
+          "index": 43,
+          "names": [
+            "mime_tems",
+            "mime_time"
+          ]
+        },
+        {
+          "index": 47,
+          "names": [
+            "manday_cars",
+            "maray_cars",
+            "mayars_cors",
+            "total_cars"
+          ]
+        },
+        {
+          "index": 53,
+          "names": [
+            "result"
+          ]
+        },
+        {
+          "index": 54,
+          "names": [
+            "price_per_per_per_per_per_per_per_per_per_per_per_per_per_per_perice",
+            "price_per_per_per_price",
+            "total_price_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per"
+          ]
+        }
+      ]
+    }
+  ],
+  "read_on": "2026-10-07",
+  "origin": "User-saved Tesla T4 run. New work consists of artifact validation, AST analysis and arithmetic only.",
+  "archive_crc_and_manifest_hashes_verified": true,
+  "printed_summaries_and_result_match_archive_json": true,
+  "all_512_examples_counts_lengths_and_ast_verified": true,
+  "all_diagnostic_questions_and_references_preserved_across_steps": true,
+  "restored_10000_losses_ast_eos_and_exact_match_previous_result": true,
+  "generated_or_reference_programs_executed_now": false,
+  "functional_quality_evaluated_now": false,
+  "derived_arithmetic_performed_now": {
+    "training_updates_per_second_this_run": 42.10417955825892,
+    "training_pairs_per_second_this_run": 336.83343646607136,
+    "mean_pair_presentations_total": 20.0,
+    "total_pure_training_seconds_two_user_runs": 1186.8237166759975,
+    "required_answers_per_second_for_1919_in_180_seconds": 10.661111111111111,
+    "linear_full_test_seconds_estimate_from_validation64_at_50000": 371.7241138615325,
+    "estimated_speedup_needed_excluding_safety_margin": 2.065133965897403,
+    "validation64_loss_relative_decrease_10000_to_50000": 0.4409329158978329,
+    "train_validation64_loss_gap_at_50000": 0.03521848143743567,
+    "projection_scope": "Linear extrapolation from 64 validation questions, not a full test benchmark"
+  },
+  "notebook_printed_summaries": [
+    {
+      "step": 10000,
+      "updates_completed_this_run": 0,
+      "validation_loss_16": 1.3694318238007048,
+      "mean_training_pair_presentations": 4.0,
+      "training_seconds_excluding_evaluation_logging_and_checkpoints": 0.0,
+      "train_64": {
+        "split": "train_64",
+        "examples": 64,
+        "loss": 1.3372655806706149,
+        "mean_generated_tokens": 491.5625,
+        "min_generated_tokens": 154,
+        "max_generated_tokens": 512,
+        "seconds": 12.142844521999962,
+        "answers_per_second": 5.270593713363219,
+        "generated_tokens": 31460,
+        "tokens_per_second": 2590.8262222251074,
+        "batch_size_inference": 32,
+        "max_new_tokens": 512,
+        "timer_scope": "encoding, transfers, greedy, CPU decoding and AST/return/exact checks; loss/checkpoint excluded",
+        "peak_gpu_memory_mib": 497.05126953125,
+        "eos_emitted_count": 4,
+        "eos_emitted_fraction": 0.0625,
+        "early_eos_count": 4,
+        "early_eos_fraction": 0.0625,
+        "reached_cap_count": 60,
+        "reached_cap_fraction": 0.9375,
+        "parses_as_python_count": 14,
+        "parses_as_python_fraction": 0.21875,
+        "defines_solve_count": 14,
+        "defines_solve_fraction": 0.21875,
+        "solve_has_value_return_count": 0,
+        "solve_has_value_return_fraction": 0.0,
+        "exact_code_match_count": 0,
+        "exact_code_match_fraction": 0.0,
+        "exact_tokens_with_eos_count": 0,
+        "exact_tokens_with_eos_fraction": 0.0
+      },
+      "validation_64": {
+        "split": "validation_64",
+        "examples": 64,
+        "loss": 1.3713495915319747,
+        "mean_generated_tokens": 485.78125,
+        "min_generated_tokens": 151,
+        "max_generated_tokens": 512,
+        "seconds": 11.918084881000027,
+        "answers_per_second": 5.36999028275337,
+        "generated_tokens": 31090,
+        "tokens_per_second": 2608.6405920437855,
+        "batch_size_inference": 32,
+        "max_new_tokens": 512,
+        "timer_scope": "encoding, transfers, greedy, CPU decoding and AST/return/exact checks; loss/checkpoint excluded",
+        "peak_gpu_memory_mib": 495.6044921875,
+        "eos_emitted_count": 5,
+        "eos_emitted_fraction": 0.078125,
+        "early_eos_count": 5,
+        "early_eos_fraction": 0.078125,
+        "reached_cap_count": 59,
+        "reached_cap_fraction": 0.921875,
+        "parses_as_python_count": 31,
+        "parses_as_python_fraction": 0.484375,
+        "defines_solve_count": 31,
+        "defines_solve_fraction": 0.484375,
+        "solve_has_value_return_count": 0,
+        "solve_has_value_return_fraction": 0.0,
+        "exact_code_match_count": 0,
+        "exact_code_match_fraction": 0.0,
+        "exact_tokens_with_eos_count": 0,
+        "exact_tokens_with_eos_fraction": 0.0
+      }
+    },
+    {
+      "step": 20000,
+      "updates_completed_this_run": 10000,
+      "validation_loss_16": 1.0293907104070772,
+      "mean_training_pair_presentations": 8.0,
+      "training_seconds_excluding_evaluation_logging_and_checkpoints": 241.36993372899974,
+      "train_64": {
+        "split": "train_64",
+        "examples": 64,
+        "loss": 1.039464962331105,
+        "mean_generated_tokens": 267.484375,
+        "min_generated_tokens": 84,
+        "max_generated_tokens": 512,
+        "seconds": 12.723426694000068,
+        "answers_per_second": 5.030091463503319,
+        "generated_tokens": 17119,
+        "tokens_per_second": 1345.4708713080206,
+        "batch_size_inference": 32,
+        "max_new_tokens": 512,
+        "timer_scope": "encoding, transfers, greedy, CPU decoding and AST/return/exact checks; loss/checkpoint excluded",
+        "peak_gpu_memory_mib": 512.56787109375,
+        "eos_emitted_count": 44,
+        "eos_emitted_fraction": 0.6875,
+        "early_eos_count": 44,
+        "early_eos_fraction": 0.6875,
+        "reached_cap_count": 20,
+        "reached_cap_fraction": 0.3125,
+        "parses_as_python_count": 1,
+        "parses_as_python_fraction": 0.015625,
+        "defines_solve_count": 1,
+        "defines_solve_fraction": 0.015625,
+        "solve_has_value_return_count": 0,
+        "solve_has_value_return_fraction": 0.0,
+        "exact_code_match_count": 0,
+        "exact_code_match_fraction": 0.0,
+        "exact_tokens_with_eos_count": 0,
+        "exact_tokens_with_eos_fraction": 0.0
+      },
+      "validation_64": {
+        "split": "validation_64",
+        "examples": 64,
+        "loss": 1.0544824767766163,
+        "mean_generated_tokens": 261.6875,
+        "min_generated_tokens": 99,
+        "max_generated_tokens": 512,
+        "seconds": 12.390079700000001,
+        "answers_per_second": 5.165422785779175,
+        "generated_tokens": 16748,
+        "tokens_per_second": 1351.7265752535877,
+        "batch_size_inference": 32,
+        "max_new_tokens": 512,
+        "timer_scope": "encoding, transfers, greedy, CPU decoding and AST/return/exact checks; loss/checkpoint excluded",
+        "peak_gpu_memory_mib": 511.4765625,
+        "eos_emitted_count": 46,
+        "eos_emitted_fraction": 0.71875,
+        "early_eos_count": 46,
+        "early_eos_fraction": 0.71875,
+        "reached_cap_count": 18,
+        "reached_cap_fraction": 0.28125,
+        "parses_as_python_count": 3,
+        "parses_as_python_fraction": 0.046875,
+        "defines_solve_count": 3,
+        "defines_solve_fraction": 0.046875,
+        "solve_has_value_return_count": 0,
+        "solve_has_value_return_fraction": 0.0,
+        "exact_code_match_count": 0,
+        "exact_code_match_fraction": 0.0,
+        "exact_tokens_with_eos_count": 0,
+        "exact_tokens_with_eos_fraction": 0.0
+      }
+    },
+    {
+      "step": 30000,
+      "updates_completed_this_run": 20000,
+      "validation_loss_16": 0.8898679954959005,
+      "mean_training_pair_presentations": 12.0,
+      "training_seconds_excluding_evaluation_logging_and_checkpoints": 477.6322086109983,
+      "train_64": {
+        "split": "train_64",
+        "examples": 64,
+        "loss": 0.8945305746695245,
+        "mean_generated_tokens": 208.75,
+        "min_generated_tokens": 102,
+        "max_generated_tokens": 512,
+        "seconds": 12.785956084999953,
+        "answers_per_second": 5.0054919299373015,
+        "generated_tokens": 13360,
+        "tokens_per_second": 1044.8964403744117,
+        "batch_size_inference": 32,
+        "max_new_tokens": 512,
+        "timer_scope": "encoding, transfers, greedy, CPU decoding and AST/return/exact checks; loss/checkpoint excluded",
+        "peak_gpu_memory_mib": 514.09130859375,
+        "eos_emitted_count": 59,
+        "eos_emitted_fraction": 0.921875,
+        "early_eos_count": 59,
+        "early_eos_fraction": 0.921875,
+        "reached_cap_count": 5,
+        "reached_cap_fraction": 0.078125,
+        "parses_as_python_count": 18,
+        "parses_as_python_fraction": 0.28125,
+        "defines_solve_count": 18,
+        "defines_solve_fraction": 0.28125,
+        "solve_has_value_return_count": 17,
+        "solve_has_value_return_fraction": 0.265625,
+        "exact_code_match_count": 0,
+        "exact_code_match_fraction": 0.0,
+        "exact_tokens_with_eos_count": 0,
+        "exact_tokens_with_eos_fraction": 0.0
+      },
+      "validation_64": {
+        "split": "validation_64",
+        "examples": 64,
+        "loss": 0.9123152217476282,
+        "mean_generated_tokens": 199.109375,
+        "min_generated_tokens": 117,
+        "max_generated_tokens": 512,
+        "seconds": 10.01095779600007,
+        "answers_per_second": 6.3929946868392085,
+        "generated_tokens": 12743,
+        "tokens_per_second": 1272.9051764748754,
+        "batch_size_inference": 32,
+        "max_new_tokens": 512,
+        "timer_scope": "encoding, transfers, greedy, CPU decoding and AST/return/exact checks; loss/checkpoint excluded",
+        "peak_gpu_memory_mib": 512.4189453125,
+        "eos_emitted_count": 62,
+        "eos_emitted_fraction": 0.96875,
+        "early_eos_count": 62,
+        "early_eos_fraction": 0.96875,
+        "reached_cap_count": 2,
+        "reached_cap_fraction": 0.03125,
+        "parses_as_python_count": 11,
+        "parses_as_python_fraction": 0.171875,
+        "defines_solve_count": 11,
+        "defines_solve_fraction": 0.171875,
+        "solve_has_value_return_count": 11,
+        "solve_has_value_return_fraction": 0.171875,
+        "exact_code_match_count": 0,
+        "exact_code_match_fraction": 0.0,
+        "exact_tokens_with_eos_count": 0,
+        "exact_tokens_with_eos_fraction": 0.0
+      }
+    },
+    {
+      "step": 50000,
+      "updates_completed_this_run": 40000,
+      "validation_loss_16": 0.7324826994480006,
+      "mean_training_pair_presentations": 20.0,
+      "training_seconds_excluding_evaluation_logging_and_checkpoints": 950.0244493459991,
+      "train_64": {
+        "split": "train_64",
+        "examples": 64,
+        "loss": 0.7314579359850433,
+        "mean_generated_tokens": 191.890625,
+        "min_generated_tokens": 108,
+        "max_generated_tokens": 512,
+        "seconds": 10.03636012700008,
+        "answers_per_second": 6.376813823950529,
+        "generated_tokens": 12281,
+        "tokens_per_second": 1223.650790186507,
+        "batch_size_inference": 32,
+        "max_new_tokens": 512,
+        "timer_scope": "encoding, transfers, greedy, CPU decoding and AST/return/exact checks; loss/checkpoint excluded",
+        "peak_gpu_memory_mib": 511.83056640625,
+        "eos_emitted_count": 62,
+        "eos_emitted_fraction": 0.96875,
+        "early_eos_count": 62,
+        "early_eos_fraction": 0.96875,
+        "reached_cap_count": 2,
+        "reached_cap_fraction": 0.03125,
+        "parses_as_python_count": 37,
+        "parses_as_python_fraction": 0.578125,
+        "defines_solve_count": 37,
+        "defines_solve_fraction": 0.578125,
+        "solve_has_value_return_count": 37,
+        "solve_has_value_return_fraction": 0.578125,
+        "exact_code_match_count": 0,
+        "exact_code_match_fraction": 0.0,
+        "exact_tokens_with_eos_count": 0,
+        "exact_tokens_with_eos_fraction": 0.0
+      },
+      "validation_64": {
+        "split": "validation_64",
+        "examples": 64,
+        "loss": 0.7666764174224789,
+        "mean_generated_tokens": 210.90625,
+        "min_generated_tokens": 90,
+        "max_generated_tokens": 512,
+        "seconds": 12.39726070200004,
+        "answers_per_second": 5.162430760988589,
+        "generated_tokens": 13498,
+        "tokens_per_second": 1088.7889126847497,
+        "batch_size_inference": 32,
+        "max_new_tokens": 512,
+        "timer_scope": "encoding, transfers, greedy, CPU decoding and AST/return/exact checks; loss/checkpoint excluded",
+        "peak_gpu_memory_mib": 512.98828125,
+        "eos_emitted_count": 61,
+        "eos_emitted_fraction": 0.953125,
+        "early_eos_count": 61,
+        "early_eos_fraction": 0.953125,
+        "reached_cap_count": 3,
+        "reached_cap_fraction": 0.046875,
+        "parses_as_python_count": 41,
+        "parses_as_python_fraction": 0.640625,
+        "defines_solve_count": 41,
+        "defines_solve_fraction": 0.640625,
+        "solve_has_value_return_count": 40,
+        "solve_has_value_return_fraction": 0.625,
+        "exact_code_match_count": 0,
+        "exact_code_match_fraction": 0.0,
+        "exact_tokens_with_eos_count": 0,
+        "exact_tokens_with_eos_fraction": 0.0
+      }
+    }
+  ],
+  "notebook_printed_result": {
+    "start_step": 10000,
+    "actual_steps": 50000,
+    "updates_completed_this_run": 40000,
+    "run_finished": true,
+    "training_seconds_excluding_evaluation_logging_and_checkpoints": 950.0244493459991,
+    "active_wall_seconds_including_diagnostics_and_checkpointing": 1074.465884392,
+    "latest_checkpoint_step": 50000,
+    "checkpoint_files": {
+      "20000": "hw02-byte-20k-continue-step-20000.pt",
+      "30000": "hw02-byte-20k-continue-step-30000.pt",
+      "50000": "hw02-byte-20k-continue-step-50000.pt"
+    }
+  },
+  "notebook_metadata_only_removed": true,
+  "notebook_code_counts_outputs_preserved": true,
+  "saved_notebook_sha256": "feab32b691b9653688ed147efb2038c91be195e7ab2c24e3f949f8a658848ce3",
+  "saved_results_json_sha256": "598f09e0f60d1f77a362bc6883b01ec4c8f3b032a7b0ed8380291c37195c7634",
+  "repository_relative_notebook_path": "work/results/06-longer-training-byte-20k-pairs-50000-steps-results.ipynb",
+  "repository_relative_full_results_path": "work/results/06-longer-training-byte-20k-pairs-50000-steps-results.json",
+  "repository_relative_checkpoint_manifest": "work/results/06-longer-training-byte-20k-pairs-checkpoints.json",
+  "repository_relative_cpu_check": "work/checks/06-byte-20k-50000-results-cpu-checks.json",
+  "gpu_training_or_inference_rerun_now": false,
+  "training_or_autoregressive_generation_performed_now": false,
+  "cpu_teacher_forcing_validation_performed_now": true,
+  "source_conditioning_check": {
+    "performed_on": "2026-10-07",
+    "runtime": "PyTorch 2.14.1 / CPU / FP32",
+    "checkpoint_sha256": "3dbd745c9662aa2a73b3832e6ed09990dd9f41974c3dd7172eda1f00d5007271",
+    "split": "same validation64, same references and fixed checkpoint50000",
+    "batch_size": 16,
+    "loss_scope": "token-weighted cross-entropy with gold decoder prefixes; PAD excluded, EOS included",
+    "saved_user_t4_original_questions_loss": 0.7666764174224789,
+    "measured_now_cpu_original_questions_loss": 0.7666764002657238,
+    "measured_now_cpu_cyclic_shift_by_one_questions_loss": 1.0516871781392745,
+    "measured_now_cpu_reversed_questions_loss": 1.070511621299631,
+    "interpretation": "Source sensitivity under teacher forcing only. Does not measure functional accuracy or greedy prompt use.",
+    "training_or_autoregressive_generation_performed": false,
+    "generated_or_reference_programs_executed": false,
+    "cpu_or_gpu_speed_benchmark_performed": false,
+    "training_data_or_targets_created": false
+  }
+}

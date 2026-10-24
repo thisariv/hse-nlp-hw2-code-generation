@@ -1,0 +1,197 @@
+{
+  "owner": "friend1",
+  "transfer_dataset": "friend1/nlp-hw02-b5-inputs",
+  "cache_source": "thisarivson/nlp-hw02-compact-cache-verified/2",
+  "starter_source": "thisarivson/nlp-hw02-26b-inputs",
+  "sources": {
+    "0": "thisarivson/nlp-hw02-b4/1",
+    "1": "friend1/nlp-hw02-l3-live/12"
+  },
+  "anchors": {
+    "0": {
+      "file": "checkpoints/main-9bdf4998eb30.pt",
+      "bytes": 1361709117,
+      "sha256": "f23fe1e36135e23b1ba1d393537ea501f25165a084b8462c16d8bc24843abc7a",
+      "updates": 111933,
+      "cursor": 14327424,
+      "main_seconds": 91801.75519380573,
+      "model_spec": {
+        "d_model": 768,
+        "heads": 12,
+        "encoder_layers": 6,
+        "decoder_layers": 6,
+        "swiglu_dim": 2048,
+        "vocab": 8195,
+        "qk_norm": "layernorm"
+      },
+      "identity": {
+        "model": "W-lr600",
+        "recipe": {
+          "architecture": {
+            "d_model": 768,
+            "heads": 12,
+            "encoder_layers": 6,
+            "decoder_layers": 6,
+            "swiglu_dim": 2048,
+            "vocab": 8195,
+            "qk_norm": "layernorm"
+          },
+          "normalized_token_init": true,
+          "seed": 42,
+          "dropout": 0.0,
+          "peak_lr": 0.0006,
+          "warmup_updates": 2000,
+          "z_loss": 0.0001,
+          "qk_norm": "headwise LayerNorm",
+          "effective_batch": 128,
+          "weight_decay": 0.01,
+          "clip": 1.0,
+          "AMP": "FP16+GradScaler",
+          "fused_AdamW": true,
+          "main_truncation_q": 0.0,
+          "main_schedule": "warmup then constant; emergency factor persists",
+          "torch": "2.11.0+cu128",
+          "CUDA": "12.8",
+          "implementation_sha256": {
+            "b2_runtime.py": "e95682ce5680b2f4466df811ca1e46912295c9babd7d9adab21dbc42ae4c9db3",
+            "b2_optim.py": "48357f22193299e3d758dd0dcb4e28ed91ef147cba5786ff5da500569c394f32",
+            "qk_attention.py": "68215829f8a88abf611f92303315b625625ea694d34be952c7b9f7278e3f68fd",
+            "b1_data.py": "cba9f8278c5a696949ff2de501b7b7fd04e5ea69b257e10188fe6193889bbfc3",
+            "exp26_core.py": "b9dd4c542ca41b5a70fb556e477e45e1ae76c3afedac7c31a4b487030bec4c9e",
+            "exp26_train.py": "0392b8fabcae875eb7972a6c69f6594974603ae81090f4c484fbc47244fb2570",
+            "exp26_order.py": "98f6e43cf31810d4e86fdbf36b37aaf8dfe7c40ec82d065f82194d7056172783",
+            "l1_runtime.py": "cbcf26636a1a1a62d13ee8fe82a4e9deb420db13f2e811a0fb51832c3811f038",
+            "l2_runtime.py": "43ce7e35dbfbb5712a427e4aa9f8fb39532d873dde38cd029b9ba8a9fa771ed3",
+            "s3_representation.py": "51c18fd6b9d158086c96da9f23dd72030da84e27cff18b51028934b0f21d519c"
+          }
+        },
+        "recipe_sha256": "81f2eb4b21dba22ea36840abd870e115f75f66e7ae8d78252cad1ad21ff0a0a9",
+        "cache_manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+        "order_sha256": "8e9595f655ed2b4456bf5b94e9b5b6b3db040e3f5696a4dc0ef364588048bee8",
+        "order_seed": 2026101501,
+        "cpu_test": false
+      },
+      "purpose": "uncooled full B2 stable"
+    },
+    "1": {
+      "file": "model-C-long2x__checkpoints__main-2a27307d7a48.pt",
+      "sha256": "48f2ba3fa4ffe6a722b45a084d3ee33a27cc4ed02b72433605c9cb1740f5a80b",
+      "bytes": 644197075,
+      "updates": 209144,
+      "cursor": 20734592,
+      "main_seconds": 79850.42887455746,
+      "l2_main_seconds": 62280.4929961593,
+      "identity": {
+        "model": "C-long2x",
+        "recipe": {
+          "architecture": {
+            "d_model": 512,
+            "heads": 8,
+            "encoder_layers": 6,
+            "decoder_layers": 6,
+            "swiglu_dim": 1368,
+            "vocab": 8195
+          },
+          "representation": 30,
+          "normalized_token_init": true,
+          "seed": 42,
+          "dropout": 0.0,
+          "AMP": "FP16+GradScaler",
+          "fused_AdamW": true,
+          "weight_decay": 0.01,
+          "clip": 1.0,
+          "effective_batch": 128,
+          "peak_lr": 0.0015,
+          "warmup_updates": 1000,
+          "main_schedule": "constant",
+          "data_policy": "fixed bucketed weighted order; long rows twice, others once; circular",
+          "implementation_sha256": {
+            "l1_runtime.py": "cbcf26636a1a1a62d13ee8fe82a4e9deb420db13f2e811a0fb51832c3811f038",
+            "exp26_core.py": "7247eae92a09a73b62c86fee80c261d3e3a0043cb863d7bc069426d214f575ce",
+            "exp26_train.py": "0392b8fabcae875eb7972a6c69f6594974603ae81090f4c484fbc47244fb2570",
+            "exp26_order.py": "98f6e43cf31810d4e86fdbf36b37aaf8dfe7c40ec82d065f82194d7056172783",
+            "s3_representation.py": "51c18fd6b9d158086c96da9f23dd72030da84e27cff18b51028934b0f21d519c"
+          },
+          "torch": "2.11.0+cu128",
+          "CUDA": "12.8",
+          "sampler": {
+            "seed": 2026101302,
+            "rows": 9725737,
+            "slots": 11227811,
+            "batch": 128,
+            "chunk": 4096,
+            "length_source": "verified compact target-offsets",
+            "original_lengths_available": false,
+            "threshold": 79,
+            "heldout_original_ge90": 626,
+            "heldout_rows": 4096,
+            "target_long_fraction": 0.15283203125,
+            "train_long_rows": 1502074,
+            "train_long_fraction": 0.15444320569227812,
+            "fraction_error": 0.0016111744422781238,
+            "weighted_long_fraction": 0.2675631073590391,
+            "multiplicity": {
+              "short": 1,
+              "long": 2
+            },
+            "cache_manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+            "file": {
+              "file": "order.npy",
+              "sha256": "72bc3dfd3a3e738979c489c0cf8f41cde092c41d4ae90f2de8378a034603a4db",
+              "bytes": 44911372
+            },
+            "selection": "nearest attainable threshold; higher threshold wins ties; no loss reweighting",
+            "lengths_sha256": "06b94974710dca43173fa06467c643c1d5a45996e8cc6c62f18b4f67b6578f83"
+          }
+        },
+        "recipe_sha256": "783f2efc69fb7990ef487e3704abc12efc191bd5a69fd352eb2064787d887fc7",
+        "cache_manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+        "order_sha256": "72bc3dfd3a3e738979c489c0cf8f41cde092c41d4ae90f2de8378a034603a4db",
+        "smoke": false,
+        "parent_recipe_sha256": "7d74147e9569f965730dd1055f5f83bfc0585232b5bf39e56dc9a796833fd819"
+      },
+      "model_spec": {
+        "d_model": 512,
+        "heads": 8,
+        "encoder_layers": 6,
+        "decoder_layers": 6,
+        "swiglu_dim": 1368,
+        "vocab": 8195
+      },
+      "purpose": "stable full L2 resume; uncooled; model/AdamW/scaler/all RNG/history",
+      "original_file": "checkpoints/main-2a27307d7a48.pt"
+    }
+  },
+  "C_weighted_order": {
+    "seed": 2026101302,
+    "rows": 9725737,
+    "slots": 11227811,
+    "batch": 128,
+    "chunk": 4096,
+    "length_source": "verified compact target-offsets",
+    "original_lengths_available": false,
+    "threshold": 79,
+    "heldout_original_ge90": 626,
+    "heldout_rows": 4096,
+    "target_long_fraction": 0.15283203125,
+    "train_long_rows": 1502074,
+    "train_long_fraction": 0.15444320569227812,
+    "fraction_error": 0.0016111744422781238,
+    "weighted_long_fraction": 0.2675631073590391,
+    "multiplicity": {
+      "short": 1,
+      "long": 2
+    },
+    "cache_manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+    "file": {
+      "file": "order.npy",
+      "sha256": "72bc3dfd3a3e738979c489c0cf8f41cde092c41d4ae90f2de8378a034603a4db",
+      "bytes": 44911372
+    },
+    "selection": "nearest attainable threshold; higher threshold wins ties; no loss reweighting",
+    "lengths_sha256": "06b94974710dca43173fa06467c643c1d5a45996e8cc6c62f18b4f67b6578f83"
+  },
+  "W_source_manifest_sha256": "bc2201191cb3552ff21a468df730d33cac19013e572877411afaa137d27a4da6",
+  "transfer_version": 1,
+  "transfer_sha256": "01b622f609dc49d40b21dbec3dfcfaaaaf0c9ba5d7ef8c657bfff397433d8eff"
+}

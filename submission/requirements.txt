@@ -1,0 +1,9 @@
+# Use the v11 GPU runtime torch==2.11.0+cu128 for the final T4 gate.
+# CPU equivalence was checked with torch 2.14.1; see tests/cpu-checks.json.
+torch>=2.6
+tokenizers>=0.21
+sympy>=1.13
+numpy>=1.26
+nbformat>=5.10
+nbclient>=0.10
+ipykernel>=6

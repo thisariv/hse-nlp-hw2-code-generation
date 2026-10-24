@@ -1,0 +1,70 @@
+{
+  "models": [
+    {
+      "name": "W-B7",
+      "filename": "w-b7-fp16.pt",
+      "sha256": "3378c368f601c7cd046d40de22cf5cc6f5081deff190819bb4f616f0eb2761ac",
+      "dataset": "bibi1510/nlp-hw02-b7",
+      "source_kind": "notebooks",
+      "source_ref": "bibi1510/nlp-hw02-b7/1",
+      "K1": 1,
+      "K2": 1,
+      "source_path": "model-GPU0/weights/b6-final-fp16.pt"
+    },
+    {
+      "name": "C-long2x-B7",
+      "filename": "c-long2x-b7-fp16.pt",
+      "sha256": "bcb41c54d031b70523d357dd7d14dc24ec7d1393a6cb8714d8eacfe761cca32b",
+      "dataset": "bibi1510/nlp-hw02-b7",
+      "source_kind": "notebooks",
+      "source_ref": "bibi1510/nlp-hw02-b7/1",
+      "K1": 1,
+      "K2": 8,
+      "source_path": "model-GPU1/weights/b6-final-fp16.pt"
+    },
+    {
+      "name": "pilot-b",
+      "filename": "p1-b-fp16.pt",
+      "sha256": "8439037720dda16dda6b73fe676860d5498bbcba4cacebc0d709bbb22db464a5",
+      "dataset": "bibi1510/nlp-hw02-kaggle-p1",
+      "source_kind": "notebooks",
+      "source_ref": "bibi1510/nlp-hw02-kaggle-p1/3",
+      "K1": 1,
+      "K2": 8,
+      "source_path": "model-pilot-b/weights/long-truncation-fp16.pt"
+    }
+  ],
+  "unanimity_threshold": 1.0,
+  "sequence_budget": 640,
+  "greedy_sequence_budget": 640,
+  "scorer_enabled": false,
+  "scorer_weight": 0.0,
+  "device": "cuda:0",
+  "budget_seconds": 180.0,
+  "cap": 512,
+  "seed": 270042,
+  "temperature": 0.7,
+  "tail_workers": 4,
+  "generation_workers": 2,
+  "expected_tune_matches": 1547,
+  "tokenizer_sha256": "261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d",
+  "decoder": {
+    "share_cross": true,
+    "async_eos": true,
+    "eos_every": 32,
+    "compact_done": true,
+    "compact_fraction": 0.25,
+    "race_sampler": true,
+    "lean_greedy": true
+  },
+  "guards": {
+    "generation": 160.0,
+    "execution": 166.0,
+    "verification": 170.0,
+    "supervisor": 172.0,
+    "greedy": 130.0
+  },
+  "cuda_allocator": "expandable_segments:True,garbage_collection_threshold:0.8",
+  "release_cache_between_batches": true,
+  "variant": "v2"
+}

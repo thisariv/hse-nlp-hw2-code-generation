@@ -1,0 +1,27 @@
+{
+  "at_utc": "2026-10-19T16:51:29.311493+00:00",
+  "latest_version": 4,
+  "own_push_calls": 1,
+  "versions": [
+    {
+      "requested_version": 1,
+      "status": "CANCEL_ACKNOWLEDGED",
+      "all_code_cells_exact": true
+    },
+    {
+      "requested_version": 2,
+      "status": "CANCEL_ACKNOWLEDGED",
+      "all_code_cells_exact": true
+    },
+    {
+      "requested_version": 3,
+      "status": "CANCEL_ACKNOWLEDGED",
+      "all_code_cells_exact": true
+    },
+    {
+      "requested_version": 4,
+      "status": "COMPLETE",
+      "all_code_cells_exact": true
+    }
+  ]
+}

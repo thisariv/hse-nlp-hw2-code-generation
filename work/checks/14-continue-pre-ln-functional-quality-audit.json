@@ -1,0 +1,3210 @@
+{
+  "date": "2026-10-08",
+  "scope": "New restricted arithmetic and semantic audit of saved user outputs; no model updates or supplied program execution. All manual answers are evaluation only.",
+  "fixed_reference_numeric_pairs": 888,
+  "reference_unsupported_pairs": 136,
+  "old_reference_numeric_pairs": 223,
+  "reference_agreements": {
+    "50000": 104,
+    "75000": 97,
+    "100000": 117
+  },
+  "paired_transitions": {
+    "50000->75000": {
+      "same_fixed_reference_denominator": 888,
+      "both_match": 75,
+      "gained": 22,
+      "lost": 29,
+      "net": -7,
+      "gained_indices": [
+        77,
+        169,
+        213,
+        321,
+        345,
+        452,
+        474,
+        507,
+        539,
+        558,
+        657,
+        664,
+        693,
+        703,
+        756,
+        759,
+        767,
+        827,
+        860,
+        869,
+        879,
+        896
+      ],
+      "lost_indices": [
+        148,
+        157,
+        165,
+        173,
+        185,
+        186,
+        196,
+        212,
+        230,
+        259,
+        300,
+        304,
+        385,
+        445,
+        451,
+        588,
+        589,
+        600,
+        611,
+        632,
+        640,
+        655,
+        713,
+        749,
+        800,
+        815,
+        845,
+        861,
+        963
+      ],
+      "both_do_not_match": 762,
+      "scope": "paired reference-proxy transitions, not mathematical accuracy or official pass@1"
+    },
+    "75000->100000": {
+      "same_fixed_reference_denominator": 888,
+      "both_match": 81,
+      "gained": 36,
+      "lost": 16,
+      "net": 20,
+      "gained_indices": [
+        13,
+        34,
+        103,
+        136,
+        137,
+        148,
+        165,
+        194,
+        230,
+        235,
+        236,
+        245,
+        252,
+        259,
+        282,
+        318,
+        325,
+        327,
+        463,
+        477,
+        478,
+        513,
+        525,
+        589,
+        614,
+        627,
+        632,
+        669,
+        675,
+        699,
+        713,
+        725,
+        792,
+        800,
+        845,
+        966
+      ],
+      "lost_indices": [
+        213,
+        275,
+        307,
+        345,
+        452,
+        474,
+        507,
+        524,
+        535,
+        657,
+        664,
+        703,
+        860,
+        879,
+        957,
+        982
+      ],
+      "both_do_not_match": 755,
+      "scope": "paired reference-proxy transitions, not mathematical accuracy or official pass@1"
+    },
+    "50000->100000": {
+      "same_fixed_reference_denominator": 888,
+      "both_match": 78,
+      "gained": 39,
+      "lost": 26,
+      "net": 13,
+      "gained_indices": [
+        13,
+        34,
+        77,
+        103,
+        136,
+        137,
+        169,
+        194,
+        235,
+        236,
+        245,
+        252,
+        282,
+        318,
+        321,
+        325,
+        327,
+        463,
+        477,
+        478,
+        513,
+        525,
+        539,
+        558,
+        614,
+        627,
+        669,
+        675,
+        693,
+        699,
+        725,
+        756,
+        759,
+        767,
+        792,
+        827,
+        869,
+        896,
+        966
+      ],
+      "lost_indices": [
+        157,
+        173,
+        185,
+        186,
+        196,
+        212,
+        275,
+        300,
+        304,
+        307,
+        385,
+        445,
+        451,
+        524,
+        535,
+        588,
+        600,
+        611,
+        640,
+        655,
+        749,
+        815,
+        861,
+        957,
+        963,
+        982
+      ],
+      "both_do_not_match": 745,
+      "scope": "paired reference-proxy transitions, not mathematical accuracy or official pass@1"
+    }
+  },
+  "manual_first32": {
+    "selection": "first32 of the unchanged validation64; positional nonrandom slice, selected to audit examples and the3 observed reference agreements from11; not a representative accuracy estimate; reused unchanged for13, not selected for its successes; reused unchanged for14 at all3 checkpoints",
+    "scorable_scalar_pairs": 23,
+    "excluded_indices": {
+      "2": "Duration or Sarah lap count is missing; absolute Liz laps not determined.",
+      "3": "530/3 is not an integer number of balloons; inconsistent discrete data.",
+      "10": "Question requests two distances (21 and15), outside this scalar-only audit.",
+      "15": "1000 types of flowers does not specify item counts; wording ambiguity.",
+      "19": "Tile count requires a rule for cuts/reuse/rounding; area ratio112.5 is not a whole tile count.",
+      "23": "Number of genres and meaning of find all books of each genre are unspecified.",
+      "25": "Remaining16 candies cannot be divided equally among6 with whole candies; fractional interpretation8/3 versus reference floor2.",
+      "28": "Price of a30-pack is not specified by prices of10/20-packs; assumes a pricing or purchase rule.",
+      "29": "Five increases after first day versus total after5 days; conflicting horizon."
+    },
+    "summaries": {
+      "50000": {
+        "scored": 23,
+        "correct": 2,
+        "wrong": 21,
+        "unknown": 0
+      },
+      "75000": {
+        "scored": 23,
+        "correct": 2,
+        "wrong": 21,
+        "unknown": 0
+      },
+      "100000": {
+        "scored": 23,
+        "correct": 3,
+        "wrong": 19,
+        "unknown": 1
+      }
+    },
+    "rows": [
+      {
+        "validation64_index": 0,
+        "question": "Mark has 10 crayons. He gives 2 crayons to his younger sister and loses another 4 while he was playing. How many crayons does Mark have left?",
+        "reference": {
+          "status": "numeric",
+          "value": 4
+        },
+        "status": "scored",
+        "expected_numeric_value": 4.0,
+        "reason": "10-2-4",
+        "reference_matches_manual_answer": true,
+        "generated": {
+          "50000": {
+            "status": "numeric",
+            "value": -2,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "75000": {
+            "status": "numeric",
+            "value": 12,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "100000": {
+            "status": "numeric",
+            "value": 12,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 1,
+        "question": "Student: Allen's father can mow the lawn in 2 hours. Allen's mother can mow the lawn in 4 hours. If they both work together to mow the lawn, how much time will it take?",
+        "reference": {
+          "status": "numeric",
+          "value": 6
+        },
+        "status": "scored",
+        "expected_numeric_value": 1.3333333333333333,
+        "reason": "1/(1/2+1/4)",
+        "reference_matches_manual_answer": false,
+        "generated": {
+          "50000": {
+            "status": "numeric",
+            "value": 8,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "75000": {
+            "status": "numeric",
+            "value": 8,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "100000": {
+            "status": "numeric",
+            "value": 8,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 2,
+        "question": "Every morning, Sarah jogs around a circular track that is 0.4 miles long, while her sister, Liz, runs at three times her speed. During their workout, how many times does Liz circle the track?",
+        "reference": {
+          "status": "numeric",
+          "value": 3.0
+        },
+        "status": "excluded_from_manual_scalar_score",
+        "reason": "Duration or Sarah lap count is missing; absolute Liz laps not determined."
+      },
+      {
+        "validation64_index": 3,
+        "question": "At a party, there are 530 balloons. Two-thirds are red and the rest are blue. How many blue balloons are there?",
+        "reference": {
+          "status": "numeric",
+          "value": 176.66666666666669
+        },
+        "status": "excluded_from_manual_scalar_score",
+        "reason": "530/3 is not an integer number of balloons; inconsistent discrete data."
+      },
+      {
+        "validation64_index": 4,
+        "question": "A store has a sale where everything is 30% off. If a customer buys two shirts that cost $20 each, how much do they pay in total?",
+        "reference": {
+          "status": "numeric",
+          "value": 28.0
+        },
+        "status": "scored",
+        "expected_numeric_value": 28.0,
+        "reason": "2*20*(1-0.30)",
+        "reference_matches_manual_answer": true,
+        "generated": {
+          "50000": {
+            "status": "numeric",
+            "value": 12000,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "75000": {
+            "status": "numeric",
+            "value": 21.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "100000": {
+            "status": "numeric",
+            "value": 1200,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 5,
+        "question": "If a product costs $150 after a 25% discount, what was the original price of the product?",
+        "reference": {
+          "status": "unsupported"
+        },
+        "status": "scored",
+        "expected_numeric_value": 200.0,
+        "reason": "150/(1-0.25)",
+        "generated": {
+          "50000": {
+            "status": "numeric",
+            "value": 37.5,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "75000": {
+            "status": "numeric",
+            "value": 37.5,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "100000": {
+            "status": "numeric",
+            "value": 37.5,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 6,
+        "question": "Leo is planning a trip to the zoo with his family. The zoo charges $15 for adults, $10 for children, and $5 for seniors. Leo's family consists of 2 adults, 3 children, and 1 senior. They also need to pay $10 for parking. How much will the trip cost them in total?",
+        "reference": {
+          "status": "numeric",
+          "value": 75
+        },
+        "status": "scored",
+        "expected_numeric_value": 75.0,
+        "reason": "2*15+3*10+1*5+10",
+        "reference_matches_manual_answer": true,
+        "generated": {
+          "50000": {
+            "status": "numeric",
+            "value": 6,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "75000": {
+            "status": "numeric",
+            "value": 28,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "100000": {
+            "status": "numeric",
+            "value": 59049,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 7,
+        "question": "If 15 workers can complete a project in 10 days, how many more workers are needed to complete the project in 5 days?",
+        "reference": {
+          "status": "numeric",
+          "value": 15.0
+        },
+        "status": "scored",
+        "expected_numeric_value": 15.0,
+        "reason": "15*10/5-15 additional workers",
+        "reference_matches_manual_answer": true,
+        "generated": {
+          "50000": {
+            "status": "numeric",
+            "value": 0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "75000": {
+            "status": "numeric",
+            "value": 506250000,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "100000": {
+            "status": "numeric",
+            "value": 31640625,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 8,
+        "question": "Andrew is decorating his living room and created a budget of $100 for the task. He bought 5 picture frames at $7 each, a lamp for $25, and a rug. If he has $30 remaining in his budget, how much did he spend on the rug?",
+        "reference": {
+          "status": "numeric",
+          "value": 10
+        },
+        "status": "scored",
+        "expected_numeric_value": 10.0,
+        "reason": "100-30-5*7-25",
+        "reference_matches_manual_answer": true,
+        "generated": {
+          "50000": {
+            "status": "undefined_name",
+            "name": "total_budget",
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "75000": {
+            "status": "undefined_name",
+            "name": "total_budget",
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "100000": {
+            "status": "numeric",
+            "value": 68,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 9,
+        "question": "Emily is a teacher. She grades 10 exams per week. To save time, she grades all 10 exams at once. It takes her 45 minutes to set up her grading materials. Then she grades each exam for 15 minutes. She takes another 30 minutes to check and record the grades. Each exam takes 5 minutes to provide feedback for. How long does Emily take to grade 1 exam?",
+        "reference": {
+          "status": "numeric",
+          "value": 27.5
+        },
+        "status": "scored",
+        "expected_numeric_value": 27.5,
+        "reason": "(45+10*15+30+10*5)/10; average per exam",
+        "reference_matches_manual_answer": true,
+        "generated": {
+          "50000": {
+            "status": "numeric",
+            "value": 50,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "75000": {
+            "status": "numeric",
+            "value": 7200,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "100000": {
+            "status": "unsupported",
+            "matches_manual_answer": false,
+            "unresolved_unsupported": true
+          }
+        }
+      },
+      {
+        "validation64_index": 10,
+        "question": "Kevin and Alice are playing a board game that involves rolling two dice and moving the corresponding number of spaces on the board. Kevin is 30 spaces away from the finish line, and Alice is 24 spaces away. Kevin rolls a 4 and a 5, and Alice rolls a 6 and a 3. How many spaces away from the finish line are they now?",
+        "reference": {
+          "status": "unsupported"
+        },
+        "status": "excluded_from_manual_scalar_score",
+        "reason": "Question requests two distances (21 and15), outside this scalar-only audit."
+      },
+      {
+        "validation64_index": 11,
+        "question": "Ben bought a box of 12 cupcakes for his birthday party. He paid $18 for the box, but he got a 15% discount because he was a regular customer. He also got a free cupcake as a birthday gift. How much did each cupcake cost Ben after the discount and the gift?",
+        "reference": {
+          "status": "numeric",
+          "value": 1.3909090909090909
+        },
+        "status": "scored",
+        "expected_numeric_value": 1.176923076923077,
+        "reason": "18*0.85/13;12 purchased plus1 free cupcake",
+        "reference_matches_manual_answer": false,
+        "generated": {
+          "50000": {
+            "status": "numeric",
+            "value": 0.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "75000": {
+            "status": "numeric",
+            "value": 38.25,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "100000": {
+            "status": "numeric",
+            "value": 38.25,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 12,
+        "question": "Sarah, Lisa, and Ashley played chess against one another. Sarah won 4 more games than Lisa, and Lisa won 2 more games than Ashley. If Ashley won 6 games, what was the total number of games they played?",
+        "reference": {
+          "status": "numeric",
+          "value": 26
+        },
+        "status": "scored",
+        "expected_numeric_value": 26.0,
+        "reason": "(6+2+4)+(6+2)+6; no draws assumed",
+        "reference_matches_manual_answer": true,
+        "generated": {
+          "50000": {
+            "status": "numeric",
+            "value": 80,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "75000": {
+            "status": "numeric",
+            "value": 36,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "100000": {
+            "status": "numeric",
+            "value": 40,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 13,
+        "question": "Student: Jessica is baking cupcakes. She needs to make 60 cupcakes. The recipe states that she needs 2/3 cup of sugar for each cupcake. How much sugar does Jessica need?",
+        "reference": {
+          "status": "numeric",
+          "value": 40.0
+        },
+        "status": "scored",
+        "expected_numeric_value": 40.0,
+        "reason": "60*2/3",
+        "reference_matches_manual_answer": true,
+        "generated": {
+          "50000": {
+            "status": "numeric",
+            "value": 3600,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "75000": {
+            "status": "numeric",
+            "value": 0.4444444444444444,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "100000": {
+            "status": "numeric",
+            "value": 40.0,
+            "matches_manual_answer": true,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 14,
+        "question": "Joe has a collection of coins. He had five coins yesterday, and today, he has four times as many coins as yesterday. How many coins does he have today?",
+        "reference": {
+          "status": "numeric",
+          "value": 20
+        },
+        "status": "scored",
+        "expected_numeric_value": 20.0,
+        "reason": "5*4",
+        "reference_matches_manual_answer": true,
+        "generated": {
+          "50000": {
+            "status": "numeric",
+            "value": 0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "75000": {
+            "status": "numeric",
+            "value": 40,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "100000": {
+            "status": "numeric",
+            "value": 0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 15,
+        "question": "Larry sells flowers online. He has 1000 different types of flowers. He sold 25% of his flowers in the first week and sold another 40% of the remaining flowers in the second week. How many flowers did he have left at the end of the second week?",
+        "reference": {
+          "status": "numeric",
+          "value": 450.0
+        },
+        "status": "excluded_from_manual_scalar_score",
+        "reason": "1000 types of flowers does not specify item counts; wording ambiguity."
+      },
+      {
+        "validation64_index": 16,
+        "question": "A recipe calls for 1/2 cup of sugar to make 12 muffins. If you want to make 36 muffins, how much sugar do you need?",
+        "reference": {
+          "status": "numeric",
+          "value": 1.5
+        },
+        "status": "scored",
+        "expected_numeric_value": 1.5,
+        "reason": "0.5*36/12",
+        "reference_matches_manual_answer": true,
+        "generated": {
+          "50000": {
+            "status": "numeric",
+            "value": 36.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "75000": {
+            "status": "numeric",
+            "value": 18.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "100000": {
+            "status": "numeric",
+            "value": 18.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 17,
+        "question": "A toy store has 123 action figures and 95 dolls. If they sell 20 action figures and 15 dolls, how many toys do they have left in their inventory?",
+        "reference": {
+          "status": "unsupported"
+        },
+        "status": "scored",
+        "expected_numeric_value": 183.0,
+        "reason": "123+95-20-15",
+        "generated": {
+          "50000": {
+            "status": "numeric",
+            "value": 45,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "75000": {
+            "status": "numeric",
+            "value": -80,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "100000": {
+            "status": "numeric",
+            "value": 100,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 18,
+        "question": "The ratio of hotdogs to buns that a vendor needs for his stand is 2:1. If he needs a total of 45 buns, how many hotdogs should he prepare?",
+        "reference": {
+          "status": "numeric",
+          "value": 30.0
+        },
+        "status": "scored",
+        "expected_numeric_value": 90.0,
+        "reason": "45*2/1",
+        "reference_matches_manual_answer": false,
+        "generated": {
+          "50000": {
+            "status": "numeric",
+            "value": 2025,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "75000": {
+            "status": "numeric",
+            "value": 4,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "100000": {
+            "status": "numeric",
+            "value": 4,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 19,
+        "question": "A rectangular pool measures 30 feet by 15 feet. If the pool needs to be covered with tiles measuring 2 feet by 2 feet, how many tiles are needed?",
+        "reference": {
+          "status": "numeric",
+          "value": 112.5
+        },
+        "status": "excluded_from_manual_scalar_score",
+        "reason": "Tile count requires a rule for cuts/reuse/rounding; area ratio112.5 is not a whole tile count."
+      },
+      {
+        "validation64_index": 20,
+        "question": "Eric is learning how to bake and he wants to bake 3 dozen cookies. How many cookies will he need to bake?",
+        "reference": {
+          "status": "numeric",
+          "value": 36
+        },
+        "status": "scored",
+        "expected_numeric_value": 36.0,
+        "reason": "3*12",
+        "reference_matches_manual_answer": true,
+        "generated": {
+          "50000": {
+            "status": "numeric",
+            "value": 1.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "75000": {
+            "status": "numeric",
+            "value": 0.25,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "100000": {
+            "status": "numeric",
+            "value": 0.25,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 21,
+        "question": "Alex has 5 fewer books than Maria and Maria has twice the number of books as Eva. If Eva has 10 books, how many books does Alex have?",
+        "reference": {
+          "status": "numeric",
+          "value": 15
+        },
+        "status": "scored",
+        "expected_numeric_value": 15.0,
+        "reason": "2*10-5",
+        "reference_matches_manual_answer": true,
+        "generated": {
+          "50000": {
+            "status": "numeric",
+            "value": 5.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "75000": {
+            "status": "numeric",
+            "value": 10.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "100000": {
+            "status": "numeric",
+            "value": 7.5,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 22,
+        "question": "A jar contains 120 red marbles, 80 blue marbles, and 100 green marbles. If a marble is chosen at random, what is the probability it will be blue?",
+        "reference": {
+          "status": "numeric",
+          "value": 0.26666666666666666
+        },
+        "status": "scored",
+        "expected_numeric_value": 0.26666666666666666,
+        "reason": "80/(120+80+100)",
+        "reference_matches_manual_answer": true,
+        "generated": {
+          "50000": {
+            "status": "numeric",
+            "value": 0.6666666666666666,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "75000": {
+            "status": "numeric",
+            "value": 0.6666666666666666,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "100000": {
+            "status": "numeric",
+            "value": 0.6666666666666666,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 23,
+        "question": "A library has 30 shelves of books, each containing 50 books of different genres. On average, it takes 2 minutes to find a book of a specific genre. How long would it take to find all the books of each genre?",
+        "reference": {
+          "status": "numeric",
+          "value": 3000
+        },
+        "status": "excluded_from_manual_scalar_score",
+        "reason": "Number of genres and meaning of find all books of each genre are unspecified."
+      },
+      {
+        "validation64_index": 24,
+        "question": "At a restaurant, 70% of customers ordered burgers, while 40% ordered fries. If 30% ordered both, what percentage of customers ordered neither burgers nor fries?",
+        "reference": {
+          "status": "numeric",
+          "value": 0.19999999999999996
+        },
+        "status": "scored",
+        "expected_numeric_value": 20.0,
+        "reason": "100-(70+40-30), percent;0.2 is equivalent fraction",
+        "reference_matches_manual_answer": true,
+        "generated": {
+          "50000": {
+            "status": "undefined_name",
+            "name": "percent_customers",
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "75000": {
+            "status": "numeric",
+            "value": 80.4,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "100000": {
+            "status": "numeric",
+            "value": 3415.3,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 25,
+        "question": "Student: Tom had 24 candies and he gave away some to his friends. He kept one-third of the candies for himself and divided the rest equally among 6 friends. How many candies did each friend get?",
+        "reference": {
+          "status": "numeric",
+          "value": 2
+        },
+        "status": "excluded_from_manual_scalar_score",
+        "reason": "Remaining16 candies cannot be divided equally among6 with whole candies; fractional interpretation8/3 versus reference floor2."
+      },
+      {
+        "validation64_index": 26,
+        "question": "Jane has 48 apples, and she gave some to her friends. If she gave away 1/6 of her apples, how many apples are left with her?",
+        "reference": {
+          "status": "numeric",
+          "value": 40.0
+        },
+        "status": "scored",
+        "expected_numeric_value": 40.0,
+        "reason": "48*(1-1/6)",
+        "reference_matches_manual_answer": true,
+        "generated": {
+          "50000": {
+            "status": "numeric",
+            "value": 40.0,
+            "matches_manual_answer": true,
+            "unresolved_unsupported": false
+          },
+          "75000": {
+            "status": "numeric",
+            "value": 40.0,
+            "matches_manual_answer": true,
+            "unresolved_unsupported": false
+          },
+          "100000": {
+            "status": "numeric",
+            "value": 40.0,
+            "matches_manual_answer": true,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 27,
+        "question": "A company offers a bonus of $500 to any employee who brings in a customer who purchases at least $1,000 worth of products. If John just brought in a customer who purchased $2,500 worth of products, how much will he receive as a bonus?",
+        "reference": {
+          "status": "unsupported"
+        },
+        "status": "scored",
+        "expected_numeric_value": 500.0,
+        "reason": "fixed bonus once purchase>=1000, not proportional",
+        "generated": {
+          "50000": {
+            "status": "numeric",
+            "value": 12500000,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "75000": {
+            "status": "numeric",
+            "value": 6250000,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "100000": {
+            "status": "undefined_name",
+            "name": "num_of_decamera",
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 28,
+        "question": "At a store, a 10-pack of pens costs $5.50 and a 20-pack of pens costs $10. How much does a 30-pack of pens cost?",
+        "reference": {
+          "status": "numeric",
+          "value": 26.5
+        },
+        "status": "excluded_from_manual_scalar_score",
+        "reason": "Price of a30-pack is not specified by prices of10/20-packs; assumes a pricing or purchase rule."
+      },
+      {
+        "validation64_index": 29,
+        "question": "John runs 1 mile the first day and then increased his distance by 25% for the five consecutive days. What is the total distance he runs in miles after 5 days?",
+        "reference": {
+          "status": "unsupported"
+        },
+        "status": "excluded_from_manual_scalar_score",
+        "reason": "Five increases after first day versus total after5 days; conflicting horizon."
+      },
+      {
+        "validation64_index": 30,
+        "question": "A jar has 100 marbles, 60% of them are red and the rest are blue. How many blue marbles are there?",
+        "reference": {
+          "status": "numeric",
+          "value": 40.0
+        },
+        "status": "scored",
+        "expected_numeric_value": 40.0,
+        "reason": "100*(1-0.60)",
+        "reference_matches_manual_answer": true,
+        "generated": {
+          "50000": {
+            "status": "numeric",
+            "value": 40.0,
+            "matches_manual_answer": true,
+            "unresolved_unsupported": false
+          },
+          "75000": {
+            "status": "numeric",
+            "value": 40.0,
+            "matches_manual_answer": true,
+            "unresolved_unsupported": false
+          },
+          "100000": {
+            "status": "numeric",
+            "value": 40.0,
+            "matches_manual_answer": true,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 31,
+        "question": "Student: If a car travels 160 miles in 4 hours, how long will it take to travel 240 miles?",
+        "reference": {
+          "status": "numeric",
+          "value": 6.0
+        },
+        "status": "scored",
+        "expected_numeric_value": 6.0,
+        "reason": "240/(160/4)",
+        "reference_matches_manual_answer": true,
+        "generated": {
+          "50000": {
+            "status": "numeric",
+            "value": 40.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "75000": {
+            "status": "numeric",
+            "value": 40.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "100000": {
+            "status": "numeric",
+            "value": 40.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      }
+    ]
+  },
+  "all65_reference_proxy_changes": [
+    {
+      "index": 13,
+      "kind": "gain",
+      "question": "Student: Jessica is baking cupcakes. She needs to make 60 cupcakes. The recipe states that she needs 2/3 cup of sugar for each cupcake. How much sugar does Jessica need?",
+      "reference": {
+        "status": "numeric",
+        "value": 40.0
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 3600
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 40.0
+      },
+      "code50k": "def solve() -> int:\n    cupcakes = 60\n    cupcakes_per_cupcake = 2/3\n    total_cupcakes = cupcakes * cupcakes\n    result = total_cupcakes\n\n    return result\n",
+      "code100k": "def solve() -> int:\n    cupcakes = 60\n    cupcakes_per_cupcake = 2/3\n    total_sugar = cupcakes * cupcakes_per_cupcake\n    result = total_sugar\n\n    return result\n",
+      "reference_code": "def solve() -> int:\n    num_cupcakes = 60\n    sugar_per_cupcake = 2/3\n    total_sugar = num_cupcakes * sugar_per_cupcake\n    result = total_sugar\n\n    return result\n",
+      "manual_value": 40,
+      "reasoning": "60*(2/3)",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 34,
+      "kind": "gain",
+      "question": "Student: Albert is building a fence around his house. He needs 7 pieces of lumber that are 6 feet long each. How many total feet of lumber does Albert need?",
+      "reference": {
+        "status": "numeric",
+        "value": 42
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 26
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 42
+      },
+      "code50k": "def solve() -> int:\n    length = 7\n    width = 6\n    perimeter = 2 * (length + width)\n    result = perimeter\n\n    return result\n",
+      "code100k": "def solve() -> int:\n    length = 7 # feet\n    width = 6 # feet\n    total_length = length * width\n    result = total_length\n\n    return result\n",
+      "reference_code": "def solve() -> int:\n    pieces_of_lumber = 7\n    length_of_lumber = 6\n    total_feet_of_lumber = pieces_of_lumber * length_of_lumber\n    result = total_feet_of_lumber\n\n    return result\n",
+      "manual_value": 42,
+      "reasoning": "7*6",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 77,
+      "kind": "gain",
+      "question": "If a recipe calls for 2 1/2 cups of flour, how many cups of flour are needed for four batches of the recipe?",
+      "reference": {
+        "status": "numeric",
+        "value": 10.0
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 16
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 10.0
+      },
+      "code50k": "def solve() -> int:\n    flour_per_batch = 2.5\n    flour_per_batch = 4\n    total_flour = flour_per_batch * flour_per_batch\n    result = total_flour\n    return result\n",
+      "code100k": "def solve() -> int:\n    flour_per_batch = 2.5\n    num_batches = 4\n    total_flour = flour_per_batch * num_batches\n    result = total_flour\n\n    return result\n",
+      "reference_code": "def solve() -> int:\n    cups_per_batch = 2.5\n    num_batches = 4\n    total_cups = cups_per_batch * num_batches\n    result = total_cups\n    return result\n",
+      "manual_value": 10,
+      "reasoning": "2.5*4",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 103,
+      "kind": "gain",
+      "question": "A bike ride around the lake is 10 miles. If you bike at a constant speed of 6 miles per hour, how long will it take you to finish the ride?",
+      "reference": {
+        "status": "numeric",
+        "value": 1.6666666666666667
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 60
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 1.6666666666666667
+      },
+      "code50k": "def solve() -> int:\n    speed = 10\n    time = 6\n    distance = speed * time\n    result = distance\n    return result\n",
+      "code100k": "def solve() -> int:\n    distance = 10\n    speed = 6\n    time = distance / speed\n    result = time\n    return result\n",
+      "reference_code": "def solve() -> int:\n    distance = 10\n    speed = 6\n    time = distance/speed\n    result = time\n\n    return result\n",
+      "manual_value": 1.6666666666666667,
+      "reasoning": "distance/speed=10/6",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 136,
+      "kind": "gain",
+      "question": "Student: Question7: Alex wants to make 6 bouquets of flowers for a school project. If each bouquet needs 18 flowers, how many flowers does Alex need in total?",
+      "reference": {
+        "status": "numeric",
+        "value": 108
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 1122
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 108
+      },
+      "code50k": "def solve() -> int:\n    flowers = 187\n    flowers_per_bouquet = 6\n    total_flowers = flowers * flowers_per_bouquet\n    result = total_flowers\n\n    return result\n",
+      "code100k": "def solve() -> int:\n    flowers = 18\n    flowers_per_bouquet = 6\n    total_flowers = flowers * flowers_per_bouquet\n    result = total_flowers\n\n    return result\n",
+      "reference_code": "def solve() -> int:\n    bouquets = 6\n    flowers_per_bouquet = 18\n    total_flowers = bouquets * flowers_per_bouquet\n    result = total_flowers\n\n    return result\n",
+      "manual_value": 108,
+      "reasoning": "6*18",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 137,
+      "kind": "gain",
+      "question": "Student: A car travels at an average speed of 50 mph and it takes 4 hours to reach its destination. What is the distance traveled by the car?",
+      "reference": {
+        "status": "numeric",
+        "value": 200
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 12.5
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 200
+      },
+      "code50k": "def solve() -> int:\n    distance = 50 # mph\n    time = 4 # hours\n    speed = distance / time\n    result = speed\n\n    return result\n",
+      "code100k": "def solve() -> int:\n    speed = 50 # mph\n    time = 4 # hours\n    distance = speed * time\n    result = distance\n\n    return result\n",
+      "reference_code": "def solve() -> int:\n    speed = 50 # mph\n    time = 4 # hours\n    distance = speed * time\n    result = distance\n\n    return result\n",
+      "manual_value": 200,
+      "reasoning": "50*4",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 169,
+      "kind": "gain",
+      "question": "Tom wants to pay for his movie tickets. If each ticket costs $7 and he buys five tickets, what is the total cost?",
+      "reference": {
+        "status": "numeric",
+        "value": 35
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 49
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 35
+      },
+      "code50k": "def solve() -> int:\n    ticket_cost = 7\n    ticket_cost = 7\n    total_cost = ticket_cost * ticket_cost\n    result = total_cost\n\n    return result\n",
+      "code100k": "def solve() -> int:\n    ticket_price = 7\n    num_tickets = 5\n    total_cost = ticket_price * num_tickets\n    result = total_cost\n\n    return result\n",
+      "reference_code": "def solve() -> int:\n    ticketPrice = 7\n    numTickets = 5\n    totalCost = ticketPrice * numTickets\n    result = totalCost\n    return result\n",
+      "manual_value": 35,
+      "reasoning": "7*5",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 194,
+      "kind": "gain",
+      "question": "A bakery has cakes that are either chocolate or vanilla. If there are 55 cakes in total and vanilla cakes make up 40% of the cakes, how many chocolate cakes are there?",
+      "reference": {
+        "status": "numeric",
+        "value": 33.0
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 0.0
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 33.0
+      },
+      "code50k": "def solve() -> int:\n    chocolate_cakes = 55\n    vanilla_cakes = 55\n    vanilla_cakes = chocolate_cakes * 0.4\n    vanilla_cakes = vanilla_cakes - vanilla_cakes\n    result = vanilla_cakes\n    return result\n",
+      "code100k": "def solve() -> int:\n    total_cakes = 55\n    vanilla_cakes = 55\n    vanilla_cakes = total_cakes * 0.4\n    vanilla_cakes = total_cakes - vanilla_cakes\n    result = vanilla_cakes\n    return result\n",
+      "reference_code": "def solve() -> int:\n    total_cakes = 55\n    vanilla_percentage = 0.4\n    vanilla_cakes = total_cakes * vanilla_percentage\n    chocolate_cakes = total_cakes - vanilla_cakes\n    result = chocolate_cakes\n    return result\n",
+      "manual_value": 33,
+      "reasoning": "55*(1-0.4)",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 235,
+      "kind": "gain",
+      "question": "Student: Davey's arms are 1/5 of his total height, and his head is 1/4 of his total height. If Davey's height is 72 inches, calculate the length of his arms.",
+      "reference": {
+        "status": "numeric",
+        "value": 14.4
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 26873856
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 14.4
+      },
+      "code50k": "def solve() -> int:\n    height = 72\n    height = height * height\n    volume = height * height\n    result = volume\n\n    return result\n",
+      "code100k": "def solve() -> int:\n    height = 72\n    height = height * 1/5\n    result = height\n\n    return result\n",
+      "reference_code": "def solve() -> int:\n    arms_fraction = 1/5\n    head_fraction = 1/4\n    height = 72\n    head_length = head_fraction * height\n    arms_length = arms_fraction * height\n    result = arms_length\n\n    return result\n",
+      "manual_value": 14.4,
+      "reasoning": "72/5",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 236,
+      "kind": "gain",
+      "question": "A toy shop charges $17 for a toy car. How much money will they make if they sell 8 toy cars?",
+      "reference": {
+        "status": "numeric",
+        "value": 136
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 64
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 136
+      },
+      "code50k": "def solve() -> int:\n    toy_cars = 17\n    toy_cars = 8\n    total_cars = toy_cars * toy_cars\n    result = total_cars\n    return result\n",
+      "code100k": "def solve() -> int:\n    price_per_car = 17\n    total_cars = 8\n    total_price = price_per_car * total_cars\n    result = total_price\n\n    return result\n",
+      "reference_code": "def solve() -> int:\n    total_toy_cars = 8\n    toy_car_price = 17\n    \n    total_toy_cars_cost = total_toy_cars * toy_car_price\n    \n    result = total_toy_cars_cost\n    \n\n    return result\n",
+      "manual_value": 136,
+      "reasoning": "17*8",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 245,
+      "kind": "gain",
+      "question": "Jerry bought 5 bags of chips. Each bag has 7 chips. How many chips did Jerry buy?",
+      "reference": {
+        "status": "numeric",
+        "value": 35
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 1
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 35
+      },
+      "code50k": "def solve() -> int:\n    chips_bought = 5\n    chips_bought = 7\n    chips_bought = chips_bought // chips_bought\n    result = chips_bought\n\n    return result\n",
+      "code100k": "def solve() -> int:\n    bags = 5\n    chips = 7\n    chips = bags * chips\n    result = chips\n\n    return result\n",
+      "reference_code": "def solve() -> int:\n    bags = 5\n    chips = 7\n    result = bags * chips\n\n    return result\n",
+      "manual_value": 35,
+      "reasoning": "5*7",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 252,
+      "kind": "gain",
+      "question": "A recipe for 4 people requires 2 eggs. How many eggs are needed for 12 people?",
+      "reference": {
+        "status": "numeric",
+        "value": 6.0
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 2.0
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 6.0
+      },
+      "code50k": "def solve() -> int:\n    eggs_per_person = 2/12\n    eggs_per_person = eggs_per_person * 12\n    result = eggs_per_person\n    return result\n",
+      "code100k": "def solve() -> int:\n    eggs_per_person = 2/4\n    eggs_per_person = eggs_per_person * 12\n    result = eggs_per_person\n    return result\n",
+      "reference_code": "def solve() -> int:\n    eggs = 2 * 12 / 4\n    result = eggs\n    return result\n",
+      "manual_value": 6,
+      "reasoning": "2*(12/4)",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 282,
+      "kind": "gain",
+      "question": "A swimmer can swim 45 yards underwater in 1 minute. How far can the swimmer swim in 5 minutes?",
+      "reference": {
+        "status": "numeric",
+        "value": 225
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 300
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 225
+      },
+      "code50k": "def solve() -> int:\n    time_in_minutes = 45\n    time_in_minutes = 5\n    distance_in_minutes = time_in_minutes * 60\n    result = distance_in_minutes\n    return result\n",
+      "code100k": "def solve() -> int:\n    time_in_minutes = 45\n    time_in_minutes = time_in_minutes * 5\n    result = time_in_minutes\n    return result\n",
+      "reference_code": "def solve() -> int:\n    total_distance = 45 * 5 \n    result = total_distance\n\n    return result\n",
+      "manual_value": 225,
+      "reasoning": "45*5",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 318,
+      "kind": "gain",
+      "question": "Student: Mary rented a car for 25 euros per day and had it for 5 days. How much money did she spend?",
+      "reference": {
+        "status": "numeric",
+        "value": 125
+      },
+      "before50k": {
+        "status": "undefined_name",
+        "name": "cost_per_day"
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 125
+      },
+      "code50k": "def solve() -> int:\n    days = 5\n    days = 25\n    cost_per_day = days * cost_per_day\n    result = cost_per_day\n\n    return result\n",
+      "code100k": "def solve() -> int:\n    daily_spending = 25\n    days = 5\n    total_spending = daily_spending * days\n    result = total_spending\n\n    return result\n",
+      "reference_code": "def solve() -> int:\n    daily_rate = 25\n    days_rented = 5\n    total_cost = daily_rate * days_rented\n    result = total_cost\n\n    return result\n",
+      "manual_value": 125,
+      "reasoning": "25*5",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 321,
+      "kind": "gain",
+      "question": "A bike costs $250. If John has saved $150, how much more does he need to save to buy the bike?",
+      "reference": {
+        "status": "numeric",
+        "value": 100
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": -100
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 100
+      },
+      "code50k": "def solve() -> int:\n    bike_cost = 150\n    saved_money = 250\n    money_needed = bike_cost - saved_money\n    result = money_needed\n    return result\n",
+      "code100k": "def solve() -> int:\n    bike_cost = 250\n    current_savings = 150\n    remaining_cost = bike_cost - current_savings\n    result = remaining_cost\n    return result\n",
+      "reference_code": "def solve() -> int:\n    saved = 150\n    bike_cost = 250\n    more_needed = bike_cost - saved\n    result = more_needed\n    return result\n",
+      "manual_value": 100,
+      "reasoning": "250-150",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 325,
+      "kind": "gain",
+      "question": "It takes Sarah 4 hours to complete a painting. If she paints for 6 hours, how many paintings can she complete?",
+      "reference": {
+        "status": "numeric",
+        "value": 1
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 24
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 1.0
+      },
+      "code50k": "def solve() -> int:\n    paintings_per_hour = 4\n    hours_per_painting = 6\n    total_hours = paintings_per_hour * hours_per_painting\n    result = total_hours\n    return result\n",
+      "code100k": "def solve() -> int:\n    painting_time = 4\n    painting_time = 6\n    painting_time = painting_time / painting_time\n    result = painting_time\n    return result\n",
+      "reference_code": "def solve() -> int:\n    hours = 6\n    time_per_painting = 4\n    num_paintings = hours // time_per_painting\n    result = num_paintings\n    return result\n",
+      "manual_value": 1,
+      "reasoning": "floor(6/4): one completed painting, with partial second painting",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 327,
+      "kind": "gain",
+      "question": "Clara and Arianne ran in a race. Clara ran twice as many kilometers as Arianne did. Arianne ran 4 kilometers. How many kilometers in total did Clara and Arianne run?",
+      "reference": {
+        "status": "numeric",
+        "value": 12
+      },
+      "before50k": {
+        "status": "unsupported"
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 12
+      },
+      "code50k": "def solve() -> int:\n    distance_Al = 4\n    distance_AlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAlAl",
+      "code100k": "def solve() -> int:\n    arie_distance = 4\n    crie_distance = arie_distance * 2\n    total_distance = arie_distance + crie_distance\n    result = total_distance\n    return result\n",
+      "reference_code": "def solve() -> int:\n    arianne_distance = 4\n    clara_distance = arianne_distance * 2\n    total_distance = arianne_distance + clara_distance\n    result = total_distance\n    return result\n",
+      "manual_value": 12,
+      "reasoning": "4+2*4",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k",
+      "before_semantics_unresolved": true
+    },
+    {
+      "index": 463,
+      "kind": "gain",
+      "question": "A recipe for a cake requires 2 cups of flour. If you want to make 3 cakes, how many cups of flour do you need?",
+      "reference": {
+        "status": "numeric",
+        "value": 6
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 2.0
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 6
+      },
+      "code50k": "def solve() -> int:\n    flour_per_cake = 2/3\n    flour_needed = flour_per_cake * 3\n    result = flour_needed\n    return result\n",
+      "code100k": "def solve() -> int:\n    flour_per_cake = 2\n    num_cakes = 3\n    total_flour = flour_per_cake * num_cakes\n    result = total_flour\n    return result\n",
+      "reference_code": "def solve() -> int:\n    cakes = 3\n    flour_per_cake = 2\n    total_flour = cakes * flour_per_cake\n    result = total_flour\n\n    return result\n",
+      "manual_value": 6,
+      "reasoning": "2*3",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 477,
+      "kind": "gain",
+      "question": "A box contains 50 chocolates. If 10 chocolates are removed from the box, what percentage of chocolates are left?",
+      "reference": {
+        "status": "numeric",
+        "value": 80.0
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 0.8
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 80.0
+      },
+      "code50k": "def solve() -> int:\n    total_chocolates = 50\n    given_chocolates = 10\n    percentage_left = (total_chocolates - given_chocolates) / total_chocolates\n    result = percentage_left\n    return result\n",
+      "code100k": "def solve() -> int:\n    total_chocolates = 50\n    removed_chocolates = 10\n    remaining_chocolates = total_chocolates - removed_chocolates\n    percentage_left = (remaining_chocolates / total_chocolates) * 100\n    result = percentage_left\n    return result\n",
+      "reference_code": "def solve() -> int:\n    total_chocolates = 50\n    removed_chocolates = 10\n    left_chocolates = total_chocolates - removed_chocolates\n    percentage_left = (left_chocolates/total_chocolates) * 100\n    result = percentage_left\n\n    return result\n",
+      "manual_value": 80,
+      "reasoning": "100*(50-10)/50",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 478,
+      "kind": "gain",
+      "question": "Student: A pizza has 8 slices. Tom ate three slices and his friend ate two slices. How many slices of pizza are left?",
+      "reference": {
+        "status": "numeric",
+        "value": 3
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 2
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 3
+      },
+      "code50k": "def solve() -> int:\n    slices = 8\n    slices = 3\n    slices_eaten = slices - 2\n    slices_left = slices - slices_eaten\n    result = slices_left\n\n    return result\n",
+      "code100k": "def solve() -> int:\n    slices = 8\n    slices = 3\n    slices_eaten = slices - slices\n    slices_left = slices - slices_eaten\n    result = slices_left\n\n    return result\n",
+      "reference_code": "def solve() -> int:\n    slices_total = 8 # total number of slices\n    slices_tom = 3 # number of slices Tom ate\n    slices_friend = 2 # number of slices his friend ate\n    slices_left = slices_total - slices_tom - slices_friend # calculate the number of slices left\n    result = slices_left # assign the result to the variable result\n\n    return result\n",
+      "manual_value": 3,
+      "reasoning": "8-3-2",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 513,
+      "kind": "gain",
+      "question": "Sarah went to the pet store and bought 12 goldfish for her aquarium and was given 2 more by the friendly clerk. How many goldfish does Sarah have now?",
+      "reference": {
+        "status": "numeric",
+        "value": 14
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 20
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 14
+      },
+      "code50k": "def solve() -> int:\n    goldfish = 12\n    goldfish = goldfish - 2\n    goldfish = goldfish + goldfish\n    result = goldfish\n    return result\n",
+      "code100k": "def solve() -> int:\n    goldfish_in_cage = 12\n    goldfish_in_cage = goldfish_in_cage + 2\n    result = goldfish_in_cage\n    return result\n",
+      "reference_code": "def solve() -> int:\n    goldfish_bought = 12\n    goldfish_given = 2\n    \n    total_goldfish = goldfish_bought + goldfish_given\n    \n    result = total_goldfish\n    \n    return result\n",
+      "manual_value": 14,
+      "reasoning": "12+2",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 525,
+      "kind": "gain",
+      "question": "Student: Tom travelled East 15 miles, then turned South and travelled for 20 more miles than the distance he travelled East. If he turned West and travelled twice the distance he had travelled South, calculate the total distance his journey took.",
+      "reference": {
+        "status": "numeric",
+        "value": 120
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 80
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 120
+      },
+      "code50k": "def solve() -> int:\n    distance_to_distance = 15\n    distance_to_distance = 20\n    distance_to_distance = distance_to_distance * 2\n    distance_to_distance = distance_to_distance + distance_to_distance\n    result = distance_to_distance\n\n    return result\n",
+      "code100k": "def solve() -> int:\n    distance_south = 15\n    distance_south = 20\n    distance_south = 2 * distance_south\n    distance_south = distance_south + distance_south + distance_south\n    result = distance_south\n\n    return result\n",
+      "reference_code": "def solve() -> int:\n    distance_east = 15\n    distance_south = distance_east + 20\n    distance_west = distance_south * 2\n    total_distance = distance_east + distance_south + distance_west\n    result = total_distance\n\n    return result\n",
+      "manual_value": 120,
+      "reasoning": "15+(15+20)+2*(15+20)",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 539,
+      "kind": "gain",
+      "question": "A restaurant has a total of 500 customers in a day and 80% of them are served lunch. How many customers are served breakfast or dinner?",
+      "reference": {
+        "status": "numeric",
+        "value": 100.0
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 320.0
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 100.0
+      },
+      "code50k": "def solve() -> int:\n    customers = 500\n    customers = customers * 0.8\n    customers = customers * 0.8\n    result = customers\n    return result\n",
+      "code100k": "def solve() -> int:\n    total_customers = 500\n    lunch_customers = total_customers * 0.8\n    dinner_customers = total_customers - lunch_customers\n    result = dinner_customers\n    return result\n",
+      "reference_code": "def solve() -> int:\n    total_customers = 500\n    lunch_percentage = 80\n    lunch_customers = total_customers * (lunch_percentage / 100)\n    breakfast_or_dinner_customers = total_customers - lunch_customers\n    result = breakfast_or_dinner_customers\n\n    return result\n",
+      "manual_value": 100,
+      "reasoning": "500*(1-0.8), assuming lunch versus other meal categories",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 558,
+      "kind": "gain",
+      "question": "A classroom has 20 students. If each student is given a bag with 3 pencils and each pencil costs $0.50, how much will the teacher spend on pencils?",
+      "reference": {
+        "status": "numeric",
+        "value": 30.0
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 1.5
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 30.0
+      },
+      "code50k": "def solve() -> int:\n    num_pencils = 20\n    num_pencils = 3\n    cost_per_pencil = 0.50\n    total_cost = num_pencils * cost_per_pencil\n    result = total_cost\n    return result\n",
+      "code100k": "def solve() -> int:\n    num_pencils = 20\n    pencils_per_student = 3\n    pencil_cost = 0.50\n    total_cost = num_pencils * pencils_per_student\n    total_cost = total_cost * pencil_cost\n    result = total_cost\n    return result\n",
+      "reference_code": "def solve() -> int:\n    total_cost = 20*3*0.50\n    result = total_cost\n    return result\n",
+      "manual_value": 30,
+      "reasoning": "20*3*0.5",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 614,
+      "kind": "gain",
+      "question": "If a car travels 137 kilometers in 2.5 hours, what is its speed in km/h?",
+      "reference": {
+        "status": "numeric",
+        "value": 54.8
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 55.0
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 54.8
+      },
+      "code50k": "def solve() -> int:\n    distance = 137.5\n    time = 2.5\n    speed = distance / time\n    result = speed\n\n    return result\n",
+      "code100k": "def solve() -> int:\n    distance = 137\n    time = 2.5\n    speed = distance / time\n    result = speed\n\n    return result\n",
+      "reference_code": "def solve() -> int:\n    distance = 137\n    hours = 2.5\n    \n    kmPerHour = distance / hours\n    \n    result = kmPerHour\n    \n\n    return result\n",
+      "manual_value": 54.8,
+      "reasoning": "137/2.5",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 627,
+      "kind": "gain",
+      "question": "``` A package of 24 pencils costs $2.40. How much will it cost to buy 72 pencils?",
+      "reference": {
+        "status": "numeric",
+        "value": 7.199999999999999
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 0.09999999999999999
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 7.199999999999999
+      },
+      "code50k": "def solve() -> int:\n    cost_per_pencil = 2.40 / 24\n    result = cost_per_pencil\n    return result\n",
+      "code100k": "def solve() -> int:\n    cost_per_package = 2.40 / 24\n    total_cost = cost_per_package * 72\n    result = total_cost\n    return result\n",
+      "reference_code": "def solve() -> int:\n    price = 2.4\n    units = 24\n    new_units = 72\n    unit_price = price / units\n    total_price = new_units * unit_price\n    result = total_price\n    return result\n",
+      "manual_value": 7.2,
+      "reasoning": "2.4*(72/24)",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 669,
+      "kind": "gain",
+      "question": "ally the Kight has 3600 gold coins. She donated 20% of them to the local temple. How much gold did Sally donate?",
+      "reference": {
+        "status": "numeric",
+        "value": 720.0
+      },
+      "before50k": {
+        "status": "undefined_name",
+        "name": "percentage_of_coins"
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 720.0
+      },
+      "code50k": "def solve() -> int:\n    total_coins = 3600\n    percentage_of_t = 20\n    percentage_of_t = (percentage_of_coins * percentage_of_t) / 100\n    result = percentage_of_t\n\n    return result\n",
+      "code100k": "def solve() -> int:\n    total_coins = 3600\n    percentage_of_tr = 20\n    percentage_of_tr = (percentage_of_tr/100) * total_coins\n    result = percentage_of_tr\n\n    return result\n",
+      "reference_code": "def solve() -> int:\n    gold_coins = 3600\n    percentage = 20\n    result = gold_coins * percentage / 100\n\n    return result\n",
+      "manual_value": 720,
+      "reasoning": "3600*0.2",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 675,
+      "kind": "gain",
+      "question": "There is a full tank of 65 liters of water. If 11 liters are used daily, how many days will the tank of water last?",
+      "reference": {
+        "status": "numeric",
+        "value": 5.909090909090909
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 54
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 5.909090909090909
+      },
+      "code50k": "def solve() -> int:\n    tank_capacity = 65\n    days = 11\n    days = tank_capacity - days\n    result = days\n\n    return result\n",
+      "code100k": "def solve() -> int:\n    tank_size = 65\n    days = 11\n    days = tank_size / days\n    result = days\n    return result\n",
+      "reference_code": "def solve() -> int:\n    \n    total_water = 65 # Assign the total amount of water \n    daily_usage = 11 # Assign the daily usage rate \n    \n    days = total_water/daily_usage # Calculate how many days the tank of water will last \n    \n    result = days\n\n    return result\n",
+      "manual_value": 5.909090909090909,
+      "reasoning": "continuous duration65/11 days",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 693,
+      "kind": "gain",
+      "question": "If there are 700 mobile phones in a store, and 80% of them were sold, how many mobile phones are available in the store now?",
+      "reference": {
+        "status": "numeric",
+        "value": 140.0
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 0.0
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 140.0
+      },
+      "code50k": "def solve() -> int:\n    total_phones = 700\n    sold_phones = 80\n    sold_phones = total_phones * 0.8\n    sold_phones = sold_phones - sold_phones\n    result = sold_phones\n    return result\n",
+      "code100k": "def solve() -> int:\n    total_phones = 700\n    phones = 80\n    phones = total_phones * 0.8\n    phones = total_phones - phones\n    result = phones\n    return result\n",
+      "reference_code": "def solve() -> int:\n    phones_in_store = 700\n    sold_percentage = 80\n    \n    sold_phones = phones_in_store * (sold_percentage / 100)\n    available_phones = phones_in_store - sold_phones\n    \n    result = available_phones\n    return result\n",
+      "manual_value": 140,
+      "reasoning": "700*(1-0.8)",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 699,
+      "kind": "gain",
+      "question": "Student: Melissa has 12 packs of markers. In each pack, there 8 markers in different colors. What is the total number of markers that Melissa has?",
+      "reference": {
+        "status": "numeric",
+        "value": 96
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 64
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 96
+      },
+      "code50k": "def solve() -> int:\n    markers = 12\n    markers = 8\n    markers = markers * markers\n    result = markers\n\n    return result\n",
+      "code100k": "def solve() -> int:\n    packs = 12\n    markers_per_pack = 8\n    markers_per_pack = packs * markers_per_pack\n    result = markers_per_pack\n\n    return result\n",
+      "reference_code": "def solve() -> int:\n    packs = 12\n    markers_per_pack = 8\n    total_markers = packs * markers_per_pack\n    result = total_markers\n\n    return result\n",
+      "manual_value": 96,
+      "reasoning": "12*8",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 725,
+      "kind": "gain",
+      "question": "At the sandwich shop, there were three times as many customers who ordered turkey sandwich as ordered roast beef sandwich. If there were 200 customers on Friday, and 20% of those ordered roast beef sandwich, how many customers ordered turkey sandwich?",
+      "reference": {
+        "status": "numeric",
+        "value": 120.0
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 2880.0
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 120.0
+      },
+      "code50k": "def solve() -> int:\n    turkey_customers = 200\n    turkey_customers = turkey_customers * 3\n    turkey_customers = turkey_customers * 0.2\n    turkey_customers = turkey_customers * turkey_customers\n    turkey_customers = turkey_customers * 0.2\n    result = turkey_customers\n    return result\n",
+      "code100k": "def solve() -> int:\n    turkey_sandwich = 200\n    turkey_sandwich = turkey_sandwich * 3\n    turkey_sandwich = turkey_sandwich * 0.2\n    result = turkey_sandwich\n    return result\n",
+      "reference_code": "def solve() -> int:\n    total_customers = 200\n    roast_beef_customers = total_customers * 0.2\n    \n    turkey_customers = roast_beef_customers * 3\n    \n    result = turkey_customers\n    \n    return result\n",
+      "manual_value": 120,
+      "reasoning": "200*0.2*3",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 756,
+      "kind": "gain",
+      "question": "A cell phone company offers a plan that costs $20 per month for unlimited calls and text messages. If a customer wants to sign up for this plan for a year, how much does it cost in total?",
+      "reference": {
+        "status": "numeric",
+        "value": 240
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 400
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 240
+      },
+      "code50k": "def solve() -> int:\n    cost_per_month = 20\n    cost_per_month = 20\n    total_cost = cost_per_month * cost_per_month\n    result = total_cost\n    return result\n",
+      "code100k": "def solve() -> int:\n    cost_per_month = 20\n    num_months = 12\n    total_cost = cost_per_month * num_months\n    result = total_cost\n    return result\n",
+      "reference_code": "def solve() -> int:\n    plan_price = 20\n    months_in_a_year = 12\n    total_price = plan_price * months_in_a_year\n    result = total_price\n    return result\n",
+      "manual_value": 240,
+      "reasoning": "20*12",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 759,
+      "kind": "gain",
+      "question": "Mary is twice the age of John. John is 10. How old is Mary?",
+      "reference": {
+        "status": "numeric",
+        "value": 20
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 0.0
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 20
+      },
+      "code50k": "def solve() -> int:\n    john_age = 10\n    john_age = john_age / 2\n    john_age = john_age - john_age\n    result = john_age\n    return result\n",
+      "code100k": "def solve() -> int:\n    john_age = 10\n    john_age = john_age * 2\n    result = john_age\n    return result\n",
+      "reference_code": "def solve() -> int:\n    john = 10\n    mary = john*2\n    result = mary\n    return result\n",
+      "manual_value": 20,
+      "reasoning": "2*10",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 767,
+      "kind": "gain",
+      "question": "If a hawk is laying 6 eggs, and about 50% of them are lost, how many will be left?",
+      "reference": {
+        "status": "numeric",
+        "value": 3.0
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 300
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 3.0
+      },
+      "code50k": "def solve() -> int:\n    eggs_left = 6\n    percent_lost = 50\n    eggs_left = eggs_left * percent_lost\n    result = eggs_left\n    return result\n",
+      "code100k": "def solve() -> int:\n    eggs_in_lay = 6\n    lost_lay = eggs_in_lay * 0.5\n    remaining_eggs = eggs_in_lay - lost_lay\n    result = remaining_eggs\n    return result\n",
+      "reference_code": "def solve() -> int:\n    eggs = 6\n    loss_percentage = 0.5\n    lost_eggs = eggs * loss_percentage\n    remaining_eggs = eggs - lost_eggs\n    result = remaining_eggs\n\n    return result\n",
+      "manual_value": 3,
+      "reasoning": "6*(1-0.5)",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 792,
+      "kind": "gain",
+      "question": "There are 5 apples in a basket and each apple has 50 calories. How many calories does the entire basket have?",
+      "reference": {
+        "status": "numeric",
+        "value": 250
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 0
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 250
+      },
+      "code50k": "def solve() -> int:\n    apples = 5\n    calories_per_apple = 50\n    calories_per_apple = apples // calories_per_apple\n    result = calories_per_apple\n\n    return result\n",
+      "code100k": "def solve() -> int:\n    apples = 5\n    calories_per_apple = 50\n    total_calories = apples * calories_per_apple\n    result = total_calories\n\n    return result\n",
+      "reference_code": "def solve() -> int:\n    total_calories = 5 * 50\n    \n    result = total_calories\n\n    return result\n",
+      "manual_value": 250,
+      "reasoning": "5*50",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 827,
+      "kind": "gain",
+      "question": "A rectangle has a length of 7 meters and a width of 4 meters. What is the perimeter of the rectangle?",
+      "reference": {
+        "status": "numeric",
+        "value": 22
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 3.5
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 22
+      },
+      "code50k": "def solve() -> int:\n    perimeter = 7\n    length = 4\n    width = perimeter / 2\n    result = width\n    return result\n",
+      "code100k": "def solve() -> int:\n    length = 7\n    width = 4\n    perimeter = 2 * (length + width)\n    result = perimeter\n    return result\n",
+      "reference_code": "def solve() -> int:\n    length_of_rectangle = 7\n    width_of_rectangle = 4\n    perimeter_of_rectangle = 2 * (length_of_rectangle + width_of_rectangle)\n    result = perimeter_of_rectangle\n    return result\n",
+      "manual_value": 22,
+      "reasoning": "2*(7+4)",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 869,
+      "kind": "gain",
+      "question": "Daniel had $36. He spent $14. How much money does he have left?",
+      "reference": {
+        "status": "numeric",
+        "value": 22
+      },
+      "before50k": {
+        "status": "unsupported"
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 22
+      },
+      "code50k": "def solve() -> int:\n    money = 36\n    money = 14\n    money -= money\n    result = money\n    return result\n",
+      "code100k": "def solve() -> int:\n    money = 36\n    spent = 14\n    left = money - spent\n    result = left\n\n    return result\n",
+      "reference_code": "def solve() -> int:\n    daniel_total = 36\n    daniel_spent = 14\n    \n    daniel_left = daniel_total - daniel_spent\n    result = daniel_left\n\n    return result\n",
+      "manual_value": 22,
+      "reasoning": "36-14",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k",
+      "before_semantics_unresolved": true
+    },
+    {
+      "index": 896,
+      "kind": "gain",
+      "question": "John has a job where he gets paid $12 an hour. If he works 8 hours a day for 5 days, what is his total pay?",
+      "reference": {
+        "status": "numeric",
+        "value": 480
+      },
+      "before50k": {
+        "status": "undefined_name",
+        "name": "hours_worked"
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 480
+      },
+      "code50k": "def solve() -> int:\n    hourly_wage = 12\n    hours_per_day = 8\n    days_worked = 5\n    total_pay = hourly_wage * hours_worked\n    result = total_pay\n\n    return result\n",
+      "code100k": "def solve() -> int:\n    hourly_wage = 12\n    hours_per_day = 8\n    days_worked = 5\n    total_pay = hourly_wage * hours_per_day * days_worked\n    result = total_pay\n\n    return result\n",
+      "reference_code": "def solve() -> int:\n    hourly_rate = 12\n    hours_per_day = 8\n    days_worked = 5\n    total_hours = hours_per_day * days_worked\n    total_pay = total_hours * hourly_rate\n    result = total_pay\n    return result\n",
+      "manual_value": 480,
+      "reasoning": "12*8*5",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 966,
+      "kind": "gain",
+      "question": "A garden measures 12 meters by 15 meters. What is the perimeter of the garden?",
+      "reference": {
+        "status": "numeric",
+        "value": 54
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 6.0
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 54
+      },
+      "code50k": "def solve() -> int:\n    perimeter = 12\n    length = 15\n    width = perimeter / 2\n    result = width\n    return result\n",
+      "code100k": "def solve() -> int:\n    length = 12\n    width = 15\n    perimeter = 2 * (length + width)\n    result = perimeter\n    return result\n",
+      "reference_code": "def solve() -> int:\n    length = 12\n    width = 15\n    perimeter = 2 * (length + width)\n    result = perimeter\n\n    return result\n",
+      "manual_value": 54,
+      "reasoning": "2*(12+15)",
+      "before_matches_manual": false,
+      "after_matches_manual": true,
+      "manual_status": "correct_numeric_100k"
+    },
+    {
+      "index": 157,
+      "kind": "loss",
+      "question": "A recipe calls for 2 cups of flour to make 12 cookies. How many cups of flour are needed to make 30 cookies?",
+      "reference": {
+        "status": "numeric",
+        "value": 5.0
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 5.0
+      },
+      "after100k": {
+        "status": "undefined_name",
+        "name": "flour_needed"
+      },
+      "code50k": "def solve() -> int:\n    flour_per_cookie = 2/12\n    flour_needed = 30\n    flour_needed = flour_per_cookie * flour_needed\n    result = flour_needed\n    return result\n",
+      "code100k": "def solve() -> int:\n    cookies_needed = 30\n    flour_per_cookie = 2/12\n    flour_needed = flour_needed * flour_per_cookie\n    result = flour_needed\n    return result\n",
+      "reference_code": "def solve() -> int:\n    num_cookies = 30\n    needed_flour = (2/12)*num_cookies\n    result = needed_flour\n    return result\n",
+      "manual_value": 5,
+      "reasoning": "2*30/12",
+      "before_matches_manual": true,
+      "after_matches_manual": false,
+      "manual_status": "correct_numeric50k_regressed_at100k"
+    },
+    {
+      "index": 173,
+      "kind": "loss",
+      "question": "A car travels 480 miles on 20 gallons of gasoline. How many miles per gallon does the car get?",
+      "reference": {
+        "status": "numeric",
+        "value": 24.0
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 24.0
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 400
+      },
+      "code50k": "def solve() -> int:\n    miles_per_gallon = 480 / 20\n    result = miles_per_gallon\n    return result\n",
+      "code100k": "def solve() -> int:\n    miles_per_gallon = 480\n    miles_per_gallon = 20\n    gallons_needed = miles_per_gallon * miles_per_gallon\n    result = gallons_needed\n    return result\n",
+      "reference_code": "def solve() -> int:\n    miles_per_gallon = 480 / 20\n    result = miles_per_gallon\n    return result\n",
+      "manual_value": 24,
+      "reasoning": "480/20",
+      "before_matches_manual": true,
+      "after_matches_manual": false,
+      "manual_status": "correct_numeric50k_regressed_at100k"
+    },
+    {
+      "index": 185,
+      "kind": "loss",
+      "question": "Sarah has 24 candy bars to share with her friends. If she wants to give each friend 3 bars, how many friends can she share with?",
+      "reference": {
+        "status": "numeric",
+        "value": 8
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 8
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 1
+      },
+      "code50k": "def solve() -> int:\n    candy_bars = 24\n    friends = 3\n    friends = candy_bars // friends\n    result = friends\n    return result\n",
+      "code100k": "def solve() -> int:\n    num_friends = 24\n    num_friends = 3\n    bars_per_friend = num_friends // num_friends\n    result = bars_per_friend\n    return result\n",
+      "reference_code": "def solve() -> int:\n    bars = 24\n    bars_per_friend = 3\n    friends = bars // bars_per_friend\n    result = friends\n    return result\n",
+      "manual_value": 8,
+      "reasoning": "24/3",
+      "before_matches_manual": true,
+      "after_matches_manual": false,
+      "manual_status": "correct_numeric50k_regressed_at100k"
+    },
+    {
+      "index": 186,
+      "kind": "loss",
+      "question": "Student: Sam had 40 candies to share with his friends. He gave 8 candies to Alice, 6 candies to Bob, and 4 candies to Charlie. How many candies does Sam have left for himself?",
+      "reference": {
+        "status": "numeric",
+        "value": 22
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 22
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 0
+      },
+      "code50k": "def solve() -> int:\n    candies = 40\n    candies = candies - 8\n    candies = candies - 6\n    candies = candies - 4\n    result = candies\n\n    return result\n",
+      "code100k": "def solve() -> int:\n    alice_candies = 40\n    bob_candies = 6\n    bob_candies = 8\n    alice_candies = bob_candies - bob_candies\n    charlie_candies = bob_candies - bob_candies\n    result = charlie_candies\n\n    return result\n",
+      "reference_code": "def solve() -> int:\n    candies = 40\n    candies_Alice = 8\n    candies_Bob = 6\n    candies_Charlie = 4\n    candies_Sam = candies - candies_Alice - candies_Bob - candies_Charlie\n    result = candies_Sam\n\n    return result\n",
+      "manual_value": 22,
+      "reasoning": "40-8-6-4",
+      "before_matches_manual": true,
+      "after_matches_manual": false,
+      "manual_status": "correct_numeric50k_regressed_at100k"
+    },
+    {
+      "index": 196,
+      "kind": "loss",
+      "question": "At a store, three apples cost $3. How much will 9 apples cost?",
+      "reference": {
+        "status": "numeric",
+        "value": 9.0
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 9
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 27
+      },
+      "code50k": "def solve() -> int:\n    cost_per_apple = 3\n    total_cost = cost_per_apple * 3\n    result = total_cost\n\n    return result\n",
+      "code100k": "def solve() -> int:\n    cost_per_3_apples = 3\n    number_of_apples = 9\n    total_cost = cost_per_3_apples * number_of_apples\n    result = total_cost\n\n    return result\n",
+      "reference_code": "def solve() -> int:\n    apples_in_three = 3\n    cost_of_three = 3\n    apples_in_nine = 9 \n    cost_of_nine = apples_in_nine * (cost_of_three / apples_in_three) #cost of nine apples is the cost of three apples multiplied by three \n    result = cost_of_nine\n\n    return result\n",
+      "manual_value": 9,
+      "reasoning": "3*(9/3)",
+      "before_matches_manual": true,
+      "after_matches_manual": false,
+      "manual_status": "correct_numeric50k_regressed_at100k"
+    },
+    {
+      "index": 212,
+      "kind": "loss",
+      "question": "A piece of art is worth $200 and an additional 10% tax needs to be paid. How much money will the art cost after tax?",
+      "reference": {
+        "status": "numeric",
+        "value": 220.0
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 220.0
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 0.11000000000000001
+      },
+      "code50k": "def solve() -> int:\n    price = 200\n    tax_rate = 0.1\n    tax_amount = price * tax_rate\n    total_cost = price + tax_amount\n    result = total_cost\n    return result\n",
+      "code100k": "def solve() -> int:\n    tax_rate = 200\n    tax_rate = 0.1\n    total_cost = tax_rate * tax_rate\n    total_cost = total_cost + tax_rate\n    result = total_cost\n    return result\n",
+      "reference_code": "def solve() -> int:\n    initial_price = 200\n    tax_rate = 0.10\n    tax = initial_price * tax_rate \n    total_price = initial_price + tax \n    result = total_price\n\n    return result\n",
+      "manual_value": 220,
+      "reasoning": "200*1.1",
+      "before_matches_manual": true,
+      "after_matches_manual": false,
+      "manual_status": "correct_numeric50k_regressed_at100k"
+    },
+    {
+      "index": 275,
+      "kind": "loss",
+      "question": "A recipe calls for 2 cups of sugar for 4 servings. If you want to make 8 servings, how many cups of sugar will you need?",
+      "reference": {
+        "status": "numeric",
+        "value": 4.0
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 4.0
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 16
+      },
+      "code50k": "def solve() -> int:\n    sugar_per_serving = 2/4\n    servings = 8\n    total_sugar = sugar_per_serving * servings\n    result = total_sugar\n    return result\n",
+      "code100k": "def solve() -> int:\n    sugar_per_serving = 2\n    servings = 8\n    sugar_needed = sugar_per_serving * servings\n    result = sugar_needed\n    return result\n",
+      "reference_code": "def solve() -> int:\n    sugar_for_4servings=2\n    servings_needed=8\n    sugar_needed=sugar_for_4servings*(servings_needed/4)\n    result = sugar_needed\n\n    return result\n",
+      "manual_value": 4,
+      "reasoning": "2*8/4",
+      "before_matches_manual": true,
+      "after_matches_manual": false,
+      "manual_status": "correct_numeric50k_regressed_at100k"
+    },
+    {
+      "index": 300,
+      "kind": "loss",
+      "question": "A recipe for 10 servings requires 1 pound of flour. If a chef wants to make 20 servings, how many pounds of flour does he need to use?",
+      "reference": {
+        "status": "numeric",
+        "value": 2.0
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 2.0
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 200
+      },
+      "code50k": "def solve() -> int:\n    servings_per_serving = 10\n    servings_needed = 20\n    flour_needed = servings_needed / servings_per_serving\n    result = flour_needed\n    return result\n",
+      "code100k": "def solve() -> int:\n    servings_per_serving = 10\n    pounds_of_flour = 20\n    total_flour = servings_per_serving * pounds_of_flour\n    result = total_flour\n    return result\n",
+      "reference_code": "def solve() -> int:\n    servings_per_pound = 10\n    target_servings = 20\n    pounds_of_flour = target_servings / servings_per_pound\n    result = pounds_of_flour\n\n    return result\n",
+      "manual_value": 2,
+      "reasoning": "1*20/10",
+      "before_matches_manual": true,
+      "after_matches_manual": false,
+      "manual_status": "correct_numeric50k_regressed_at100k"
+    },
+    {
+      "index": 304,
+      "kind": "loss",
+      "question": "Ben collected 36 stamps from different countries and sorted them into 4 equal groups. He gave one group to his brother and traded another group for 12 more stamps from his friend. He then bought 8 more stamps from a shop and sorted them into 8 equal groups. He gave two groups to his sister and kept the rest. How many stamps did he have at the end?",
+      "reference": {
+        "status": "numeric",
+        "value": 30
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 30
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 0
+      },
+      "code50k": "def solve() -> int:\n    stamps = 36 - 4 - 8\n    stamps = stamps - 2\n    stamps = stamps + 8\n    result = stamps\n    return result\n",
+      "code100k": "def solve() -> int:\n    stamps_collected = 36\n    stamps_collected = stamps_collected - 4\n    stamps_collected = stamps_collected - stamps_collected\n    stamps_collected = stamps_collected + 8\n    stamps_collected = stamps_collected - stamps_collected\n    result = stamps_collected\n    return result\n",
+      "reference_code": "def solve() -> int:\n    group_size = 36 // 4 # Integer division to get whole number of stamps\n    \n    left_after_trading = 36 - 2 * group_size + 12\n    \n    total_after_buying = left_after_trading + 8\n    \n    new_group_size = total_after_buying // 8 # Integer division to get whole number of stamps\n    \n    left_after_giving = total_after_buying - 2 * new_group_size\n    \n    result = left_after_giving\n\n    return result\n",
+      "manual_status": "inconsistent_whole_objects",
+      "reasoning": "After giving9, trading9 for12 and buying8, there are38 stamps; dividing into8 equal whole-stamp groups is impossible. Formal fractional continuation gives28.5, not reference30."
+    },
+    {
+      "index": 307,
+      "kind": "loss",
+      "question": "If a store sells a shirt for $25 and makes a profit of 20% on each shirt sold, how much is the profit on one shirt?",
+      "reference": {
+        "status": "numeric",
+        "value": 5.0
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 5.0
+      },
+      "after100k": {
+        "status": "undefined_name",
+        "name": "profit"
+      },
+      "code50k": "def solve() -> int:\n    cost = 25\n    profit_percentage = 0.2\n    profit = cost * profit_percentage\n    result = profit\n    return result\n",
+      "code100k": "def solve() -> int:\n    cost_price = 25\n    profit_percentage = 20\n    profit_percentage = cost_price * profit_percentage / 100\n    result = profit\n    return result\n",
+      "reference_code": "def solve() -> int:\n    shirt_price = 25\n    profit_margin_percentage = 20\n    profit_per_shirt = shirt_price * (profit_margin_percentage / 100)\n    result = profit_per_shirt\n    return result\n",
+      "manual_value": 5,
+      "reasoning": "25*0.2",
+      "before_matches_manual": true,
+      "after_matches_manual": false,
+      "manual_status": "correct_numeric50k_regressed_at100k"
+    },
+    {
+      "index": 385,
+      "kind": "loss",
+      "question": "Student: A basketball player made 75% of his free throw shots last season. If he attempted 200 free throw shots, how many did he make?",
+      "reference": {
+        "status": "numeric",
+        "value": 150.0
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 150.0
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 0
+      },
+      "code50k": "def solve() -> int:\n    attempts = 200\n    attempts = attempts * 0.75\n    result = attempts\n\n    return result\n",
+      "code100k": "def solve() -> int:\n    shots = 0\n    shots = 0\n    shots = 0\n    shots = 0\n    shots = shots * shots\n    shots = shots - shots\n    result = shots\n\n    return result\n",
+      "reference_code": "def solve() -> int:\n    attempts = 200 # number of free throw shots attempted\n    percentage = 0.75 # percentage of shots made\n    shots_made = attempts * percentage\n    result = shots_made\n\n    return result\n",
+      "manual_value": 150,
+      "reasoning": "200*0.75",
+      "before_matches_manual": true,
+      "after_matches_manual": false,
+      "manual_status": "correct_numeric50k_regressed_at100k"
+    },
+    {
+      "index": 445,
+      "kind": "loss",
+      "question": "Emily wants to get a computer for her studies and she can afford to spend a fifth of her savings account. If her savings account has $1200, how much money does she need to spend to get the computer?",
+      "reference": {
+        "status": "numeric",
+        "value": 240.0
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 240.0
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 6000
+      },
+      "code50k": "def solve() -> int:\n    savings = 1200\n    savings = savings / 5\n    result = savings\n    return result\n",
+      "code100k": "def solve() -> int:\n    savings = 1200\n    savings = savings * 5\n    result = savings\n    return result\n",
+      "reference_code": "def solve() -> int:\n    savings_account = 1200 \n    cost_of_computer = savings_account / 5 \n    result = cost_of_computer\n\n    return result\n",
+      "manual_value": 240,
+      "reasoning": "1200/5",
+      "before_matches_manual": true,
+      "after_matches_manual": false,
+      "manual_status": "correct_numeric50k_regressed_at100k"
+    },
+    {
+      "index": 451,
+      "kind": "loss",
+      "question": "If the circumference of a circle is 20π inches, what is its diameter in inches?",
+      "reference": {
+        "status": "numeric",
+        "value": 20.0
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 20.0
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 31.400000000000002
+      },
+      "code50k": "def solve() -> int:\n    diameter = 20\n    radius = diameter / 2\n    circumference = 3.14159\n    circumference = 2 * radius\n    result = circumference\n    return result\n",
+      "code100k": "def solve() -> int:\n    diameter = 20\n    radius = diameter / 2\n    circumference = 3.14 * radius\n    result = circumference\n    return result\n",
+      "reference_code": "def solve() -> int:\n    circumference = 20 * 3.14159\n    diameter = circumference / 3.14159\n    result = diameter\n\n    return result\n",
+      "manual_value": 20,
+      "reasoning": "(20*pi)/pi",
+      "before_matches_manual": true,
+      "after_matches_manual": false,
+      "manual_status": "correct_numeric50k_regressed_at100k"
+    },
+    {
+      "index": 524,
+      "kind": "loss",
+      "question": "A store is having a 25% off sale. If a dress is originally priced at $80, what is the sale price?",
+      "reference": {
+        "status": "numeric",
+        "value": 60.0
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 60.0
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 79.75
+      },
+      "code50k": "def solve() -> int:\n    original_price = 80\n    discount_percentage = 0.25\n    sale_price = original_price - (original_price * discount_percentage)\n    result = sale_price\n    return result\n",
+      "code100k": "def solve() -> int:\n    original_price = 80\n    discount_percent = 25\n    sale_price = original_price - (discount_percent/100)\n    result = sale_price\n\n    return result\n",
+      "reference_code": "def solve() -> int:\n    original_price = 80\n    discount_rate = 0.25\n    discount_amount = original_price * discount_rate\n    sale_price = original_price - discount_amount\n    result = sale_price\n\n    return result\n",
+      "manual_value": 60,
+      "reasoning": "80*(1-0.25)",
+      "before_matches_manual": true,
+      "after_matches_manual": false,
+      "manual_status": "correct_numeric50k_regressed_at100k"
+    },
+    {
+      "index": 535,
+      "kind": "loss",
+      "question": "A school has 300 students. 12% of them are absent. How many students are present?",
+      "reference": {
+        "status": "numeric",
+        "value": 264.0
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 264.0
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": -3300
+      },
+      "code50k": "def solve() -> int:\n    total_students = 300\n    absent_percentage = 12\n    absent_students = total_students * absent_percentage / 100\n    present_students = total_students - absent_students\n    result = present_students\n    return result\n",
+      "code100k": "def solve() -> int:\n    total_students = 300\n    absent_percent = 12\n    present_students = total_students * (1 - absent_percent)\n    result = present_students\n    return result\n",
+      "reference_code": "def solve() -> int:\n    total_students = 300\n    absent_percent = 0.12\n    absent = total_students * absent_percent\n    present = total_students - absent\n    result = present\n    return result\n",
+      "manual_value": 264,
+      "reasoning": "300*(1-0.12)",
+      "before_matches_manual": true,
+      "after_matches_manual": false,
+      "manual_status": "correct_numeric50k_regressed_at100k"
+    },
+    {
+      "index": 588,
+      "kind": "loss",
+      "question": "Possible questions and programs: Matt has a collection of 120 marbles of different colors. He decides to give away 15 red marbles and 10 green marbles to his friends. If he had 40 red marbles and 25 green marbles before, how many marbles of other colors does he have left?",
+      "reference": {
+        "status": "numeric",
+        "value": 0
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 0
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 15
+      },
+      "code50k": "def solve() -> int:\n    marbles = 120\n    marbles = 15\n    marbles = marbles - marbles\n    marbles = marbles - marbles\n    result = marbles\n    return result\n",
+      "code100k": "def solve() -> int:\n    total_marbles = 120\n    red_marbles = 15\n    green_marbles = 10\n    red_marbles = 40\n    green_marbles = 25\n    red_marbles = total_marbles - red_marbles - red_marbles - green_marbles\n    result = red_marbles\n    return result\n",
+      "reference_code": "def solve() -> int:\n    left = 120 - 15 - 10\n    other = 120 - 40 - 25\n    result = other - (left - (40 - 15) - (25 - 10))\n    return result\n",
+      "manual_value": 55,
+      "reasoning": "Other colors120-40-25=55; giving away red/green does not change other colors; reference0 is wrong",
+      "before_matches_manual": false,
+      "after_matches_manual": false,
+      "manual_status": "incorrect_reference_both_predictions_wrong"
+    },
+    {
+      "index": 600,
+      "kind": "loss",
+      "question": "Emma has a rectangular garden that measures 15 feet by 12 feet. She wants to plant some flowers along the perimeter of the garden. Each flower requires one square foot of space. How many flowers can Emma plant?",
+      "reference": {
+        "status": "numeric",
+        "value": 54
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 54
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 27
+      },
+      "code50k": "def solve() -> int:\n    length = 15\n    width = 12\n    perimeter = 2 * (length + width)\n    result = perimeter\n\n    return result\n",
+      "code100k": "def solve() -> int:\n    length = 15\n    width = 12\n    perimeter = 2 * (length + width)\n    flowers = perimeter // 2\n    result = flowers\n    return result\n",
+      "reference_code": "def solve() -> int:\n    length = 15\n    width = 12\n    perimeter = 2 * (length + width)\n    flowers = perimeter\n    result = flowers\n    return result\n",
+      "manual_status": "underspecified_flower_spacing",
+      "reasoning": "Perimeter54ft does not determine a count from1square-foot area per flower without placement/strip assumptions; reference assumes one flower per linear foot."
+    },
+    {
+      "index": 611,
+      "kind": "loss",
+      "question": "A restaurant has 30 tables. Each table can seat 4 people. If the restaurant is full, how many people can it seat?",
+      "reference": {
+        "status": "numeric",
+        "value": 120
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 120
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 16
+      },
+      "code50k": "def solve() -> int:\n    tables = 30\n    seats_per_table = 4\n    total_people = tables * seats_per_table\n    result = total_people\n    return result\n",
+      "code100k": "def solve() -> int:\n    num_tables = 30\n    num_tables = 4\n    num_tables = num_tables * num_tables\n    result = num_tables\n    return result\n",
+      "reference_code": "def solve() -> int:\n    num_of_tables = 30\n    seating_per_table = 4\n    \n    total_seating = num_of_tables * seating_per_table\n    \n    result = total_seating\n\n    return result\n",
+      "manual_value": 120,
+      "reasoning": "30*4",
+      "before_matches_manual": true,
+      "after_matches_manual": false,
+      "manual_status": "correct_numeric50k_regressed_at100k"
+    },
+    {
+      "index": 640,
+      "kind": "loss",
+      "question": "Olivia went shopping and bought a t-shirt for $25, a pair of jeans for $50 and a jacket for $75. How much money did she spend in total?",
+      "reference": {
+        "status": "numeric",
+        "value": 150
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 150
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 100
+      },
+      "code50k": "def solve() -> int:\n    tshirt_price = 25\n    tshirt_price = 50\n    tshirt_price = 75\n    total_cost = tshirt_price + tshirt_price\n    result = total_cost\n\n    return result\n",
+      "code100k": "def solve() -> int:\n    tshirt_price = 25\n    jeans_price = 50\n    jeans_price = 75\n    total_cost = tshirt_price + jeans_price\n    result = total_cost\n\n    return result\n",
+      "reference_code": "def solve() -> int:\n    price_tshirt = 25\n    price_jeans = 50\n    price_jacket = 75\n    total_price = price_tshirt + price_jeans + price_jacket\n    result = total_price\n\n    return result\n",
+      "manual_value": 150,
+      "reasoning": "25+50+75",
+      "before_matches_manual": true,
+      "after_matches_manual": false,
+      "manual_status": "correct_numeric50k_regressed_at100k"
+    },
+    {
+      "index": 655,
+      "kind": "loss",
+      "question": "Student: A math teacher gives a test with 20 questions. If a student scores 75%, how many questions did they answer correctly?",
+      "reference": {
+        "status": "numeric",
+        "value": 15.0
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 15.0
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 5625
+      },
+      "code50k": "def solve() -> int:\n    total_questions = 75\n    correct_percentage = 20\n    correct_answers = total_questions * correct_percentage / 100\n    result = correct_answers\n\n    return result\n",
+      "code100k": "def solve() -> int:\n    num_questions = 20\n    num_correct = 75\n    num_correct = num_correct * num_correct\n    result = num_correct\n\n    return result\n",
+      "reference_code": "def solve() -> int:\n    total_questions = 20\n    score_percentage = 75\n    result = total_questions * (score_percentage / 100)\n\n    return result\n",
+      "manual_value": 15,
+      "reasoning": "20*0.75",
+      "before_matches_manual": true,
+      "after_matches_manual": false,
+      "manual_status": "correct_numeric50k_regressed_at100k"
+    },
+    {
+      "index": 749,
+      "kind": "loss",
+      "question": "A clinic has three rooms: Room A, B, and C. In Room A, 60% of the patients are children, in Room B, 40% of the patients are children, and in Room C, the rest are children. If there are 36 children in Room B, how many are in Room C?",
+      "reference": {
+        "status": "numeric",
+        "value": 0.0
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 0.0
+      },
+      "after100k": {
+        "status": "undefined_name",
+        "name": "children_children_children"
+      },
+      "code50k": "def solve() -> int:\n    total_children = 36\n    children_children = total_children * 0.4\n    children_children = total_children * 0.4\n    children_children = children_children * 0.4\n    children_children = children_children - children_children\n    children_children = children_children * children_children\n    children_children = children_children - children_children\n    children_children = children_children - children_children\n    children_children = children_children - children_children\n    result = children_children\n    return result\n",
+      "code100k": "def solve() -> int:\n    total_children = 36\n    children_percentage = 0.6 * total_children\n    children_children = total_children * 0.4\n    children_children = total_children * 0.6\n    children_children = total_children - children_children_children\n    children_children = children_children - children_children_children\n    children_children = children_children - children_children_children\n    children_children = children_children_children - children_children_children\n    result = children_children_children\n    return result\n",
+      "reference_code": "def solve() -> int:\n    room_a_percentage = 60\n    room_b_percentage = 40\n    room_b_children = 36\n    \n    room_a_children = (room_a_percentage / 100) * (100 - room_b_percentage) * room_b_children / room_b_percentage\n    room_c_children = (100 - room_a_percentage - room_b_percentage) * room_b_children / room_b_percentage\n    \n    result = room_c_children\n    return result\n",
+      "manual_status": "underdetermined_room_totals",
+      "reasoning": "RoomB has36/0.4=90patients; totals of RoomsA/C are absent, so children in RoomC are not determined; reference0 is unsupported by the question."
+    },
+    {
+      "index": 815,
+      "kind": "loss",
+      "question": "am needs to paint 800 square meters of his house. If the paint covers 12 square meters per liter, how many liters of paint does he need?",
+      "reference": {
+        "status": "numeric",
+        "value": 66.66666666666667
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 66.66666666666667
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 9600
+      },
+      "code50k": "def solve() -> int:\n    area = 800\n    liters_per_liter = 12\n    liters_per_liter = area / liters_per_liter\n    result = liters_per_liter\n\n    return result\n",
+      "code100k": "def solve() -> int:\n    area = 800\n    liters_per_liter = 12\n    total_area = area * liters_per_liter\n    result = total_area\n\n    return result\n",
+      "reference_code": "def solve() -> int:\n    area = 800 # square meters\n    coverage_per_liter = 12 # square meters\n    liters_needed = area/coverage_per_liter\n    result = liters_needed\n\n    return result\n",
+      "manual_value": 66.66666666666667,
+      "reasoning": "800/12",
+      "before_matches_manual": true,
+      "after_matches_manual": false,
+      "manual_status": "correct_numeric50k_regressed_at100k"
+    },
+    {
+      "index": 861,
+      "kind": "loss",
+      "question": "A bakery sold 24 donuts in one hour. If the bakery is open for 8 hours, how many donuts did they sell in total?",
+      "reference": {
+        "status": "numeric",
+        "value": 192
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 192
+      },
+      "after100k": {
+        "status": "undefined_name",
+        "name": "hours_open"
+      },
+      "code50k": "def solve() -> int:\n    donuts_per_hour = 24\n    hours_per_day = 8\n    total_donuts = donuts_per_hour * hours_per_day\n    result = total_donuts\n    return result\n",
+      "code100k": "def solve() -> int:\n    donuts_per_hour = 24\n    hours_per_open = 8\n    total_donuts = donuts_per_hour * hours_open\n    result = total_donuts\n    return result\n",
+      "reference_code": "def solve() -> int:\n    donuts_per_hour = 24\n    hours_open = 8\n    total_donuts = donuts_per_hour * hours_open\n    result = total_donuts\n\n    return result\n",
+      "manual_value": 192,
+      "reasoning": "24*8",
+      "before_matches_manual": true,
+      "after_matches_manual": false,
+      "manual_status": "correct_numeric50k_regressed_at100k"
+    },
+    {
+      "index": 957,
+      "kind": "loss",
+      "question": "If 10 oranges cost $2, how many oranges can you buy for $5?",
+      "reference": {
+        "status": "numeric",
+        "value": 25.0
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 25.0
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 0.2
+      },
+      "code50k": "def solve() -> int:\n    cost_per_orange = 2.5\n    number_of_oranges = 10\n    total_cost = cost_per_orange * number_of_oranges\n    result = total_cost\n\n    return result\n",
+      "code100k": "def solve() -> int:\n    cost_of_oranges = 2\n    number_of_oranges = 10\n    number_of_oranges = cost_of_oranges / number_of_oranges\n    result = number_of_oranges\n\n    return result\n",
+      "reference_code": "def solve() -> int:\n    oranges_can_buy = 5/2*10\n    result = oranges_can_buy\n    return result\n",
+      "manual_value": 25,
+      "reasoning": "10*(5/2)",
+      "before_matches_manual": true,
+      "after_matches_manual": false,
+      "manual_status": "correct_numeric50k_regressed_at100k"
+    },
+    {
+      "index": 963,
+      "kind": "loss",
+      "question": "Student: 10. On average, a grocery store stocks 15 cartons of milk each day. How many cartons of milk will the store stock after 30 days?",
+      "reference": {
+        "status": "numeric",
+        "value": 450
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 450
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 300
+      },
+      "code50k": "def solve() -> int:\n    cartons_per_day = 10\n    cartons_per_day = 15\n    days = 30\n    total_cartons = cartons_per_day * days\n    result = total_cartons\n\n    return result\n",
+      "code100k": "def solve() -> int:\n    num_cartons = 10\n    num_days = 15\n    num_days = 30\n    total_days = num_cartons * num_days\n    result = total_days\n\n    return result\n",
+      "reference_code": "def solve() -> int:\n    cartons_per_day = 15\n    days = 30\n    total_cartons = cartons_per_day * days\n    result = total_cartons\n\n    return result\n",
+      "manual_value": 450,
+      "reasoning": "15*30",
+      "before_matches_manual": true,
+      "after_matches_manual": false,
+      "manual_status": "correct_numeric50k_regressed_at100k"
+    },
+    {
+      "index": 982,
+      "kind": "loss",
+      "question": "A school has 800 students and 60 teachers. What is the ratio of students to teachers?",
+      "reference": {
+        "status": "numeric",
+        "value": 13.333333333333334
+      },
+      "before50k": {
+        "status": "numeric",
+        "value": 13.333333333333334
+      },
+      "after100k": {
+        "status": "numeric",
+        "value": 1.0
+      },
+      "code50k": "def solve() -> int:\n    total_students = 800\n    ratio = 60\n    ratio = total_students / ratio\n    result = ratio\n    return result\n",
+      "code100k": "def solve() -> int:\n    total_students = 800\n    ratio = 60\n    ratio = total_students / total_students\n    result = ratio\n    return result\n",
+      "reference_code": "def solve() -> int:\n    students = 800\n    teachers = 60\n    ratio = students/teachers\n    result = ratio\n\n    return result\n",
+      "manual_value": 13.333333333333334,
+      "reasoning": "ratio800:60=40:3, scalar quotient800/60",
+      "before_matches_manual": true,
+      "after_matches_manual": false,
+      "manual_status": "correct_numeric50k_regressed_at100k"
+    }
+  ],
+  "change_review_summary": {
+    "correct_numeric_100k": 39,
+    "correct_numeric50k_regressed_at100k": 22,
+    "inconsistent_whole_objects": 1,
+    "incorrect_reference_both_predictions_wrong": 1,
+    "underspecified_flower_spacing": 1,
+    "underdetermined_room_totals": 1
+  },
+  "all30_old256_reference_agreements100k": [
+    {
+      "combined_validation_index": 13,
+      "question": "Student: Jessica is baking cupcakes. She needs to make 60 cupcakes. The recipe states that she needs 2/3 cup of sugar for each cupcake. How much sugar does Jessica need?",
+      "generated_code": "def solve() -> int:\n    cupcakes = 60\n    cupcakes_per_cupcake = 2/3\n    total_sugar = cupcakes * cupcakes_per_cupcake\n    result = total_sugar\n\n    return result\n",
+      "generated": {
+        "status": "numeric",
+        "value": 40.0
+      },
+      "reference": {
+        "status": "numeric",
+        "value": 40.0
+      },
+      "manual_status": "correct_numeric_for_this_question",
+      "manual_value": 40,
+      "reasoning": "60*(2/3)"
+    },
+    {
+      "combined_validation_index": 26,
+      "question": "Jane has 48 apples, and she gave some to her friends. If she gave away 1/6 of her apples, how many apples are left with her?",
+      "reference_code": "def solve() -> int:\n    apples = 48\n    gave_away = apples / 6\n    left = apples - gave_away\n    result = left\n    return result\n",
+      "reference": {
+        "status": "numeric",
+        "value": 40.0
+      },
+      "manual_status": "correct_numeric_for_this_question",
+      "manual_value": 40,
+      "reasoning": "48-48/6",
+      "generated_code": "def solve() -> int:\n    apples = 48\n    given_away = apples / 6\n    given_away = apples * 1/6\n    left = apples - given_away\n    result = left\n    return result\n",
+      "generated": {
+        "status": "numeric",
+        "value": 40.0
+      }
+    },
+    {
+      "combined_validation_index": 30,
+      "question": "A jar has 100 marbles, 60% of them are red and the rest are blue. How many blue marbles are there?",
+      "reference_code": "def solve() -> int:\n    total_marbles = 100\n    red_percentage = 60\n    red_marbles = total_marbles * red_percentage / 100\n    blue_marbles = total_marbles - red_marbles\n    result = blue_marbles\n    return result\n",
+      "reference": {
+        "status": "numeric",
+        "value": 40.0
+      },
+      "manual_status": "correct_numeric_for_this_question",
+      "manual_value": 40,
+      "reasoning": "100*(1-0.6)",
+      "generated_code": "def solve() -> int:\n    total_marbles = 100\n    red_marbles = total_marbles * 0.6\n    blue_marbles = total_marbles - red_marbles\n    result = blue_marbles\n    return result\n",
+      "generated": {
+        "status": "numeric",
+        "value": 40.0
+      }
+    },
+    {
+      "combined_validation_index": 34,
+      "question": "Student: Albert is building a fence around his house. He needs 7 pieces of lumber that are 6 feet long each. How many total feet of lumber does Albert need?",
+      "generated_code": "def solve() -> int:\n    length = 7 # feet\n    width = 6 # feet\n    total_length = length * width\n    result = total_length\n\n    return result\n",
+      "generated": {
+        "status": "numeric",
+        "value": 42
+      },
+      "reference": {
+        "status": "numeric",
+        "value": 42
+      },
+      "manual_status": "correct_numeric_for_this_question",
+      "manual_value": 42,
+      "reasoning": "7*6"
+    },
+    {
+      "combined_validation_index": 69,
+      "question": "Student: The perimeter of a square is 36 centimeters. What is the length of one side of the square?",
+      "reference_code": "def solve() -> int:\n    perimeter = 36\n    side_length = perimeter / 4\n    result = side_length\n\n    return result\n",
+      "reference": {
+        "status": "numeric",
+        "value": 9.0
+      },
+      "manual_status": "correct_numeric_for_this_question",
+      "manual_value": 9,
+      "reasoning": "36/4",
+      "generated_code": "def solve() -> int:\n    perimeter = 36\n    side_length = perimeter / 4\n    result = side_length\n\n    return result\n",
+      "generated": {
+        "status": "numeric",
+        "value": 9.0
+      }
+    },
+    {
+      "combined_validation_index": 73,
+      "question": "A train travels at 60 mph and has to travel 240 miles. How long will it take the train to reach its destination?",
+      "reference_code": "def solve() -> int:\n    distance = 240\n    speed = 60\n    time = distance / speed\n    result = time\n    return result\n",
+      "reference": {
+        "status": "numeric",
+        "value": 4.0
+      },
+      "manual_status": "correct_numeric_for_this_question",
+      "manual_value": 4,
+      "reasoning": "240/60",
+      "generated_code": "def solve() -> int:\n    distance = 240\n    speed = 60\n    time = distance / speed\n    result = time\n    return result\n",
+      "generated": {
+        "status": "numeric",
+        "value": 4.0
+      }
+    },
+    {
+      "combined_validation_index": 75,
+      "question": "If a car travels at a speed of 60 km/h, how long will it take to travel a distance of 300 km?",
+      "reference_code": "def solve() -> int:\n    distance = 300\n    speed = 60\n    time = distance / speed\n    result = time\n    return result\n",
+      "reference": {
+        "status": "numeric",
+        "value": 5.0
+      },
+      "manual_status": "correct_numeric_for_this_question",
+      "manual_value": 5,
+      "reasoning": "300/60",
+      "generated_code": "def solve() -> int:\n    distance = 300\n    speed = 60\n    time = distance / speed\n    result = time\n    return result\n",
+      "generated": {
+        "status": "numeric",
+        "value": 5.0
+      }
+    },
+    {
+      "combined_validation_index": 77,
+      "question": "If a recipe calls for 2 1/2 cups of flour, how many cups of flour are needed for four batches of the recipe?",
+      "generated_code": "def solve() -> int:\n    flour_per_batch = 2.5\n    num_batches = 4\n    total_flour = flour_per_batch * num_batches\n    result = total_flour\n\n    return result\n",
+      "generated": {
+        "status": "numeric",
+        "value": 10.0
+      },
+      "reference": {
+        "status": "numeric",
+        "value": 10.0
+      },
+      "manual_status": "correct_numeric_for_this_question",
+      "manual_value": 10,
+      "reasoning": "2.5*4"
+    },
+    {
+      "combined_validation_index": 91,
+      "question": "If a car travels at 60 km/h for 5 hours, how many kilometers has it traveled?",
+      "reference_code": "def solve() -> int:\n    speed = 60\n    time = 5\n    distance = speed * time\n    result = distance\n    return result\n",
+      "reference": {
+        "status": "numeric",
+        "value": 300
+      },
+      "manual_status": "correct_numeric_for_this_question",
+      "manual_value": 300,
+      "reasoning": "60*5",
+      "generated_code": "def solve() -> int:\n    speed = 60\n    time = 5\n    distance = speed * time\n    result = distance\n    return result\n",
+      "generated": {
+        "status": "numeric",
+        "value": 300
+      }
+    },
+    {
+      "combined_validation_index": 101,
+      "question": "A bag of candy contains 20 pieces of candy. If there are 5 people who want to share the candy evenly, how many pieces of candy does each person get?",
+      "reference_code": "def solve() -> int:\n    num_candy = 20\n    num_people = 5\n    candy_per_person = num_candy / num_people\n    result = candy_per_person\n\n    return result\n",
+      "reference": {
+        "status": "numeric",
+        "value": 4.0
+      },
+      "manual_status": "correct_numeric_for_this_question",
+      "manual_value": 4,
+      "reasoning": "20/5",
+      "generated_code": "def solve() -> int:\n    total_candy = 20\n    num_people = 5\n    candy_per_person = total_candy // num_people\n    result = candy_per_person\n\n    return result\n",
+      "generated": {
+        "status": "numeric",
+        "value": 4
+      }
+    },
+    {
+      "combined_validation_index": 103,
+      "question": "A bike ride around the lake is 10 miles. If you bike at a constant speed of 6 miles per hour, how long will it take you to finish the ride?",
+      "generated_code": "def solve() -> int:\n    distance = 10\n    speed = 6\n    time = distance / speed\n    result = time\n    return result\n",
+      "generated": {
+        "status": "numeric",
+        "value": 1.6666666666666667
+      },
+      "reference": {
+        "status": "numeric",
+        "value": 1.6666666666666667
+      },
+      "manual_status": "correct_numeric_for_this_question",
+      "manual_value": 1.6666666666666667,
+      "reasoning": "distance/speed=10/6"
+    },
+    {
+      "combined_validation_index": 125,
+      "question": "A car travels at a speed of 60 miles per hour. How far will the car travel in 3.5 hours?",
+      "reference_code": "def solve() -> int:\n    distance = 60 * 3.5\n    result = distance\n\n    return result\n",
+      "reference": {
+        "status": "numeric",
+        "value": 210.0
+      },
+      "manual_status": "correct_numeric_for_this_question",
+      "manual_value": 210,
+      "reasoning": "60*3.5",
+      "generated_code": "def solve() -> int:\n    speed = 60\n    time = 3.5\n    distance = speed * time\n    result = distance\n    return result\n",
+      "generated": {
+        "status": "numeric",
+        "value": 210.0
+      }
+    },
+    {
+      "combined_validation_index": 130,
+      "question": "The perimeter of a square is 32 meters. What is the length of one side of the square?",
+      "reference_code": "def solve() -> int:\n    perimeter = 32\n    side_length = perimeter / 4\n    result = side_length\n\n    return result\n",
+      "reference": {
+        "status": "numeric",
+        "value": 8.0
+      },
+      "manual_status": "correct_numeric_for_this_question",
+      "manual_value": 8,
+      "reasoning": "32/4",
+      "generated_code": "def solve() -> int:\n    perimeter = 32\n    side_length = perimeter / 4\n    result = side_length\n    return result\n",
+      "generated": {
+        "status": "numeric",
+        "value": 8.0
+      }
+    },
+    {
+      "combined_validation_index": 136,
+      "question": "Student: Question7: Alex wants to make 6 bouquets of flowers for a school project. If each bouquet needs 18 flowers, how many flowers does Alex need in total?",
+      "generated_code": "def solve() -> int:\n    flowers = 18\n    flowers_per_bouquet = 6\n    total_flowers = flowers * flowers_per_bouquet\n    result = total_flowers\n\n    return result\n",
+      "generated": {
+        "status": "numeric",
+        "value": 108
+      },
+      "reference": {
+        "status": "numeric",
+        "value": 108
+      },
+      "manual_status": "correct_numeric_for_this_question",
+      "manual_value": 108,
+      "reasoning": "6*18"
+    },
+    {
+      "combined_validation_index": 137,
+      "question": "Student: A car travels at an average speed of 50 mph and it takes 4 hours to reach its destination. What is the distance traveled by the car?",
+      "generated_code": "def solve() -> int:\n    speed = 50 # mph\n    time = 4 # hours\n    distance = speed * time\n    result = distance\n\n    return result\n",
+      "generated": {
+        "status": "numeric",
+        "value": 200
+      },
+      "reference": {
+        "status": "numeric",
+        "value": 200
+      },
+      "manual_status": "correct_numeric_for_this_question",
+      "manual_value": 200,
+      "reasoning": "50*4"
+    },
+    {
+      "combined_validation_index": 139,
+      "question": "David had 840 pieces of coins. He used one-fourth of them to buy toys. How many pieces of coins does David have left?",
+      "reference_code": "def solve() -> int:\n    coins_brought = 840\n    coins_spent = 1/4 * coins_brought\n    coins_left = coins_brought - coins_spent\n    result = coins_left\n\n    return result\n",
+      "reference": {
+        "status": "numeric",
+        "value": 630.0
+      },
+      "manual_status": "correct_numeric_for_this_question",
+      "manual_value": 630,
+      "reasoning": "840*(1-1/4)",
+      "generated_code": "def solve() -> int:\n    total_coins = 840\n    used_coins = total_coins / 4\n    remaining_coins = total_coins - used_coins\n    result = remaining_coins\n\n    return result\n",
+      "generated": {
+        "status": "numeric",
+        "value": 630.0
+      }
+    },
+    {
+      "combined_validation_index": 148,
+      "question": "ome possible questions are: David is cutting a rectangular cake into equal pieces. He makes 12 vertical cuts and 9 horizontal cuts. How many pieces of cake does he get?",
+      "reference_code": "def solve() -> int:\n    vertical_cuts = 12\n    horizontal_cuts = 9\n    intersections = vertical_cuts * horizontal_cuts\n    result = intersections\n\n    return result\n",
+      "reference": {
+        "status": "numeric",
+        "value": 108
+      },
+      "manual_status": "incorrect_reference_and_prediction",
+      "reasoning": "Standard full grid cuts give (12+1)*(9+1)=130 pieces, not108.",
+      "generated_code": "def solve() -> int:\n    cake_pieces = 9\n    pieces_per_cake = 12\n    total_pieces = cake_pieces * pieces_per_cake\n    result = total_pieces\n    return result\n",
+      "generated": {
+        "status": "numeric",
+        "value": 108
+      }
+    },
+    {
+      "combined_validation_index": 161,
+      "question": "Keli is buying a new laptop for her college classes, if the laptop is $600 and there is a 10% discount if she uses her student ID, how much will she pay?",
+      "reference_code": "def solve() -> int:\n    price = 600\n    discount = 1 - 0.10\n    total = price * discount\n    result = total\n\n    return result\n",
+      "reference": {
+        "status": "numeric",
+        "value": 540.0
+      },
+      "manual_status": "correct_numeric_for_this_question",
+      "manual_value": 540,
+      "reasoning": "600*(1-0.1)",
+      "generated_code": "def solve() -> int:\n    original_price = 600\n    discount_percentage = 10\n    discount_amount = original_price * discount_percentage / 100\n    final_price = original_price - discount_amount\n    result = final_price\n\n    return result\n",
+      "generated": {
+        "status": "numeric",
+        "value": 540.0
+      }
+    },
+    {
+      "combined_validation_index": 165,
+      "question": "If 8 people share the cost of a pizza that costs 32 dollars, how much does each person need to pay?",
+      "reference_code": "def solve() -> int:\n    num_people = 8\n    cost_of_pizza = 32\n    cost_per_person = cost_of_pizza / num_people\n    result = cost_per_person\n    return result\n",
+      "reference": {
+        "status": "numeric",
+        "value": 4.0
+      },
+      "manual_status": "correct_numeric_for_this_question",
+      "manual_value": 4,
+      "reasoning": "32/8",
+      "generated_code": "def solve() -> int:\n    pizza_cost = 32\n    num_people = 8\n    cost_per_person = pizza_cost / num_people\n    result = cost_per_person\n\n    return result\n",
+      "generated": {
+        "status": "numeric",
+        "value": 4.0
+      }
+    },
+    {
+      "combined_validation_index": 169,
+      "question": "Tom wants to pay for his movie tickets. If each ticket costs $7 and he buys five tickets, what is the total cost?",
+      "generated_code": "def solve() -> int:\n    ticket_price = 7\n    num_tickets = 5\n    total_cost = ticket_price * num_tickets\n    result = total_cost\n\n    return result\n",
+      "generated": {
+        "status": "numeric",
+        "value": 35
+      },
+      "reference": {
+        "status": "numeric",
+        "value": 35
+      },
+      "manual_status": "correct_numeric_for_this_question",
+      "manual_value": 35,
+      "reasoning": "7*5"
+    },
+    {
+      "combined_validation_index": 180,
+      "question": "Mary has a collection of 60 stamps. She wants to put an equal number of stamps in each of 8 albums. How many stamps will be in each album?",
+      "reference_code": "def solve() -> int:\n    stamps = 60\n    albums = 8\n    stamps_per_album = stamps // albums  # use // for integer division\n    result = stamps_per_album\n    return result\n",
+      "reference": {
+        "status": "numeric",
+        "value": 7
+      },
+      "manual_status": "ambiguous_discrete_allocation",
+      "reasoning": "60 whole stamps cannot fill8 albums equally using all stamps. Floor7 leaves4; reference uses floor but remainder policy is unspecified.",
+      "generated_code": "def solve() -> int:\n    stamps = 60\n    stamps_per_album = 8\n    stamps_per_album = stamps // stamps_per_album\n    result = stamps_per_album\n    return result\n",
+      "generated": {
+        "status": "numeric",
+        "value": 7
+      }
+    },
+    {
+      "combined_validation_index": 194,
+      "question": "A bakery has cakes that are either chocolate or vanilla. If there are 55 cakes in total and vanilla cakes make up 40% of the cakes, how many chocolate cakes are there?",
+      "generated_code": "def solve() -> int:\n    total_cakes = 55\n    vanilla_cakes = 55\n    vanilla_cakes = total_cakes * 0.4\n    vanilla_cakes = total_cakes - vanilla_cakes\n    result = vanilla_cakes\n    return result\n",
+      "generated": {
+        "status": "numeric",
+        "value": 33.0
+      },
+      "reference": {
+        "status": "numeric",
+        "value": 33.0
+      },
+      "manual_status": "correct_numeric_for_this_question",
+      "manual_value": 33,
+      "reasoning": "55*(1-0.4)"
+    },
+    {
+      "combined_validation_index": 207,
+      "question": "A rectangular room is 6 meters long and 5 meters wide. If the cost of painting the walls is $10 per square meter, what is the cost of painting the walls?",
+      "reference_code": "def solve() -> int:\n    area = 6 * 5\n    cost_of_painting = area * 10\n    result = cost_of_painting\n    return result\n",
+      "reference": {
+        "status": "numeric",
+        "value": 300
+      },
+      "manual_status": "underdetermined_walls",
+      "reasoning": "Room length6 and width5 do not determine wall area without height; reference and prediction use floor area6*5 and return300.",
+      "generated_code": "def solve() -> int:\n    length = 6\n    width = 5\n    area = length * width\n    cost_per_square_meter = 10\n    total_cost = area * cost_per_square_meter\n    result = total_cost\n    return result\n",
+      "generated": {
+        "status": "numeric",
+        "value": 300
+      }
+    },
+    {
+      "combined_validation_index": 223,
+      "question": "If the area of a rectangle is 24 square meters and the length is 8 meters, what is the width of the rectangle?",
+      "reference_code": "def solve() -> int:\n    area = 24\n    length = 8\n    width = area / length\n    result = width\n    return result\n",
+      "reference": {
+        "status": "numeric",
+        "value": 3.0
+      },
+      "manual_status": "correct_numeric_for_this_question",
+      "manual_value": 3,
+      "reasoning": "24/8",
+      "generated_code": "def solve() -> int:\n    area = 24\n    length = 8\n    width = area / length\n    result = width\n    return result\n",
+      "generated": {
+        "status": "numeric",
+        "value": 3.0
+      }
+    },
+    {
+      "combined_validation_index": 227,
+      "question": "A rectangle has a length of 8 cm and a width of 5 cm. What is the area of the rectangle?",
+      "reference_code": "def solve() -> int:\n    length = 8\n    width = 5\n    area = length * width\n    result = area\n    return result\n",
+      "reference": {
+        "status": "numeric",
+        "value": 40
+      },
+      "manual_status": "correct_numeric_for_this_question",
+      "manual_value": 40,
+      "reasoning": "8*5",
+      "generated_code": "def solve() -> int:\n    length = 8\n    width = 5\n    area = length * width\n    result = area\n    return result\n",
+      "generated": {
+        "status": "numeric",
+        "value": 40
+      }
+    },
+    {
+      "combined_validation_index": 230,
+      "question": "Peter has a total of $20 to spend on snacks. He already spent $3 on chips, how much money does he have left to spend?",
+      "reference_code": "def solve() -> int:\n    total_money = 20\n    spent_money = 3\n    result = total_money - spent_money\n\n    return result\n",
+      "reference": {
+        "status": "numeric",
+        "value": 17
+      },
+      "manual_status": "correct_numeric_for_this_question",
+      "manual_value": 17,
+      "reasoning": "20-3",
+      "generated_code": "def solve() -> int:\n    total_spent = 20\n    spent_on_snacks = 3\n    spent_on_snacks = total_spent - spent_on_snacks\n    result = spent_on_snacks\n\n    return result\n",
+      "generated": {
+        "status": "numeric",
+        "value": 17
+      }
+    },
+    {
+      "combined_validation_index": 235,
+      "question": "Student: Davey's arms are 1/5 of his total height, and his head is 1/4 of his total height. If Davey's height is 72 inches, calculate the length of his arms.",
+      "generated_code": "def solve() -> int:\n    height = 72\n    height = height * 1/5\n    result = height\n\n    return result\n",
+      "generated": {
+        "status": "numeric",
+        "value": 14.4
+      },
+      "reference": {
+        "status": "numeric",
+        "value": 14.4
+      },
+      "manual_status": "correct_numeric_for_this_question",
+      "manual_value": 14.4,
+      "reasoning": "72/5"
+    },
+    {
+      "combined_validation_index": 236,
+      "question": "A toy shop charges $17 for a toy car. How much money will they make if they sell 8 toy cars?",
+      "generated_code": "def solve() -> int:\n    price_per_car = 17\n    total_cars = 8\n    total_price = price_per_car * total_cars\n    result = total_price\n\n    return result\n",
+      "generated": {
+        "status": "numeric",
+        "value": 136
+      },
+      "reference": {
+        "status": "numeric",
+        "value": 136
+      },
+      "manual_status": "correct_numeric_for_this_question",
+      "manual_value": 136,
+      "reasoning": "17*8"
+    },
+    {
+      "combined_validation_index": 245,
+      "question": "Jerry bought 5 bags of chips. Each bag has 7 chips. How many chips did Jerry buy?",
+      "generated_code": "def solve() -> int:\n    bags = 5\n    chips = 7\n    chips = bags * chips\n    result = chips\n\n    return result\n",
+      "generated": {
+        "status": "numeric",
+        "value": 35
+      },
+      "reference": {
+        "status": "numeric",
+        "value": 35
+      },
+      "manual_status": "correct_numeric_for_this_question",
+      "manual_value": 35,
+      "reasoning": "5*7"
+    },
+    {
+      "combined_validation_index": 252,
+      "question": "A recipe for 4 people requires 2 eggs. How many eggs are needed for 12 people?",
+      "generated_code": "def solve() -> int:\n    eggs_per_person = 2/4\n    eggs_per_person = eggs_per_person * 12\n    result = eggs_per_person\n    return result\n",
+      "generated": {
+        "status": "numeric",
+        "value": 6.0
+      },
+      "reference": {
+        "status": "numeric",
+        "value": 6.0
+      },
+      "manual_status": "correct_numeric_for_this_question",
+      "manual_value": 6,
+      "reasoning": "2*(12/4)"
+    }
+  ],
+  "old256_agreement_review_summary": {
+    "correct_numeric_for_this_question": 27,
+    "incorrect_reference_and_prediction": 1,
+    "ambiguous_discrete_allocation": 1,
+    "underdetermined_walls": 1
+  },
+  "limits": [
+    "104->117/888 is reference-proxy improvement, not official pass@1 or mathematical accuracy.",
+    "Manual23 is positional, nonrandom and tiny; changes65 and matches30 are selected by proxy outcomes, not an unbiased accuracy sample.",
+    "Unsupported predictions can be valid programs outside the restricted interpreter; supplied programs were not executed.",
+    "One seed and continuation only; no population inference from paired counts, no official checker or submission."
+  ]
+}

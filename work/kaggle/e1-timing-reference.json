@@ -1,0 +1,37 @@
+{
+  "source": "results/kaggle-runs/nlp-hw02-ensemble-inference-v10/interactive/test-1-timing.json",
+  "sha256": "addfb95974826097f6d62941af12b87f47c8dd2c0898fd7093011998eebb3fa3",
+  "full_pipeline_seconds": 115.631356826,
+  "fixed_seconds": 23.082561922999957,
+  "generation_seconds": 92.54879490300004,
+  "phases_seconds": {
+    "imports_and_launcher": 7.031114484999989,
+    "read_input": 0.006082407000008061,
+    "load_models_tokenizer_encode": 8.174916889999963,
+    "warmup": 1.407560573000012,
+    "greedy_generation_restore_submit": 13.103984681000043,
+    "greedy_checkpoint_write": 0.018226455999979407,
+    "stage1_C-long2x-B6_sampling_restore_submit": 6.651294588999974,
+    "stage1_pilot-b_sampling_restore_submit": 11.259888223000019,
+    "stage1_W-B6_sampling_restore_submit": 14.905467836000014,
+    "stage1_decision_wait": 2.1708631700000183,
+    "stage2_sampling_restore_submit": 46.628159573999994,
+    "execution_tail_wait": 0.11246696899996778,
+    "executor_shutdown": 0.007446837999964373,
+    "vote": 0.14366938199998458,
+    "winner_reexecution": 0.7342187149999972,
+    "answer_write": 0.009539856999992935,
+    "bookkeeping_and_executor_start": 3.2664561810000805
+  },
+  "mean_samples_per_model": {
+    "C-long2x-B6": 1.0,
+    "pilot-b": 2.532047941636269,
+    "W-B6": 2.915059927045336
+  },
+  "rows": 1919,
+  "model_sha256": {
+    "C-long2x-B6": "ee30794048bb6200cf97ac4d7e5c1606f0e97893ea04f6567c9487f6c04345fa",
+    "pilot-b": "8439037720dda16dda6b73fe676860d5498bbcba4cacebc0d709bbb22db464a5",
+    "W-B6": "cb34c81e6cda83c73bf4662c5c425446be8cdb48c30dd5e9e217fd6cbc1cd496"
+  }
+}

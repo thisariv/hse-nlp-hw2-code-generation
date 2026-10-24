@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-10-18T10:00:53.156676+00:00",
+  "owner": "friend1",
+  "receipts": [
+    {
+      "resource": "thisarivson/nlp-hw02-26b-inputs",
+      "friend_CLI_download": true,
+      "manifest_sha256": "2ad24e73cffcea29a34665e79eacead54b0c6c2f361c3a9b627b8c8277d02ee6"
+    },
+    {
+      "resource": "friend1/nlp-hw02-l3-live/12",
+      "friend_CLI_download": true,
+      "recover_manifest_sha256": "3dfd107f99181d2dc4ee4921b67d402956deb7cf41e246d7026486f6932d1f2d",
+      "anchor_sha256": "48f2ba3fa4ffe6a722b45a084d3ee33a27cc4ed02b72433605c9cb1740f5a80b"
+    }
+  ],
+  "shared_cache_CLI_blob_SHA_verified": true,
+  "cache_manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+  "GPU_runs": 0,
+  "pushes": 0,
+  "local_payload_deleted": true,
+  "quota_CLI": "resource,used,remaining,total,refreshAt\nGPU,0.00h,30.00h,30.00h,2026-10-24T00:00:00\nTPU,0.00h,20.00h,20.00h,2026-10-24T00:00:00\n",
+  "quota_reset_utc": "2026-10-24T00:00:00Z",
+  "free_quota_seconds": 108000.0
+}

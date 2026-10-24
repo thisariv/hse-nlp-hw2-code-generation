@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-08",
+  "notebook_sha256": "5e1f5e6c6e7eee3667a56a7fb7dac21cfd467a1f7ca23319b0c8f4b2f2466fd5",
+  "cells": 25,
+  "code_cells": 13,
+  "all_code_compiles_empty_outputs_relative_paths": true,
+  "original17_data_BPE_KV_final_test_source_identical": true,
+  "model_initialization_and_LR_AST_identical": true,
+  "save_checkpoint_numeric_metrics_and_RNG_preserver_AST_identical": true,
+  "original_schedule_horizon": 50000,
+  "all50000_continuation_update_LRs": 0.0001,
+  "no_warmup_restart_or_horizon_extension": true,
+  "source17_saved_config_controls_coverage_timing_verified": true,
+  "baseline50k_then75k100k_controls": true,
+  "fresh1024_unscored": true,
+  "limits": "Static checks only; saved17 results are historical, no new T4 measurements."
+}

@@ -1,0 +1,81 @@
+{
+  "new_device": "CPU",
+  "new_model_updates": 0,
+  "train": {
+    "revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+    "train_rows": 500000,
+    "heldout_rows": 1024,
+    "test_rows": 1919,
+    "train_sha256": "61483f4dc6970ff5f2b1afffa45d57391dcfc01ab6ec4f140c6e6b6c792c8c38",
+    "locations_sha256": "c2332a54a923ffa85da9ac91ec0a39a2e4ead7f7c2e328abecef702e1d306ba7",
+    "heldout_sha256": "e187bc297218365f1a1452a15376e0ff2fceaf8a5a5517820549854b90564743",
+    "shards": [
+      {
+        "path": "data/train/part-00000.parquet",
+        "bytes": 26169796,
+        "sha256": "91831d582faa12d73b1a6b3878e496446cd5df074f17ee4ffea8cc2887c708ec"
+      },
+      {
+        "path": "data/train/part-00001.parquet",
+        "bytes": 26166175,
+        "sha256": "5222d657a1af07a531f1b22503f35741a6547f0831509897d0a279bc8f67d068"
+      },
+      {
+        "path": "data/train/part-00002.parquet",
+        "bytes": 26162244,
+        "sha256": "c6082401ea966aeaa8375018ae1f1d9c7c55cc30e421c45cc933ceacd97dc3de"
+      }
+    ],
+    "selection_seconds": 5.073008750099689,
+    "filter_reference_non_number": false,
+    "fresh_heldout_not_evaluated": true,
+    "bpe_cache_seconds": 142.62440437520854,
+    "source_tokens": 24187619,
+    "target_tokens": 32988665,
+    "fresh_protection": {
+      "questions": 1024,
+      "pairs_sha256": "eaf5f7c00559d6b1e5650a0dd879e5b4a214931ee803f8c1f6efd956c54971b2",
+      "usage": "exclusion set only; not encoded/evaluated/saved/modified"
+    }
+  },
+  "heldout4k": {
+    "selection": "first unique numeric eligible hash-heldout rows; physical shard3..5/row order",
+    "count": 4096,
+    "pairs_sha256": "6b0d0d559a56921faac1842e3508889225af1fe1ad8e04de378840bc4df8b047",
+    "locations_sha256": "f8c41a5c601f4710cdf9bccd769adb61052e9a28fa87086aaf1d2678b13dccb1",
+    "audit": {
+      "raw_rows_seen": 45056,
+      "reference_candidates_executed": 4330,
+      "pool_restarts": 0,
+      "reference_numeric": 4099,
+      "reference_non_number": 127,
+      "reference_blocked_import": 2
+    },
+    "question_overlap_forbidden": 0,
+    "shards_used": [
+      3
+    ],
+    "last_selected_location": [
+      3,
+      43995
+    ],
+    "audit_status_scope": "Statuses inspected through4096th accepted row; reference_candidates_executed includes the rest of the final ahead-of-selection chunk."
+  },
+  "heldout4k_file_sha256": "28a3c0c9088c5b4a17d75d216e4abc4262cc9ca62884966c43e7ec09b6f040c2",
+  "reference_values_sha256": "911fead2728489bb5c76adf1e767782a780b34af6b5c1f26ada6479dc702348b",
+  "plan": {
+    "shape": [
+      6250,
+      128
+    ],
+    "file_sha256": "48734ce4d9621e0adf464e5fad25bfc625772d7a222baeada107ea92c0a13628",
+    "pairs": 800000,
+    "source_tokens": 38706084,
+    "target_tokens": 52797347,
+    "batch32_has_same_flat_plan_and_tokens": true
+  },
+  "seconds": 167.85334404208697,
+  "all_passed": true,
+  "date": "2026-10-10",
+  "fresh1024_usage": "read-only question exclusion, exact old pair hash; never encoded/evaluated/saved/modified"
+}

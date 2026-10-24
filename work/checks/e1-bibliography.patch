@@ -1,0 +1,18 @@
+--- a/knowledge/bibliography.md
++++ b/knowledge/bibliography.md
+@@ -368,3 +368,15 @@
+ - <a id="li2023-diverse"></a> **li2023-diverse**. Li Y. et al. «Making Language Models Better Reasoners with Step-Aware Verifier». ACL2023, pp5315–5333. [ACL Anthology](https://aclanthology.org/2023.acl-long.291/). Разнообразие prompts, sampling и step-aware verifier; источник мотивации [[work/notes/tta-experiment|TTA]], без переноса внешних моделей/данных.
+ 
+ - <a id="nlp-hw02-tta"></a> **nlp-hw02-tta**. Предрегистрированный19.10.2026 TTA-опыт ДЗ2: train-only survey120000 вопросов sealed cache SlavaYus/tinysms_qa_12m, три детерминированных правила, frozen v8 weights/decode/execute; план свежих tune2048/eval2048 и парного bootstrap при равном числе samples. Единственный private push после60мин остаётся QUEUED/output0; GPU-метрик нет. [[work/notes/tta-experiment|Протокол, измерения и решение]].
++
++- <a id="wang2022-self-consistency"></a> **wang2022-self-consistency**. Wang X. et al. *Self-Consistency Improves Chain of Thought Reasoning in Language Models*. arXiv2022 / ICLR2023. [Оригинал](https://arxiv.org/abs/2203.11171). Маргинализация sampled reasoning paths; [[work/notes/e1-ensembles|E1: ансамбли]].
++
++- <a id="shi2022-mbr-exec"></a> **shi2022-mbr-exec**. Shi F., Fried D., Ghazvininejad M., Zettlemoyer L., Wang S.I. *Natural Language to Code Translation with Execution*. EMNLP2022,3533–3546. [ACL](https://aclanthology.org/2022.emnlp-main.231/). Семантическая группировка программ через исполнение; [[work/notes/e1-ensembles|E1]].
++
++- <a id="wortsman2022-model-soups"></a> **wortsman2022-model-soups**. Wortsman M. et al. *Model soups: averaging weights of multiple fine-tuned models improves accuracy without increasing inference time*. ICML2022. [Оригинал](https://arxiv.org/abs/2203.05482). FP32-усреднение весов близких решений; [[work/notes/e1-ensembles|собственная проверка E1]].
++
++- <a id="sennrich2016-nmt-ensemble"></a> **sennrich2016-nmt-ensemble**. Sennrich R., Haddow B., Birch A. *Edinburgh Neural Machine Translation Systems for WMT16*. WMT2016,371–376. [ACL](https://aclanthology.org/W16-2323/). Ансамбли encoder–decoder в NMT; [[work/notes/e1-ensembles|E1]].
++
++- <a id="opennmt-ensemble"></a> **opennmt-ensemble**. OpenNMT-py, *Translate options*, `avg_raw_probs`. [Официальная документация](https://opennmt.net/OpenNMT-py/options/translate.html). По умолчанию усредняются log probabilities; альтернатива — raw probabilities. Проверено19.10.2026; [[work/notes/e1-ensembles|E1]].
++
++- <a id="nlp-hw02-e1-ensembles"></a> **nlp-hw02-e1-ensembles**. Пользовательский протокол и собственный опыт19.10.2026: frozen B6/P1, log-linear token ensemble, cross teacher-forced LL, FP32 soups, один private T4×2 pool tune/eval с предварительным smoke64 и предрегистрированным CPU-выбором. [[work/notes/e1-ensembles|Протокол, проверка и результаты]], [source identity](../work/kaggle/e1-source-identity.json).

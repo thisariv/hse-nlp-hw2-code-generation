@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "at_utc": "2026-10-19T12:20:46.679626+00:00",
+  "notebook_sha256": "7326f671384e8e616b15b6590e2b186328412a023c03116c871f3d9e7a942c9b",
+  "source_identity_exact": true,
+  "notebook_bytes_exact": true,
+  "config_exact": true,
+  "frozen_preregistration_exact": true,
+  "modules": 22,
+  "private": true,
+  "single_visible_T4": true,
+  "internet": false,
+  "timeout_seconds": 1200,
+  "mount_strategy": "nested original slugs; unchanged find_input/resolve_cache_mount fallback"
+}

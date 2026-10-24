@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "producer_files": 230,
+  "missing_files": 14,
+  "main_updates": 71087,
+  "cooldown_updates": 10485,
+  "common_stream_prefix": 32570,
+  "K8_journals": 320,
+  "replay_configurations": 4438,
+  "production_and_independent_parity_rows": 6144,
+  "no_forward": true,
+  "no_execution": true,
+  "no_GPU": true,
+  "no_API": true,
+  "expanded_C_control_configurations": 304,
+  "C_control_and_ablation_parity_rows": 8192,
+  "final_integrity_passed": true,
+  "all_input_hashes_verified": 272,
+  "grid_optima_independently_rechecked": true,
+  "source_AST_parsed": true
+}

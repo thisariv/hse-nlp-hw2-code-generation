@@ -1,0 +1,12 @@
+{
+  "version": 4,
+  "files": 98,
+  "output": "results/kaggle-runs/nlp-hw02-e1-ensembles/4",
+  "binding": "explicit version label; source parity before/after",
+  "quota": {
+    "free_seconds": 51139.573,
+    "used_seconds": 56860.427,
+    "reserved_seconds": 0.0,
+    "reset_utc": "2026-10-24 00:00:00"
+  }
+}

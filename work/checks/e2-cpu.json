@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "grid": 252,
+  "baseline_parity": true,
+  "failed_vote_denominator": true,
+  "label_independence": true,
+  "temperature_prefix_unique": true,
+  "nontransitive_components": true,
+  "strict_threshold": true,
+  "pool_bounds": true
+}

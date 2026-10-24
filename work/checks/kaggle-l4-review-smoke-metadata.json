@@ -1,0 +1,20 @@
+{
+  "ref": "friend1/nlp-hw02-l4-gpu-smoke",
+  "version": "1",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": [
+    "thisarivson/nlp-hw02-26b-inputs",
+    "friend1/nlp-hw02-compact-cache-verified",
+    "friend1/nlp-hw02-l3-live"
+  ],
+  "kernel_sources": [
+    "thisarivson/nlp-hw02-compact-cache-verified"
+  ],
+  "source_SHA256": "8148c5aff2ee5ef5e08c41907c85ec6aba3c8062f2747aaeab075230abb28dd1",
+  "source_port_sha256": "21c9354a194ef27c1bbb3c83d48b5a311e22d37a7210488d97c29c5a52f18763",
+  "owner": "friend1",
+  "gpu_smoke": true
+}

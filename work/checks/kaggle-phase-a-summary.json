@@ -1,0 +1,57 @@
+{
+  "phase": "A",
+  "date": "2026-10-11",
+  "GPU_runs": 0,
+  "full_A_updates": 0,
+  "full_B_updates": 0,
+  "notebooks": {
+    "s1-t4x2-26b-27-28.ipynb": {
+      "sha256": "4f56ff0ff15df57bba5f063d1ffd251db0b9975853484336a737035682523411",
+      "cells": 5,
+      "outputs": 0
+    },
+    "26c-cpu-cache-extension.ipynb": {
+      "sha256": "ff8da9b397d2aeb1df2ad259f10dec0b32688d560f2b4219578f162e13966b36",
+      "cells": 5,
+      "outputs": 0
+    }
+  },
+  "frozen_exp26_modules": 12,
+  "CPU_smoke_passed": 7,
+  "CLI_metadata_and_pinned_output_mock_passed": true,
+  "live_API": {
+    "datasets_list_mine": true,
+    "kernels_list_mine": true,
+    "CPU_dataset_private": true,
+    "CPU_dataset_version": 1,
+    "CPU_kernel_version": 2,
+    "CPU_kernel_status": "RUNNING",
+    "CPU_kernel_private": true,
+    "CPU_kernel_GPU": false,
+    "CPU_kernel_TPU": false,
+    "CPU_kernel_internet": true,
+    "pinned_pull_v2": true,
+    "pinned_status_v1": "ERROR",
+    "pinned_status_v2": "RUNNING",
+    "running_v2_output_files": 0
+  },
+  "CPU_URL": "https://www.kaggle.com/code/thisarivson/nlp-hw02-26c-cpu-cache",
+  "unverified": [
+    "real Drive split archives/cache/order/checkpoint SHA, downloads ongoing",
+    "Colab-to-Kaggle CUDA runtime restore and D0 gate",
+    "actual T4x2 allocation, FP16/fusedAdamW/5D SDPA throughput/memory",
+    "B128/OOM96 and full time-aligned training points",
+    "full heldout4096/991 and test1919 quality/full timer120s",
+    "S1 completing full27 grid within3h",
+    "real Kaggle prior-output attachment/resume (CPU fixture passed)",
+    "full remote CPU26c42-59 completion"
+  ],
+  "git_commit": {
+    "status": "blocked_by_filesystem_sandbox",
+    "branch": "codex/nlp-hw2-code-generation",
+    "base_commit": "d1288f4",
+    "index_write_error": "Operation not permitted; shared Git metadata outside writable roots",
+    "working_files_preserved": true,
+    "index_unchanged": true
+  }
+}

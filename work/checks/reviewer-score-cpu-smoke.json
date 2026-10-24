@@ -1,0 +1,1201 @@
+{
+  "passed": true,
+  "smoke": true,
+  "GPU": false,
+  "training_updates": 0,
+  "identity": {
+    "weights_sha256": "random-seed42-smoke",
+    "tokenizer_sha256": "261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d",
+    "journal_receipts_sha256": "364c63c9a6f6873a0faece9226d861d43229487fb704af6a8a49063931e91aae",
+    "smoke": true,
+    "unique_pairs": 90,
+    "jobs_sha256": "4b59720caf264af3020c149e67da55c348a6d320aea428ec3389444bf524a1b2",
+    "batch": 16,
+    "precision": "CPU FP32",
+    "BOS": 1,
+    "EOS": 2,
+    "PAD": 0,
+    "direction": "question|represented_code; same mode retained; no restore/recompact of candidates"
+  },
+  "scored_candidates": 128,
+  "full_vote_replay": {
+    "C-main": {
+      "rows": 2048,
+      "matches": 1502
+    },
+    "C-long2x": {
+      "rows": 2048,
+      "matches": 1507
+    }
+  },
+  "seconds": 0.004329416900873184,
+  "pools": {
+    "C-main": {
+      "rows": 8,
+      "vote_matches": 6,
+      "folds": [
+        [
+          2,
+          6,
+          8,
+          19
+        ],
+        [
+          0,
+          1,
+          14,
+          18
+        ]
+      ],
+      "selectors": {
+        "vote-reviewer/sum_logprob": {
+          "oof_matches": 6,
+          "tuning": [
+            {
+              "train_fold": 1,
+              "held_fold": 0,
+              "beta": 0.0,
+              "train_matches": 2,
+              "held_matches": 4
+            },
+            {
+              "train_fold": 0,
+              "held_fold": 1,
+              "beta": 0.0,
+              "train_matches": 4,
+              "held_matches": 2
+            }
+          ],
+          "paired_vs_vote": {
+            "n": 8,
+            "gains": 0,
+            "losses": 0,
+            "delta_pp": 0.0,
+            "CI95_pp": [
+              0.0,
+              0.0
+            ],
+            "method": "paired question-row bootstrap; 10000 draws, seed2026101401"
+          },
+          "full_tune_grid": {
+            "0.0": 6,
+            "0.001": 6,
+            "0.0025": 6,
+            "0.005": 6,
+            "0.01": 6,
+            "0.025": 6,
+            "0.05": 6,
+            "0.1": 6,
+            "0.25": 6,
+            "0.5": 6,
+            "1.0": 6,
+            "2.0": 6,
+            "4.0": 6,
+            "8.0": 5
+          },
+          "oof_correct_ids": [
+            0,
+            2,
+            6,
+            8,
+            18,
+            19
+          ]
+        },
+        "cluster-exp/sum_logprob": {
+          "oof_matches": 6,
+          "tuning": [
+            {
+              "train_fold": 1,
+              "held_fold": 0,
+              "beta": 0.0,
+              "train_matches": 2,
+              "held_matches": 4
+            },
+            {
+              "train_fold": 0,
+              "held_fold": 1,
+              "beta": 0.0,
+              "train_matches": 4,
+              "held_matches": 2
+            }
+          ],
+          "paired_vs_vote": {
+            "n": 8,
+            "gains": 0,
+            "losses": 0,
+            "delta_pp": 0.0,
+            "CI95_pp": [
+              0.0,
+              0.0
+            ],
+            "method": "paired question-row bootstrap; 10000 draws, seed2026101401"
+          },
+          "full_tune_grid": {
+            "0.0": 6,
+            "0.001": 6,
+            "0.0025": 6,
+            "0.005": 6,
+            "0.01": 6,
+            "0.025": 6,
+            "0.05": 6,
+            "0.1": 6,
+            "0.25": 6,
+            "0.5": 6,
+            "1.0": 6,
+            "2.0": 6,
+            "4.0": 5,
+            "8.0": 5
+          },
+          "oof_correct_ids": [
+            0,
+            2,
+            6,
+            8,
+            18,
+            19
+          ]
+        },
+        "cluster-max/sum_logprob": {
+          "oof_matches": 5,
+          "tuning": [
+            {
+              "train_fold": 1,
+              "held_fold": 0,
+              "beta": 1.0,
+              "train_matches": 2,
+              "held_matches": 3
+            },
+            {
+              "train_fold": 0,
+              "held_fold": 1,
+              "beta": 1.0,
+              "train_matches": 3,
+              "held_matches": 2
+            }
+          ],
+          "paired_vs_vote": {
+            "n": 8,
+            "gains": 0,
+            "losses": 1,
+            "delta_pp": -12.5,
+            "CI95_pp": [
+              -37.5,
+              0.0
+            ],
+            "method": "paired question-row bootstrap; 10000 draws, seed2026101401"
+          },
+          "full_tune_grid": {
+            "1.0": 5
+          },
+          "oof_correct_ids": [
+            0,
+            2,
+            6,
+            18,
+            19
+          ]
+        },
+        "cluster-mean/sum_logprob": {
+          "oof_matches": 5,
+          "tuning": [
+            {
+              "train_fold": 1,
+              "held_fold": 0,
+              "beta": 1.0,
+              "train_matches": 2,
+              "held_matches": 3
+            },
+            {
+              "train_fold": 0,
+              "held_fold": 1,
+              "beta": 1.0,
+              "train_matches": 3,
+              "held_matches": 2
+            }
+          ],
+          "paired_vs_vote": {
+            "n": 8,
+            "gains": 0,
+            "losses": 1,
+            "delta_pp": -12.5,
+            "CI95_pp": [
+              -37.5,
+              0.0
+            ],
+            "method": "paired question-row bootstrap; 10000 draws, seed2026101401"
+          },
+          "full_tune_grid": {
+            "1.0": 5
+          },
+          "oof_correct_ids": [
+            0,
+            2,
+            6,
+            18,
+            19
+          ]
+        },
+        "vote-reviewer/mean_logprob": {
+          "oof_matches": 6,
+          "tuning": [
+            {
+              "train_fold": 1,
+              "held_fold": 0,
+              "beta": 0.0,
+              "train_matches": 2,
+              "held_matches": 4
+            },
+            {
+              "train_fold": 0,
+              "held_fold": 1,
+              "beta": 0.0,
+              "train_matches": 4,
+              "held_matches": 2
+            }
+          ],
+          "paired_vs_vote": {
+            "n": 8,
+            "gains": 0,
+            "losses": 0,
+            "delta_pp": 0.0,
+            "CI95_pp": [
+              0.0,
+              0.0
+            ],
+            "method": "paired question-row bootstrap; 10000 draws, seed2026101401"
+          },
+          "full_tune_grid": {
+            "0.0": 6,
+            "0.25": 6,
+            "0.5": 6,
+            "1.0": 6,
+            "2.0": 6,
+            "4.0": 6,
+            "8.0": 6,
+            "16.0": 6,
+            "32.0": 6,
+            "64.0": 6,
+            "128.0": 6,
+            "256.0": 6
+          },
+          "oof_correct_ids": [
+            0,
+            2,
+            6,
+            8,
+            18,
+            19
+          ]
+        },
+        "cluster-exp/mean_logprob": {
+          "oof_matches": 6,
+          "tuning": [
+            {
+              "train_fold": 1,
+              "held_fold": 0,
+              "beta": 0.0,
+              "train_matches": 2,
+              "held_matches": 4
+            },
+            {
+              "train_fold": 0,
+              "held_fold": 1,
+              "beta": 0.0,
+              "train_matches": 4,
+              "held_matches": 2
+            }
+          ],
+          "paired_vs_vote": {
+            "n": 8,
+            "gains": 0,
+            "losses": 0,
+            "delta_pp": 0.0,
+            "CI95_pp": [
+              0.0,
+              0.0
+            ],
+            "method": "paired question-row bootstrap; 10000 draws, seed2026101401"
+          },
+          "full_tune_grid": {
+            "0.0": 6,
+            "0.25": 6,
+            "0.5": 6,
+            "1.0": 6,
+            "2.0": 6,
+            "4.0": 6,
+            "8.0": 6,
+            "16.0": 6,
+            "32.0": 6,
+            "64.0": 6,
+            "128.0": 6,
+            "256.0": 5
+          },
+          "oof_correct_ids": [
+            0,
+            2,
+            6,
+            8,
+            18,
+            19
+          ]
+        },
+        "cluster-max/mean_logprob": {
+          "oof_matches": 5,
+          "tuning": [
+            {
+              "train_fold": 1,
+              "held_fold": 0,
+              "beta": 1.0,
+              "train_matches": 2,
+              "held_matches": 3
+            },
+            {
+              "train_fold": 0,
+              "held_fold": 1,
+              "beta": 1.0,
+              "train_matches": 3,
+              "held_matches": 2
+            }
+          ],
+          "paired_vs_vote": {
+            "n": 8,
+            "gains": 0,
+            "losses": 1,
+            "delta_pp": -12.5,
+            "CI95_pp": [
+              -37.5,
+              0.0
+            ],
+            "method": "paired question-row bootstrap; 10000 draws, seed2026101401"
+          },
+          "full_tune_grid": {
+            "1.0": 5
+          },
+          "oof_correct_ids": [
+            0,
+            2,
+            6,
+            18,
+            19
+          ]
+        },
+        "cluster-mean/mean_logprob": {
+          "oof_matches": 5,
+          "tuning": [
+            {
+              "train_fold": 1,
+              "held_fold": 0,
+              "beta": 1.0,
+              "train_matches": 2,
+              "held_matches": 3
+            },
+            {
+              "train_fold": 0,
+              "held_fold": 1,
+              "beta": 1.0,
+              "train_matches": 3,
+              "held_matches": 2
+            }
+          ],
+          "paired_vs_vote": {
+            "n": 8,
+            "gains": 0,
+            "losses": 1,
+            "delta_pp": -12.5,
+            "CI95_pp": [
+              -37.5,
+              0.0
+            ],
+            "method": "paired question-row bootstrap; 10000 draws, seed2026101401"
+          },
+          "full_tune_grid": {
+            "1.0": 5
+          },
+          "oof_correct_ids": [
+            0,
+            2,
+            6,
+            18,
+            19
+          ]
+        }
+      }
+    },
+    "C-long2x": {
+      "rows": 8,
+      "vote_matches": 6,
+      "folds": [
+        [
+          2,
+          6,
+          8,
+          19
+        ],
+        [
+          0,
+          1,
+          14,
+          18
+        ]
+      ],
+      "selectors": {
+        "vote-reviewer/sum_logprob": {
+          "oof_matches": 6,
+          "tuning": [
+            {
+              "train_fold": 1,
+              "held_fold": 0,
+              "beta": 0.0,
+              "train_matches": 2,
+              "held_matches": 4
+            },
+            {
+              "train_fold": 0,
+              "held_fold": 1,
+              "beta": 0.0,
+              "train_matches": 4,
+              "held_matches": 2
+            }
+          ],
+          "paired_vs_vote": {
+            "n": 8,
+            "gains": 0,
+            "losses": 0,
+            "delta_pp": 0.0,
+            "CI95_pp": [
+              0.0,
+              0.0
+            ],
+            "method": "paired question-row bootstrap; 10000 draws, seed2026101401"
+          },
+          "full_tune_grid": {
+            "0.0": 6,
+            "0.001": 6,
+            "0.0025": 6,
+            "0.005": 6,
+            "0.01": 6,
+            "0.025": 6,
+            "0.05": 6,
+            "0.1": 6,
+            "0.25": 6,
+            "0.5": 6,
+            "1.0": 6,
+            "2.0": 6,
+            "4.0": 6,
+            "8.0": 6
+          },
+          "oof_correct_ids": [
+            0,
+            2,
+            6,
+            8,
+            18,
+            19
+          ]
+        },
+        "cluster-exp/sum_logprob": {
+          "oof_matches": 6,
+          "tuning": [
+            {
+              "train_fold": 1,
+              "held_fold": 0,
+              "beta": 0.0,
+              "train_matches": 2,
+              "held_matches": 4
+            },
+            {
+              "train_fold": 0,
+              "held_fold": 1,
+              "beta": 0.0,
+              "train_matches": 4,
+              "held_matches": 2
+            }
+          ],
+          "paired_vs_vote": {
+            "n": 8,
+            "gains": 0,
+            "losses": 0,
+            "delta_pp": 0.0,
+            "CI95_pp": [
+              0.0,
+              0.0
+            ],
+            "method": "paired question-row bootstrap; 10000 draws, seed2026101401"
+          },
+          "full_tune_grid": {
+            "0.0": 6,
+            "0.001": 6,
+            "0.0025": 6,
+            "0.005": 6,
+            "0.01": 6,
+            "0.025": 6,
+            "0.05": 6,
+            "0.1": 6,
+            "0.25": 6,
+            "0.5": 6,
+            "1.0": 6,
+            "2.0": 6,
+            "4.0": 6,
+            "8.0": 4
+          },
+          "oof_correct_ids": [
+            0,
+            2,
+            6,
+            8,
+            18,
+            19
+          ]
+        },
+        "cluster-max/sum_logprob": {
+          "oof_matches": 4,
+          "tuning": [
+            {
+              "train_fold": 1,
+              "held_fold": 0,
+              "beta": 1.0,
+              "train_matches": 1,
+              "held_matches": 3
+            },
+            {
+              "train_fold": 0,
+              "held_fold": 1,
+              "beta": 1.0,
+              "train_matches": 3,
+              "held_matches": 1
+            }
+          ],
+          "paired_vs_vote": {
+            "n": 8,
+            "gains": 0,
+            "losses": 2,
+            "delta_pp": -25.0,
+            "CI95_pp": [
+              -62.5,
+              0.0
+            ],
+            "method": "paired question-row bootstrap; 10000 draws, seed2026101401"
+          },
+          "full_tune_grid": {
+            "1.0": 4
+          },
+          "oof_correct_ids": [
+            0,
+            2,
+            8,
+            19
+          ]
+        },
+        "cluster-mean/sum_logprob": {
+          "oof_matches": 3,
+          "tuning": [
+            {
+              "train_fold": 1,
+              "held_fold": 0,
+              "beta": 1.0,
+              "train_matches": 1,
+              "held_matches": 2
+            },
+            {
+              "train_fold": 0,
+              "held_fold": 1,
+              "beta": 1.0,
+              "train_matches": 2,
+              "held_matches": 1
+            }
+          ],
+          "paired_vs_vote": {
+            "n": 8,
+            "gains": 0,
+            "losses": 3,
+            "delta_pp": -37.5,
+            "CI95_pp": [
+              -75.0,
+              -12.5
+            ],
+            "method": "paired question-row bootstrap; 10000 draws, seed2026101401"
+          },
+          "full_tune_grid": {
+            "1.0": 3
+          },
+          "oof_correct_ids": [
+            0,
+            2,
+            19
+          ]
+        },
+        "vote-reviewer/mean_logprob": {
+          "oof_matches": 6,
+          "tuning": [
+            {
+              "train_fold": 1,
+              "held_fold": 0,
+              "beta": 0.0,
+              "train_matches": 2,
+              "held_matches": 4
+            },
+            {
+              "train_fold": 0,
+              "held_fold": 1,
+              "beta": 0.0,
+              "train_matches": 4,
+              "held_matches": 2
+            }
+          ],
+          "paired_vs_vote": {
+            "n": 8,
+            "gains": 0,
+            "losses": 0,
+            "delta_pp": 0.0,
+            "CI95_pp": [
+              0.0,
+              0.0
+            ],
+            "method": "paired question-row bootstrap; 10000 draws, seed2026101401"
+          },
+          "full_tune_grid": {
+            "0.0": 6,
+            "0.25": 6,
+            "0.5": 6,
+            "1.0": 6,
+            "2.0": 6,
+            "4.0": 6,
+            "8.0": 6,
+            "16.0": 6,
+            "32.0": 6,
+            "64.0": 6,
+            "128.0": 6,
+            "256.0": 6
+          },
+          "oof_correct_ids": [
+            0,
+            2,
+            6,
+            8,
+            18,
+            19
+          ]
+        },
+        "cluster-exp/mean_logprob": {
+          "oof_matches": 6,
+          "tuning": [
+            {
+              "train_fold": 1,
+              "held_fold": 0,
+              "beta": 0.0,
+              "train_matches": 2,
+              "held_matches": 4
+            },
+            {
+              "train_fold": 0,
+              "held_fold": 1,
+              "beta": 0.0,
+              "train_matches": 4,
+              "held_matches": 2
+            }
+          ],
+          "paired_vs_vote": {
+            "n": 8,
+            "gains": 0,
+            "losses": 0,
+            "delta_pp": 0.0,
+            "CI95_pp": [
+              0.0,
+              0.0
+            ],
+            "method": "paired question-row bootstrap; 10000 draws, seed2026101401"
+          },
+          "full_tune_grid": {
+            "0.0": 6,
+            "0.25": 6,
+            "0.5": 6,
+            "1.0": 6,
+            "2.0": 6,
+            "4.0": 6,
+            "8.0": 6,
+            "16.0": 6,
+            "32.0": 6,
+            "64.0": 6,
+            "128.0": 6,
+            "256.0": 5
+          },
+          "oof_correct_ids": [
+            0,
+            2,
+            6,
+            8,
+            18,
+            19
+          ]
+        },
+        "cluster-max/mean_logprob": {
+          "oof_matches": 4,
+          "tuning": [
+            {
+              "train_fold": 1,
+              "held_fold": 0,
+              "beta": 1.0,
+              "train_matches": 1,
+              "held_matches": 3
+            },
+            {
+              "train_fold": 0,
+              "held_fold": 1,
+              "beta": 1.0,
+              "train_matches": 3,
+              "held_matches": 1
+            }
+          ],
+          "paired_vs_vote": {
+            "n": 8,
+            "gains": 0,
+            "losses": 2,
+            "delta_pp": -25.0,
+            "CI95_pp": [
+              -62.5,
+              0.0
+            ],
+            "method": "paired question-row bootstrap; 10000 draws, seed2026101401"
+          },
+          "full_tune_grid": {
+            "1.0": 4
+          },
+          "oof_correct_ids": [
+            0,
+            2,
+            8,
+            19
+          ]
+        },
+        "cluster-mean/mean_logprob": {
+          "oof_matches": 3,
+          "tuning": [
+            {
+              "train_fold": 1,
+              "held_fold": 0,
+              "beta": 1.0,
+              "train_matches": 1,
+              "held_matches": 2
+            },
+            {
+              "train_fold": 0,
+              "held_fold": 1,
+              "beta": 1.0,
+              "train_matches": 2,
+              "held_matches": 1
+            }
+          ],
+          "paired_vs_vote": {
+            "n": 8,
+            "gains": 0,
+            "losses": 3,
+            "delta_pp": -37.5,
+            "CI95_pp": [
+              -75.0,
+              -12.5
+            ],
+            "method": "paired question-row bootstrap; 10000 draws, seed2026101401"
+          },
+          "full_tune_grid": {
+            "1.0": 3
+          },
+          "oof_correct_ids": [
+            0,
+            2,
+            19
+          ]
+        }
+      }
+    },
+    "mixed4+4": {
+      "rows": 8,
+      "vote_matches": 6,
+      "folds": [
+        [
+          2,
+          6,
+          8,
+          19
+        ],
+        [
+          0,
+          1,
+          14,
+          18
+        ]
+      ],
+      "selectors": {
+        "vote-reviewer/sum_logprob": {
+          "oof_matches": 6,
+          "tuning": [
+            {
+              "train_fold": 1,
+              "held_fold": 0,
+              "beta": 0.0,
+              "train_matches": 2,
+              "held_matches": 4
+            },
+            {
+              "train_fold": 0,
+              "held_fold": 1,
+              "beta": 0.0,
+              "train_matches": 4,
+              "held_matches": 2
+            }
+          ],
+          "paired_vs_vote": {
+            "n": 8,
+            "gains": 0,
+            "losses": 0,
+            "delta_pp": 0.0,
+            "CI95_pp": [
+              0.0,
+              0.0
+            ],
+            "method": "paired question-row bootstrap; 10000 draws, seed2026101401"
+          },
+          "full_tune_grid": {
+            "0.0": 6,
+            "0.001": 6,
+            "0.0025": 6,
+            "0.005": 6,
+            "0.01": 6,
+            "0.025": 6,
+            "0.05": 6,
+            "0.1": 6,
+            "0.25": 6,
+            "0.5": 6,
+            "1.0": 6,
+            "2.0": 6,
+            "4.0": 6,
+            "8.0": 4
+          },
+          "oof_correct_ids": [
+            0,
+            2,
+            6,
+            8,
+            18,
+            19
+          ]
+        },
+        "cluster-exp/sum_logprob": {
+          "oof_matches": 6,
+          "tuning": [
+            {
+              "train_fold": 1,
+              "held_fold": 0,
+              "beta": 0.0,
+              "train_matches": 2,
+              "held_matches": 4
+            },
+            {
+              "train_fold": 0,
+              "held_fold": 1,
+              "beta": 0.0,
+              "train_matches": 4,
+              "held_matches": 2
+            }
+          ],
+          "paired_vs_vote": {
+            "n": 8,
+            "gains": 0,
+            "losses": 0,
+            "delta_pp": 0.0,
+            "CI95_pp": [
+              0.0,
+              0.0
+            ],
+            "method": "paired question-row bootstrap; 10000 draws, seed2026101401"
+          },
+          "full_tune_grid": {
+            "0.0": 6,
+            "0.001": 6,
+            "0.0025": 6,
+            "0.005": 6,
+            "0.01": 6,
+            "0.025": 6,
+            "0.05": 6,
+            "0.1": 6,
+            "0.25": 6,
+            "0.5": 6,
+            "1.0": 6,
+            "2.0": 6,
+            "4.0": 5,
+            "8.0": 4
+          },
+          "oof_correct_ids": [
+            0,
+            2,
+            6,
+            8,
+            18,
+            19
+          ]
+        },
+        "cluster-max/sum_logprob": {
+          "oof_matches": 4,
+          "tuning": [
+            {
+              "train_fold": 1,
+              "held_fold": 0,
+              "beta": 1.0,
+              "train_matches": 1,
+              "held_matches": 3
+            },
+            {
+              "train_fold": 0,
+              "held_fold": 1,
+              "beta": 1.0,
+              "train_matches": 3,
+              "held_matches": 1
+            }
+          ],
+          "paired_vs_vote": {
+            "n": 8,
+            "gains": 0,
+            "losses": 2,
+            "delta_pp": -25.0,
+            "CI95_pp": [
+              -62.5,
+              0.0
+            ],
+            "method": "paired question-row bootstrap; 10000 draws, seed2026101401"
+          },
+          "full_tune_grid": {
+            "1.0": 4
+          },
+          "oof_correct_ids": [
+            0,
+            2,
+            6,
+            19
+          ]
+        },
+        "cluster-mean/sum_logprob": {
+          "oof_matches": 4,
+          "tuning": [
+            {
+              "train_fold": 1,
+              "held_fold": 0,
+              "beta": 1.0,
+              "train_matches": 1,
+              "held_matches": 3
+            },
+            {
+              "train_fold": 0,
+              "held_fold": 1,
+              "beta": 1.0,
+              "train_matches": 3,
+              "held_matches": 1
+            }
+          ],
+          "paired_vs_vote": {
+            "n": 8,
+            "gains": 0,
+            "losses": 2,
+            "delta_pp": -25.0,
+            "CI95_pp": [
+              -62.5,
+              0.0
+            ],
+            "method": "paired question-row bootstrap; 10000 draws, seed2026101401"
+          },
+          "full_tune_grid": {
+            "1.0": 4
+          },
+          "oof_correct_ids": [
+            0,
+            2,
+            6,
+            19
+          ]
+        },
+        "vote-reviewer/mean_logprob": {
+          "oof_matches": 6,
+          "tuning": [
+            {
+              "train_fold": 1,
+              "held_fold": 0,
+              "beta": 0.0,
+              "train_matches": 2,
+              "held_matches": 4
+            },
+            {
+              "train_fold": 0,
+              "held_fold": 1,
+              "beta": 0.0,
+              "train_matches": 4,
+              "held_matches": 2
+            }
+          ],
+          "paired_vs_vote": {
+            "n": 8,
+            "gains": 0,
+            "losses": 0,
+            "delta_pp": 0.0,
+            "CI95_pp": [
+              0.0,
+              0.0
+            ],
+            "method": "paired question-row bootstrap; 10000 draws, seed2026101401"
+          },
+          "full_tune_grid": {
+            "0.0": 6,
+            "0.25": 6,
+            "0.5": 6,
+            "1.0": 6,
+            "2.0": 6,
+            "4.0": 6,
+            "8.0": 6,
+            "16.0": 6,
+            "32.0": 6,
+            "64.0": 6,
+            "128.0": 6,
+            "256.0": 6
+          },
+          "oof_correct_ids": [
+            0,
+            2,
+            6,
+            8,
+            18,
+            19
+          ]
+        },
+        "cluster-exp/mean_logprob": {
+          "oof_matches": 6,
+          "tuning": [
+            {
+              "train_fold": 1,
+              "held_fold": 0,
+              "beta": 0.0,
+              "train_matches": 2,
+              "held_matches": 4
+            },
+            {
+              "train_fold": 0,
+              "held_fold": 1,
+              "beta": 0.0,
+              "train_matches": 4,
+              "held_matches": 2
+            }
+          ],
+          "paired_vs_vote": {
+            "n": 8,
+            "gains": 0,
+            "losses": 0,
+            "delta_pp": 0.0,
+            "CI95_pp": [
+              0.0,
+              0.0
+            ],
+            "method": "paired question-row bootstrap; 10000 draws, seed2026101401"
+          },
+          "full_tune_grid": {
+            "0.0": 6,
+            "0.25": 6,
+            "0.5": 6,
+            "1.0": 6,
+            "2.0": 6,
+            "4.0": 6,
+            "8.0": 6,
+            "16.0": 6,
+            "32.0": 6,
+            "64.0": 6,
+            "128.0": 6,
+            "256.0": 5
+          },
+          "oof_correct_ids": [
+            0,
+            2,
+            6,
+            8,
+            18,
+            19
+          ]
+        },
+        "cluster-max/mean_logprob": {
+          "oof_matches": 4,
+          "tuning": [
+            {
+              "train_fold": 1,
+              "held_fold": 0,
+              "beta": 1.0,
+              "train_matches": 1,
+              "held_matches": 3
+            },
+            {
+              "train_fold": 0,
+              "held_fold": 1,
+              "beta": 1.0,
+              "train_matches": 3,
+              "held_matches": 1
+            }
+          ],
+          "paired_vs_vote": {
+            "n": 8,
+            "gains": 0,
+            "losses": 2,
+            "delta_pp": -25.0,
+            "CI95_pp": [
+              -62.5,
+              0.0
+            ],
+            "method": "paired question-row bootstrap; 10000 draws, seed2026101401"
+          },
+          "full_tune_grid": {
+            "1.0": 4
+          },
+          "oof_correct_ids": [
+            0,
+            2,
+            6,
+            19
+          ]
+        },
+        "cluster-mean/mean_logprob": {
+          "oof_matches": 4,
+          "tuning": [
+            {
+              "train_fold": 1,
+              "held_fold": 0,
+              "beta": 1.0,
+              "train_matches": 1,
+              "held_matches": 3
+            },
+            {
+              "train_fold": 0,
+              "held_fold": 1,
+              "beta": 1.0,
+              "train_matches": 3,
+              "held_matches": 1
+            }
+          ],
+          "paired_vs_vote": {
+            "n": 8,
+            "gains": 0,
+            "losses": 2,
+            "delta_pp": -25.0,
+            "CI95_pp": [
+              -62.5,
+              0.0
+            ],
+            "method": "paired question-row bootstrap; 10000 draws, seed2026101401"
+          },
+          "full_tune_grid": {
+            "1.0": 4
+          },
+          "oof_correct_ids": [
+            0,
+            2,
+            6,
+            19
+          ]
+        }
+      }
+    }
+  },
+  "limitation": "Two-fold tuning CI is descriptive; fixed trained weights, repeated tune, no fresh/test evaluation"
+}

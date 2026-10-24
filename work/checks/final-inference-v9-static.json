@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "nbformat": true,
+  "all_20_v8_embedded_sources_exact": true,
+  "private": true,
+  "single_T4_GPU0": true,
+  "version_pinned_mounts": true,
+  "guards": [
+    160,
+    166,
+    170,
+    172
+  ],
+  "session_timeout_seconds": 720,
+  "maximum_T4_pair_quota_seconds": 1440,
+  "notebook_sha256": "bcd0610f38c386b0c233c524ea9fa783d7ea0fc6a8c4c50faf8c88495aff37cf"
+}

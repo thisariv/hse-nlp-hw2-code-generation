@@ -1,0 +1,14 @@
+{
+  "production": {
+    "passed": true,
+    "worker_deadline_seconds": 40500.0,
+    "hard_watchdog_seconds": 40740.0,
+    "backend_timeout_seconds": 40800
+  },
+  "smoke": {
+    "passed": true,
+    "worker_deadline_seconds": 660.0,
+    "hard_watchdog_seconds": 690.0,
+    "backend_timeout_seconds": 720
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "passed": false,
+  "status": "RUNNING; no logs or output available",
+  "checked_at_utc": "2026-10-16T19:06:14.011447+00:00",
+  "ref": "thisarivson/nlp-hw02-b3-gpu-smoke/1",
+  "pushes": 1,
+  "backend_timeout_seconds": 720,
+  "SDK_runtime_limits_verified": true,
+  "production_pushes": 0,
+  "quota_limit_compliance": false,
+  "reason": "Observed quota delta exceeded 720 seconds before output was available",
+  "cancellation_blocker": "SDK cancel requires kernel_session_id; official metadata/status do not return it. Browser unavailable. User asked for session id or cancellation.",
+  "live_logs_errors": [
+    "SDK stream without session id: HTTP400",
+    "CLI stream: ReadTimeout",
+    "read-only session id1 probe: HTTP404; no cancellation attempted against guessed id"
+  ]
+}

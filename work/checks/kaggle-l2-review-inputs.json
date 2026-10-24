@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "datasets": {
+    "thisarivson/nlp-hw02-l2-live": {
+      "private": true,
+      "version": 1,
+      "status": "ready"
+    },
+    "thisarivson/nlp-hw02-l1-live": {
+      "private": true,
+      "version": 7,
+      "status": "ready"
+    },
+    "thisarivson/nlp-hw02-26b-inputs": {
+      "private": true,
+      "version": 1,
+      "status": "ready"
+    }
+  },
+  "checked_at": "2026-10-12T21:51:00.682294+00:00"
+}

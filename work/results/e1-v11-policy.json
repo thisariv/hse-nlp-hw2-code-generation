@@ -1,0 +1,123 @@
+{
+  "kind": "v11-policy-sketch",
+  "selected_on": "E1 tune; confirmed once on eval2048",
+  "policy": {
+    "name": "budget-1-8-8",
+    "family": "budget",
+    "anchor": "C/g",
+    "limits": [
+      1,
+      8,
+      8
+    ]
+  },
+  "timing": {
+    "test1919_seconds": 137.32182664221392,
+    "under_155": true,
+    "under_140": true,
+    "uncalibrated_generation_seconds": 56.75689783805145,
+    "generation_calibration": 2.012782041844167,
+    "fixed_seconds": 23.082561922999957,
+    "LL_seconds": 0.0,
+    "soup_seconds": 0.0,
+    "kind": "tune-throughput calibrated to existing v10; forecast, not a cold test"
+  },
+  "models": [
+    {
+      "name": "C-long2x-B6",
+      "filename": "b6-final-fp16.pt",
+      "relative_path": "model-GPU1/weights/b6-final-fp16.pt",
+      "sha256": "ee30794048bb6200cf97ac4d7e5c1606f0e97893ea04f6567c9487f6c04345fa",
+      "dataset": "friend1/nlp-hw02-b6",
+      "source_kind": "notebooks",
+      "source_ref": "friend1/nlp-hw02-b6/1",
+      "K1": 1,
+      "K2": 1
+    },
+    {
+      "name": "pilot-b",
+      "filename": "long-truncation-fp16.pt",
+      "sha256": "8439037720dda16dda6b73fe676860d5498bbcba4cacebc0d709bbb22db464a5",
+      "dataset": "friend1/nlp-hw02-kaggle-p1",
+      "relative_path": "model-pilot-b/weights/long-truncation-fp16.pt",
+      "source_kind": "notebooks",
+      "source_ref": "friend1/nlp-hw02-kaggle-p1/3",
+      "K1": 1,
+      "K2": 8
+    },
+    {
+      "name": "W-B6",
+      "filename": "b6-final-fp16.pt",
+      "relative_path": "model-GPU0/weights/b6-final-fp16.pt",
+      "sha256": "cb34c81e6cda83c73bf4662c5c425446be8cdb48c30dd5e9e217fd6cbc1cd496",
+      "dataset": "friend1/nlp-hw02-b6",
+      "source_kind": "notebooks",
+      "source_ref": "friend1/nlp-hw02-b6/1",
+      "K1": 1,
+      "K2": 8
+    }
+  ],
+  "single_T4": true,
+  "cold_T4_verified": false,
+  "generation_guard_seconds": 160,
+  "execution_stop_seconds": 166,
+  "verification_stop_seconds": 170,
+  "supervisor_stop_seconds": 172,
+  "test_generated_in_E1": false,
+  "ensemble_config": {
+    "models": [
+      {
+        "name": "C-long2x-B6",
+        "filename": "b6-final-fp16.pt",
+        "relative_path": "model-GPU1/weights/b6-final-fp16.pt",
+        "sha256": "ee30794048bb6200cf97ac4d7e5c1606f0e97893ea04f6567c9487f6c04345fa",
+        "dataset": "friend1/nlp-hw02-b6",
+        "source_kind": "notebooks",
+        "source_ref": "friend1/nlp-hw02-b6/1",
+        "K1": 1,
+        "K2": 1
+      },
+      {
+        "name": "pilot-b",
+        "filename": "long-truncation-fp16.pt",
+        "sha256": "8439037720dda16dda6b73fe676860d5498bbcba4cacebc0d709bbb22db464a5",
+        "dataset": "friend1/nlp-hw02-kaggle-p1",
+        "relative_path": "model-pilot-b/weights/long-truncation-fp16.pt",
+        "source_kind": "notebooks",
+        "source_ref": "friend1/nlp-hw02-kaggle-p1/3",
+        "K1": 1,
+        "K2": 8
+      },
+      {
+        "name": "W-B6",
+        "filename": "b6-final-fp16.pt",
+        "relative_path": "model-GPU0/weights/b6-final-fp16.pt",
+        "sha256": "cb34c81e6cda83c73bf4662c5c425446be8cdb48c30dd5e9e217fd6cbc1cd496",
+        "dataset": "friend1/nlp-hw02-b6",
+        "source_kind": "notebooks",
+        "source_ref": "friend1/nlp-hw02-b6/1",
+        "K1": 1,
+        "K2": 8
+      }
+    ],
+    "unanimity_threshold": 1.0,
+    "sequence_budget": 1024,
+    "greedy_sequence_budget": 1024,
+    "scorer_enabled": false,
+    "scorer_weight": 0.0
+  },
+  "temperature": 0.7,
+  "production_seed": 270042,
+  "token_ensemble": false,
+  "cross_LL": false,
+  "soups": [],
+  "max_stochastic_samples": 17,
+  "max_candidates_with_greedy": 18,
+  "stage2_extra_samples": [
+    0,
+    7,
+    7
+  ],
+  "source_selection_sha256": "ec56bc5287d1ee96377c36599eaea35b72340294e81dfbc27ff6ab6b688e29d9",
+  "sample_stream_note": "New production shapes/RNG may differ from the single E1 pool; cold gate pending"
+}

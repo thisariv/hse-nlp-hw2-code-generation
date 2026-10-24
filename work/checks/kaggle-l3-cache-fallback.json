@@ -1,0 +1,17 @@
+{
+  "manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+  "all_shard_files_SHA_verified": true,
+  "rows": 9725737,
+  "payload_bytes": 2603881817,
+  "free_disk_bytes_before_upload": 7245545472,
+  "staging": "hardlinks; one CLI temporary ZIP",
+  "private": true,
+  "source": "thisarivson/nlp-hw02-compact-cache-verified/2",
+  "fallback_ref": "friend1/nlp-hw02-compact-cache-verified",
+  "GPU": false,
+  "exists": true,
+  "version": 1,
+  "status": "ready",
+  "uploaded": true,
+  "downloaded_remote_manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be"
+}

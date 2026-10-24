@@ -1,0 +1,48 @@
+{
+  "prepared": true,
+  "id": "thisarivson/nlp-hw02-p1-weights",
+  "private": true,
+  "files": [
+    {
+      "file": "model-pilot-a__weights__long-fp16.pt",
+      "bytes": 107363787,
+      "sha256": "ef0fb6de505e50cbbd152f747fed344185a4955f604424863743967c09f1f557"
+    },
+    {
+      "file": "model-pilot-a__points__long__checkpoint.json",
+      "bytes": 189,
+      "sha256": "58f049ab2e0e809953b1f6d5faea6f87d6e81c5b3fff9b3b4315d4e8a11cf100"
+    },
+    {
+      "file": "model-pilot-b__weights__long-truncation-fp16.pt",
+      "bytes": 107366185,
+      "sha256": "8439037720dda16dda6b73fe676860d5498bbcba4cacebc0d709bbb22db464a5"
+    },
+    {
+      "file": "model-pilot-b__points__long-truncation__checkpoint.json",
+      "bytes": 200,
+      "sha256": "929c4a5c36f31790a844e21f2ff2cdaf0c8c18dd35ba377c1794be7d61db8264"
+    },
+    {
+      "file": "model-reviewer__weights__final-fp16.pt",
+      "bytes": 107363301,
+      "sha256": "aeb7d64566d2df5241442c0f2b63675529c63137bd2b566838b0b227caecce00"
+    },
+    {
+      "file": "model-reviewer__points__final__checkpoint.json",
+      "bytes": 190,
+      "sha256": "d76efaab660f28c2e9b44f3abf71ff62c94c639f5602ea9c592b7a6806769746"
+    }
+  ],
+  "staging_relative_to_kaggle": "staging/p1_weights_mine",
+  "created": true,
+  "credential_contents_read": false,
+  "command_from_kaggle_directory": "env -u KAGGLE_USERNAME -u KAGGLE_KEY -u KAGGLE_API_TOKEN -u KAGGLE_CONFIG_DIR kaggle datasets create -p staging/p1_weights_mine -r skip",
+  "status": "ready",
+  "url": "https://www.kaggle.com/datasets/thisarivson/nlp-hw02-p1-weights",
+  "creation_output": "Your private Dataset is being created.",
+  "remote_files_verified": 6,
+  "remote_file_names_and_bytes_match": true,
+  "account": "thisarivson",
+  "auth": "Kaggle CLI default ~/.kaggle, auth environment overrides removed; contents not inspected"
+}

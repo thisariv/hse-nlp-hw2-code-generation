@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "tests": 9,
+  "failures": [],
+  "torch": "2.14.1",
+  "GPU_runs": 0
+}

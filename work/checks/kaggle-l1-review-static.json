@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "production_budget_unchanged": [
+    40680,
+    42300,
+    43200
+  ],
+  "all_notebook_cells_compile": true,
+  "production_and_smoke_embedded_sources_exact": true,
+  "local_and_server_v2_all_cells_exact": true,
+  "server_private_T4x2_internet": true,
+  "frozen_original_modules_unchanged": true,
+  "production_notebook_sha256": "a8bbda38f025a0eb46e8414359a90a0e84c90fd192470a0464af544250a11a50",
+  "smoke_v2_notebook_sha256": "30767e9c4f9ef40af491241a0e4bc584a76df1dd326e96c861e65628c1696ec3",
+  "smoke_cache_input_identity_verified_in_GPU_run": true
+}

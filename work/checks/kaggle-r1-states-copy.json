@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "source": "friend1/nlp-hw02-l3-live/12",
+  "destination": "thisarivson/nlp-hw02-l3-states",
+  "private": true,
+  "files": [
+    {
+      "model": "C-main",
+      "file": "model-C-main__checkpoints__main-7c01611616d0.pt",
+      "bytes": 644195795,
+      "sha256": "c6ad6dda249f5cd87e598a29fd7714549fc8e25b5f00a45b92bbf3027e2e53e3",
+      "local_deleted": true
+    },
+    {
+      "model": "C-long2x",
+      "file": "model-C-long2x__checkpoints__main-2a27307d7a48.pt",
+      "bytes": 644197075,
+      "sha256": "48f2ba3fa4ffe6a722b45a084d3ee33a27cc4ed02b72433605c9cb1740f5a80b",
+      "local_deleted": true
+    }
+  ],
+  "GPU": false,
+  "push": false,
+  "version": 1,
+  "remote_file_bytes_verified": true,
+  "one_full_state_on_disk_at_a_time": true
+}

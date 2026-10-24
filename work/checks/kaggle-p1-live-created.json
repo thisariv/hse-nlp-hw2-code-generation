@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "account": "friend1",
+  "ref": "friend1/nlp-hw02-p1-live",
+  "status": "ready (file listing verified; status endpoint denied)",
+  "status_endpoint_http": 403,
+  "already_existed": false,
+  "push": false
+}

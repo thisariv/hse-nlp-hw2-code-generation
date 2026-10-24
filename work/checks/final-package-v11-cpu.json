@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "tests": 18,
+  "unittest_seconds": 18.771,
+  "torch": "2.14.1",
+  "device": "cpu",
+  "notebook": {
+    "nbformat_valid": true,
+    "run_all": true,
+    "rows": 8,
+    "cold_seconds": 3.117637583054602,
+    "gates_passed": true,
+    "fresh_kernel": true
+  },
+  "frozen_v11": {
+    "rows": 8,
+    "sequence_budgets": [
+      14,
+      21
+    ],
+    "architectures": [
+      "C",
+      "P1-B",
+      "W-QK"
+    ],
+    "candidates_logprobs_restore_winners_exact": true
+  },
+  "l3_regression": {
+    "rows": 2048,
+    "restores": 49152,
+    "matches": 1535,
+    "exact": true
+  },
+  "note": "Fresh-kernel CPU Run All passed on resume. CPU parity does not imply FP16 sample identity across batch shapes.",
+  "date": "2026-10-20",
+  "oom_retry_rng_candidates_exact": true,
+  "missing_greedy_raises": true,
+  "real_weights_cpu": {
+    "models": [
+      "C-long2x-B6",
+      "pilot-b",
+      "W-B6"
+    ],
+    "rows": 3,
+    "cap": 64,
+    "sequence_budget": 14,
+    "checkpoint_sha_verified": true,
+    "dtype": "FP32 after FP16 export load",
+    "candidates_logprobs_restore_winners_exact": true
+  }
+}

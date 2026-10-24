@@ -1,0 +1,1822 @@
+{
+  "date": "2026-10-08",
+  "experiment": "14-continue-preln-50000-to-100000-heldout1024",
+  "actual_steps": 100000,
+  "additional_steps": 50000,
+  "source_notebook": {
+    "name": "14_continue_pre_ln_100k_pairs_to_100000_steps_heldout_1024.ipynb",
+    "bytes": 666586,
+    "sha256": "07ceb3117a190615f354d431ca1976db82a6944392e23c21fe5ae59b4173c982"
+  },
+  "source_archive": {
+    "name": "hw02-preln-continue-50000-to-100000-heldout1024-results.zip",
+    "bytes": 264935465,
+    "sha256": "58c3a8bd285bce9419f41971500522a1c2a27a084d6191cb550a28927e036ba2"
+  },
+  "prepared_notebook_sha256": "9bca2451bfdd8c887cd7c96a0a927469c251edcb58ae1682e8aae966f3e736bf",
+  "manifest": {
+    "experiment": "14-continue-preln-50000-to-100000-heldout1024",
+    "actual_steps": 100000,
+    "phase": "complete",
+    "files": [
+      {
+        "name": "README.txt",
+        "bytes": 678,
+        "sha256": "c7c98ad20c93c2af7982bb241da14a4bdd5acdadb90f854241f09b853199e237"
+      },
+      {
+        "name": "latest.pt",
+        "bytes": 75953035,
+        "sha256": "758ec3570cdb73c04618995b6e8f1fa14a01b527a28fac4f980431b757c5c31a"
+      },
+      {
+        "name": "results.json",
+        "bytes": 11611175,
+        "sha256": "1d3b8fcc8e0449ae44848d2b854df1f132cac15ed6789eea15b6b5e09273f5ce"
+      },
+      {
+        "name": "step-100000.pt",
+        "bytes": 75954435,
+        "sha256": "4cd8aab6a7731ccaee178adfb649d07b68c48b0f33a32a9ad5d130e69e1d73b0"
+      },
+      {
+        "name": "step-50000.pt",
+        "bytes": 75954155,
+        "sha256": "f3470b24750e45908ef672e3beab76fc7071ecac8d32f6a7f1da2b4f7e553945"
+      },
+      {
+        "name": "step-75000.pt",
+        "bytes": 75954155,
+        "sha256": "e518ee2b7bc08179263d1f5946fc7cd5e053b634cb3c144c6d03e35f8f1bc793"
+      },
+      {
+        "name": "test-generations.json",
+        "bytes": 3707006,
+        "sha256": "6611f5babd9d964fd56189c47ee28fbd7d523bb30386570d6cb9de1e22fe0ade"
+      },
+      {
+        "name": "tokenizer.json",
+        "bytes": 105710,
+        "sha256": "73614c921b43aa6ef715bb23bba583b96785a82304c1964f74ab11d8deef7f86"
+      }
+    ]
+  },
+  "checkpoints": [
+    {
+      "source_member": "step-50000.pt",
+      "local_file": "checkpoints/14-pre-ln-100k-pairs-heldout1024-step-50000.pt",
+      "bytes": 75954155,
+      "sha256": "f3470b24750e45908ef672e3beab76fc7071ecac8d32f6a7f1da2b4f7e553945",
+      "steps": 50000,
+      "optimizer_steps": [
+        50000
+      ],
+      "finite_model_and_AdamW": true
+    },
+    {
+      "source_member": "step-75000.pt",
+      "local_file": "checkpoints/14-pre-ln-100k-pairs-heldout1024-step-75000.pt",
+      "bytes": 75954155,
+      "sha256": "e518ee2b7bc08179263d1f5946fc7cd5e053b634cb3c144c6d03e35f8f1bc793",
+      "steps": 75000,
+      "optimizer_steps": [
+        75000
+      ],
+      "finite_model_and_AdamW": true
+    },
+    {
+      "source_member": "step-100000.pt",
+      "local_file": "checkpoints/14-pre-ln-100k-pairs-heldout1024-step-100000.pt",
+      "bytes": 75954435,
+      "sha256": "4cd8aab6a7731ccaee178adfb649d07b68c48b0f33a32a9ad5d130e69e1d73b0",
+      "steps": 100000,
+      "optimizer_steps": [
+        100000
+      ],
+      "finite_model_and_AdamW": true
+    },
+    {
+      "source_member": "latest.pt",
+      "local_file": "checkpoints/14-pre-ln-100k-pairs-heldout1024-latest-step-100000.pt",
+      "bytes": 75953035,
+      "sha256": "758ec3570cdb73c04618995b6e8f1fa14a01b527a28fac4f980431b757c5c31a",
+      "steps": 100000,
+      "optimizer_steps": [
+        100000
+      ],
+      "finite_model_and_AdamW": true
+    }
+  ],
+  "runtime": {
+    "device": "cuda",
+    "gpu": "Tesla T4",
+    "torch": "2.11.0+cu130",
+    "tokenizers": "0.23.2"
+  },
+  "config": {
+    "seed": 42,
+    "train_size": 100000,
+    "batch_size_train": 8,
+    "total_steps": 100000,
+    "evaluation_steps": [
+      50000,
+      75000,
+      100000
+    ],
+    "d_model": 256,
+    "encoder_layers": 2,
+    "decoder_layers": 2,
+    "heads": 4,
+    "ffn_dim": 1024,
+    "dropout": 0.1,
+    "activation": "ReLU",
+    "norm_first": true,
+    "lr": 0.001,
+    "optimizer": "AdamW",
+    "weight_decay": 0.01,
+    "clip_norm": 1.0,
+    "scheduler": {
+      "name": "LambdaLR",
+      "schedule": "linear_warmup_then_cosine",
+      "total_steps": 50000,
+      "warmup_steps": 1000,
+      "cosine_steps": 49000,
+      "peak_lr": 0.001,
+      "eta_min": 0.0001,
+      "first_update_lr": 1e-06,
+      "restarts": false,
+      "step_unit": "optimizer update",
+      "indexing": "s=1..T; updateW uses peak; updateT uses floor; scheduler index counts completed updates"
+    },
+    "dtype": "float32",
+    "tokenizer": "own byte-level BPE",
+    "vocab": 4096,
+    "content_id_offset": 3,
+    "special_ids": {
+      "pad": 0,
+      "bos": 1,
+      "eos": 2
+    },
+    "tokenizer_sha256": "73614c921b43aa6ef715bb23bba583b96785a82304c1964f74ab11d8deef7f86",
+    "max_positions": 2048,
+    "generation_cap": 512,
+    "batch_size_inference": 32,
+    "inference": "Pre-LN incremental KV cache",
+    "tokenizer_source_experiment": "08",
+    "training_continuation": {
+      "initial_step": 50000,
+      "target_steps": 100000,
+      "additional_updates": 50000,
+      "lr_after_original_horizon": 0.0001,
+      "source_checkpoint_sha256": "3b91262115ed541a59977513a51c7f94144049c957c630dcb2e579efc1a46c7c"
+    }
+  },
+  "data": {
+    "revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+    "shard": 0,
+    "source_file_sha256": "91831d582faa12d73b1a6b3878e496446cd5df074f17ee4ffea8cc2887c708ec",
+    "training_examples": 100000,
+    "base20k_sha256": "1304183967f02f01097d76c12fb24df30916a4ec44e54833cd3509264359300e",
+    "base20k_prefix_unchanged": true,
+    "train64_sha256": "125106742b04a01ebe70f106730c0bd9a30f52244bef86b4215f27591d200203",
+    "validation_examples": 64,
+    "total_heldout_examples": 1024,
+    "total_pair_presentations_planned": 800000,
+    "mean_pair_presentations_planned": 8.0,
+    "unique_train_questions": 99212,
+    "train_sha256": "7a141e91ce958206be7e18d3c50b5ccf72a10f1d94890c5f0c3927aa497e47b9",
+    "validation64_sha256": "0edf2b479ebdc103ec05efc704c7bb0ac8084e41a8a44b58afef224702563050",
+    "train_row_indices_sha256": "fd49ac534874f1a49777ea2277b8c940c2a3fbea908ec05027bbe1245db34d86",
+    "extra_heldout_examples": 192,
+    "extra_heldout_sha256": "a2140e9f3e05f8ea10e4647b3a28335d4c9e240c083c14e8b23cf30a6dbe8bfc",
+    "extra_selection": "first 192 distinct eligible hash-heldout questions after excluding original validation64",
+    "question_overlap_train_heldout": 0,
+    "download_and_selection_seconds": 7.602486843000008,
+    "selection": "first100000 eligible non-heldout rows of shard0; original20000 unchanged prefix; question<=512/code<512 UTF8 bytes",
+    "new_heldout_examples": 768,
+    "new_heldout_sha256": "e8273f55b276a9c5d73e18ff89bc8cbf550dbfec2a25380063635fa39d3fd3bd",
+    "heldout1024_sha256": "e187bc297218365f1a1452a15376e0ff2fceaf8a5a5517820549854b90564743",
+    "heldout256_sha256": "6735359ee7a7e1b0738f8180d810b3aaff855307ec1b067c504e099295ff37f8",
+    "new_heldout_selection": "next768 distinct eligible hash-heldout questions after original64+192; same pinned shard0",
+    "additional_pair_presentations": 400000
+  },
+  "tokenization": {
+    "kind": "own byte-level BPE",
+    "loaded_from_experiment": "08",
+    "tokenizer_training_performed": false,
+    "target_model_vocabulary": 4096,
+    "actual_model_vocabulary": 4096,
+    "content_id_offset": 3,
+    "special_ids": {
+      "pad": 0,
+      "bos": 1,
+      "eos": 2
+    },
+    "normalizer": null,
+    "add_prefix_space": false,
+    "use_regex": true,
+    "min_frequency": 2,
+    "training_corpus": "only original20000 train questions and codes; no heldout/test",
+    "training_corpus_sha256": "1304183967f02f01097d76c12fb24df30916a4ec44e54833cd3509264359300e",
+    "tokenizer_sha256": "73614c921b43aa6ef715bb23bba583b96785a82304c1964f74ab11d8deef7f86",
+    "train_round_trip": {
+      "question": {
+        "utf8_bytes": {
+          "count": 100000,
+          "mean": 173.72889,
+          "min": 11,
+          "p50": 159,
+          "p95": 311,
+          "max": 512
+        },
+        "bpe_tokens": {
+          "count": 100000,
+          "mean": 44.36939,
+          "min": 4,
+          "p50": 40,
+          "p95": 81,
+          "max": 169
+        },
+        "total_bytes_per_bpe_token": 3.9155122484217157
+      },
+      "code": {
+        "utf8_bytes": {
+          "count": 100000,
+          "mean": 224.42561,
+          "min": 54,
+          "p50": 206,
+          "p95": 406,
+          "max": 511
+        },
+        "bpe_tokens": {
+          "count": 100000,
+          "mean": 64.83542,
+          "min": 14,
+          "p50": 58,
+          "p95": 121,
+          "max": 244
+        },
+        "total_bytes_per_bpe_token": 3.461466124535015
+      }
+    },
+    "validation64_round_trip": {
+      "question": {
+        "utf8_bytes": {
+          "count": 64,
+          "mean": 180.078125,
+          "min": 89,
+          "p50": 166,
+          "p95": 263,
+          "max": 359
+        },
+        "bpe_tokens": {
+          "count": 64,
+          "mean": 45.515625,
+          "min": 21,
+          "p50": 43,
+          "p95": 72,
+          "max": 93
+        },
+        "total_bytes_per_bpe_token": 3.9564023343631995
+      },
+      "code": {
+        "utf8_bytes": {
+          "count": 64,
+          "mean": 221.34375,
+          "min": 82,
+          "p50": 208,
+          "p95": 338,
+          "max": 447
+        },
+        "bpe_tokens": {
+          "count": 64,
+          "mean": 64.125,
+          "min": 22,
+          "p50": 59,
+          "p95": 103,
+          "max": 126
+        },
+        "total_bytes_per_bpe_token": 3.4517543859649122
+      }
+    },
+    "extra192_round_trip": {
+      "question": {
+        "utf8_bytes": {
+          "count": 192,
+          "mean": 171.68229166666666,
+          "min": 62,
+          "p50": 151,
+          "p95": 312,
+          "max": 489
+        },
+        "bpe_tokens": {
+          "count": 192,
+          "mean": 44.28125,
+          "min": 17,
+          "p50": 38,
+          "p95": 83,
+          "max": 135
+        },
+        "total_bytes_per_bpe_token": 3.877087744060221
+      },
+      "code": {
+        "utf8_bytes": {
+          "count": 192,
+          "mean": 218.74479166666666,
+          "min": 77,
+          "p50": 198,
+          "p95": 386,
+          "max": 500
+        },
+        "bpe_tokens": {
+          "count": 192,
+          "mean": 64.19791666666667,
+          "min": 22,
+          "p50": 56,
+          "p95": 122,
+          "max": 170
+        },
+        "total_bytes_per_bpe_token": 3.4073503164043486
+      }
+    },
+    "new768_round_trip": {
+      "question": {
+        "utf8_bytes": {
+          "count": 768,
+          "mean": 173.32552083333334,
+          "min": 52,
+          "p50": 156,
+          "p95": 315,
+          "max": 464
+        },
+        "bpe_tokens": {
+          "count": 768,
+          "mean": 44.10546875,
+          "min": 14,
+          "p50": 39,
+          "p95": 84,
+          "max": 128
+        },
+        "total_bytes_per_bpe_token": 3.9297965931567918
+      },
+      "code": {
+        "utf8_bytes": {
+          "count": 768,
+          "mean": 229.16276041666666,
+          "min": 64,
+          "p50": 205,
+          "p95": 422,
+          "max": 511
+        },
+        "bpe_tokens": {
+          "count": 768,
+          "mean": 66.12630208333333,
+          "min": 14,
+          "p50": 59,
+          "p95": 122,
+          "max": 184
+        },
+        "total_bytes_per_bpe_token": 3.4655311607758197
+      }
+    },
+    "probe_round_trip_count": 8,
+    "loading_and_audit_seconds": 33.48682625699996
+  },
+  "source_checkpoint": {
+    "uploaded_name": "13-pre-ln-warmup-1000-wider-transformer-bpe-4k-100k-pairs-step-50000.pt",
+    "archive_member": null,
+    "sha256": "3b91262115ed541a59977513a51c7f94144049c957c630dcb2e579efc1a46c7c",
+    "step": 50000,
+    "optimizer_steps": [
+      50000
+    ],
+    "scheduler_original_horizon": 50000,
+    "lr_next": 0.0001,
+    "restored": [
+      "model",
+      "AdamW",
+      "LambdaLR",
+      "Python RNG",
+      "Torch CPU RNG",
+      "Torch CUDA RNG"
+    ]
+  },
+  "baseline_reproduction": {
+    "same_original256_questions_and_references": true,
+    "validation64_CE_saved13": 0.9943785713181157,
+    "validation64_CE_current14": 0.9943785713181157,
+    "numeric_agreements_saved13": 24,
+    "numeric_agreements_current14": 24,
+    "scope": "measured current-session baseline50k versus saved13; GPU/kernel differences may affect tiny numerical margins"
+  },
+  "training_seconds_additional": 1039.4970806519975,
+  "active_wall_seconds_additional": 1177.944441179,
+  "updates_per_second_additional": 48.100183185352286,
+  "training_log_rows": 1002,
+  "diagnostics": {
+    "50000": {
+      "cache_check": {
+        "positions": [
+          {
+            "position": 0,
+            "max_abs_error": 3.814697265625e-06,
+            "all_close": true
+          },
+          {
+            "position": 1,
+            "max_abs_error": 2.86102294921875e-06,
+            "all_close": true
+          },
+          {
+            "position": 2,
+            "max_abs_error": 3.337860107421875e-06,
+            "all_close": true
+          },
+          {
+            "position": 7,
+            "max_abs_error": 6.67572021484375e-06,
+            "all_close": true
+          },
+          {
+            "position": 15,
+            "max_abs_error": 4.76837158203125e-06,
+            "all_close": true
+          },
+          {
+            "position": 31,
+            "max_abs_error": 3.814697265625e-06,
+            "all_close": true
+          },
+          {
+            "position": 63,
+            "max_abs_error": 3.814697265625e-06,
+            "all_close": true
+          }
+        ],
+        "atol": 0.0001,
+        "rtol": 0.0001,
+        "all_close": true,
+        "greedy_equal": true,
+        "greedy_cap": 16
+      },
+      "train64": {
+        "split": "train64",
+        "examples": 64,
+        "bpe_loss": 0.8737954400745949,
+        "seconds": 0.6848325890000524,
+        "answers_per_second": 93.4534965595732,
+        "generated_tokens_including_eos": 3575,
+        "generated_utf8_bytes": 12582,
+        "mean_tokens_including_eos": 55.859375,
+        "mean_utf8_bytes": 196.59375,
+        "max_new_tokens": 512,
+        "max_output_bytes": null,
+        "batch_size_inference": 32,
+        "peak_gpu_memory_mib": 163.94287109375,
+        "timer_scope": "same as08: encode, transfers, encoder/KV decode, CPU decoding and AST; excludes loss, warmup, data loading and extra arithmetic/repetition diagnostics",
+        "extra_diagnostics_seconds_excluded": 0.0373491699999704,
+        "unique_generated_code_count": 64,
+        "most_common_generated_code_count": 1,
+        "most_common_generated_code_fraction": 0.015625,
+        "numeric_ast_scope": "restricted straight-line numeric AST; no exec/eval/calls/imports/conditions/loops/strings; unsupported not scored; reference may be wrong; not pass@1",
+        "numeric_ast_statuses": {
+          "numeric": 53,
+          "undefined_name": 10,
+          "syntax_error": 1
+        },
+        "numeric_ast_undefined_name_count": 10,
+        "repeated_tail_32_plus_count": 0,
+        "consecutive_lines_3_plus_count": 2,
+        "syntax_error_types": {
+          "SyntaxError": 1
+        },
+        "parses_as_python_count": 63,
+        "defines_solve_count": 63,
+        "solve_returns_value_count": 63,
+        "indentation_error_count": 0,
+        "valid_utf8_count": 64,
+        "eos_emitted_count": 64,
+        "reached_token_cap_count": 0,
+        "token_cap_without_eos_count": 0,
+        "byte_budget_stop_count": 0,
+        "numeric_ast_comparable_count": 48,
+        "numeric_ast_match_count": 7,
+        "reference_numeric_ast_statuses": {
+          "numeric": 59,
+          "unsupported": 5
+        },
+        "exact_code_match_count": 0,
+        "exact_tokens_with_eos_count": 0,
+        "bpe_tokens_per_second": 5220.253909382409,
+        "output_bytes_per_second": 18372.373339258593
+      },
+      "validation64": {
+        "split": "validation64",
+        "examples": 64,
+        "bpe_loss": 0.9943785713181157,
+        "seconds": 1.9343016939999416,
+        "answers_per_second": 33.08687584699077,
+        "generated_tokens_including_eos": 3991,
+        "generated_utf8_bytes": 13837,
+        "mean_tokens_including_eos": 62.359375,
+        "mean_utf8_bytes": 216.203125,
+        "max_new_tokens": 512,
+        "max_output_bytes": null,
+        "batch_size_inference": 32,
+        "peak_gpu_memory_mib": 160.9140625,
+        "timer_scope": "same as08: encode, transfers, encoder/KV decode, CPU decoding and AST; excludes loss, warmup, data loading and extra arithmetic/repetition diagnostics",
+        "extra_diagnostics_seconds_excluded": 0.024131046000093193,
+        "unique_generated_code_count": 64,
+        "most_common_generated_code_count": 1,
+        "most_common_generated_code_fraction": 0.015625,
+        "numeric_ast_scope": "restricted straight-line numeric AST; no exec/eval/calls/imports/conditions/loops/strings; unsupported not scored; reference may be wrong; not pass@1",
+        "numeric_ast_statuses": {
+          "numeric": 54,
+          "undefined_name": 9,
+          "syntax_error": 1
+        },
+        "numeric_ast_undefined_name_count": 9,
+        "repeated_tail_32_plus_count": 1,
+        "consecutive_lines_3_plus_count": 2,
+        "syntax_error_types": {
+          "SyntaxError": 1
+        },
+        "parses_as_python_count": 63,
+        "defines_solve_count": 63,
+        "solve_returns_value_count": 62,
+        "indentation_error_count": 0,
+        "valid_utf8_count": 64,
+        "eos_emitted_count": 63,
+        "reached_token_cap_count": 1,
+        "token_cap_without_eos_count": 1,
+        "byte_budget_stop_count": 0,
+        "numeric_ast_comparable_count": 46,
+        "numeric_ast_match_count": 2,
+        "reference_numeric_ast_statuses": {
+          "numeric": 53,
+          "unsupported": 11
+        },
+        "exact_code_match_count": 0,
+        "exact_tokens_with_eos_count": 0,
+        "bpe_tokens_per_second": 2063.27689852094,
+        "output_bytes_per_second": 7153.485954606426
+      },
+      "validation192_extra": {
+        "split": "validation192_extra",
+        "examples": 192,
+        "bpe_loss": 1.0138321910199313,
+        "seconds": 6.579691679999996,
+        "answers_per_second": 29.18069863115533,
+        "generated_tokens_including_eos": 13520,
+        "generated_utf8_bytes": 41510,
+        "mean_tokens_including_eos": 70.41666666666667,
+        "mean_utf8_bytes": 216.19791666666666,
+        "max_new_tokens": 512,
+        "max_output_bytes": null,
+        "batch_size_inference": 32,
+        "peak_gpu_memory_mib": 167.3623046875,
+        "timer_scope": "same as08: encode, transfers, encoder/KV decode, CPU decoding and AST; excludes loss, warmup, data loading and extra arithmetic/repetition diagnostics",
+        "extra_diagnostics_seconds_excluded": 0.06443481799999518,
+        "unique_generated_code_count": 192,
+        "most_common_generated_code_count": 1,
+        "most_common_generated_code_fraction": 0.005208333333333333,
+        "numeric_ast_scope": "restricted straight-line numeric AST; no exec/eval/calls/imports/conditions/loops/strings; unsupported not scored; reference may be wrong; not pass@1",
+        "numeric_ast_statuses": {
+          "numeric": 163,
+          "undefined_name": 22,
+          "unsupported": 7
+        },
+        "numeric_ast_undefined_name_count": 22,
+        "repeated_tail_32_plus_count": 7,
+        "consecutive_lines_3_plus_count": 11,
+        "syntax_error_types": {},
+        "parses_as_python_count": 192,
+        "defines_solve_count": 192,
+        "solve_returns_value_count": 185,
+        "indentation_error_count": 0,
+        "valid_utf8_count": 192,
+        "eos_emitted_count": 185,
+        "reached_token_cap_count": 7,
+        "token_cap_without_eos_count": 7,
+        "byte_budget_stop_count": 0,
+        "numeric_ast_comparable_count": 146,
+        "numeric_ast_match_count": 22,
+        "reference_numeric_ast_statuses": {
+          "numeric": 170,
+          "unsupported": 22
+        },
+        "exact_code_match_count": 6,
+        "exact_tokens_with_eos_count": 6,
+        "bpe_tokens_per_second": 2054.8075286105213,
+        "output_bytes_per_second": 6308.806250933634
+      },
+      "validation768_new": {
+        "split": "validation768_new",
+        "examples": 768,
+        "bpe_loss": 1.0389165131124916,
+        "seconds": 20.306126508000034,
+        "answers_per_second": 37.82109796752374,
+        "generated_tokens_including_eos": 51472,
+        "generated_utf8_bytes": 171692,
+        "mean_tokens_including_eos": 67.02083333333333,
+        "mean_utf8_bytes": 223.55729166666666,
+        "max_new_tokens": 512,
+        "max_output_bytes": null,
+        "batch_size_inference": 32,
+        "peak_gpu_memory_mib": 166.38720703125,
+        "timer_scope": "same as08: encode, transfers, encoder/KV decode, CPU decoding and AST; excludes loss, warmup, data loading and extra arithmetic/repetition diagnostics",
+        "extra_diagnostics_seconds_excluded": 0.265283955999962,
+        "unique_generated_code_count": 765,
+        "most_common_generated_code_count": 2,
+        "most_common_generated_code_fraction": 0.0026041666666666665,
+        "numeric_ast_scope": "restricted straight-line numeric AST; no exec/eval/calls/imports/conditions/loops/strings; unsupported not scored; reference may be wrong; not pass@1",
+        "numeric_ast_statuses": {
+          "numeric": 651,
+          "undefined_name": 71,
+          "unsupported": 34,
+          "syntax_error": 4,
+          "arithmetic_error": 7,
+          "no_return": 1
+        },
+        "numeric_ast_undefined_name_count": 71,
+        "repeated_tail_32_plus_count": 15,
+        "consecutive_lines_3_plus_count": 40,
+        "syntax_error_types": {
+          "SyntaxError": 4
+        },
+        "parses_as_python_count": 764,
+        "defines_solve_count": 764,
+        "solve_returns_value_count": 749,
+        "indentation_error_count": 0,
+        "valid_utf8_count": 768,
+        "eos_emitted_count": 751,
+        "reached_token_cap_count": 17,
+        "token_cap_without_eos_count": 17,
+        "byte_budget_stop_count": 0,
+        "numeric_ast_comparable_count": 570,
+        "numeric_ast_match_count": 80,
+        "reference_numeric_ast_statuses": {
+          "numeric": 665,
+          "unsupported": 103
+        },
+        "exact_code_match_count": 6,
+        "exact_tokens_with_eos_count": 6,
+        "bpe_tokens_per_second": 2534.8015033650804,
+        "output_bytes_per_second": 8455.182229479278
+      },
+      "validation64_conditioning": {
+        "examples": 64,
+        "correct_bpe_loss": 0.9943785713181157,
+        "rotated_questions_bpe_loss": 2.4703810210420167,
+        "rotated_minus_correct": 1.476002449723901,
+        "scope": "fixed rotation by1; only source questions change, gold codes/masks/weights unchanged; eval mode; sensitivity, not pass@1"
+      },
+      "heldout256": {
+        "examples": 256,
+        "bpe_loss": 1.0089728666212037,
+        "numeric_audit": {
+          "heldout_pairs_total": 256,
+          "reference_numeric_pairs": 223,
+          "reference_unsupported_pairs": 33,
+          "questions_and_references_sha256": "9dd311874ca6e5839ed8c9569d24584fe7965ec15eeefc28da39e18f7225a5f6",
+          "generated_statuses_on_fixed_reference_subset": {
+            "numeric": 192,
+            "undefined_name": 25,
+            "syntax_error": 1,
+            "unsupported": 5
+          },
+          "numeric_reference_agreements": 24,
+          "wrong_numeric_count": 168,
+          "definite_failure_count": 26,
+          "unresolved_generated_unsupported_count": 5,
+          "scope": "same heldout pairs whose reference is supported numeric arithmetic; failures stay in denominator; unsupported unresolved; references may be wrong; not official pass@1"
+        },
+        "parses_as_python_count": 255,
+        "eos_emitted_count": 248,
+        "token_cap_without_eos_count": 8,
+        "undefined_name_count": 31,
+        "generation_seconds_sum": 8.513993373999938,
+        "timing_scope": "sum of separately timed heldout groups, not a new single inference pass; loss/extra arithmetic excluded"
+      },
+      "heldout1024": {
+        "examples": 1024,
+        "bpe_loss": 1.0315946050342133,
+        "numeric_audit": {
+          "heldout_pairs_total": 1024,
+          "reference_numeric_pairs": 888,
+          "reference_unsupported_pairs": 136,
+          "questions_and_references_sha256": "962724938ba673e6b613f62965766e27155bb01b5cb2d72b96b7807c8a18f179",
+          "generated_statuses_on_fixed_reference_subset": {
+            "numeric": 762,
+            "undefined_name": 87,
+            "syntax_error": 3,
+            "unsupported": 30,
+            "arithmetic_error": 5,
+            "no_return": 1
+          },
+          "numeric_reference_agreements": 104,
+          "wrong_numeric_count": 658,
+          "definite_failure_count": 96,
+          "unresolved_generated_unsupported_count": 30,
+          "scope": "same heldout pairs whose reference is supported numeric arithmetic; failures stay in denominator; unsupported unresolved; references may be wrong; not official pass@1"
+        },
+        "parses_as_python_count": 1019,
+        "eos_emitted_count": 999,
+        "token_cap_without_eos_count": 25,
+        "undefined_name_count": 102,
+        "generation_seconds_sum": 28.82011988199997,
+        "timing_scope": "sum of separately timed heldout groups, not a new single inference pass; loss/extra arithmetic excluded"
+      }
+    },
+    "75000": {
+      "cache_check": {
+        "positions": [
+          {
+            "position": 0,
+            "max_abs_error": 3.814697265625e-06,
+            "all_close": true
+          },
+          {
+            "position": 1,
+            "max_abs_error": 4.76837158203125e-06,
+            "all_close": true
+          },
+          {
+            "position": 2,
+            "max_abs_error": 3.814697265625e-06,
+            "all_close": true
+          },
+          {
+            "position": 7,
+            "max_abs_error": 4.76837158203125e-06,
+            "all_close": true
+          },
+          {
+            "position": 15,
+            "max_abs_error": 4.76837158203125e-06,
+            "all_close": true
+          },
+          {
+            "position": 31,
+            "max_abs_error": 6.67572021484375e-06,
+            "all_close": true
+          },
+          {
+            "position": 63,
+            "max_abs_error": 4.76837158203125e-06,
+            "all_close": true
+          }
+        ],
+        "atol": 0.0001,
+        "rtol": 0.0001,
+        "all_close": true,
+        "greedy_equal": true,
+        "greedy_cap": 16
+      },
+      "train64": {
+        "split": "train64",
+        "examples": 64,
+        "bpe_loss": 0.8203988040286033,
+        "seconds": 1.3229615949999243,
+        "answers_per_second": 48.37630982024362,
+        "generated_tokens_including_eos": 5096,
+        "generated_utf8_bytes": 15637,
+        "mean_tokens_including_eos": 79.625,
+        "mean_utf8_bytes": 244.328125,
+        "max_new_tokens": 512,
+        "max_output_bytes": null,
+        "batch_size_inference": 32,
+        "peak_gpu_memory_mib": 207.0068359375,
+        "timer_scope": "same as08: encode, transfers, encoder/KV decode, CPU decoding and AST; excludes loss, warmup, data loading and extra arithmetic/repetition diagnostics",
+        "extra_diagnostics_seconds_excluded": 0.021307260000185124,
+        "unique_generated_code_count": 64,
+        "most_common_generated_code_count": 1,
+        "most_common_generated_code_fraction": 0.015625,
+        "numeric_ast_scope": "restricted straight-line numeric AST; no exec/eval/calls/imports/conditions/loops/strings; unsupported not scored; reference may be wrong; not pass@1",
+        "numeric_ast_statuses": {
+          "undefined_name": 13,
+          "numeric": 48,
+          "unsupported": 2,
+          "syntax_error": 1
+        },
+        "numeric_ast_undefined_name_count": 13,
+        "repeated_tail_32_plus_count": 2,
+        "consecutive_lines_3_plus_count": 1,
+        "syntax_error_types": {
+          "SyntaxError": 1
+        },
+        "parses_as_python_count": 63,
+        "defines_solve_count": 63,
+        "solve_returns_value_count": 61,
+        "indentation_error_count": 0,
+        "valid_utf8_count": 64,
+        "eos_emitted_count": 61,
+        "reached_token_cap_count": 3,
+        "token_cap_without_eos_count": 3,
+        "byte_budget_stop_count": 0,
+        "numeric_ast_comparable_count": 43,
+        "numeric_ast_match_count": 8,
+        "reference_numeric_ast_statuses": {
+          "numeric": 59,
+          "unsupported": 5
+        },
+        "exact_code_match_count": 0,
+        "exact_tokens_with_eos_count": 0,
+        "bpe_tokens_per_second": 3851.9636694368983,
+        "output_bytes_per_second": 11819.693072799211
+      },
+      "validation64": {
+        "split": "validation64",
+        "examples": 64,
+        "bpe_loss": 0.9642669619159369,
+        "seconds": 1.291645883000001,
+        "answers_per_second": 49.54918437192119,
+        "generated_tokens_including_eos": 4293,
+        "generated_utf8_bytes": 14804,
+        "mean_tokens_including_eos": 67.078125,
+        "mean_utf8_bytes": 231.3125,
+        "max_new_tokens": 512,
+        "max_output_bytes": null,
+        "batch_size_inference": 32,
+        "peak_gpu_memory_mib": 204.03759765625,
+        "timer_scope": "same as08: encode, transfers, encoder/KV decode, CPU decoding and AST; excludes loss, warmup, data loading and extra arithmetic/repetition diagnostics",
+        "extra_diagnostics_seconds_excluded": 0.019193868999991537,
+        "unique_generated_code_count": 64,
+        "most_common_generated_code_count": 1,
+        "most_common_generated_code_fraction": 0.015625,
+        "numeric_ast_scope": "restricted straight-line numeric AST; no exec/eval/calls/imports/conditions/loops/strings; unsupported not scored; reference may be wrong; not pass@1",
+        "numeric_ast_statuses": {
+          "numeric": 54,
+          "undefined_name": 7,
+          "unsupported": 3
+        },
+        "numeric_ast_undefined_name_count": 7,
+        "repeated_tail_32_plus_count": 1,
+        "consecutive_lines_3_plus_count": 3,
+        "syntax_error_types": {},
+        "parses_as_python_count": 64,
+        "defines_solve_count": 64,
+        "solve_returns_value_count": 63,
+        "indentation_error_count": 0,
+        "valid_utf8_count": 64,
+        "eos_emitted_count": 63,
+        "reached_token_cap_count": 1,
+        "token_cap_without_eos_count": 1,
+        "byte_budget_stop_count": 0,
+        "numeric_ast_comparable_count": 46,
+        "numeric_ast_match_count": 2,
+        "reference_numeric_ast_statuses": {
+          "numeric": 53,
+          "unsupported": 11
+        },
+        "exact_code_match_count": 0,
+        "exact_tokens_with_eos_count": 0,
+        "bpe_tokens_per_second": 3323.666382947776,
+        "output_bytes_per_second": 11461.34571003002
+      },
+      "validation192_extra": {
+        "split": "validation192_extra",
+        "examples": 192,
+        "bpe_loss": 0.9669659625685887,
+        "seconds": 5.703447786999959,
+        "answers_per_second": 33.663848109143984,
+        "generated_tokens_including_eos": 13693,
+        "generated_utf8_bytes": 43701,
+        "mean_tokens_including_eos": 71.31770833333333,
+        "mean_utf8_bytes": 227.609375,
+        "max_new_tokens": 512,
+        "max_output_bytes": null,
+        "batch_size_inference": 32,
+        "peak_gpu_memory_mib": 210.42333984375,
+        "timer_scope": "same as08: encode, transfers, encoder/KV decode, CPU decoding and AST; excludes loss, warmup, data loading and extra arithmetic/repetition diagnostics",
+        "extra_diagnostics_seconds_excluded": 0.05841164299999946,
+        "unique_generated_code_count": 192,
+        "most_common_generated_code_count": 1,
+        "most_common_generated_code_fraction": 0.005208333333333333,
+        "numeric_ast_scope": "restricted straight-line numeric AST; no exec/eval/calls/imports/conditions/loops/strings; unsupported not scored; reference may be wrong; not pass@1",
+        "numeric_ast_statuses": {
+          "numeric": 163,
+          "unsupported": 2,
+          "undefined_name": 25,
+          "no_return": 1,
+          "syntax_error": 1
+        },
+        "numeric_ast_undefined_name_count": 25,
+        "repeated_tail_32_plus_count": 5,
+        "consecutive_lines_3_plus_count": 6,
+        "syntax_error_types": {
+          "SyntaxError": 1
+        },
+        "parses_as_python_count": 191,
+        "defines_solve_count": 191,
+        "solve_returns_value_count": 186,
+        "indentation_error_count": 0,
+        "valid_utf8_count": 192,
+        "eos_emitted_count": 186,
+        "reached_token_cap_count": 6,
+        "token_cap_without_eos_count": 6,
+        "byte_budget_stop_count": 0,
+        "numeric_ast_comparable_count": 145,
+        "numeric_ast_match_count": 16,
+        "reference_numeric_ast_statuses": {
+          "numeric": 170,
+          "unsupported": 22
+        },
+        "exact_code_match_count": 4,
+        "exact_tokens_with_eos_count": 4,
+        "bpe_tokens_per_second": 2400.8285008255652,
+        "output_bytes_per_second": 7662.207428217193
+      },
+      "validation768_new": {
+        "split": "validation768_new",
+        "examples": 768,
+        "bpe_loss": 0.9969601738365735,
+        "seconds": 18.49726482599999,
+        "answers_per_second": 41.51965207961392,
+        "generated_tokens_including_eos": 53919,
+        "generated_utf8_bytes": 180861,
+        "mean_tokens_including_eos": 70.20703125,
+        "mean_utf8_bytes": 235.49609375,
+        "max_new_tokens": 512,
+        "max_output_bytes": null,
+        "batch_size_inference": 32,
+        "peak_gpu_memory_mib": 209.3623046875,
+        "timer_scope": "same as08: encode, transfers, encoder/KV decode, CPU decoding and AST; excludes loss, warmup, data loading and extra arithmetic/repetition diagnostics",
+        "extra_diagnostics_seconds_excluded": 0.2595886359999895,
+        "unique_generated_code_count": 766,
+        "most_common_generated_code_count": 2,
+        "most_common_generated_code_fraction": 0.0026041666666666665,
+        "numeric_ast_scope": "restricted straight-line numeric AST; no exec/eval/calls/imports/conditions/loops/strings; unsupported not scored; reference may be wrong; not pass@1",
+        "numeric_ast_statuses": {
+          "undefined_name": 88,
+          "numeric": 638,
+          "syntax_error": 7,
+          "unsupported": 29,
+          "arithmetic_error": 6
+        },
+        "numeric_ast_undefined_name_count": 88,
+        "repeated_tail_32_plus_count": 11,
+        "consecutive_lines_3_plus_count": 33,
+        "syntax_error_types": {
+          "SyntaxError": 7
+        },
+        "parses_as_python_count": 761,
+        "defines_solve_count": 761,
+        "solve_returns_value_count": 747,
+        "indentation_error_count": 0,
+        "valid_utf8_count": 768,
+        "eos_emitted_count": 751,
+        "reached_token_cap_count": 17,
+        "token_cap_without_eos_count": 17,
+        "byte_budget_stop_count": 0,
+        "numeric_ast_comparable_count": 556,
+        "numeric_ast_match_count": 79,
+        "reference_numeric_ast_statuses": {
+          "numeric": 665,
+          "unsupported": 103
+        },
+        "exact_code_match_count": 8,
+        "exact_tokens_with_eos_count": 7,
+        "bpe_tokens_per_second": 2914.9715110425823,
+        "output_bytes_per_second": 9777.715878608142
+      },
+      "validation64_conditioning": {
+        "examples": 64,
+        "correct_bpe_loss": 0.9642669619159369,
+        "rotated_questions_bpe_loss": 2.477455593116453,
+        "rotated_minus_correct": 1.5131886312005158,
+        "scope": "fixed rotation by1; only source questions change, gold codes/masks/weights unchanged; eval mode; sensitivity, not pass@1"
+      },
+      "heldout256": {
+        "examples": 256,
+        "bpe_loss": 0.9662917785388481,
+        "numeric_audit": {
+          "heldout_pairs_total": 256,
+          "reference_numeric_pairs": 223,
+          "reference_unsupported_pairs": 33,
+          "questions_and_references_sha256": "9dd311874ca6e5839ed8c9569d24584fe7965ec15eeefc28da39e18f7225a5f6",
+          "generated_statuses_on_fixed_reference_subset": {
+            "numeric": 191,
+            "undefined_name": 27,
+            "unsupported": 3,
+            "no_return": 1,
+            "syntax_error": 1
+          },
+          "numeric_reference_agreements": 18,
+          "wrong_numeric_count": 173,
+          "definite_failure_count": 29,
+          "unresolved_generated_unsupported_count": 3,
+          "scope": "same heldout pairs whose reference is supported numeric arithmetic; failures stay in denominator; unsupported unresolved; references may be wrong; not official pass@1"
+        },
+        "parses_as_python_count": 255,
+        "eos_emitted_count": 249,
+        "token_cap_without_eos_count": 7,
+        "undefined_name_count": 32,
+        "generation_seconds_sum": 6.99509366999996,
+        "timing_scope": "sum of separately timed heldout groups, not a new single inference pass; loss/extra arithmetic excluded"
+      },
+      "heldout1024": {
+        "examples": 1024,
+        "bpe_loss": 0.9894610480589706,
+        "numeric_audit": {
+          "heldout_pairs_total": 1024,
+          "reference_numeric_pairs": 888,
+          "reference_unsupported_pairs": 136,
+          "questions_and_references_sha256": "962724938ba673e6b613f62965766e27155bb01b5cb2d72b96b7807c8a18f179",
+          "generated_statuses_on_fixed_reference_subset": {
+            "numeric": 747,
+            "undefined_name": 104,
+            "unsupported": 24,
+            "no_return": 1,
+            "syntax_error": 7,
+            "arithmetic_error": 5
+          },
+          "numeric_reference_agreements": 97,
+          "wrong_numeric_count": 650,
+          "definite_failure_count": 117,
+          "unresolved_generated_unsupported_count": 24,
+          "scope": "same heldout pairs whose reference is supported numeric arithmetic; failures stay in denominator; unsupported unresolved; references may be wrong; not official pass@1"
+        },
+        "parses_as_python_count": 1016,
+        "eos_emitted_count": 1000,
+        "token_cap_without_eos_count": 24,
+        "undefined_name_count": 120,
+        "generation_seconds_sum": 25.49235849599995,
+        "timing_scope": "sum of separately timed heldout groups, not a new single inference pass; loss/extra arithmetic excluded"
+      }
+    },
+    "100000": {
+      "cache_check": {
+        "positions": [
+          {
+            "position": 0,
+            "max_abs_error": 3.814697265625e-06,
+            "all_close": true
+          },
+          {
+            "position": 1,
+            "max_abs_error": 2.86102294921875e-06,
+            "all_close": true
+          },
+          {
+            "position": 2,
+            "max_abs_error": 3.814697265625e-06,
+            "all_close": true
+          },
+          {
+            "position": 7,
+            "max_abs_error": 7.62939453125e-06,
+            "all_close": true
+          },
+          {
+            "position": 15,
+            "max_abs_error": 3.814697265625e-06,
+            "all_close": true
+          },
+          {
+            "position": 31,
+            "max_abs_error": 5.7220458984375e-06,
+            "all_close": true
+          },
+          {
+            "position": 63,
+            "max_abs_error": 8.58306884765625e-06,
+            "all_close": true
+          }
+        ],
+        "atol": 0.0001,
+        "rtol": 0.0001,
+        "all_close": true,
+        "greedy_equal": true,
+        "greedy_cap": 16
+      },
+      "train64": {
+        "split": "train64",
+        "examples": 64,
+        "bpe_loss": 0.7774230942591894,
+        "seconds": 1.3398212520000925,
+        "answers_per_second": 47.76756593796407,
+        "generated_tokens_including_eos": 4805,
+        "generated_utf8_bytes": 15652,
+        "mean_tokens_including_eos": 75.078125,
+        "mean_utf8_bytes": 244.5625,
+        "max_new_tokens": 512,
+        "max_output_bytes": null,
+        "batch_size_inference": 32,
+        "peak_gpu_memory_mib": 213.48583984375,
+        "timer_scope": "same as08: encode, transfers, encoder/KV decode, CPU decoding and AST; excludes loss, warmup, data loading and extra arithmetic/repetition diagnostics",
+        "extra_diagnostics_seconds_excluded": 0.020805172999871502,
+        "unique_generated_code_count": 64,
+        "most_common_generated_code_count": 1,
+        "most_common_generated_code_fraction": 0.015625,
+        "numeric_ast_scope": "restricted straight-line numeric AST; no exec/eval/calls/imports/conditions/loops/strings; unsupported not scored; reference may be wrong; not pass@1",
+        "numeric_ast_statuses": {
+          "undefined_name": 13,
+          "numeric": 48,
+          "unsupported": 2,
+          "syntax_error": 1
+        },
+        "numeric_ast_undefined_name_count": 13,
+        "repeated_tail_32_plus_count": 1,
+        "consecutive_lines_3_plus_count": 5,
+        "syntax_error_types": {
+          "SyntaxError": 1
+        },
+        "parses_as_python_count": 63,
+        "defines_solve_count": 63,
+        "solve_returns_value_count": 62,
+        "indentation_error_count": 0,
+        "valid_utf8_count": 64,
+        "eos_emitted_count": 62,
+        "reached_token_cap_count": 2,
+        "token_cap_without_eos_count": 2,
+        "byte_budget_stop_count": 0,
+        "numeric_ast_comparable_count": 46,
+        "numeric_ast_match_count": 8,
+        "reference_numeric_ast_statuses": {
+          "numeric": 59,
+          "unsupported": 5
+        },
+        "exact_code_match_count": 0,
+        "exact_tokens_with_eos_count": 0,
+        "bpe_tokens_per_second": 3586.299286436209,
+        "output_bytes_per_second": 11682.155344703338
+      },
+      "validation64": {
+        "split": "validation64",
+        "examples": 64,
+        "bpe_loss": 0.9332075503417031,
+        "seconds": 0.7906489889999193,
+        "answers_per_second": 80.94616054711294,
+        "generated_tokens_including_eos": 3709,
+        "generated_utf8_bytes": 13237,
+        "mean_tokens_including_eos": 57.953125,
+        "mean_utf8_bytes": 206.828125,
+        "max_new_tokens": 512,
+        "max_output_bytes": null,
+        "batch_size_inference": 32,
+        "peak_gpu_memory_mib": 210.046875,
+        "timer_scope": "same as08: encode, transfers, encoder/KV decode, CPU decoding and AST; excludes loss, warmup, data loading and extra arithmetic/repetition diagnostics",
+        "extra_diagnostics_seconds_excluded": 0.034824348000029204,
+        "unique_generated_code_count": 64,
+        "most_common_generated_code_count": 1,
+        "most_common_generated_code_fraction": 0.015625,
+        "numeric_ast_scope": "restricted straight-line numeric AST; no exec/eval/calls/imports/conditions/loops/strings; unsupported not scored; reference may be wrong; not pass@1",
+        "numeric_ast_statuses": {
+          "numeric": 56,
+          "undefined_name": 7,
+          "unsupported": 1
+        },
+        "numeric_ast_undefined_name_count": 7,
+        "repeated_tail_32_plus_count": 0,
+        "consecutive_lines_3_plus_count": 2,
+        "syntax_error_types": {},
+        "parses_as_python_count": 64,
+        "defines_solve_count": 64,
+        "solve_returns_value_count": 64,
+        "indentation_error_count": 0,
+        "valid_utf8_count": 64,
+        "eos_emitted_count": 64,
+        "reached_token_cap_count": 0,
+        "token_cap_without_eos_count": 0,
+        "byte_budget_stop_count": 0,
+        "numeric_ast_comparable_count": 47,
+        "numeric_ast_match_count": 4,
+        "reference_numeric_ast_statuses": {
+          "numeric": 53,
+          "unsupported": 11
+        },
+        "exact_code_match_count": 0,
+        "exact_tokens_with_eos_count": 0,
+        "bpe_tokens_per_second": 4691.082960456904,
+        "output_bytes_per_second": 16741.942611908344
+      },
+      "validation192_extra": {
+        "split": "validation192_extra",
+        "examples": 192,
+        "bpe_loss": 0.9377873206332881,
+        "seconds": 6.186236910999924,
+        "answers_per_second": 31.036638713043683,
+        "generated_tokens_including_eos": 13174,
+        "generated_utf8_bytes": 41890,
+        "mean_tokens_including_eos": 68.61458333333333,
+        "mean_utf8_bytes": 218.17708333333334,
+        "max_new_tokens": 512,
+        "max_output_bytes": null,
+        "batch_size_inference": 32,
+        "peak_gpu_memory_mib": 216.0908203125,
+        "timer_scope": "same as08: encode, transfers, encoder/KV decode, CPU decoding and AST; excludes loss, warmup, data loading and extra arithmetic/repetition diagnostics",
+        "extra_diagnostics_seconds_excluded": 0.05947984399995221,
+        "unique_generated_code_count": 192,
+        "most_common_generated_code_count": 1,
+        "most_common_generated_code_fraction": 0.005208333333333333,
+        "numeric_ast_scope": "restricted straight-line numeric AST; no exec/eval/calls/imports/conditions/loops/strings; unsupported not scored; reference may be wrong; not pass@1",
+        "numeric_ast_statuses": {
+          "numeric": 167,
+          "unsupported": 5,
+          "undefined_name": 19,
+          "syntax_error": 1
+        },
+        "numeric_ast_undefined_name_count": 19,
+        "repeated_tail_32_plus_count": 4,
+        "consecutive_lines_3_plus_count": 9,
+        "syntax_error_types": {
+          "SyntaxError": 1
+        },
+        "parses_as_python_count": 191,
+        "defines_solve_count": 191,
+        "solve_returns_value_count": 187,
+        "indentation_error_count": 0,
+        "valid_utf8_count": 192,
+        "eos_emitted_count": 187,
+        "reached_token_cap_count": 5,
+        "token_cap_without_eos_count": 5,
+        "byte_budget_stop_count": 0,
+        "numeric_ast_comparable_count": 151,
+        "numeric_ast_match_count": 26,
+        "reference_numeric_ast_statuses": {
+          "numeric": 170,
+          "unsupported": 22
+        },
+        "exact_code_match_count": 7,
+        "exact_tokens_with_eos_count": 7,
+        "bpe_tokens_per_second": 2129.566033362695,
+        "output_bytes_per_second": 6771.483310882291
+      },
+      "validation768_new": {
+        "split": "validation768_new",
+        "examples": 768,
+        "bpe_loss": 0.9701404349176302,
+        "seconds": 15.80366485200011,
+        "answers_per_second": 48.59632289043398,
+        "generated_tokens_including_eos": 49717,
+        "generated_utf8_bytes": 163867,
+        "mean_tokens_including_eos": 64.73567708333333,
+        "mean_utf8_bytes": 213.36848958333334,
+        "max_new_tokens": 512,
+        "max_output_bytes": null,
+        "batch_size_inference": 32,
+        "peak_gpu_memory_mib": 215.12109375,
+        "timer_scope": "same as08: encode, transfers, encoder/KV decode, CPU decoding and AST; excludes loss, warmup, data loading and extra arithmetic/repetition diagnostics",
+        "extra_diagnostics_seconds_excluded": 0.2397157209998113,
+        "unique_generated_code_count": 766,
+        "most_common_generated_code_count": 2,
+        "most_common_generated_code_fraction": 0.0026041666666666665,
+        "numeric_ast_scope": "restricted straight-line numeric AST; no exec/eval/calls/imports/conditions/loops/strings; unsupported not scored; reference may be wrong; not pass@1",
+        "numeric_ast_statuses": {
+          "arithmetic_error": 9,
+          "numeric": 651,
+          "unsupported": 26,
+          "undefined_name": 79,
+          "syntax_error": 3
+        },
+        "numeric_ast_undefined_name_count": 79,
+        "repeated_tail_32_plus_count": 10,
+        "consecutive_lines_3_plus_count": 33,
+        "syntax_error_types": {
+          "SyntaxError": 3
+        },
+        "parses_as_python_count": 765,
+        "defines_solve_count": 765,
+        "solve_returns_value_count": 755,
+        "indentation_error_count": 0,
+        "valid_utf8_count": 768,
+        "eos_emitted_count": 757,
+        "reached_token_cap_count": 11,
+        "token_cap_without_eos_count": 11,
+        "byte_budget_stop_count": 0,
+        "numeric_ast_comparable_count": 573,
+        "numeric_ast_match_count": 87,
+        "reference_numeric_ast_statuses": {
+          "numeric": 665,
+          "unsupported": 103
+        },
+        "exact_code_match_count": 6,
+        "exact_tokens_with_eos_count": 6,
+        "bpe_tokens_per_second": 3145.9158660725343,
+        "output_bytes_per_second": 10368.924014435866
+      },
+      "validation64_conditioning": {
+        "examples": 64,
+        "correct_bpe_loss": 0.9332075503417031,
+        "rotated_questions_bpe_loss": 2.4727715841868103,
+        "rotated_minus_correct": 1.539564033845107,
+        "scope": "fixed rotation by1; only source questions change, gold codes/masks/weights unchanged; eval mode; sensitivity, not pass@1"
+      },
+      "heldout256": {
+        "examples": 256,
+        "bpe_loss": 0.9366433386978137,
+        "numeric_audit": {
+          "heldout_pairs_total": 256,
+          "reference_numeric_pairs": 223,
+          "reference_unsupported_pairs": 33,
+          "questions_and_references_sha256": "9dd311874ca6e5839ed8c9569d24584fe7965ec15eeefc28da39e18f7225a5f6",
+          "generated_statuses_on_fixed_reference_subset": {
+            "numeric": 198,
+            "undefined_name": 19,
+            "unsupported": 5,
+            "syntax_error": 1
+          },
+          "numeric_reference_agreements": 30,
+          "wrong_numeric_count": 168,
+          "definite_failure_count": 20,
+          "unresolved_generated_unsupported_count": 5,
+          "scope": "same heldout pairs whose reference is supported numeric arithmetic; failures stay in denominator; unsupported unresolved; references may be wrong; not official pass@1"
+        },
+        "parses_as_python_count": 255,
+        "eos_emitted_count": 251,
+        "token_cap_without_eos_count": 5,
+        "undefined_name_count": 26,
+        "generation_seconds_sum": 6.976885899999843,
+        "timing_scope": "sum of separately timed heldout groups, not a new single inference pass; loss/extra arithmetic excluded"
+      },
+      "heldout1024": {
+        "examples": 1024,
+        "bpe_loss": 0.9619496269115947,
+        "numeric_audit": {
+          "heldout_pairs_total": 1024,
+          "reference_numeric_pairs": 888,
+          "reference_unsupported_pairs": 136,
+          "questions_and_references_sha256": "962724938ba673e6b613f62965766e27155bb01b5cb2d72b96b7807c8a18f179",
+          "generated_statuses_on_fixed_reference_subset": {
+            "numeric": 771,
+            "undefined_name": 84,
+            "unsupported": 24,
+            "syntax_error": 2,
+            "arithmetic_error": 7
+          },
+          "numeric_reference_agreements": 117,
+          "wrong_numeric_count": 654,
+          "definite_failure_count": 93,
+          "unresolved_generated_unsupported_count": 24,
+          "scope": "same heldout pairs whose reference is supported numeric arithmetic; failures stay in denominator; unsupported unresolved; references may be wrong; not official pass@1"
+        },
+        "parses_as_python_count": 1020,
+        "eos_emitted_count": 1008,
+        "token_cap_without_eos_count": 16,
+        "undefined_name_count": 105,
+        "generation_seconds_sum": 22.780550751999954,
+        "timing_scope": "sum of separately timed heldout groups, not a new single inference pass; loss/extra arithmetic excluded"
+      }
+    }
+  },
+  "final_byte512": {
+    "split": "validation64_byte512",
+    "examples": 64,
+    "bpe_loss": 0.9332075503417031,
+    "seconds": 1.000568315999999,
+    "answers_per_second": 63.96364843517598,
+    "generated_tokens_including_eos": 3705,
+    "generated_utf8_bytes": 13222,
+    "mean_tokens_including_eos": 57.890625,
+    "mean_utf8_bytes": 206.59375,
+    "max_new_tokens": 512,
+    "max_output_bytes": 512,
+    "batch_size_inference": 32,
+    "peak_gpu_memory_mib": 210.046875,
+    "timer_scope": "same as08: encode, transfers, encoder/KV decode, CPU decoding and AST; excludes loss, warmup, data loading and extra arithmetic/repetition diagnostics",
+    "extra_diagnostics_seconds_excluded": 0.034394025999972655,
+    "unique_generated_code_count": 64,
+    "most_common_generated_code_count": 1,
+    "most_common_generated_code_fraction": 0.015625,
+    "numeric_ast_scope": "restricted straight-line numeric AST; no exec/eval/calls/imports/conditions/loops/strings; unsupported not scored; reference may be wrong; not pass@1",
+    "numeric_ast_statuses": {
+      "numeric": 56,
+      "undefined_name": 7,
+      "unsupported": 1
+    },
+    "numeric_ast_undefined_name_count": 7,
+    "repeated_tail_32_plus_count": 0,
+    "consecutive_lines_3_plus_count": 2,
+    "syntax_error_types": {},
+    "parses_as_python_count": 64,
+    "defines_solve_count": 64,
+    "solve_returns_value_count": 63,
+    "indentation_error_count": 0,
+    "valid_utf8_count": 64,
+    "eos_emitted_count": 63,
+    "reached_token_cap_count": 0,
+    "token_cap_without_eos_count": 0,
+    "byte_budget_stop_count": 1,
+    "numeric_ast_comparable_count": 47,
+    "numeric_ast_match_count": 4,
+    "reference_numeric_ast_statuses": {
+      "numeric": 53,
+      "unsupported": 11
+    },
+    "exact_code_match_count": 0,
+    "exact_tokens_with_eos_count": 0,
+    "bpe_tokens_per_second": 3702.8955851926094,
+    "output_bytes_per_second": 13214.489993904637
+  },
+  "test": {
+    "split": "test1919",
+    "examples": 1919,
+    "bpe_loss": null,
+    "seconds": 41.193087706999904,
+    "answers_per_second": 46.58548574094644,
+    "generated_tokens_including_eos": 129497,
+    "generated_utf8_bytes": 426667,
+    "mean_tokens_including_eos": 67.48150078165712,
+    "mean_utf8_bytes": 222.3381969775925,
+    "max_new_tokens": 512,
+    "max_output_bytes": null,
+    "batch_size_inference": 32,
+    "peak_gpu_memory_mib": 223.4833984375,
+    "timer_scope": "same as08: encode, transfers, encoder/KV decode, CPU decoding and AST; excludes loss, warmup, data loading and extra arithmetic/repetition diagnostics",
+    "extra_diagnostics_seconds_excluded": 0.39908324099997117,
+    "unique_generated_code_count": 1906,
+    "most_common_generated_code_count": 3,
+    "most_common_generated_code_fraction": 0.001563314226159458,
+    "numeric_ast_scope": "restricted straight-line numeric AST; no exec/eval/calls/imports/conditions/loops/strings; unsupported not scored; reference may be wrong; not pass@1",
+    "numeric_ast_statuses": {
+      "numeric": 1587,
+      "undefined_name": 237,
+      "unsupported": 65,
+      "syntax_error": 18,
+      "arithmetic_error": 10,
+      "no_return": 2
+    },
+    "numeric_ast_undefined_name_count": 237,
+    "repeated_tail_32_plus_count": 27,
+    "consecutive_lines_3_plus_count": 87,
+    "syntax_error_types": {
+      "SyntaxError": 18
+    },
+    "parses_as_python_count": 1901,
+    "defines_solve_count": 1901,
+    "solve_returns_value_count": 1874,
+    "indentation_error_count": 0,
+    "valid_utf8_count": 1919,
+    "eos_emitted_count": 1884,
+    "reached_token_cap_count": 35,
+    "token_cap_without_eos_count": 35,
+    "byte_budget_stop_count": 0,
+    "bpe_tokens_per_second": 3143.6584924415533,
+    "output_bytes_per_second": 10357.732904967375,
+    "within_180_seconds": true
+  },
+  "test13_saved": {
+    "split": "test1919",
+    "examples": 1919,
+    "bpe_loss": null,
+    "seconds": 37.43034731900002,
+    "answers_per_second": 51.26855980376907,
+    "generated_tokens_including_eos": 122720,
+    "generated_utf8_bytes": 414182,
+    "mean_tokens_including_eos": 63.949973944762895,
+    "mean_utf8_bytes": 215.8322042730589,
+    "max_new_tokens": 512,
+    "max_output_bytes": null,
+    "batch_size_inference": 32,
+    "peak_gpu_memory_mib": 223.3203125,
+    "timer_scope": "same as08: encode, transfers, encoder/KV decode, CPU decoding and AST; excludes loss, warmup, data loading and extra arithmetic/repetition diagnostics",
+    "extra_diagnostics_seconds_excluded": 0.37490513500006273,
+    "unique_generated_code_count": 1910,
+    "most_common_generated_code_count": 3,
+    "most_common_generated_code_fraction": 0.001563314226159458,
+    "numeric_ast_scope": "restricted straight-line numeric AST; no exec/eval/calls/imports/conditions/loops/strings; unsupported not scored; reference may be wrong; not pass@1",
+    "numeric_ast_statuses": {
+      "numeric": 1611,
+      "arithmetic_error": 17,
+      "undefined_name": 210,
+      "unsupported": 58,
+      "syntax_error": 23
+    },
+    "numeric_ast_undefined_name_count": 210,
+    "repeated_tail_32_plus_count": 17,
+    "consecutive_lines_3_plus_count": 93,
+    "syntax_error_types": {
+      "SyntaxError": 22,
+      "IndentationError": 1
+    },
+    "parses_as_python_count": 1896,
+    "defines_solve_count": 1896,
+    "solve_returns_value_count": 1879,
+    "indentation_error_count": 1,
+    "valid_utf8_count": 1919,
+    "eos_emitted_count": 1890,
+    "reached_token_cap_count": 29,
+    "token_cap_without_eos_count": 29,
+    "byte_budget_stop_count": 0,
+    "bpe_tokens_per_second": 3278.623063636551,
+    "output_bytes_per_second": 11065.406272352622,
+    "within_180_seconds": true
+  },
+  "test_length_stats": {
+    "13": {
+      "batches": 60,
+      "batches_with_cap": 21,
+      "decode_steps_sum": 16143,
+      "active_token_slots": 122720,
+      "total_token_slots": 516481,
+      "fraction_active_slots": 0.23760796621753752,
+      "scope": "Derived from saved lengths/fixed batching; no GPU profile or equal-length kernel benchmark."
+    },
+    "14": {
+      "batches": 60,
+      "batches_with_cap": 26,
+      "decode_steps_sum": 17898,
+      "active_token_slots": 129497,
+      "total_token_slots": 572641,
+      "fraction_active_slots": 0.22613993758742387,
+      "scope": "Derived from saved lengths/fixed batching; no GPU profile or equal-length kernel benchmark."
+    }
+  },
+  "official_pass_at_1_evaluated": false,
+  "new_GPU_runs": false,
+  "new_training_updates": 0,
+  "checks": {
+    "saved_examples_verified": 5247,
+    "source_code_identical": true,
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "no_saved_error_outputs": true,
+    "CRC_manifest_hashes": true,
+    "all_four_weights_only_checkpoints_finite_and_consistent": true,
+    "latest_equals100000_state": true,
+    "baseline50000_model_AdamW_LambdaLR_all_RNG_equal_original13": true,
+    "all256_baseline_saved_examples_equal13": true,
+    "all_fixed_question_reference_pairs_and_denominators": true,
+    "token_decode_AST_numeric_aggregates": true,
+    "1919_test_question_order": true,
+    "printed_diagnostics_equal_JSON": true,
+    "byte512_prefix_rule": true,
+    "all_saved_continuation_LRs_floor": true
+  },
+  "limits": "Saved user T4 results and new static checks. No training rerun, full inference rerun, official checker or supplied program execution; numerical reference audit is not accuracy/pass@1.",
+  "paired_reference_quality": {
+    "50000->75000": {
+      "same_fixed_reference_denominator": 888,
+      "both_match": 75,
+      "gained": 22,
+      "lost": 29,
+      "net": -7,
+      "gained_indices": [
+        77,
+        169,
+        213,
+        321,
+        345,
+        452,
+        474,
+        507,
+        539,
+        558,
+        657,
+        664,
+        693,
+        703,
+        756,
+        759,
+        767,
+        827,
+        860,
+        869,
+        879,
+        896
+      ],
+      "lost_indices": [
+        148,
+        157,
+        165,
+        173,
+        185,
+        186,
+        196,
+        212,
+        230,
+        259,
+        300,
+        304,
+        385,
+        445,
+        451,
+        588,
+        589,
+        600,
+        611,
+        632,
+        640,
+        655,
+        713,
+        749,
+        800,
+        815,
+        845,
+        861,
+        963
+      ],
+      "both_do_not_match": 762,
+      "scope": "paired reference-proxy transitions, not mathematical accuracy or official pass@1"
+    },
+    "75000->100000": {
+      "same_fixed_reference_denominator": 888,
+      "both_match": 81,
+      "gained": 36,
+      "lost": 16,
+      "net": 20,
+      "gained_indices": [
+        13,
+        34,
+        103,
+        136,
+        137,
+        148,
+        165,
+        194,
+        230,
+        235,
+        236,
+        245,
+        252,
+        259,
+        282,
+        318,
+        325,
+        327,
+        463,
+        477,
+        478,
+        513,
+        525,
+        589,
+        614,
+        627,
+        632,
+        669,
+        675,
+        699,
+        713,
+        725,
+        792,
+        800,
+        845,
+        966
+      ],
+      "lost_indices": [
+        213,
+        275,
+        307,
+        345,
+        452,
+        474,
+        507,
+        524,
+        535,
+        657,
+        664,
+        703,
+        860,
+        879,
+        957,
+        982
+      ],
+      "both_do_not_match": 755,
+      "scope": "paired reference-proxy transitions, not mathematical accuracy or official pass@1"
+    },
+    "50000->100000": {
+      "same_fixed_reference_denominator": 888,
+      "both_match": 78,
+      "gained": 39,
+      "lost": 26,
+      "net": 13,
+      "gained_indices": [
+        13,
+        34,
+        77,
+        103,
+        136,
+        137,
+        169,
+        194,
+        235,
+        236,
+        245,
+        252,
+        282,
+        318,
+        321,
+        325,
+        327,
+        463,
+        477,
+        478,
+        513,
+        525,
+        539,
+        558,
+        614,
+        627,
+        669,
+        675,
+        693,
+        699,
+        725,
+        756,
+        759,
+        767,
+        792,
+        827,
+        869,
+        896,
+        966
+      ],
+      "lost_indices": [
+        157,
+        173,
+        185,
+        186,
+        196,
+        212,
+        275,
+        300,
+        304,
+        307,
+        385,
+        445,
+        451,
+        524,
+        535,
+        588,
+        600,
+        611,
+        640,
+        655,
+        749,
+        815,
+        861,
+        957,
+        963,
+        982
+      ],
+      "both_do_not_match": 745,
+      "scope": "paired reference-proxy transitions, not mathematical accuracy or official pass@1"
+    }
+  },
+  "manual_first32_quality": {
+    "50000": {
+      "scored": 23,
+      "correct": 2,
+      "wrong": 21,
+      "unknown": 0
+    },
+    "75000": {
+      "scored": 23,
+      "correct": 2,
+      "wrong": 21,
+      "unknown": 0
+    },
+    "100000": {
+      "scored": 23,
+      "correct": 3,
+      "wrong": 19,
+      "unknown": 1
+    }
+  },
+  "manual_change_review_summary": {
+    "correct_numeric_100k": 39,
+    "correct_numeric50k_regressed_at100k": 22,
+    "inconsistent_whole_objects": 1,
+    "incorrect_reference_both_predictions_wrong": 1,
+    "underspecified_flower_spacing": 1,
+    "underdetermined_room_totals": 1
+  },
+  "manual_old256_final_agreements": {
+    "correct_numeric_for_this_question": 27,
+    "incorrect_reference_and_prediction": 1,
+    "ambiguous_discrete_allocation": 1,
+    "underdetermined_walls": 1
+  },
+  "new_CPU_forward_check": {
+    "report": "../checks/14-continue-pre-ln-conditioning-cpu-checks.json",
+    "training_updates": 0,
+    "validation64_loss": {
+      "correct": 0.9332051926977117,
+      "rotated": 2.472769358336582,
+      "reversed": 2.4923825547699736
+    },
+    "complete_full_cached_savedT4_answers": 3,
+    "model_weights_unchanged": true
+  },
+  "next_proposal": {
+    "status": "discussion only; no notebook15 prepared",
+    "first": "short memorization16 diagnostic for current full BPE4k/PreLN configuration; exact greedy targets with EOS, unchanged train targets",
+    "if_success": "separate fresh SwiGLU FFN experiment with similar parameter budget, same100k train/BPE/PreLN/LR trajectory/total100k updates/heldout1024",
+    "if_failure": "inspect16-pair loss, target shift/masks and generation before architecture changes",
+    "not_proven": "capacity shortage, exposure bias as dominant cause, or guaranteed benefit of SwiGLU"
+  }
+}

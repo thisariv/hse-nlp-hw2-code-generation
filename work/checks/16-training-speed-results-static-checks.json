@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-08",
+  "source_archive": "hw02-training-speed-bpe4k-swiglu-t4-results.zip",
+  "source_archive_sha256": "d5c6bdbddfde36fc87ea0d9470f6044058cf1fab28d2a556ff6c400bbd49e752",
+  "source_notebook": "16_training_speed_bpe_cache_amp_fp16_swiglu_bpe_4k_100k_pairs.ipynb",
+  "received_notebook_sha256": "76cd63f2e8b534897e5facb4503209805cedad9856bfe926fa33bdf9eeb298bb",
+  "prepared_notebook_sha256": "5e742e884788309127d3431814825d6f197d80d7562ac96e6173c1b0c8930730",
+  "manifest": [
+    {
+      "name": "results.json",
+      "bytes": 47104,
+      "sha256": "a6cf84a663c5caee8ae119baf588cc94b8eb3bd7562083b5e7ec78f3360897ff"
+    },
+    {
+      "name": "summary.csv",
+      "bytes": 512,
+      "sha256": "61cc6ebe80c5662818114ccb6cd82faab5d20079bdad051b9d9f3e20a5bfe646"
+    }
+  ],
+  "CRC_manifest_sizes_sha256_valid": true,
+  "source_cells_exactly_equal_to_prepared16": true,
+  "cells": 19,
+  "code_cells": 9,
+  "execution_counts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "syntax_no_errors_relative_paths": true,
+  "printed_runtime_data_tokenizer_model_summary_and_pairs_match_JSON": true,
+  "paired_plan_hash_recreated_from_seed_indices_only": "b178d26a424cb450f68a740610253f82178da29a1043fedb4d504402d55ecdd8",
+  "all_nine_blocks_arithmetic_and_paired_token_padding_equal": true,
+  "summary_CSV_and_profile_medians_recomputed": true,
+  "saved_attempts_reconciled": 5460,
+  "saved_successful_updates_reconciled": 5460,
+  "max_abs_fp32_pair_validation64_CE_difference": 4.3052629412621e-06,
+  "fp32_final_weights_exactly_equal": false,
+  "saved_initial_weights_hash_on_T4": "3907b78394672f3368b9f88b143884a12cd4b2d711e716f9424013a97e1129bb",
+  "fresh_checks_scope": "Static source/output/ZIP/JSON/CSV/hash/arithmetic/seed-index checks only; saved finite/scaler claims inspected, not remeasured.",
+  "fresh_optimizer_updates": 0,
+  "fresh_GPU_runs": 0,
+  "fresh_model_forwards": 0,
+  "limits": [
+    "No weight files, full convergence, greedy quality or inference timings in16; no CUDA rerun or deterministic diagnosis of FP32 end-weight differences.",
+    "Median step time is the median of three block means, not the median of individual step latencies.",
+    "Serialized event spans are not additive to primary timing, pure kernel time or GPU utilization.",
+    "Cross-version CPU preparation and T4 initial hashes are not assumed identical; paired A/B/C within saved T4 runtime share the asserted start state."
+  ]
+}

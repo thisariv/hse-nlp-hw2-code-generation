@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "notebook_valid": true,
+  "server_code_and_outputs_exact": true,
+  "execution_counts": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "dataset_code_sha_exact": true,
+  "answers_rows": 1919,
+  "code_only": true,
+  "decision": "accept_budget640",
+  "model_policy_vote_unchanged": true,
+  "own_push_calls": 1,
+  "dataset_version": 3,
+  "private": true,
+  "static_ast": true,
+  "diff_check": true
+}

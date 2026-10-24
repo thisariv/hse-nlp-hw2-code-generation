@@ -1,0 +1,47 @@
+{
+  "account": "friend1",
+  "datasets": [
+    {
+      "ref": "thisarivson/nlp-hw02-26b-inputs",
+      "accessible": true,
+      "private_previously_verified": true,
+      "files": {
+        "26b-training-inputs-d0-initial-and-evaluation/control-D0.pt": 48394401,
+        "26b-training-inputs-d0-initial-and-evaluation/heldout4k-reference-execution.json": 253469,
+        "26b-training-inputs-d0-initial-and-evaluation/heldout4k.json": 1846416,
+        "26b-training-inputs-d0-initial-and-evaluation/initial.pt": 48394401,
+        "26b-training-inputs-d0-initial-and-evaluation/manifest.json": 1468,
+        "26b-training-inputs-d0-initial-and-evaluation/old1024-reference-execution.json": 63093,
+        "26b-training-inputs-d0-initial-and-evaluation/old1024.json": 463882,
+        "26b-training-inputs-d0-initial-and-evaluation/protected-questions.json": 1489009,
+        "26b-training-inputs-d0-initial-and-evaluation/test.json": 394703,
+        "26b-training-inputs-d0-initial-and-evaluation/tokenizer.json": 545866
+      }
+    },
+    {
+      "ref": "thisarivson/nlp-hw02-p1-weights",
+      "accessible": false,
+      "error": "HTTPError",
+      "http": 403
+    }
+  ],
+  "kernels": [
+    {
+      "ref": "friend1/nlp-hw02-b5/6",
+      "accessible": true,
+      "private": true,
+      "current_version": 6
+    },
+    {
+      "ref": "friend1/nlp-hw02-kaggle-p1",
+      "accessible": true,
+      "private": true,
+      "current_version": 3
+    }
+  ],
+  "quota": {
+    "free_seconds": 68797.139,
+    "used_seconds": 39202.861,
+    "reserved_seconds": 0.0
+  }
+}

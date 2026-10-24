@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "config_equal_sealed_v2": true,
+  "unchanged_executable_modules": [
+    "__init__.py",
+    "_numeric.py",
+    "_qk_attention.py",
+    "_service.py",
+    "_worker.py",
+    "data.py",
+    "decode.py",
+    "dry_run.py",
+    "execute.py",
+    "model.py",
+    "pipeline.py",
+    "runner.py",
+    "tokenizer_repr.py",
+    "train.py",
+    "vote.py",
+    "worker.py"
+  ],
+  "config_py_only_docstring_changed": true,
+  "weights": [
+    {
+      "name": "W-B7",
+      "sha256": "3378c368f601c7cd046d40de22cf5cc6f5081deff190819bb4f616f0eb2761ac",
+      "model_spec": {
+        "d_model": 768,
+        "heads": 12,
+        "encoder_layers": 6,
+        "decoder_layers": 6,
+        "swiglu_dim": 2048,
+        "vocab": 8195,
+        "qk_norm": "layernorm"
+      },
+      "strict_load": true,
+      "fp16_finite": true
+    },
+    {
+      "name": "C-long2x-B7",
+      "sha256": "bcb41c54d031b70523d357dd7d14dc24ec7d1393a6cb8714d8eacfe761cca32b",
+      "model_spec": {
+        "d_model": 512,
+        "heads": 8,
+        "encoder_layers": 6,
+        "decoder_layers": 6,
+        "swiglu_dim": 1368,
+        "vocab": 8195
+      },
+      "strict_load": true,
+      "fp16_finite": true
+    },
+    {
+      "name": "pilot-b",
+      "sha256": "8439037720dda16dda6b73fe676860d5498bbcba4cacebc0d709bbb22db464a5",
+      "model_spec": {
+        "d_model": 512,
+        "heads": 8,
+        "encoder_layers": 6,
+        "decoder_layers": 6,
+        "swiglu_dim": 1368,
+        "vocab": 8195
+      },
+      "strict_load": true,
+      "fp16_finite": true
+    }
+  ],
+  "regression_tests": 21,
+  "fresh_kernel_notebook_dry_run_rows": 8,
+  "notebook_sha256": "d56514953a10f3e029d5b1c6b46065ec24a16644bf5b80ee610765270e1ea484",
+  "manifest_sha256": "775c56a2684e9d5c81734c4699bdf0304351bd3244b922958b8f4fedbbf2d83c",
+  "static_ast_json": true
+}

@@ -1,0 +1,15 @@
+{
+  "ref": "friend1/nlp-hw02-b6-gpu-smoke",
+  "version": 1,
+  "status": "COMPLETE",
+  "checked_at_utc": "2026-10-19T10:03:16.140120+00:00",
+  "private": true,
+  "machine_shape": "NvidiaTeslaT4",
+  "enable_gpu": true,
+  "enable_internet": true,
+  "full_notebook_code_exact": true,
+  "server_source_sha256": "476f4965cc235398add86de9754b159e5bda3d8f154078b6d5aa39f5af2948f2",
+  "output_files_first_page": 200,
+  "output_has_next_page": true,
+  "log_characters": 9059
+}

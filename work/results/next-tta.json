@@ -1,0 +1,51 @@
+{
+  "at_utc": "2026-10-19T12:41:35.812130+00:00",
+  "ref": "friend2/nlp-hw02-tta",
+  "version": 1,
+  "status": "COMPLETE",
+  "output_files": 200,
+  "output_has_more": true,
+  "code_cells_exact": true,
+  "private": true,
+  "quota": {
+    "total_seconds": 108000.0,
+    "used_seconds": 874.634,
+    "reserved_seconds": 0.0,
+    "free_seconds": 107125.366
+  },
+  "own_push_calls": 1,
+  "requested_at_utc": "2026-10-19T12:25:57.955964+00:00",
+  "agent_must_not_repush": true,
+  "bundle": "kaggle/bundles/tta_friend2",
+  "backend_timeout_seconds": 1200,
+  "watchdog_seconds": 1140,
+  "quota_budget_seconds": 2400,
+  "notebook_sha256": "7326f671384e8e616b15b6590e2b186328412a023c03116c871f3d9e7a942c9b",
+  "original_ref": "thisarivson/nlp-hw02-tta",
+  "read_only_monitor": "kaggle/tta_transfer.py observe",
+  "download": "kaggle/tta_transfer.py output",
+  "output": "results/kaggle-runs/nlp-hw02-tta/friend2",
+  "analyze_in_order": [
+    "research/tta-analysis.py tune --raw results/kaggle-runs/nlp-hw02-tta/friend2",
+    "research/tta-analysis.py confirm --raw results/kaggle-runs/nlp-hw02-tta/friend2"
+  ],
+  "quality_measured": true,
+  "analysis_complete": true,
+  "success": false,
+  "decision": "retain_v8",
+  "selected_rules": [
+    "dollar-words"
+  ],
+  "tune_delta_pp": 0.048828125,
+  "eval_delta_pp": -0.048828125,
+  "eval_ci95_pp": [
+    -0.390625,
+    0.29296875
+  ],
+  "analysis_results": [
+    "results/tta-selection.json",
+    "results/tta-tune.json",
+    "results/tta-confirm.json",
+    "results/tta-experiment.json"
+  ]
+}

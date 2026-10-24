@@ -1,0 +1,22 @@
+{
+  "owner": "thisarivson",
+  "checked_at_utc": "2026-10-15T08:15:09.635151+00:00",
+  "inputs": [
+    {
+      "ref": "thisarivson/nlp-hw02-l3-states",
+      "accessible": true,
+      "private": true
+    },
+    {
+      "ref": "thisarivson/nlp-hw02-26b-inputs",
+      "accessible": true,
+      "private": true
+    },
+    {
+      "ref": "thisarivson/nlp-hw02-compact-cache-verified/2",
+      "accessible": true,
+      "private": true
+    }
+  ],
+  "passed": true
+}

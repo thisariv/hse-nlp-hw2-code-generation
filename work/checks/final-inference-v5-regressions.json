@@ -1,0 +1,114 @@
+{
+  "unit": {
+    "vote_restore_format": "passed",
+    "cases": 18
+  },
+  "sampler_checks": {
+    "original_physical_sampler_token_and_LP_identical": true,
+    "K": [
+      1,
+      4,
+      8
+    ],
+    "greedy_without_LP_tokens_identical": true,
+    "cached_logits_allclose_1e_6": true,
+    "device": "CPU FP32 tiny; CUDA not tested"
+  },
+  "static": {
+    "passed": true,
+    "code_cells": 2,
+    "embedded_modules": 13,
+    "frozen_function_AST_equivalence": true,
+    "private": true,
+    "GPU_count_in_worker": 1,
+    "internet": false,
+    "nbformat": "passed",
+    "notebook_bytes": 78907
+  },
+  "suite_checks": {
+    "passed": true,
+    "selective_ZIP_without_initial_weights": true,
+    "two_cold_test_then_tune": true,
+    "first_answers_preserved": true,
+    "quality_fail_does_not_spend_extra_GPU_run": true,
+    "single_test_submission_mode": true,
+    "GPU_launches_in_this_check": 0,
+    "launches_mocked": true
+  },
+  "supervisor_checks": {
+    "external_hard_stop_publishes_exact_greedy": true,
+    "startup_before_greedy_fails_without_fabrication": true,
+    "process_and_clock_mocked": true
+  },
+  "process_smoke": {
+    "passed": true,
+    "cold_subprocess_seconds": 2.7532408330589533,
+    "all_phases_in_timer": true,
+    "sample_candidates": 27,
+    "deadline_fallback_greedy_exact": true,
+    "guard_seconds": 2.176112208981067,
+    "stale_output_rejected": true
+  },
+  "frozen_L2_journals": {
+    "rows": 2048,
+    "matches": 1492,
+    "accuracy_pp": 72.8515625,
+    "execution_mismatches": 0,
+    "code_mismatches": 0,
+    "restored_samples": 32768,
+    "chosen_execution_sha256": "62104d458161d42ce5bd64cc4ee58f1a8a9a2e883b28decfdee0489eba5833dc",
+    "chosen_code_sha256": "8a572da313e85b4de96af01aad03efe800534ea67d59e9e3e7a3159d960dc12e",
+    "candidate_count": 18432,
+    "unique_programs": 14799
+  },
+  "security": {
+    "namespace_mutation_blocked": true,
+    "sympy_string_escape_blocked": true,
+    "ordinary_sympy_equations_preserved": true,
+    "stdout_protocol_clean": true,
+    "fork_import_blocked": true,
+    "memory_exhaustion_bounded": false,
+    "caught_timeout_bounded_and_worker_recovered": true,
+    "chosen_code_reexecution_detects_wrong_cached_value": true,
+    "sympy_random_method_blocked_and_internal_RNG_seeded": true,
+    "format_string_hidden_attribute_traversal_blocked": true,
+    "seconds": 3.6417560409754515,
+    "linux_process_group_and_RLIMIT_AS": false,
+    "authorization": {
+      "missing_authorization_stops_before_SDK_or_credential_file_reads": true
+    },
+    "output_validation": {
+      "passed": true,
+      "GPU_used": false,
+      "fixtures_only": true,
+      "wrong_order_late_run_fallback_multiGPU_different_answers_rejected": true
+    },
+    "pipe_death": {
+      "send_failure_after_is_alive_requeues_exactly_once": true,
+      "worker_death_race_injected": true
+    }
+  },
+  "v3_guard": {
+    "plain": {
+      "small_budget_seconds": 8.0,
+      "seconds": 1.176658916985616,
+      "partial_vote_count": 2,
+      "greedy_only_count": 1,
+      "partial_sample_winners_preserved": true,
+      "independent_reexecution_completed": true,
+      "OOM_halves_batch_and_restores_CPU_RNG": false,
+      "GPU_decoder": "mock; executor real"
+    },
+    "oom": {
+      "small_budget_seconds": 8.0,
+      "seconds": 1.15993274981156,
+      "partial_vote_count": 1,
+      "greedy_only_count": 2,
+      "partial_sample_winners_preserved": true,
+      "independent_reexecution_completed": true,
+      "OOM_halves_batch_and_restores_CPU_RNG": true,
+      "GPU_decoder": "mock; executor real"
+    }
+  },
+  "passed": true
+}

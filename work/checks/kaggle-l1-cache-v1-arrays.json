@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "rows": 9725737,
+  "arrays_verified": 360,
+  "manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+  "order_sha256": "09cf6db8549b7df614fa71516553d23d4cbb3ca97c7911db0c6d599a8277ab7d",
+  "source_and_provenance_unchanged": true,
+  "independent_order_reconstruction": true,
+  "producer_roundtrip_failed": true,
+  "local_roundtrip_rows": 50040,
+  "local_roundtrip_answer_mismatches": 0,
+  "Kaggle_repaired_roundtrip_pending": true
+}

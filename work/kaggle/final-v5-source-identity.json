@@ -1,0 +1,43 @@
+{
+  "base_v4_sha256": {
+    "final_core.py": "1da5c419ccc1ef3667bfc27456296fd0545822073db6f24804a761864aa46aec",
+    "final_fast.py": "8cd730d568f75f7402edcff28a448d2389a4ed064a1b22882600864621d660fc",
+    "final_choose.py": "c5cd8774597ff454771c337a66eb2248fabb485a9d29e5ba4ee133cfaf9fe7fb",
+    "final_split.py": "23659f25e6bfee015395c890f7b9fd521fae007eb0ab97efea74466110ad58c1",
+    "final_representation.py": "9a97a8818ae1a9977801f1c68cc011cc427af9d6d954acde5efb15e2e8334305",
+    "final_decode.py": "a1936b12f0989a0cfacb2d3d33aa461ff93b0ff5e5538e92d80e8a6d0d30aced",
+    "final_numeric.py": "655f9555ecdcad01bb64c39987a92483ca29a8a6eac0344d82f406f49f5c3c46",
+    "final_vote.py": "2c92dddd19c03d662f1b9f112ae49e250b7fa00b4000a97545e4b8cea76378ac",
+    "final_execute.py": "67b01880705d97e7d23f49e0a1e6ec09b077fc1ffd856e4df4f2e83a11c95a62",
+    "final_executor.py": "24d2045220597277fcb56d4b0582a5e1e72cc4ab01a23bbb2eef53e650efd5e8",
+    "final_inference.py": "5b9112603c7d0beb6c2e440496abead7867fbe864916c1ddbfdb484be2fde472",
+    "final_runner.py": "cb909cc3c5b75238eb55e7d271ece9949dc112764e266e9bda3e9700008b96fd",
+    "final_session.py": "f9c48f40117fb371258e755f80267c9fe402e5de53371665fcfd31b6eb634fc0"
+  },
+  "adaptive_config": {
+    "K1": 2,
+    "K2": 4,
+    "unanimity_threshold": 1.0,
+    "sequence_budget": 1024,
+    "greedy_sequence_budget": 1024,
+    "scorer_enabled": false,
+    "scorer_weight": 0.0,
+    "expected_matches": 1511
+  },
+  "embedded_source_sha256": {
+    "final_core.py": "1da5c419ccc1ef3667bfc27456296fd0545822073db6f24804a761864aa46aec",
+    "final_fast.py": "8cd730d568f75f7402edcff28a448d2389a4ed064a1b22882600864621d660fc",
+    "final_choose.py": "c5cd8774597ff454771c337a66eb2248fabb485a9d29e5ba4ee133cfaf9fe7fb",
+    "final_split.py": "23659f25e6bfee015395c890f7b9fd521fae007eb0ab97efea74466110ad58c1",
+    "final_representation.py": "9a97a8818ae1a9977801f1c68cc011cc427af9d6d954acde5efb15e2e8334305",
+    "final_decode.py": "a1936b12f0989a0cfacb2d3d33aa461ff93b0ff5e5538e92d80e8a6d0d30aced",
+    "final_numeric.py": "655f9555ecdcad01bb64c39987a92483ca29a8a6eac0344d82f406f49f5c3c46",
+    "final_vote.py": "2c92dddd19c03d662f1b9f112ae49e250b7fa00b4000a97545e4b8cea76378ac",
+    "final_execute.py": "67b01880705d97e7d23f49e0a1e6ec09b077fc1ffd856e4df4f2e83a11c95a62",
+    "final_executor.py": "24d2045220597277fcb56d4b0582a5e1e72cc4ab01a23bbb2eef53e650efd5e8",
+    "final_inference.py": "cc5967d1bd3a614f4ceb37621dd97ff4144f1b4af259340106d1c2ec67af0252",
+    "final_runner.py": "e1101a6b18d470259f27808715d6193c482264f5088f10fe96bee1fd6eb38068",
+    "final_session.py": "885d9afbbdb413985ac3c87cb0ced8e6eebf153e430d8ce92df60088eb5a3ec7",
+    "final_adaptive.py": "f68ac87710d46ed85f82409e307e828b823812bc165391a12ff505445a42633d"
+  }
+}

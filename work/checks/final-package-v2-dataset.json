@@ -1,0 +1,114 @@
+{
+  "ref": "thisarivson/nlp-hw02-final-weights",
+  "private": true,
+  "version": 4,
+  "verified_at_utc": "2026-10-21T06:54:49.349089+00:00",
+  "full_download_sha_roundtrip": true,
+  "files": {
+    "c-long2x-b7-fp16.pt": {
+      "bytes": 107364659,
+      "sha256": "bcb41c54d031b70523d357dd7d14dc24ec7d1393a6cb8714d8eacfe761cca32b"
+    },
+    "p1-b-fp16.pt": {
+      "bytes": 107366185,
+      "sha256": "8439037720dda16dda6b73fe676860d5498bbcba4cacebc0d709bbb22db464a5"
+    },
+    "test.json": {
+      "bytes": 394703,
+      "sha256": "20cacb334e3fc81291433d2173d9085b17a15e1834bd84aea67b350403182503"
+    },
+    "tokenizer.json": {
+      "bytes": 545866,
+      "sha256": "261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d"
+    },
+    "tune2048-reference.json": {
+      "bytes": 110191,
+      "sha256": "4c3150885e004b9cc37f9ac2f33346476c273307564af2010ce5cdbc1c1db054"
+    },
+    "tune2048.json": {
+      "bytes": 411849,
+      "sha256": "8881aae28735dd8f4c22aa6dc284e0374162a1328ed2603133b0d866bffc8e71"
+    },
+    "w-b7-fp16.pt": {
+      "bytes": 226949203,
+      "sha256": "3378c368f601c7cd046d40de22cf5cc6f5081deff190819bb4f616f0eb2761ac"
+    },
+    "code/hw2_codegen/__init__.py": {
+      "bytes": 100,
+      "sha256": "20ee77e6b3205f95c73b40638798bdb44009c6080992a97a4c0e200e620ea7ad"
+    },
+    "code/hw2_codegen/_numeric.py": {
+      "bytes": 8900,
+      "sha256": "15f64631a2dfe3d668f45421c5baf0dccd1701ef8313faa3b42266b4a5127a01"
+    },
+    "code/hw2_codegen/_qk_attention.py": {
+      "bytes": 192,
+      "sha256": "6b2465c786a61d5049cbe648f5f801874aebc23e6da0f4e1c05231c0b01d56a6"
+    },
+    "code/hw2_codegen/_service.py": {
+      "bytes": 4940,
+      "sha256": "add12b48d765cb620e2174430fe7eb0921537744bd56927908228859d8d1ccce"
+    },
+    "code/hw2_codegen/_worker.py": {
+      "bytes": 3783,
+      "sha256": "0fef60ead05ca4ae5712f95f506d21b8aa58f84bac586dea1c138d388194e442"
+    },
+    "code/hw2_codegen/config.json": {
+      "bytes": 2041,
+      "sha256": "e1f306e8c40e5c6cd9dea243010635d0ffa655167afee588cfba95e10af530ae"
+    },
+    "code/hw2_codegen/config.py": {
+      "bytes": 387,
+      "sha256": "e81445280b8b24938c4eb7ffa8d2f52a75c93848429e9fa38916dd755d1833f3"
+    },
+    "code/hw2_codegen/data.py": {
+      "bytes": 7147,
+      "sha256": "a38d14e7f2fba7d93046bb743fda3b1227ef57e3322ad7d892d72253005a6a3b"
+    },
+    "code/hw2_codegen/decode.py": {
+      "bytes": 13031,
+      "sha256": "56d817f56156759733eb027019edb50190db509cf6887c46c31065ae836bf12a"
+    },
+    "code/hw2_codegen/dry_run.py": {
+      "bytes": 1320,
+      "sha256": "8141fe9e8c7b21de08afe5b9ad78786681384ec9da8e6cbb1df310f5ae30b200"
+    },
+    "code/hw2_codegen/execute.py": {
+      "bytes": 5814,
+      "sha256": "6bdb14f783d58b639129fd2119e359ee69add7ef12d0c45359911dc86cf6c19c"
+    },
+    "code/hw2_codegen/model.py": {
+      "bytes": 9658,
+      "sha256": "f9f7f5346781db23506181f508902a48fed10aa91ebb1732848e3d4dbd0da429"
+    },
+    "code/hw2_codegen/pipeline.py": {
+      "bytes": 19553,
+      "sha256": "4c0c112a0a13e8178e819fd5547741ff641a4b3ef9a6a107c1b31ac346419c04"
+    },
+    "code/hw2_codegen/runner.py": {
+      "bytes": 5042,
+      "sha256": "02eb927219e12d3fa16180e58240e718b773d19fb27845f31944e05a39846b91"
+    },
+    "code/hw2_codegen/tokenizer_repr.py": {
+      "bytes": 5584,
+      "sha256": "c0b65b5fbbc21d6473b1c8daebd8638fc991795d84582c7b03742e03d51c1938"
+    },
+    "code/hw2_codegen/train.py": {
+      "bytes": 11957,
+      "sha256": "e3d8b647f7677bb842b588d284db578d88f18fe1823ea9d4988c0740c44c018b"
+    },
+    "code/hw2_codegen/vote.py": {
+      "bytes": 6545,
+      "sha256": "65dea1bf096df1a79bb2ff01223bd790bbb9012ac316e2e527c35364092768cd"
+    },
+    "code/hw2_codegen/worker.py": {
+      "bytes": 1348,
+      "sha256": "8d3e86756daee4a08a235026b3f7082080ad86b6f698082a53f05c0df31b812a"
+    },
+    "package-manifest.json": {
+      "bytes": 24840,
+      "sha256": "775c56a2684e9d5c81734c4699bdf0304351bd3244b922958b8f4fedbbf2d83c"
+    }
+  },
+  "manifest_sha256": "775c56a2684e9d5c81734c4699bdf0304351bd3244b922958b8f4fedbbf2d83c"
+}

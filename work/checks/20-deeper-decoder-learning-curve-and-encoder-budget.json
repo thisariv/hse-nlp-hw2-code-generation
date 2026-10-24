@@ -1,0 +1,141 @@
+{
+  "date": "2026-10-09",
+  "provenance": "Derived from saved user20 log/full controls and checkpoint tensor shapes; no GPU timing, new4+4 model or optimizer updates.",
+  "late_LR": {
+    "used_lr_for_every_saved_step_above50000": [
+      0.0001
+    ],
+    "value": 0.0001,
+    "verified_constant_in_saved_logs_and_checkpoints": true
+  },
+  "full_heldout1024": {
+    "50000": {
+      "token_CE": 0.8350912898849955,
+      "byte_NLL": 0.24446065352281623,
+      "reference_agreements": 137,
+      "reference_denominator": 888
+    },
+    "75000": {
+      "token_CE": 0.786548131223894,
+      "byte_NLL": 0.2302503600685654,
+      "reference_agreements": 152,
+      "reference_denominator": 888
+    },
+    "100000": {
+      "token_CE": 0.7489724621610411,
+      "byte_NLL": 0.2192506373712695,
+      "reference_agreements": 170,
+      "reference_denominator": 888
+    }
+  },
+  "full_heldout_loss_decrease_pct_50000_to100000": 10.312504604833595,
+  "validation16_windows": [
+    {
+      "start_exclusive": 45000,
+      "end_inclusive": 50000,
+      "observations": 100,
+      "mean": 0.8248965268396219,
+      "median": 0.8240867754025101,
+      "min": 0.8108161477481618,
+      "max": 0.8399439689837411
+    },
+    {
+      "start_exclusive": 50000,
+      "end_inclusive": 55000,
+      "observations": 100,
+      "mean": 0.8103943923424031,
+      "median": 0.8096909900224233,
+      "min": 0.7930036007028081,
+      "max": 0.8296290894792723
+    },
+    {
+      "start_exclusive": 60000,
+      "end_inclusive": 65000,
+      "observations": 100,
+      "mean": 0.7964804380467165,
+      "median": 0.7966693932337887,
+      "min": 0.7848764539490365,
+      "max": 0.8088658083283151
+    },
+    {
+      "start_exclusive": 70000,
+      "end_inclusive": 75000,
+      "observations": 100,
+      "mean": 0.7738110989150846,
+      "median": 0.7733920640926091,
+      "min": 0.7629884793356998,
+      "max": 0.7876366543721476
+    },
+    {
+      "start_exclusive": 80000,
+      "end_inclusive": 85000,
+      "observations": 100,
+      "mean": 0.7576553245683713,
+      "median": 0.7574483937230603,
+      "min": 0.745085679493376,
+      "max": 0.7700468918372845
+    },
+    {
+      "start_exclusive": 90000,
+      "end_inclusive": 95000,
+      "observations": 100,
+      "mean": 0.7490505777169435,
+      "median": 0.7487095026167121,
+      "min": 0.740800281083608,
+      "max": 0.7626035740602815
+    },
+    {
+      "start_exclusive": 95000,
+      "end_inclusive": 100000,
+      "observations": 100,
+      "mean": 0.7418265247151529,
+      "median": 0.7413696227160719,
+      "min": 0.7315441077427738,
+      "max": 0.7613843565780299
+    }
+  ],
+  "conclusion": "No observed late plateau on full heldout or rolling validation16; LR decay may help but is not demonstrated to be necessary/cause. User defers LR, prioritizes encoder-depth discussion.",
+  "manual100": {
+    "evaluated_questions": 74,
+    "excluded_questions": 26,
+    "100k_correct": {
+      "18/100000": 14,
+      "19/100000": 12,
+      "20/100000": 13
+    },
+    "reference_quality": {
+      "scored": 74,
+      "correct": 56,
+      "wrong": 8,
+      "unknown": 10
+    },
+    "scope": "Old adaptive heldout, manual interpretation conventions documented; not official accuracy."
+  },
+  "next_candidate": {
+    "factor": "encoder2 to4, decoder4 unchanged; all other data/tokenizer/hyperparameters identical to20",
+    "current_parameters": 10510816,
+    "encoder_layer_parameters": 788048,
+    "decoder_layer_parameters": 1051728,
+    "additional_encoder_parameters": 1576096,
+    "proposed4plus4_parameters": 12086912,
+    "new_model_created": false,
+    "new_notebook_created": false,
+    "quality_and_T4_speed_measured": false,
+    "reason": "Test question representation; equal encoder/decoder depth is not a requirement or optimum guarantee."
+  },
+  "batch_size": {
+    "quality_experiments_so_far": "batch8 fixed;16 compared online/cache/AMP atbatch8 only",
+    "example_budget_at100000_updates": {
+      "batch8": 800000,
+      "batch16": 1600000,
+      "batch32": 3200000
+    },
+    "matched800000_pair_presentations_updates": {
+      "batch8": 100000,
+      "batch16": 50000,
+      "batch32": 25000
+    },
+    "limits": "Equal examples changes optimizer update count; equal updates changes data budget. Later throughput and quality comparison must specify budget, not auto-scale LR."
+  },
+  "new_training_updates": 0
+}

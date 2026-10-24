@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "unchanged_v4_static_real_FP16_loads_and_reexecution": true,
+  "v4_receipts_unchanged": true,
+  "GPU": false
+}

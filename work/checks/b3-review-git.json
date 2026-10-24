@@ -1,0 +1,7 @@
+{
+  "attempted": true,
+  "git_add_exit_code": 128,
+  "commit_attempted": false,
+  "index_changed": false,
+  "reason": "Sandbox denied <vault>/.git/worktrees/study1/index.lock: Operation not permitted; no workaround attempted"
+}

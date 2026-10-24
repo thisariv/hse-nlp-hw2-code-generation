@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "check": "Kaggle input wrapper + multiZIP Drive merge + safe path rejection",
+      "passed": true
+    },
+    {
+      "check": "CPU extension excludes protected rows, preserves schema/SHA and shard resume",
+      "passed": true,
+      "cache_rows": 56
+    },
+    {
+      "check": "two independent CPU subprocesses + attached output resume + short branches",
+      "passed": true,
+      "full_model_updates": 0,
+      "tiny_updates": 32
+    },
+    {
+      "check": "runtime migration records provenance but rejects changed order",
+      "passed": true
+    },
+    {
+      "check": "shared encoder/crossKV broadcast agrees with original cached logits",
+      "passed": true
+    },
+    {
+      "check": "real sampling/resume/exec/full timer; nested prefixes + vote/fallback/ties and1.5pp/120s fixtures",
+      "passed": true
+    },
+    {
+      "check": "tiny B calibration/clock-fixture branches, attached resume, alignment and2pp/120s boundary",
+      "passed": true
+    }
+  ],
+  "GPU_runs": 0,
+  "full_A_updates": 0,
+  "full_B_updates": 0,
+  "torch_CPU": "2.14.1",
+  "unverified": [
+    "Kaggle T4x2/runtime migration/FP16/fusedAdamW/memory",
+    "full heldout/test decode and120s",
+    "real Drive downloads/cache/PT",
+    "full26c remote extension"
+  ]
+}

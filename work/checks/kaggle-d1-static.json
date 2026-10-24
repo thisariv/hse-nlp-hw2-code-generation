@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "artifacts": {
+    "d1": {
+      "notebook_sha256": "b06aac5e65dfc8781e1b08824d1c3711bc669c4fffb8c4ec3cd06b0bed44fa25",
+      "modules": 48,
+      "hard_wall_seconds": 7800
+    },
+    "d1_gpu_smoke": {
+      "notebook_sha256": "ac9c294c23654f5b032e3819ecdfa20096f1b3ae5712a67b2ac93a697d0bb6c4",
+      "modules": 48,
+      "hard_wall_seconds": 660
+    }
+  },
+  "private_live": "friend1/nlp-hw02-d1-live",
+  "actual_L3_CPU_parity": true,
+  "regressions": {
+    "passed": true,
+    "tests": 13,
+    "failures": 0,
+    "errors": 0,
+    "GPU": false,
+    "push": false,
+    "torch": "2.14.1",
+    "numpy": "2.5.4",
+    "synthetic_analysis_and_L2_orders": true,
+    "frozen_v6_decoder_and_executor": true
+  },
+  "inherited_regressions": {
+    "passed": true,
+    "tests": 89,
+    "seconds": 25.613,
+    "command": "OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python -m unittest discover -s kaggle -p *_tests.py -q",
+    "scope": "L1 review, L2, L3, L4, P1 and the initial seven D1 CPU tests; later eight-test D1 receipt is separate",
+    "GPU": false,
+    "push": false
+  },
+  "frozen_v6_sources": true,
+  "GPU": false,
+  "push": false,
+  "ready_for_independent_GPU_review": true
+}

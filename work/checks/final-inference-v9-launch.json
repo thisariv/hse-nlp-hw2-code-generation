@@ -1,0 +1,78 @@
+{
+  "ref": "friend1/nlp-hw02-ensemble-inference-v9",
+  "requested_at_utc": "2026-10-19T07:52:43.036810+00:00",
+  "push_calls": 1,
+  "private": true,
+  "preflight": {
+    "target_absent_in_complete_owned_inventory": true,
+    "owned_count": 34,
+    "active_version": false
+  },
+  "quota_before": {
+    "free_seconds": 68797.139,
+    "used_seconds": 39202.861,
+    "reserved_seconds": 0.0,
+    "reset_utc": "2026-10-24 00:00:00"
+  },
+  "timeout_seconds": 720,
+  "maximum_T4_pair_quota_seconds": 1440,
+  "quota_budget_seconds": 2400,
+  "notebook_sha256": "bcd0610f38c386b0c233c524ea9fa783d7ea0fc6a8c4c50faf8c88495aff37cf",
+  "push_started": true,
+  "CLI_returncode": 0,
+  "push_accepted": true,
+  "version": 1,
+  "push_finished_at_utc": "2026-10-19T07:52:46.231176+00:00",
+  "monitor_version": 5,
+  "own_push_calls": 1,
+  "external_restart_observed": true,
+  "external_version": 2,
+  "external_version_code_cells_exact": true,
+  "version1_final_observed_status": "CANCEL_ACKNOWLEDGED",
+  "quota_after_version1_cancel": {
+    "free_seconds": 68797.139,
+    "used_seconds": 39202.861,
+    "reserved_seconds": 0.0
+  },
+  "version2_first_observed_utc": "2026-10-19T08:19:28.753505+00:00",
+  "external_version2_final_observed_status": "CANCEL_ACKNOWLEDGED",
+  "quota_after_version2_cancel": {
+    "free_seconds": 68797.139,
+    "used_seconds": 39202.861,
+    "reserved_seconds": 0.0
+  },
+  "status": "passed",
+  "output_files_observed": 0,
+  "external_versions": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "external_version3_first_observed_utc": "2026-10-19T08:28:24.660467+00:00",
+  "external_version3_code_cells_exact": true,
+  "last_quota_observation": {
+    "free_seconds": 68248.345,
+    "used_seconds": 39751.655,
+    "reserved_seconds": 0.0,
+    "reset_utc": "2026-10-24 00:00:00"
+  },
+  "observed_version_statuses": {
+    "1": "CANCEL_ACKNOWLEDGED",
+    "2": "CANCEL_ACKNOWLEDGED",
+    "3": "CANCEL_ACKNOWLEDGED",
+    "4": "CANCEL_ACKNOWLEDGED",
+    "5": "CANCEL_ACKNOWLEDGED"
+  },
+  "all_1_to_5_verified_same_code": true,
+  "all_1_to_5_output_files": 0,
+  "last_observed_quota_delta_seconds": 548.7940000000017,
+  "last_batch_status": "CANCEL_ACKNOWLEDGED",
+  "result_origin": "externally collected interactive execution of the byte-identical notebook",
+  "selected_output": "interactive",
+  "completed_GPU_child_runs_verified": 2,
+  "test1919_seconds": 93.89679481600001,
+  "tune_matches": 1532,
+  "result_receipt": "checks/final-inference-v9-output.json",
+  "submission": "submissions/final-ensemble-v9.jsonl"
+}

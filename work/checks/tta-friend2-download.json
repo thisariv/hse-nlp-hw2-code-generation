@@ -1,0 +1,8 @@
+{
+  "at_utc": "2026-10-19T12:45:54.098786+00:00",
+  "ref": "friend2/nlp-hw02-tta",
+  "version": 1,
+  "files": 310,
+  "output": "results/kaggle-runs/nlp-hw02-tta/friend2",
+  "version_binding": "explicit version label and exact current source"
+}

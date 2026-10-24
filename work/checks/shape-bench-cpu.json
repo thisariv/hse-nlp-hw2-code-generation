@@ -1,0 +1,148 @@
+{
+  "passed": true,
+  "parameter_counts": {
+    "e6-d6-w512": {
+      "encoder": 18944032,
+      "decoder": 25253920,
+      "head": 4204035,
+      "embeddings": 5244416,
+      "total": 53646403
+    },
+    "e6-d8-w640": {
+      "encoder": 29609024,
+      "decoder": 52616192,
+      "head": 5252995,
+      "embeddings": 6555520,
+      "total": 94033731
+    },
+    "e6-d6-w768": {
+      "encoder": 42534912,
+      "decoder": 56718336,
+      "head": 6301955,
+      "embeddings": 7866624,
+      "total": 113421827
+    },
+    "e6-d6-w640": {
+      "encoder": 29609024,
+      "decoder": 39462464,
+      "head": 5252995,
+      "embeddings": 6555520,
+      "total": 80880003
+    },
+    "e12-d6-w640": {
+      "encoder": 59216768,
+      "decoder": 39462464,
+      "head": 5252995,
+      "embeddings": 6555520,
+      "total": 110487747
+    },
+    "e10-d4-w768": {
+      "encoder": 70890496,
+      "decoder": 37812736,
+      "head": 6301955,
+      "embeddings": 7866624,
+      "total": 122871811
+    },
+    "e8-d6-w640": {
+      "encoder": 39478272,
+      "decoder": 39462464,
+      "head": 5252995,
+      "embeddings": 6555520,
+      "total": 90749251
+    },
+    "e6-d10-w512": {
+      "encoder": 18944032,
+      "decoder": 42089184,
+      "head": 4204035,
+      "embeddings": 5244416,
+      "total": 70481667
+    },
+    "e4-d4-w768": {
+      "encoder": 28357120,
+      "decoder": 37812736,
+      "head": 6301955,
+      "embeddings": 7866624,
+      "total": 80338435
+    },
+    "e8-d8-w640": {
+      "encoder": 39478272,
+      "decoder": 52616192,
+      "head": 5252995,
+      "embeddings": 6555520,
+      "total": 103902979
+    },
+    "e8-d4-w768": {
+      "encoder": 56712704,
+      "decoder": 37812736,
+      "head": 6301955,
+      "embeddings": 7866624,
+      "total": 108694019
+    },
+    "e6-d5-w768": {
+      "encoder": 42534912,
+      "decoder": 47265536,
+      "head": 6301955,
+      "embeddings": 7866624,
+      "total": 103969027
+    },
+    "e7-d7-w640": {
+      "encoder": 34543648,
+      "decoder": 46039328,
+      "head": 5252995,
+      "embeddings": 6555520,
+      "total": 92391491
+    }
+  },
+  "real_backward_Adam_finite": true,
+  "forced_EOS_greedy_sample_compaction": [
+    {
+      "steps": 128,
+      "eos_checks": 4,
+      "compactions": [
+        {
+          "step": 32,
+          "before": 4,
+          "after": 3
+        },
+        {
+          "step": 64,
+          "before": 3,
+          "after": 2
+        },
+        {
+          "step": 96,
+          "before": 2,
+          "after": 1
+        }
+      ],
+      "async_eos": false,
+      "rng_stream_may_change": true
+    },
+    {
+      "steps": 128,
+      "eos_checks": 4,
+      "compactions": [
+        {
+          "step": 32,
+          "before": 16,
+          "after": 12
+        },
+        {
+          "step": 64,
+          "before": 12,
+          "after": 8
+        },
+        {
+          "step": 96,
+          "before": 8,
+          "after": 4
+        }
+      ],
+      "async_eos": false,
+      "rng_stream_may_change": true
+    }
+  ],
+  "nbformat_compile_embedded_identity": true,
+  "GPU_run": false,
+  "push": false
+}

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "real_tiny_CPU_decoder": true,
+  "real_tokenizer_pack_execution": true,
+  "K1": 2,
+  "K2": 4,
+  "cap": 16,
+  "seconds": 1.0726389999035746,
+  "GPU": false
+}

@@ -1,0 +1,139 @@
+{
+  "passed": true,
+  "calibrated_on": [
+    "thisarivson/nlp-hw02-d1-gpu-smoke/1",
+    "thisarivson/nlp-hw02-d1-gpu-smoke/2"
+  ],
+  "production_config": {
+    "owner": "friend1",
+    "session_kind": "d1",
+    "gpu_smoke": false,
+    "working_root": "/kaggle/working",
+    "input_root": "/kaggle/input",
+    "live_dataset": "friend1/nlp-hw02-d1-live",
+    "weights_source": "friend1/nlp-hw02-l3-live",
+    "require_secrets": false,
+    "enable_live_sync": false,
+    "cache_source": "thisarivson/nlp-hw02-compact-cache-verified/2",
+    "cache_fallback_source": "friend1/nlp-hw02-compact-cache-verified",
+    "seed_sha256": "6fd712d4b805e8cd49b709e01260aef15ae28875dfc31e659f0a4d81c9c52d36",
+    "setup_cap_seconds": 300,
+    "loss_stop_seconds": 4680,
+    "generation_stop_seconds": 7200,
+    "execution_stop_seconds": 7440,
+    "worker_deadline_seconds": 7560,
+    "hard_shutdown_seconds": 7800,
+    "budget_seconds": 7560,
+    "session_ceiling_seconds": 8400,
+    "terminate_grace_seconds": 20,
+    "loss_batch": 256,
+    "loss_token_slots": 32768,
+    "loss_block": 8192,
+    "fraction": 0.04,
+    "pilot_per_bin": 256,
+    "timing_safety": 1.6,
+    "pilot_tail_reserve": 240.0,
+    "wave_rows": 4096,
+    "generation_batch": 512,
+    "cap": 512,
+    "wave_timeout_seconds": 600,
+    "smoke_rows": 131072,
+    "port_sha256": "f5838218837c04d54e89dfead59065b43176dbdec4fe7398fe106ab0bc52a2e2"
+  },
+  "selected_CE_batch": 256,
+  "selected_generation_batch": 512,
+  "CE_rows": 9725737,
+  "CE_shard_rows": [
+    4862869,
+    4862868
+  ],
+  "candidate_bin_quotas": [
+    212296,
+    116650,
+    44545,
+    15538
+  ],
+  "candidate_rows": 389029,
+  "scenarios": {
+    "measured": {
+      "setup_seconds": 90,
+      "CE_seconds": 3717.8089192844136,
+      "pilot_seconds": 30,
+      "budget": {
+        "maximum_rows": 389029,
+        "selected_rows": 110629,
+        "quotas": [
+          60372,
+          33172,
+          12667,
+          4418
+        ],
+        "seconds_per_row_by_bin": [
+          0.015340556351562507,
+          0.021853253871093825,
+          0.01467167859374996,
+          0.025895882669856478
+        ],
+        "safety": 1.6,
+        "estimated_seconds": 3122.0965885614605,
+        "available_seconds": 3362.1910807155864,
+        "execution_tail_reserve": 240.0
+      }
+    },
+    "conservative": {
+      "setup_seconds": 300,
+      "CE_seconds": 4275.480257177075,
+      "pilot_seconds": 60,
+      "budget": {
+        "maximum_rows": 389029,
+        "selected_rows": 82365,
+        "quotas": [
+          44948,
+          24697,
+          9431,
+          3289
+        ],
+        "seconds_per_row_by_bin": [
+          0.015340556351562507,
+          0.021853253871093825,
+          0.01467167859374996,
+          0.025895882669856478
+        ],
+        "safety": 1.6,
+        "estimated_seconds": 2324.443674661199,
+        "available_seconds": 2564.519742822925,
+        "execution_tail_reserve": 240.0
+      }
+    },
+    "CE-deadline": {
+      "setup_seconds": 0,
+      "CE_seconds": 4680,
+      "pilot_seconds": 60,
+      "budget": {
+        "maximum_rows": 389029,
+        "selected_rows": 78662,
+        "quotas": [
+          42927,
+          23587,
+          9007,
+          3141
+        ],
+        "seconds_per_row_by_bin": [
+          0.015340556351562507,
+          0.021853253871093825,
+          0.01467167859374996,
+          0.025895882669856478
+        ],
+        "safety": 1.6,
+        "estimated_seconds": 2219.9416609935024,
+        "available_seconds": 2460,
+        "execution_tail_reserve": 240.0
+      }
+    }
+  },
+  "selection_policy": "top4% pool; one proportional reduction by actual production bin pilot, safety1.6",
+  "actual_selected_rows_known_after_production_pilot": true,
+  "minimum_backend_margin_seconds": 600,
+  "full_generation_390k_not_claimed": true,
+  "source_matches_smoke_v2": true
+}

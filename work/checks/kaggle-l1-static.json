@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "notebook_sha256": "50ac26d9db2bd31ecc66b317fcdc9be756763982bbdc1ede883a32ccb932cb62",
+  "all_code_cells_compile": true,
+  "real_CPU_first_cell_missing_secret_exit": true,
+  "startup_gate_before_install": true,
+  "T4x2_request": "NvidiaTeslaT4",
+  "server_timeout_seconds": 43200,
+  "worker_budget_seconds": 40680,
+  "hard_shutdown_seconds": 42300,
+  "no_user_secrets_in_config": true,
+  "full_cache_manifest_sha256_expected": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+  "parameter_counts": {
+    "C": 53646403,
+    "D": 103902979
+  },
+  "GPU_run_verified": false,
+  "cache_source_verified": "thisarivson/nlp-hw02-compact-cache-verified/2",
+  "full_cache_verified": true,
+  "final_gates": "../checks/kaggle-l1-final-gates.json",
+  "final_tiny_smoke_passed": true
+}

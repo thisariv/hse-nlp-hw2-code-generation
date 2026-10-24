@@ -1,0 +1,18 @@
+{
+  "kernel": "friend1/nlp-hw02-b6/1",
+  "manifest_exact": true,
+  "manifest_sha256": "dd00395d133cd5c005261bf39b41c9a967dbd36e9523b838ecfa865aae218dfe",
+  "files": [
+    {
+      "file": "model-GPU0/cooldown-updates.jsonl",
+      "bytes": 6802221,
+      "sha256": "5e0663f3b41817586216831885412022cd0ca6d94583b4a27b466900628142f2"
+    },
+    {
+      "file": "model-GPU1/cooldown-updates.jsonl",
+      "bytes": 12474090,
+      "sha256": "2a522a35f404daf636efe129de878d59ceb4b1e6f29599e2e121efd9d752f65c"
+    }
+  ],
+  "credentials_contents_read": false
+}

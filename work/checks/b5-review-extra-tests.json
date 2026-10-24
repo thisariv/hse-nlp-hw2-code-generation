@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "tests": 1,
+  "test": "b5_tests.Tests.test_b5_push_rejects_untracked_version_and_duplicate_production",
+  "cancelled_retry_positive_and_negative_cases": true,
+  "third_smoke_and_duplicate_production_rejected": true,
+  "real_static_rebuild_preserved_RUNNING_start_ETA_origin": true,
+  "modules": {
+    "kaggle/b5_review_api.py": "e2872388926e30b6818435537025dfd692a873e043dca99be4ce4f43f494fb7a",
+    "kaggle/b5_tests.py": "1a76213b2c1ebdd532b84f161ade8f089b0fdaad8c9ecf14018e26ab68b3212b",
+    "kaggle/b5_static_check.py": "6c46872f91bbcb69675e888bd74c1145dda87014b204e500b74b82fb5f7e2d79"
+  }
+}

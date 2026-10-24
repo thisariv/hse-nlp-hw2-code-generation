@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "nbformat_valid": true,
+  "executed_code_cells_exact": true,
+  "execution_counts": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "notebook_errors": 0,
+  "notebook_sha256": "ac19ca91c55a75e38f6599432542c0a72336a660c3d9d254ac78dd86b165c966",
+  "answers_rows": 1919,
+  "answers_sha256": "f9c772e41fae010c2fe9e50723cfda524dc4346c653f0319a86561ca0e7329ed",
+  "dataset_code_sha_exact": true,
+  "static_orchestration_ast": true,
+  "protected_files_unchanged": true,
+  "regression_tests": 21,
+  "regression_seconds": 17.292,
+  "all_five_historical_variants_preserved": true
+}

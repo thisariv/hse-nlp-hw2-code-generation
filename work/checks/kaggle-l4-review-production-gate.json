@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "account": "friend1",
+  "ref": "friend1/nlp-hw02-kaggle-l4/1",
+  "status": "ERROR_expected_Secrets_gate",
+  "startup_gate": {
+    "passed": false,
+    "reason": "Kaggle Secrets unavailable: KAGGLE_USERNAME, KAGGLE_KEY",
+    "action": "Attach both Secrets and use Edit -> Save Version -> Save & Run All"
+  },
+  "log_sha256": "1d4160ad3f4c82b7297b0ea3113c96aa37214e43580f32f885019a6cc9358529",
+  "reason_present_in_log": true,
+  "anchor_load_started": false,
+  "worker_spawn_started": false,
+  "training_started": false,
+  "same_source_port_as_passed_smoke": true,
+  "private": true,
+  "full_training_requires_UI_Secrets": true
+}

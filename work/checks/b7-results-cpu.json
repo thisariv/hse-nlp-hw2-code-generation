@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "producer_files": 184,
+  "missing_producer_files": 160,
+  "inherited_inputs_verified": 211,
+  "cooldown_updates_from_summaries": 98800,
+  "cooldown_step_rows_checked": 0,
+  "K8_journals": 320,
+  "K8_samples": 81920,
+  "fixed_policies": 6,
+  "grouped_split_half_repeats": 10,
+  "production_independent_parity_rows": 12288,
+  "graph_fixtures": [
+    "bridge removal splits connected components",
+    "duplicate samples preserve multiplicity",
+    "greedy code retained in winning component"
+  ],
+  "no_GPU": true,
+  "no_forward": true,
+  "no_execution": true,
+  "no_sampling": true,
+  "no_API": true
+}

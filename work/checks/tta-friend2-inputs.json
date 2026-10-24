@@ -1,0 +1,65 @@
+{
+  "created_at_utc": "2026-10-19T12:21:21.109902+00:00",
+  "files": [
+    {
+      "path": "nlp-hw02-l3-live/model-C-long2x__weights__l2-62280-fp16.pt",
+      "bytes": 107364659,
+      "sha256": "d10bf0018d0b14fd6cc3c8b9c7121f127b5cec97057544fd63e5824253a55057",
+      "source": "thisarivson/nlp-hw02-l3-live"
+    },
+    {
+      "path": "nlp-hw02-p1-weights/model-pilot-b__weights__long-truncation-fp16.pt",
+      "bytes": 107366185,
+      "sha256": "8439037720dda16dda6b73fe676860d5498bbcba4cacebc0d709bbb22db464a5",
+      "source": "thisarivson/nlp-hw02-p1-weights"
+    },
+    {
+      "path": "nlp-hw02-b4/model-GPU0/weights/b4-final-091801-fp16.pt",
+      "bytes": 226951233,
+      "sha256": "777b21996352df7c489af4efc17f6b8922ff6e005775f0f601d12143c8c1496c",
+      "source": "thisarivson/nlp-hw02-b4"
+    }
+  ],
+  "fp16_only": true,
+  "full_states": false,
+  "inputs_available": "thisarivson/nlp-hw02-26b-inputs",
+  "new_private_dataset": "friend2/nlp-hw02-tta-inputs",
+  "roundtrip_sha256_passed": true,
+  "access_probe": {
+    "cli": true,
+    "small_inputs": "accessible",
+    "C_long2x": "403",
+    "P1_B": "403",
+    "W_B4": "403"
+  },
+  "verified_at_utc": "2026-10-19T12:25:50.297946+00:00",
+  "dataset_version": 1,
+  "server_private": true,
+  "roundtrip_files": [
+    {
+      "path": "tta-weights/nlp-hw02-l3-live/model-C-long2x__weights__l2-62280-fp16.pt",
+      "sha256": "d10bf0018d0b14fd6cc3c8b9c7121f127b5cec97057544fd63e5824253a55057",
+      "bytes": 107364659
+    },
+    {
+      "path": "tta-weights/nlp-hw02-p1-weights/model-pilot-b__weights__long-truncation-fp16.pt",
+      "sha256": "8439037720dda16dda6b73fe676860d5498bbcba4cacebc0d709bbb22db464a5",
+      "bytes": 107366185
+    },
+    {
+      "path": "tta-weights/nlp-hw02-b4/model-GPU0/weights/b4-final-091801-fp16.pt",
+      "sha256": "777b21996352df7c489af4efc17f6b8922ff6e005775f0f601d12143c8c1496c",
+      "bytes": 226951233
+    }
+  ],
+  "frozen_mount_resolution_passed": true,
+  "small_input_sha256": {
+    "tokenizer.json": "261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d",
+    "test.json": "20cacb334e3fc81291433d2173d9085b17a15e1834bd84aea67b350403182503",
+    "heldout4k.json": "28a3c0c9088c5b4a17d75d216e4abc4262cc9ca62884966c43e7ec09b6f040c2",
+    "heldout4k-reference-execution.json": "3855680e9a37292aa2e351b8e8e4f7a5cbbe76444096d136470e4a9be8797111"
+  },
+  "split_module_sha256": "23659f25e6bfee015395c890f7b9fd521fae007eb0ab97efea74466110ad58c1",
+  "download_note": "Whole-dataset ZIP returned 404; all three individual server files downloaded successfully",
+  "temporary_transfer_files_deleted": true
+}

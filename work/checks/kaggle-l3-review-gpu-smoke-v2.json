@@ -1,0 +1,12 @@
+{
+  "passed": false,
+  "version": 2,
+  "status": "ERROR",
+  "training_started": false,
+  "anchor_preflight_passed": true,
+  "original_cache_SHA_passed": true,
+  "reason": "Reviewer fallback mount assumed nested own dataset, actual own mount flat; ambiguous slug",
+  "fix": "resolve_cache_mount prioritizes owner-qualified mount then direct flat mount",
+  "regression": "test_owner_qualified_mounts_disambiguate_original_and_fallback_cache",
+  "retry_version": 3
+}

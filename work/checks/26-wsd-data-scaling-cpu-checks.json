@@ -1,0 +1,341 @@
+{
+  "experiment": 26,
+  "status": "passed",
+  "code_identity": {
+    "code_sha256": "17b0f885d4c20294b34a92e23ac269e3ebc09868253a87aa3f3281263e97b4cc",
+    "modules": {
+      "exp26_cache.py": "3f15d07c4f1d01e0ac09159b215a9e77bbd861f2e5c47a6632541c01a1f2643b",
+      "exp26_common.py": "e7a3b34904721d2c6c51fbc0970872596e488b2baa40a04f04add5fb31bbb5a3",
+      "exp26_core.py": "7247eae92a09a73b62c86fee80c261d3e3a0043cb863d7bc069426d214f575ce",
+      "exp26_eval.py": "fc79ed8cea94017e9c6a25216f23409a5bebb1dbe646754313759e7dc75d855c",
+      "exp26_exec.py": "0ccc458b2e7dfec27b55f482afb673215f6c06af0f53820cf624d42c5573faa3",
+      "exp26_fast_exec.py": "061ce3617e66b3b1fc1825cbef52600f04edf3666ceefbc7f982f14383812002",
+      "exp26_input.py": "0b4ed1214cf6f6d751b9d9201bbf0eb8256e1ed03841dd00e9f06b85a5096320",
+      "exp26_order.py": "98f6e43cf31810d4e86fdbf36b37aaf8dfe7c40ec82d065f82194d7056172783",
+      "exp26_pack.py": "b91eccaa13f16cd85e9a8ce15abcbf7275e1898850a568ebc1083676e02cd7fb",
+      "exp26_protocol.py": "91d6c673a4a1ffb980c92511cd9d2072894d2ff4bd7251a1954178f15baba3c1",
+      "exp26_train.py": "0392b8fabcae875eb7972a6c69f6594974603ae81090f4c484fbc47244fb2570",
+      "exp26_workflow.py": "0e53a806cb908965bf5cf6ec89ac9da6aa2aefa622ba6f8c8516205c068d2080"
+    }
+  },
+  "smoke": {
+    "status": "passed",
+    "checks": [
+      {
+        "check": "real starterA SHA/CRC/protected counts; fresh only questions",
+        "status": "passed"
+      },
+      {
+        "check": "chunk SIGALRM/AST/finite bool; real killed worker per-task retry",
+        "status": "passed",
+        "retries": 2
+      },
+      {
+        "check": "fast filter parity versus25 evaluator on64 saved reference programs",
+        "status": "passed",
+        "fresh_executions": 0
+      },
+      {
+        "check": "26a cache two shards, per-shard resume/pilot reuse/sealed no work, explicit all4 exclusions",
+        "status": "passed",
+        "rows": 297,
+        "fresh_encoded": 0
+      },
+      {
+        "check": "26a token block resume/truncate exactly equals continuous cache",
+        "status": "passed"
+      },
+      {
+        "check": "26a reference-chunk journal survives interruption without reexecution",
+        "status": "passed",
+        "reused": 2000
+      },
+      {
+        "check": "global permutation without repeats; bucketing tail retained; collate exactly matches25",
+        "status": "passed"
+      },
+      {
+        "check": "all50k production WSD values and side endpoints verified; no LR warmup presentations added",
+        "status": "passed"
+      },
+      {
+        "check": "26b side branches restore exact uninterrupted main model/AdamW/scaler/allRNG/data cursor",
+        "status": "passed",
+        "tiny_updates": 47
+      },
+      {
+        "check": "26b session1 through third branch; session2 to final; full state bit-exact",
+        "status": "passed"
+      },
+      {
+        "check": "26b resume inside cooldown branch bit-exact",
+        "status": "passed"
+      },
+      {
+        "check": "26b disconnect after branch training/before eval; no extra training; main bit-exact",
+        "status": "passed"
+      },
+      {
+        "check": "26b interrupt inside forward discards uncommitted state, resumes verified checkpoint",
+        "status": "passed"
+      },
+      {
+        "check": "26b actual tiny greedyFP16/CE/exec/eval resume/order path; no T4 claims",
+        "status": "passed"
+      },
+      {
+        "check": "registered decisions nominal and actual exposure slopes; partial run cannot decide",
+        "status": "passed"
+      }
+    ],
+    "tiny_optimizer_updates": 275,
+    "interrupted_forwards": 1,
+    "full_A_optimizer_updates": 0,
+    "GPU_runs": 0,
+    "fresh_encoded": 0,
+    "fresh_executed": 0,
+    "smoke_model": {
+      "d_model": 16,
+      "heads": 2,
+      "encoder_layers": 1,
+      "decoder_layers": 1,
+      "swiglu_dim": 32,
+      "vocab": 8192,
+      "max_positions": 2048
+    },
+    "cache_rows": 297,
+    "runtime": {
+      "torch": "2.14.1",
+      "platform": "darwin"
+    },
+    "limitations": [
+      "Colab mount/Drive network mocked by local filesystem",
+      "full60/alltrain execution/token cache not run",
+      "T4 FP16/fusedAdamW/backends/peakmemory/2h not measured",
+      "D0 gate onT4 not rerun",
+      "fullheldout/test not generated"
+    ]
+  },
+  "AMP_numerical_fixture": {
+    "status": "passed",
+    "checks": [
+      {
+        "check": "native CPU FP16 GradScaler induced overflow: skips AdamW, halves scale, advances unique presentation cursor",
+        "status": "passed"
+      },
+      {
+        "check": "full checkpoint after skipped branch loads successful AdamW step counter/scaler; main anchor restores scale/RNG/cursor",
+        "status": "passed"
+      }
+    ],
+    "tiny_attempted_updates": 3,
+    "tiny_optimizer_updates": 1,
+    "artificial_overflow_skips": 2,
+    "T4_runs": 0,
+    "note": "CPU numerical-control fixture; does not predict real T4 AMP overflow frequency"
+  },
+  "artifact_checks": {
+    "status": "passed",
+    "code_sha256": "17b0f885d4c20294b34a92e23ac269e3ebc09868253a87aa3f3281263e97b4cc",
+    "checks": [
+      {
+        "check": "two notebook schemas/AST; identical embedded modules; clean outputs; no host paths",
+        "status": "passed"
+      },
+      {
+        "check": "real starterB SHA/CRC/files; exact normalized24 tensors/unchanged positions; D0 tensors; params12086912",
+        "status": "passed",
+        "fullA_updates": 0
+      },
+      {
+        "check": "committed report includes branch costs/unique main IDs/rates/four points, without inventing quality",
+        "status": "passed"
+      },
+      {
+        "check": "final test timer/original order/Drive copy/resume no repeat; real tiny FP16 greedy only",
+        "status": "passed"
+      },
+      {
+        "check": "both standalone packing cells without model globals; partial/complete ZIP SHA/CRC; optional one full checkpoint",
+        "status": "passed",
+        "Drive_UI": "mocked"
+      },
+      {
+        "check": "60 pinned shard size/SHA inventory; UTF8 byte boundaries512/511",
+        "status": "passed"
+      }
+    ],
+    "new_fullA_updates": 0,
+    "new_fullA_inference": 0,
+    "new_tiny_updates": 0,
+    "tiny_test_rows": 3,
+    "starter_files": {
+      "26a": {
+        "name": "26a-cache-inputs-tokenizer-and-exclusions.zip",
+        "bytes": 561667,
+        "sha256": "67356bfa699c6b701163cb9e0bce0749c2c539b949cfc26d490484e9454fae7f",
+        "files": [
+          {
+            "file": "tokenizer.json",
+            "bytes": 545866,
+            "sha256": "261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d"
+          },
+          {
+            "file": "protected-questions.json",
+            "bytes": 1489009,
+            "sha256": "7c034c9767334e4c0f1a12a14bf18353bd1d0a9bf175da251fe74473561cabab"
+          }
+        ]
+      },
+      "26b": {
+        "name": "26b-training-inputs-d0-initial-and-evaluation.zip",
+        "bytes": 98064884,
+        "sha256": "8376b6632faed4c90c83790f7775bb679c1a8bb7419bba85caa49364d0324e35",
+        "files": [
+          {
+            "file": "tokenizer.json",
+            "bytes": 545866,
+            "sha256": "261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d"
+          },
+          {
+            "file": "protected-questions.json",
+            "bytes": 1489009,
+            "sha256": "7c034c9767334e4c0f1a12a14bf18353bd1d0a9bf175da251fe74473561cabab"
+          },
+          {
+            "file": "initial.pt",
+            "bytes": 48394401,
+            "sha256": "daedd90fe51fef95dc151bc28e2f1ed0c66de80e5aa50a9ad8723ec50204c647"
+          },
+          {
+            "file": "control-D0.pt",
+            "bytes": 48394401,
+            "sha256": "1ac82d0c62686456024280aa9821a9c71067387b9b6db2911b72def9652f7109"
+          },
+          {
+            "file": "heldout4k.json",
+            "bytes": 1846416,
+            "sha256": "28a3c0c9088c5b4a17d75d216e4abc4262cc9ca62884966c43e7ec09b6f040c2"
+          },
+          {
+            "file": "old1024.json",
+            "bytes": 463882,
+            "sha256": "2ba73d6034ea8c258c3ecda5c8c110143cba7fcd800dbdbdb7ce5cc666d408b2"
+          },
+          {
+            "file": "heldout4k-reference-execution.json",
+            "bytes": 253469,
+            "sha256": "3855680e9a37292aa2e351b8e8e4f7a5cbbe76444096d136470e4a9be8797111"
+          },
+          {
+            "file": "old1024-reference-execution.json",
+            "bytes": 63093,
+            "sha256": "f7cd4cac0ff393cdd622f5d9018b762bcae1f7a397da334dbad5fca3ece2bcf3"
+          },
+          {
+            "file": "test.json",
+            "bytes": 394703,
+            "sha256": "20cacb334e3fc81291433d2173d9085b17a15e1834bd84aea67b350403182503"
+          }
+        ]
+      }
+    },
+    "notebooks": {
+      "A": {
+        "file": "26a-sharded-reference-filtered-bpe-cache.ipynb",
+        "cells": 11
+      },
+      "B": {
+        "file": "26b-wsd-data-scaling-with-side-cooldowns.ipynb",
+        "cells": 15
+      }
+    },
+    "limitations": [
+      "real GoogleDrive mount/transfer not tested",
+      "production reference/D0/heldout/test not rerun",
+      "full60 CPU cache/ETA/7M not tested",
+      "T4 AMP/fusedAdamW/SDPA/memory/~2h not tested"
+    ]
+  },
+  "starters": {
+    "26a": {
+      "name": "26a-cache-inputs-tokenizer-and-exclusions.zip",
+      "bytes": 561667,
+      "sha256": "67356bfa699c6b701163cb9e0bce0749c2c539b949cfc26d490484e9454fae7f",
+      "files": [
+        {
+          "file": "tokenizer.json",
+          "bytes": 545866,
+          "sha256": "261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d"
+        },
+        {
+          "file": "protected-questions.json",
+          "bytes": 1489009,
+          "sha256": "7c034c9767334e4c0f1a12a14bf18353bd1d0a9bf175da251fe74473561cabab"
+        }
+      ]
+    },
+    "26b": {
+      "name": "26b-training-inputs-d0-initial-and-evaluation.zip",
+      "bytes": 98064884,
+      "sha256": "8376b6632faed4c90c83790f7775bb679c1a8bb7419bba85caa49364d0324e35",
+      "files": [
+        {
+          "file": "tokenizer.json",
+          "bytes": 545866,
+          "sha256": "261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d"
+        },
+        {
+          "file": "protected-questions.json",
+          "bytes": 1489009,
+          "sha256": "7c034c9767334e4c0f1a12a14bf18353bd1d0a9bf175da251fe74473561cabab"
+        },
+        {
+          "file": "initial.pt",
+          "bytes": 48394401,
+          "sha256": "daedd90fe51fef95dc151bc28e2f1ed0c66de80e5aa50a9ad8723ec50204c647"
+        },
+        {
+          "file": "control-D0.pt",
+          "bytes": 48394401,
+          "sha256": "1ac82d0c62686456024280aa9821a9c71067387b9b6db2911b72def9652f7109"
+        },
+        {
+          "file": "heldout4k.json",
+          "bytes": 1846416,
+          "sha256": "28a3c0c9088c5b4a17d75d216e4abc4262cc9ca62884966c43e7ec09b6f040c2"
+        },
+        {
+          "file": "old1024.json",
+          "bytes": 463882,
+          "sha256": "2ba73d6034ea8c258c3ecda5c8c110143cba7fcd800dbdbdb7ce5cc666d408b2"
+        },
+        {
+          "file": "heldout4k-reference-execution.json",
+          "bytes": 253469,
+          "sha256": "3855680e9a37292aa2e351b8e8e4f7a5cbbe76444096d136470e4a9be8797111"
+        },
+        {
+          "file": "old1024-reference-execution.json",
+          "bytes": 63093,
+          "sha256": "f7cd4cac0ff393cdd622f5d9018b762bcae1f7a397da334dbad5fca3ece2bcf3"
+        },
+        {
+          "file": "test.json",
+          "bytes": 394703,
+          "sha256": "20cacb334e3fc81291433d2173d9085b17a15e1834bd84aea67b350403182503"
+        }
+      ]
+    }
+  },
+  "counts_per_verification": {
+    "checks": 23,
+    "tiny_optimizer_updates": 276,
+    "induced_AMP_skips": 2,
+    "fullA_optimizer_updates": 0,
+    "GPU_runs": 0
+  },
+  "fresh_encoded": 0,
+  "fresh_executed": 0,
+  "scope": "one complete offline CPU verification; fixture metrics are not quality results"
+}

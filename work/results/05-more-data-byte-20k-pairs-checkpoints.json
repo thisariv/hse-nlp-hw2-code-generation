@@ -1,0 +1,70 @@
+{
+  "received_on": "2026-10-07",
+  "origin": "user-provided checkpoint files; copied without changes",
+  "inspection_performed_now": {
+    "loading": "torch.load(map_location='cpu', weights_only=True)",
+    "runtime": "PyTorch 2.14.1 / CPU",
+    "training_or_inference_executed": false
+  },
+  "config": {
+    "seed": 42,
+    "batch_size_train": 8,
+    "total_steps": 10000,
+    "evaluation_steps": [
+      2000,
+      5000,
+      10000
+    ],
+    "d_model": 128,
+    "encoder_layers": 2,
+    "decoder_layers": 2,
+    "heads": 4,
+    "ffn_dim": 512,
+    "dropout": 0.1,
+    "norm_first": false,
+    "lr": 0.001,
+    "optimizer": "AdamW",
+    "weight_decay": 0.01,
+    "clip_norm": 1.0,
+    "scheduler": null,
+    "tokenizer": "UTF-8 bytes",
+    "max_positions": 2048,
+    "generation_cap": 512,
+    "batch_size_inference": 32
+  },
+  "data_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+  "train_sha256": "1304183967f02f01097d76c12fb24df30916a4ec44e54833cd3509264359300e",
+  "validation_sha256": "0edf2b479ebdc103ec05efc704c7bb0ac8084e41a8a44b58afef224702563050",
+  "received_files": [
+    {
+      "source_filename": "hw02-byte-20k-step-2000.pt",
+      "repository_relative_path": "work/results/checkpoints/05-more-data-byte-20k-pairs-step-02000.pt",
+      "sha256": "68d329983c8d327a5e5a120cfe4a4a244de8521abe6f3eac3ff4d51f5abadf1e",
+      "bytes": 15152795,
+      "steps": 2000,
+      "optimizer_step_counters": [
+        2000
+      ],
+      "parameters": 1254915,
+      "all_model_tensors_finite": true,
+      "tracked_in_git": false
+    },
+    {
+      "source_filename": "hw02-byte-20k-step-10000.pt",
+      "repository_relative_path": "work/results/checkpoints/05-more-data-byte-20k-pairs-step-10000.pt",
+      "sha256": "4ed8ff448e62e58ae654b6af9d78a78af2e5309561674592a35511ef17ce001a",
+      "bytes": 15153011,
+      "steps": 10000,
+      "optimizer_step_counters": [
+        10000
+      ],
+      "parameters": 1254915,
+      "all_model_tensors_finite": true,
+      "tracked_in_git": false
+    }
+  ],
+  "not_received": [
+    "hw02-byte-20k-step-5000.pt",
+    "hw02-byte-20k-latest.pt"
+  ]
+}

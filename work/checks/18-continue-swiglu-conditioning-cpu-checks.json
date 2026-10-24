@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-08",
+  "device": "CPU",
+  "torch": "2.14.1",
+  "training_updates": 0,
+  "checkpoint_sha256": "688f09648bb99c4bb29061fe75360ea3ab7b9847250dc9755d086950ac61507e",
+  "scope": "new forward/permutation64, complete greedy3 on saved user weights; no optimizer steps or GPU measurements",
+  "validation64_loss": {
+    "correct": 0.8169651287759792,
+    "rotated": 2.105306321508367,
+    "reversed": 2.136262977878329
+  },
+  "rotated_minus_correct": 1.288341192732388,
+  "teacher_forcing_correct_rotated_reproduces_saved_T4_within_1e-5": true,
+  "CPU_full_cached_greedy_equal": true,
+  "full_greedy_answer_matches_saved_T4": [
+    {
+      "validation_index": 4,
+      "tokens": 73,
+      "complete_answer_equal_saved_T4": true
+    },
+    {
+      "validation_index": 11,
+      "tokens": 107,
+      "complete_answer_equal_saved_T4": true
+    },
+    {
+      "validation_index": 1,
+      "tokens": 41,
+      "complete_answer_equal_saved_T4": true
+    }
+  ],
+  "model_weights_unchanged": true,
+  "limits": "Three full answers only, not1919 parity. Cases: matching numeric reference, undefined name and wrong numeric result. Not official functional evaluation; causes unresolved."
+}

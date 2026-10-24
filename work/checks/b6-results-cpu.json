@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "producer_files": 186,
+  "missing_producer_files": 158,
+  "cooldown_updates": 49400,
+  "K8_journals": 512,
+  "K8_samples": 131072,
+  "grid_configurations": 86310,
+  "eligible_140": 15486,
+  "native_python_bit_comparisons": 1118208,
+  "production_independent_parity_rows": 43008,
+  "graph_fixtures": [
+    "bridge removal splits connected components",
+    "duplicate samples preserve multiplicity",
+    "greedy code retained in winning component"
+  ],
+  "native_fixtures": [
+    "native bridge removal",
+    "native duplicate multiplicity",
+    "native empty-pool greedy fallback"
+  ],
+  "grouped_split_half_repeats": 10,
+  "no_GPU": true,
+  "no_forward": true,
+  "no_execution": true,
+  "no_sampling": true,
+  "no_API": true
+}

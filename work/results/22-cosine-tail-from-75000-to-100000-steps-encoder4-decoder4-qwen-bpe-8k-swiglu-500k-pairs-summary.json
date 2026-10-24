@@ -1,0 +1,835 @@
+{
+  "date": "2026-10-09",
+  "experiment": "22-cosine-tail-75000-to100000-encoder4-decoder4-qwen-bpe8k-swiglu-500k",
+  "source_notebook": {
+    "name": "22_cosine_tail_from_75000_to_100000_steps_encoder4_decoder4_qwen_bpe_8k_swiglu_500k_pairs.ipynb",
+    "bytes": 717551,
+    "sha256": "3d0651ebe377487962fdcda947dbfce89df283e41b3fbd53e5be90c5785becda"
+  },
+  "source_archive": {
+    "name": "hw02-encoder4-decoder4-qwen-bpe8k-swiglu-500k-cosine-tail-75000-to-100000-results.zip",
+    "bytes": 390676723,
+    "sha256": "4db40c0313f10afbf11d4a76beb2de59a729e1af9c6d40f08240c6f55697c615"
+  },
+  "stored_notebook": {
+    "file": "22-cosine-tail-from-75000-to-100000-steps-encoder4-decoder4-qwen-bpe-8k-swiglu-500k-pairs-results.ipynb",
+    "sha256": "745533b9e2b8edaa6c86f1ca6b9195fb1eb5eecbdbebc8c689c525b28703a4d9",
+    "changes": "Colab metadata only; code, markdown, original execution counts and all outputs preserved"
+  },
+  "manifest": {
+    "experiment": "22-cosine-tail-75000-to100000-encoder4-decoder4-qwen-bpe8k-swiglu-500k",
+    "actual_steps": 100000,
+    "phase": "complete",
+    "files": [
+      {
+        "name": "README.txt",
+        "bytes": 871,
+        "sha256": "435872d1e20da96042242eea899cfec1a2b8ff91a12a2935b2c319f07bd2586e"
+      },
+      {
+        "name": "fresh-heldout-reserved.json",
+        "bytes": 460807,
+        "sha256": "7de47cf272e357ef36f3a87eb1fd2574d033aaa72ea0d3e223977d176c14ece1"
+      },
+      {
+        "name": "latest.pt",
+        "bytes": 146269451,
+        "sha256": "13f8ae4ae2ee2c15fc9d034cf8773de420226e073550c9774adb1846f3e27b23"
+      },
+      {
+        "name": "results.json",
+        "bytes": 10040877,
+        "sha256": "3a4e687055e579715dbf45ff8bea22b01decae37e7ffc4f460aa61385e950a33"
+      },
+      {
+        "name": "step-100000.pt",
+        "bytes": 146272376,
+        "sha256": "5d115cf06c55f8d6245b5244d4cd622e38480fd5ef7dfe8806ba8bbcd70d4833"
+      },
+      {
+        "name": "step-75000.pt",
+        "bytes": 146271791,
+        "sha256": "44ed1391697381a07e55a2808fc5d066545dbaa0744d641585504c9a4b94d85b"
+      },
+      {
+        "name": "test-generations.json",
+        "bytes": 3632715,
+        "sha256": "f1e3c9b8483b0b7771ace4ba0be5e5f1e52134b4095aadad3236c2dad2ea13d2"
+      },
+      {
+        "name": "tokenizer.json",
+        "bytes": 545866,
+        "sha256": "261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d"
+      }
+    ]
+  },
+  "checkpoints": [
+    {
+      "source_member": "step-75000.pt",
+      "local_file": "checkpoints/22-cosine-tail-from-75000-to-100000-steps-encoder4-decoder4-qwen-bpe-8k-swiglu-500k-pairs-step-75000.pt",
+      "bytes": 146271791,
+      "sha256": "44ed1391697381a07e55a2808fc5d066545dbaa0744d641585504c9a4b94d85b",
+      "steps": 75000,
+      "finite_model_and_AdamW": true,
+      "unique_train_rows_seen": 349535,
+      "same_sampling_RNG_and_coverage_as21": true,
+      "same_Torch_CPU_CUDA_RNG_as21": true
+    },
+    {
+      "source_member": "step-100000.pt",
+      "local_file": "checkpoints/22-cosine-tail-from-75000-to-100000-steps-encoder4-decoder4-qwen-bpe-8k-swiglu-500k-pairs-step-100000.pt",
+      "bytes": 146272376,
+      "sha256": "5d115cf06c55f8d6245b5244d4cd622e38480fd5ef7dfe8806ba8bbcd70d4833",
+      "steps": 100000,
+      "finite_model_and_AdamW": true,
+      "unique_train_rows_seen": 399353,
+      "same_sampling_RNG_and_coverage_as21": true,
+      "same_Torch_CPU_CUDA_RNG_as21": true
+    },
+    {
+      "source_member": "latest.pt",
+      "local_file": "checkpoints/22-cosine-tail-from-75000-to-100000-steps-encoder4-decoder4-qwen-bpe-8k-swiglu-500k-pairs-latest-step-100000.pt",
+      "bytes": 146269451,
+      "sha256": "13f8ae4ae2ee2c15fc9d034cf8773de420226e073550c9774adb1846f3e27b23",
+      "steps": 100000,
+      "finite_model_and_AdamW": true,
+      "unique_train_rows_seen": 399353,
+      "same_sampling_RNG_and_coverage_as21": true,
+      "same_Torch_CPU_CUDA_RNG_as21": true
+    }
+  ],
+  "runtime": {
+    "device": "cuda",
+    "gpu": "Tesla T4",
+    "torch": "2.11.0+cu130",
+    "cuda": "13.0",
+    "tokenizers": "0.23.2",
+    "cpu_threads": 1
+  },
+  "config": {
+    "seed": 42,
+    "train_size": 500000,
+    "batch_size_train": 8,
+    "total_steps": 100000,
+    "evaluation_steps": [
+      75000,
+      80000,
+      85000,
+      90000,
+      95000,
+      100000
+    ],
+    "full_evaluation_steps": [
+      75000,
+      100000
+    ],
+    "d_model": 256,
+    "encoder_layers": 4,
+    "decoder_layers": 4,
+    "heads": 4,
+    "ffn_dim": 680,
+    "relu_reference_ffn_dim": 1024,
+    "dropout": 0.1,
+    "activation": "SwiGLU (SiLU gate * linear value)",
+    "ffn_bias": true,
+    "norm_first": true,
+    "lr": 0.0001,
+    "optimizer": "AdamW",
+    "weight_decay": 0.01,
+    "clip_norm": 1.0,
+    "scheduler": {
+      "name": "LambdaLR",
+      "schedule": "cosine_on_replayed_tail",
+      "total_steps": 100000,
+      "warmup_steps": 0,
+      "first_update": 75001,
+      "last_update": 100000,
+      "additional_updates": 25000,
+      "start_lr": 0.0001,
+      "eta_min": 1e-05,
+      "optimizer_base_lr": 0.001,
+      "restarts": false,
+      "step_unit": "optimizer update",
+      "indexing": "global completed-update counter restored from21; first75001=start; last100000=floor; clamped afterwards",
+      "lr_after_original_horizon": 1e-05
+    },
+    "dtype": "float32",
+    "tokenizer": "own Qwen-style byte-level BPE",
+    "vocab": 8192,
+    "content_id_offset": 3,
+    "special_ids": {
+      "pad": 0,
+      "bos": 1,
+      "eos": 2
+    },
+    "tokenizer_sha256": "261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d",
+    "max_positions": 2048,
+    "generation_cap": 512,
+    "batch_size_inference": 32,
+    "inference": "Pre-LN incremental KV cache",
+    "tokenizer_source_experiment": "19",
+    "training_from_scratch": false,
+    "trained_from_scratch_chain": true,
+    "initial_step": 75000,
+    "additional_steps_planned": 25000,
+    "ffn_initialization": "All model weights and AdamW restored from21/75000; same4+4/SwiGLU; constructor initialization is overwritten before training",
+    "parameter_change_vs18": 5780800,
+    "parameter_change_vs19": 3679552,
+    "parameter_change_vs20": 1576096,
+    "experiment_factor": "replay21/75000..100000 with cosineLR1e-4 to1e-5; same source weights/AdamW/RNG/batches/train500k/model/tokenizer/FP32/cache; existing constant1e-4 tail is the equal-budget control",
+    "data_preparation": "cached BPE IDs as16/B; FP32 weights/AdamW; no AMP",
+    "training_coverage_tracking": "per-row CPU byte flags and useful target token count, included in train timer"
+  },
+  "data": {
+    "revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+    "training_examples": 500000,
+    "shards_used": [
+      {
+        "shard": 0,
+        "path": "data/train/part-00000.parquet",
+        "bytes": 26169796,
+        "sha256": "91831d582faa12d73b1a6b3878e496446cd5df074f17ee4ffea8cc2887c708ec",
+        "source_rows": 200000,
+        "rows_scanned": 200000,
+        "question_over512": 694,
+        "code_512_or_more": 5418,
+        "eligible_rows": 194060,
+        "test_copies_excluded": 0,
+        "hash_heldout_rows_excluded": 19541,
+        "accepted_train_pairs": 174519
+      },
+      {
+        "shard": 1,
+        "path": "data/train/part-00001.parquet",
+        "bytes": 26166175,
+        "sha256": "5222d657a1af07a531f1b22503f35741a6547f0831509897d0a279bc8f67d068",
+        "source_rows": 200000,
+        "rows_scanned": 200000,
+        "question_over512": 682,
+        "code_512_or_more": 5369,
+        "eligible_rows": 194120,
+        "test_copies_excluded": 0,
+        "hash_heldout_rows_excluded": 19275,
+        "accepted_train_pairs": 174845
+      },
+      {
+        "shard": 2,
+        "path": "data/train/part-00002.parquet",
+        "bytes": 26162244,
+        "sha256": "c6082401ea966aeaa8375018ae1f1d9c7c55cc30e421c45cc933ceacd97dc3de",
+        "source_rows": 200000,
+        "rows_scanned": 172788,
+        "question_over512": 604,
+        "code_512_or_more": 4806,
+        "eligible_rows": 167523,
+        "test_copies_excluded": 0,
+        "hash_heldout_rows_excluded": 16887,
+        "accepted_train_pairs": 150636
+      }
+    ],
+    "selection": "first500k eligible non-hash-heldout, non-test rows across consecutive pinned shards0..; original100k exact prefix; question<=512/code<512 UTF8 bytes; duplicate train questions retained as before",
+    "train_sha256": "61483f4dc6970ff5f2b1afffa45d57391dcfc01ab6ec4f140c6e6b6c792c8c38",
+    "train_locations_sha256": "c2332a54a923ffa85da9ac91ec0a39a2e4ead7f7c2e328abecef702e1d306ba7",
+    "base20k_sha256": "1304183967f02f01097d76c12fb24df30916a4ec44e54833cd3509264359300e",
+    "base100k_sha256": "7a141e91ce958206be7e18d3c50b5ccf72a10f1d94890c5f0c3927aa497e47b9",
+    "base20k_prefix_unchanged": true,
+    "base100k_prefix_unchanged": true,
+    "train64_sha256": "125106742b04a01ebe70f106730c0bd9a30f52244bef86b4215f27591d200203",
+    "unique_train_questions": 485373,
+    "duplicate_question_rows": 14627,
+    "validation_examples": 64,
+    "validation64_sha256": "0edf2b479ebdc103ec05efc704c7bb0ac8084e41a8a44b58afef224702563050",
+    "extra_heldout_examples": 192,
+    "extra_heldout_sha256": "a2140e9f3e05f8ea10e4647b3a28335d4c9e240c083c14e8b23cf30a6dbe8bfc",
+    "new_heldout_examples": 768,
+    "new_heldout_sha256": "e8273f55b276a9c5d73e18ff89bc8cbf550dbfec2a25380063635fa39d3fd3bd",
+    "total_heldout_examples": 1024,
+    "heldout1024_sha256": "e187bc297218365f1a1452a15376e0ff2fceaf8a5a5517820549854b90564743",
+    "heldout256_sha256": "6735359ee7a7e1b0738f8180d810b3aaff855307ec1b067c504e099295ff37f8",
+    "question_overlap_train_heldout": 0,
+    "question_overlap_train_test": 0,
+    "fresh_heldout_reserved": {
+      "examples": 1024,
+      "pairs_sha256": "eaf5f7c00559d6b1e5650a0dd879e5b4a214931ee803f8c1f6efd956c54971b2",
+      "file": "fresh-heldout-reserved.json",
+      "train_question_overlap": 0,
+      "old_heldout_question_overlap": 0,
+      "selection": "first1024 distinct eligible hash-heldout questions from shard1 onward; no old-heldout/test copies",
+      "scope": "reserved for final comparison of selected models; not evaluated or used to tune this run"
+    },
+    "total_pair_presentations_planned": 800000,
+    "mean_pair_presentations_planned": 1.6,
+    "download_and_selection_seconds": 14.043607593999695,
+    "intervention_scope": "same exact train500k/heldout1024/test/fresh as21; replay75001..100000 with lower LR only"
+  },
+  "source_checkpoint": {
+    "uploaded_name": "hw02-encoder4-decoder4-qwen-bpe8k-swiglu-500k-100000steps-results.zip",
+    "archive_member": "step-75000.pt",
+    "sha256": "cbdc205be3842f02ea7eabc024d2417934aac2dd3de47da1058b1ccb2ff4eaa1",
+    "source_archive_sha256": "976670053c88a1f41d416595fc6ffb5be916ce7377cbb169cdfdeedac8a9c77b",
+    "step": 75000,
+    "optimizer_steps": [
+      75000
+    ],
+    "lr_next": 0.0001,
+    "scheduler_global_counter": 75000,
+    "restored": [
+      "model",
+      "AdamW",
+      "LambdaLR counter/base_lrs",
+      "Python RNG",
+      "Torch CPU RNG",
+      "per-row coverage",
+      "Torch CUDA RNG"
+    ],
+    "intervention": "only future LR function changes; source AdamW moments and counters retained"
+  },
+  "baseline_reproduction": {
+    "loss_delta_vs_saved21": 0.0,
+    "loss_close_atol1e-4": true,
+    "all1024_generated_token_ids_equal_saved21": true,
+    "reference_agreements": {
+      "saved21": 164,
+      "restored22": 164
+    },
+    "manual74_original": {
+      "scored": 74,
+      "correct": 17,
+      "wrong": 54,
+      "unknown": 3,
+      "selected_questions": 100,
+      "excluded_questions": 26,
+      "scope": "Fixed manual arithmetic evaluation labels from experiment20 audit; old adaptive heldout only; no training labels/data edited; not official pass@1.",
+      "rubric": "Manual arithmetic from questions, single numeric answer; no generated-code execution. Multi-output/missing/inconsistent/ambiguous wording excluded.473 accepts exact wage and cents-rounded7.35.557 accepts120 minutes or2 hours because output unit unspecified; unit rubric refined before final scoring and applied to all models equally.877 uses ordinary school4x interpretation;892 includes specified8 friends only. Unsupported generated AST unresolved, not automatically wrong.",
+      "augassign_supported": false
+    },
+    "manual74_augassign": {
+      "scored": 74,
+      "correct": 18,
+      "wrong": 55,
+      "unknown": 1,
+      "selected_questions": 100,
+      "excluded_questions": 26,
+      "scope": "Fixed manual arithmetic evaluation labels from experiment20 audit; old adaptive heldout only; no training labels/data edited; not official pass@1.",
+      "rubric": "Manual arithmetic from questions, single numeric answer; no generated-code execution. Multi-output/missing/inconsistent/ambiguous wording excluded.473 accepts exact wage and cents-rounded7.35.557 accepts120 minutes or2 hours because output unit unspecified; unit rubric refined before final scoring and applied to all models equally.877 uses ordinary school4x interpretation;892 includes specified8 friends only. Unsupported generated AST unresolved, not automatically wrong.",
+      "augassign_supported": true
+    },
+    "scope": "new inference on exact source weights; saved21 comparison, floating point/runtime can affect close greedy choices"
+  },
+  "training_coverage": {
+    "unique_train_rows_seen": 399353,
+    "fraction_train_rows_seen": 0.798706,
+    "pair_presentations": 800000,
+    "useful_target_tokens": 52789363,
+    "target_slots_with_padding": 85115448,
+    "target_padding_fraction": 0.37979104568655975
+  },
+  "comparison": {
+    "primary_equal_budget": {
+      "same_final_updates": 100000,
+      "same_source_checkpoint": 75000,
+      "source_checkpoint_sha256": "cbdc205be3842f02ea7eabc024d2417934aac2dd3de47da1058b1ccb2ff4eaa1",
+      "new_schedule": {
+        "name": "LambdaLR",
+        "schedule": "cosine_on_replayed_tail",
+        "total_steps": 100000,
+        "warmup_steps": 0,
+        "first_update": 75001,
+        "last_update": 100000,
+        "additional_updates": 25000,
+        "start_lr": 0.0001,
+        "eta_min": 1e-05,
+        "optimizer_base_lr": 0.001,
+        "restarts": false,
+        "step_unit": "optimizer update",
+        "indexing": "global completed-update counter restored from21; first75001=start; last100000=floor; clamped afterwards",
+        "lr_after_original_horizon": 1e-05
+      },
+      "control_tail_lr": 0.0001,
+      "loss_and_reference": {
+        "provenance": "Saved user T4 baseline saved_constant21 versus current22 cosine tail from21/75000. Saved21/100000 is the primary equal-budget constantLR control;18/19/20 are secondary architecture/tokenizer controls. No old model is rerun.",
+        "token_CE_comparable": true,
+        "heldout1024_nll_per_utf8_byte": {
+          "saved_constant21": 0.2270918305618255,
+          "current_cosine_tail22": 0.22788893124168313
+        },
+        "reference_agreements_out_of_888": {
+          "saved_constant21": 178,
+          "current_cosine_tail22": 173
+        },
+        "paired_reference_changes": {
+          "retained": 145,
+          "gained": 28,
+          "lost": 33
+        },
+        "eos_out_of_1024": {
+          "saved_constant21": 1013,
+          "current_cosine_tail22": 1017
+        },
+        "undefined_names_out_of_1024": {
+          "saved_constant21": 49,
+          "current_cosine_tail22": 45
+        },
+        "python_AST_out_of_1024": {
+          "saved_constant21": 1014,
+          "current_cosine_tail22": 1017
+        },
+        "heldout1024_token_CE": {
+          "saved_constant21": 0.7757584174523194,
+          "current_cosine_tail22": 0.7784813580373097
+        }
+      },
+      "manual74_original": {
+        "saved_summary": {
+          "scored": 74,
+          "correct": 18,
+          "wrong": 54,
+          "unknown": 2,
+          "selected_questions": 100,
+          "excluded_questions": 26,
+          "scope": "Fixed manual arithmetic evaluation labels from experiment20 audit; old adaptive heldout only; no training labels/data edited; not official pass@1.",
+          "rubric": "Manual arithmetic from questions, single numeric answer; no generated-code execution. Multi-output/missing/inconsistent/ambiguous wording excluded.473 accepts exact wage and cents-rounded7.35.557 accepts120 minutes or2 hours because output unit unspecified; unit rubric refined before final scoring and applied to all models equally.877 uses ordinary school4x interpretation;892 includes specified8 friends only. Unsupported generated AST unresolved, not automatically wrong."
+        },
+        "retained_correct": 15,
+        "gained_correct": 3,
+        "lost_correct": 3,
+        "correct_difference": 0
+      },
+      "manual74_augassign": {
+        "saved_summary": {
+          "scored": 74,
+          "correct": 19,
+          "wrong": 55,
+          "unknown": 0
+        },
+        "retained_correct": 16,
+        "gained_correct": 3,
+        "lost_correct": 3,
+        "correct_difference": 0
+      },
+      "training_seconds_new_tail": 970.6603218060036,
+      "training_seconds_saved_tail": 1025.0207949000005,
+      "scope": "existing constant tail versus cosine replay; same initial weights/AdamW/RNG/batches and final100k; separate sessions, not a paired speed benchmark"
+    },
+    "old21": {
+      "heldout1024": {
+        "examples": 1024,
+        "bpe_loss": 0.7757584174523194,
+        "reference_target_tokens_including_eos": 67962,
+        "reference_utf8_bytes": 232162,
+        "nll_sum_including_eos": 52722.09356689453,
+        "nll_per_utf8_byte": 0.2270918305618255,
+        "numeric_audit": {
+          "heldout_pairs_total": 1024,
+          "reference_numeric_pairs": 888,
+          "reference_unsupported_pairs": 136,
+          "questions_and_references_sha256": "962724938ba673e6b613f62965766e27155bb01b5cb2d72b96b7807c8a18f179",
+          "generated_statuses_on_fixed_reference_subset": {
+            "unsupported": 32,
+            "numeric": 802,
+            "arithmetic_error": 4,
+            "undefined_name": 42,
+            "syntax_error": 7,
+            "no_return": 1
+          },
+          "numeric_reference_agreements": 178,
+          "wrong_numeric_count": 624,
+          "definite_failure_count": 54,
+          "unresolved_generated_unsupported_count": 32,
+          "scope": "same heldout pairs whose reference is supported numeric arithmetic; failures stay in denominator; unsupported unresolved; references may be wrong; not official pass@1"
+        },
+        "parses_as_python_count": 1014,
+        "eos_emitted_count": 1013,
+        "token_cap_without_eos_count": 11,
+        "undefined_name_count": 49,
+        "generation_seconds_sum": 35.097250590999465,
+        "timing_scope": "sum of separately timed heldout groups, not a new single inference pass; loss/extra arithmetic excluded"
+      },
+      "manual74_original": {
+        "scored": 74,
+        "correct": 18,
+        "wrong": 54,
+        "unknown": 2,
+        "selected_questions": 100,
+        "excluded_questions": 26,
+        "scope": "Fixed manual arithmetic evaluation labels from experiment20 audit; old adaptive heldout only; no training labels/data edited; not official pass@1.",
+        "rubric": "Manual arithmetic from questions, single numeric answer; no generated-code execution. Multi-output/missing/inconsistent/ambiguous wording excluded.473 accepts exact wage and cents-rounded7.35.557 accepts120 minutes or2 hours because output unit unspecified; unit rubric refined before final scoring and applied to all models equally.877 uses ordinary school4x interpretation;892 includes specified8 friends only. Unsupported generated AST unresolved, not automatically wrong."
+      },
+      "manual74_augassign": {
+        "scored": 74,
+        "correct": 19,
+        "wrong": 55,
+        "unknown": 0
+      },
+      "test": {
+        "split": "test1919",
+        "examples": 1919,
+        "bpe_loss": null,
+        "seconds": 74.70151730199996,
+        "answers_per_second": 25.688902572647255,
+        "generated_tokens_including_eos": 130595,
+        "generated_utf8_bytes": 439080,
+        "mean_tokens_including_eos": 68.05367378843148,
+        "mean_utf8_bytes": 228.8066701406983,
+        "max_new_tokens": 512,
+        "max_output_bytes": null,
+        "batch_size_inference": 32,
+        "peak_gpu_memory_mib": 424.802734375,
+        "timer_scope": "same as08: encode, transfers, encoder/KV decode, CPU decoding and AST; excludes loss, warmup, data loading and extra arithmetic/repetition diagnostics",
+        "extra_diagnostics_seconds_excluded": 0.4577489390003393,
+        "unique_generated_code_count": 1912,
+        "most_common_generated_code_count": 3,
+        "most_common_generated_code_fraction": 0.001563314226159458,
+        "numeric_ast_scope": "restricted straight-line numeric AST; no exec/eval/calls/imports/conditions/loops/strings; unsupported not scored; reference may be wrong; not pass@1",
+        "numeric_ast_statuses": {
+          "numeric": 1712,
+          "undefined_name": 103,
+          "unsupported": 75,
+          "syntax_error": 24,
+          "arithmetic_error": 5
+        },
+        "numeric_ast_undefined_name_count": 103,
+        "repeated_tail_32_plus_count": 9,
+        "consecutive_lines_3_plus_count": 83,
+        "syntax_error_types": {
+          "SyntaxError": 22,
+          "IndentationError": 2
+        },
+        "parses_as_python_count": 1895,
+        "defines_solve_count": 1895,
+        "solve_returns_value_count": 1882,
+        "indentation_error_count": 2,
+        "valid_utf8_count": 1919,
+        "eos_emitted_count": 1891,
+        "reached_token_cap_count": 28,
+        "token_cap_without_eos_count": 28,
+        "byte_budget_stop_count": 0,
+        "bpe_tokens_per_second": 1748.2241956617343,
+        "output_bytes_per_second": 5877.792257216235,
+        "within_180_seconds": true
+      }
+    },
+    "new22": {
+      "heldout1024": {
+        "examples": 1024,
+        "bpe_loss": 0.7784813580373097,
+        "reference_target_tokens_including_eos": 67962,
+        "reference_utf8_bytes": 232162,
+        "nll_sum_including_eos": 52907.15005493164,
+        "nll_per_utf8_byte": 0.22788893124168313,
+        "numeric_audit": {
+          "heldout_pairs_total": 1024,
+          "reference_numeric_pairs": 888,
+          "reference_unsupported_pairs": 136,
+          "questions_and_references_sha256": "962724938ba673e6b613f62965766e27155bb01b5cb2d72b96b7807c8a18f179",
+          "generated_statuses_on_fixed_reference_subset": {
+            "unsupported": 30,
+            "numeric": 811,
+            "undefined_name": 40,
+            "arithmetic_error": 3,
+            "syntax_error": 3,
+            "no_return": 1
+          },
+          "numeric_reference_agreements": 173,
+          "wrong_numeric_count": 638,
+          "definite_failure_count": 47,
+          "unresolved_generated_unsupported_count": 30,
+          "scope": "same heldout pairs whose reference is supported numeric arithmetic; failures stay in denominator; unsupported unresolved; references may be wrong; not official pass@1"
+        },
+        "parses_as_python_count": 1017,
+        "eos_emitted_count": 1017,
+        "token_cap_without_eos_count": 7,
+        "undefined_name_count": 45,
+        "generation_seconds_sum": 30.891068354999334,
+        "timing_scope": "sum of separately timed heldout groups, not a new single inference pass; loss/extra arithmetic excluded"
+      },
+      "manual74_original": {
+        "scored": 74,
+        "correct": 18,
+        "wrong": 54,
+        "unknown": 2,
+        "selected_questions": 100,
+        "excluded_questions": 26,
+        "scope": "Fixed manual arithmetic evaluation labels from experiment20 audit; old adaptive heldout only; no training labels/data edited; not official pass@1.",
+        "rubric": "Manual arithmetic from questions, single numeric answer; no generated-code execution. Multi-output/missing/inconsistent/ambiguous wording excluded.473 accepts exact wage and cents-rounded7.35.557 accepts120 minutes or2 hours because output unit unspecified; unit rubric refined before final scoring and applied to all models equally.877 uses ordinary school4x interpretation;892 includes specified8 friends only. Unsupported generated AST unresolved, not automatically wrong.",
+        "augassign_supported": false
+      },
+      "manual74_augassign": {
+        "scored": 74,
+        "correct": 19,
+        "wrong": 55,
+        "unknown": 0,
+        "selected_questions": 100,
+        "excluded_questions": 26,
+        "scope": "Fixed manual arithmetic evaluation labels from experiment20 audit; old adaptive heldout only; no training labels/data edited; not official pass@1.",
+        "rubric": "Manual arithmetic from questions, single numeric answer; no generated-code execution. Multi-output/missing/inconsistent/ambiguous wording excluded.473 accepts exact wage and cents-rounded7.35.557 accepts120 minutes or2 hours because output unit unspecified; unit rubric refined before final scoring and applied to all models equally.877 uses ordinary school4x interpretation;892 includes specified8 friends only. Unsupported generated AST unresolved, not automatically wrong.",
+        "augassign_supported": true
+      },
+      "test": {
+        "split": "test1919",
+        "examples": 1919,
+        "bpe_loss": null,
+        "seconds": 57.599775898999724,
+        "answers_per_second": 33.31610184325952,
+        "generated_tokens_including_eos": 123466,
+        "generated_utf8_bytes": 413280,
+        "mean_tokens_including_eos": 64.33871808233455,
+        "mean_utf8_bytes": 215.36216779572695,
+        "max_new_tokens": 512,
+        "max_output_bytes": null,
+        "batch_size_inference": 32,
+        "peak_gpu_memory_mib": 424.98193359375,
+        "timer_scope": "same as08: encode, transfers, encoder/KV decode, CPU decoding and AST; excludes loss, warmup, data loading and extra arithmetic/repetition diagnostics",
+        "extra_diagnostics_seconds_excluded": 0.3910316439996677,
+        "unique_generated_code_count": 1908,
+        "most_common_generated_code_count": 3,
+        "most_common_generated_code_fraction": 0.001563314226159458,
+        "numeric_ast_scope": "restricted straight-line numeric AST; no exec/eval/calls/imports/conditions/loops/strings; unsupported not scored; reference may be wrong; not pass@1",
+        "numeric_ast_statuses": {
+          "numeric": 1733,
+          "unsupported": 65,
+          "undefined_name": 97,
+          "syntax_error": 16,
+          "arithmetic_error": 8
+        },
+        "numeric_ast_undefined_name_count": 97,
+        "repeated_tail_32_plus_count": 7,
+        "consecutive_lines_3_plus_count": 52,
+        "syntax_error_types": {
+          "SyntaxError": 14,
+          "IndentationError": 2
+        },
+        "parses_as_python_count": 1903,
+        "defines_solve_count": 1903,
+        "solve_returns_value_count": 1896,
+        "indentation_error_count": 2,
+        "valid_utf8_count": 1919,
+        "eos_emitted_count": 1903,
+        "reached_token_cap_count": 16,
+        "token_cap_without_eos_count": 16,
+        "byte_budget_stop_count": 0,
+        "bpe_tokens_per_second": 2143.515284095821,
+        "output_bytes_per_second": 7175.0279154675845,
+        "within_180_seconds": true
+      }
+    }
+  },
+  "test": {
+    "split": "test1919",
+    "examples": 1919,
+    "bpe_loss": null,
+    "seconds": 57.599775898999724,
+    "answers_per_second": 33.31610184325952,
+    "generated_tokens_including_eos": 123466,
+    "generated_utf8_bytes": 413280,
+    "mean_tokens_including_eos": 64.33871808233455,
+    "mean_utf8_bytes": 215.36216779572695,
+    "max_new_tokens": 512,
+    "max_output_bytes": null,
+    "batch_size_inference": 32,
+    "peak_gpu_memory_mib": 424.98193359375,
+    "timer_scope": "same as08: encode, transfers, encoder/KV decode, CPU decoding and AST; excludes loss, warmup, data loading and extra arithmetic/repetition diagnostics",
+    "extra_diagnostics_seconds_excluded": 0.3910316439996677,
+    "unique_generated_code_count": 1908,
+    "most_common_generated_code_count": 3,
+    "most_common_generated_code_fraction": 0.001563314226159458,
+    "numeric_ast_scope": "restricted straight-line numeric AST; no exec/eval/calls/imports/conditions/loops/strings; unsupported not scored; reference may be wrong; not pass@1",
+    "numeric_ast_statuses": {
+      "numeric": 1733,
+      "unsupported": 65,
+      "undefined_name": 97,
+      "syntax_error": 16,
+      "arithmetic_error": 8
+    },
+    "numeric_ast_undefined_name_count": 97,
+    "repeated_tail_32_plus_count": 7,
+    "consecutive_lines_3_plus_count": 52,
+    "syntax_error_types": {
+      "SyntaxError": 14,
+      "IndentationError": 2
+    },
+    "parses_as_python_count": 1903,
+    "defines_solve_count": 1903,
+    "solve_returns_value_count": 1896,
+    "indentation_error_count": 2,
+    "valid_utf8_count": 1919,
+    "eos_emitted_count": 1903,
+    "reached_token_cap_count": 16,
+    "token_cap_without_eos_count": 16,
+    "byte_budget_stop_count": 0,
+    "bpe_tokens_per_second": 2143.515284095821,
+    "output_bytes_per_second": 7175.0279154675845,
+    "within_180_seconds": true
+  },
+  "controls": {
+    "75000": {
+      "heldout1024": {
+        "examples": 1024,
+        "bpe_loss": 0.8240649928122172,
+        "reference_target_tokens_including_eos": 67962,
+        "reference_utf8_bytes": 232162,
+        "nll_sum_including_eos": 56005.105041503906,
+        "nll_per_utf8_byte": 0.24123286774538427,
+        "numeric_audit": {
+          "heldout_pairs_total": 1024,
+          "reference_numeric_pairs": 888,
+          "reference_unsupported_pairs": 136,
+          "questions_and_references_sha256": "962724938ba673e6b613f62965766e27155bb01b5cb2d72b96b7807c8a18f179",
+          "generated_statuses_on_fixed_reference_subset": {
+            "unsupported": 22,
+            "numeric": 802,
+            "undefined_name": 53,
+            "syntax_error": 9,
+            "arithmetic_error": 2
+          },
+          "numeric_reference_agreements": 164,
+          "wrong_numeric_count": 638,
+          "definite_failure_count": 64,
+          "unresolved_generated_unsupported_count": 22,
+          "scope": "same heldout pairs whose reference is supported numeric arithmetic; failures stay in denominator; unsupported unresolved; references may be wrong; not official pass@1"
+        },
+        "parses_as_python_count": 1012,
+        "eos_emitted_count": 1010,
+        "token_cap_without_eos_count": 14,
+        "undefined_name_count": 60,
+        "generation_seconds_sum": 38.55296132499916,
+        "timing_scope": "sum of separately timed heldout groups, not a new single inference pass; loss/extra arithmetic excluded"
+      },
+      "manual74_original": {
+        "scored": 74,
+        "correct": 17,
+        "wrong": 54,
+        "unknown": 3,
+        "selected_questions": 100,
+        "excluded_questions": 26,
+        "scope": "Fixed manual arithmetic evaluation labels from experiment20 audit; old adaptive heldout only; no training labels/data edited; not official pass@1.",
+        "rubric": "Manual arithmetic from questions, single numeric answer; no generated-code execution. Multi-output/missing/inconsistent/ambiguous wording excluded.473 accepts exact wage and cents-rounded7.35.557 accepts120 minutes or2 hours because output unit unspecified; unit rubric refined before final scoring and applied to all models equally.877 uses ordinary school4x interpretation;892 includes specified8 friends only. Unsupported generated AST unresolved, not automatically wrong.",
+        "augassign_supported": false
+      },
+      "manual74_augassign": {
+        "scored": 74,
+        "correct": 18,
+        "wrong": 55,
+        "unknown": 1,
+        "selected_questions": 100,
+        "excluded_questions": 26,
+        "scope": "Fixed manual arithmetic evaluation labels from experiment20 audit; old adaptive heldout only; no training labels/data edited; not official pass@1.",
+        "rubric": "Manual arithmetic from questions, single numeric answer; no generated-code execution. Multi-output/missing/inconsistent/ambiguous wording excluded.473 accepts exact wage and cents-rounded7.35.557 accepts120 minutes or2 hours because output unit unspecified; unit rubric refined before final scoring and applied to all models equally.877 uses ordinary school4x interpretation;892 includes specified8 friends only. Unsupported generated AST unresolved, not automatically wrong.",
+        "augassign_supported": true
+      }
+    },
+    "80000": {
+      "heldout1024": {
+        "examples": 1024,
+        "bpe_loss": 0.8111743753560698,
+        "nll_per_utf8_byte": 0.23745932968336428,
+        "reference_target_tokens_including_eos": 67962,
+        "scope": "larger fixed teacher-forced loss only; full greedy/manual controls at75k and100k"
+      },
+      "manual74_original": null,
+      "manual74_augassign": null
+    },
+    "85000": {
+      "heldout1024": {
+        "examples": 1024,
+        "bpe_loss": 0.8002006957573143,
+        "nll_per_utf8_byte": 0.23424694689509307,
+        "reference_target_tokens_including_eos": 67962,
+        "scope": "larger fixed teacher-forced loss only; full greedy/manual controls at75k and100k"
+      },
+      "manual74_original": null,
+      "manual74_augassign": null
+    },
+    "90000": {
+      "heldout1024": {
+        "examples": 1024,
+        "bpe_loss": 0.7882433345966772,
+        "nll_per_utf8_byte": 0.23074660584358928,
+        "reference_target_tokens_including_eos": 67962,
+        "scope": "larger fixed teacher-forced loss only; full greedy/manual controls at75k and100k"
+      },
+      "manual74_original": null,
+      "manual74_augassign": null
+    },
+    "95000": {
+      "heldout1024": {
+        "examples": 1024,
+        "bpe_loss": 0.7821425841528975,
+        "nll_per_utf8_byte": 0.22896070116642353,
+        "reference_target_tokens_including_eos": 67962,
+        "scope": "larger fixed teacher-forced loss only; full greedy/manual controls at75k and100k"
+      },
+      "manual74_original": null,
+      "manual74_augassign": null
+    },
+    "100000": {
+      "heldout1024": {
+        "examples": 1024,
+        "bpe_loss": 0.7784813580373097,
+        "reference_target_tokens_including_eos": 67962,
+        "reference_utf8_bytes": 232162,
+        "nll_sum_including_eos": 52907.15005493164,
+        "nll_per_utf8_byte": 0.22788893124168313,
+        "numeric_audit": {
+          "heldout_pairs_total": 1024,
+          "reference_numeric_pairs": 888,
+          "reference_unsupported_pairs": 136,
+          "questions_and_references_sha256": "962724938ba673e6b613f62965766e27155bb01b5cb2d72b96b7807c8a18f179",
+          "generated_statuses_on_fixed_reference_subset": {
+            "unsupported": 30,
+            "numeric": 811,
+            "undefined_name": 40,
+            "arithmetic_error": 3,
+            "syntax_error": 3,
+            "no_return": 1
+          },
+          "numeric_reference_agreements": 173,
+          "wrong_numeric_count": 638,
+          "definite_failure_count": 47,
+          "unresolved_generated_unsupported_count": 30,
+          "scope": "same heldout pairs whose reference is supported numeric arithmetic; failures stay in denominator; unsupported unresolved; references may be wrong; not official pass@1"
+        },
+        "parses_as_python_count": 1017,
+        "eos_emitted_count": 1017,
+        "token_cap_without_eos_count": 7,
+        "undefined_name_count": 45,
+        "generation_seconds_sum": 30.891068354999334,
+        "timing_scope": "sum of separately timed heldout groups, not a new single inference pass; loss/extra arithmetic excluded"
+      },
+      "manual74_original": {
+        "scored": 74,
+        "correct": 18,
+        "wrong": 54,
+        "unknown": 2,
+        "selected_questions": 100,
+        "excluded_questions": 26,
+        "scope": "Fixed manual arithmetic evaluation labels from experiment20 audit; old adaptive heldout only; no training labels/data edited; not official pass@1.",
+        "rubric": "Manual arithmetic from questions, single numeric answer; no generated-code execution. Multi-output/missing/inconsistent/ambiguous wording excluded.473 accepts exact wage and cents-rounded7.35.557 accepts120 minutes or2 hours because output unit unspecified; unit rubric refined before final scoring and applied to all models equally.877 uses ordinary school4x interpretation;892 includes specified8 friends only. Unsupported generated AST unresolved, not automatically wrong.",
+        "augassign_supported": false
+      },
+      "manual74_augassign": {
+        "scored": 74,
+        "correct": 19,
+        "wrong": 55,
+        "unknown": 0,
+        "selected_questions": 100,
+        "excluded_questions": 26,
+        "scope": "Fixed manual arithmetic evaluation labels from experiment20 audit; old adaptive heldout only; no training labels/data edited; not official pass@1.",
+        "rubric": "Manual arithmetic from questions, single numeric answer; no generated-code execution. Multi-output/missing/inconsistent/ambiguous wording excluded.473 accepts exact wage and cents-rounded7.35.557 accepts120 minutes or2 hours because output unit unspecified; unit rubric refined before final scoring and applied to all models equally.877 uses ordinary school4x interpretation;892 includes specified8 friends only. Unsupported generated AST unresolved, not automatically wrong.",
+        "augassign_supported": true
+      }
+    }
+  },
+  "training_seconds_new_tail": 970.6603218060036,
+  "total_chain_training_seconds": 4007.492226436997,
+  "active_wall_seconds_including_diagnostics_and_checkpoints": 1084.8809029980002,
+  "setup_seconds_through_data_and_tokenizer": 187.59659176899913,
+  "interpretation": "Mixed result: full1024 CE slightly worse, manual74 tied, reference888 down5, fewer EOS/AST/undefined-name problems and faster saved test. LR cause of plateau not confirmed.",
+  "limits": [
+    "Reference888 is a noisy reference agreement proxy, not official pass@1; references have known errors.",
+    "Same74 selected/adaptive manual cases; original and AugAssign evaluation separately preserved. Fresh1024 reserved unscored.",
+    "Only saved user GPU timing and training metrics; this analysis reruns no training or GPU.",
+    "Paired source weights/AdamW/RNG/data, single seed; no optimal LR or causal GPU speed claim.",
+    "All13 code execution counts including gaps and outputs retained; state/logs/manifest confirm completion."
+  ]
+}

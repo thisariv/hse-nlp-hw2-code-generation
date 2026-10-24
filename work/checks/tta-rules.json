@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "unit_tests": 4,
+  "train_checked": 120000,
+  "heldout_checked": 4096,
+  "rules_checked": 5,
+  "numeric_multiset": true,
+  "idempotence": true,
+  "outside_patterns": true
+}

@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "private": true,
+  "GPU": true,
+  "internet": false,
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": [
+    "thisarivson/nlp-hw02-26b-inputs"
+  ],
+  "kernel_sources": [
+    "friend1/nlp-hw02-kaggle-p1",
+    "friend1/nlp-hw02-b5"
+  ],
+  "local_code_exact": true,
+  "status": "CANCEL_ACKNOWLEDGED",
+  "quota": {
+    "free_seconds": 68797.139,
+    "used_seconds": 39202.861,
+    "reserved_seconds": 0.0
+  },
+  "checked_at_utc": "2026-10-19T08:24:13.278991+00:00"
+}

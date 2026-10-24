@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "checks": [
+    "Python AST passed",
+    "all12 original26 modules SHA unchanged locally and in S1",
+    "S2 private/pinned T4x2 metadata, notebook AST, clean outputs; S1 unchanged",
+    "all stored26 paired McNemar and27 registered decision recalculated",
+    "all1951 versioned API-listed output files present",
+    "all new notes properties/sources, changed Markdown links/JSON and files<1MiB",
+    "final Markdown links/JSON/Python AST passed; all29 files<1MiB; index unchanged after denied git add"
+  ],
+  "changed_small_files": 29,
+  "pushed": false,
+  "branch": "codex/nlp-hw2-code-generation",
+  "git_commit_attempt": "blocked_by_sandbox"
+}

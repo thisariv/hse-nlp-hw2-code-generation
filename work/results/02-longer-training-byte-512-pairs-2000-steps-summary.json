@@ -1,0 +1,421 @@
+{
+  "read_on": "2026-10-07",
+  "origin": "user-supplied saved Colab outputs; not rerun by agent",
+  "source_filename": "baseline_first_try_2000steps_results.ipynb",
+  "source_sha256": "2f8508d449b0b9157727cbf8634ec221b6d0a1afc5c54396d0839a465fd4bc9a",
+  "all_code_cells_match_prepared_experiment_ignoring_surrounding_blank_lines": true,
+  "saved_colab_result": {
+    "seed": 42,
+    "steps": 2000,
+    "training_examples": 512,
+    "validation_examples": 64,
+    "parameters": 1254915,
+    "gpu": "Tesla T4",
+    "torch_version": "2.11.0+cu130",
+    "dtype": "torch.float32",
+    "tokenizer": "UTF-8 bytes",
+    "training_seconds_reported_rounded": 51.45,
+    "training_seconds_print_precision_decimals": 2,
+    "training_log": [
+      {
+        "step": 1,
+        "train_loss": 5.694677352905273,
+        "validation_loss_16": 4.621847629547119
+      },
+      {
+        "step": 50,
+        "train_loss": 2.2257637977600098,
+        "validation_loss_16": 2.1702208518981934
+      },
+      {
+        "step": 100,
+        "train_loss": 2.0023152828216553,
+        "validation_loss_16": 2.079927682876587
+      },
+      {
+        "step": 150,
+        "train_loss": 1.9440240859985352,
+        "validation_loss_16": 2.017660617828369
+      },
+      {
+        "step": 200,
+        "train_loss": 1.816436529159546,
+        "validation_loss_16": 1.9933820962905884
+      },
+      {
+        "step": 250,
+        "train_loss": 1.9635599851608276,
+        "validation_loss_16": 1.9579659700393677
+      },
+      {
+        "step": 300,
+        "train_loss": 1.9688537120819092,
+        "validation_loss_16": 1.9070175886154175
+      },
+      {
+        "step": 350,
+        "train_loss": 1.9409300088882446,
+        "validation_loss_16": 1.9295880794525146
+      },
+      {
+        "step": 400,
+        "train_loss": 1.9714679718017578,
+        "validation_loss_16": 1.8806253671646118
+      },
+      {
+        "step": 450,
+        "train_loss": 1.7016887664794922,
+        "validation_loss_16": 1.8650327920913696
+      },
+      {
+        "step": 500,
+        "train_loss": 1.831802487373352,
+        "validation_loss_16": 1.8798538446426392
+      },
+      {
+        "step": 550,
+        "train_loss": 1.8239667415618896,
+        "validation_loss_16": 1.8875056505203247
+      },
+      {
+        "step": 600,
+        "train_loss": 1.8511826992034912,
+        "validation_loss_16": 1.8649834394454956
+      },
+      {
+        "step": 650,
+        "train_loss": 1.889114260673523,
+        "validation_loss_16": 1.8874585628509521
+      },
+      {
+        "step": 700,
+        "train_loss": 1.5770775079727173,
+        "validation_loss_16": 1.861472725868225
+      },
+      {
+        "step": 750,
+        "train_loss": 1.7664772272109985,
+        "validation_loss_16": 1.8316428661346436
+      },
+      {
+        "step": 800,
+        "train_loss": 1.6226242780685425,
+        "validation_loss_16": 1.8238731622695923
+      },
+      {
+        "step": 850,
+        "train_loss": 1.491335153579712,
+        "validation_loss_16": 1.822353720664978
+      },
+      {
+        "step": 900,
+        "train_loss": 1.7557199001312256,
+        "validation_loss_16": 1.8391906023025513
+      },
+      {
+        "step": 950,
+        "train_loss": 1.7353264093399048,
+        "validation_loss_16": 1.8558048009872437
+      },
+      {
+        "step": 1000,
+        "train_loss": 1.7093766927719116,
+        "validation_loss_16": 1.7940974235534668
+      },
+      {
+        "step": 1050,
+        "train_loss": 1.6981003284454346,
+        "validation_loss_16": 1.8262364864349365
+      },
+      {
+        "step": 1100,
+        "train_loss": 1.4582511186599731,
+        "validation_loss_16": 1.8203957080841064
+      },
+      {
+        "step": 1150,
+        "train_loss": 1.7870656251907349,
+        "validation_loss_16": 1.795036792755127
+      },
+      {
+        "step": 1200,
+        "train_loss": 1.6490871906280518,
+        "validation_loss_16": 1.7777178287506104
+      },
+      {
+        "step": 1250,
+        "train_loss": 1.5797349214553833,
+        "validation_loss_16": 1.7587648630142212
+      },
+      {
+        "step": 1300,
+        "train_loss": 1.7802479267120361,
+        "validation_loss_16": 1.7541764974594116
+      },
+      {
+        "step": 1350,
+        "train_loss": 1.3403877019882202,
+        "validation_loss_16": 1.8263362646102905
+      },
+      {
+        "step": 1400,
+        "train_loss": 1.6216175556182861,
+        "validation_loss_16": 1.7629244327545166
+      },
+      {
+        "step": 1450,
+        "train_loss": 1.8026652336120605,
+        "validation_loss_16": 1.7755553722381592
+      },
+      {
+        "step": 1500,
+        "train_loss": 1.550007700920105,
+        "validation_loss_16": 1.782498836517334
+      },
+      {
+        "step": 1550,
+        "train_loss": 1.6365814208984375,
+        "validation_loss_16": 1.8091405630111694
+      },
+      {
+        "step": 1600,
+        "train_loss": 1.2938436269760132,
+        "validation_loss_16": 1.7689286470413208
+      },
+      {
+        "step": 1650,
+        "train_loss": 1.5860830545425415,
+        "validation_loss_16": 1.7900606393814087
+      },
+      {
+        "step": 1700,
+        "train_loss": 1.3277184963226318,
+        "validation_loss_16": 1.770996332168579
+      },
+      {
+        "step": 1750,
+        "train_loss": 1.5404309034347534,
+        "validation_loss_16": 1.7854461669921875
+      },
+      {
+        "step": 1800,
+        "train_loss": 1.5294400453567505,
+        "validation_loss_16": 1.742611050605774
+      },
+      {
+        "step": 1850,
+        "train_loss": 1.6822539567947388,
+        "validation_loss_16": 1.7579792737960815
+      },
+      {
+        "step": 1900,
+        "train_loss": 1.4899301528930664,
+        "validation_loss_16": 1.7986204624176025
+      },
+      {
+        "step": 1950,
+        "train_loss": 1.4480839967727661,
+        "validation_loss_16": 1.785544514656067
+      },
+      {
+        "step": 2000,
+        "train_loss": 1.4906787872314453,
+        "validation_loss_16": 1.7727019786834717
+      }
+    ],
+    "diagnostics": [
+      {
+        "split": "train_64",
+        "examples": 64,
+        "loss": 1.3539199228447052,
+        "mean_generated_tokens": 421.078125,
+        "min_generated_tokens": 92,
+        "max_generated_tokens": 512,
+        "seconds": 12.683367304,
+        "answers_per_second": 5.045978600636763,
+        "batch_size_inference": 32,
+        "max_new_tokens": 512,
+        "eos_emitted_fraction": 0.34375,
+        "early_eos_fraction": 0.34375,
+        "reached_cap_fraction": 0.65625,
+        "parses_as_python_fraction": 0.046875,
+        "defines_solve_fraction": 0.046875
+      },
+      {
+        "split": "validation_64",
+        "examples": 64,
+        "loss": 1.8114380311731377,
+        "mean_generated_tokens": 390.0,
+        "min_generated_tokens": 102,
+        "max_generated_tokens": 512,
+        "seconds": 12.581568289000018,
+        "answers_per_second": 5.086806233524542,
+        "batch_size_inference": 32,
+        "max_new_tokens": 512,
+        "eos_emitted_fraction": 0.484375,
+        "early_eos_fraction": 0.484375,
+        "reached_cap_fraction": 0.515625,
+        "parses_as_python_fraction": 0.03125,
+        "defines_solve_fraction": 0.03125
+      }
+    ],
+    "printed_examples": [
+      {
+        "split": "train_64",
+        "question": "A group of tourists went on a hike. They hiked for 5 hours and took a 30 minute break. If they hiked in total for 10 miles, what was their average speed in miles/hour?",
+        "reference_code": "def solve() -> int:\n    total_time = 5.5 #hours\n    total_distance_travelled = 10 #miles\n    average_speed = total_distance_travelled / total_time\n    result = average_speed\n\n    return result\n",
+        "generated_code": "def solve() -> int:\n    total_tal_t = 30\n            tal_tal_tal_t = + tal_tal_t t t t tal_t t tal_t t t t tal_t t tal_t t = tal_t tal_t t tal_t t t tal_t tal_t t t t tal_t t tal_t t tal_t t t tal_t t t t tal_t tal_t tal_t t t t t = tal_tatatal_t tal_t t t t t tal_t t t tatat tat tat t tatatal_t t t tatatatat t tatatatat tat t t tatat tatat = tatatatatat tatat tatat tat t tatat tat tatatat tatat t tatat tatatat t tat tatat t tatatat tatatatat tatat t t tatatatatat tat = tatatat tatat tatat tatatatatatatatat",
+        "generated_tokens": 512,
+        "eos_emitted": false,
+        "early_eos": false,
+        "reached_cap": true,
+        "parses_as_python": false,
+        "defines_solve": false
+      },
+      {
+        "split": "train_64",
+        "question": "A ball is kicked and its height above the ground is given by the equation h(t) = -16t^2 + 32t + 15. What is the maximum height of the ball above the ground?",
+        "reference_code": "def solve() -> int:\n    a = -16\n    b = 32\n    c = 15\n    t_max = -b / (2 * a)\n    h_max = -a * (t_max**2) + b * t_max + c\n    result = h_max\n\n    return result\n",
+        "generated_code": "def solve() -> int:\n    total_tal_t = 16\n                 tal_total_tal_t = * + total_t t tal_t + t t t tal_t t t t t t t tal_t t t t t t tal_t t t t t tal_t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t t ",
+        "generated_tokens": 512,
+        "eos_emitted": false,
+        "early_eos": false,
+        "reached_cap": true,
+        "parses_as_python": false,
+        "defines_solve": false
+      },
+      {
+        "split": "train_64",
+        "question": "Kim has 4 times the number of crayons than 8 less than the number of markers she has. If she has 60 crayons, how many markers does she have?",
+        "reference_code": "def solve() -> int:\n    number_crayons = 60\n    number_markers = number_crayons // 4 + 8\n    result = number_markers\n\n    return result\n",
+        "generated_code": "def solve() -> int:\n    total_sotal_s = 40\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ",
+        "generated_tokens": 512,
+        "eos_emitted": false,
+        "early_eos": false,
+        "reached_cap": true,
+        "parses_as_python": true,
+        "defines_solve": true
+      },
+      {
+        "split": "validation_64",
+        "question": "Mark has 10 crayons. He gives 2 crayons to his younger sister and loses another 4 while he was playing. How many crayons does Mark have left?",
+        "reference_code": "def solve() -> int:\n    crayonsTotal = 10\n    crayonsGiven = 2\n    crayonsLost = 4\n    crayonsLeft = crayonsTotal - crayonsGiven - crayonsLost\n    result = crayonsLeft\n\n    return result\n",
+        "generated_code": "def solve() -> int:\n    total_pes = 40\n              talotal_pes = 4\n      = tal_pes_per_per_per_per_per_per_per_per_per_per_day = * toay tototototototay totay tay tay tay tay tay tay tay tay tay tay tay tay tay tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_t              =      = tal_tal_tal_tal_tal_tal_tal_tal_tal_t  rs rs rs rs rs rs rs rs rs\n res\n res\n    res\n  resuresuresuresuresuresuresuresuresuresuresuresuresuresuresuresuresuresuresuresure",
+        "generated_tokens": 512,
+        "eos_emitted": false,
+        "early_eos": false,
+        "reached_cap": true,
+        "parses_as_python": false,
+        "defines_solve": false
+      },
+      {
+        "split": "validation_64",
+        "question": "Student: Allen's father can mow the lawn in 2 hours. Allen's mother can mow the lawn in 4 hours. If they both work together to mow the lawn, how much time will it take?",
+        "reference_code": "def solve() -> int:\n    father_time = 2\n    mother_time = 4\n    total_time = father_time + mother_time\n    result = total_time\n\n    return result\n",
+        "generated_code": "def solve() -> int:\n    total_tot = 4\n               totototal_l_l_l_l_l_l_l_l_l_l_l_l_lot = - - - t t t t t t t t - ret ret ret retult\n  ret\n          ret\n     ret\n       ret\n",
+        "generated_tokens": 177,
+        "eos_emitted": true,
+        "early_eos": true,
+        "reached_cap": false,
+        "parses_as_python": false,
+        "defines_solve": false
+      },
+      {
+        "split": "validation_64",
+        "question": "Every morning, Sarah jogs around a circular track that is 0.4 miles long, while her sister, Liz, runs at three times her speed. During their workout, how many times does Liz circle the track?",
+        "reference_code": "def solve() -> int:\n    track_length = 0.4  # miles\n    \n    sarah_speed = 1  # unit: times the track length per hour\n    \n    liz_speed = 3 * sarah_speed  # unit: times the track length per hour\n    \n    liz_circles = liz_speed / sarah_speed\n    \n    result = liz_circles\n    \n    return result\n",
+        "generated_code": "def solve() -> int:\n    total_cokin_cokin_cokin_cokin_ty = 4\n           = 4\n         tokin_cokin_cokin_cokin_cokin_cokin_cokin_cokin_cokin_tarokin_cokin_tarokin_cokin_cokin_cokin_ty = 4\n  =  4\n               tin_cokin_cokin_cokin_tin_cokin_cokin_tin_tin_tin_cokin_tin_cokin_tin_tin_tin_tin_tin_tin_tin_tin_cokin_cokin_tin_tin_tin_tin_tin_tin_cokin_cokin_cokin_tin_tin_tin_cokin_tin_tin_cokin_cokin_tin_tin_cokin_cokin_tin_tin_tin_tin_tin_tin_tin_tin_tin_cokin_cokin_cokin_cokin_tin_tin_cokin_cokin_tin_cokin_tin_",
+        "generated_tokens": 512,
+        "eos_emitted": false,
+        "early_eos": false,
+        "reached_cap": true,
+        "parses_as_python": false,
+        "defines_solve": false
+      }
+    ],
+    "test": {
+      "batch_size_inference": 32,
+      "max_new_tokens": 512,
+      "test_examples": 1919,
+      "completed": 896,
+      "seconds": 184.11607795600003,
+      "answers_per_second": 4.866495147773708,
+      "generated_tokens": 363320,
+      "tokens_per_second": 1973.320331572705,
+      "mean_generated_tokens": 405.49107142857144,
+      "eos_emitted_fraction": 0.36607142857142855,
+      "early_eos_fraction": 0.36495535714285715,
+      "reached_cap_fraction": 0.6350446428571429,
+      "complete": false,
+      "within_180_seconds": false,
+      "peak_gpu_memory_mib": 604.75341796875,
+      "timer_scope": "encoding, transfers, greedy generation, CPU decoding, predictions save"
+    },
+    "functional_quality_evaluated": false
+  },
+  "derived_checks_performed_now": {
+    "historical_val_loss_16_at_200": 2.020599365234375,
+    "same_run_val_loss_16_at_200": 1.9933820962905884,
+    "val_loss_16_at_2000": 1.7727019786834717,
+    "relative_val_loss_16_drop_from_historical_run": 0.1226850759314917,
+    "best_logged_val_loss_16": {
+      "step": 1800,
+      "train_loss": 1.5294400453567505,
+      "validation_loss_16": 1.742611050605774
+    },
+    "training_pair_presentations": 16000,
+    "mean_training_pair_presentations_per_example": 31.25,
+    "diagnostic_counts": {
+      "train_64": {
+        "eos_emitted": 22,
+        "early_eos": 22,
+        "reached_cap": 42,
+        "parses_as_python": 3,
+        "defines_solve": 3
+      },
+      "validation_64": {
+        "eos_emitted": 31,
+        "early_eos": 31,
+        "reached_cap": 33,
+        "parses_as_python": 2,
+        "defines_solve": 2
+      }
+    },
+    "printed_example_ast_checks": [
+      {
+        "split": "train_64",
+        "parses_as_python": false,
+        "return_nodes_if_parses": null
+      },
+      {
+        "split": "train_64",
+        "parses_as_python": false,
+        "return_nodes_if_parses": null
+      },
+      {
+        "split": "train_64",
+        "parses_as_python": true,
+        "return_nodes_if_parses": 0
+      },
+      {
+        "split": "validation_64",
+        "parses_as_python": false,
+        "return_nodes_if_parses": null
+      },
+      {
+        "split": "validation_64",
+        "parses_as_python": false,
+        "return_nodes_if_parses": null
+      },
+      {
+        "split": "validation_64",
+        "parses_as_python": false,
+        "return_nodes_if_parses": null
+      }
+    ]
+  },
+  "available_generation_details": "aggregate metrics for 64 train and 64 validation; only 3 printed programs from each split",
+  "full_results_json_checkpoint_and_test_predictions_provided": false,
+  "programs_executed_now": 0,
+  "gpu_training_or_inference_rerun_now": false
+}

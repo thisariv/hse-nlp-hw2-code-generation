@@ -1,0 +1,138 @@
+{
+  "phase": "C",
+  "source": {
+    "id": "kaggle-s1-v1",
+    "ref": "thisarivson/nlp-hw02-kaggle-s1/1",
+    "version": 1,
+    "version_label": "v1",
+    "Kaggle_status": "COMPLETE",
+    "output": "kaggle-runs/nlp-hw02-kaggle-s1/1",
+    "download": {
+      "ref": "thisarivson/nlp-hw02-kaggle-s1/1",
+      "version_label": "v1",
+      "files": 1951,
+      "CLI_224_compatibility": true,
+      "path": "kaggle-runs/nlp-hw02-kaggle-s1/1"
+    },
+    "archive": {
+      "file": "s1-results.zip",
+      "bytes": 350077134,
+      "sha256": "e834fe795d2212bedb0b22c17fa4953e26f62f561d829578b6eb9aee01a6ae43",
+      "manifest_files": 1906,
+      "CRC": "passed",
+      "all_SHA_bytes": "passed"
+    },
+    "summary_SHA256": {
+      "s1-summary.json": "e5d57eef047b0f59c7c2112c2f6b030112a8d3d23b675a346f92e5d9c1d7511a",
+      "gpu0-a26/26b-final-summary.json": "5d1dfd1ac61f0d64fc4f6c20184f73bc452da3e6b4f30a0ef46b76f64cb31656",
+      "gpu0-exp27/27-summary.json": "84f9bd012f54b62e1d221b73f3529d8cde4ed8d41420844a1df2eeb932976c26",
+      "gpu1-exp28/28-summary.json": "0affb9d2f055acbce643cfcf89fa0136372694f8263b3e66d5f69178ac501f63"
+    }
+  },
+  "status": "partial session;26b and27 complete,28 failed before training",
+  "experiments": {
+    "26b": "26b-final-summary.json",
+    "27": "27-execution-voting-decoding-summary.json",
+    "28": "28-capacity-b-equal-training-time-summary.json"
+  },
+  "resources": {
+    "session_summary": {
+      "status": "partial",
+      "exit_codes": [
+        0,
+        1
+      ],
+      "wall_seconds": 3884.921061,
+      "budget_seconds": 10800,
+      "GPU_launch": true,
+      "processes": 2
+    },
+    "kernel_log_last_elapsed_seconds": 3916.438095119,
+    "wall_minutes_before_archive": 64.74868435,
+    "wall_minutes_including_archive_and_export_proxy": 65.27396825198333,
+    "GPU_runtime": [
+      {
+        "gpu": "Tesla T4",
+        "torch": "2.11.0+cu128",
+        "CUDA": "12.8",
+        "SDPA": {
+          "flash": true,
+          "mem_efficient": true,
+          "math": true,
+          "cudnn": true
+        },
+        "exec_workers": 2,
+        "torch_threads": 1,
+        "visible_devices": "0"
+      },
+      {
+        "gpu": "Tesla T4",
+        "torch": "2.11.0+cu128",
+        "CUDA": "12.8",
+        "SDPA": {
+          "flash": true,
+          "mem_efficient": true,
+          "math": true,
+          "cudnn": true
+        },
+        "exec_workers": 2,
+        "torch_threads": 1,
+        "visible_devices": "1"
+      }
+    ],
+    "GPU0_work": "D0 gate + A3125 attempted updates +27 grid/test",
+    "GPU1_work": "failed CPU reference gate before D0/model B; no B updates",
+    "GPU1_first_failed_heartbeat_kernel_seconds": 79.914685588,
+    "GPU_utilisation_percent": null,
+    "Kaggle_account_quota_delta": null,
+    "quota_note": "two T4 allocated for about65.3min; account quota balance not read; not3h budget spent",
+    "S1_AMP_skips": 1,
+    "historical_all_compute_AMP_skips": 10,
+    "final_A_trajectory_AMP_skips": 9,
+    "27_peak_reserved_bytes": 15474884608,
+    "27_exec_chunk_retries": 3
+  },
+  "CPU_audit": {
+    "status": "passed",
+    "saved_program_rows": 531755,
+    "unique_programs": 325391,
+    "greedy_scores": 12,
+    "voting_scores": 50,
+    "test_winner_sets": 3,
+    "all_execution_results_exact": true,
+    "full_CPU_CE": {
+      "heldout4k": {
+        "CE": 0.3149203963180559,
+        "useful_target_tokens": 269613,
+        "rows": 4096,
+        "precision": "FP32",
+        "batch": 32,
+        "seconds": 64.115032290807,
+        "saved_GPU_CE": 0.3149237286406813,
+        "absolute_difference": 3.3323226253934024e-06
+      },
+      "old1024": {
+        "CE": 0.3310143674038433,
+        "useful_target_tokens": 67962,
+        "rows": 1024,
+        "precision": "FP32",
+        "batch": 32,
+        "seconds": 16.633829792030156,
+        "saved_GPU_CE": 0.33101758611429916,
+        "absolute_difference": 3.21871045583233e-06
+      }
+    }
+  },
+  "resume_prepared": true,
+  "pushed": false,
+  "git": {
+    "branch": "codex/nlp-hw2-code-generation",
+    "phase_b_commit": "35ddb46",
+    "phase_c_commit_attempt": "blocked_by_sandbox",
+    "error": "Cannot create shared worktree index.lock: Operation not permitted",
+    "index_changed": false,
+    "commit_message": "nlp: analyze S1 and prepare pinned S2 for capacity B",
+    "manual_commands": "../kaggle/README.md#коммит-фазы-c"
+  },
+  "static_verification": "../checks/kaggle-s1-phase-c-static-checks.json"
+}

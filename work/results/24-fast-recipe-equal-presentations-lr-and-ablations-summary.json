@@ -1,0 +1,621 @@
+{
+  "experiment": 24,
+  "status": "complete",
+  "source": {
+    "ZIP": "hw02-fast-recipe-equal-presentations-lr-and-ablations-results.zip",
+    "ZIP_SHA256": "0a184d0a86a34098d2313926a2f83448e21c5972abd55fecc96a28a8cfebaae1",
+    "notebook": "24_fast_recipe_equal_presentations_lr_and_ablations.ipynb",
+    "notebook_SHA256": "38b6eddb06b47bdd5fdd24048fe49dec3b1a4edd14ae564d991831c229af2087"
+  },
+  "model": {
+    "d_model": 256,
+    "heads": 4,
+    "encoder_layers": 4,
+    "decoder_layers": 4,
+    "swiglu_dim": 680,
+    "parameters": 12086912
+  },
+  "data": {
+    "revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+    "train_rows": 500000,
+    "heldout_rows": 1024,
+    "test_rows": 1919,
+    "train_sha256": "61483f4dc6970ff5f2b1afffa45d57391dcfc01ab6ec4f140c6e6b6c792c8c38",
+    "locations_sha256": "c2332a54a923ffa85da9ac91ec0a39a2e4ead7f7c2e328abecef702e1d306ba7",
+    "heldout_sha256": "e187bc297218365f1a1452a15376e0ff2fceaf8a5a5517820549854b90564743",
+    "shards": [
+      {
+        "path": "data/train/part-00000.parquet",
+        "bytes": 26169796,
+        "sha256": "91831d582faa12d73b1a6b3878e496446cd5df074f17ee4ffea8cc2887c708ec"
+      },
+      {
+        "path": "data/train/part-00001.parquet",
+        "bytes": 26166175,
+        "sha256": "5222d657a1af07a531f1b22503f35741a6547f0831509897d0a279bc8f67d068"
+      },
+      {
+        "path": "data/train/part-00002.parquet",
+        "bytes": 26162244,
+        "sha256": "c6082401ea966aeaa8375018ae1f1d9c7c55cc30e421c45cc933ceacd97dc3de"
+      }
+    ],
+    "selection_seconds": 13.051634676000049,
+    "filter_reference_non_number": false,
+    "fresh_heldout_not_evaluated": true,
+    "bpe_cache_seconds": 143.207164165,
+    "source_tokens": 24187619,
+    "target_tokens": 32988665,
+    "fresh_protection": {
+      "questions": 1024,
+      "pairs_sha256": "eaf5f7c00559d6b1e5650a0dd879e5b4a214931ee803f8c1f6efd956c54971b2",
+      "usage": "exclusion set only; not encoded/evaluated/saved/modified"
+    },
+    "heldout4k_pairs_sha256": "6b0d0d559a56921faac1842e3508889225af1fe1ad8e04de378840bc4df8b047",
+    "heldout4k_file_sha256": "28a3c0c9088c5b4a17d75d216e4abc4262cc9ca62884966c43e7ec09b6f040c2",
+    "heldout4k_examples": 4096,
+    "counts_per_launch": {
+      "pairs": 800000,
+      "source_tokens": 38706084,
+      "target_tokens": 52797347
+    }
+  },
+  "rows": [
+    {
+      "id": "control22",
+      "config": {
+        "id": "control22",
+        "source_step": 100000,
+        "precision": "FP16 sorted b512 greedy cap512"
+      },
+      "heldout4k": 820,
+      "heldout4k_pct": 20.01953125,
+      "old991": 190,
+      "old991_pct": 19.17255297679112,
+      "CE4k": 0.77507343859532,
+      "CE_old1024": 0.7784813342382508,
+      "length_bins": {
+        "<60": {
+          "denominator": 2013,
+          "matches": 700,
+          "accuracy": 0.34773969200198707
+        },
+        "60–90": {
+          "denominator": 1457,
+          "matches": 106,
+          "accuracy": 0.0727522306108442
+        },
+        "90–120": {
+          "denominator": 488,
+          "matches": 11,
+          "accuracy": 0.022540983606557378
+        },
+        "≥120": {
+          "denominator": 138,
+          "matches": 3,
+          "accuracy": 0.021739130434782608
+        }
+      },
+      "generation_statuses4k": {
+        "numeric": 3837,
+        "execution_error": 211,
+        "syntax_error": 24,
+        "non_number": 22,
+        "timeout": 2
+      },
+      "generation_diagnostics": {
+        "heldout4k": {
+          "unique_programs": 4060,
+          "EOS": 4064,
+          "cap": 32
+        },
+        "old1024": {
+          "unique_programs": 1022,
+          "EOS": 1017,
+          "cap": 7
+        }
+      }
+    },
+    {
+      "id": "R1",
+      "config": {
+        "id": "R1",
+        "peak_lr": 0.001,
+        "batch": 128,
+        "updates": 6250,
+        "dropout": 0.1,
+        "scaled_token_init": false
+      },
+      "heldout4k": 739,
+      "heldout4k_pct": 18.0419921875,
+      "old991": 178,
+      "old991_pct": 17.961654894046415,
+      "CE4k": 0.8653978109364163,
+      "CE_old1024": 0.8658482290655072,
+      "length_bins": {
+        "<60": {
+          "denominator": 2013,
+          "matches": 651,
+          "accuracy": 0.323397913561848
+        },
+        "60–90": {
+          "denominator": 1457,
+          "matches": 81,
+          "accuracy": 0.055593685655456415
+        },
+        "90–120": {
+          "denominator": 488,
+          "matches": 4,
+          "accuracy": 0.00819672131147541
+        },
+        "≥120": {
+          "denominator": 138,
+          "matches": 3,
+          "accuracy": 0.021739130434782608
+        }
+      },
+      "generation_statuses4k": {
+        "numeric": 3875,
+        "execution_error": 191,
+        "syntax_error": 21,
+        "non_number": 8,
+        "non_finite": 1
+      },
+      "generation_diagnostics": {
+        "heldout4k": {
+          "unique_programs": 4064,
+          "EOS": 4079,
+          "cap": 17
+        },
+        "old1024": {
+          "unique_programs": 1020,
+          "EOS": 1013,
+          "cap": 11
+        }
+      },
+      "train_seconds": 769.8265325749999,
+      "train_min": 12.830442209583332,
+      "pairs_per_second": 1039.1951513077531,
+      "target_tokens_per_second": 68583.43375539119,
+      "peak_reserved_GB": 13.289652224,
+      "peak_allocated_GB": 7.643038208,
+      "AMP_skips": 0,
+      "padding": 0.30224332332139614,
+      "speedup_saved22": 5.20570811327105,
+      "McNemar22": {
+        "gains": 176,
+        "losses": 257,
+        "discordant": 433,
+        "exact_two_sided_p": 0.00011578704248508488,
+        "delta_percentage_points": -1.9775390625
+      },
+      "train_log_last_CE": 0.7669517910480499
+    },
+    {
+      "id": "R2",
+      "config": {
+        "id": "R2",
+        "peak_lr": 0.002,
+        "batch": 128,
+        "updates": 6250,
+        "dropout": 0.1,
+        "scaled_token_init": false
+      },
+      "heldout4k": 916,
+      "heldout4k_pct": 22.36328125,
+      "old991": 220,
+      "old991_pct": 22.199798183652874,
+      "CE4k": 0.7301659577802257,
+      "CE_old1024": 0.7349898886510109,
+      "length_bins": {
+        "<60": {
+          "denominator": 2013,
+          "matches": 779,
+          "accuracy": 0.3869846000993542
+        },
+        "60–90": {
+          "denominator": 1457,
+          "matches": 127,
+          "accuracy": 0.08716540837336993
+        },
+        "90–120": {
+          "denominator": 488,
+          "matches": 8,
+          "accuracy": 0.01639344262295082
+        },
+        "≥120": {
+          "denominator": 138,
+          "matches": 2,
+          "accuracy": 0.014492753623188406
+        }
+      },
+      "generation_statuses4k": {
+        "numeric": 3937,
+        "execution_error": 130,
+        "non_number": 16,
+        "syntax_error": 13
+      },
+      "generation_diagnostics": {
+        "heldout4k": {
+          "unique_programs": 4070,
+          "EOS": 4074,
+          "cap": 22
+        },
+        "old1024": {
+          "unique_programs": 1019,
+          "EOS": 1018,
+          "cap": 6
+        }
+      },
+      "train_seconds": 775.6796479020002,
+      "train_min": 12.927994131700002,
+      "pairs_per_second": 1031.353603467333,
+      "target_tokens_per_second": 68065.91760245648,
+      "peak_reserved_GB": 13.29594368,
+      "peak_allocated_GB": 7.643038208,
+      "AMP_skips": 0,
+      "padding": 0.30224332332139614,
+      "speedup_saved22": 5.166426935753903,
+      "McNemar22": {
+        "gains": 254,
+        "losses": 158,
+        "discordant": 412,
+        "exact_two_sided_p": 2.595313944554095e-06,
+        "delta_percentage_points": 2.34375
+      },
+      "train_log_last_CE": 0.6545284605026245
+    },
+    {
+      "id": "R3",
+      "config": {
+        "id": "R3",
+        "peak_lr": 0.004,
+        "batch": 128,
+        "updates": 6250,
+        "dropout": 0.1,
+        "scaled_token_init": false
+      },
+      "heldout4k": 535,
+      "heldout4k_pct": 13.0615234375,
+      "old991": 132,
+      "old991_pct": 13.319878910191726,
+      "CE4k": 0.7698111506121738,
+      "CE_old1024": 0.7821458935692004,
+      "length_bins": {
+        "<60": {
+          "denominator": 2013,
+          "matches": 467,
+          "accuracy": 0.23199205166418282
+        },
+        "60–90": {
+          "denominator": 1457,
+          "matches": 62,
+          "accuracy": 0.0425531914893617
+        },
+        "90–120": {
+          "denominator": 488,
+          "matches": 5,
+          "accuracy": 0.010245901639344262
+        },
+        "≥120": {
+          "denominator": 138,
+          "matches": 1,
+          "accuracy": 0.007246376811594203
+        }
+      },
+      "generation_statuses4k": {
+        "numeric": 3956,
+        "non_number": 18,
+        "execution_error": 92,
+        "syntax_error": 28,
+        "timeout": 2
+      },
+      "generation_diagnostics": {
+        "heldout4k": {
+          "unique_programs": 4050,
+          "EOS": 4063,
+          "cap": 33
+        },
+        "old1024": {
+          "unique_programs": 1018,
+          "EOS": 1019,
+          "cap": 5
+        }
+      },
+      "train_seconds": 769.8039212079998,
+      "train_min": 12.830065353466663,
+      "pairs_per_second": 1039.2256754741072,
+      "target_tokens_per_second": 68585.44824914479,
+      "peak_reserved_GB": 13.29594368,
+      "peak_allocated_GB": 7.643038208,
+      "AMP_skips": 0,
+      "padding": 0.30224332332139614,
+      "speedup_saved22": 5.2058610199702775,
+      "McNemar22": {
+        "gains": 115,
+        "losses": 400,
+        "discordant": 515,
+        "exact_two_sided_p": 6.579051139823467e-38,
+        "delta_percentage_points": -6.9580078125
+      },
+      "train_log_last_CE": 0.6999500167369842
+    },
+    {
+      "id": "R4",
+      "config": {
+        "id": "R4",
+        "peak_lr": 0.002,
+        "batch": 128,
+        "updates": 6250,
+        "dropout": 0.0,
+        "scaled_token_init": false
+      },
+      "heldout4k": 880,
+      "heldout4k_pct": 21.484375,
+      "old991": 207,
+      "old991_pct": 20.887991927346114,
+      "CE4k": 0.7792936078749912,
+      "CE_old1024": 0.782613468739884,
+      "length_bins": {
+        "<60": {
+          "denominator": 2013,
+          "matches": 764,
+          "accuracy": 0.37953303527074017
+        },
+        "60–90": {
+          "denominator": 1457,
+          "matches": 103,
+          "accuracy": 0.07069320521619767
+        },
+        "90–120": {
+          "denominator": 488,
+          "matches": 11,
+          "accuracy": 0.022540983606557378
+        },
+        "≥120": {
+          "denominator": 138,
+          "matches": 2,
+          "accuracy": 0.014492753623188406
+        }
+      },
+      "generation_statuses4k": {
+        "numeric": 3802,
+        "execution_error": 234,
+        "non_number": 18,
+        "syntax_error": 42
+      },
+      "generation_diagnostics": {
+        "heldout4k": {
+          "unique_programs": 4067,
+          "EOS": 4063,
+          "cap": 33
+        },
+        "old1024": {
+          "unique_programs": 1022,
+          "EOS": 1014,
+          "cap": 10
+        }
+      },
+      "train_seconds": 729.551323144,
+      "train_min": 12.159188719066666,
+      "pairs_per_second": 1096.5643877560274,
+      "target_tokens_per_second": 72369.61311024691,
+      "peak_reserved_GB": 13.249806336,
+      "peak_allocated_GB": 7.33967616,
+      "AMP_skips": 0,
+      "padding": 0.30224332332139614,
+      "speedup_saved22": 5.493091574649906,
+      "McNemar22": {
+        "gains": 254,
+        "losses": 194,
+        "discordant": 448,
+        "exact_two_sided_p": 0.005254225978134171,
+        "delta_percentage_points": 1.46484375
+      },
+      "train_log_last_CE": 0.6027958583831787
+    },
+    {
+      "id": "R5",
+      "config": {
+        "id": "R5",
+        "peak_lr": 0.002,
+        "batch": 128,
+        "updates": 6250,
+        "dropout": 0.1,
+        "scaled_token_init": true
+      },
+      "heldout4k": 1602,
+      "heldout4k_pct": 39.111328125,
+      "old991": 406,
+      "old991_pct": 40.96871846619577,
+      "CE4k": 0.49144607270420937,
+      "CE_old1024": 0.49967962335569877,
+      "length_bins": {
+        "<60": {
+          "denominator": 2013,
+          "matches": 1195,
+          "accuracy": 0.5936413313462494
+        },
+        "60–90": {
+          "denominator": 1457,
+          "matches": 355,
+          "accuracy": 0.24365133836650651
+        },
+        "90–120": {
+          "denominator": 488,
+          "matches": 49,
+          "accuracy": 0.10040983606557377
+        },
+        "≥120": {
+          "denominator": 138,
+          "matches": 3,
+          "accuracy": 0.021739130434782608
+        }
+      },
+      "generation_statuses4k": {
+        "numeric": 3916,
+        "execution_error": 153,
+        "non_number": 16,
+        "syntax_error": 11
+      },
+      "generation_diagnostics": {
+        "heldout4k": {
+          "unique_programs": 4056,
+          "EOS": 4082,
+          "cap": 14
+        },
+        "old1024": {
+          "unique_programs": 1023,
+          "EOS": 1023,
+          "cap": 1
+        }
+      },
+      "train_seconds": 776.9073420000004,
+      "train_min": 12.948455700000007,
+      "pairs_per_second": 1029.7238251611213,
+      "target_tokens_per_second": 67958.35763899882,
+      "peak_reserved_GB": 13.29594368,
+      "peak_allocated_GB": 7.643038208,
+      "AMP_skips": 0,
+      "padding": 0.30224332332139614,
+      "speedup_saved22": 5.158262780887704,
+      "McNemar22": {
+        "gains": 856,
+        "losses": 74,
+        "discordant": 930,
+        "exact_two_sided_p": 1.716149404615067e-169,
+        "delta_percentage_points": 19.091796875
+      },
+      "train_log_last_CE": 0.43699324667453765
+    }
+  ],
+  "decision": {
+    "best_LR_run": "R2",
+    "best_run": {
+      "id": "R5",
+      "accepted": true,
+      "old991_accuracy": 0.40968718466195764,
+      "heldout4k_delta_pp": 19.091796875
+    },
+    "batch128_recipe": {
+      "id": "R5",
+      "accepted": true,
+      "old991_accuracy": 0.40968718466195764,
+      "heldout4k_delta_pp": 19.091796875
+    },
+    "ablations": {
+      "R4": {
+        "accepted": false,
+        "clear_gain": false,
+        "delta_pp": -0.87890625,
+        "McNemar_against_best_LR": {
+          "gains": 201,
+          "losses": 237,
+          "discordant": 438,
+          "exact_two_sided_p": 0.09433971363378892,
+          "delta_percentage_points": -0.87890625
+        }
+      },
+      "R5": {
+        "accepted": true,
+        "clear_gain": true,
+        "delta_pp": 16.748046875,
+        "McNemar_against_best_LR": {
+          "gains": 782,
+          "losses": 96,
+          "discordant": 878,
+          "exact_two_sided_p": 1.951651094427322e-134,
+          "delta_percentage_points": 16.748046875
+        }
+      }
+    },
+    "R6_condition": false,
+    "interpretation": "Acceptance thresholds are protocol rules, not statistical proof; timings measured separately. If only R6 passes, batch128 hypothesis is not confirmed."
+  },
+  "runtime": [
+    {
+      "runtime": {
+        "gpu": "Tesla T4",
+        "torch": "2.11.0+cu130",
+        "CUDA": "13.0",
+        "tokenizers": "0.23.2",
+        "pyarrow": "23.0.1",
+        "sympy": "1.14.0",
+        "SDPA_enabled_flags": {
+          "flash": true,
+          "mem_efficient": true,
+          "math": true,
+          "cudnn": true
+        },
+        "fusedAdamW_available": true,
+        "TF32": false
+      },
+      "uploads": [
+        {
+          "input_file": "24-start-from-22-model-only.zip",
+          "bytes": 48506810,
+          "sha256": "5b70c8adebc8affaa20b2aa7254fbfc5eb048c0371b0ad286130fbed2cd85de8"
+        },
+        {
+          "resume_archive_sha256": "5b70c8adebc8affaa20b2aa7254fbfc5eb048c0371b0ad286130fbed2cd85de8",
+          "files_verified": 4
+        },
+        {
+          "input_mode": "drive",
+          "input_seconds": 24.325987269000052
+        }
+      ]
+    }
+  ],
+  "SDPA": {
+    "status": "observed",
+    "operators": [
+      "aten::_scaled_dot_product_efficient_attention",
+      "aten::scaled_dot_product_attention"
+    ],
+    "scope": "one inference preflight outside timers; other shapes/backward may use a different backend"
+  },
+  "timing": {
+    "session_minutes_since_first_cell": 73.92572187993333,
+    "active_minutes_after_input": 73.07451253736666,
+    "includes_final_download": false,
+    "saved22_train_minutes": 66.79153710728329
+  },
+  "test": {
+    "full_seconds": 12.163429087999248,
+    "generation_seconds": 11.397491706999972,
+    "rows": 1919,
+    "decode_steps_sum": 1632,
+    "decode_row_steps_sum": 769536,
+    "answers_sha256": "cfad40fff27fb6ae585fce10caf7c0541850a33f3d231c12588f962e35379acd",
+    "peak_reserved_bytes": 1797259264,
+    "timer": "model state load,restore,tokenizer,FP16/H2D,warmup,sorted greedy/order restore/answers write; download/cache/exec/CE/JSON dump outside",
+    "model_sha256": "0459432561dc0b19605d7516062e70ef9c45a4dcbb21b8cd8ee2a59687f7de09",
+    "tokenizer_sha256": "261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d",
+    "run": "R5",
+    "model_SHA256": "0459432561dc0b19605d7516062e70ef9c45a4dcbb21b8cd8ee2a59687f7de09",
+    "under180_seconds": true,
+    "EOS": 1903,
+    "AST_valid": 1907,
+    "cap": 16,
+    "unique_programs": 1910,
+    "official_quality_measured": false
+  },
+  "local_verification": {
+    "static_checks": "24-fast-recipe-equal-presentations-lr-and-ablations-results-static-checks.json",
+    "CPU_exec_pending": false,
+    "new_LM_updates": 0,
+    "GPU_runs": 0,
+    "CE_and_greedy_values": "saved Colab outputs, not rerun locally",
+    "CPU_exec_check": "24-fast-recipe-equal-presentations-lr-and-ablations-results-exec-cpu-checks.json",
+    "CPU_exec_all_scores_exact": true,
+    "CPU_reference_numbers_exact": true
+  },
+  "limitations": [
+    "one initialization seed",
+    "heldout4k used to select LR/run; fresh1024 untouched",
+    "recipe compared with old22 changes batch/AMP/bucketing/LR together",
+    "official bot score and file schema not confirmed",
+    "FP16 greedy, no beam/sampling"
+  ]
+}

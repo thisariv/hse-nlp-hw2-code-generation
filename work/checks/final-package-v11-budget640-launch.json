@@ -1,0 +1,13 @@
+{
+  "ref": "thisarivson/nlp-hw02-final-package-v11-budget640",
+  "push_calls": 1,
+  "requested_at_utc": "2026-10-20T08:49:27.201635+00:00",
+  "private": true,
+  "notebook_sha256": "9b1a4f6ae5ae6708e55501601a9d3763615d3fefc28fc3a6f497ed1351fd878c",
+  "free_quota_seconds": 28040.792,
+  "timeout_seconds": 720,
+  "dataset_version": 3,
+  "version": 1,
+  "accepted": true,
+  "finished_at_utc": "2026-10-20T08:49:28.887706+00:00"
+}

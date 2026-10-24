@@ -1,0 +1,41 @@
+{
+  "new_device": "CPU",
+  "full_A_model_training_updates": 0,
+  "new_T4_measurements": false,
+  "tiny_spec": {
+    "d_model": 16,
+    "heads": 2,
+    "encoder_layers": 1,
+    "decoder_layers": 1,
+    "swiglu_dim": 24,
+    "vocab": 37,
+    "max_positions": 64
+  },
+  "checks": {
+    "notebook_sources_parse_empty_outputs": true,
+    "LR_warmup_floor_indexing": true,
+    "R6_same_800k_flat_pairs": true,
+    "best_LR_tie_R6_179_and_acceptance_thresholds": true,
+    "controller_R1toR6_wiring_mocked_no_GPU": true,
+    "common_initial_state_R4_and_only_R5_token_scaling": true,
+    "tiny_full_vs_KV_max_abs_error": 2.384185791015625e-07,
+    "tiny4_FP32_and4_CPU_FP16_GradScaler_updates_finite": true,
+    "interrupted_train_has_no_completion_receipt": true,
+    "resume_after_training_and_completed_eval_never_retrains": true,
+    "real_tiny_sorted_generation_restore_matches_individual_greedy": true,
+    "bins_boundaries_numeric_sandbox_and_duplicate_selection": true,
+    "resume_ZIP_model_tensors_CRC_SHA_code_mismatch_zip_slip": true,
+    "independent_pack_cell_before_setup_and_after_interruption_mock_download": true,
+    "real_hashed22_PT_tokenizer_strict_model_state_conversion": true,
+    "sandbox_source_unchanged_from23": true
+  },
+  "tiny_model_updates_completed": 12,
+  "tiny_interrupted_steps": 2,
+  "all_passed": true,
+  "date": "2026-10-10",
+  "notebook_SHA256": "22f5be14f3525fd2f1c308125b21b07396f98257acf0683e7e597a867a373544",
+  "module_sources_SHA256": "35532789452eed2ff8e60943c291870bcf606261fd9fbeb8dae9045d6d190779",
+  "torch": "2.14.1",
+  "scope": "Final local CPU test suite; development checks were repeated after source edits. No full A training or GPU run.",
+  "real22_input_tensor_sha256": "c877e7a5a2e21d8eb620b57734f69417ae84d2cd71f24cd0378971a3587ae3ca"
+}

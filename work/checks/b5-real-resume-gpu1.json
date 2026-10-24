@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "gpu": "1",
+  "checkpoint_sha256": "48f2ba3fa4ffe6a722b45a084d3ee33a27cc4ed02b72433605c9cb1740f5a80b",
+  "checkpoint_bytes": 644197075,
+  "updates": 209144,
+  "cursor": 20734592,
+  "main_seconds": 79850.42887455746,
+  "initial_full_state_digests": {
+    "model": "9e9432d9939492b5be03e2baf0099500c69d35dfc80294e3c6386e933fd5ce4d",
+    "optimizer": "9676ac37ce9cb42dc2ae14e32c41e53cccb97f5db20e9edb91aa044f29d8a25d",
+    "scaler": "a6c8e36eac373bed41c1c6c35d2a8c61c1e7a1205e2c6dc457d47d354f8f5cdc",
+    "rng": "6b041ea116104079626d736e2b2a2622689fe1a8aed00f70614b1a0f059cb445",
+    "state": "eb2f6b5dd5c7f28e458ba4ae1f9b6a1948f9e438fe13fcf05111726331e1d0c2",
+    "scheduler": "469414488a68779fbaefc62a1ce63e613c019ae6a05b31f9b63fab465b7e2290"
+  },
+  "restores": [
+    {
+      "route": "historical uninterrupted control",
+      "fields_exact": true,
+      "CUDA_rng_bytes_sha256": "5f1e97909a837bbed6637cdf36e7f873380e0b5eaebbbaab112398d7f458e0ed"
+    },
+    {
+      "route": "B5 adapter with disk resume",
+      "fields_exact": true,
+      "CUDA_rng_bytes_sha256": "5f1e97909a837bbed6637cdf36e7f873380e0b5eaebbbaab112398d7f458e0ed"
+    }
+  ],
+  "steps": [
+    {
+      "model": "b61609820925b2f4e2782250ce23a512fe8a75360624d8568b5a82afa3b6c802",
+      "optimizer": "ee69e9afb180faf64eb1d7efda660e08f005094896ff505189f8b7afcb039519",
+      "scaler": "0fda60cfa626635e7692c503f791994e39965a79152ddf1154e86868576ca8cd",
+      "rng": "ec1aeb643b94c44971f0ec2fd12bc891a8774a526c5c7fdb2e33bf457bbabb27",
+      "state": "edba09e6a5a0da5f03c4929100280a7a58d9ce776e1ca7d18b6a29cd81ad24ff",
+      "CE": 0.22478480637073517,
+      "z_loss": null,
+      "batch_sha256": "8d5e0b5fe54fe55dbc3fb627764dc5fad2258730220c27ad9974f6b08e5bafd0"
+    },
+    {
+      "model": "95f744946cabcfcc007e8dcfe91dd74372cc8533ae389086db7fc3f5da01017b",
+      "optimizer": "e6056c160bd8377b35e005f9abb3288da43503b190e9e583f19f62ffc6e29971",
+      "scaler": "f38c2c095d15e15359b6f5545f249f8c5acb1d5bfacd862ca556c89b9d1dc8d1",
+      "rng": "ec1aeb643b94c44971f0ec2fd12bc891a8774a526c5c7fdb2e33bf457bbabb27",
+      "state": "d911d5254883f25cdcca97559d4f6146bde3cc13d71c2819c68dd80a26be9bd8",
+      "CE": 0.21334626525640488,
+      "z_loss": null,
+      "batch_sha256": "18bd31d4d8efbba46694bdef0e6b478af47441d3c65667d567ea8ac771a2b632"
+    }
+  ],
+  "steps_bit_exact": 2,
+  "effective_batch": 128,
+  "disk_resume_between_steps": true,
+  "production_serializer": true,
+  "opaque_CUDA_rng_preserved": true,
+  "historical_math": true,
+  "constant_lr": 0.0015,
+  "GPU": false,
+  "seconds": 353.13663687510416,
+  "modules": {
+    "b5_state.py": "4726c03ecd13f24416d01dbfddbd658b18932e6b6532a30cec26c0a0c5c9af86",
+    "b5_resume.py": "6190602dea97726a462a2fa8922831640fce8561a2906ca16c5d84f41fba0782"
+  },
+  "C_overrides": {
+    "exp27b_fast.py": "d33b61e9cef0257fd749856f7c8cf29000815bc2d65f230f4414e2da97b23ba4",
+    "exp26_core.py": "7247eae92a09a73b62c86fee80c261d3e3a0043cb863d7bc069426d214f575ce"
+  },
+  "script_sha256": "1445dddfada8d6ef847a6c47c135d1725bc6161af8af77d388f8b1a0e1defc66",
+  "limitation": "CPU FP32/no autocast; enabled CPU GradScaler from original state; fused disabled after exact load; CUDA execution pending reviewer"
+}

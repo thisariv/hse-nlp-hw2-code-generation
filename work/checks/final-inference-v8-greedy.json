@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "id": 0,
+      "CPU_baseline_all_exact": true,
+      "B4_GPU_FP16_exact": true,
+      "CPU_tokens": 22,
+      "saved_tokens": 22
+    },
+    {
+      "id": 1,
+      "CPU_baseline_all_exact": true,
+      "B4_GPU_FP16_exact": true,
+      "CPU_tokens": 91,
+      "saved_tokens": 91
+    },
+    {
+      "id": 100,
+      "CPU_baseline_all_exact": true,
+      "B4_GPU_FP16_exact": true,
+      "CPU_tokens": 54,
+      "saved_tokens": 54
+    },
+    {
+      "id": 1000,
+      "CPU_baseline_all_exact": true,
+      "B4_GPU_FP16_exact": true,
+      "CPU_tokens": 39,
+      "saved_tokens": 39
+    }
+  ],
+  "CPU_FP32_baseline_all_exact": true,
+  "saved_B4_FP16_matches": 4,
+  "cached_full_prefix_max_abs_diff": 1.9073486328125e-05,
+  "seconds": 12.055107708089054,
+  "limitation": "B4 journals use CUDA FP16 batch256, CPU uses FP32 batch4. FP16 rounding and compaction change shapes; token identity is measured, not guaranteed."
+}

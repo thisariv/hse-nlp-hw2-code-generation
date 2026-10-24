@@ -1,0 +1,338 @@
+[
+  {
+    "at_utc": "2026-10-19T12:26:09.718894+00:00",
+    "ref": "friend2/nlp-hw02-tta",
+    "version": 1,
+    "status": "QUEUED",
+    "output_files": 0,
+    "output_has_more": false,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "total_seconds": 108000.0,
+      "used_seconds": 0.0,
+      "reserved_seconds": 0.0,
+      "free_seconds": 108000.0
+    }
+  },
+  {
+    "at_utc": "2026-10-19T12:26:25.225422+00:00",
+    "ref": "friend2/nlp-hw02-tta",
+    "version": 1,
+    "status": "RUNNING",
+    "output_files": 0,
+    "output_has_more": false,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "total_seconds": 108000.0,
+      "used_seconds": 5.54488,
+      "reserved_seconds": 0.0,
+      "free_seconds": 107994.45512
+    }
+  },
+  {
+    "at_utc": "2026-10-19T12:27:12.951812+00:00",
+    "ref": "friend2/nlp-hw02-tta",
+    "version": 1,
+    "status": "RUNNING",
+    "output_files": 0,
+    "output_has_more": false,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "total_seconds": 108000.0,
+      "used_seconds": 53.297009,
+      "reserved_seconds": 0.0,
+      "free_seconds": 107946.702991
+    }
+  },
+  {
+    "at_utc": "2026-10-19T12:28:00.468624+00:00",
+    "ref": "friend2/nlp-hw02-tta",
+    "version": 1,
+    "status": "RUNNING",
+    "output_files": 0,
+    "output_has_more": false,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "total_seconds": 108000.0,
+      "used_seconds": 100.807592,
+      "reserved_seconds": 0.0,
+      "free_seconds": 107899.192408
+    }
+  },
+  {
+    "at_utc": "2026-10-19T12:28:48.766337+00:00",
+    "ref": "friend2/nlp-hw02-tta",
+    "version": 1,
+    "status": "RUNNING",
+    "output_files": 0,
+    "output_has_more": false,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "total_seconds": 108000.0,
+      "used_seconds": 149.456359,
+      "reserved_seconds": 0.0,
+      "free_seconds": 107850.543641
+    }
+  },
+  {
+    "at_utc": "2026-10-19T12:29:36.695853+00:00",
+    "ref": "friend2/nlp-hw02-tta",
+    "version": 1,
+    "status": "RUNNING",
+    "output_files": 0,
+    "output_has_more": false,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "total_seconds": 108000.0,
+      "used_seconds": 197.018939,
+      "reserved_seconds": 0.0,
+      "free_seconds": 107802.981061
+    }
+  },
+  {
+    "at_utc": "2026-10-19T12:30:24.630537+00:00",
+    "ref": "friend2/nlp-hw02-tta",
+    "version": 1,
+    "status": "RUNNING",
+    "output_files": 0,
+    "output_has_more": false,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "total_seconds": 108000.0,
+      "used_seconds": 244.964231,
+      "reserved_seconds": 0.0,
+      "free_seconds": 107755.035769
+    }
+  },
+  {
+    "at_utc": "2026-10-19T12:31:12.488159+00:00",
+    "ref": "friend2/nlp-hw02-tta",
+    "version": 1,
+    "status": "RUNNING",
+    "output_files": 0,
+    "output_has_more": false,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "total_seconds": 108000.0,
+      "used_seconds": 293.219805,
+      "reserved_seconds": 0.0,
+      "free_seconds": 107706.780195
+    }
+  },
+  {
+    "at_utc": "2026-10-19T12:32:00.482209+00:00",
+    "ref": "friend2/nlp-hw02-tta",
+    "version": 1,
+    "status": "RUNNING",
+    "output_files": 0,
+    "output_has_more": false,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "total_seconds": 108000.0,
+      "used_seconds": 340.836982,
+      "reserved_seconds": 0.0,
+      "free_seconds": 107659.163018
+    }
+  },
+  {
+    "at_utc": "2026-10-19T12:32:48.180633+00:00",
+    "ref": "friend2/nlp-hw02-tta",
+    "version": 1,
+    "status": "RUNNING",
+    "output_files": 0,
+    "output_has_more": false,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "total_seconds": 108000.0,
+      "used_seconds": 388.508669,
+      "reserved_seconds": 0.0,
+      "free_seconds": 107611.491331
+    }
+  },
+  {
+    "at_utc": "2026-10-19T12:33:36.475752+00:00",
+    "ref": "friend2/nlp-hw02-tta",
+    "version": 1,
+    "status": "RUNNING",
+    "output_files": 0,
+    "output_has_more": false,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "total_seconds": 108000.0,
+      "used_seconds": 436.860543,
+      "reserved_seconds": 0.0,
+      "free_seconds": 107563.139457
+    }
+  },
+  {
+    "at_utc": "2026-10-19T12:34:24.554129+00:00",
+    "ref": "friend2/nlp-hw02-tta",
+    "version": 1,
+    "status": "RUNNING",
+    "output_files": 0,
+    "output_has_more": false,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "total_seconds": 108000.0,
+      "used_seconds": 484.88419,
+      "reserved_seconds": 0.0,
+      "free_seconds": 107515.11581
+    }
+  },
+  {
+    "at_utc": "2026-10-19T12:35:12.060804+00:00",
+    "ref": "friend2/nlp-hw02-tta",
+    "version": 1,
+    "status": "RUNNING",
+    "output_files": 0,
+    "output_has_more": false,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "total_seconds": 108000.0,
+      "used_seconds": 532.420994,
+      "reserved_seconds": 0.0,
+      "free_seconds": 107467.579006
+    }
+  },
+  {
+    "at_utc": "2026-10-19T12:36:00.048047+00:00",
+    "ref": "friend2/nlp-hw02-tta",
+    "version": 1,
+    "status": "RUNNING",
+    "output_files": 0,
+    "output_has_more": false,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "total_seconds": 108000.0,
+      "used_seconds": 580.389998,
+      "reserved_seconds": 0.0,
+      "free_seconds": 107419.610002
+    }
+  },
+  {
+    "at_utc": "2026-10-19T12:36:47.828814+00:00",
+    "ref": "friend2/nlp-hw02-tta",
+    "version": 1,
+    "status": "RUNNING",
+    "output_files": 0,
+    "output_has_more": false,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "total_seconds": 108000.0,
+      "used_seconds": 628.178163,
+      "reserved_seconds": 0.0,
+      "free_seconds": 107371.821837
+    }
+  },
+  {
+    "at_utc": "2026-10-19T12:37:35.634454+00:00",
+    "ref": "friend2/nlp-hw02-tta",
+    "version": 1,
+    "status": "RUNNING",
+    "output_files": 0,
+    "output_has_more": false,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "total_seconds": 108000.0,
+      "used_seconds": 675.986094,
+      "reserved_seconds": 0.0,
+      "free_seconds": 107324.013906
+    }
+  },
+  {
+    "at_utc": "2026-10-19T12:38:23.376605+00:00",
+    "ref": "friend2/nlp-hw02-tta",
+    "version": 1,
+    "status": "RUNNING",
+    "output_files": 0,
+    "output_has_more": false,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "total_seconds": 108000.0,
+      "used_seconds": 724.504149,
+      "reserved_seconds": 0.0,
+      "free_seconds": 107275.495851
+    }
+  },
+  {
+    "at_utc": "2026-10-19T12:39:11.554190+00:00",
+    "ref": "friend2/nlp-hw02-tta",
+    "version": 1,
+    "status": "RUNNING",
+    "output_files": 0,
+    "output_has_more": false,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "total_seconds": 108000.0,
+      "used_seconds": 771.901249,
+      "reserved_seconds": 0.0,
+      "free_seconds": 107228.098751
+    }
+  },
+  {
+    "at_utc": "2026-10-19T12:39:59.041532+00:00",
+    "ref": "friend2/nlp-hw02-tta",
+    "version": 1,
+    "status": "RUNNING",
+    "output_files": 0,
+    "output_has_more": false,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "total_seconds": 108000.0,
+      "used_seconds": 819.423095,
+      "reserved_seconds": 0.0,
+      "free_seconds": 107180.576905
+    }
+  },
+  {
+    "at_utc": "2026-10-19T12:40:47.087539+00:00",
+    "ref": "friend2/nlp-hw02-tta",
+    "version": 1,
+    "status": "RUNNING",
+    "output_files": 0,
+    "output_has_more": false,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "total_seconds": 108000.0,
+      "used_seconds": 867.452457,
+      "reserved_seconds": 0.0,
+      "free_seconds": 107132.547543
+    }
+  },
+  {
+    "at_utc": "2026-10-19T12:41:35.812130+00:00",
+    "ref": "friend2/nlp-hw02-tta",
+    "version": 1,
+    "status": "COMPLETE",
+    "output_files": 200,
+    "output_has_more": true,
+    "code_cells_exact": true,
+    "private": true,
+    "quota": {
+      "total_seconds": 108000.0,
+      "used_seconds": 874.634,
+      "reserved_seconds": 0.0,
+      "free_seconds": 107125.366
+    }
+  }
+]

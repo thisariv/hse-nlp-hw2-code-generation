@@ -1,0 +1,21 @@
+{
+  "at_utc": "2026-10-21T06:56:13.260315+00:00",
+  "status": {
+    "error_type": "ValueError",
+    "http": null,
+    "reason": "Raw response suppressed"
+  },
+  "metadata_current": {
+    "error_type": "HTTPError",
+    "http": 403,
+    "reason": "Raw response suppressed"
+  },
+  "metadata_v1": {
+    "error_type": "HTTPError",
+    "http": 403,
+    "reason": "Raw response suppressed"
+  },
+  "owned": [
+    "thisarivson/nlp-hw02-final-package-v2-budget640"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-08",
+  "prepared_notebook_sha256": "9bca2451bfdd8c887cd7c96a0a927469c251edcb58ae1682e8aae966f3e736bf",
+  "input_notebook_sha256": "07ceb3117a190615f354d431ca1976db82a6944392e23c21fe5ae59b4173c982",
+  "input_archive_sha256": "58c3a8bd285bce9419f41971500522a1c2a27a084d6191cb550a28927e036ba2",
+  "checks": {
+    "saved_examples_verified": 5247,
+    "source_code_identical": true,
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "no_saved_error_outputs": true,
+    "CRC_manifest_hashes": true,
+    "all_four_weights_only_checkpoints_finite_and_consistent": true,
+    "latest_equals100000_state": true,
+    "baseline50000_model_AdamW_LambdaLR_all_RNG_equal_original13": true,
+    "all256_baseline_saved_examples_equal13": true,
+    "all_fixed_question_reference_pairs_and_denominators": true,
+    "token_decode_AST_numeric_aggregates": true,
+    "1919_test_question_order": true,
+    "printed_diagnostics_equal_JSON": true,
+    "byte512_prefix_rule": true,
+    "all_saved_continuation_LRs_floor": true
+  },
+  "scope": "Saved user T4 results and new static checks. No training rerun, full inference rerun, official checker or supplied program execution; numerical reference audit is not accuracy/pass@1."
+}

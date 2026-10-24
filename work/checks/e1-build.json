@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "nbformat": true,
+  "private": true,
+  "internet": false,
+  "frozen_v10": true,
+  "timeout": 4200,
+  "byte_exact_rebuild": true,
+  "self_contained_config": true,
+  "notebook_sha256": "108ca8a3a7f1158e320ba3ccee668ae1d9ea7fcad0ba1e1c44a66cbaf37f1438"
+}

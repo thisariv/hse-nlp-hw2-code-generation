@@ -1,0 +1,183 @@
+{
+  "checked": "2026-10-07",
+  "dataset_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+  "sampling": {
+    "seed": 42,
+    "method": "uniform without replacement within four fixed spaced shards; allocation proportional to their row counts",
+    "scope": "not a random sample from all 60 shards",
+    "shards": [
+      {
+        "shard": 0,
+        "rows_in_file": 200000,
+        "sampled": 6270,
+        "sha256": "91831d582faa12d73b1a6b3878e496446cd5df074f17ee4ffea8cc2887c708ec"
+      },
+      {
+        "shard": 19,
+        "rows_in_file": 200000,
+        "sampled": 6270,
+        "sha256": "47078937f949663ab7a31756dd4fd2445a3e2ed4b4f34a2e2ad28914ed5ba40b"
+      },
+      {
+        "shard": 39,
+        "rows_in_file": 200000,
+        "sampled": 6269,
+        "sha256": "e81fedee1fa299f0db0c089e93716a385311662aa8954419308f0c21ec9a79ec"
+      },
+      {
+        "shard": 59,
+        "rows_in_file": 38003,
+        "sampled": 1191,
+        "sha256": "69e1c814c52a97519fc485e7e14f9500cff74585e06c92d648eb2377da3484dd"
+      }
+    ],
+    "sample_size": 20000
+  },
+  "split": {
+    "train_rows": 18006,
+    "validation_rows": 1994,
+    "question_overlap": 0,
+    "rule": "sha256(str(seed) + colon + exact question), first 8 bytes modulo 10 == 0"
+  },
+  "quality": {
+    "syntax_errors": 0,
+    "missing_top_level_solve": 0,
+    "programs_executed": 0,
+    "unique_questions": 19984,
+    "rows_beyond_first_question_occurrence": 16,
+    "largest_question_multiplicity": 4,
+    "sample_test_question_overlap": 0
+  },
+  "lengths_and_budget": {
+    "tokenizer": "UTF-8 bytes",
+    "code_tokens_including_eos": {
+      "n": 20000,
+      "mean": 237.3931,
+      "p50": 210,
+      "p90": 369,
+      "p95": 442,
+      "p99": 657,
+      "max": 1452
+    },
+    "sample_source_tokens_with_bos_eos": {
+      "n": 20000,
+      "mean": 180.49445,
+      "p50": 165,
+      "p90": 278,
+      "p95": 319,
+      "p99": 422,
+      "max": 1854
+    },
+    "test_source_tokens_with_bos_eos": {
+      "n": 1919,
+      "mean": 179.68004168837936,
+      "p50": 165,
+      "p90": 280,
+      "p95": 319,
+      "p99": 420,
+      "max": 717
+    },
+    "caps": {
+      "128": 0.0811,
+      "256": 0.6853,
+      "512": 0.9718,
+      "768": 0.99455
+    },
+    "required_mean_tokens_per_second_180_proxy": 2530.874216111111,
+    "required_mean_tokens_per_second_150_proxy": 3037.0490593333334,
+    "required_tokens_per_second_all_512_180": 5458.488888888889,
+    "required_tokens_per_second_all_512_150": 6550.1866666666665,
+    "scope": "20,000 rows from four spaced shards, all 1919 test questions; output lengths for test unknown"
+  },
+  "versions_data_analysis": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pyarrow": "25.0.1"
+  },
+  "simple_baseline_config": {
+    "d_model": 128,
+    "layers_encoder": 2,
+    "layers_decoder": 2,
+    "heads": 4,
+    "ffn": 512,
+    "vocabulary": 259,
+    "learned_positions": 2048,
+    "parameters": 1254915,
+    "training_steps": 200,
+    "train_examples": 512,
+    "validation_examples": 64,
+    "dtype": "float32",
+    "inference_batch": 32,
+    "max_new_tokens": 512
+  },
+  "prototype_data_checked": {
+    "train_rows": 512,
+    "validation_rows": 64,
+    "test_rows": 1919,
+    "source_max_bytes": 498,
+    "code_max_bytes": 508,
+    "question_overlap_train_validation": 0,
+    "question_overlap_train_test": 0
+  },
+  "local_code_checks": {
+    "checks": [
+      "future target tokens do not affect previous logits",
+      "extra source PAD does not affect logits",
+      "UTF-8 round trip",
+      "finite gradients",
+      "loss drops on two real allowed examples",
+      "generation shape"
+    ],
+    "device": "CPU",
+    "torch_version": "2.14.1",
+    "test_d_model": 32,
+    "test_layers": 1,
+    "updates": 30,
+    "loss_before": 5.789727210998535,
+    "loss_after": 1.4168777465820312,
+    "seconds": 0.8894945411011577,
+    "not_a_t4_benchmark": true
+  },
+  "t4_training_run": false,
+  "t4_inference_run": false,
+  "functional_quality_evaluated": false,
+  "optional_bpe_probe_not_used_in_baseline": {
+    "kind": "byte-level BPE trained from scratch on sampled training questions and code only",
+    "vocab_size": 8000,
+    "special_ids": {
+      "<pad>": 0,
+      "<bos>": 1,
+      "<eos>": 2,
+      "<unk>": 3
+    },
+    "training_seconds": 1.3255605839658529,
+    "sha256": "4ef46ce258de837200e4faa5b929c61e495d8452c31e53a28c0cdc7765dfdfd8",
+    "tokenizers_version": "0.23.2",
+    "roundtrip_failures": 0,
+    "unknown_tokens": 0,
+    "sample_code_tokens_with_eos": {
+      "n": 20000,
+      "mean": 66.4636,
+      "min": 15,
+      "p50": 59,
+      "p90": 105,
+      "p95": 124,
+      "p99": 184,
+      "max": 373,
+      "sum": 1329272
+    },
+    "validation_code_tokens_with_eos": {
+      "n": 1994,
+      "mean": 66.91624874623872,
+      "min": 16,
+      "p50": 59,
+      "p90": 109,
+      "p95": 128,
+      "p99": 175,
+      "max": 362,
+      "sum": 133431
+    },
+    "model_trained": false,
+    "t4_speed_measured": false
+  }
+}

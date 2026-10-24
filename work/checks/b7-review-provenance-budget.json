@@ -1,0 +1,80 @@
+{
+  "passed": true,
+  "source": "friend1/nlp-hw02-b5/6",
+  "manifest_sha256": "f662a966b5031a93bb46d25530a2710753a26f69e5262af80eca05ac6c6aa525",
+  "anchors": [
+    {
+      "gpu": "0",
+      "sha256": "3b11360d5242e0e8b3fc1ac38254f0d4d544fba8bb62ee4c7bb034943e6cdc32",
+      "cursor": 19783552,
+      "updates": 154559,
+      "final_anchor_metadata_exact": true,
+      "retained_blob_manifest_exact": true
+    },
+    {
+      "gpu": "1",
+      "sha256": "69dff4405d2236097f48733adbfc9e3bfd5d20b501a3fcfd1dae62ec2ce63074",
+      "cursor": 31556224,
+      "updates": 293688,
+      "final_anchor_metadata_exact": true,
+      "retained_blob_manifest_exact": true
+    }
+  ],
+  "budget": {
+    "per_gpu": {
+      "0": {
+        "N": 33000,
+        "B6_N": 16500,
+        "peak_lr": 0.0006,
+        "B6_update_seconds": 12896.691969062025,
+        "reference_seconds_per_update": 0.7816176950946682,
+        "updates_per_second": 1.279397851757798,
+        "B6_worker_wall_seconds": 13320.284831747,
+        "log_file": "model-GPU0/cooldown-updates.jsonl",
+        "log_sha256": "5e0663f3b41817586216831885412022cd0ca6d94583b4a27b466900628142f2",
+        "safety_factor": 1.1,
+        "setup_seconds": 480,
+        "eval_seconds": 1800,
+        "io_seconds": 600,
+        "requested_N": 33000,
+        "update_seconds": 25793.38393812405,
+        "expected_wall_seconds": 31252.722331936457,
+        "hard_margin_seconds": 9547.277668063543
+      },
+      "1": {
+        "N": 65800,
+        "B6_N": 32900,
+        "peak_lr": 0.0015,
+        "B6_update_seconds": 13876.533161580857,
+        "reference_seconds_per_update": 0.42177912345230567,
+        "updates_per_second": 2.3709091901346295,
+        "B6_worker_wall_seconds": 14191.892525167,
+        "log_file": "model-GPU1/cooldown-updates.jsonl",
+        "log_sha256": "2a522a35f404daf636efe129de878d59ceb4b1e6f29599e2e121efd9d752f65c",
+        "safety_factor": 1.1,
+        "setup_seconds": 480,
+        "eval_seconds": 1800,
+        "io_seconds": 600,
+        "requested_N": 65800,
+        "update_seconds": 27753.066323161715,
+        "expected_wall_seconds": 33408.372955477884,
+        "hard_margin_seconds": 7391.627044522116
+      }
+    },
+    "N_by_gpu": {
+      "0": 33000,
+      "1": 65800
+    },
+    "proportional_scale": 1.0,
+    "reduction_reason": null,
+    "expected_wall_seconds": 33408.372955477884,
+    "hard_wall_seconds": 40800,
+    "worker_deadline_seconds": 40500,
+    "watchdog_seconds": 40740,
+    "smoke_hard_seconds": 720,
+    "B6_session_wall_seconds": 14309.502263184,
+    "B6_manifest_sha256": "dd00395d133cd5c005261bf39b41c9a967dbd36e9523b838ecfa865aae218dfe",
+    "basis": "All B6 attempted-update logs, verified against producer manifest; 10% update reserve + setup480 + full final eval/K8 1800 + I/O600. T4x2 runs concurrently; session budget is max, not sum."
+  },
+  "pre_final_B5_blobs_available": false
+}

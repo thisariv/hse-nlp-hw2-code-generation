@@ -1,0 +1,51 @@
+{
+  "notebook_structure_and_code_compile": true,
+  "model_optimizer_and_byte_encoding_cells_unchanged": true,
+  "full_model_parameters": 1254915,
+  "data": {
+    "distinct_questions": 16,
+    "original_pool_rows": 512,
+    "original_pool_sha256": "3801627c7dcaae0c82c6694e0aa8514ca8ced044c07c7f30e779bb6a3130bc35",
+    "small_train_sha256": "d09cd3121ebfaac0707b52136008a00f6389fed0b3eec3b4a1c502e739bdeb6b",
+    "target_lengths_including_eos": [
+      194,
+      162,
+      137,
+      242,
+      151,
+      227,
+      295,
+      208,
+      377,
+      282,
+      136,
+      168,
+      198,
+      282,
+      498,
+      384
+    ]
+  },
+  "metric_cases": [
+    "UTF-8 exact match plus EOS and trailing PAD",
+    "matching text without EOS",
+    "first mismatch",
+    "EOS at cap",
+    "truncation",
+    "PAD ignored and EOS included in accuracy"
+  ],
+  "cpu_smoke": {
+    "model": "full 2+2/128",
+    "train_pairs": 16,
+    "updates": 1,
+    "generation_cap": 8,
+    "finite_loss_and_gradients": true,
+    "actual_record_and_report_flow": true,
+    "checkpoint_matches_metrics": true
+  },
+  "runtime": {
+    "torch": "2.14.1",
+    "device": "CPU"
+  },
+  "gpu_memorization_experiment_executed": false
+}

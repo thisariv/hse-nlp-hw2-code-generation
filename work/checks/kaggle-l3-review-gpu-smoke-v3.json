@@ -1,0 +1,129 @@
+{
+  "passed": true,
+  "account": "friend1",
+  "wall_seconds": 602.806563081,
+  "input_preflight": {
+    "passed": true,
+    "account": "friend1",
+    "anchor_source": "thisarivson/nlp-hw02-l2-live",
+    "anchor_mount": "/kaggle/input/datasets/thisarivson/nlp-hw02-l2-live",
+    "starter_mount": "/kaggle/input/datasets/thisarivson/nlp-hw02-26b-inputs/26b-training-inputs-d0-initial-and-evaluation",
+    "cache_source": "thisarivson/nlp-hw02-compact-cache-verified/2",
+    "cache_mount": "/kaggle/input/notebooks/thisarivson/nlp-hw02-compact-cache-verified/compact-cache",
+    "cache_manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+    "cache_rows": 9725737,
+    "cache_shards": 60,
+    "all_shard_SHA_verified": true,
+    "main_order_sha256": "09cf6db8549b7df614fa71516553d23d4cbb3ca97c7911db0c6d599a8277ab7d",
+    "weighted_order_sha256": "72bc3dfd3a3e738979c489c0cf8f41cde092c41d4ae90f2de8378a034603a4db",
+    "setup_wall_seconds": 59.007975740000006,
+    "training_started": false
+  },
+  "anchor_preflight": {
+    "passed": true,
+    "anchors": {
+      "C-main": {
+        "updates": 126452,
+        "cursor": 16185856,
+        "main_seconds": 46370.1433977189,
+        "l2_main_seconds": 28800.207519321037,
+        "sha256": "d0de7f7bd5c479159a8d6189ab5af58897edf35bdba2e9439b0b745ab72bd29c"
+      },
+      "C-long2x": {
+        "updates": 123842,
+        "cursor": 9815936,
+        "main_seconds": 46370.24584266532,
+        "l2_main_seconds": 28800.309964266355,
+        "sha256": "a0ba33fef996f6a0c63e4059909a17796c67e1a94dadf1cc04c6afe1e94c40d2"
+      }
+    },
+    "preflight_wall_seconds": 21.811469783999996,
+    "training_started": false
+  },
+  "models": {
+    "C-main": {
+      "CUDA_checks": [
+        "bit_exact_L1_CUDA_update",
+        "GradScaler_overflow_skip",
+        "partial_backward_nonfinite_loss_skip",
+        "serialized_resume_bit_exact_CUDA",
+        "nonfinite_escalation_full_rollback_LR",
+        "K8_executed_samples_and_greedy256"
+      ],
+      "main_added_updates": 788,
+      "tail_updates": 0,
+      "K8_rows": 36,
+      "K8_samples": 288,
+      "K8_seconds": 11.142292522000048,
+      "greedy256_seconds": [
+        2.8313118690000465,
+        10.634405863999973
+      ],
+      "training_eval_peak_allocated_bytes": 8867699712,
+      "training_eval_peak_reserved_bytes": 10181672960,
+      "longest_row_probe_peak_reserved_bytes": 11630804992,
+      "observed_max_reserved_bytes": 11630804992,
+      "stable_LR": 0.00075,
+      "stable_updates": 127240,
+      "stable_cursor": 16286720
+    },
+    "C-long2x": {
+      "CUDA_checks": [
+        "bit_exact_L1_CUDA_update",
+        "GradScaler_overflow_skip",
+        "partial_backward_nonfinite_loss_skip",
+        "serialized_resume_bit_exact_CUDA",
+        "constant_LR_weighted_fork",
+        "K8_executed_samples_and_greedy256",
+        "healthy_worker_resumed_after_sibling_crash"
+      ],
+      "main_added_updates": 762,
+      "tail_updates": 64,
+      "K8_rows": 36,
+      "K8_samples": 288,
+      "K8_seconds": 10.699961400000007,
+      "greedy256_seconds": [
+        7.770334723000019,
+        2.9025314219999245
+      ],
+      "training_eval_peak_allocated_bytes": 6838474752,
+      "training_eval_peak_reserved_bytes": 9179234304,
+      "longest_row_probe_peak_reserved_bytes": 11630804992,
+      "observed_max_reserved_bytes": 11630804992,
+      "stable_LR": 0.0015,
+      "stable_updates": 124668,
+      "stable_cursor": 9921664
+    }
+  },
+  "fault_exit_codes": [
+    1,
+    0
+  ],
+  "fallback_preflight": {
+    "passed": true,
+    "source": "friend1/nlp-hw02-compact-cache-verified",
+    "mount": "/kaggle/input/nlp-hw02-compact-cache-verified",
+    "manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+    "rows": 9725737,
+    "shards": 60,
+    "all_shard_SHA_verified": true,
+    "order_sha256": "09cf6db8549b7df614fa71516553d23d4cbb3ca97c7911db0c6d599a8277ab7d",
+    "tokenizer_SHA_verified": true,
+    "roundtrip_rows": 50040,
+    "answer_mismatches": 0
+  },
+  "output_manifest_downloaded_files_SHA_verified": 90,
+  "large_or_source_files_not_downloaded": [
+    "__notebook__.ipynb",
+    "weighted-order/order.npy",
+    "model-C-main/checkpoints/main-129720e41ca6.pt",
+    "model-C-main/checkpoints/main-696012c28560.pt",
+    "model-C-main/weights/l2-29100-fp16.pt",
+    "model-C-main/weights/l2-28950-fp16.pt",
+    "model-C-long2x/checkpoints/main-aa542ab44d0a.pt",
+    "model-C-long2x/checkpoints/main-d21e57169e93.pt",
+    "model-C-long2x/weights/l2-29100-fp16.pt",
+    "model-C-long2x/weights/l2-28950-fp16.pt"
+  ],
+  "limitations": "Real CUDA loader verified full states on Kaggle; no redundant local PT download. Full 11h/live Secrets path requires UI run."
+}

@@ -1,0 +1,9 @@
+{
+  "ref": "friend1/nlp-hw02-variants",
+  "push_calls": 1,
+  "requested_at_utc": "2026-10-20T16:19:24.419482+00:00",
+  "private": true,
+  "notebook_sha256": "9c41669d5542842d7597cb97b6df795a4a1f105004c02a7829a8ae8736c32c8e",
+  "free_quota_seconds": 23656.046,
+  "timeout_seconds": 3600
+}

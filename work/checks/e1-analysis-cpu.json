@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "policies": 33,
+  "synthetic_rows": 128,
+  "baseline_parity": {
+    "rows": 128,
+    "winner_code_execution_exact": true,
+    "early_stop_counts_exact": true
+  },
+  "LL_weight_and_tie": true,
+  "task_bootstrap": true,
+  "v10_time_reconstruction_seconds": 115.631356826,
+  "eval_read": false
+}

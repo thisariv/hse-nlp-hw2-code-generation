@@ -1,0 +1,3840 @@
+{
+  "date": "2026-10-09",
+  "scope": "Recomputed saved21/22 arithmetic programs with identical74 pre-existing manual labels and original/AugAssign evaluation; bounded AST, no supplied-code execution.",
+  "original22_scores": {
+    "75000": {
+      "scored": 74,
+      "correct": 17,
+      "wrong": 54,
+      "unknown": 3,
+      "selected_questions": 100,
+      "excluded_questions": 26,
+      "scope": "Fixed manual arithmetic evaluation labels from experiment20 audit; old adaptive heldout only; no training labels/data edited; not official pass@1.",
+      "rubric": "Manual arithmetic from questions, single numeric answer; no generated-code execution. Multi-output/missing/inconsistent/ambiguous wording excluded.473 accepts exact wage and cents-rounded7.35.557 accepts120 minutes or2 hours because output unit unspecified; unit rubric refined before final scoring and applied to all models equally.877 uses ordinary school4x interpretation;892 includes specified8 friends only. Unsupported generated AST unresolved, not automatically wrong.",
+      "augassign_supported": false
+    },
+    "100000": {
+      "scored": 74,
+      "correct": 18,
+      "wrong": 54,
+      "unknown": 2,
+      "selected_questions": 100,
+      "excluded_questions": 26,
+      "scope": "Fixed manual arithmetic evaluation labels from experiment20 audit; old adaptive heldout only; no training labels/data edited; not official pass@1.",
+      "rubric": "Manual arithmetic from questions, single numeric answer; no generated-code execution. Multi-output/missing/inconsistent/ambiguous wording excluded.473 accepts exact wage and cents-rounded7.35.557 accepts120 minutes or2 hours because output unit unspecified; unit rubric refined before final scoring and applied to all models equally.877 uses ordinary school4x interpretation;892 includes specified8 friends only. Unsupported generated AST unresolved, not automatically wrong.",
+      "augassign_supported": false
+    }
+  },
+  "augassign_scores": {
+    "21/75000": {
+      "scored": 74,
+      "correct": 18,
+      "wrong": 55,
+      "unknown": 1
+    },
+    "21/100000": {
+      "scored": 74,
+      "correct": 19,
+      "wrong": 55,
+      "unknown": 0
+    },
+    "22/75000": {
+      "scored": 74,
+      "correct": 18,
+      "wrong": 55,
+      "unknown": 1
+    },
+    "22/100000": {
+      "scored": 74,
+      "correct": 19,
+      "wrong": 55,
+      "unknown": 0
+    }
+  },
+  "paired_manual_changes": {
+    "21/75000->22/75000": {
+      "retained_correct": 18,
+      "gained_indices": [],
+      "lost_indices": [],
+      "net_correct": 0
+    },
+    "21/100000->22/100000": {
+      "retained_correct": 16,
+      "gained_indices": [
+        12,
+        31,
+        321
+      ],
+      "lost_indices": [
+        42,
+        557,
+        877
+      ],
+      "net_correct": 0
+    },
+    "22/75000->22/100000": {
+      "retained_correct": 15,
+      "gained_indices": [
+        12,
+        14,
+        31,
+        797
+      ],
+      "lost_indices": [
+        32,
+        42,
+        557
+      ],
+      "net_correct": 1
+    }
+  },
+  "paired_reference888_changes": {
+    "retained": 145,
+    "gained_indices": [
+      12,
+      31,
+      85,
+      134,
+      174,
+      177,
+      222,
+      229,
+      236,
+      275,
+      321,
+      367,
+      412,
+      417,
+      562,
+      594,
+      655,
+      678,
+      728,
+      749,
+      752,
+      800,
+      825,
+      864,
+      928,
+      945,
+      947,
+      1007
+    ],
+    "lost_indices": [
+      42,
+      112,
+      117,
+      163,
+      165,
+      178,
+      263,
+      266,
+      315,
+      385,
+      452,
+      490,
+      504,
+      518,
+      533,
+      561,
+      579,
+      596,
+      600,
+      635,
+      653,
+      669,
+      686,
+      714,
+      738,
+      764,
+      768,
+      823,
+      845,
+      877,
+      955,
+      982,
+      995
+    ],
+    "net": -5
+  },
+  "manual74_semantic_gains_and_losses": [
+    {
+      "heldout1024_index": 12,
+      "change": "gained",
+      "question": "Sarah, Lisa, and Ashley played chess against one another. Sarah won 4 more games than Lisa, and Lisa won 2 more games than Ashley. If Ashley won 6 games, what was the total number of games they played?",
+      "accepted_numeric_values": [
+        26.0
+      ],
+      "reason": "(6+2+4)+(6+2)+6; no draws assumed",
+      "constant21_code": "def solve() -> int:\n    sarah_games = 2\n    ashley_games = sarah_games + 4\n    ashley_games = ashley_games + 6\n    total_games = sarah_games + ashley_games + ashley_games + ashley_games\n    result = total_games\n    return result\n",
+      "cosine22_code": "def solve() -> int:\n    sarah_games = 2\n    ashley_games = sarah_games + 4\n    ashley_games = ashley_games + 6\n    total_games = sarah_games + ashley_games + ashley_games\n    result = total_games\n    return result\n",
+      "constant21_numeric": {
+        "status": "numeric",
+        "value": 38
+      },
+      "cosine22_numeric": {
+        "status": "numeric",
+        "value": 26
+      }
+    },
+    {
+      "heldout1024_index": 31,
+      "change": "gained",
+      "question": "Student: If a car travels 160 miles in 4 hours, how long will it take to travel 240 miles?",
+      "accepted_numeric_values": [
+        6.0
+      ],
+      "reason": "240/(160/4)",
+      "constant21_code": "def solve() -> int:\n    distance = 160 # miles\n    time = 4 # hours\n    speed = distance / time\n    new_time = 240 / speed\n    new_time = new_time + new_time\n    result = new_time\n\n    return result\n",
+      "cosine22_code": "def solve() -> int:\n    distance = 160 # miles\n    time = 4 # hours\n    speed = distance / time\n    time = 240 / speed\n    result = time\n\n    return result\n",
+      "constant21_numeric": {
+        "status": "numeric",
+        "value": 12.0
+      },
+      "cosine22_numeric": {
+        "status": "numeric",
+        "value": 6.0
+      }
+    },
+    {
+      "heldout1024_index": 42,
+      "change": "lost",
+      "question": "Isabella was 40 inches tall last year. If she grew 3 inches more than her best friend who grew 5 inches last year, how tall is Isabella now?",
+      "accepted_numeric_values": [
+        48
+      ],
+      "reason": "Рост40+(5+3)=48 дюймов",
+      "constant21_code": "def solve() -> int:\n    last_year_height = 40\n    this_year_height = last_year_height + 3\n    this_year_height = this_year_height + 5\n    result = this_year_height\n    return result\n",
+      "cosine22_code": "def solve() -> int:\n    last_year_height = 40\n    this_year_height = last_year_height + 3\n    last_year_height = last_year_height + 5\n    result = last_year_height\n    return result\n",
+      "constant21_numeric": {
+        "status": "numeric",
+        "value": 48
+      },
+      "cosine22_numeric": {
+        "status": "numeric",
+        "value": 45
+      }
+    },
+    {
+      "heldout1024_index": 321,
+      "change": "gained",
+      "question": "A bike costs $250. If John has saved $150, how much more does he need to save to buy the bike?",
+      "accepted_numeric_values": [
+        100
+      ],
+      "reason": "250-150 =100 долларов",
+      "constant21_code": "def solve() -> int:\n    bike_cost = 250\n    bike_cost = 150\n    money_needed = bike_cost - bike_cost\n    result = money_needed\n\n    return result\n",
+      "cosine22_code": "def solve() -> int:\n    bike_cost = 250\n    saved_money = 150\n    money_needed = bike_cost - saved_money\n    result = money_needed\n    return result\n",
+      "constant21_numeric": {
+        "status": "numeric",
+        "value": 0
+      },
+      "cosine22_numeric": {
+        "status": "numeric",
+        "value": 100
+      }
+    },
+    {
+      "heldout1024_index": 557,
+      "change": "lost",
+      "question": "arah drives to work every day, and it takes her 30 minutes to cover 15 miles. How long will it take her to cover 60 miles to go from home to work?",
+      "accepted_numeric_values": [
+        120.0,
+        2.0
+      ],
+      "reason": "2 минуты на милю;60 миль =120 минут =2 часа. Выходная единица не указана: принимаются оба эквивалентных значения",
+      "constant21_code": "def solve() -> int:\n    distance = 30\n    time_per_mile = 15\n    distance_to_work = 60\n    total_time = distance / time_per_mile\n    total_time = total_time * distance_to_work\n    result = total_time\n\n    return result\n",
+      "cosine22_code": "def solve() -> int:\n    distance = 30\n    time_per_mile = 15\n    distance_to_work = 60\n    \n    total_time = time_per_mile * distance_to_work\n    \n    result = total_time\n\n    return result\n",
+      "constant21_numeric": {
+        "status": "numeric",
+        "value": 120.0
+      },
+      "cosine22_numeric": {
+        "status": "numeric",
+        "value": 900
+      }
+    },
+    {
+      "heldout1024_index": 877,
+      "change": "lost",
+      "question": "Alice drinks 4 times more juice than Bob drinks. If Bob drinks 300 ml of juice per day, how much juice does Alice drink in a week?",
+      "accepted_numeric_values": [
+        8400
+      ],
+      "reason": "Обычное школьное прочтение4 times more как4×;300*4*7=8400 мл за неделю",
+      "constant21_code": "def solve() -> int:\n    alice_drinks = 300\n    bob_drinks = alice_drinks * 4\n    alice_drinks = bob_drinks * 7\n    result = alice_drinks\n    return result\n",
+      "cosine22_code": "def solve() -> int:\n    bob_juice = 300\n    bob_juice = bob_juice * 4\n    alice_juice = bob_juice + bob_juice\n    result = alice_juice\n    return result\n",
+      "constant21_numeric": {
+        "status": "numeric",
+        "value": 8400
+      },
+      "cosine22_numeric": {
+        "status": "numeric",
+        "value": 2400
+      }
+    }
+  ],
+  "all_scored_rows": [
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 0,
+      "accepted_numeric_values": [
+        4.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 4
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 1,
+      "accepted_numeric_values": [
+        1.3333333333333333
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 6
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 4,
+      "accepted_numeric_values": [
+        28.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 40.6
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 5,
+      "accepted_numeric_values": [
+        200.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 112.5
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 6,
+      "accepted_numeric_values": [
+        75.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 49
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 7,
+      "accepted_numeric_values": [
+        15.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 20.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 8,
+      "accepted_numeric_values": [
+        10.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": -20
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 9,
+      "accepted_numeric_values": [
+        27.5
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 45
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 11,
+      "accepted_numeric_values": [
+        1.176923076923077
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 0.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 12,
+      "accepted_numeric_values": [
+        26.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 22
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 13,
+      "accepted_numeric_values": [
+        40.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 40.0
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 14,
+      "accepted_numeric_values": [
+        20.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 80
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 16,
+      "accepted_numeric_values": [
+        1.5
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 18.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 17,
+      "accepted_numeric_values": [
+        183.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": -30
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 18,
+      "accepted_numeric_values": [
+        90.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 45.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 20,
+      "accepted_numeric_values": [
+        36.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 9
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 21,
+      "accepted_numeric_values": [
+        15.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 15
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 22,
+      "accepted_numeric_values": [
+        0.26666666666666666
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 0.03333333333333333
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 24,
+      "accepted_numeric_values": [
+        20.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "undefined_name",
+        "name": "neither_burgers"
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 26,
+      "accepted_numeric_values": [
+        40.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 40.0
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 27,
+      "accepted_numeric_values": [
+        500.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 2500
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 30,
+      "accepted_numeric_values": [
+        40.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 40.0
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 31,
+      "accepted_numeric_values": [
+        6.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 12.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 32,
+      "accepted_numeric_values": [
+        23.85
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 23.85
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 33,
+      "accepted_numeric_values": [
+        180
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 180
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 38,
+      "accepted_numeric_values": [
+        4.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 12.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 42,
+      "accepted_numeric_values": [
+        48
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 48
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 78,
+      "accepted_numeric_values": [
+        1250.0000000000002
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 500.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 96,
+      "accepted_numeric_values": [
+        5.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 400
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 141,
+      "accepted_numeric_values": [
+        2.25
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 1.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 181,
+      "accepted_numeric_values": [
+        11.6
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 15.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 186,
+      "accepted_numeric_values": [
+        22
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": -8
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 206,
+      "accepted_numeric_values": [
+        33.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 0.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 257,
+      "accepted_numeric_values": [
+        29.75
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 29.75
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 259,
+      "accepted_numeric_values": [
+        41.75
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 19.25
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 278,
+      "accepted_numeric_values": [
+        8.5
+      ],
+      "numeric_ast_augassign": {
+        "status": "syntax_error"
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 288,
+      "accepted_numeric_values": [
+        0.375
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 21.818181818181817
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 321,
+      "accepted_numeric_values": [
+        100
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 100
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 333,
+      "accepted_numeric_values": [
+        110.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "undefined_name",
+        "name": "lollipops_on_tuesday"
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 342,
+      "accepted_numeric_values": [
+        5.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 5.0
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 347,
+      "accepted_numeric_values": [
+        111.28
+      ],
+      "numeric_ast_augassign": {
+        "status": "undefined_name",
+        "name": "so_cost"
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 365,
+      "accepted_numeric_values": [
+        188.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 36.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 371,
+      "accepted_numeric_values": [
+        5
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 406,
+      "accepted_numeric_values": [
+        97500
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": -4900000
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 423,
+      "accepted_numeric_values": [
+        1440
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 1440
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 429,
+      "accepted_numeric_values": [
+        4
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 5
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 430,
+      "accepted_numeric_values": [
+        3
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 2
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 455,
+      "accepted_numeric_values": [
+        5.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 1.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 464,
+      "accepted_numeric_values": [
+        820
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 50
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 473,
+      "accepted_numeric_values": [
+        7.354838709677419,
+        7.35
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 1.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 476,
+      "accepted_numeric_values": [
+        9.473684210526315
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 38
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 496,
+      "accepted_numeric_values": [
+        173
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 172.8
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 525,
+      "accepted_numeric_values": [
+        120
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 210
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 547,
+      "accepted_numeric_values": [
+        18
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 22
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 551,
+      "accepted_numeric_values": [
+        144
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 144
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 557,
+      "accepted_numeric_values": [
+        120.0,
+        2.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 120
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 577,
+      "accepted_numeric_values": [
+        3.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 3.0
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 602,
+      "accepted_numeric_values": [
+        90.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 0.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 618,
+      "accepted_numeric_values": [
+        100.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 160
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 680,
+      "accepted_numeric_values": [
+        1
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 54
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 686,
+      "accepted_numeric_values": [
+        45
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": -42
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 709,
+      "accepted_numeric_values": [
+        11.25
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": -60.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 723,
+      "accepted_numeric_values": [
+        24
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 10.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 756,
+      "accepted_numeric_values": [
+        240
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 240
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 797,
+      "accepted_numeric_values": [
+        102.40000000000002
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 1600.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 806,
+      "accepted_numeric_values": [
+        178
+      ],
+      "numeric_ast_augassign": {
+        "status": "unsupported"
+      },
+      "score": "unknown"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 821,
+      "accepted_numeric_values": [
+        33
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 49
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 831,
+      "accepted_numeric_values": [
+        336.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 2440.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 837,
+      "accepted_numeric_values": [
+        90.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 7.5
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 877,
+      "accepted_numeric_values": [
+        8400
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 2400
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 892,
+      "accepted_numeric_values": [
+        2
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 64
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 994,
+      "accepted_numeric_values": [
+        10
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 10
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 998,
+      "accepted_numeric_values": [
+        25
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 25
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/75000",
+      "heldout1024_index": 1014,
+      "accepted_numeric_values": [
+        10.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 14400.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 0,
+      "accepted_numeric_values": [
+        4.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 4
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 1,
+      "accepted_numeric_values": [
+        1.3333333333333333
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 6
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 4,
+      "accepted_numeric_values": [
+        28.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 80
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 5,
+      "accepted_numeric_values": [
+        200.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 112.5
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 6,
+      "accepted_numeric_values": [
+        75.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 550
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 7,
+      "accepted_numeric_values": [
+        15.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "arithmetic_error"
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 8,
+      "accepted_numeric_values": [
+        10.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": -20
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 9,
+      "accepted_numeric_values": [
+        27.5
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 54
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 11,
+      "accepted_numeric_values": [
+        1.176923076923077
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 17.34
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 12,
+      "accepted_numeric_values": [
+        26.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 38
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 13,
+      "accepted_numeric_values": [
+        40.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 40.0
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 14,
+      "accepted_numeric_values": [
+        20.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 20
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 16,
+      "accepted_numeric_values": [
+        1.5
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 18.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 17,
+      "accepted_numeric_values": [
+        183.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": -13
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 18,
+      "accepted_numeric_values": [
+        90.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 22.5
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 20,
+      "accepted_numeric_values": [
+        36.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 0.25
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 21,
+      "accepted_numeric_values": [
+        15.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 15
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 22,
+      "accepted_numeric_values": [
+        0.26666666666666666
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 0.05
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 24,
+      "accepted_numeric_values": [
+        20.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "undefined_name",
+        "name": "both_burgers"
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 26,
+      "accepted_numeric_values": [
+        40.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 40.0
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 27,
+      "accepted_numeric_values": [
+        500.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 3500
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 30,
+      "accepted_numeric_values": [
+        40.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 40.0
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 31,
+      "accepted_numeric_values": [
+        6.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 12.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 32,
+      "accepted_numeric_values": [
+        23.85
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 46.35
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 33,
+      "accepted_numeric_values": [
+        180
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 180
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 38,
+      "accepted_numeric_values": [
+        4.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 1
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 42,
+      "accepted_numeric_values": [
+        48
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 48
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 78,
+      "accepted_numeric_values": [
+        1250.0000000000002
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 500.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 96,
+      "accepted_numeric_values": [
+        5.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 6.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 141,
+      "accepted_numeric_values": [
+        2.25
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 1.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 181,
+      "accepted_numeric_values": [
+        11.6
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 27
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 186,
+      "accepted_numeric_values": [
+        22
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": -10
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 206,
+      "accepted_numeric_values": [
+        33.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 0.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 257,
+      "accepted_numeric_values": [
+        29.75
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 29.75
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 259,
+      "accepted_numeric_values": [
+        41.75
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 19.25
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 278,
+      "accepted_numeric_values": [
+        8.5
+      ],
+      "numeric_ast_augassign": {
+        "status": "syntax_error"
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 288,
+      "accepted_numeric_values": [
+        0.375
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 0.125
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 321,
+      "accepted_numeric_values": [
+        100
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 333,
+      "accepted_numeric_values": [
+        110.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 8.333333333333334
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 342,
+      "accepted_numeric_values": [
+        5.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 5.0
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 347,
+      "accepted_numeric_values": [
+        111.28
+      ],
+      "numeric_ast_augassign": {
+        "status": "undefined_name",
+        "name": "sandals"
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 365,
+      "accepted_numeric_values": [
+        188.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 198.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 371,
+      "accepted_numeric_values": [
+        5
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": -84
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 406,
+      "accepted_numeric_values": [
+        97500
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 99950
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 423,
+      "accepted_numeric_values": [
+        1440
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 1440
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 429,
+      "accepted_numeric_values": [
+        4
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 3
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 430,
+      "accepted_numeric_values": [
+        3
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 2
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 455,
+      "accepted_numeric_values": [
+        5.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 19.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 464,
+      "accepted_numeric_values": [
+        820
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 50
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 473,
+      "accepted_numeric_values": [
+        7.354838709677419,
+        7.35
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 0.12258064516129032
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 476,
+      "accepted_numeric_values": [
+        9.473684210526315
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 40
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 496,
+      "accepted_numeric_values": [
+        173
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 172.8
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 525,
+      "accepted_numeric_values": [
+        120
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 210
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 547,
+      "accepted_numeric_values": [
+        18
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 22
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 551,
+      "accepted_numeric_values": [
+        144
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 144
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 557,
+      "accepted_numeric_values": [
+        120.0,
+        2.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 120.0
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 577,
+      "accepted_numeric_values": [
+        3.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 3.0
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 602,
+      "accepted_numeric_values": [
+        90.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "undefined_name",
+        "name": "total_cost"
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 618,
+      "accepted_numeric_values": [
+        100.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 96.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 680,
+      "accepted_numeric_values": [
+        1
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 54
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 686,
+      "accepted_numeric_values": [
+        45
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 69
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 709,
+      "accepted_numeric_values": [
+        11.25
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 666.6666666666666
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 723,
+      "accepted_numeric_values": [
+        24
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 10.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 756,
+      "accepted_numeric_values": [
+        240
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 240
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 797,
+      "accepted_numeric_values": [
+        102.40000000000002
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 102.40000000000002
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 806,
+      "accepted_numeric_values": [
+        178
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 180
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 821,
+      "accepted_numeric_values": [
+        33
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 49
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 831,
+      "accepted_numeric_values": [
+        336.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 0.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 837,
+      "accepted_numeric_values": [
+        90.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 7.5
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 877,
+      "accepted_numeric_values": [
+        8400
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 8400
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 892,
+      "accepted_numeric_values": [
+        2
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 4
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 994,
+      "accepted_numeric_values": [
+        10
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 10
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 998,
+      "accepted_numeric_values": [
+        25
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 25
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "21/100000",
+      "heldout1024_index": 1014,
+      "accepted_numeric_values": [
+        10.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 0.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 0,
+      "accepted_numeric_values": [
+        4.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 4
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 1,
+      "accepted_numeric_values": [
+        1.3333333333333333
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 6
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 4,
+      "accepted_numeric_values": [
+        28.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 40.6
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 5,
+      "accepted_numeric_values": [
+        200.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 112.5
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 6,
+      "accepted_numeric_values": [
+        75.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 49
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 7,
+      "accepted_numeric_values": [
+        15.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 20.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 8,
+      "accepted_numeric_values": [
+        10.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": -20
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 9,
+      "accepted_numeric_values": [
+        27.5
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 45
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 11,
+      "accepted_numeric_values": [
+        1.176923076923077
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 0.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 12,
+      "accepted_numeric_values": [
+        26.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 22
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 13,
+      "accepted_numeric_values": [
+        40.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 40.0
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 14,
+      "accepted_numeric_values": [
+        20.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 80
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 16,
+      "accepted_numeric_values": [
+        1.5
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 18.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 17,
+      "accepted_numeric_values": [
+        183.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": -30
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 18,
+      "accepted_numeric_values": [
+        90.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 45.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 20,
+      "accepted_numeric_values": [
+        36.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 9
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 21,
+      "accepted_numeric_values": [
+        15.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 15
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 22,
+      "accepted_numeric_values": [
+        0.26666666666666666
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 0.03333333333333333
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 24,
+      "accepted_numeric_values": [
+        20.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "undefined_name",
+        "name": "neither_burgers"
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 26,
+      "accepted_numeric_values": [
+        40.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 40.0
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 27,
+      "accepted_numeric_values": [
+        500.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 2500
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 30,
+      "accepted_numeric_values": [
+        40.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 40.0
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 31,
+      "accepted_numeric_values": [
+        6.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 12.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 32,
+      "accepted_numeric_values": [
+        23.85
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 23.85
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 33,
+      "accepted_numeric_values": [
+        180
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 180
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 38,
+      "accepted_numeric_values": [
+        4.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 12.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 42,
+      "accepted_numeric_values": [
+        48
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 48
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 78,
+      "accepted_numeric_values": [
+        1250.0000000000002
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 500.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 96,
+      "accepted_numeric_values": [
+        5.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 400
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 141,
+      "accepted_numeric_values": [
+        2.25
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 1.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 181,
+      "accepted_numeric_values": [
+        11.6
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 15.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 186,
+      "accepted_numeric_values": [
+        22
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": -8
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 206,
+      "accepted_numeric_values": [
+        33.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 0.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 257,
+      "accepted_numeric_values": [
+        29.75
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 29.75
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 259,
+      "accepted_numeric_values": [
+        41.75
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 19.25
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 278,
+      "accepted_numeric_values": [
+        8.5
+      ],
+      "numeric_ast_augassign": {
+        "status": "syntax_error"
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 288,
+      "accepted_numeric_values": [
+        0.375
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 21.818181818181817
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 321,
+      "accepted_numeric_values": [
+        100
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 100
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 333,
+      "accepted_numeric_values": [
+        110.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "undefined_name",
+        "name": "lollipops_on_tuesday"
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 342,
+      "accepted_numeric_values": [
+        5.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 5.0
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 347,
+      "accepted_numeric_values": [
+        111.28
+      ],
+      "numeric_ast_augassign": {
+        "status": "undefined_name",
+        "name": "so_cost"
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 365,
+      "accepted_numeric_values": [
+        188.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 36.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 371,
+      "accepted_numeric_values": [
+        5
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 406,
+      "accepted_numeric_values": [
+        97500
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": -4900000
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 423,
+      "accepted_numeric_values": [
+        1440
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 1440
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 429,
+      "accepted_numeric_values": [
+        4
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 5
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 430,
+      "accepted_numeric_values": [
+        3
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 2
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 455,
+      "accepted_numeric_values": [
+        5.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 1.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 464,
+      "accepted_numeric_values": [
+        820
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 50
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 473,
+      "accepted_numeric_values": [
+        7.354838709677419,
+        7.35
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 1.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 476,
+      "accepted_numeric_values": [
+        9.473684210526315
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 38
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 496,
+      "accepted_numeric_values": [
+        173
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 172.8
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 525,
+      "accepted_numeric_values": [
+        120
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 210
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 547,
+      "accepted_numeric_values": [
+        18
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 22
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 551,
+      "accepted_numeric_values": [
+        144
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 144
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 557,
+      "accepted_numeric_values": [
+        120.0,
+        2.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 120
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 577,
+      "accepted_numeric_values": [
+        3.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 3.0
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 602,
+      "accepted_numeric_values": [
+        90.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 0.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 618,
+      "accepted_numeric_values": [
+        100.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 160
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 680,
+      "accepted_numeric_values": [
+        1
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 54
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 686,
+      "accepted_numeric_values": [
+        45
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": -42
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 709,
+      "accepted_numeric_values": [
+        11.25
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": -60.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 723,
+      "accepted_numeric_values": [
+        24
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 10.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 756,
+      "accepted_numeric_values": [
+        240
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 240
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 797,
+      "accepted_numeric_values": [
+        102.40000000000002
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 1600.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 806,
+      "accepted_numeric_values": [
+        178
+      ],
+      "numeric_ast_augassign": {
+        "status": "unsupported"
+      },
+      "score": "unknown"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 821,
+      "accepted_numeric_values": [
+        33
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 49
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 831,
+      "accepted_numeric_values": [
+        336.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 2440.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 837,
+      "accepted_numeric_values": [
+        90.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 7.5
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 877,
+      "accepted_numeric_values": [
+        8400
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 2400
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 892,
+      "accepted_numeric_values": [
+        2
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 64
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 994,
+      "accepted_numeric_values": [
+        10
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 10
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 998,
+      "accepted_numeric_values": [
+        25
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 25
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/75000",
+      "heldout1024_index": 1014,
+      "accepted_numeric_values": [
+        10.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 14400.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 0,
+      "accepted_numeric_values": [
+        4.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 4
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 1,
+      "accepted_numeric_values": [
+        1.3333333333333333
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 6
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 4,
+      "accepted_numeric_values": [
+        28.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 14.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 5,
+      "accepted_numeric_values": [
+        200.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 37.5
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 6,
+      "accepted_numeric_values": [
+        75.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 450
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 7,
+      "accepted_numeric_values": [
+        15.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 5.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 8,
+      "accepted_numeric_values": [
+        10.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 30
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 9,
+      "accepted_numeric_values": [
+        27.5
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 9000
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 11,
+      "accepted_numeric_values": [
+        1.176923076923077
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 15.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 12,
+      "accepted_numeric_values": [
+        26.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 26
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 13,
+      "accepted_numeric_values": [
+        40.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 40.0
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 14,
+      "accepted_numeric_values": [
+        20.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 20
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 16,
+      "accepted_numeric_values": [
+        1.5
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 18.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 17,
+      "accepted_numeric_values": [
+        183.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 30
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 18,
+      "accepted_numeric_values": [
+        90.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 22.5
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 20,
+      "accepted_numeric_values": [
+        36.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 9
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 21,
+      "accepted_numeric_values": [
+        15.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 15
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 22,
+      "accepted_numeric_values": [
+        0.26666666666666666
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 0.03333333333333333
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 24,
+      "accepted_numeric_values": [
+        20.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "undefined_name",
+        "name": "non_customers"
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 26,
+      "accepted_numeric_values": [
+        40.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 40.0
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 27,
+      "accepted_numeric_values": [
+        500.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 2500
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 30,
+      "accepted_numeric_values": [
+        40.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 40.0
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 31,
+      "accepted_numeric_values": [
+        6.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 6.0
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 32,
+      "accepted_numeric_values": [
+        23.85
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 43.65
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 33,
+      "accepted_numeric_values": [
+        180
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 180
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 38,
+      "accepted_numeric_values": [
+        4.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 12.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 42,
+      "accepted_numeric_values": [
+        48
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 45
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 78,
+      "accepted_numeric_values": [
+        1250.0000000000002
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 750.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 96,
+      "accepted_numeric_values": [
+        5.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 400
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 141,
+      "accepted_numeric_values": [
+        2.25
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 1.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 181,
+      "accepted_numeric_values": [
+        11.6
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 12
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 186,
+      "accepted_numeric_values": [
+        22
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 10
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 206,
+      "accepted_numeric_values": [
+        33.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 0.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 257,
+      "accepted_numeric_values": [
+        29.75
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 29.75
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 259,
+      "accepted_numeric_values": [
+        41.75
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 19.25
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 278,
+      "accepted_numeric_values": [
+        8.5
+      ],
+      "numeric_ast_augassign": {
+        "status": "syntax_error"
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 288,
+      "accepted_numeric_values": [
+        0.375
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 3.3333333333333335
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 321,
+      "accepted_numeric_values": [
+        100
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 100
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 333,
+      "accepted_numeric_values": [
+        110.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 9.375
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 342,
+      "accepted_numeric_values": [
+        5.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 5.0
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 347,
+      "accepted_numeric_values": [
+        111.28
+      ],
+      "numeric_ast_augassign": {
+        "status": "undefined_name",
+        "name": "tshirt_cost"
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 365,
+      "accepted_numeric_values": [
+        188.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 68.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 371,
+      "accepted_numeric_values": [
+        5
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": -84
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 406,
+      "accepted_numeric_values": [
+        97500
+      ],
+      "numeric_ast_augassign": {
+        "status": "undefined_name",
+        "name": "glassroom_cost"
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 423,
+      "accepted_numeric_values": [
+        1440
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 1440
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 429,
+      "accepted_numeric_values": [
+        4
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 430,
+      "accepted_numeric_values": [
+        3
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 2
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 455,
+      "accepted_numeric_values": [
+        5.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 464,
+      "accepted_numeric_values": [
+        820
+      ],
+      "numeric_ast_augassign": {
+        "status": "undefined_name",
+        "name": "overtime_income"
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 473,
+      "accepted_numeric_values": [
+        7.354838709677419,
+        7.35
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 8.157894736842104
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 476,
+      "accepted_numeric_values": [
+        9.473684210526315
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 38
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 496,
+      "accepted_numeric_values": [
+        173
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 172.8
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 525,
+      "accepted_numeric_values": [
+        120
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 210
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 547,
+      "accepted_numeric_values": [
+        18
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 22
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 551,
+      "accepted_numeric_values": [
+        144
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 144
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 557,
+      "accepted_numeric_values": [
+        120.0,
+        2.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 900
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 577,
+      "accepted_numeric_values": [
+        3.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 3.0
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 602,
+      "accepted_numeric_values": [
+        90.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 9480
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 618,
+      "accepted_numeric_values": [
+        100.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 320
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 680,
+      "accepted_numeric_values": [
+        1
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 36
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 686,
+      "accepted_numeric_values": [
+        45
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": -75
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 709,
+      "accepted_numeric_values": [
+        11.25
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 0.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 723,
+      "accepted_numeric_values": [
+        24
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 10.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 756,
+      "accepted_numeric_values": [
+        240
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 240
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 797,
+      "accepted_numeric_values": [
+        102.40000000000002
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 102.40000000000002
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 806,
+      "accepted_numeric_values": [
+        178
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 180
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 821,
+      "accepted_numeric_values": [
+        33
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 44
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 831,
+      "accepted_numeric_values": [
+        336.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 2880.0
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 837,
+      "accepted_numeric_values": [
+        90.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 7.5
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 877,
+      "accepted_numeric_values": [
+        8400
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 2400
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 892,
+      "accepted_numeric_values": [
+        2
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 1
+      },
+      "score": "wrong"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 994,
+      "accepted_numeric_values": [
+        10
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 10
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 998,
+      "accepted_numeric_values": [
+        25
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 25
+      },
+      "score": "correct"
+    },
+    {
+      "model_step": "22/100000",
+      "heldout1024_index": 1014,
+      "accepted_numeric_values": [
+        10.0
+      ],
+      "numeric_ast_augassign": {
+        "status": "numeric",
+        "value": 120.0
+      },
+      "score": "wrong"
+    }
+  ],
+  "new_training_updates": 0,
+  "official_pass_at_1_evaluated": false,
+  "fresh1024_used": false,
+  "limits": [
+    "74 small selected/adaptive old heldout questions, not unbiased overall accuracy. Reference888 is noisy target agreement.",
+    "22 original74 score18 plus1 supported AugAssign=19;21 original18 plus1=19. Same aggregate conceals3 gains and3 losses.",
+    "One paired source trajectory; seed robustness and generalization not established."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "tests": 18,
+  "unittest_seconds": 17.51,
+  "device": "cpu",
+  "notebook": {
+    "nbformat_valid": true,
+    "run_all": true,
+    "rows": 8,
+    "cold_seconds": 2.17824525013566,
+    "gates_passed": true,
+    "fresh_kernel": true
+  },
+  "static_ast": true,
+  "config_changes_only": [
+    "sequence_budget",
+    "greedy_sequence_budget",
+    "cuda_allocator",
+    "release_cache_between_batches"
+  ],
+  "models_policy_vote_unchanged": true,
+  "l3_replay": {
+    "rows": 2048,
+    "restores": 49152,
+    "matches": 1535,
+    "exact": true
+  }
+}

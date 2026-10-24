@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "notebook_sha256": "d3fc68c0c7aa942c359ec0c81233bf191aeaeafc9a046f1658d74dd1996d9656",
+  "unchanged_E1_modules": 21,
+  "mount_paths": true,
+  "actual_worker": true,
+  "executor": true,
+  "gzip_roundtrip": true,
+  "pools": 9,
+  "candidates_per_row": 75,
+  "no_LL_token_ensemble_soups": true,
+  "seconds": 1.295340749900788
+}

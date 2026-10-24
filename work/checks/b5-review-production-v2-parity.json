@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "ref": "friend1/nlp-hw02-b5/2",
+  "all_code_cells_exact_to_verified_v1": true,
+  "code_cell_SHA256": [
+    "3d7f48b0632a6799bcd67d2b7a2c376b76c6b57b83254978a15bb1d094c91a9f",
+    "5d0deedad71410f5d98cd449ff5f321d586453548bb3e7b009ccf43e81010fc6",
+    "eca02ef019ea25f2f4fc60e03f1e21850276ff88cd42cac94740fda14be3f54a"
+  ],
+  "mounts_match_successful_smoke": true,
+  "private": true,
+  "machine_shape": "NvidiaTeslaT4",
+  "launch_origin": "not pushed by this reviewer; unknown",
+  "backend_timeout_not_exposed_by_metadata": true,
+  "runtime_ceiling_seconds": 40800
+}

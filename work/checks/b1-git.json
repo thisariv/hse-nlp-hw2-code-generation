@@ -1,0 +1,26 @@
+{
+  "paths": [
+    "work/kaggle/b1_output.py",
+    "work/kaggle/b1_static_check.py",
+    "work/kaggle/b1_tests.py",
+    "work/kaggle/b1_transfer.py",
+    "work/kaggle/b1_worker.py",
+    "work/kaggle/build_b1.py",
+    "work/kaggle/src/b1_data.py",
+    "work/kaggle/src/b1_eval.py",
+    "work/kaggle/src/b1_gpu_smoke.py",
+    "work/kaggle/src/b1_resume.py",
+    "work/kaggle/src/b1_runtime.py",
+    "work/kaggle/src/b1_session.py",
+    "work/notes/b1-plan.md",
+    "work/checks/b1-cpu.json",
+    "work/checks/b1-static.json",
+    "work/kaggle/notebooks/nlp-hw02-kaggle-b1.ipynb",
+    "work/kaggle/notebooks/nlp-hw02-b1-gpu-smoke.ipynb"
+  ],
+  "message": "nlp: prepare fresh B1 E/W training and exact cross-account resume",
+  "attempted": true,
+  "add_exit": 128,
+  "committed": false,
+  "reason": "fatal: Unable to create '<vault>/.git/worktrees/study1/index.lock': Operation not permitted"
+}

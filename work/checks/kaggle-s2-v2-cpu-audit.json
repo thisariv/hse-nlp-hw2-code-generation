@@ -1,0 +1,1975 @@
+{
+  "date": "2026-10-11",
+  "new_training_updates": 0,
+  "new_GPU_runs": 0,
+  "root": "results/kaggle-runs/nlp-hw02-kaggle-s2/2",
+  "checks": {
+    "candidate_SHA_receipts": 33,
+    "B_order_tokens_answers_scores_bins_lengths_CE_denominators_alignment": "passed",
+    "A_baselines_and_reference_receipts_exact": "passed",
+    "B_model_only_full_final_latest_optimizer_scheduler_scaler_rng_cursor": "passed"
+  },
+  "download": {
+    "ref": "thisarivson/nlp-hw02-kaggle-s2/2",
+    "version_label": "v2",
+    "files": 216,
+    "CLI_224_compatibility": true,
+    "parallel_download_workers": 12,
+    "errors": [],
+    "bytes": 1487845904,
+    "inventory": [
+      {
+        "file": "a-baselines.json",
+        "bytes": 578609,
+        "sha256": "7d08e27d47cc80d06bd25c30ef3c70d6667f9269e54a2902fb90bef0027cf6c1"
+      },
+      {
+        "file": "evaluation.lock",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "file": "gpu0-exp27b/27b-summary.json",
+        "bytes": 1319,
+        "sha256": "6087ab57fd74649d46feac359b589f80fa970382ff8c6d5afaa70b9bb8f9a70c"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-000000.json",
+        "bytes": 658048,
+        "sha256": "94ea5a1f8a5c1af6489ab37031584b98b38f3582e83da27831dc814775f0bbd5"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-000000.sha.json",
+        "bytes": 83,
+        "sha256": "aa0cf7980eb39ddfacb436818d5cb3717e8b21947f13b39a74c89ce54181a010"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-000128.json",
+        "bytes": 689011,
+        "sha256": "1ce1e233f73d4814adc9467c5c262f0d578e849cc4b9ac9841ebaceea8a59238"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-000128.sha.json",
+        "bytes": 83,
+        "sha256": "813cdcf433ae6eb2212cb3c687008e546210872ae1dcb2f56c45ae9c752f7083"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-000256.json",
+        "bytes": 694741,
+        "sha256": "20e33ca46f507406998ebc708ceb1c225e9317017d62a32570b2fbc4f9da1716"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-000256.sha.json",
+        "bytes": 83,
+        "sha256": "edacf75a668c0fef4d14b66e034c85b308e55e42151b8e304e70e12c26392536"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-000384.json",
+        "bytes": 707510,
+        "sha256": "2414a742264584264119e32c8fa413fa6abef04caedd8167bc7d4d341d7cf874"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-000384.sha.json",
+        "bytes": 83,
+        "sha256": "05980488637277f74679c14579404d1f26b40ecef18c0646fcf3071c82e7d433"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-000512.json",
+        "bytes": 722796,
+        "sha256": "674b8e47bfdbcad6ae63785f754aa296319b44c4c071835bee150fef9b5b46b5"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-000512.sha.json",
+        "bytes": 83,
+        "sha256": "28eeab4f7c605ab2b4f2c28350734b4ffb16164b6724ff8ba0c427d39771bafa"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-000640.json",
+        "bytes": 735383,
+        "sha256": "ca7d9f33ef1e5389bfada7e14a7f2ab317f31057798f47ac23d0a9052f4d402c"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-000640.sha.json",
+        "bytes": 83,
+        "sha256": "af6c8dabce6e3f4cbd42cde5d7696d834db3d52759d3eb6bdba5f984407e1e92"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-000768.json",
+        "bytes": 730077,
+        "sha256": "6c208b9831912997c1bc327e406ce8c250d84f36ad558c929538444af372067f"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-000768.sha.json",
+        "bytes": 83,
+        "sha256": "16dc5339c2aa4c1570a89672736f9d65cf44c465f12344ae456eab6ecce541a7"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-000896.json",
+        "bytes": 761624,
+        "sha256": "8a5e68d82cc2350debfe2834c608d9aa87d918c4ad46106d9b044fe1248a2efc"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-000896.sha.json",
+        "bytes": 83,
+        "sha256": "f9ead78188c4c73b2014ffae22b94d6d5dd308e78919c40ac3de6853a8c301b0"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-001024.json",
+        "bytes": 762404,
+        "sha256": "0a2e2f3eaae5cb228d99db0060d2fcee4c7d4188f049ece65979dfae85ad3fa4"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-001024.sha.json",
+        "bytes": 83,
+        "sha256": "58dbe295a36414ffe5602d7f82c33ae3d3dc32288782e2c1ee18e5a84e431207"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-001152.json",
+        "bytes": 777178,
+        "sha256": "39f376053229d553c7334119d59b44cb2add28283723ce9dd22ee5b331e940b1"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-001152.sha.json",
+        "bytes": 83,
+        "sha256": "bb20fda3c26d2c3a6314a83411214ed82d5d803a2cfebc947e523b693f382874"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-001280.json",
+        "bytes": 793398,
+        "sha256": "58c967a68a62e90eb05bd64a97e43d57a30f77c401c4ff05397ae9d8238a29a9"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-001280.sha.json",
+        "bytes": 83,
+        "sha256": "88e223f2ffce381a2873b67786a094013ae964c19f2595f7a00f95171a59e92f"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-001408.json",
+        "bytes": 799757,
+        "sha256": "64938e425081d3a46ec1f9b97dcf9724c72c89d283815d0fac9c617e544c5cc8"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-001408.sha.json",
+        "bytes": 83,
+        "sha256": "111f945e5bd1c4bfcf6454f2bbc40006c5bc7eca3950f97bb666f391f0c0e40a"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-001536.json",
+        "bytes": 796583,
+        "sha256": "40096044bf6062df4dda3c19af8892054a503476cc4823949bc6f708d9740c3c"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-001536.sha.json",
+        "bytes": 83,
+        "sha256": "99f05327550c09609292f1ca6438f46f4d3606e56f3046fc90ad6a405f58d747"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-001664.json",
+        "bytes": 829153,
+        "sha256": "7c769961cc93869a162fcf948cce283ed9c399fcde02c746f76e7f5275d1a125"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-001664.sha.json",
+        "bytes": 83,
+        "sha256": "19700241b623d8918bce11b335d304643801d6e2d77427e8a4abecddf2375e7d"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-001792.json",
+        "bytes": 823019,
+        "sha256": "39379b669e5074c1dd108c89857b84752c81cddddd88170419865a8e9da09dbf"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-001792.sha.json",
+        "bytes": 83,
+        "sha256": "1299a9770b896e062ebf4b33d7fa3d6b1fe821608186af9d9d2d50fd55d7b6c1"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-001920.json",
+        "bytes": 837536,
+        "sha256": "fa8c220cbba5ea1f7fd730096b9535b507320191719ca6372fec649c2fa16b1d"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-001920.sha.json",
+        "bytes": 83,
+        "sha256": "7107a52d24c728fa0101322004de16d39d5691c5e591cc6566705f86ee53b707"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-002048.json",
+        "bytes": 820611,
+        "sha256": "a1783652a6bd22136dbb8527dad9df0240c63603d21b0784fe8228791c4b1729"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-002048.sha.json",
+        "bytes": 83,
+        "sha256": "9dc2b1721c4684132b195ad28919f57b61a813745160b610272e98c713fece31"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-002176.json",
+        "bytes": 865527,
+        "sha256": "f54c5a791f0ec577363ce97cc55e1ad5f9d2f9556e8af8fc2bc0abc9cb09193f"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-002176.sha.json",
+        "bytes": 83,
+        "sha256": "2125ac621bb6eb0a75ad653aba564f0a52b2bd81ee2cae3e8b1bd01720ef6e84"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-002304.json",
+        "bytes": 859749,
+        "sha256": "baac939ec98579f289316e4a607b209119ff912e5c1aab4a2bed31e2512ab9e7"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-002304.sha.json",
+        "bytes": 83,
+        "sha256": "a8ccb70b0b4dfe74a1dcc1adfea5d1090e1089068dbbedb9c06cb534831d09ad"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-002432.json",
+        "bytes": 890324,
+        "sha256": "797ce2c67ee0f93496be2b01e8bb8ef28071d4410db40f6f8176109596ded5a0"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-002432.sha.json",
+        "bytes": 83,
+        "sha256": "cdf85f6c926642f445c16219f65cf24856b70552650dfe3821b2016802700306"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-002560.json",
+        "bytes": 897481,
+        "sha256": "680925f285fa0e3a22e6ea8a665b683061f6aa040fbbae669799d3ee6c4d62ae"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-002560.sha.json",
+        "bytes": 83,
+        "sha256": "8a78dd483065f1db17e804e3d5c4f6e99dcefcbb2aa4f378555adee84b54a0ba"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-002688.json",
+        "bytes": 898072,
+        "sha256": "f8bb969846a7e4e4b5c7cae4907ebb6216c500ce7203c6a5438a1aea9a83c22b"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-002688.sha.json",
+        "bytes": 83,
+        "sha256": "255e06ad21d1c0992994b99212a2d0edb0bb9225b7b846b055ab19f3c46ff487"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-002816.json",
+        "bytes": 910551,
+        "sha256": "73c81fa8f19cce2d4851105423c7179d8a5130168194a616196cbf4d328192ab"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-002816.sha.json",
+        "bytes": 83,
+        "sha256": "9dc6e5d197dac1ecd0abb9a302bbb934a3f9da4b8133d30af67c8ce0fe3b0eb5"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-002944.json",
+        "bytes": 954352,
+        "sha256": "3bd47d8963695dc763403539370b899c3c9c7ad7ae9e5a351f8dcd55a1f736d7"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-002944.sha.json",
+        "bytes": 83,
+        "sha256": "6de16d61ab1256ab8cbc03d2161e60308ca28b413c77b4efeb164b0586ab260c"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-003072.json",
+        "bytes": 936338,
+        "sha256": "6295929adffbbcd1356d4908e849e96e4451c965cd8040406e0f8c3fd26a9b82"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-003072.sha.json",
+        "bytes": 83,
+        "sha256": "52138dbcf939fd1505a513536ec860c8ac2e1b2a9de16a7ebd1778b075fc4e86"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-003200.json",
+        "bytes": 960139,
+        "sha256": "e1fab37aa80ff0cf58f1ef11c6aba92bdcd8cc45200d9aee01b0aef847c86a5d"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-003200.sha.json",
+        "bytes": 83,
+        "sha256": "d4ff7a148b4ccaf54c1cb9a205dd4b4deca4e2c35ce92b4bb36c3974a67a30c9"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-003328.json",
+        "bytes": 980949,
+        "sha256": "fac4e086daffc6b6e6e71b206314410b746a0eb301c01b058f6b1b633de22937"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-003328.sha.json",
+        "bytes": 83,
+        "sha256": "7fdcd95306158cb4cccc5ad7299ee6c2094973c065c7e9e9f2539e5c56f9a8a6"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-003456.json",
+        "bytes": 1010333,
+        "sha256": "9ec32d4aa766533b5c5cfd6de2ff83778210b9ab13da01a5c90cda93b3e94972"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-003456.sha.json",
+        "bytes": 83,
+        "sha256": "99f4ca326046a49f3d0fb816c542127813f802dd02691bc903b298381a53ec10"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-003584.json",
+        "bytes": 1003452,
+        "sha256": "71e2fd079882faa3739f495eb383dd47fa2f6d8e87c33765bcff9f3d943cfc8a"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-003584.sha.json",
+        "bytes": 83,
+        "sha256": "0c05148da7e22c34c774794405362ea3aa9850dce7df2d6156f1779044536d20"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-003712.json",
+        "bytes": 1046220,
+        "sha256": "2b3b84f629ed41d653389b2d9e961478bdea31c9bedcc944b7f0b2884794e07a"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-003712.sha.json",
+        "bytes": 83,
+        "sha256": "3497dc5bbed186142eace0408ff08afc52c37a18500f356f809502ab27e66e85"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-003840.json",
+        "bytes": 1088185,
+        "sha256": "0cac04df0bbb873de73145fb01a35f3ed72c74bced276f684139a1e59f199747"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-003840.sha.json",
+        "bytes": 83,
+        "sha256": "69706ea6b6bf8032fbbec81b29448e2c693eff62837e713c9d1afac944c7b001"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-003968.json",
+        "bytes": 1166319,
+        "sha256": "7439747a887377871c804e8515f9bf16ff15436266a7da721951f3ca897d2551"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/batch-003968.sha.json",
+        "bytes": 83,
+        "sha256": "158cbe67339ddf0486f049f0a41b811a473fb26c80c8518c082e6fada1cc1eba"
+      },
+      {
+        "file": "gpu0-exp27b/heldout4k/candidates/identity.json",
+        "bytes": 363,
+        "sha256": "3c7378a55a4938b20a5fb483f7a24f6f02e663d1cfa44fe866f992abc744b238"
+      },
+      {
+        "file": "gpu0-exp27b/memory/batch-choice.json",
+        "bytes": 602,
+        "sha256": "533dc431ab2319116766b84b0eca4b54d57da525744842ed8bd0e68703ebbaea"
+      },
+      {
+        "file": "gpu0-exp27b/memory/probe-2048/batch-000000.json",
+        "bytes": 1172511,
+        "sha256": "68905dc525e8c3b21ed8639b663aeb3a17f31e1a9a97ba98e4d8ec46517e1ca5"
+      },
+      {
+        "file": "gpu0-exp27b/memory/probe-2048/batch-000000.sha.json",
+        "bytes": 83,
+        "sha256": "0a491103abab1d4617a29a52ccd772c2be6fcdfdfd76b1555418bab0505025ae"
+      },
+      {
+        "file": "gpu0-exp27b/memory/probe-2048/identity.json",
+        "bytes": 363,
+        "sha256": "1f031e29b72fc8ba90d22e80008d08363ea3cecc0dac7c60e8284ae47e2b149b"
+      },
+      {
+        "file": "gpu0-exp29/29-summary.json",
+        "bytes": 102,
+        "sha256": "3ae7144963df01aed570b9e2096fb6a8eb4f8c63ffa66aee2c4f63c6792e4f59"
+      },
+      {
+        "file": "gpu0-exp29/reference-reuse.json",
+        "bytes": 438,
+        "sha256": "d368876b117c06dadea517763d912a270996565b457f48cc1bfa29585b343525"
+      },
+      {
+        "file": "gpu0-exp29/references/heldout4k-receipt.json",
+        "bytes": 96742,
+        "sha256": "145f3b649f4622662cf9075d5dbeac5a2f5a9bb149a2507db4196cef82745fad"
+      },
+      {
+        "file": "gpu0-exp29/references/heldout4k-reference-execution.json",
+        "bytes": 253470,
+        "sha256": "664f4b6f28574f0b39a4bbe8151bc737459289d087ac4f3b73e1989bfb655a49"
+      },
+      {
+        "file": "gpu0-exp29/references/old1024-receipt.json",
+        "bytes": 22336,
+        "sha256": "3c6f7ec3f379242d341c0189ed4d7f09ee963ad790e03e894294267f6a7f1322"
+      },
+      {
+        "file": "gpu0-exp29/references/old1024-reference-execution.json",
+        "bytes": 63094,
+        "sha256": "7d5da0e871bd9e7c592b030a0887ec7f6f2f6b92e3c693f1aa95c97923904e17"
+      },
+      {
+        "file": "gpu0-failure.json",
+        "bytes": 121,
+        "sha256": "6fe98d9fbe370140f2538e05a5f7c9f270edcedc0c7850212a70b625df8d85ac"
+      },
+      {
+        "file": "gpu0-process.log",
+        "bytes": 1280,
+        "sha256": "d8f05b5fe9ebc87dc664c3888e29c1b2d35efa31e55e135f1c1d0f29d7b3a230"
+      },
+      {
+        "file": "gpu0-runtime.json",
+        "bytes": 278,
+        "sha256": "32260049a414abef7923fe1b52acd93f3e308ad95bd5bfa23d61ec94cd564e05"
+      },
+      {
+        "file": "gpu1-exp28/28-summary.json",
+        "bytes": 698501,
+        "sha256": "e4f016df570aed72fee4abdee10ad5d7a1393ce3f344014dd6c4ed1d787bbe8f"
+      },
+      {
+        "file": "gpu1-exp28/500-step-calibration.json",
+        "bytes": 1470,
+        "sha256": "476b26ad7d946ae85df9433bcaf975f8f7f47110a6c56ff55049fac29f525426"
+      },
+      {
+        "file": "gpu1-exp28/D0-gate.json",
+        "bytes": 123,
+        "sha256": "72a95bc90a383d8aea6c16fc183c5bd49501637822b1e7aa1e29df675ab1c736"
+      },
+      {
+        "file": "gpu1-exp28/D0-kaggle/evaluation-progress.json",
+        "bytes": 116336,
+        "sha256": "0ef0a65340b9155546d154b20c54a5c9723bac23374da16494d1f6ced6a3e198"
+      },
+      {
+        "file": "gpu1-exp28/D0-kaggle/heldout4k-answers.jsonl",
+        "bytes": 1719277,
+        "sha256": "b7aaa3cf3e00dac34972a841e98fc478e60deb42b1c8fc85fc104e6996c9667b"
+      },
+      {
+        "file": "gpu1-exp28/D0-kaggle/heldout4k-execution.json",
+        "bytes": 254931,
+        "sha256": "81c08ac626fc8700c16a465d0ddee56509510b18e0bfa0aa553ca1ee031fcd68"
+      },
+      {
+        "file": "gpu1-exp28/D0-kaggle/heldout4k-generation-time.json",
+        "bytes": 614,
+        "sha256": "fd89d51bbefba5134b72bea314b58b7e6dc6d7963a381a34a7023a86e1064a8b"
+      },
+      {
+        "file": "gpu1-exp28/D0-kaggle/heldout4k-generations.json",
+        "bytes": 4753022,
+        "sha256": "41c687162edd8c054b0684b6c707b23ebd1cb28d859b343a188d6ad44a4e0a98"
+      },
+      {
+        "file": "gpu1-exp28/D0-kaggle/metrics.json",
+        "bytes": 116336,
+        "sha256": "0ef0a65340b9155546d154b20c54a5c9723bac23374da16494d1f6ced6a3e198"
+      },
+      {
+        "file": "gpu1-exp28/D0-kaggle/old1024-answers.jsonl",
+        "bytes": 425527,
+        "sha256": "4ec6177fa2335714da080faa8e36c3007be43e3bd57ac913957db13a91a0d9c2"
+      },
+      {
+        "file": "gpu1-exp28/D0-kaggle/old1024-execution.json",
+        "bytes": 63595,
+        "sha256": "49aaec2e92e72d8917ae3f227fd9e9fa0d15e3e9bf51bea5147116875197ba60"
+      },
+      {
+        "file": "gpu1-exp28/D0-kaggle/old1024-generation-time.json",
+        "bytes": 610,
+        "sha256": "56991e6454d9181e7ab7e906c8d84e2d941e2c44591a3629d391ef9af573f058"
+      },
+      {
+        "file": "gpu1-exp28/D0-kaggle/old1024-generations.json",
+        "bytes": 1167246,
+        "sha256": "64268125971622d2ada73457d89be25d139cd0ae5e35d8493fd12af1844cefb4"
+      },
+      {
+        "file": "gpu1-exp28/checkpoints/final-point-028978-48ac7b8938.pt",
+        "bytes": 383663091,
+        "sha256": "e5374801b57ed5ef8e13312b0619d7d83a0257de6d0381d60452440a9d25723b"
+      },
+      {
+        "file": "gpu1-exp28/checkpoints/final-point-028978-48ac7b8938.pt.json",
+        "bytes": 1043,
+        "sha256": "6408a44f82d034321f45d3131ee555ab0a6a78d706dafd33bd4aa27596361785"
+      },
+      {
+        "file": "gpu1-exp28/checkpoints/session-stop-028978-ee795e9dbd.pt",
+        "bytes": 383663819,
+        "sha256": "ffbf4a441b489f861ef4645e146639e1d7d744afb1bef0e5a85fd659ed614777"
+      },
+      {
+        "file": "gpu1-exp28/checkpoints/session-stop-028978-ee795e9dbd.pt.json",
+        "bytes": 1035,
+        "sha256": "bb4d1f428eafbdabab9e851e2ba592f837b0b7dd55deb9b3dfeef4524b9d8f07"
+      },
+      {
+        "file": "gpu1-exp28/final-checkpoint.json",
+        "bytes": 1043,
+        "sha256": "6408a44f82d034321f45d3131ee555ab0a6a78d706dafd33bd4aa27596361785"
+      },
+      {
+        "file": "gpu1-exp28/initial-B.pt",
+        "bytes": 127841291,
+        "sha256": "a209ce2df321e7db563154e124dcbd47304f728ad7e15d96f1afee84e0856c84"
+      },
+      {
+        "file": "gpu1-exp28/latest.json",
+        "bytes": 1035,
+        "sha256": "bb4d1f428eafbdabab9e851e2ba592f837b0b7dd55deb9b3dfeef4524b9d8f07"
+      },
+      {
+        "file": "gpu1-exp28/live-progress.json",
+        "bytes": 478,
+        "sha256": "f09ff7616b854a68146cfedf44a248bff3953a41f271ab439076c59775171e18"
+      },
+      {
+        "file": "gpu1-exp28/points/t01/checkpoint.json",
+        "bytes": 947,
+        "sha256": "82aec567a1b92e283b63bd837e8e321ea35188c02ea3a07f45ff639e93f0154c"
+      },
+      {
+        "file": "gpu1-exp28/points/t01/evaluation/evaluation-progress.json",
+        "bytes": 114037,
+        "sha256": "e6745090f1d9931d7c748aff4a20c431a52f33ff3f994979d1d2768eb20f8fce"
+      },
+      {
+        "file": "gpu1-exp28/points/t01/evaluation/heldout4k-answers.jsonl",
+        "bytes": 1761572,
+        "sha256": "c5275eb4e775504661e89dbfe15dd413f122cea73f8b54881112e920d0ff4824"
+      },
+      {
+        "file": "gpu1-exp28/points/t01/evaluation/heldout4k-execution.json",
+        "bytes": 254527,
+        "sha256": "350c3c3fc1599ce98497f062d3d57487a9a2be0e6870e6363b2dc8e3e6ba1ff8"
+      },
+      {
+        "file": "gpu1-exp28/points/t01/evaluation/heldout4k-generation-time.json",
+        "bytes": 611,
+        "sha256": "16c417fbe0fd46441ddb89fa812d640a1be5e7a6553fb4f2c70cc8abae9c7cd2"
+      },
+      {
+        "file": "gpu1-exp28/points/t01/evaluation/heldout4k-generations.json",
+        "bytes": 4962105,
+        "sha256": "8d21ffda4671d5b8b3c06e49664514e9029dec7d9e291df9bb51f15a9acb885b"
+      },
+      {
+        "file": "gpu1-exp28/points/t01/evaluation/metrics.json",
+        "bytes": 114598,
+        "sha256": "605b0c7649e4690ab88e1e3620a53cabb09c2cda87dcc8bb0e7fca69df573c50"
+      },
+      {
+        "file": "gpu1-exp28/points/t01/evaluation/old1024-answers.jsonl",
+        "bytes": 444387,
+        "sha256": "d470a753f59649fb4acc81facdb40d125ae80b603de5475dc54e42635862f85c"
+      },
+      {
+        "file": "gpu1-exp28/points/t01/evaluation/old1024-execution.json",
+        "bytes": 64093,
+        "sha256": "aa3c211ef70b682ab9e644987a38e0e28f246def899c41e8bd9c219ade58a102"
+      },
+      {
+        "file": "gpu1-exp28/points/t01/evaluation/old1024-generation-time.json",
+        "bytes": 612,
+        "sha256": "00ed8a45793003dbcc80705387eb336aea08c6557c89837a714200f403163d2f"
+      },
+      {
+        "file": "gpu1-exp28/points/t01/evaluation/old1024-generations.json",
+        "bytes": 1253411,
+        "sha256": "3684f9834de74c755b99e4637ef20d0a23729f10082d3d81506be89485b4e38c"
+      },
+      {
+        "file": "gpu1-exp28/points/t01/training.json",
+        "bytes": 129605,
+        "sha256": "0e662193f6eb73644084b17c1c34720470d00288738f03b6135443ae6daf627c"
+      },
+      {
+        "file": "gpu1-exp28/points/t02/checkpoint.json",
+        "bytes": 947,
+        "sha256": "fc833df9c7c74406d0f8f0158030f5cf22c182b6acaefbd42d08e990c425876f"
+      },
+      {
+        "file": "gpu1-exp28/points/t02/evaluation/evaluation-progress.json",
+        "bytes": 122912,
+        "sha256": "8241d045da6aade87fb897c1e10b781f556464f61a6781cd8b9d2afe7a856009"
+      },
+      {
+        "file": "gpu1-exp28/points/t02/evaluation/heldout4k-answers.jsonl",
+        "bytes": 1781901,
+        "sha256": "88aa6c6339ecaf4f39626b7599c193f7972feba213df89bc0f4d8d5a59ffc2f0"
+      },
+      {
+        "file": "gpu1-exp28/points/t02/evaluation/heldout4k-execution.json",
+        "bytes": 254466,
+        "sha256": "ec6b6a49f8755a794430f7a1b899e17166c2b3bf90bd5860d2cba2ffb26eb721"
+      },
+      {
+        "file": "gpu1-exp28/points/t02/evaluation/heldout4k-generation-time.json",
+        "bytes": 613,
+        "sha256": "e563f724d8140cd3651cfadf1fb52bcc98e374129f951588b66c78db6149cd0e"
+      },
+      {
+        "file": "gpu1-exp28/points/t02/evaluation/heldout4k-generations.json",
+        "bytes": 5041122,
+        "sha256": "6f7430bda7fd2d8a2ef11ba09e28d2197d82b8e6fbed8b8782722afbc9f46e95"
+      },
+      {
+        "file": "gpu1-exp28/points/t02/evaluation/metrics.json",
+        "bytes": 123470,
+        "sha256": "bf1a25e1d0907b6f4273c0c76cff252e104542fdf7a6db933a6a00de2b8aff04"
+      },
+      {
+        "file": "gpu1-exp28/points/t02/evaluation/old1024-answers.jsonl",
+        "bytes": 445287,
+        "sha256": "192a70bc90db4393588d648f50ff53d05fa3bbf56b657a27f16ad33c41bf50ea"
+      },
+      {
+        "file": "gpu1-exp28/points/t02/evaluation/old1024-execution.json",
+        "bytes": 64147,
+        "sha256": "bdd9c1927c1d302805d7985ba2dbfc9cb995151e807b568c9f3950d024eb1f25"
+      },
+      {
+        "file": "gpu1-exp28/points/t02/evaluation/old1024-generation-time.json",
+        "bytes": 612,
+        "sha256": "dbb96021916e8335d93c22b01f8e0441b39e7512281acf1e6ad9d53a78dfc2b5"
+      },
+      {
+        "file": "gpu1-exp28/points/t02/evaluation/old1024-generations.json",
+        "bytes": 1253127,
+        "sha256": "861f5aa36257e9fe0b85aeac50729090d4d2b195c49cca6144614f062bbdd157"
+      },
+      {
+        "file": "gpu1-exp28/points/t02/training.json",
+        "bytes": 139588,
+        "sha256": "992fbf1f3dc7411ac9315bb4a50126099f5551224a82664e9009855f65e4bc88"
+      },
+      {
+        "file": "gpu1-exp28/points/t03/checkpoint.json",
+        "bytes": 947,
+        "sha256": "ed4f4cf5aba306905bde8f99cc4a21c4a0f63c8fea291e283947b0f9eab6d537"
+      },
+      {
+        "file": "gpu1-exp28/points/t03/evaluation/evaluation-progress.json",
+        "bytes": 130118,
+        "sha256": "dfc932dd7d4595b7033ef0d9f02e15dbe43ef879dd677efdd27a6bfa021a9289"
+      },
+      {
+        "file": "gpu1-exp28/points/t03/evaluation/heldout4k-answers.jsonl",
+        "bytes": 1759748,
+        "sha256": "0d3511817691fe6c77a114132b9515a6ce551a5d7c9f3fbe5fdf6cbdbb4c2d02"
+      },
+      {
+        "file": "gpu1-exp28/points/t03/evaluation/heldout4k-execution.json",
+        "bytes": 254080,
+        "sha256": "50cfe4262f0d2166e4d92b9713bc82a302621d43587c768efe08fb37e3a371a7"
+      },
+      {
+        "file": "gpu1-exp28/points/t03/evaluation/heldout4k-generation-time.json",
+        "bytes": 613,
+        "sha256": "59b270a427ff5c6799c029beef235ee56cfb9ae8471485175baf6ffccd93d653"
+      },
+      {
+        "file": "gpu1-exp28/points/t03/evaluation/heldout4k-generations.json",
+        "bytes": 4948794,
+        "sha256": "87263b9edef2cc901c4023dfab156b7f99bfe184bd907e7806cf0278fefb3d5b"
+      },
+      {
+        "file": "gpu1-exp28/points/t03/evaluation/metrics.json",
+        "bytes": 130679,
+        "sha256": "48b71fe0e3a59d632144512895e7046cea96138d8b8063f5fe919f10e670698c"
+      },
+      {
+        "file": "gpu1-exp28/points/t03/evaluation/old1024-answers.jsonl",
+        "bytes": 440170,
+        "sha256": "b08515996ef4df4a64070e5cca2656797e3b453d21aad75cb79f9311ec43e9ea"
+      },
+      {
+        "file": "gpu1-exp28/points/t03/evaluation/old1024-execution.json",
+        "bytes": 64064,
+        "sha256": "8ab3f1ecfbfb80424e48b77883cc13e05c2db1832663d0dca8773f7dacf909f2"
+      },
+      {
+        "file": "gpu1-exp28/points/t03/evaluation/old1024-generation-time.json",
+        "bytes": 611,
+        "sha256": "7b68825be5471ef628aea1e7c06c351d5c889744116e6ad3f6f65fa6b3463240"
+      },
+      {
+        "file": "gpu1-exp28/points/t03/evaluation/old1024-generations.json",
+        "bytes": 1236489,
+        "sha256": "d6bd7e9f8fceb0dbefe37f053648266ee8de9eaf9bbee122102198716e20aa20"
+      },
+      {
+        "file": "gpu1-exp28/points/t03/training.json",
+        "bytes": 147727,
+        "sha256": "f8a8156925e296034b618a47527229984daec59dfc4b3e108545ca95cfda51b0"
+      },
+      {
+        "file": "gpu1-exp28/points/t04/checkpoint.json",
+        "bytes": 947,
+        "sha256": "cd70d58dc4374174536d5ef41fac0aee25ff569723fbea46ab00466bc5bfab67"
+      },
+      {
+        "file": "gpu1-exp28/points/t04/evaluation/evaluation-progress.json",
+        "bytes": 133258,
+        "sha256": "ab6f8a23e5e3c39fb7fb3ec947bb966dbc56df3574c6f8e1f6f0fa333b9ae884"
+      },
+      {
+        "file": "gpu1-exp28/points/t04/evaluation/heldout4k-answers.jsonl",
+        "bytes": 1749336,
+        "sha256": "bed7af912ee55da818b9767cbe7216e12f39d5c58ad5b68ce3ed771ff96be876"
+      },
+      {
+        "file": "gpu1-exp28/points/t04/evaluation/heldout4k-execution.json",
+        "bytes": 253967,
+        "sha256": "e1b046c9a74f428c1347e610eafd1888c1c8b31ed267331c8c8ffb10b0f795a9"
+      },
+      {
+        "file": "gpu1-exp28/points/t04/evaluation/heldout4k-generation-time.json",
+        "bytes": 612,
+        "sha256": "09f9058af91135781e472f28358964e5b067476a0ec870ef21074c644c9584e0"
+      },
+      {
+        "file": "gpu1-exp28/points/t04/evaluation/heldout4k-generations.json",
+        "bytes": 4917094,
+        "sha256": "91f18d93d0230a88f058870e81edd87b25c3973308a7b75cf1943ae61a10b0bd"
+      },
+      {
+        "file": "gpu1-exp28/points/t04/evaluation/metrics.json",
+        "bytes": 133816,
+        "sha256": "3072158e69fd64202546bdb88ad05ca42f58f829e924458d6c6bb2c3ba8280ac"
+      },
+      {
+        "file": "gpu1-exp28/points/t04/evaluation/old1024-answers.jsonl",
+        "bytes": 437244,
+        "sha256": "debc78d8fc18f4f6fa7dca13338e3662b02e33dcb7ff4f1cbb82b2a829f5a0bf"
+      },
+      {
+        "file": "gpu1-exp28/points/t04/evaluation/old1024-execution.json",
+        "bytes": 63958,
+        "sha256": "69335d5c67d23713d5a9c56988340465c90bbb3b490afd08954e740acd43d817"
+      },
+      {
+        "file": "gpu1-exp28/points/t04/evaluation/old1024-generation-time.json",
+        "bytes": 612,
+        "sha256": "a717022e4d3f72573a4357684ab64cb2b1628c0e7c0313e0aedaedcfeb055782"
+      },
+      {
+        "file": "gpu1-exp28/points/t04/evaluation/old1024-generations.json",
+        "bytes": 1220217,
+        "sha256": "4ecc599aec21008af95a202d6cbbc29f6f0f3ed4927d5beb3f5ded105e81918a"
+      },
+      {
+        "file": "gpu1-exp28/points/t04/training.json",
+        "bytes": 151267,
+        "sha256": "585977a161ee29562275f037d039dfee31e9f6e076d8a38f939afbc848bb7b1a"
+      },
+      {
+        "file": "gpu1-exp28/reference-reuse.json",
+        "bytes": 438,
+        "sha256": "d368876b117c06dadea517763d912a270996565b457f48cc1bfa29585b343525"
+      },
+      {
+        "file": "gpu1-exp28/references/heldout4k-receipt.json",
+        "bytes": 96742,
+        "sha256": "145f3b649f4622662cf9075d5dbeac5a2f5a9bb149a2507db4196cef82745fad"
+      },
+      {
+        "file": "gpu1-exp28/references/heldout4k-reference-execution.json",
+        "bytes": 253470,
+        "sha256": "664f4b6f28574f0b39a4bbe8151bc737459289d087ac4f3b73e1989bfb655a49"
+      },
+      {
+        "file": "gpu1-exp28/references/old1024-receipt.json",
+        "bytes": 22336,
+        "sha256": "3c6f7ec3f379242d341c0189ed4d7f09ee963ad790e03e894294267f6a7f1322"
+      },
+      {
+        "file": "gpu1-exp28/references/old1024-reference-execution.json",
+        "bytes": 63094,
+        "sha256": "7d5da0e871bd9e7c592b030a0887ec7f6f2f6b92e3c693f1aa95c97923904e17"
+      },
+      {
+        "file": "gpu1-exp28/training-finished.json",
+        "bytes": 89,
+        "sha256": "8dbfbe262fa565482cd84675190332d673b1f3478ee6f5618e52fa8a102c38d7"
+      },
+      {
+        "file": "gpu1-exp28/weights/t01.pt",
+        "bytes": 127823037,
+        "sha256": "f43c3e56013129b2e85ec6e81e9c9d0e4a0f43afa3b47ebcf70e6d96d9511c58"
+      },
+      {
+        "file": "gpu1-exp28/weights/t02.pt",
+        "bytes": 127823037,
+        "sha256": "0ec86fafa4e9a181b1bc6dd58ee1713efb58e917e76ae9a52f8ef79705537090"
+      },
+      {
+        "file": "gpu1-exp28/weights/t03.pt",
+        "bytes": 127823037,
+        "sha256": "8240b807539431d5135774fd7b3624c296beade3b0aa09608499e9eb9b2c4e73"
+      },
+      {
+        "file": "gpu1-exp28/weights/t04.pt",
+        "bytes": 127823037,
+        "sha256": "cbbe292cf65e37ec4876b8206b19b06b6fbe7541fd7be1115799c3ce085f720a"
+      },
+      {
+        "file": "gpu1-process.log",
+        "bytes": 2786,
+        "sha256": "8c89ac5e2cd561224015ac9bdfb3a5fefc184317ac83baa06f22ea916ff0238e"
+      },
+      {
+        "file": "gpu1-runtime.json",
+        "bytes": 278,
+        "sha256": "ee64eb25e300f4f1203a3bbb45c28b161f5cca9c504a9b3f039529256dfe160a"
+      },
+      {
+        "file": "s2-comparison.json",
+        "bytes": 1530599,
+        "sha256": "7dbd2f31f84c73533e0fabbec4842bfd2201909a0da139669172d307a358ff21"
+      },
+      {
+        "file": "s2-output-manifest.json",
+        "bytes": 16576,
+        "sha256": "3bd7be3688d5fa01717a9b3c5b78b21aabc6444fa29cf3a745791fe9d8445e63"
+      },
+      {
+        "file": "s2-summary.json",
+        "bytes": 1659093,
+        "sha256": "53bd6bbb3d25660d5bf3e2f330f21674b5d5d9c9d8b9641ef6eec04aadc810dd"
+      },
+      {
+        "file": "session-config.json",
+        "bytes": 1570,
+        "sha256": "294207ed9e1fbf1015cc20f2d6972fd0ef8c1001dd677c9bb69441dc0a3a66cd"
+      },
+      {
+        "file": "session-live.json",
+        "bytes": 121,
+        "sha256": "e9f2a5a0cc17be40e37236a10c68730ec81b7c5608c89e634e8a4aef880908d6"
+      },
+      {
+        "file": "session-summary.json",
+        "bytes": 1659093,
+        "sha256": "53bd6bbb3d25660d5bf3e2f330f21674b5d5d9c9d8b9641ef6eec04aadc810dd"
+      },
+      {
+        "file": "src/__pycache__/exp26_cache.cpython-313.pyc",
+        "bytes": 44907,
+        "sha256": "f33948863ae4d53c77f1cae0c8025e697911888c1927ba214a1f8def4c8dcb58"
+      },
+      {
+        "file": "src/__pycache__/exp26_common.cpython-313.pyc",
+        "bytes": 5129,
+        "sha256": "501e7011cbdcdb4289d0432eb533cbd5627f481397e75fcf1f55522e97597e43"
+      },
+      {
+        "file": "src/__pycache__/exp26_core.cpython-313.pyc",
+        "bytes": 33096,
+        "sha256": "e2730e3ba91fab4dd325dd0123c43e2c84b2f8a9745d9bda0002295d3194eaf9"
+      },
+      {
+        "file": "src/__pycache__/exp26_eval.cpython-313.pyc",
+        "bytes": 17534,
+        "sha256": "0726dc795c54e8d29a9bff978f864c95515c0de6a53882c2f64cdcfbbba4bb1f"
+      },
+      {
+        "file": "src/__pycache__/exp26_exec.cpython-313.pyc",
+        "bytes": 19950,
+        "sha256": "7c37ad9b4e9521d1f8363cce209992219e0a42071e268d67615e044347d74008"
+      },
+      {
+        "file": "src/__pycache__/exp26_fast_exec.cpython-313.pyc",
+        "bytes": 7229,
+        "sha256": "1c8940f315ac1ce308abc18d01aece73b69919d097f0f3e142d09970f6608968"
+      },
+      {
+        "file": "src/__pycache__/exp26_input.cpython-313.pyc",
+        "bytes": 6288,
+        "sha256": "144a61cd1af0adf246ced1098240bd1bc52f33e8996a9f86be46bb6b0d195952"
+      },
+      {
+        "file": "src/__pycache__/exp26_order.cpython-313.pyc",
+        "bytes": 6964,
+        "sha256": "3a72a092dc211acd906ce8d26ab123055f896cbd8f4e0127ed8922c5c41957e3"
+      },
+      {
+        "file": "src/__pycache__/exp26_protocol.cpython-313.pyc",
+        "bytes": 14859,
+        "sha256": "89e5d4da7ef2bb4a7802f6826475ba56ea7b7359de2843d5e2ed70d4f1325a39"
+      },
+      {
+        "file": "src/__pycache__/exp26_train.cpython-313.pyc",
+        "bytes": 33820,
+        "sha256": "5a39f72f0c24eadafb2b8e63366605876f8156af2445c0b61127dccf68a56b94"
+      },
+      {
+        "file": "src/__pycache__/exp26_workflow.cpython-313.pyc",
+        "bytes": 15801,
+        "sha256": "e8386bc1b72783a52d11913889bcc5f7928bd46eff6edaaf727c58f9ab8316fe"
+      },
+      {
+        "file": "src/__pycache__/exp27_decode.cpython-313.pyc",
+        "bytes": 35089,
+        "sha256": "decfa424e4ef1056fa267f5b065ab6a5e6acf5db230de3da498d3d3b5896a016"
+      },
+      {
+        "file": "src/__pycache__/exp27b_fast.cpython-313.pyc",
+        "bytes": 31462,
+        "sha256": "f63352cf4c3a2e570c7ce7d3dc1033ff16cfd1380c196df6755b534b45f9f5e7"
+      },
+      {
+        "file": "src/__pycache__/exp28_capacity.cpython-313.pyc",
+        "bytes": 18426,
+        "sha256": "0ee6d087109a776313fe301940dab37b2e563a640107952eb6fb07896a433d42"
+      },
+      {
+        "file": "src/__pycache__/kaggle_io.cpython-313.pyc",
+        "bytes": 9754,
+        "sha256": "223e51837d46f1c1002168e3d01697cdd2ba2a7d268b6e72a7b48eb7f23f440f"
+      },
+      {
+        "file": "src/__pycache__/kaggle_runtime.cpython-313.pyc",
+        "bytes": 16700,
+        "sha256": "12510bb652599e1501a68d7550907798c3b656cbf64f5495efb6cbad427c2c9f"
+      },
+      {
+        "file": "src/__pycache__/s2_exec.cpython-313.pyc",
+        "bytes": 2329,
+        "sha256": "fcefe5f18afd4edea066262090330ac7b1ccfd21e71982a39b202c86763bd314"
+      },
+      {
+        "file": "src/__pycache__/s2_live_sync.cpython-313.pyc",
+        "bytes": 29501,
+        "sha256": "4f2954c3c008f8f8deb83e8dd2079faba8020c7e9a83fcdb8c9fb990637e0f9d"
+      },
+      {
+        "file": "src/__pycache__/s2_report.cpython-313.pyc",
+        "bytes": 7696,
+        "sha256": "ec0548e4372bc4d3438554e0afe5312ff18c4461e82ac862f13d4146d0f39cc7"
+      },
+      {
+        "file": "src/__pycache__/s2_runtime.cpython-313.pyc",
+        "bytes": 20404,
+        "sha256": "efd9615fcfbe5ca023c8de077256add653e88128a24d0805f860516d52fd8414"
+      },
+      {
+        "file": "src/__pycache__/session_runner.cpython-313.pyc",
+        "bytes": 17636,
+        "sha256": "d6c6512d6814d78fcd804628b97567e6447e49cdae94eb13807bdd0b6a369c18"
+      },
+      {
+        "file": "src/__pycache__/session_watchdog.cpython-313.pyc",
+        "bytes": 13414,
+        "sha256": "98be70d3d19e30f9c2d76ca56aac7766492d86b39202e447861691e3a9128419"
+      },
+      {
+        "file": "src/cache_extension.py",
+        "bytes": 4864,
+        "sha256": "3bf3fbffd43fdc310f56ac272185dcd7a8e754782d676db91a2ae57a0f1d3501"
+      },
+      {
+        "file": "src/exp26_cache.py",
+        "bytes": 22008,
+        "sha256": "3f15d07c4f1d01e0ac09159b215a9e77bbd861f2e5c47a6632541c01a1f2643b"
+      },
+      {
+        "file": "src/exp26_common.py",
+        "bytes": 1962,
+        "sha256": "e7a3b34904721d2c6c51fbc0970872596e488b2baa40a04f04add5fb31bbb5a3"
+      },
+      {
+        "file": "src/exp26_core.py",
+        "bytes": 15194,
+        "sha256": "7247eae92a09a73b62c86fee80c261d3e3a0043cb863d7bc069426d214f575ce"
+      },
+      {
+        "file": "src/exp26_eval.py",
+        "bytes": 8830,
+        "sha256": "fc79ed8cea94017e9c6a25216f23409a5bebb1dbe646754313759e7dc75d855c"
+      },
+      {
+        "file": "src/exp26_exec.py",
+        "bytes": 10483,
+        "sha256": "0ccc458b2e7dfec27b55f482afb673215f6c06af0f53820cf624d42c5573faa3"
+      },
+      {
+        "file": "src/exp26_fast_exec.py",
+        "bytes": 3384,
+        "sha256": "061ce3617e66b3b1fc1825cbef52600f04edf3666ceefbc7f982f14383812002"
+      },
+      {
+        "file": "src/exp26_input.py",
+        "bytes": 2737,
+        "sha256": "0b4ed1214cf6f6d751b9d9201bbf0eb8256e1ed03841dd00e9f06b85a5096320"
+      },
+      {
+        "file": "src/exp26_order.py",
+        "bytes": 3134,
+        "sha256": "98f6e43cf31810d4e86fdbf36b37aaf8dfe7c40ec82d065f82194d7056172783"
+      },
+      {
+        "file": "src/exp26_pack.py",
+        "bytes": 2522,
+        "sha256": "b91eccaa13f16cd85e9a8ce15abcbf7275e1898850a568ebc1083676e02cd7fb"
+      },
+      {
+        "file": "src/exp26_protocol.py",
+        "bytes": 12893,
+        "sha256": "91d6c673a4a1ffb980c92511cd9d2072894d2ff4bd7251a1954178f15baba3c1"
+      },
+      {
+        "file": "src/exp26_train.py",
+        "bytes": 19154,
+        "sha256": "0392b8fabcae875eb7972a6c69f6594974603ae81090f4c484fbc47244fb2570"
+      },
+      {
+        "file": "src/exp26_workflow.py",
+        "bytes": 9949,
+        "sha256": "0e53a806cb908965bf5cf6ec89ac9da6aa2aefa622ba6f8c8516205c068d2080"
+      },
+      {
+        "file": "src/exp27_decode.py",
+        "bytes": 17757,
+        "sha256": "b0042aecba742c037d32fe7659e1d2b20336d63f96b6fe9d2f7b9a0af69fd966"
+      },
+      {
+        "file": "src/exp27b_fast.py",
+        "bytes": 14851,
+        "sha256": "d33b61e9cef0257fd749856f7c8cf29000815bc2d65f230f4414e2da97b23ba4"
+      },
+      {
+        "file": "src/exp28_capacity.py",
+        "bytes": 14221,
+        "sha256": "d240c8a55ec79d242d9c5ba307d5d4ad6e31909ac58ca034467809505744f330"
+      },
+      {
+        "file": "src/kaggle_io.py",
+        "bytes": 4667,
+        "sha256": "70c777ee48b1c39e79173afe4e9bfbb1a222b67f107a75f2aa0e61dbc59ad365"
+      },
+      {
+        "file": "src/kaggle_runtime.py",
+        "bytes": 10735,
+        "sha256": "589d034faa18b5ff377688a171dae4a31e6242575d558c414d8cc575f207daeb"
+      },
+      {
+        "file": "src/s1_worker.py",
+        "bytes": 7644,
+        "sha256": "c952e8ec73374cd119647be76ae85836aad83a9f9a0fd02c4cdaa29d6bfb4ee3"
+      },
+      {
+        "file": "src/s2_exec.py",
+        "bytes": 1042,
+        "sha256": "b597809e1f0ff1d4d89d94dd1224282be0295b70134f8bb29b5b7d87c9014fdc"
+      },
+      {
+        "file": "src/s2_live_sync.py",
+        "bytes": 15642,
+        "sha256": "9205afc429e3244c1ec20f0b3c4fb83f9be152f026960b0a69998c99db982cbf"
+      },
+      {
+        "file": "src/s2_report.py",
+        "bytes": 4430,
+        "sha256": "770794d1954f49d14b531e41339aac85e06a38a1041c35de256e30d8e2f2cf35"
+      },
+      {
+        "file": "src/s2_runtime.py",
+        "bytes": 10546,
+        "sha256": "dc79f72b1eb03f5278c2ef0027b12775b0f14a0b2cba09535c77a7f24269336c"
+      },
+      {
+        "file": "src/s2_worker.py",
+        "bytes": 8220,
+        "sha256": "d81263c5b7ecd70bfd3ef85234ab95c4f4923609b32806d92e55a0a1cb7c806d"
+      },
+      {
+        "file": "src/session_runner.py",
+        "bytes": 8861,
+        "sha256": "4efa0e5805b56bcd507cede2af2d3e505be334ad6ced61616478276d0db23b29"
+      },
+      {
+        "file": "src/session_watchdog.py",
+        "bytes": 7078,
+        "sha256": "ab21ff7f9fe916610f729d3450ea9d6d66b29a216411314bf39f8a84a8e1654d"
+      }
+    ]
+  },
+  "manifest": {
+    "files": 166,
+    "all_experiment_bytes": "passed",
+    "byte_differences": [],
+    "missing_manifest": [
+      "__notebook__.ipynb"
+    ],
+    "reason": "Kaggle internal __notebook__.ipynb is absent from pinned SDK output listing; notebook export is visible in kernel log",
+    "SHA_scope": "local inventory plus producer SHA receipts; output manifest itself has bytes only",
+    "ZIPs": []
+  },
+  "McNemar": {
+    "t01/heldout4k/vs_A": {
+      "gains": 201,
+      "losses": 536,
+      "discordant": 737,
+      "exact_two_sided_p": 5.147343698426446e-36,
+      "delta_percentage_points": -8.1787109375
+    },
+    "t01/heldout4k/vs_D0": {
+      "gains": 248,
+      "losses": 372,
+      "discordant": 620,
+      "exact_two_sided_p": 7.212158081721062e-07,
+      "delta_percentage_points": -3.02734375
+    },
+    "t01/old1024/vs_A": {
+      "gains": 34,
+      "losses": 126,
+      "discordant": 160,
+      "exact_two_sided_p": 1.2520993298487382e-13,
+      "delta_percentage_points": -9.283551967709384
+    },
+    "t01/old1024/vs_D0": {
+      "gains": 61,
+      "losses": 110,
+      "discordant": 171,
+      "exact_two_sided_p": 0.00022108069170281286,
+      "delta_percentage_points": -4.944500504540867
+    },
+    "t02/heldout4k/vs_A": {
+      "gains": 201,
+      "losses": 443,
+      "discordant": 644,
+      "exact_two_sided_p": 7.095641486245821e-22,
+      "delta_percentage_points": -5.908203125
+    },
+    "t02/heldout4k/vs_D0": {
+      "gains": 480,
+      "losses": 189,
+      "discordant": 669,
+      "exact_two_sided_p": 4.21666726026214e-30,
+      "delta_percentage_points": 7.1044921875
+    },
+    "t02/heldout4k/vs_previous": {
+      "gains": 569,
+      "losses": 154,
+      "discordant": 723,
+      "exact_two_sided_p": 9.364229740945497e-57,
+      "delta_percentage_points": 10.1318359375
+    },
+    "t02/old1024/vs_A": {
+      "gains": 62,
+      "losses": 102,
+      "discordant": 164,
+      "exact_two_sided_p": 0.0022248008359621206,
+      "delta_percentage_points": -4.036326942482341
+    },
+    "t02/old1024/vs_D0": {
+      "gains": 134,
+      "losses": 59,
+      "discordant": 193,
+      "exact_two_sided_p": 6.920948995468241e-08,
+      "delta_percentage_points": 7.568113017154389
+    },
+    "t02/old1024/vs_previous": {
+      "gains": 153,
+      "losses": 29,
+      "discordant": 182,
+      "exact_two_sided_p": 1.4963451823321184e-21,
+      "delta_percentage_points": 12.512613521695258
+    },
+    "t03/heldout4k/vs_A": {
+      "gains": 249,
+      "losses": 354,
+      "discordant": 603,
+      "exact_two_sided_p": 2.1837061386026092e-05,
+      "delta_percentage_points": -2.5634765625
+    },
+    "t03/heldout4k/vs_D0": {
+      "gains": 774,
+      "losses": 110,
+      "discordant": 884,
+      "exact_two_sided_p": 1.2322792192313668e-123,
+      "delta_percentage_points": 16.2109375
+    },
+    "t03/heldout4k/vs_previous": {
+      "gains": 522,
+      "losses": 149,
+      "discordant": 671,
+      "exact_two_sided_p": 2.116341136781826e-49,
+      "delta_percentage_points": 9.1064453125
+    },
+    "t03/old1024/vs_A": {
+      "gains": 64,
+      "losses": 75,
+      "discordant": 139,
+      "exact_two_sided_p": 0.39641508495172617,
+      "delta_percentage_points": -1.1099899091826437
+    },
+    "t03/old1024/vs_D0": {
+      "gains": 200,
+      "losses": 32,
+      "discordant": 232,
+      "exact_two_sided_p": 6.89686121227159e-31,
+      "delta_percentage_points": 16.95257315842583
+    },
+    "t03/old1024/vs_previous": {
+      "gains": 135,
+      "losses": 42,
+      "discordant": 177,
+      "exact_two_sided_p": 1.3915243446889978e-12,
+      "delta_percentage_points": 9.384460141271443
+    },
+    "t04/heldout4k/vs_A": {
+      "gains": 241,
+      "losses": 266,
+      "discordant": 507,
+      "exact_two_sided_p": 0.28646847011983834,
+      "delta_percentage_points": -0.6103515625
+    },
+    "t04/heldout4k/vs_D0": {
+      "gains": 938,
+      "losses": 102,
+      "discordant": 1040,
+      "exact_two_sided_p": 6.450069989356667e-170,
+      "delta_percentage_points": 20.41015625
+    },
+    "t04/heldout4k/vs_previous": {
+      "gains": 364,
+      "losses": 192,
+      "discordant": 556,
+      "exact_two_sided_p": 2.6694055450795146e-13,
+      "delta_percentage_points": 4.19921875
+    },
+    "t04/old1024/vs_A": {
+      "gains": 53,
+      "losses": 69,
+      "discordant": 122,
+      "exact_two_sided_p": 0.1742054054929715,
+      "delta_percentage_points": -1.6145307769929365
+    },
+    "t04/old1024/vs_D0": {
+      "gains": 221,
+      "losses": 25,
+      "discordant": 246,
+      "exact_two_sided_p": 2.156865788117107e-40,
+      "delta_percentage_points": 19.77800201816347
+    },
+    "t04/old1024/vs_previous": {
+      "gains": 81,
+      "losses": 53,
+      "discordant": 134,
+      "exact_two_sided_p": 0.019336848213766553,
+      "delta_percentage_points": 2.825428859737639
+    }
+  },
+  "greedy_gate": {
+    "rows": 4096,
+    "token_identical": false,
+    "mismatches": [
+      {
+        "index": 36,
+        "first_token_position": 18,
+        "new_length": 42,
+        "S1_length": 54
+      },
+      {
+        "index": 49,
+        "first_token_position": 8,
+        "new_length": 77,
+        "S1_length": 73
+      },
+      {
+        "index": 294,
+        "first_token_position": 27,
+        "new_length": 92,
+        "S1_length": 79
+      },
+      {
+        "index": 306,
+        "first_token_position": 27,
+        "new_length": 62,
+        "S1_length": 62
+      },
+      {
+        "index": 322,
+        "first_token_position": 7,
+        "new_length": 58,
+        "S1_length": 64
+      },
+      {
+        "index": 341,
+        "first_token_position": 16,
+        "new_length": 103,
+        "S1_length": 92
+      },
+      {
+        "index": 445,
+        "first_token_position": 42,
+        "new_length": 78,
+        "S1_length": 96
+      },
+      {
+        "index": 550,
+        "first_token_position": 44,
+        "new_length": 60,
+        "S1_length": 60
+      },
+      {
+        "index": 817,
+        "first_token_position": 43,
+        "new_length": 79,
+        "S1_length": 79
+      },
+      {
+        "index": 914,
+        "first_token_position": 20,
+        "new_length": 38,
+        "S1_length": 45
+      },
+      {
+        "index": 971,
+        "first_token_position": 38,
+        "new_length": 90,
+        "S1_length": 64
+      },
+      {
+        "index": 1054,
+        "first_token_position": 20,
+        "new_length": 60,
+        "S1_length": 52
+      },
+      {
+        "index": 1312,
+        "first_token_position": 53,
+        "new_length": 82,
+        "S1_length": 86
+      },
+      {
+        "index": 1537,
+        "first_token_position": 7,
+        "new_length": 336,
+        "S1_length": 71
+      },
+      {
+        "index": 1588,
+        "first_token_position": 60,
+        "new_length": 90,
+        "S1_length": 80
+      },
+      {
+        "index": 1603,
+        "first_token_position": 18,
+        "new_length": 99,
+        "S1_length": 96
+      },
+      {
+        "index": 1661,
+        "first_token_position": 53,
+        "new_length": 63,
+        "S1_length": 81
+      },
+      {
+        "index": 1774,
+        "first_token_position": 27,
+        "new_length": 60,
+        "S1_length": 67
+      },
+      {
+        "index": 1776,
+        "first_token_position": 7,
+        "new_length": 43,
+        "S1_length": 41
+      },
+      {
+        "index": 1956,
+        "first_token_position": 35,
+        "new_length": 65,
+        "S1_length": 65
+      },
+      {
+        "index": 2042,
+        "first_token_position": 16,
+        "new_length": 101,
+        "S1_length": 138
+      },
+      {
+        "index": 2060,
+        "first_token_position": 247,
+        "new_length": 512,
+        "S1_length": 512
+      },
+      {
+        "index": 2086,
+        "first_token_position": 16,
+        "new_length": 57,
+        "S1_length": 512
+      },
+      {
+        "index": 2254,
+        "first_token_position": 37,
+        "new_length": 94,
+        "S1_length": 75
+      },
+      {
+        "index": 2448,
+        "first_token_position": 13,
+        "new_length": 86,
+        "S1_length": 86
+      },
+      {
+        "index": 2605,
+        "first_token_position": 340,
+        "new_length": 512,
+        "S1_length": 512
+      },
+      {
+        "index": 2623,
+        "first_token_position": 8,
+        "new_length": 85,
+        "S1_length": 77
+      },
+      {
+        "index": 2681,
+        "first_token_position": 23,
+        "new_length": 97,
+        "S1_length": 50
+      },
+      {
+        "index": 2791,
+        "first_token_position": 15,
+        "new_length": 64,
+        "S1_length": 64
+      },
+      {
+        "index": 3060,
+        "first_token_position": 36,
+        "new_length": 65,
+        "S1_length": 63
+      },
+      {
+        "index": 3168,
+        "first_token_position": 28,
+        "new_length": 75,
+        "S1_length": 59
+      },
+      {
+        "index": 3288,
+        "first_token_position": 36,
+        "new_length": 51,
+        "S1_length": 51
+      },
+      {
+        "index": 3381,
+        "first_token_position": 79,
+        "new_length": 85,
+        "S1_length": 85
+      },
+      {
+        "index": 3820,
+        "first_token_position": 9,
+        "new_length": 102,
+        "S1_length": 102
+      },
+      {
+        "index": 3914,
+        "first_token_position": 429,
+        "new_length": 512,
+        "S1_length": 512
+      }
+    ],
+    "CUDA_root_cause": "not established; candidate question batch128 differs from saved greedy batch512; FP16/backend sensitivity is a hypothesis"
+  },
+  "CPU_execution": {
+    "programs": 80559,
+    "statuses": {
+      "numeric": 77444,
+      "non_number": 121,
+      "execution_error": 2568,
+      "syntax_error": 397,
+      "timeout": 29
+    },
+    "seconds": 36.375748082995415,
+    "chunk_retries": 0,
+    "pool_restarts": 0,
+    "chunk_rows": 2000,
+    "workers": 2,
+    "wall_limit": 3.0,
+    "cpu_limit": 2.0,
+    "total_saved_program_rows": 102528,
+    "unique_programs": 80559
+  },
+  "reference_replay": {
+    "heldout4k": {
+      "numeric": 4096,
+      "different_indices": []
+    },
+    "old1024": {
+      "numeric": 991,
+      "different_indices": []
+    }
+  },
+  "B_execution_replay": {
+    "D0/heldout4k": {
+      "matches": 1677,
+      "denominator": 4096,
+      "different_match_indices": [],
+      "different_execution_indices": [],
+      "saved_execution_summary": {
+        "programs": 4096,
+        "statuses": {
+          "numeric": 3904,
+          "execution_error": 144,
+          "syntax_error": 17,
+          "non_number": 29,
+          "timeout": 2
+        },
+        "seconds": 4.563438502999986,
+        "chunk_retries": 0,
+        "pool_restarts": 0,
+        "chunk_rows": 2000,
+        "workers": 2,
+        "wall_limit": 3.0,
+        "cpu_limit": 2.0,
+        "complete": true,
+        "timeouts": 2
+      }
+    },
+    "D0/old1024": {
+      "matches": 422,
+      "denominator": 991,
+      "different_match_indices": [],
+      "different_execution_indices": [],
+      "saved_execution_summary": {
+        "programs": 1024,
+        "statuses": {
+          "numeric": 964,
+          "syntax_error": 7,
+          "execution_error": 29,
+          "non_number": 24
+        },
+        "seconds": 0.3029629759999466,
+        "chunk_retries": 0,
+        "pool_restarts": 0,
+        "chunk_rows": 2000,
+        "workers": 2,
+        "wall_limit": 3.0,
+        "cpu_limit": 2.0,
+        "complete": true,
+        "timeouts": 0
+      }
+    },
+    "t01/heldout4k": {
+      "matches": 1553,
+      "denominator": 4096,
+      "different_match_indices": [],
+      "different_execution_indices": [],
+      "saved_execution_summary": {
+        "programs": 4096,
+        "statuses": {
+          "numeric": 3931,
+          "execution_error": 125,
+          "syntax_error": 33,
+          "non_number": 7
+        },
+        "seconds": 0.5353745449999678,
+        "chunk_retries": 0,
+        "pool_restarts": 0,
+        "chunk_rows": 2000,
+        "workers": 2,
+        "wall_limit": 3.0,
+        "cpu_limit": 2.0,
+        "complete": true,
+        "timeouts": 0
+      }
+    },
+    "t01/old1024": {
+      "matches": 373,
+      "denominator": 991,
+      "different_match_indices": [],
+      "different_execution_indices": [],
+      "saved_execution_summary": {
+        "programs": 1024,
+        "statuses": {
+          "numeric": 978,
+          "execution_error": 36,
+          "non_number": 3,
+          "syntax_error": 7
+        },
+        "seconds": 0.3077931059999628,
+        "chunk_retries": 0,
+        "pool_restarts": 0,
+        "chunk_rows": 2000,
+        "workers": 2,
+        "wall_limit": 3.0,
+        "cpu_limit": 2.0,
+        "complete": true,
+        "timeouts": 0
+      }
+    },
+    "t02/heldout4k": {
+      "matches": 1968,
+      "denominator": 4096,
+      "different_match_indices": [],
+      "different_execution_indices": [],
+      "saved_execution_summary": {
+        "programs": 4096,
+        "statuses": {
+          "numeric": 3960,
+          "execution_error": 95,
+          "syntax_error": 35,
+          "non_number": 5,
+          "timeout": 1
+        },
+        "seconds": 2.534768161000102,
+        "chunk_retries": 0,
+        "pool_restarts": 0,
+        "chunk_rows": 2000,
+        "workers": 2,
+        "wall_limit": 3.0,
+        "cpu_limit": 2.0,
+        "complete": true,
+        "timeouts": 1
+      }
+    },
+    "t02/old1024": {
+      "matches": 497,
+      "denominator": 991,
+      "different_match_indices": [],
+      "different_execution_indices": [],
+      "saved_execution_summary": {
+        "programs": 1024,
+        "statuses": {
+          "numeric": 989,
+          "execution_error": 24,
+          "syntax_error": 9,
+          "timeout": 1,
+          "non_number": 1
+        },
+        "seconds": 2.300946400000157,
+        "chunk_retries": 0,
+        "pool_restarts": 0,
+        "chunk_rows": 2000,
+        "workers": 2,
+        "wall_limit": 3.0,
+        "cpu_limit": 2.0,
+        "complete": true,
+        "timeouts": 1
+      }
+    },
+    "t03/heldout4k": {
+      "matches": 2341,
+      "denominator": 4096,
+      "different_match_indices": [],
+      "different_execution_indices": [],
+      "saved_execution_summary": {
+        "programs": 4096,
+        "statuses": {
+          "numeric": 4026,
+          "execution_error": 47,
+          "syntax_error": 17,
+          "non_number": 6
+        },
+        "seconds": 0.5468976810007007,
+        "chunk_retries": 0,
+        "pool_restarts": 0,
+        "chunk_rows": 2000,
+        "workers": 2,
+        "wall_limit": 3.0,
+        "cpu_limit": 2.0,
+        "complete": true,
+        "timeouts": 0
+      }
+    },
+    "t03/old1024": {
+      "matches": 590,
+      "denominator": 991,
+      "different_match_indices": [],
+      "different_execution_indices": [],
+      "saved_execution_summary": {
+        "programs": 1024,
+        "statuses": {
+          "numeric": 1010,
+          "execution_error": 10,
+          "timeout": 1,
+          "syntax_error": 3
+        },
+        "seconds": 2.3074996350005677,
+        "chunk_retries": 0,
+        "pool_restarts": 0,
+        "chunk_rows": 2000,
+        "workers": 2,
+        "wall_limit": 3.0,
+        "cpu_limit": 2.0,
+        "complete": true,
+        "timeouts": 1
+      }
+    },
+    "t04/heldout4k": {
+      "matches": 2513,
+      "denominator": 4096,
+      "different_match_indices": [],
+      "different_execution_indices": [],
+      "saved_execution_summary": {
+        "programs": 4096,
+        "statuses": {
+          "numeric": 4047,
+          "execution_error": 31,
+          "non_number": 9,
+          "syntax_error": 7,
+          "timeout": 2
+        },
+        "seconds": 4.521986756999468,
+        "chunk_retries": 0,
+        "pool_restarts": 0,
+        "chunk_rows": 2000,
+        "workers": 2,
+        "wall_limit": 3.0,
+        "cpu_limit": 2.0,
+        "complete": true,
+        "timeouts": 2
+      }
+    },
+    "t04/old1024": {
+      "matches": 618,
+      "denominator": 991,
+      "different_match_indices": [],
+      "different_execution_indices": [],
+      "saved_execution_summary": {
+        "programs": 1024,
+        "statuses": {
+          "numeric": 1012,
+          "execution_error": 8,
+          "syntax_error": 2,
+          "non_number": 2
+        },
+        "seconds": 0.30227324799943744,
+        "chunk_retries": 0,
+        "pool_restarts": 0,
+        "chunk_rows": 2000,
+        "workers": 2,
+        "wall_limit": 3.0,
+        "cpu_limit": 2.0,
+        "complete": true,
+        "timeouts": 0
+      }
+    }
+  },
+  "27b_saved_generation_replay": {
+    "gpu0-exp27b/heldout4k": {
+      "rows": 4096,
+      "programs": 69632,
+      "statuses": {
+        "numeric": 67572,
+        "execution_error": 1803,
+        "syntax_error": 232,
+        "timeout": 22,
+        "non_number": 3
+      },
+      "saved_GPU_execution": false
+    },
+    "gpu0-exp27b/memory/probe-2048": {
+      "rows": 128,
+      "programs": 2176,
+      "statuses": {
+        "numeric": 1904,
+        "execution_error": 234,
+        "syntax_error": 37,
+        "timeout": 1
+      },
+      "saved_GPU_execution": false
+    }
+  },
+  "27b_posthoc_CPU_diagnostic": {
+    "eligible_for_registered_selection": false,
+    "reason": "registered greedy token-identity gate failed before GPU execution/quality gate/test",
+    "k16_matches": 2702,
+    "k16_denominator": 4096,
+    "k16_tolerance_would_pass": true,
+    "fast_greedy_matches": 2535,
+    "McNemar_vs_fast_greedy": {
+      "gains": 241,
+      "losses": 74,
+      "discordant": 315,
+      "exact_two_sided_p": 8.632412244326176e-22,
+      "delta_percentage_points": 4.0771484375
+    },
+    "saved_GPU_execution": false,
+    "full_test_timings": [],
+    "selected_k": null,
+    "fast_greedy_vs_S1": {
+      "gains": 1,
+      "losses": 4,
+      "discordant": 5,
+      "exact_two_sided_p": 0.375,
+      "delta_percentage_points": -0.0732421875
+    }
+  },
+  "B_checkpoints": [
+    {
+      "file": "gpu1-exp28/checkpoints/final-point-028978-48ac7b8938.pt",
+      "bytes": 383663091,
+      "sha256": "e5374801b57ed5ef8e13312b0619d7d83a0257de6d0381d60452440a9d25723b",
+      "model_tensor_sha256": "834741604dcda9fdfe4c4db7669febdbd45918fe23635901ae5d94b810bf9056",
+      "parameters": 31940096,
+      "role": "final-point",
+      "training": {
+        "phase": "branch_eval",
+        "main_updates": 20553,
+        "branch_updates": 4108,
+        "branch_length": 4108,
+        "data_cursor": 3156608,
+        "last_lr": 0.0002000000000000001,
+        "AMP_skips": 0,
+        "counts": {
+          "pairs": 3156608,
+          "source_tokens": 153893312,
+          "target_tokens": 211445459,
+          "source_slots": 231533824,
+          "target_slots": 281530496
+        }
+      },
+      "experiment_history": {
+        "compute_updates": 28978,
+        "AMP_skips": 0,
+        "train_seconds": 7317.4744785980065,
+        "checkpoint_io_seconds": 78.20478514899901,
+        "all_counts": {
+          "pairs": 3709184,
+          "source_tokens": 180834967,
+          "target_tokens": 248464789,
+          "source_slots": 272041088,
+          "target_slots": 330814208
+        },
+        "completed_points": [
+          "t01",
+          "t02",
+          "t03",
+          "t04"
+        ],
+        "finite_loss": true,
+        "finite_successful_grad": true,
+        "finite_loss_and_grad": true
+      },
+      "optimizer_steps": [
+        24661
+      ],
+      "scaler": {
+        "scale": 4194304.0,
+        "growth_factor": 2.0,
+        "backoff_factor": 0.5,
+        "growth_interval": 2000,
+        "_growth_tracker": 661
+      }
+    },
+    {
+      "file": "gpu1-exp28/checkpoints/session-stop-028978-ee795e9dbd.pt",
+      "bytes": 383663819,
+      "sha256": "ffbf4a441b489f861ef4645e146639e1d7d744afb1bef0e5a85fd659ed614777",
+      "model_tensor_sha256": "5fc871b83ccacaead2e9693a8572225c5ccb9bfa4b638baa0a5b11af6b5655c5",
+      "parameters": 31940096,
+      "role": "session-stop",
+      "training": {
+        "phase": "main",
+        "main_updates": 20553,
+        "branch_updates": 0,
+        "branch_length": 0,
+        "data_cursor": 2630784,
+        "last_lr": 0.002,
+        "AMP_skips": 0,
+        "counts": {
+          "pairs": 2630784,
+          "source_tokens": 128237138,
+          "target_tokens": 176204242,
+          "source_slots": 192914816,
+          "target_slots": 234609536
+        }
+      },
+      "experiment_history": {
+        "compute_updates": 28978,
+        "AMP_skips": 0,
+        "train_seconds": 7317.4744785980065,
+        "checkpoint_io_seconds": 81.78111559799913,
+        "all_counts": {
+          "pairs": 3709184,
+          "source_tokens": 180834967,
+          "target_tokens": 248464789,
+          "source_slots": 272041088,
+          "target_slots": 330814208
+        },
+        "completed_points": [
+          "t01",
+          "t02",
+          "t03",
+          "t04"
+        ],
+        "finite_loss": true,
+        "finite_successful_grad": true,
+        "finite_loss_and_grad": true
+      },
+      "optimizer_steps": [
+        20553
+      ],
+      "scaler": {
+        "scale": 1048576.0,
+        "growth_factor": 2.0,
+        "backoff_factor": 0.5,
+        "growth_interval": 2000,
+        "_growth_tracker": 553
+      }
+    },
+    {
+      "file": "gpu1-exp28/initial-B.pt",
+      "bytes": 127841291,
+      "sha256": "a209ce2df321e7db563154e124dcbd47304f728ad7e15d96f1afee84e0856c84",
+      "model_tensor_sha256": "37c80098a1fb1416bb6802cd5dc00ebbd47ba9c111e7ada98098f499108f8758",
+      "parameters": 31940096,
+      "role": "seed42-initial",
+      "optimizer_included": false
+    },
+    {
+      "file": "gpu1-exp28/weights/t01.pt",
+      "bytes": 127823037,
+      "sha256": "f43c3e56013129b2e85ec6e81e9c9d0e4a0f43afa3b47ebcf70e6d96d9511c58",
+      "model_tensor_sha256": "f46c83c7389f8adcdc2c751e1d76a75b607405146c63c41bef24fa2185034eca",
+      "parameters": 31940096,
+      "role": "evaluated-weights",
+      "optimizer_included": false
+    },
+    {
+      "file": "gpu1-exp28/weights/t02.pt",
+      "bytes": 127823037,
+      "sha256": "0ec86fafa4e9a181b1bc6dd58ee1713efb58e917e76ae9a52f8ef79705537090",
+      "model_tensor_sha256": "647702baef3bac0ee88669a0d5a69afa1ada86665db39049a83080f7fb5bb447",
+      "parameters": 31940096,
+      "role": "evaluated-weights",
+      "optimizer_included": false
+    },
+    {
+      "file": "gpu1-exp28/weights/t03.pt",
+      "bytes": 127823037,
+      "sha256": "8240b807539431d5135774fd7b3624c296beade3b0aa09608499e9eb9b2c4e73",
+      "model_tensor_sha256": "944849d1be65f8fdb7502ff6ac4fd9f781d160f0a72c6d0bc683e3a9418fe604",
+      "parameters": 31940096,
+      "role": "evaluated-weights",
+      "optimizer_included": false
+    },
+    {
+      "file": "gpu1-exp28/weights/t04.pt",
+      "bytes": 127823037,
+      "sha256": "cbbe292cf65e37ec4876b8206b19b06b6fbe7541fd7be1115799c3ce085f720a",
+      "model_tensor_sha256": "834741604dcda9fdfe4c4db7669febdbd45918fe23635901ae5d94b810bf9056",
+      "parameters": 31940096,
+      "role": "evaluated-weights",
+      "optimizer_included": false
+    }
+  ],
+  "all_B_match_sets_and_execution_exact": true,
+  "all_reference_values_and_finite_indices_exact": true,
+  "status": "passed",
+  "wall_seconds": 42.414816540898755
+}

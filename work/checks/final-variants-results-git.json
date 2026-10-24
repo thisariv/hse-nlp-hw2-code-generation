@@ -1,0 +1,28 @@
+{
+  "attempted": true,
+  "at_utc": "2026-10-20T17:20:36.468671+00:00",
+  "paths": [
+    "work/kaggle/variants_results.py",
+    "work/kaggle/variants_common.py",
+    "work/kaggle/notebooks/nlp-hw02-variants.ipynb",
+    "work/notes/final-variants.md",
+    "work/results/final-variants.json",
+    "work/checks/final-variants-build.json",
+    "work/checks/final-variants-cpu.json",
+    "work/checks/final-variants-source-weights.json",
+    "work/checks/final-variants-launch.json",
+    "work/checks/final-variants-push-failure.json",
+    "work/checks/final-variants-remote.json",
+    "work/checks/final-variants-download.json",
+    "work/submissions/variants-2026-10-20/v1.jsonl",
+    "work/submissions/variants-2026-10-20/v2.jsonl",
+    "work/submissions/variants-2026-10-20/v3.jsonl",
+    "work/submissions/variants-2026-10-20/v4.jsonl",
+    "work/submissions/variants-2026-10-20/v5.jsonl"
+  ],
+  "excluded_preexisting_submission_changes": true,
+  "add_exit_code": 128,
+  "add_output": "fatal: Unable to create '<vault>/.git/worktrees/study1/index.lock': Operation not permitted",
+  "commit_created": false,
+  "remaining_staged": []
+}

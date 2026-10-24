@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "bundles": [
+    "friend2/nlp-hw02-b2",
+    "friend1/nlp-hw02-b2-gpu-smoke",
+    "thisarivson/nlp-hw02-b1-ev"
+  ],
+  "frozen_EV_runtime_SHA": true,
+  "EV_remote_SHA": true,
+  "B2_GPU_runs": 0,
+  "B2_pushes": 0,
+  "B2_hard_seconds": 31500,
+  "B2_quota_margin_seconds": 2068.076000000001,
+  "B2_main_pair_mark": 3100032,
+  "EV_hard_seconds": 2700,
+  "scope": "independent B2 review: assembly and latest quota contract",
+  "quota_receipt": "b2-review-friend2-quota.json",
+  "required_quota_margin_seconds": 1200
+}

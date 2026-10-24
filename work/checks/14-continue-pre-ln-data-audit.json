@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-08",
+  "source_file_sha256": "91831d582faa12d73b1a6b3878e496446cd5df074f17ee4ffea8cc2887c708ec",
+  "train_pairs": 100000,
+  "unique_train_questions": 99212,
+  "train_sha256": "7a141e91ce958206be7e18d3c50b5ccf72a10f1d94890c5f0c3927aa497e47b9",
+  "train_row_indices_sha256": "fd49ac534874f1a49777ea2277b8c940c2a3fbea908ec05027bbe1245db34d86",
+  "validation64_sha256": "0edf2b479ebdc103ec05efc704c7bb0ac8084e41a8a44b58afef224702563050",
+  "extra192_sha256": "a2140e9f3e05f8ea10e4647b3a28335d4c9e240c083c14e8b23cf30a6dbe8bfc",
+  "heldout256_sha256": "6735359ee7a7e1b0738f8180d810b3aaff855307ec1b067c504e099295ff37f8",
+  "new768_sha256": "e8273f55b276a9c5d73e18ff89bc8cbf550dbfec2a25380063635fa39d3fd3bd",
+  "heldout1024_sha256": "e187bc297218365f1a1452a15376e0ff2fceaf8a5a5517820549854b90564743",
+  "heldout1024_question_reference_hash": "962724938ba673e6b613f62965766e27155bb01b5cb2d72b96b7807c8a18f179",
+  "heldout_rows": 1024,
+  "unique_heldout_questions": 1024,
+  "original256_is_prefix": true,
+  "question_overlap_train_heldout": 0,
+  "new_questions": 768,
+  "original256_reference_statuses": {
+    "numeric": 223,
+    "unsupported": 33
+  },
+  "heldout1024_reference_statuses": {
+    "numeric": 888,
+    "unsupported": 136
+  },
+  "selection": "original64 plus first960 distinct eligible hash-heldout questions excluding64, from pinned shard0; first192 remain original extra192; original100k train unchanged",
+  "scope": "new local data/limited-AST audit; no model, no training, no supplied programs executed"
+}

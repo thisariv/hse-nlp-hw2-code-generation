@@ -1,0 +1,28 @@
+--- a/courses/nlp/progress.md
++++ b/courses/nlp/progress.md
+@@ -1,2 +1,4 @@
+ # NLP — текущее состояние
++
++2026-10-15 — [[work/notes/b1-review|B1: независимое ревью и запуск]]:20/20 CPU, смоукv2 COMPLETE7мин44с, exact CUDA resume/eval→restore; e8-d4/e6-d6 d768, micro64/32,229/208пар/с. Private friend2/B1v1 RUNNING20:24UTC, main9,5ч/hard11ч20мин, оценки9000/28370/конец. Следующий шаг — quality receipts против C62,87%/67,50%; ETA16.10≈10:00МСК.
+ 
+--- a/courses/nlp/index.md
++++ b/courses/nlp/index.md
+@@ -1,2 +1,4 @@
+ # NLP — Глубинное обучение для обработки текстов
++
++ДЗ2: [[work/notes/b1-review|B1: независимое ревью и запуск]] — e8-d4/e6-d6 d768 fresh, смоукv2 COMPLETE, micro64/32,229/208пар/с; private B1v1 friend2 RUNNING. Gate: одинаковые с C отметки9000/28370с,15мин cooldown/heldout4k+old991+CE; ETA16.10≈10:00МСК.
+ 
+--- a/dashboard.md
++++ b/dashboard.md
+@@ -1,2 +1,4 @@
+ # Учебный dashboard
++
++- NLP ДЗ2: [[work/notes/b1-review|B1: независимое ревью и запуск]] — обе d768 fresh, GPU-smoke COMPLETE, боевой friend2/B1v1 RUNNING; main9,5ч, ETA16.10≈10:00МСК. Следующее решение — по quality receipts9000/28370с.
+ 
+--- a/knowledge/bibliography.md
++++ b/knowledge/bibliography.md
+@@ -1,2 +1,4 @@
+ # Библиография
++
++- <a id="kaggle-b1-independent-review"></a> **kaggle-b1-independent-review**. Собственное независимое ревью и API/CUDA запуски15.10.2026: [[work/notes/b1-review|B1 e8-d4/e6-d6 d768]],20CPU regressions, private friend2 smokev1/v2 (v2 COMPLETE464,177с), exact resume и eval restore; [GPU audit](../work/checks/b1-review-gpu-smoke-v2.json), production B1v1 RUNNING. Новые формы/отметки заменяют историческую подготовку `kaggle-b1-preparation`.
+ 

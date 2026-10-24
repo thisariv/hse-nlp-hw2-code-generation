@@ -1,0 +1,97 @@
+{
+  "experiment": 28,
+  "status": "partial; B not initialized",
+  "source": {
+    "id": "kaggle-s1-v1",
+    "ref": "thisarivson/nlp-hw02-kaggle-s1/1",
+    "version": 1,
+    "version_label": "v1",
+    "Kaggle_status": "COMPLETE",
+    "output": "kaggle-runs/nlp-hw02-kaggle-s1/1",
+    "download": {
+      "ref": "thisarivson/nlp-hw02-kaggle-s1/1",
+      "version_label": "v1",
+      "files": 1951,
+      "CLI_224_compatibility": true,
+      "path": "kaggle-runs/nlp-hw02-kaggle-s1/1"
+    },
+    "archive": {
+      "file": "s1-results.zip",
+      "bytes": 350077134,
+      "sha256": "e834fe795d2212bedb0b22c17fa4953e26f62f561d829578b6eb9aee01a6ae43",
+      "manifest_files": 1906,
+      "CRC": "passed",
+      "all_SHA_bytes": "passed"
+    },
+    "summary_SHA256": {
+      "s1-summary.json": "e5d57eef047b0f59c7c2112c2f6b030112a8d3d23b675a346f92e5d9c1d7511a",
+      "gpu0-a26/26b-final-summary.json": "5d1dfd1ac61f0d64fc4f6c20184f73bc452da3e6b4f30a0ef46b76f64cb31656",
+      "gpu0-exp27/27-summary.json": "84f9bd012f54b62e1d221b73f3529d8cde4ed8d41420844a1df2eeb932976c26",
+      "gpu1-exp28/28-summary.json": "0affb9d2f055acbce643cfcf89fa0136372694f8263b3e66d5f69178ac501f63"
+    }
+  },
+  "failure": {
+    "status": "partial",
+    "error": "AssertionError",
+    "message": ""
+  },
+  "failure_site": "exp26_workflow.reference_execution: finite heldout4k count !=4096",
+  "completed_B_training_updates": 0,
+  "completed_B_points": 0,
+  "B_checkpoint": null,
+  "table": [
+    {
+      "A_point": "p006250",
+      "target_train_seconds": 928.1166084509971,
+      "A_exec4k": 1888,
+      "A_exec991": 465,
+      "A_CE4k": 0.4411327532426107,
+      "B": null
+    },
+    {
+      "A_point": "p012500",
+      "target_train_seconds": 2018.225873703993,
+      "A_exec4k": 2210,
+      "A_exec991": 537,
+      "A_CE4k": 0.3791724736010504,
+      "B": null
+    },
+    {
+      "A_point": "p025000",
+      "target_train_seconds": 4203.38492590799,
+      "A_exec4k": 2446,
+      "A_exec991": 601,
+      "A_CE4k": 0.33662729078345627,
+      "B": null
+    }
+  ],
+  "batch": {
+    "planned": 128,
+    "fallback": 96,
+    "actual": null
+  },
+  "peak_memory_bytes": null,
+  "throughput": null,
+  "greedy_test1919_seconds": null,
+  "selected27_test1919_seconds": null,
+  "decision": {
+    "status": "pending; no B time point or B timing",
+    "final_model": "A/6.4M with greedy provisionally",
+    "rule": "latest aligned common B>=A+2pp and selected27 fulltest<=120s"
+  },
+  "resume": {
+    "previous_source": "thisarivson/nlp-hw02-kaggle-s1/1",
+    "A": "complete; full state and evaluations retained",
+    "27": "complete; all candidate batches/exec chunks/test timings retained",
+    "B": "start from seed42 normalized B initialization; no state to restore",
+    "reference_fix": "reuse prior verified GPU0 reference receipts after identity/SHA/finite indices/values gate",
+    "CPU_fix_check": "../checks/kaggle-s2-reference-reuse-cpu-checks.json",
+    "prepared_notebook": "../kaggle/notebooks/nlp-hw02-kaggle-s2.ipynb",
+    "pushed": false
+  },
+  "limitations": [
+    "failed reference execution rows/status counts not saved; specific offending programs and root cause cannot be recovered",
+    "cold SymPy import/worker timeouts are hypotheses, not established causes",
+    "B128/96, AMP, memory, throughput, quality and test speed not measured"
+  ]
+}

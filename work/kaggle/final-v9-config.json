@@ -1,0 +1,43 @@
+{
+  "models": [
+    {
+      "name": "C-long2x-B5",
+      "filename": "b5-final-113690-fp16.pt",
+      "relative_path": "model-GPU1/weights/b5-final-113690-fp16.pt",
+      "sha256": "32475040a951f74869663b740d0047ddfdc233309d55d5eb0dfb28c2068860c7",
+      "dataset": "friend1/nlp-hw02-b5",
+      "source_kind": "notebooks",
+      "source_ref": "friend1/nlp-hw02-b5/6",
+      "K1": 1,
+      "K2": 1
+    },
+    {
+      "name": "pilot-b",
+      "filename": "long-truncation-fp16.pt",
+      "sha256": "8439037720dda16dda6b73fe676860d5498bbcba4cacebc0d709bbb22db464a5",
+      "dataset": "friend1/nlp-hw02-kaggle-p1",
+      "relative_path": "model-pilot-b/weights/long-truncation-fp16.pt",
+      "source_kind": "notebooks",
+      "source_ref": "friend1/nlp-hw02-kaggle-p1/3",
+      "K1": 1,
+      "K2": 6
+    },
+    {
+      "name": "W-B5",
+      "filename": "b5-final-125641-fp16.pt",
+      "relative_path": "model-GPU0/weights/b5-final-125641-fp16.pt",
+      "sha256": "30ff358be26dc3b0e9093fd73f3f56539ac00c33b8eaf00f9963c015ba14755a",
+      "dataset": "friend1/nlp-hw02-b5",
+      "source_kind": "notebooks",
+      "source_ref": "friend1/nlp-hw02-b5/6",
+      "K1": 1,
+      "K2": 5
+    }
+  ],
+  "unanimity_threshold": 1.0,
+  "sequence_budget": 1024,
+  "greedy_sequence_budget": 1024,
+  "scorer_enabled": false,
+  "scorer_weight": 0.0,
+  "expected_matches": 1547
+}

@@ -1,0 +1,11 @@
+{
+  "add_attempted": true,
+  "add_returncode": 128,
+  "commit_attempted": true,
+  "commit_returncode": 128,
+  "reason": "Filesystem sandbox denied creating shared Git index.lock: Operation not permitted",
+  "index_lock": "<vault>/.git/worktrees/study1/index.lock",
+  "staged_files": [],
+  "changes_saved": true,
+  "production_pushes": 0
+}

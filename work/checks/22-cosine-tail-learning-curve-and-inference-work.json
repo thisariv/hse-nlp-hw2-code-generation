@@ -1,0 +1,147 @@
+{
+  "date": "2026-10-09",
+  "learning_curves": {
+    "21": {
+      "validation16_last_point": 0.7558808549180718,
+      "rolling_validation16_common50_steps": [
+        {
+          "start_exclusive": 75000,
+          "end_inclusive": 80000,
+          "observations": 100,
+          "mean": 0.7561263090988686
+        },
+        {
+          "start_exclusive": 80000,
+          "end_inclusive": 85000,
+          "observations": 100,
+          "mean": 0.7498427861892669
+        },
+        {
+          "start_exclusive": 85000,
+          "end_inclusive": 90000,
+          "observations": 100,
+          "mean": 0.7475774174626411
+        },
+        {
+          "start_exclusive": 90000,
+          "end_inclusive": 95000,
+          "observations": 100,
+          "mean": 0.7431367860991379
+        },
+        {
+          "start_exclusive": 95000,
+          "end_inclusive": 100000,
+          "observations": 100,
+          "mean": 0.7398175643085224
+        }
+      ],
+      "CE1024": {
+        "75000": 0.8240649928122172,
+        "100000": 0.7757584174523194
+      },
+      "train64_CE": 0.7126345508503464,
+      "validation_splits_CE": {
+        "validation64": 0.7511604485824762,
+        "validation192_extra": 0.7465256091592024,
+        "validation768_new": 0.7848577737213668
+      }
+    },
+    "22": {
+      "validation16_last_point": 0.7309177855207277,
+      "rolling_validation16_common50_steps": [
+        {
+          "start_exclusive": 75000,
+          "end_inclusive": 80000,
+          "observations": 100,
+          "mean": 0.7557343024511124
+        },
+        {
+          "start_exclusive": 80000,
+          "end_inclusive": 85000,
+          "observations": 100,
+          "mean": 0.7471774923390356
+        },
+        {
+          "start_exclusive": 85000,
+          "end_inclusive": 90000,
+          "observations": 100,
+          "mean": 0.7397340501394524
+        },
+        {
+          "start_exclusive": 90000,
+          "end_inclusive": 95000,
+          "observations": 100,
+          "mean": 0.7338335661665663
+        },
+        {
+          "start_exclusive": 95000,
+          "end_inclusive": 100000,
+          "observations": 100,
+          "mean": 0.7313210168184664
+        }
+      ],
+      "CE1024": {
+        "75000": 0.8240649928122172,
+        "80000": 0.8111743753560698,
+        "85000": 0.8002006957573143,
+        "90000": 0.7882433345966772,
+        "95000": 0.7821425841528975,
+        "100000": 0.7784813580373097
+      },
+      "train64_CE": 0.7190579252422981,
+      "validation_splits_CE": {
+        "validation64": 0.7445939701036136,
+        "validation192_extra": 0.7529121026313238,
+        "validation768_new": 0.7874392238341068
+      }
+    }
+  },
+  "inference_work": {
+    "21": {
+      "total_decoder_steps": 16351,
+      "decoder_query_rows": 523128,
+      "self_attention_query_key_pairs_per_head_layer_proxy": 104445068,
+      "cap_batches": 22,
+      "mean_generated_tokens": 68.05367378843148,
+      "saved_test_seconds": 74.70151730199996
+    },
+    "22": {
+      "total_decoder_steps": 13333,
+      "decoder_query_rows": 426557,
+      "self_attention_query_key_pairs_per_head_layer_proxy": 74041962,
+      "cap_batches": 14,
+      "mean_generated_tokens": 64.33871808233455,
+      "saved_test_seconds": 57.599775898999724
+    },
+    "relative22_vs21": {
+      "total_decoder_steps": -0.1845758669194545,
+      "decoder_query_rows": -0.18460300347142578,
+      "self_attention_query_key_pairs_per_head_layer_proxy": -0.29109183020494567,
+      "mean_generated_tokens": -0.05458861365289647,
+      "saved_test_seconds": -0.22893432450457563
+    },
+    "scope": "Saved lengths/order/batch32; finished rows still processed until slowest answer. Work proxies, no new GPU profiler/timer. Model/cache code unchanged."
+  },
+  "relative_metrics": {
+    "CE1024_relative22_vs21": 0.003510036789459159,
+    "byte_NLL_relative22_vs21": 0.003510036789459159,
+    "CE1024_relative75k_to100k_22": -0.05531558211124599,
+    "new_tail_minutes": 16.17767203010006,
+    "new_tail_updates_per_second": 25.755662859985026,
+    "saved21_tail_minutes": 17.08367991500001,
+    "saved_test_headroom_to180_seconds": 122.40022410100028,
+    "new_tail_training_seconds_relative_vs21": -0.0530335319678078
+  },
+  "training_coverage": {
+    "unique_train_rows_seen": 399353,
+    "fraction_train_rows_seen": 0.798706,
+    "pair_presentations": 800000,
+    "useful_target_tokens": 52789363,
+    "target_slots_with_padding": 85115448,
+    "target_padding_fraction": 0.37979104568655975
+  },
+  "interpretation": "Validation16 improves, full1024 slightly worse. Model22 still learns75k..100k. Fewer long/cap tails reduce decoder work and agree with saved test speedup; cannot attribute all wall-time difference without paired GPU profiling.",
+  "new_training_updates": 0,
+  "new_GPU_measurements": false,
+  "limits": "Same validation16 repeatedly scored,100 observations per window not100 independent samples. Exact kernel speed not measured."
+}

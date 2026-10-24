@@ -1,0 +1,16 @@
+{
+  "CLI": "2.2.4",
+  "metadata_field": "machine_shape",
+  "T4x2": "NvidiaTeslaT4",
+  "GPU_request_serialization_mock_checked": true,
+  "CPU_request_serialization_mock_checked": true,
+  "S2_session_timeout_request_seconds": 13200,
+  "S2_timeout_serialization_mock_checked": true,
+  "versioned_status_pull_paged_download_mock_checked": true,
+  "version_label_format": "vN",
+  "API_source_sha256": "210e589ab1f7359ffb560aacfe1c003ac1bc844c366f4ff709bf3d13de4d5458",
+  "network_save_calls": 0,
+  "network_calls_in_this_check": 0,
+  "official_docs": "https://github.com/Kaggle/kaggle-cli/blob/main/docs/kernels_metadata.md",
+  "official_version_fix": "https://github.com/Kaggle/kaggle-cli/pull/1201"
+}

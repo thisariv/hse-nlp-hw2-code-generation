@@ -1,0 +1,9 @@
+{
+  "account": "friend1",
+  "used_seconds": 97209.687,
+  "reserved_seconds": 0.0,
+  "allowed_seconds": 108000.0,
+  "free_seconds": 10790.313,
+  "refresh_utc": "2026-10-17T00:00:00",
+  "checked_at_utc": "2026-10-14T20:33:53.262558+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-08",
+  "notebook_sha256": "a4381f48ee27a8417dc97587b545d76654121cebfcdf2923deb6b20c129319d3",
+  "cells": 21,
+  "code_cells": 11,
+  "code_compiles": true,
+  "outputs_and_counts_empty": true,
+  "no_host_paths_or_accidental_control_characters": true,
+  "model_optimizer_scheduler_cell_identical_to10": true,
+  "cached_decoder_cell_identical_to10": true,
+  "full_test_cell_identical_to10": true,
+  "original_BPE_payload_unchanged": true,
+  "historical10_summaries_match_received_T4_results": true,
+  "comparison12_saved_train_validation_summaries_checked": true,
+  "factor": "first20000 to first100000 eligible non-heldout rows from same pinned shard0; all other training/inference parameters fixed",
+  "budget": "50000 updates * batch8 =400000 presentations; mean per pair20 to4; not equal epochs",
+  "limits": "Static/source checks only; CPU behavioral report separate. Not T4 training, speed or quality."
+}

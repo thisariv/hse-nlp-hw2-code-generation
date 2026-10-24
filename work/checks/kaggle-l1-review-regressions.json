@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "tests": 16,
+  "failures": 0,
+  "errors": 0,
+  "names": [
+    "test_adam_partial_oom_rolls_back_committed_state",
+    "test_branch_adam_partial_oom_restores_anchor",
+    "test_cache_memmap_boundaries_and_overflow",
+    "test_ce_late_oom_reduces_batch",
+    "test_checkpoint_rotation_and_cyclic_tail",
+    "test_decision_uses_numeric_time_order",
+    "test_executor_group_dies_with_parent",
+    "test_executor_wall_timeout_and_actual_restore",
+    "test_failed_eval_rolls_back_warmup_anchor_then_backward",
+    "test_graceful_stop_publishes_state_and_identity_rejects_changes",
+    "test_late_oom_discards_partial_grad_and_rng",
+    "test_live_failure_retries_after_300_seconds",
+    "test_output_and_live_resume_preserve_all_state",
+    "test_resume_at_anchor_uses_historical_throughput_for_length",
+    "test_secrets_gate_and_same_notebook_recipe",
+    "test_token_weighted_96_plus_32"
+  ]
+}

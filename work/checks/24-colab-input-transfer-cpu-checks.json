@@ -1,0 +1,56 @@
+{
+  "compact_bundle": {
+    "name": "24-start-from-22-model-only.zip",
+    "bytes": 48506810,
+    "sha256": "5b70c8adebc8affaa20b2aa7254fbfc5eb048c0371b0ad286130fbed2cd85de8"
+  },
+  "original_zip22_bytes": 390676723,
+  "source22": {
+    "source_experiment": "22",
+    "step": 100000,
+    "original_PT_sha256": "13f8ae4ae2ee2c15fc9d034cf8773de420226e073550c9774adb1846f3e27b23",
+    "model_sha256": "cfb2a0fca3bd1de459f20012c664a3e8b3f86ecdc1534368aa6d2489a0a0b74e",
+    "tensor_sha256": "c877e7a5a2e21d8eb620b57734f69417ae84d2cd71f24cd0378971a3587ae3ca",
+    "stored": "model state only; no optimizer"
+  },
+  "code_sha_unchanged": "35532789452eed2ff8e60943c291870bcf606261fd9fbeb8dae9045d6d190779",
+  "original_notebook_sha256": "22f5be14f3525fd2f1c308125b21b07396f98257acf0683e7e597a867a373544",
+  "new_notebook_sha256": "5b401b8bd3f58b0d4b228fb4a0115fd1ed89b9d6368c1db666adbbc18ac0afb4",
+  "only_cells_changed": [
+    2,
+    4,
+    15,
+    16
+  ],
+  "full_training_runs": 0,
+  "GPU_runs": 0,
+  "unverified": [
+    "real Colab upload/download/Drive authentication",
+    "T4 speed and recipe24 training/evaluation"
+  ],
+  "checks": {
+    "compact_paths_SHA_manifest_restore_and_tensor_parity": true,
+    "auto_reuses_without_upload_dialog": true,
+    "drive_mode_mount_and_local_copy_mocked": true,
+    "identical_local_copy_not_rewritten": true,
+    "browser_small_ZIP_upload_mocked": true,
+    "original_PT_and_tokenizer_supported": true,
+    "tampered_compact_SHA_rejected_before_restore": true,
+    "corrupt_reused_model_rejected": true,
+    "empty_reuse_rejected": true,
+    "unchanged_recipe_code_SHA_and_prior_resume_ABI_preserve_files": true,
+    "standalone_pack_and_download_before_setup_mocked": true,
+    "standalone_Drive_backup_SHA_no_download_mocked": true,
+    "all_code_cells_parse_empty_outputs": 9,
+    "recipe_modules_and_training_evaluation_cells_unchanged": true,
+    "actual_model_tensor_count": 12086912,
+    "new_training_updates": 0,
+    "GPU_measurements": 0,
+    "original_notebook_JSON_indentation_preserved": true
+  },
+  "mocked_Colab_calls": {
+    "mount": 2,
+    "upload": 1,
+    "download": 1
+  }
+}

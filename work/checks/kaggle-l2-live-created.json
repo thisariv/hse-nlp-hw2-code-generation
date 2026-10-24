@@ -1,0 +1,8 @@
+{
+  "dataset": "thisarivson/nlp-hw02-l2-live",
+  "private": true,
+  "version": 1,
+  "status": "ready",
+  "created_before_training": true,
+  "training_started": false
+}

@@ -1,0 +1,14 @@
+{
+  "bundle": "kaggle/bundles/shape_bench_mine",
+  "ready": false,
+  "CPU_static_passed": true,
+  "GPU_measured": true,
+  "push": false,
+  "receipt": "checks/shape-bench-cpu.json",
+  "status": "complete",
+  "user_kernel": "thisarivson/nlp-hw02-shape-bench/1",
+  "complete_shapes": 13,
+  "wall_s": 332.45688308200005,
+  "measured_receipt": "results/architecture-shape-bench.json",
+  "next": "No repeat benchmark; cold production timer and optional independent C K16 gate before training"
+}

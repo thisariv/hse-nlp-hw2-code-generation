@@ -1,0 +1,13 @@
+{
+  "ref": "friend1/nlp-hw02-ensemble-inference-v10",
+  "version": 2,
+  "files": 0,
+  "version_binding": "latest fallback, current version and full code parity verified before/after download",
+  "output": "results/kaggle-runs/nlp-hw02-ensemble-inference-v10/2",
+  "quota_after": {
+    "free_seconds": 52295.961,
+    "used_seconds": 55704.039,
+    "reserved_seconds": 0.0,
+    "reset_utc": "2026-10-24 00:00:00"
+  }
+}

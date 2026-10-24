@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "reproduction_commit": "089a70c",
+  "trigger": "final metrics has no K8 field",
+  "original_status": "complete",
+  "fixed_status": "partial; L4 final K8 missing or incomplete",
+  "real_runtime_regression": "test_real_missing_final_K8_reports_partial_and_preserves_full_state"
+}

@@ -1,0 +1,9 @@
+{
+  "ref": "thisarivson/nlp-hw02-final-package-v11-budget640",
+  "version": 1,
+  "files": 19,
+  "downloaded_at_utc": "2026-10-20T08:55:14.381513+00:00",
+  "binding": "latest output; exact server version and code verified before and after",
+  "executed_notebook_sha256": "af75d71024f97afe33583525ac18cc209577e98391726ae181f3e7f1f1910f95",
+  "output": "results/kaggle-runs/nlp-hw02-final-package-v11-budget640/1"
+}

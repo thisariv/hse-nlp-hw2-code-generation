@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-08",
+  "prepared_notebook_sha256": "5e1f5e6c6e7eee3667a56a7fb7dac21cfd467a1f7ca23319b0c8f4b2f2466fd5",
+  "input_notebook_sha256": "5dc3900af3efba45a707b759174928d8c9e74d3eeafcb76bc6534ce6fb3d951d",
+  "input_archive_sha256": "1021e96a6cb43a14c8cfc6766631b4a6463eb1aca035c5bc8f3920c216570f86",
+  "checks": {
+    "saved_examples_verified": 5247,
+    "source_code_identical": true,
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "no_saved_error_outputs": true,
+    "CRC_manifest_hashes": true,
+    "four_safe_checkpoints_finite_and_consistent": true,
+    "latest_equals100000_state": true,
+    "baseline50k_source17_model_AdamW_scheduler_RNG_coverage_exact": true,
+    "all_fixed_question_reference_pairs_and_denominators": true,
+    "token_decode_AST_numeric_aggregates": true,
+    "1919_test_question_order": true,
+    "printed_diagnostics_equal_JSON": true,
+    "byte512_prefix_rule": true,
+    "all_additional_saved_LRs_are1e_4_original_schedule_floor": true,
+    "historical15_and17_sources_config_data_metrics_verified": true,
+    "fresh1024_reserved_unscored_and_hash_verified": true,
+    "checkpoint_coverage_counts_verified": true,
+    "finite_logs_and_gradients": true
+  },
+  "scope": "Saved user T4 results and new static checks. No training/full1919 inference rerun, official checker or supplied program execution; numerical reference agreement is not accuracy/pass@1."
+}

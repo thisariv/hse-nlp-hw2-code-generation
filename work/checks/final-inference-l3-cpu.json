@@ -1,0 +1,86 @@
+{
+  "passed": true,
+  "nbformat": true,
+  "metadata": {
+    "id": "friend1/nlp-hw02-final-inference-l3",
+    "title": "NLP HW02 final inference L3",
+    "code_file": "nlp-hw02-final-inference-l3.ipynb",
+    "language": "python",
+    "kernel_type": "notebook",
+    "is_private": true,
+    "enable_gpu": true,
+    "enable_tpu": false,
+    "enable_internet": false,
+    "machine_shape": "NvidiaTeslaT4",
+    "dataset_sources": [
+      "friend1/nlp-hw02-l3-live",
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [],
+    "competition_sources": []
+  },
+  "limits": {
+    "kind": "final_inference_l3",
+    "session_timeout_seconds": 720,
+    "watchdog_stop_seconds": 660,
+    "watchdog_exit_seconds": 690,
+    "cold_test_runs": 1,
+    "tune_runs": 1
+  },
+  "remote_L3_live": "friend1/nlp-hw02-l3-live/12",
+  "base_V3_sources_unchanged": true,
+  "inference_worker_only_weight_SHA_and_quality_metadata_changed": true,
+  "unchanged_decoder_executor_vote_sources": true,
+  "weights": {
+    "C-main": {
+      "SHA256": "8c11b1038855422b6912e243049a554317978f848edb412ed48aebbe4cb6b886",
+      "bytes": 107363571,
+      "finite_FP16_tensors": 212,
+      "strict_model_load": true,
+      "CPU_greedy_rows": 2,
+      "CPU_K4_rows": 2,
+      "cap": 16
+    },
+    "C-long2x": {
+      "SHA256": "d10bf0018d0b14fd6cc3c8b9c7121f127b5cec97057544fd63e5824253a55057",
+      "bytes": 107364659,
+      "finite_FP16_tensors": 212,
+      "strict_model_load": true,
+      "CPU_greedy_rows": 2,
+      "CPU_K4_rows": 2,
+      "cap": 16
+    }
+  },
+  "stored_tune": {
+    "matches": 1511,
+    "n": 2048,
+    "accuracy_pp": 73.779296875
+  },
+  "selected_code_reexecution": {
+    "checked_rows": 16,
+    "complete": true,
+    "mismatch_rows": [],
+    "execution": {
+      "workers": 2,
+      "requested_candidates": 16,
+      "unique_programs": 16,
+      "deduplicated": 0,
+      "completed_unique": 16,
+      "service_wall_seconds": 0.14170520892366767,
+      "sum_worker_task_wall_seconds": 0.005456420825794339,
+      "sum_worker_task_cpu_seconds": 0.004308999999999993,
+      "first_submit_to_last_result_seconds": 0.13837799988687038,
+      "service_wall_includes_GPU_wait": true,
+      "wall_limit": 3.0,
+      "cpu_limit": 2.0,
+      "memory_bytes": 805306368,
+      "overlap": true,
+      "isolation": "fresh numeric namespaces / pristine SymPy fork",
+      "error": null
+    }
+  },
+  "GPU": false,
+  "push": false,
+  "GPU_timing_quality_gate": "pending observer run",
+  "CPU_scope": "real FP16 strict loads, 2-row cap16 greedy/K4 each, 16 saved mixed winners"
+}

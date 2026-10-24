@@ -1,0 +1,410 @@
+[
+  {
+    "at_utc": "2026-10-20T08:08:09.603035+00:00",
+    "status": "QUEUED",
+    "version": 1,
+    "own_push_calls": 1,
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 1.8e-05,
+    "private": true,
+    "all_code_cells_exact": true,
+    "machine_shape": "NvidiaTeslaT4",
+    "current_version": 1,
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-final-weights"
+    ],
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-20T08:08:43.765492+00:00",
+    "status": "QUEUED",
+    "version": 1,
+    "own_push_calls": 1,
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 34.162438,
+    "private": true,
+    "all_code_cells_exact": true,
+    "machine_shape": "NvidiaTeslaT4",
+    "current_version": 1,
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-final-weights"
+    ],
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-20T08:09:31.604925+00:00",
+    "status": "QUEUED",
+    "version": 1,
+    "own_push_calls": 1,
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 82.001872,
+    "private": true,
+    "all_code_cells_exact": true,
+    "machine_shape": "NvidiaTeslaT4",
+    "current_version": 1,
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-final-weights"
+    ],
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-20T08:10:19.236726+00:00",
+    "status": "QUEUED",
+    "version": 1,
+    "own_push_calls": 1,
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 129.633678,
+    "private": true,
+    "all_code_cells_exact": true,
+    "machine_shape": "NvidiaTeslaT4",
+    "current_version": 1,
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-final-weights"
+    ],
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-20T08:11:06.735748+00:00",
+    "status": "QUEUED",
+    "version": 1,
+    "own_push_calls": 1,
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 177.132707,
+    "private": true,
+    "all_code_cells_exact": true,
+    "machine_shape": "NvidiaTeslaT4",
+    "current_version": 1,
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-final-weights"
+    ],
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-20T08:11:55.140027+00:00",
+    "status": "QUEUED",
+    "version": 1,
+    "own_push_calls": 1,
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 225.536983,
+    "private": true,
+    "all_code_cells_exact": true,
+    "machine_shape": "NvidiaTeslaT4",
+    "current_version": 1,
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-final-weights"
+    ],
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-20T08:12:42.969889+00:00",
+    "status": "QUEUED",
+    "version": 1,
+    "own_push_calls": 1,
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 273.366843,
+    "private": true,
+    "all_code_cells_exact": true,
+    "machine_shape": "NvidiaTeslaT4",
+    "current_version": 1,
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-final-weights"
+    ],
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-20T08:13:31.205731+00:00",
+    "status": "QUEUED",
+    "version": 1,
+    "own_push_calls": 1,
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 321.602691,
+    "private": true,
+    "all_code_cells_exact": true,
+    "machine_shape": "NvidiaTeslaT4",
+    "current_version": 1,
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-final-weights"
+    ],
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-20T08:14:18.748762+00:00",
+    "status": "QUEUED",
+    "version": 1,
+    "own_push_calls": 1,
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 369.145715,
+    "private": true,
+    "all_code_cells_exact": true,
+    "machine_shape": "NvidiaTeslaT4",
+    "current_version": 1,
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-final-weights"
+    ],
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-20T08:15:06.160164+00:00",
+    "status": "QUEUED",
+    "version": 1,
+    "own_push_calls": 1,
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 416.557113,
+    "private": true,
+    "all_code_cells_exact": true,
+    "machine_shape": "NvidiaTeslaT4",
+    "current_version": 1,
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-final-weights"
+    ],
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-20T08:15:54.745155+00:00",
+    "status": "QUEUED",
+    "version": 1,
+    "own_push_calls": 1,
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 465.142115,
+    "private": true,
+    "all_code_cells_exact": true,
+    "machine_shape": "NvidiaTeslaT4",
+    "current_version": 1,
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-final-weights"
+    ],
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-20T08:16:42.672950+00:00",
+    "status": "QUEUED",
+    "version": 1,
+    "own_push_calls": 1,
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 513.06991,
+    "private": true,
+    "all_code_cells_exact": true,
+    "machine_shape": "NvidiaTeslaT4",
+    "current_version": 1,
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-final-weights"
+    ],
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-20T08:17:30.303093+00:00",
+    "status": "QUEUED",
+    "version": 1,
+    "own_push_calls": 1,
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 560.700051,
+    "private": true,
+    "all_code_cells_exact": true,
+    "machine_shape": "NvidiaTeslaT4",
+    "current_version": 1,
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-final-weights"
+    ],
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-20T08:18:17.799557+00:00",
+    "status": "QUEUED",
+    "version": 1,
+    "own_push_calls": 1,
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 608.196518,
+    "private": true,
+    "all_code_cells_exact": true,
+    "machine_shape": "NvidiaTeslaT4",
+    "current_version": 1,
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-final-weights"
+    ],
+    "wait_threshold_crossed": true
+  },
+  {
+    "at_utc": "2026-10-20T08:19:05.287223+00:00",
+    "status": "QUEUED",
+    "version": 1,
+    "own_push_calls": 1,
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 655.684174,
+    "private": true,
+    "all_code_cells_exact": true,
+    "machine_shape": "NvidiaTeslaT4",
+    "current_version": 1,
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-final-weights"
+    ],
+    "wait_threshold_crossed": true
+  },
+  {
+    "at_utc": "2026-10-20T08:19:52.629166+00:00",
+    "status": "QUEUED",
+    "version": 1,
+    "own_push_calls": 1,
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 703.026118,
+    "private": true,
+    "all_code_cells_exact": true,
+    "machine_shape": "NvidiaTeslaT4",
+    "current_version": 1,
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-final-weights"
+    ],
+    "wait_threshold_crossed": true
+  },
+  {
+    "at_utc": "2026-10-20T08:20:40.792342+00:00",
+    "status": "QUEUED",
+    "version": 1,
+    "own_push_calls": 1,
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 751.18929,
+    "private": true,
+    "all_code_cells_exact": true,
+    "machine_shape": "NvidiaTeslaT4",
+    "current_version": 1,
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-final-weights"
+    ],
+    "wait_threshold_crossed": true
+  },
+  {
+    "at_utc": "2026-10-20T08:21:28.183067+00:00",
+    "status": "RUNNING",
+    "version": 1,
+    "own_push_calls": 1,
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 4e-05,
+    "private": true,
+    "all_code_cells_exact": true,
+    "machine_shape": "NvidiaTeslaT4",
+    "current_version": 1,
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-final-weights"
+    ],
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-20T08:22:16.196161+00:00",
+    "status": "RUNNING",
+    "version": 1,
+    "own_push_calls": 1,
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 48.013079,
+    "private": true,
+    "all_code_cells_exact": true,
+    "machine_shape": "NvidiaTeslaT4",
+    "current_version": 1,
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-final-weights"
+    ],
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-20T08:23:04.034012+00:00",
+    "status": "RUNNING",
+    "version": 1,
+    "own_push_calls": 1,
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 95.850934,
+    "private": true,
+    "all_code_cells_exact": true,
+    "machine_shape": "NvidiaTeslaT4",
+    "current_version": 1,
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-final-weights"
+    ],
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-20T08:23:51.763706+00:00",
+    "status": "RUNNING",
+    "version": 1,
+    "own_push_calls": 1,
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 143.580624,
+    "private": true,
+    "all_code_cells_exact": true,
+    "machine_shape": "NvidiaTeslaT4",
+    "current_version": 1,
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-final-weights"
+    ],
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-20T08:24:39.310658+00:00",
+    "status": "RUNNING",
+    "version": 1,
+    "own_push_calls": 1,
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 191.127585,
+    "private": true,
+    "all_code_cells_exact": true,
+    "machine_shape": "NvidiaTeslaT4",
+    "current_version": 1,
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-final-weights"
+    ],
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-20T08:25:26.917226+00:00",
+    "status": "RUNNING",
+    "version": 1,
+    "own_push_calls": 1,
+    "output_visible": false,
+    "log_chars": 0,
+    "status_observed_seconds": 238.734148,
+    "private": true,
+    "all_code_cells_exact": true,
+    "machine_shape": "NvidiaTeslaT4",
+    "current_version": 1,
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-final-weights"
+    ],
+    "wait_threshold_crossed": false
+  },
+  {
+    "at_utc": "2026-10-20T08:26:14.799989+00:00",
+    "status": "COMPLETE",
+    "version": 1,
+    "own_push_calls": 1,
+    "output_visible": true,
+    "log_chars": 3943,
+    "status_observed_seconds": 3.2e-05,
+    "private": true,
+    "all_code_cells_exact": true,
+    "machine_shape": "NvidiaTeslaT4",
+    "current_version": 1,
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-final-weights"
+    ],
+    "wait_threshold_crossed": false
+  }
+]

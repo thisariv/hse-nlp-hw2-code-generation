@@ -1,0 +1,177 @@
+{
+  "GPU_used": false,
+  "Kaggle_push": false,
+  "new_training": false,
+  "review_regressions": {
+    "namespace_mutation_blocked": true,
+    "sympy_string_escape_blocked": true,
+    "ordinary_sympy_equations_preserved": true,
+    "stdout_protocol_clean": true,
+    "fork_import_blocked": true,
+    "memory_exhaustion_bounded": false,
+    "caught_timeout_bounded_and_worker_recovered": true,
+    "chosen_code_reexecution_detects_wrong_cached_value": true,
+    "sympy_random_method_blocked_and_internal_RNG_seeded": true,
+    "format_string_hidden_attribute_traversal_blocked": true,
+    "seconds": 5.505139000015333,
+    "linux_process_group_and_RLIMIT_AS": false,
+    "authorization": {
+      "missing_authorization_stops_before_SDK_or_credential_file_reads": true
+    },
+    "output_validation": {
+      "passed": true,
+      "GPU_used": false,
+      "fixtures_only": true,
+      "wrong_order_late_run_fallback_multiGPU_different_answers_rejected": true
+    },
+    "pipe_death": {
+      "send_failure_after_is_alive_requeues_exactly_once": true,
+      "worker_death_race_injected": true
+    }
+  },
+  "unit": {
+    "vote_restore_format": "passed",
+    "cases": 18
+  },
+  "offline_vote": {
+    "rows": 2048,
+    "matches": 1492,
+    "accuracy_pp": 72.8515625,
+    "execution_mismatches": 0,
+    "code_mismatches": 0,
+    "restored_samples": 32768,
+    "chosen_execution_sha256": "62104d458161d42ce5bd64cc4ee58f1a8a9a2e883b28decfdee0489eba5833dc",
+    "chosen_code_sha256": "8a572da313e85b4de96af01aad03efe800534ea67d59e9e3e7a3159d960dc12e",
+    "candidate_count": 18432,
+    "unique_programs": 14799
+  },
+  "static": {
+    "passed": true,
+    "code_cells": 2,
+    "embedded_modules": 13,
+    "frozen_function_AST_equivalence": true,
+    "private": true,
+    "GPU_count_in_worker": 1,
+    "internet": false,
+    "nbformat": "passed",
+    "notebook_bytes": 78907
+  },
+  "suite": {
+    "passed": true,
+    "selective_ZIP_without_initial_weights": true,
+    "first_answers_preserved": true,
+    "quality_fail_does_not_spend_extra_GPU_run": true,
+    "single_test_submission_mode": true,
+    "GPU_launches_in_this_check": 0,
+    "launches_mocked": true,
+    "two_cold_test_then_tune": true
+  },
+  "supervisor": {
+    "external_hard_stop_publishes_exact_greedy": true,
+    "startup_before_greedy_fails_without_fabrication": true,
+    "process_and_clock_mocked": true
+  },
+  "sampler": {
+    "original_physical_sampler_token_and_LP_identical": true,
+    "K": [
+      1,
+      4,
+      8
+    ],
+    "greedy_without_LP_tokens_identical": true,
+    "cached_logits_allclose_1e_6": true,
+    "device": "CPU FP32 tiny; CUDA not tested"
+  },
+  "execution": {
+    "small_equivalence": true,
+    "unique_programs": 14799,
+    "workers": 8,
+    "numeric_mismatches": 0,
+    "status_mismatches": [
+      {
+        "code_sha256": "c75df860ad89e0527278164279514a07478d777ff0c5622a19d5cc73f935b3c6",
+        "saved": {
+          "status": "timeout_or_worker_exit"
+        },
+        "new": {
+          "status": "timeout"
+        }
+      },
+      {
+        "code_sha256": "8d9b281dffda74ba244c2e6b9d6f957bb0786b981f878dacc7d1700be6d7e582",
+        "saved": {
+          "status": "timeout_or_worker_exit"
+        },
+        "new": {
+          "status": "timeout"
+        }
+      },
+      {
+        "code_sha256": "aa788c5c8303fb8099324da58fce90bec2ae22573da4568cf9c0345a348a9759",
+        "saved": {
+          "status": "timeout_or_worker_exit"
+        },
+        "new": {
+          "status": "timeout"
+        }
+      },
+      {
+        "code_sha256": "8eb456dd419ca02b2942842baa0347b838ea824d07dff852eeb87e769efed7b3",
+        "saved": {
+          "status": "timeout_or_worker_exit"
+        },
+        "new": {
+          "status": "timeout"
+        }
+      },
+      {
+        "code_sha256": "8f931bfdd38577a9aefe9600cfdd9912d15594e58e49a6d338326c149a2b8df1",
+        "saved": {
+          "status": "timeout_or_worker_exit"
+        },
+        "new": {
+          "status": "timeout"
+        }
+      },
+      {
+        "code_sha256": "f4fb90cc4124e3c2bbc828ebc7315f6936c7330c27bd8f06100ad35bf2c770dd",
+        "saved": {
+          "status": "timeout_or_worker_exit"
+        },
+        "new": {
+          "status": "timeout"
+        }
+      },
+      {
+        "code_sha256": "720a48a20527ae861abf7b21aa02eb91a421409ec57a56632adc320a6d9c7ac3",
+        "saved": {
+          "status": "timeout_or_worker_exit"
+        },
+        "new": {
+          "status": "timeout"
+        }
+      },
+      {
+        "code_sha256": "b99829b0e2ccc1e698c56340c70340a79fc6131d95f729ed8325d1e7c65380b2",
+        "saved": {
+          "status": "timeout_or_worker_exit"
+        },
+        "new": {
+          "status": "timeout"
+        }
+      }
+    ],
+    "saved_duplicate_execution_conflicts": 0,
+    "seconds": 8.29857829096727,
+    "infinite_loop_bounded_and_worker_recovered": true
+  },
+  "process_smoke": {
+    "passed": true,
+    "cold_subprocess_seconds": 3.106025124900043,
+    "all_phases_in_timer": true,
+    "sample_candidates": 27,
+    "deadline_fallback_greedy_exact": true,
+    "guard_seconds": 2.152601499808952,
+    "stale_output_rejected": true
+  }
+}

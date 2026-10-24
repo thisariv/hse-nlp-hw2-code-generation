@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "dataset": "friend1/nlp-hw02-b5-inputs",
+  "version": 1,
+  "private": true,
+  "transfer_sha256": "01b622f609dc49d40b21dbec3dfcfaaaaf0c9ba5d7ef8c657bfff397433d8eff",
+  "source_manifest_sha256": "bc2201191cb3552ff21a468df730d33cac19013e572877411afaa137d27a4da6",
+  "files": [
+    {
+      "file": "weighted-order__order.json",
+      "original": "weighted-order/order.json",
+      "bytes": 449,
+      "sha256": "d6d78e00071c7a74c46613265002556194c12c76d6b752d498a81e7340144049"
+    },
+    {
+      "file": "weighted-order__order.npy",
+      "original": "weighted-order/order.npy",
+      "bytes": 44911372,
+      "sha256": "8e9595f655ed2b4456bf5b94e9b5b6b3db040e3f5696a4dc0ef364588048bee8"
+    },
+    {
+      "file": "model-GPU0__latest.json",
+      "original": "model-GPU0/latest.json",
+      "bytes": 2530,
+      "sha256": "422bd64785b8e550f34a0720582ed9044120a470d84acec4f994584395757764"
+    },
+    {
+      "file": "model-GPU0__checkpoints__main-9bdf4998eb30.pt",
+      "original": "model-GPU0/checkpoints/main-9bdf4998eb30.pt",
+      "bytes": 1361709117,
+      "sha256": "f23fe1e36135e23b1ba1d393537ea501f25165a084b8462c16d8bc24843abc7a"
+    },
+    {
+      "file": "b5-transfer.json",
+      "bytes": 1114,
+      "sha256": "01b622f609dc49d40b21dbec3dfcfaaaaf0c9ba5d7ef8c657bfff397433d8eff"
+    }
+  ],
+  "remote_SHA_verified": true,
+  "local_payload_deleted": true,
+  "real_CPU_checks": true
+}

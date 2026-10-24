@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "full A 30: exact normalized original tensor digest; fresh special embeddings",
+      "passed": true,
+      "vocab": 8195,
+      "parameters": 12088451,
+      "new_embedding_std": 0.06240983307361603
+    },
+    {
+      "check": "full A 31: exact normalized original tensor digest; fresh special embeddings",
+      "passed": true,
+      "vocab": 8212,
+      "parameters": 12097172,
+      "new_embedding_std": 0.06266241520643234
+    },
+    {
+      "check": "frozen26b unchanged; all notebook/worker cells compile; watchdog before install; private T4/pinned sources/90-105min limits",
+      "passed": true
+    },
+    {
+      "check": "heldout4k full S1 SHA/id/question/all65 coverage",
+      "passed": true,
+      "questions": 4096,
+      "candidates": 266240,
+      "files": 256
+    },
+    {
+      "check": "old1024 full S1 SHA/id/question/all65 coverage",
+      "passed": true,
+      "questions": 1024,
+      "candidates": 66560,
+      "files": 64
+    }
+  ],
+  "notebook_sha256": "77c42c8506bd5f92cb98176103f6811badb6d671fa6efc12e368fa220111969b",
+  "metadata": {
+    "id": "thisarivson/nlp-hw02-kaggle-s3",
+    "title": "nlp hw02 kaggle s3",
+    "code_file": "nlp-hw02-kaggle-s3.ipynb",
+    "language": "python",
+    "kernel_type": "notebook",
+    "is_private": true,
+    "enable_gpu": true,
+    "enable_tpu": false,
+    "enable_internet": true,
+    "machine_shape": "NvidiaTeslaT4",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26-token-cache",
+      "thisarivson/nlp-hw02-26-resume",
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "thisarivson/nlp-hw02-kaggle-s1/1",
+      "thisarivson/nlp-hw02-kaggle-s2/2"
+    ],
+    "competition_sources": []
+  },
+  "limits": {
+    "session_timeout_seconds": 6300,
+    "budget_seconds": 5400,
+    "watchdog_exit_seconds": 6000
+  }
+}

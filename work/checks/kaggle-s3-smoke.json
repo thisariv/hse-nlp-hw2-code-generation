@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "30 fixtures: signs/types/repeats/string/backslash/multiline/20limit",
+      "passed": true
+    },
+    {
+      "check": "31 fixtures: signs/types/repeats/string/backslash/multiline/20limit",
+      "passed": true
+    },
+    {
+      "check": "30 real tiny updates, two cooldown branches, AdamW rollback, exact original batches, restored exec/CE",
+      "passed": true
+    },
+    {
+      "check": "31 real tiny updates, two cooldown branches, AdamW rollback, exact original batches, restored exec/CE",
+      "passed": true
+    },
+    {
+      "check": "real S2/2 B t04 SHA/spec, real S1 candidates, sum/mean/EOS/PAD independent oracle; no training",
+      "passed": true,
+      "real_tiny_scores": [
+        [
+          -2.1869137287139893,
+          -0.09112140536308289,
+          24
+        ],
+        [
+          -26.435813903808594,
+          -0.5624641180038452,
+          47
+        ]
+      ]
+    },
+    {
+      "check": "B scoring end-to-end tiny JSON/SHA/alignment/all65/dedup/partial receipts",
+      "passed": true
+    },
+    {
+      "check": "S3 compact individual output, latest retention, no ZIP",
+      "passed": true
+    }
+  ],
+  "roundtrip": "kaggle-s3-roundtrip.json",
+  "tiny_output_bytes": 12845423,
+  "not_verified": [
+    "T4 FP16/fused/SDPA memory and numerical behavior",
+    "full data preprocessing/scoring speed",
+    "GPU quality and equal-time alignment"
+  ]
+}

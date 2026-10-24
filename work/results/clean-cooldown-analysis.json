@@ -1,0 +1,2205 @@
+{
+  "hypothesis": "late linear cooldown on reliable original reference pairs reduces conflicting CE gradients",
+  "scope": "full verified compact train, CPU only; no sampling estimates",
+  "cache_rows": 9725737,
+  "raw_rows": 11838003,
+  "cache_manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+  "raw_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+  "normalization": "lower + collapse whitespace",
+  "answer_equivalence": "anchored first representative, isclose(rel_tol=1e-6, abs_tol=1e-6)",
+  "census": {
+    "groups": 9046223,
+    "singleton_rows": 8547863,
+    "duplicate_groups": 498360,
+    "duplicate_rows": 1177874,
+    "duplicate_row_fraction": 0.12110897097052901,
+    "unanimous_groups": 390654,
+    "strict_two_thirds_groups": 401061,
+    "conflicting_groups": 107706,
+    "tied_mode_groups": 96421,
+    "below_two_thirds_groups": 97299,
+    "conflicting_group_fraction_among_duplicates": 0.21612087647483746,
+    "conflicting_group_fraction_all_groups": 0.011906184492688274,
+    "conflicting_rows": 251745,
+    "tied_mode_rows": 198362,
+    "nonmodal_rows_one_arbitrary_mode": 117086,
+    "nonmodal_row_fraction_all_train": 0.012038779169126206,
+    "nonmodal_row_fraction_duplicate_rows": 0.09940452034767726,
+    "rows_strictly_below_any_modal_cluster": 15681,
+    "train_group_size_histogram": {
+      "2": 412489,
+      "3": 69749,
+      "4": 6949,
+      "5": 2535,
+      "11": 323,
+      "7": 971,
+      "12": 264,
+      "8": 657,
+      "14": 187,
+      "22": 58,
+      "9": 516,
+      "6": 1483,
+      "67": 8,
+      "13": 195,
+      "18": 89,
+      "16": 133,
+      "17": 114,
+      "21": 77,
+      "20": 78,
+      "47": 13,
+      "27": 26,
+      "30": 25,
+      "19": 76,
+      "44": 11,
+      "189": 1,
+      "86": 4,
+      "10": 412,
+      "24": 49,
+      "29": 31,
+      "15": 138,
+      "109": 2,
+      "23": 55,
+      "56": 4,
+      "49": 12,
+      "28": 37,
+      "26": 41,
+      "45": 12,
+      "35": 24,
+      "31": 32,
+      "73": 4,
+      "48": 7,
+      "92": 3,
+      "25": 49,
+      "34": 18,
+      "41": 17,
+      "43": 8,
+      "121": 4,
+      "178": 2,
+      "71": 3,
+      "57": 3,
+      "229": 1,
+      "77": 3,
+      "91": 2,
+      "33": 20,
+      "42": 12,
+      "39": 19,
+      "37": 12,
+      "136": 1,
+      "54": 6,
+      "70": 2,
+      "68": 6,
+      "134": 1,
+      "51": 7,
+      "135": 1,
+      "63": 6,
+      "75": 1,
+      "112": 1,
+      "40": 11,
+      "59": 7,
+      "32": 19,
+      "81": 5,
+      "58": 6,
+      "110": 2,
+      "55": 5,
+      "194": 1,
+      "65": 7,
+      "237": 1,
+      "130": 1,
+      "46": 16,
+      "82": 3,
+      "359": 1,
+      "230": 1,
+      "116": 3,
+      "119": 1,
+      "197": 1,
+      "38": 20,
+      "60": 7,
+      "52": 8,
+      "153": 2,
+      "72": 2,
+      "103": 3,
+      "104": 2,
+      "94": 2,
+      "159": 1,
+      "36": 14,
+      "78": 2,
+      "125": 2,
+      "53": 7,
+      "203": 1,
+      "106": 3,
+      "129": 2,
+      "64": 5,
+      "156": 1,
+      "61": 3,
+      "90": 3,
+      "50": 7,
+      "93": 1,
+      "66": 5,
+      "201": 1,
+      "140": 1,
+      "166": 1,
+      "83": 3,
+      "88": 1,
+      "330": 1,
+      "160": 1,
+      "79": 3,
+      "272": 1,
+      "163": 1,
+      "76": 4,
+      "532": 1,
+      "137": 1,
+      "117": 3,
+      "527": 1,
+      "74": 2,
+      "80": 1,
+      "253": 1,
+      "69": 4,
+      "280": 1,
+      "224": 1,
+      "193": 1,
+      "179": 1,
+      "167": 1,
+      "157": 2,
+      "124": 1,
+      "275": 1,
+      "485": 1,
+      "128": 1,
+      "98": 1,
+      "138": 1,
+      "264": 1,
+      "520": 1,
+      "100": 1,
+      "141": 1,
+      "96": 1,
+      "867": 1,
+      "260": 1,
+      "218": 1,
+      "185": 2,
+      "244": 1,
+      "210": 1,
+      "87": 1,
+      "225": 1,
+      "415": 1,
+      "269": 1,
+      "182": 1,
+      "97": 1,
+      "212": 1,
+      "146": 1,
+      "107": 1,
+      "417": 1,
+      "1": 8547863
+    },
+    "note": "arbitrary-mode loss includes ties; conservative removal does not"
+  },
+  "lengths": {
+    "original_BPE": {
+      "rows": 9725737,
+      "mean_BPE": 68.03990751549215,
+      "bins": {
+        "<60": {
+          "rows": 4298895,
+          "fraction": 0.4420122608703073
+        },
+        "60-90": {
+          "rows": 3625815,
+          "fraction": 0.3728061945331238
+        },
+        "90-120": {
+          "rows": 1369499,
+          "fraction": 0.14081184798643023
+        },
+        ">=120": {
+          "rows": 431528,
+          "fraction": 0.04436969661013865
+        }
+      }
+    },
+    "compact_BPE": {
+      "rows": 9725737,
+      "mean_BPE": 54.57782880618713,
+      "bins": {
+        "<60": {
+          "rows": 6336040,
+          "fraction": 0.6514714514694362
+        },
+        "60-90": {
+          "rows": 2514516,
+          "fraction": 0.2585424631572908
+        },
+        "90-120": {
+          "rows": 728443,
+          "fraction": 0.07489848841275473
+        },
+        ">=120": {
+          "rows": 146738,
+          "fraction": 0.015087596960518262
+        }
+      }
+    },
+    "content_only": true,
+    "EOS_included": false,
+    "alignment": "full original-offset SHA plus compact source/provenance/question SHA exact; no compact proxy"
+  },
+  "rules": {
+    "strict-two-thirds": {
+      "description": "singletons + original rows in a unique modal answer cluster with count >= 2/3 group; other duplicate groups entirely dropped",
+      "rows": 9506623,
+      "dropped_rows": 219114,
+      "dropped_fraction": 0.02252929520919597,
+      "consensus_removed_rows": 219113,
+      "original_BPE": {
+        "rows": 9506623,
+        "mean_BPE": 67.59155001728794,
+        "bins": {
+          "<60": {
+            "rows": 4264695,
+            "fraction": 0.44860251637200715
+          },
+          "60-90": {
+            "rows": 3539438,
+            "fraction": 0.3723128602028291
+          },
+          "90-120": {
+            "rows": 1299044,
+            "fraction": 0.13664620970033206
+          },
+          ">=120": {
+            "rows": 403446,
+            "fraction": 0.042438413724831626
+          }
+        }
+      },
+      "original_bin_shift_pp": {
+        "<60": 0.6590255501699838,
+        "60-90": -0.04933343302946924,
+        "90-120": -0.4165638286098172,
+        ">=120": -0.19312828853070216
+      },
+      "compact_BPE": {
+        "rows": 9506623,
+        "mean_BPE": 54.11645270881153,
+        "bins": {
+          "<60": {
+            "rows": 6274700,
+            "fraction": 0.6600345885179206
+          },
+          "60-90": {
+            "rows": 2415591,
+            "fraction": 0.2540955920940591
+          },
+          "90-120": {
+            "rows": 679531,
+            "fraction": 0.07147974627793698
+          },
+          ">=120": {
+            "rows": 136801,
+            "fraction": 0.01439007311008336
+          }
+        }
+      },
+      "removed_original_BPE": {
+        "rows": 219114,
+        "mean_BPE": 87.49263853519173,
+        "bins": {
+          "<60": {
+            "rows": 34200,
+            "fraction": 0.15608313480653907
+          },
+          "60-90": {
+            "rows": 86377,
+            "fraction": 0.39421031974223464
+          },
+          "90-120": {
+            "rows": 70455,
+            "fraction": 0.3215449492045237
+          },
+          ">=120": {
+            "rows": 28082,
+            "fraction": 0.12816159624670262
+          }
+        }
+      }
+    },
+    "all-modal-ties-kept": {
+      "description": "singletons + all maximum-frequency answer clusters; ties retained; only strictly lower-frequency clusters dropped",
+      "rows": 9710055,
+      "dropped_rows": 15682,
+      "dropped_fraction": 0.0016124227911982402,
+      "consensus_removed_rows": 15681,
+      "original_BPE": {
+        "rows": 9710055,
+        "mean_BPE": 68.03369929418525,
+        "bins": {
+          "<60": {
+            "rows": 4292100,
+            "fraction": 0.4420263324976017
+          },
+          "60-90": {
+            "rows": 3621207,
+            "fraction": 0.37293372694593385
+          },
+          "90-120": {
+            "rows": 1366347,
+            "fraction": 0.1407146509468793
+          },
+          ">=120": {
+            "rows": 430401,
+            "fraction": 0.044325289609585115
+          }
+        }
+      },
+      "original_bin_shift_pp": {
+        "<60": 0.001407162729438749,
+        "60-90": 0.012753241281004968,
+        "90-120": -0.009719703955093917,
+        ">=120": -0.004440700055353269
+      },
+      "compact_BPE": {
+        "rows": 9710055,
+        "mean_BPE": 54.57167925413399,
+        "bins": {
+          "<60": {
+            "rows": 6327296,
+            "fraction": 0.6516230855540983
+          },
+          "60-90": {
+            "rows": 2509856,
+            "fraction": 0.2584801012970575
+          },
+          "90-120": {
+            "rows": 726499,
+            "fraction": 0.07481924664690365
+          },
+          ">=120": {
+            "rows": 146404,
+            "fraction": 0.015077566501940514
+          }
+        }
+      },
+      "removed_original_BPE": {
+        "rows": 15682,
+        "mean_BPE": 71.88394337456957,
+        "bins": {
+          "<60": {
+            "rows": 6795,
+            "fraction": 0.43329932406580796
+          },
+          "60-90": {
+            "rows": 4608,
+            "fraction": 0.2938400714194618
+          },
+          "90-120": {
+            "rows": 3152,
+            "fraction": 0.20099477107511796
+          },
+          ">=120": {
+            "rows": 1127,
+            "fraction": 0.0718658334396123
+          }
+        }
+      }
+    }
+  },
+  "protected": {
+    "file": {
+      "file": "results/kaggle-runs/nlp-hw02-kaggle-s1/1/inputs/protected-questions.json",
+      "sha256": "7c034c9767334e4c0f1a12a14bf18353bd1d0a9bf175da251fe74473561cabab",
+      "bytes": 1489009
+    },
+    "group_question_counts": {
+      "test": 1919,
+      "old1024": 1024,
+      "heldout4k": 4096,
+      "fresh1024": 1024
+    },
+    "exact_overlaps": 0,
+    "normalized_overlaps": 0,
+    "input_cache_normalized_overlaps_removed": 1,
+    "input_overlap_rows_by_split": {
+      "test": 1,
+      "old1024": 0,
+      "heldout4k": 0,
+      "fresh1024": 0
+    },
+    "removed_cache_indices": [
+      8545870
+    ],
+    "hash_heldout_42_overlaps": 0,
+    "fresh_reference_reads": 0,
+    "checked": "every compact row against original question/hash/provenance"
+  },
+  "control": {
+    "description": "uniform full compact train with the same strengthened protected exclusions",
+    "rows": 9725736,
+    "dropped_rows": 1,
+    "original_BPE": {
+      "rows": 9725736,
+      "mean_BPE": 68.03990978163503,
+      "bins": {
+        "<60": {
+          "rows": 4298894,
+          "fraction": 0.44201220349801806
+        },
+        "60-90": {
+          "rows": 3625815,
+          "fraction": 0.37280623286505
+        },
+        "90-120": {
+          "rows": 1369499,
+          "fraction": 0.1408118624647019
+        },
+        ">=120": {
+          "rows": 431528,
+          "fraction": 0.04436970117223005
+        }
+      }
+    }
+  },
+  "execution_reuse": {
+    "numeric_duplicate_rows": 1250497,
+    "missing_numeric_receipts": 0,
+    "new_program_executions": 0,
+    "all_singletons": "finite by sealed cache receipts; no consensus information",
+    "source_execution_receipts": [
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-00.json",
+        "sha256": "64fbb15ffe66038cdda68596986bc2b4aec39c6116adfcbc5acb7da04aecc8f6",
+        "bytes": 2345576
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-01.json",
+        "sha256": "cae00e496f098212351df8b625df54a3b3d261a5bc2c9023667e2d8ca32d47b3",
+        "bytes": 2371343
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-02.json",
+        "sha256": "a7c9b4e70812ff8bfbacffaeb730126b3352499c88ca431f7b4dc76b124ce0c5",
+        "bytes": 2357899
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-03.json",
+        "sha256": "11d37f16622dc28938515af9d802e7b0cc2f9a0bfcda09f4cfb583c822dbfb80",
+        "bytes": 2356102
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-04.json",
+        "sha256": "9f6202a1ea98ba400f350549df123d63da3fb7d5b6954899588575c4b2a5b212",
+        "bytes": 2342373
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-05.json",
+        "sha256": "fa39e9fdb2b5b4c6d94586f1e425b2a803da4fbd063dbd374e09c2cb2ccb217c",
+        "bytes": 2354814
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-06.json",
+        "sha256": "18df5cd1de514c32e822fda39676fb3e843021d60980219c290302690a4826c2",
+        "bytes": 2332411
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-07.json",
+        "sha256": "8a9d30991ca3f540d2d7f30117a852d71f98fb1c3436ce3c52681a44c5da8766",
+        "bytes": 2364944
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-08.json",
+        "sha256": "d64ee787479c762c10cce7c23c0822aec87ff77790d467284b04efbd9ebb640b",
+        "bytes": 2348076
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-09.json",
+        "sha256": "dfe4bcd1e294652b489103883905f24ef2ff49d6b33c545b4274d54060e33df0",
+        "bytes": 2377885
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-10.json",
+        "sha256": "4c5ce1ce7f8c3d904d1d00a6d79d9bc1b855f86380b916c0b14e2b5f3276d316",
+        "bytes": 2350491
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-11.json",
+        "sha256": "8b9089f1dadf3ef42fb158545d0df6cadf21d3f70de9080c0aab72d0624a3831",
+        "bytes": 2347585
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-12.json",
+        "sha256": "bc35d988d4124467023712bc1a3c445a14fc4c80f0ff946724ba6e07c6409903",
+        "bytes": 2364620
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-13.json",
+        "sha256": "60dbb6ce9c8519d4d7db9dc3c685e8665ab9ebcf23858a635188d11d5a25d529",
+        "bytes": 2380690
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-14.json",
+        "sha256": "bf0ca22f12123cad4a7f05912e165290e9a4a797c504638d36f28dd8e395c432",
+        "bytes": 891626
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-15.json",
+        "sha256": "c695023f9ac397b006c7511adea40009c730f616391b25a87b53fb733ee01dda",
+        "bytes": 355342
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-16.json",
+        "sha256": "24e7e4632a3ec73a7be864bbefca0ab2db80b91aed07fc71262c6697d89acc2e",
+        "bytes": 350361
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-17.json",
+        "sha256": "5a10313f1e295c3f0649557cb65bc10f95ba6351f88a567e229bd9862a9220b1",
+        "bytes": 363102
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-18.json",
+        "sha256": "4ea1f95792f6463b6755c00022c0146ec285b9774738eedad5f9e6cb392da81f",
+        "bytes": 352800
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-19.json",
+        "sha256": "951fc71f7bcb4d0154220f235026f615ad361b983344ca08c42d750fb04bc8eb",
+        "bytes": 352627
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-20.json",
+        "sha256": "857bd7cd3f899a4099a0543b8d8f56e995ac0fadf8cec86a84c2427d8b5786a1",
+        "bytes": 355346
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-21.json",
+        "sha256": "027791a171331213be5e54a1222b1372250cd747013ddbe098a70ca922ec15a6",
+        "bytes": 354416
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-22.json",
+        "sha256": "65d3b869dd8127c3b9b5be99e2bcd958bc7edbefefbcab909a57549a04a3f200",
+        "bytes": 363978
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-23.json",
+        "sha256": "66c517c7d9dfb1e75b8542ffae91790779ab31de28515c0d39dde810ec1fc3a4",
+        "bytes": 362698
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-24.json",
+        "sha256": "57fa1a77715dea607fe0bb91cfb9ac8db4e96b55834dfceb8f80d6d385a83068",
+        "bytes": 352982
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-25.json",
+        "sha256": "d4073837c84c17aee25fa4f64c318d2740901d5280a2c30268f9081d17bacf0b",
+        "bytes": 358795
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-26.json",
+        "sha256": "5b63fba9047f9988379222a5442710f433c4a2faa7a8f6d1eaf90bce2348f20b",
+        "bytes": 352825
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-27.json",
+        "sha256": "9c630e2ba69bb90d8ae70181871bbe7f4f7dde22cc37006199a5f5ce17be0d15",
+        "bytes": 359187
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-28.json",
+        "sha256": "a89a431d1200073ea2d28025b6b7929a2cf3f8e6f6b84e584342f1bf8613eb60",
+        "bytes": 362114
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-29.json",
+        "sha256": "5bbef20c98004cd63e226ac1585dca827f4ff3e761f353fcaa6d608ef05f653c",
+        "bytes": 2901766
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-30.json",
+        "sha256": "e428787c1b1198e14b31582c162d3a41a193e3c31b7f16ed8a3515d4fabd7734",
+        "bytes": 4345547
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-31.json",
+        "sha256": "573e4f40d27ed447c74dcb22d69185e21513936d8622a40f1eae236a76455cef",
+        "bytes": 4346977
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-32.json",
+        "sha256": "68e60e420ae35db1cd5f997c2736ea1354314f17a7cc604949bff49da076f34b",
+        "bytes": 4352723
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-33.json",
+        "sha256": "4e05849fb76cdd5f7465188d9c2c11cc5e103591eeb4710fe69ab9e9288c8073",
+        "bytes": 4334182
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-34.json",
+        "sha256": "39253577e6a16c3e8de411ba0dfeac42d1bb9334fbf32a5ede6e87a6df1ad9c1",
+        "bytes": 4368878
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-35.json",
+        "sha256": "86a2a7c4c55e20e48c5055a93283eda850e49ba32f3b778598f46c8c74cc0551",
+        "bytes": 4335785
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-36.json",
+        "sha256": "3ae6238cd84d7bd473408e23759541c9d53f1445b6526358a17ec37283af7053",
+        "bytes": 3345480
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-37.json",
+        "sha256": "4ce3162550bc29f25b121626c8c738ca3abf5ddad908d74affca83fce7ec612b",
+        "bytes": 367007
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-38.json",
+        "sha256": "4380721960d3ada6e7bb81b82c553d35877ca6a12512867efbbc8e3cd371b45c",
+        "bytes": 361411
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-39.json",
+        "sha256": "2e9e0f8b091d1b4aa58c2ee7f00c00a25a540431d8fefbb546c5794015835e26",
+        "bytes": 359096
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-40.json",
+        "sha256": "6e3b3499aa91307378eb7c3d368177ab980d89b7a700c8e40bd453a1e81baedc",
+        "bytes": 365345
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-41.json",
+        "sha256": "9c82bb8ee2b9f0c67513f810a35f24acd0f9b2743c942f658746a9c0c819667b",
+        "bytes": 357700
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-42.json",
+        "sha256": "36f87b9432078deb66fc22f3ed01da93096a220569fa6dcfc9f6f13ba7ba036e",
+        "bytes": 360944
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-43.json",
+        "sha256": "fe5025fa8574761807e472f81d19e8833dace74b2fa2a6a157de31657ff8f09a",
+        "bytes": 359086
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-44.json",
+        "sha256": "a3010478d7c81b97efbb42d24a906d5abbfdbadce2f4b5dfd042d37bd5d23192",
+        "bytes": 360367
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-45.json",
+        "sha256": "4900f00de86a38b5d9649cb3475e89076e54005e9051d2c7d1f0f91db0326d79",
+        "bytes": 363231
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-46.json",
+        "sha256": "0db3f3c4f5288dd4ad3d8831d35cac29b1f82570d2e2ae2ba6b2a81c28f91112",
+        "bytes": 358805
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-47.json",
+        "sha256": "17a09c937e03238d4bb62069e0799b98ab6b4735b2123cfc1207e72e2bf0bc9c",
+        "bytes": 366675
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-48.json",
+        "sha256": "7b9d865f79e764e1a37b9ef5b0e3a6460517661b3e586ba970594e6b8ac54eae",
+        "bytes": 358930
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-49.json",
+        "sha256": "47914babf5c41e1a2a61b7695954195c4b09a5e23556e28ecd8a6eb65ec77582",
+        "bytes": 362090
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-50.json",
+        "sha256": "e472529ed86f81c7936f4a82f8cd179f6ffd1ea1544ea387053c3e4ddf32dc44",
+        "bytes": 358442
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-51.json",
+        "sha256": "79e9fd25b1522d08d44b997303003f37d4955e9f2c5be66b6c8617c9f88a001f",
+        "bytes": 359894
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-52.json",
+        "sha256": "3e88e4d1baf19c062a2a9c1d9cca94ca268840272e976746f0bdb3dc64aa6b63",
+        "bytes": 2942446
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-53.json",
+        "sha256": "d3780bcaef507d3a173fe0f7163f5f4f01fd4223774f93121c71ce289e1d8d11",
+        "bytes": 2980758
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-54.json",
+        "sha256": "b92bcccc9011ca243599c0135d663a9aed8b0db44618c88ac13bbf5232b718a0",
+        "bytes": 2982317
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-55.json",
+        "sha256": "2989b2b7859038ae6620efa95658f4e2322bd06f0828bfdfec7d2196cd5407d5",
+        "bytes": 2994978
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-56.json",
+        "sha256": "0f855e8a36dd072ddab9da22fc991da5d316fd2c8e7fe4d0f8f4b0b1d783766f",
+        "bytes": 2994886
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-57.json",
+        "sha256": "c471269d912bc83b16b6cc249cd3f06ed0d1e0caf73f96bbf3b042368e045278",
+        "bytes": 2994101
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-58.json",
+        "sha256": "9122665123a07e8009b7cb28a93bdfb3dc3b292d899940b86e4eed596e9c9d4b",
+        "bytes": 2991788
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-execution-59.json",
+        "sha256": "b8075c795084e159f887a3ed76852824e7901e4d1f55355bbb9ca54d547ab16c",
+        "bytes": 572355
+      }
+    ],
+    "inputs": [
+      {
+        "file": "results/kaggle-runs/nlp-hw02-compact-cache-verified/2/compact-cache/compact-manifest.json",
+        "sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+        "bytes": 150761
+      },
+      {
+        "file": "results/kaggle-runs/nlp-hw02-kaggle-s1/1/inputs/protected-questions.json",
+        "sha256": "7c034c9767334e4c0f1a12a14bf18353bd1d0a9bf175da251fe74473561cabab",
+        "bytes": 1489009
+      },
+      {
+        "file": "research/outputs/data-ceiling/normal-duplicate-members.npz",
+        "sha256": "2f56d34572044a46c313622207852d39b9bb0f765b98c5d163c4cc5dbc008bab",
+        "bytes": 30986066
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise-values.npz",
+        "sha256": "35fdc670ca2b1c9bff7e497838cc6e6914be7a96dc4057a617b45ef3d9b609b8",
+        "bytes": 27142172
+      },
+      {
+        "file": "research/outputs/data-ceiling/noise.json",
+        "sha256": "a223aeee92f42b56e56b650d2ddf6d9c6e57a246398c5fb485aa13915f8243b5",
+        "bytes": 2286
+      },
+      {
+        "file": "checks/26-pinned-train-shard-inventory.json",
+        "sha256": "0d2cd8f49d145f6543bab1a589b4509dea59b538000cc0f657c49f8622e70727",
+        "bytes": 11603
+      }
+    ]
+  },
+  "selected_rule": "strict-two-thirds",
+  "provenance": {
+    "python": "3.13.7",
+    "numpy": "2.5.4",
+    "date": "2026-10-13",
+    "analysis_script": {
+      "file": "research/clean-cooldown.py",
+      "sha256": "b98d43d5553f5d5b1f841971abb186de6ec8e96fcedb91d2ef297156bdfdb113",
+      "bytes": 28724
+    },
+    "GPU_runs": 0,
+    "Kaggle_runs": 0,
+    "Kaggle_datasets_created": 0
+  },
+  "orders": {
+    "strict-two-thirds": {
+      "folder": "results/clean-cooldown/strict-two-thirds",
+      "metadata": {
+        "seed": 2026101304,
+        "rows": 9725737,
+        "slots": 9506623,
+        "batch": 128,
+        "chunk": 4096,
+        "bijection": false,
+        "selected_bijection": true,
+        "cache_manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+        "file": {
+          "file": "order.npy",
+          "sha256": "d4628a11d21b21956f93d5ea1a1e213ec0fd93bdb8945e5db3d1aa1beac62566",
+          "bytes": 38026620
+        },
+        "rule": "strict-two-thirds",
+        "selection": {
+          "description": "singletons + original rows in a unique modal answer cluster with count >= 2/3 group; other duplicate groups entirely dropped",
+          "rows": 9506623,
+          "dropped_rows": 219114,
+          "dropped_fraction": 0.02252929520919597,
+          "consensus_removed_rows": 219113,
+          "original_BPE": {
+            "rows": 9506623,
+            "mean_BPE": 67.59155001728794,
+            "bins": {
+              "<60": {
+                "rows": 4264695,
+                "fraction": 0.44860251637200715
+              },
+              "60-90": {
+                "rows": 3539438,
+                "fraction": 0.3723128602028291
+              },
+              "90-120": {
+                "rows": 1299044,
+                "fraction": 0.13664620970033206
+              },
+              ">=120": {
+                "rows": 403446,
+                "fraction": 0.042438413724831626
+              }
+            }
+          },
+          "original_bin_shift_pp": {
+            "<60": 0.6590255501699838,
+            "60-90": -0.04933343302946924,
+            "90-120": -0.4165638286098172,
+            ">=120": -0.19312828853070216
+          },
+          "compact_BPE": {
+            "rows": 9506623,
+            "mean_BPE": 54.11645270881153,
+            "bins": {
+              "<60": {
+                "rows": 6274700,
+                "fraction": 0.6600345885179206
+              },
+              "60-90": {
+                "rows": 2415591,
+                "fraction": 0.2540955920940591
+              },
+              "90-120": {
+                "rows": 679531,
+                "fraction": 0.07147974627793698
+              },
+              ">=120": {
+                "rows": 136801,
+                "fraction": 0.01439007311008336
+              }
+            }
+          },
+          "removed_original_BPE": {
+            "rows": 219114,
+            "mean_BPE": 87.49263853519173,
+            "bins": {
+              "<60": {
+                "rows": 34200,
+                "fraction": 0.15608313480653907
+              },
+              "60-90": {
+                "rows": 86377,
+                "fraction": 0.39421031974223464
+              },
+              "90-120": {
+                "rows": 70455,
+                "fraction": 0.3215449492045237
+              },
+              ">=120": {
+                "rows": 28082,
+                "fraction": 0.12816159624670262
+              }
+            }
+          }
+        },
+        "multiplicity": "one slot per retained original (shard,row); no question reweighting",
+        "answer_policy": "existing train reference executions only; no new targets",
+        "normalization": "lower + collapse whitespace; no number masking",
+        "answer_equivalence": "stable first representative; math.isclose rel=abs=1e-6",
+        "protected_exclusions": {
+          "file": {
+            "file": "results/kaggle-runs/nlp-hw02-kaggle-s1/1/inputs/protected-questions.json",
+            "sha256": "7c034c9767334e4c0f1a12a14bf18353bd1d0a9bf175da251fe74473561cabab",
+            "bytes": 1489009
+          },
+          "group_question_counts": {
+            "test": 1919,
+            "old1024": 1024,
+            "heldout4k": 4096,
+            "fresh1024": 1024
+          },
+          "exact_overlaps": 0,
+          "normalized_overlaps": 0,
+          "input_cache_normalized_overlaps_removed": 1,
+          "input_overlap_rows_by_split": {
+            "test": 1,
+            "old1024": 0,
+            "heldout4k": 0,
+            "fresh1024": 0
+          },
+          "removed_cache_indices": [
+            8545870
+          ],
+          "hash_heldout_42_overlaps": 0,
+          "fresh_reference_reads": 0,
+          "checked": "every compact row against original question/hash/provenance"
+        },
+        "analysis_sha256": "a58cfe34f2bb4196ae2289041dba95a144b8f92a60ddcb1706d9d9cabfc2aba9",
+        "selected_cache_indices_sha256": "4fa27f7a6bb34d6c764c51474d8cba540a5f361edeffc17043892c57df172e24"
+      },
+      "loader_verified": "unmodified l2_sampler.load_order",
+      "manifest_sha256": "c480a4b12e26fa423ead06865cc4ae60cdad2580745ef747d2ba1d5e7c227db3"
+    },
+    "all-modal-ties-kept": {
+      "folder": "results/clean-cooldown/all-modal-ties-kept",
+      "metadata": {
+        "seed": 2026101304,
+        "rows": 9725737,
+        "slots": 9710055,
+        "batch": 128,
+        "chunk": 4096,
+        "bijection": false,
+        "selected_bijection": true,
+        "cache_manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+        "file": {
+          "file": "order.npy",
+          "sha256": "87c4430b3ae913308edc6ac90bee8f9ae91955a19f6b3856bedea0e9625bdf2e",
+          "bytes": 38840348
+        },
+        "rule": "all-modal-ties-kept",
+        "selection": {
+          "description": "singletons + all maximum-frequency answer clusters; ties retained; only strictly lower-frequency clusters dropped",
+          "rows": 9710055,
+          "dropped_rows": 15682,
+          "dropped_fraction": 0.0016124227911982402,
+          "consensus_removed_rows": 15681,
+          "original_BPE": {
+            "rows": 9710055,
+            "mean_BPE": 68.03369929418525,
+            "bins": {
+              "<60": {
+                "rows": 4292100,
+                "fraction": 0.4420263324976017
+              },
+              "60-90": {
+                "rows": 3621207,
+                "fraction": 0.37293372694593385
+              },
+              "90-120": {
+                "rows": 1366347,
+                "fraction": 0.1407146509468793
+              },
+              ">=120": {
+                "rows": 430401,
+                "fraction": 0.044325289609585115
+              }
+            }
+          },
+          "original_bin_shift_pp": {
+            "<60": 0.001407162729438749,
+            "60-90": 0.012753241281004968,
+            "90-120": -0.009719703955093917,
+            ">=120": -0.004440700055353269
+          },
+          "compact_BPE": {
+            "rows": 9710055,
+            "mean_BPE": 54.57167925413399,
+            "bins": {
+              "<60": {
+                "rows": 6327296,
+                "fraction": 0.6516230855540983
+              },
+              "60-90": {
+                "rows": 2509856,
+                "fraction": 0.2584801012970575
+              },
+              "90-120": {
+                "rows": 726499,
+                "fraction": 0.07481924664690365
+              },
+              ">=120": {
+                "rows": 146404,
+                "fraction": 0.015077566501940514
+              }
+            }
+          },
+          "removed_original_BPE": {
+            "rows": 15682,
+            "mean_BPE": 71.88394337456957,
+            "bins": {
+              "<60": {
+                "rows": 6795,
+                "fraction": 0.43329932406580796
+              },
+              "60-90": {
+                "rows": 4608,
+                "fraction": 0.2938400714194618
+              },
+              "90-120": {
+                "rows": 3152,
+                "fraction": 0.20099477107511796
+              },
+              ">=120": {
+                "rows": 1127,
+                "fraction": 0.0718658334396123
+              }
+            }
+          }
+        },
+        "multiplicity": "one slot per retained original (shard,row); no question reweighting",
+        "answer_policy": "existing train reference executions only; no new targets",
+        "normalization": "lower + collapse whitespace; no number masking",
+        "answer_equivalence": "stable first representative; math.isclose rel=abs=1e-6",
+        "protected_exclusions": {
+          "file": {
+            "file": "results/kaggle-runs/nlp-hw02-kaggle-s1/1/inputs/protected-questions.json",
+            "sha256": "7c034c9767334e4c0f1a12a14bf18353bd1d0a9bf175da251fe74473561cabab",
+            "bytes": 1489009
+          },
+          "group_question_counts": {
+            "test": 1919,
+            "old1024": 1024,
+            "heldout4k": 4096,
+            "fresh1024": 1024
+          },
+          "exact_overlaps": 0,
+          "normalized_overlaps": 0,
+          "input_cache_normalized_overlaps_removed": 1,
+          "input_overlap_rows_by_split": {
+            "test": 1,
+            "old1024": 0,
+            "heldout4k": 0,
+            "fresh1024": 0
+          },
+          "removed_cache_indices": [
+            8545870
+          ],
+          "hash_heldout_42_overlaps": 0,
+          "fresh_reference_reads": 0,
+          "checked": "every compact row against original question/hash/provenance"
+        },
+        "analysis_sha256": "a58cfe34f2bb4196ae2289041dba95a144b8f92a60ddcb1706d9d9cabfc2aba9",
+        "selected_cache_indices_sha256": "2ebe8b583d89d07f7cd684031b35b390837b0c15e362f5df9af54ea7007105aa"
+      },
+      "loader_verified": "unmodified l2_sampler.load_order",
+      "manifest_sha256": "6328732187ebbf5674d07133c9f54050b9f702c3e0cfb125202d79955a730b0b"
+    },
+    "ordinary-protected-safe": {
+      "folder": "results/clean-cooldown/ordinary-protected-safe",
+      "metadata": {
+        "seed": 2026101304,
+        "rows": 9725737,
+        "slots": 9725736,
+        "batch": 128,
+        "chunk": 4096,
+        "bijection": false,
+        "selected_bijection": true,
+        "cache_manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+        "file": {
+          "file": "order.npy",
+          "sha256": "7dbc5bb4bd2a2477831fd23506b4688aa6e659b623121bd94fe8942ca9e6315f",
+          "bytes": 38903072
+        },
+        "rule": "ordinary-protected-safe",
+        "selection": {
+          "description": "uniform full compact train with the same strengthened protected exclusions",
+          "rows": 9725736,
+          "dropped_rows": 1,
+          "original_BPE": {
+            "rows": 9725736,
+            "mean_BPE": 68.03990978163503,
+            "bins": {
+              "<60": {
+                "rows": 4298894,
+                "fraction": 0.44201220349801806
+              },
+              "60-90": {
+                "rows": 3625815,
+                "fraction": 0.37280623286505
+              },
+              "90-120": {
+                "rows": 1369499,
+                "fraction": 0.1408118624647019
+              },
+              ">=120": {
+                "rows": 431528,
+                "fraction": 0.04436970117223005
+              }
+            }
+          }
+        },
+        "multiplicity": "one slot per retained original (shard,row); no question reweighting",
+        "answer_policy": "existing train reference executions only; no new targets",
+        "normalization": "lower + collapse whitespace; no number masking",
+        "answer_equivalence": "stable first representative; math.isclose rel=abs=1e-6",
+        "protected_exclusions": {
+          "file": {
+            "file": "results/kaggle-runs/nlp-hw02-kaggle-s1/1/inputs/protected-questions.json",
+            "sha256": "7c034c9767334e4c0f1a12a14bf18353bd1d0a9bf175da251fe74473561cabab",
+            "bytes": 1489009
+          },
+          "group_question_counts": {
+            "test": 1919,
+            "old1024": 1024,
+            "heldout4k": 4096,
+            "fresh1024": 1024
+          },
+          "exact_overlaps": 0,
+          "normalized_overlaps": 0,
+          "input_cache_normalized_overlaps_removed": 1,
+          "input_overlap_rows_by_split": {
+            "test": 1,
+            "old1024": 0,
+            "heldout4k": 0,
+            "fresh1024": 0
+          },
+          "removed_cache_indices": [
+            8545870
+          ],
+          "hash_heldout_42_overlaps": 0,
+          "fresh_reference_reads": 0,
+          "checked": "every compact row against original question/hash/provenance"
+        },
+        "analysis_sha256": "a58cfe34f2bb4196ae2289041dba95a144b8f92a60ddcb1706d9d9cabfc2aba9",
+        "selected_cache_indices_sha256": "61a35a3063153e9a9061735e2e667a356df762064915d73e6878e76c1e768638"
+      },
+      "loader_verified": "unmodified l2_sampler.load_order",
+      "manifest_sha256": "1edd86201fe131b55b5a91d179252838904c287dbbf6461384e439f9b4800091"
+    }
+  },
+  "heldout": {
+    "exact_train_question_overlap": 0,
+    "normalized_input_cache_overlap_questions": 0,
+    "normalized_safe_order_overlap_questions": 0,
+    "actual_cache_join_labels": {
+      "absent": 4096
+    },
+    "direct_train_conflict_test": "not identifiable: no overlapping conflicting train groups",
+    "proxy": "raw-source duplicate peers; all excluded from train; own heldout pair removed once",
+    "own_heldout_pairs_removed": 775,
+    "label_counts": {
+      "insufficient": 3831,
+      "unanimous": 248,
+      "conflicting": 17
+    },
+    "peer_numeric_count_histogram": {
+      "0": 3321,
+      "2": 188,
+      "13": 4,
+      "1": 510,
+      "3": 10,
+      "10": 5,
+      "5": 5,
+      "32": 1,
+      "38": 1,
+      "11": 2,
+      "4": 7,
+      "25": 1,
+      "17": 2,
+      "47": 1,
+      "14": 3,
+      "16": 2,
+      "139": 1,
+      "8": 2,
+      "9": 4,
+      "15": 2,
+      "57": 1,
+      "22": 2,
+      "6": 7,
+      "28": 1,
+      "63": 1,
+      "7": 1,
+      "18": 2,
+      "27": 1,
+      "21": 1,
+      "53": 1,
+      "72": 1,
+      "43": 1,
+      "89": 1,
+      "33": 1,
+      "158": 1,
+      "123": 1
+    },
+    "models": {
+      "C-main": {
+        "input": {
+          "file": "results/kaggle-runs/nlp-hw02-kaggle-l2/1/model-C-main/points/l2-28800/evaluation/heldout4k-per-example.json",
+          "sha256": "698cb9359993f10756578a727ccba6bfff6f4231829fd84167a9d985754fd819",
+          "bytes": 2261201
+        },
+        "subsets": {
+          "heldout4k": {
+            "conflicting": {
+              "n": 17,
+              "errors": 5,
+              "error_rate": 0.29411764705882354,
+              "Wilson95": [
+                0.13279793865556402,
+                0.5313353332621391
+              ]
+            },
+            "unanimous": {
+              "n": 248,
+              "errors": 57,
+              "error_rate": 0.22983870967741934,
+              "Wilson95": [
+                0.18183353450829282,
+                0.2860859831567792
+              ]
+            },
+            "insufficient": {
+              "n": 3831,
+              "errors": 1166,
+              "error_rate": 0.30435917515009137,
+              "Wilson95": [
+                0.28999026410736367,
+                0.319120057424561
+              ]
+            },
+            "by_original_length": {
+              "<60": {
+                "conflicting": {
+                  "n": 12,
+                  "errors": 3,
+                  "error_rate": 0.25,
+                  "Wilson95": [
+                    0.08894003962896138,
+                    0.53231033912066
+                  ]
+                },
+                "unanimous": {
+                  "n": 141,
+                  "errors": 18,
+                  "error_rate": 0.1276595744680851,
+                  "Wilson95": [
+                    0.08229767647714942,
+                    0.19277246911638168
+                  ]
+                },
+                "insufficient": {
+                  "n": 1860,
+                  "errors": 332,
+                  "error_rate": 0.17849462365591398,
+                  "Wilson95": [
+                    0.1617598739067177,
+                    0.19655469531418607
+                  ]
+                }
+              },
+              "60-90": {
+                "conflicting": {
+                  "n": 3,
+                  "errors": 0,
+                  "error_rate": 0.0,
+                  "Wilson95": [
+                    0.0,
+                    0.5615060804490177
+                  ]
+                },
+                "unanimous": {
+                  "n": 66,
+                  "errors": 24,
+                  "error_rate": 0.36363636363636365,
+                  "Wilson95": [
+                    0.25806811940620944,
+                    0.4842058262078659
+                  ]
+                },
+                "insufficient": {
+                  "n": 1388,
+                  "errors": 524,
+                  "error_rate": 0.37752161383285304,
+                  "Wilson95": [
+                    0.3523894578243161,
+                    0.40332987115679786
+                  ]
+                }
+              },
+              "90-120": {
+                "conflicting": {
+                  "n": 1,
+                  "errors": 1,
+                  "error_rate": 1.0,
+                  "Wilson95": [
+                    0.20654329147389294,
+                    1.0
+                  ]
+                },
+                "unanimous": {
+                  "n": 29,
+                  "errors": 11,
+                  "error_rate": 0.3793103448275862,
+                  "Wilson95": [
+                    0.22687795730867344,
+                    0.5599777379071503
+                  ]
+                },
+                "insufficient": {
+                  "n": 458,
+                  "errors": 231,
+                  "error_rate": 0.5043668122270742,
+                  "Wilson95": [
+                    0.4587306694032808,
+                    0.549930308732946
+                  ]
+                }
+              },
+              ">=120": {
+                "conflicting": {
+                  "n": 1,
+                  "errors": 1,
+                  "error_rate": 1.0,
+                  "Wilson95": [
+                    0.20654329147389294,
+                    1.0
+                  ]
+                },
+                "unanimous": {
+                  "n": 12,
+                  "errors": 4,
+                  "error_rate": 0.3333333333333333,
+                  "Wilson95": [
+                    0.13811783989736134,
+                    0.609382412602386
+                  ]
+                },
+                "insufficient": {
+                  "n": 125,
+                  "errors": 79,
+                  "error_rate": 0.632,
+                  "Wilson95": [
+                    0.5446970725427289,
+                    0.7114313828629786
+                  ]
+                }
+              }
+            },
+            "conflict_minus_unanimous_error_pp": 6.427893738140419,
+            "question_cluster_bootstrap95_pp": [
+              -15.066362217017954,
+              30.05327641813698
+            ],
+            "bootstrap_question_clusters": 265,
+            "length_standardized_delta_pp": 7.892276353703009,
+            "length_standardization_rows": 265
+          },
+          "tune2048": {
+            "conflicting": {
+              "n": 11,
+              "errors": 2,
+              "error_rate": 0.18181818181818182,
+              "Wilson95": [
+                0.05136660067100063,
+                0.4769861375782448
+              ]
+            },
+            "unanimous": {
+              "n": 129,
+              "errors": 24,
+              "error_rate": 0.18604651162790697,
+              "Wilson95": [
+                0.1283298563258755,
+                0.2619213902715759
+              ]
+            },
+            "insufficient": {
+              "n": 1908,
+              "errors": 597,
+              "error_rate": 0.3128930817610063,
+              "Wilson95": [
+                0.2924811165290872,
+                0.33405698160623937
+              ]
+            },
+            "by_original_length": {
+              "<60": {
+                "conflicting": {
+                  "n": 9,
+                  "errors": 1,
+                  "error_rate": 0.1111111111111111,
+                  "Wilson95": [
+                    0.019890371327130535,
+                    0.4350062147680601
+                  ]
+                },
+                "unanimous": {
+                  "n": 74,
+                  "errors": 8,
+                  "error_rate": 0.10810810810810811,
+                  "Wilson95": [
+                    0.055806661696501225,
+                    0.1990904627202631
+                  ]
+                },
+                "insufficient": {
+                  "n": 917,
+                  "errors": 165,
+                  "error_rate": 0.17993456924754633,
+                  "Wilson95": [
+                    0.15642287462688947,
+                    0.20611678474558015
+                  ]
+                }
+              },
+              "60-90": {
+                "conflicting": {
+                  "n": 1,
+                  "errors": 0,
+                  "error_rate": 0.0,
+                  "Wilson95": [
+                    0.0,
+                    0.7934567085261071
+                  ]
+                },
+                "unanimous": {
+                  "n": 29,
+                  "errors": 10,
+                  "error_rate": 0.3448275862068966,
+                  "Wilson95": [
+                    0.19940508749190483,
+                    0.5265522349284402
+                  ]
+                },
+                "insufficient": {
+                  "n": 702,
+                  "errors": 273,
+                  "error_rate": 0.3888888888888889,
+                  "Wilson95": [
+                    0.3535239305739372,
+                    0.4254633096227301
+                  ]
+                }
+              },
+              "90-120": {
+                "conflicting": {
+                  "n": 0,
+                  "errors": 0,
+                  "error_rate": null
+                },
+                "unanimous": {
+                  "n": 18,
+                  "errors": 4,
+                  "error_rate": 0.2222222222222222,
+                  "Wilson95": [
+                    0.09000781913382,
+                    0.4521502645230549
+                  ]
+                },
+                "insufficient": {
+                  "n": 232,
+                  "errors": 125,
+                  "error_rate": 0.5387931034482759,
+                  "Wilson95": [
+                    0.47453644090431696,
+                    0.6017859721050929
+                  ]
+                }
+              },
+              ">=120": {
+                "conflicting": {
+                  "n": 1,
+                  "errors": 1,
+                  "error_rate": 1.0,
+                  "Wilson95": [
+                    0.20654329147389294,
+                    1.0
+                  ]
+                },
+                "unanimous": {
+                  "n": 8,
+                  "errors": 2,
+                  "error_rate": 0.25,
+                  "Wilson95": [
+                    0.07147768885802763,
+                    0.5907301208974108
+                  ]
+                },
+                "insufficient": {
+                  "n": 57,
+                  "errors": 34,
+                  "error_rate": 0.5964912280701754,
+                  "Wilson95": [
+                    0.46697058444753836,
+                    0.7138267647346
+                  ]
+                }
+              }
+            },
+            "conflict_minus_unanimous_error_pp": -0.4228329809725151,
+            "question_cluster_bootstrap95_pp": [
+              -21.877367424242422,
+              27.229904556506675
+            ],
+            "bootstrap_question_clusters": 140,
+            "length_standardized_delta_pp": -2.742277325375123,
+            "length_standardization_rows": 122
+          },
+          "eval2048": {
+            "conflicting": {
+              "n": 6,
+              "errors": 3,
+              "error_rate": 0.5,
+              "Wilson95": [
+                0.18761280689940868,
+                0.8123871931005913
+              ]
+            },
+            "unanimous": {
+              "n": 119,
+              "errors": 33,
+              "error_rate": 0.2773109243697479,
+              "Wilson95": [
+                0.20480261028046137,
+                0.3637474574490374
+              ]
+            },
+            "insufficient": {
+              "n": 1923,
+              "errors": 569,
+              "error_rate": 0.2958918356734269,
+              "Wilson95": [
+                0.2759140028497368,
+                0.31668354123484177
+              ]
+            },
+            "by_original_length": {
+              "<60": {
+                "conflicting": {
+                  "n": 3,
+                  "errors": 2,
+                  "error_rate": 0.6666666666666666,
+                  "Wilson95": [
+                    0.2076549551264879,
+                    0.9385096847238394
+                  ]
+                },
+                "unanimous": {
+                  "n": 67,
+                  "errors": 10,
+                  "error_rate": 0.14925373134328357,
+                  "Wilson95": [
+                    0.08314184208625061,
+                    0.2534061748981201
+                  ]
+                },
+                "insufficient": {
+                  "n": 943,
+                  "errors": 167,
+                  "error_rate": 0.17709437963944857,
+                  "Wilson95": [
+                    0.1540530798574977,
+                    0.2027559154380196
+                  ]
+                }
+              },
+              "60-90": {
+                "conflicting": {
+                  "n": 2,
+                  "errors": 0,
+                  "error_rate": 0.0,
+                  "Wilson95": [
+                    0.0,
+                    0.6576280471103807
+                  ]
+                },
+                "unanimous": {
+                  "n": 37,
+                  "errors": 14,
+                  "error_rate": 0.3783783783783784,
+                  "Wilson95": [
+                    0.2406378746389103,
+                    0.5389985744718004
+                  ]
+                },
+                "insufficient": {
+                  "n": 686,
+                  "errors": 251,
+                  "error_rate": 0.36588921282798836,
+                  "Wilson95": [
+                    0.3306832710888357,
+                    0.40258883079658264
+                  ]
+                }
+              },
+              "90-120": {
+                "conflicting": {
+                  "n": 1,
+                  "errors": 1,
+                  "error_rate": 1.0,
+                  "Wilson95": [
+                    0.20654329147389294,
+                    1.0
+                  ]
+                },
+                "unanimous": {
+                  "n": 11,
+                  "errors": 7,
+                  "error_rate": 0.6363636363636364,
+                  "Wilson95": [
+                    0.35379677689163724,
+                    0.8483377638586862
+                  ]
+                },
+                "insufficient": {
+                  "n": 226,
+                  "errors": 106,
+                  "error_rate": 0.4690265486725664,
+                  "Wilson95": [
+                    0.40502476382268326,
+                    0.5340637214645754
+                  ]
+                }
+              },
+              ">=120": {
+                "conflicting": {
+                  "n": 0,
+                  "errors": 0,
+                  "error_rate": null
+                },
+                "unanimous": {
+                  "n": 4,
+                  "errors": 2,
+                  "error_rate": 0.5,
+                  "Wilson95": [
+                    0.15003570882017148,
+                    0.8499642911798285
+                  ]
+                },
+                "insufficient": {
+                  "n": 68,
+                  "errors": 45,
+                  "error_rate": 0.6617647058823529,
+                  "Wilson95": [
+                    0.5433701723652863,
+                    0.7628590875621094
+                  ]
+                }
+              }
+            },
+            "conflict_minus_unanimous_error_pp": 22.26890756302521,
+            "question_cluster_bootstrap95_pp": [
+              -27.68759163001466,
+              72.1311475409836
+            ],
+            "bootstrap_question_clusters": 125,
+            "length_standardized_delta_pp": 21.343624032658195,
+            "length_standardization_rows": 121
+          }
+        },
+        "actual_cache_join": {
+          "conflicting": {
+            "n": 0,
+            "errors": 0,
+            "error_rate": null
+          },
+          "unanimous": {
+            "n": 0,
+            "errors": 0,
+            "error_rate": null
+          },
+          "singleton": {
+            "n": 0,
+            "errors": 0,
+            "error_rate": null
+          },
+          "absent": {
+            "n": 4096,
+            "errors": 1228,
+            "error_rate": 0.2998046875,
+            "Wilson95": [
+              0.2859660678022045,
+              0.314018477942197
+            ]
+          }
+        }
+      },
+      "C-long2x": {
+        "input": {
+          "file": "results/kaggle-runs/nlp-hw02-kaggle-l2/1/model-C-long2x/points/l2-28800/evaluation/heldout4k-per-example.json",
+          "sha256": "8bb4389e96cd0a61e6c34d5fbc82095ff1591904c173fcbe672d98d790314f78",
+          "bytes": 2268972
+        },
+        "subsets": {
+          "heldout4k": {
+            "conflicting": {
+              "n": 17,
+              "errors": 7,
+              "error_rate": 0.4117647058823529,
+              "Wilson95": [
+                0.21610786039131383,
+                0.6399492561448447
+              ]
+            },
+            "unanimous": {
+              "n": 248,
+              "errors": 64,
+              "error_rate": 0.25806451612903225,
+              "Wilson95": [
+                0.20758613319104396,
+                0.3159238826284236
+              ]
+            },
+            "insufficient": {
+              "n": 3831,
+              "errors": 1141,
+              "error_rate": 0.2978334638475594,
+              "Wilson95": [
+                0.283560549937486,
+                0.31251142341338206
+              ]
+            },
+            "by_original_length": {
+              "<60": {
+                "conflicting": {
+                  "n": 12,
+                  "errors": 4,
+                  "error_rate": 0.3333333333333333,
+                  "Wilson95": [
+                    0.13811783989736134,
+                    0.609382412602386
+                  ]
+                },
+                "unanimous": {
+                  "n": 141,
+                  "errors": 21,
+                  "error_rate": 0.14893617021276595,
+                  "Wilson95": [
+                    0.09952282862708753,
+                    0.21697188007538468
+                  ]
+                },
+                "insufficient": {
+                  "n": 1860,
+                  "errors": 327,
+                  "error_rate": 0.17580645161290323,
+                  "Wilson95": [
+                    0.15918015450398654,
+                    0.1937691519177609
+                  ]
+                }
+              },
+              "60-90": {
+                "conflicting": {
+                  "n": 3,
+                  "errors": 1,
+                  "error_rate": 0.3333333333333333,
+                  "Wilson95": [
+                    0.0614903152761605,
+                    0.7923450448735121
+                  ]
+                },
+                "unanimous": {
+                  "n": 66,
+                  "errors": 24,
+                  "error_rate": 0.36363636363636365,
+                  "Wilson95": [
+                    0.25806811940620944,
+                    0.4842058262078659
+                  ]
+                },
+                "insufficient": {
+                  "n": 1388,
+                  "errors": 520,
+                  "error_rate": 0.3746397694524496,
+                  "Wilson95": [
+                    0.3495541890127228,
+                    0.4004173594738292
+                  ]
+                }
+              },
+              "90-120": {
+                "conflicting": {
+                  "n": 1,
+                  "errors": 1,
+                  "error_rate": 1.0,
+                  "Wilson95": [
+                    0.20654329147389294,
+                    1.0
+                  ]
+                },
+                "unanimous": {
+                  "n": 29,
+                  "errors": 11,
+                  "error_rate": 0.3793103448275862,
+                  "Wilson95": [
+                    0.22687795730867344,
+                    0.5599777379071503
+                  ]
+                },
+                "insufficient": {
+                  "n": 458,
+                  "errors": 219,
+                  "error_rate": 0.4781659388646288,
+                  "Wilson95": [
+                    0.43278914792216805,
+                    0.523905961396698
+                  ]
+                }
+              },
+              ">=120": {
+                "conflicting": {
+                  "n": 1,
+                  "errors": 1,
+                  "error_rate": 1.0,
+                  "Wilson95": [
+                    0.20654329147389294,
+                    1.0
+                  ]
+                },
+                "unanimous": {
+                  "n": 12,
+                  "errors": 8,
+                  "error_rate": 0.6666666666666666,
+                  "Wilson95": [
+                    0.3906175873976139,
+                    0.8618821601026385
+                  ]
+                },
+                "insufficient": {
+                  "n": 125,
+                  "errors": 75,
+                  "error_rate": 0.6,
+                  "Wilson95": [
+                    0.5123729773518758,
+                    0.6816637312888115
+                  ]
+                }
+              }
+            },
+            "conflict_minus_unanimous_error_pp": 15.370018975332068,
+            "question_cluster_bootstrap95_pp": [
+              -8.622165169020112,
+              41.00263137489914
+            ],
+            "bootstrap_question_clusters": 265,
+            "length_standardized_delta_pp": 18.51919994529942,
+            "length_standardization_rows": 265
+          },
+          "tune2048": {
+            "conflicting": {
+              "n": 11,
+              "errors": 3,
+              "error_rate": 0.2727272727272727,
+              "Wilson95": [
+                0.09745880573921467,
+                0.5656502930102463
+              ]
+            },
+            "unanimous": {
+              "n": 129,
+              "errors": 32,
+              "error_rate": 0.24806201550387597,
+              "Wilson95": [
+                0.1815425856479483,
+                0.3291528591524756
+              ]
+            },
+            "insufficient": {
+              "n": 1908,
+              "errors": 568,
+              "error_rate": 0.2976939203354298,
+              "Wilson95": [
+                0.27759996335805603,
+                0.31860089344932796
+              ]
+            },
+            "by_original_length": {
+              "<60": {
+                "conflicting": {
+                  "n": 9,
+                  "errors": 2,
+                  "error_rate": 0.2222222222222222,
+                  "Wilson95": [
+                    0.06322376231222723,
+                    0.5474166563271946
+                  ]
+                },
+                "unanimous": {
+                  "n": 74,
+                  "errors": 11,
+                  "error_rate": 0.14864864864864866,
+                  "Wilson95": [
+                    0.08507972301585125,
+                    0.24689700921986846
+                  ]
+                },
+                "insufficient": {
+                  "n": 917,
+                  "errors": 163,
+                  "error_rate": 0.1777535441657579,
+                  "Wilson95": [
+                    0.15436834142956152,
+                    0.20382746553658765
+                  ]
+                }
+              },
+              "60-90": {
+                "conflicting": {
+                  "n": 1,
+                  "errors": 0,
+                  "error_rate": 0.0,
+                  "Wilson95": [
+                    0.0,
+                    0.7934567085261071
+                  ]
+                },
+                "unanimous": {
+                  "n": 29,
+                  "errors": 11,
+                  "error_rate": 0.3793103448275862,
+                  "Wilson95": [
+                    0.22687795730867344,
+                    0.5599777379071503
+                  ]
+                },
+                "insufficient": {
+                  "n": 702,
+                  "errors": 254,
+                  "error_rate": 0.36182336182336183,
+                  "Wilson95": [
+                    0.3271170186221055,
+                    0.39803378008400647
+                  ]
+                }
+              },
+              "90-120": {
+                "conflicting": {
+                  "n": 0,
+                  "errors": 0,
+                  "error_rate": null
+                },
+                "unanimous": {
+                  "n": 18,
+                  "errors": 5,
+                  "error_rate": 0.2777777777777778,
+                  "Wilson95": [
+                    0.12499569146355474,
+                    0.5087307754619452
+                  ]
+                },
+                "insufficient": {
+                  "n": 232,
+                  "errors": 118,
+                  "error_rate": 0.5086206896551724,
+                  "Wilson95": [
+                    0.44467561361795754,
+                    0.5722849226063558
+                  ]
+                }
+              },
+              ">=120": {
+                "conflicting": {
+                  "n": 1,
+                  "errors": 1,
+                  "error_rate": 1.0,
+                  "Wilson95": [
+                    0.20654329147389294,
+                    1.0
+                  ]
+                },
+                "unanimous": {
+                  "n": 8,
+                  "errors": 5,
+                  "error_rate": 0.625,
+                  "Wilson95": [
+                    0.30573785458380187,
+                    0.863158240538479
+                  ]
+                },
+                "insufficient": {
+                  "n": 57,
+                  "errors": 33,
+                  "error_rate": 0.5789473684210527,
+                  "Wilson95": [
+                    0.4497991014068138,
+                    0.6981260024694814
+                  ]
+                }
+              }
+            },
+            "conflict_minus_unanimous_error_pp": 2.466525722339674,
+            "question_cluster_bootstrap95_pp": [
+              -24.2470506592644,
+              32.65479219677693
+            ],
+            "bootstrap_question_clusters": 140,
+            "length_standardized_delta_pp": -1.5554948673942475,
+            "length_standardization_rows": 122
+          },
+          "eval2048": {
+            "conflicting": {
+              "n": 6,
+              "errors": 4,
+              "error_rate": 0.6666666666666666,
+              "Wilson95": [
+                0.29998832134152864,
+                0.9032306674407831
+              ]
+            },
+            "unanimous": {
+              "n": 119,
+              "errors": 32,
+              "error_rate": 0.2689075630252101,
+              "Wilson95": [
+                0.19739221088821968,
+                0.35487672732163755
+              ]
+            },
+            "insufficient": {
+              "n": 1923,
+              "errors": 573,
+              "error_rate": 0.29797191887675506,
+              "Wilson95": [
+                0.27794875028404364,
+                0.31880066596273027
+              ]
+            },
+            "by_original_length": {
+              "<60": {
+                "conflicting": {
+                  "n": 3,
+                  "errors": 2,
+                  "error_rate": 0.6666666666666666,
+                  "Wilson95": [
+                    0.2076549551264879,
+                    0.9385096847238394
+                  ]
+                },
+                "unanimous": {
+                  "n": 67,
+                  "errors": 10,
+                  "error_rate": 0.14925373134328357,
+                  "Wilson95": [
+                    0.08314184208625061,
+                    0.2534061748981201
+                  ]
+                },
+                "insufficient": {
+                  "n": 943,
+                  "errors": 164,
+                  "error_rate": 0.17391304347826086,
+                  "Wilson95": [
+                    0.15105656076673396,
+                    0.19941557733957654
+                  ]
+                }
+              },
+              "60-90": {
+                "conflicting": {
+                  "n": 2,
+                  "errors": 1,
+                  "error_rate": 0.5,
+                  "Wilson95": [
+                    0.09452865480086614,
+                    0.9054713451991339
+                  ]
+                },
+                "unanimous": {
+                  "n": 37,
+                  "errors": 13,
+                  "error_rate": 0.35135135135135137,
+                  "Wilson95": [
+                    0.2182540663110087,
+                    0.5124127048243043
+                  ]
+                },
+                "insufficient": {
+                  "n": 686,
+                  "errors": 266,
+                  "error_rate": 0.3877551020408163,
+                  "Wilson95": [
+                    0.3520148965123612,
+                    0.42474544963086935
+                  ]
+                }
+              },
+              "90-120": {
+                "conflicting": {
+                  "n": 1,
+                  "errors": 1,
+                  "error_rate": 1.0,
+                  "Wilson95": [
+                    0.20654329147389294,
+                    1.0
+                  ]
+                },
+                "unanimous": {
+                  "n": 11,
+                  "errors": 6,
+                  "error_rate": 0.5454545454545454,
+                  "Wilson95": [
+                    0.28008775568998817,
+                    0.7872904245601196
+                  ]
+                },
+                "insufficient": {
+                  "n": 226,
+                  "errors": 101,
+                  "error_rate": 0.4469026548672566,
+                  "Wilson95": [
+                    0.3835079792605196,
+                    0.5120722812319237
+                  ]
+                }
+              },
+              ">=120": {
+                "conflicting": {
+                  "n": 0,
+                  "errors": 0,
+                  "error_rate": null
+                },
+                "unanimous": {
+                  "n": 4,
+                  "errors": 3,
+                  "error_rate": 0.75,
+                  "Wilson95": [
+                    0.3006360524426366,
+                    0.9544139373553637
+                  ]
+                },
+                "insufficient": {
+                  "n": 68,
+                  "errors": 42,
+                  "error_rate": 0.6176470588235294,
+                  "Wilson95": [
+                    0.49880494200915176,
+                    0.7239072470289543
+                  ]
+                }
+              }
+            },
+            "conflict_minus_unanimous_error_pp": 39.77591036414566,
+            "question_cluster_bootstrap95_pp": [
+              -6.098918906405534,
+              76.42276422764228
+            ],
+            "bootstrap_question_clusters": 125,
+            "length_standardized_delta_pp": 39.23202332601617,
+            "length_standardization_rows": 121
+          }
+        },
+        "actual_cache_join": {
+          "conflicting": {
+            "n": 0,
+            "errors": 0,
+            "error_rate": null
+          },
+          "unanimous": {
+            "n": 0,
+            "errors": 0,
+            "error_rate": null
+          },
+          "singleton": {
+            "n": 0,
+            "errors": 0,
+            "error_rate": null
+          },
+          "absent": {
+            "n": 4096,
+            "errors": 1212,
+            "error_rate": 0.2958984375,
+            "Wilson95": [
+              0.2821162795207748,
+              0.31006308662839555
+            ]
+          }
+        }
+      }
+    }
+  },
+  "seconds": 177.28277850011364
+}

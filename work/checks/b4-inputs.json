@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "source": "thisarivson/nlp-hw02-b3/1",
+  "stable_file": "model-GPU1/checkpoints/main-667d29a22ed6.pt",
+  "stable_present_in_output": true,
+  "bytes": 1361617533,
+  "sha256": "e32b8649d41ef73133fd2dcf031a649bf8af6a07013f76bc057b897643b119c0",
+  "free_quota_seconds": 68798.525,
+  "quota_reset_utc": "2026-10-24 00:00:00",
+  "read_only": true,
+  "GPU_runs": 0,
+  "pushes": 0,
+  "local_payload_deleted": true,
+  "single_stable_downloaded": true,
+  "version_binding": "latest endpoint; archived v1 manifest SHA + exact latest + full bytes/SHA",
+  "source_manifest_sha256": "fa5d3d8d424985cb9a7ce88ba2f2720126c1ac27ebacc8f62f4ecee27c2453b8"
+}

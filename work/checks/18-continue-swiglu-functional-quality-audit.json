@@ -1,0 +1,1722 @@
+{
+  "date": "2026-10-08",
+  "scope": "New bounded AST analysis of saved outputs; programs not executed, reference programs may be wrong. Fixed888 numeric-reference subset and same pre-existing23 manually scored questions.",
+  "paired_reference_proxy_transitions": {
+    "18/50000->18/75000": {
+      "fixed_reference_denominator": 888,
+      "before_agreements": 110,
+      "after_agreements": 127,
+      "retained": 82,
+      "gained": 45,
+      "lost": 28,
+      "net": 17,
+      "gained_indices": [
+        3,
+        14,
+        22,
+        42,
+        52,
+        103,
+        121,
+        126,
+        140,
+        173,
+        186,
+        194,
+        213,
+        236,
+        250,
+        255,
+        313,
+        316,
+        335,
+        381,
+        385,
+        468,
+        477,
+        539,
+        550,
+        551,
+        579,
+        614,
+        640,
+        657,
+        669,
+        699,
+        815,
+        860,
+        861,
+        894,
+        910,
+        921,
+        922,
+        923,
+        934,
+        945,
+        993,
+        994,
+        999
+      ],
+      "lost_indices": [
+        4,
+        89,
+        235,
+        244,
+        254,
+        259,
+        321,
+        372,
+        382,
+        423,
+        449,
+        479,
+        519,
+        524,
+        533,
+        547,
+        632,
+        644,
+        655,
+        764,
+        769,
+        782,
+        799,
+        812,
+        835,
+        838,
+        871,
+        957
+      ],
+      "scope": "Paired numeric-reference proxy transitions, not official pass@1 or verified mathematical correctness."
+    },
+    "18/50000->18/100000": {
+      "fixed_reference_denominator": 888,
+      "before_agreements": 110,
+      "after_agreements": 142,
+      "retained": 82,
+      "gained": 60,
+      "lost": 28,
+      "net": 32,
+      "gained_indices": [
+        3,
+        14,
+        67,
+        126,
+        144,
+        173,
+        185,
+        200,
+        213,
+        236,
+        250,
+        280,
+        290,
+        307,
+        313,
+        316,
+        335,
+        354,
+        381,
+        384,
+        385,
+        398,
+        412,
+        468,
+        477,
+        478,
+        485,
+        496,
+        520,
+        539,
+        551,
+        572,
+        588,
+        629,
+        657,
+        669,
+        693,
+        728,
+        739,
+        752,
+        756,
+        763,
+        773,
+        815,
+        860,
+        861,
+        868,
+        894,
+        910,
+        918,
+        921,
+        923,
+        929,
+        934,
+        939,
+        956,
+        966,
+        993,
+        994,
+        999
+      ],
+      "lost_indices": [
+        139,
+        157,
+        235,
+        244,
+        254,
+        321,
+        372,
+        449,
+        479,
+        524,
+        533,
+        540,
+        547,
+        557,
+        632,
+        644,
+        721,
+        764,
+        769,
+        782,
+        799,
+        812,
+        835,
+        869,
+        916,
+        925,
+        957,
+        982
+      ],
+      "scope": "Paired numeric-reference proxy transitions, not official pass@1 or verified mathematical correctness."
+    },
+    "18/75000->18/100000": {
+      "fixed_reference_denominator": 888,
+      "before_agreements": 127,
+      "after_agreements": 142,
+      "retained": 102,
+      "gained": 40,
+      "lost": 25,
+      "net": 15,
+      "gained_indices": [
+        4,
+        67,
+        89,
+        144,
+        185,
+        200,
+        259,
+        280,
+        290,
+        307,
+        354,
+        382,
+        384,
+        398,
+        412,
+        423,
+        478,
+        485,
+        496,
+        519,
+        520,
+        572,
+        588,
+        629,
+        655,
+        693,
+        728,
+        739,
+        752,
+        756,
+        763,
+        773,
+        838,
+        868,
+        871,
+        918,
+        929,
+        939,
+        956,
+        966
+      ],
+      "lost_indices": [
+        22,
+        42,
+        52,
+        103,
+        121,
+        139,
+        140,
+        157,
+        186,
+        194,
+        255,
+        540,
+        550,
+        557,
+        579,
+        614,
+        640,
+        699,
+        721,
+        869,
+        916,
+        922,
+        925,
+        945,
+        982
+      ],
+      "scope": "Paired numeric-reference proxy transitions, not official pass@1 or verified mathematical correctness."
+    },
+    "15/100000->18/100000": {
+      "fixed_reference_denominator": 888,
+      "before_agreements": 123,
+      "after_agreements": 142,
+      "retained": 85,
+      "gained": 57,
+      "lost": 38,
+      "net": 19,
+      "gained_indices": [
+        4,
+        14,
+        34,
+        67,
+        89,
+        126,
+        144,
+        165,
+        192,
+        200,
+        230,
+        250,
+        259,
+        280,
+        290,
+        335,
+        354,
+        384,
+        385,
+        412,
+        452,
+        468,
+        478,
+        485,
+        496,
+        511,
+        519,
+        520,
+        529,
+        539,
+        551,
+        572,
+        588,
+        599,
+        611,
+        629,
+        655,
+        657,
+        664,
+        669,
+        693,
+        700,
+        728,
+        739,
+        749,
+        752,
+        848,
+        861,
+        864,
+        868,
+        894,
+        937,
+        939,
+        940,
+        956,
+        967,
+        994
+      ],
+      "lost_indices": [
+        42,
+        83,
+        101,
+        157,
+        177,
+        179,
+        180,
+        210,
+        212,
+        235,
+        302,
+        318,
+        321,
+        402,
+        417,
+        463,
+        535,
+        547,
+        557,
+        577,
+        614,
+        627,
+        632,
+        644,
+        675,
+        683,
+        718,
+        721,
+        767,
+        785,
+        835,
+        869,
+        889,
+        945,
+        983,
+        991,
+        997,
+        1019
+      ],
+      "scope": "Paired numeric-reference proxy transitions, not official pass@1 or verified mathematical correctness."
+    }
+  },
+  "numeric_reference_subset_statuses": {
+    "15/50000": {
+      "numeric": 772,
+      "undefined_name": 85,
+      "unsupported": 17,
+      "syntax_error": 8,
+      "arithmetic_error": 5,
+      "no_return": 1
+    },
+    "15/75000": {
+      "numeric": 791,
+      "syntax_error": 4,
+      "unsupported": 21,
+      "undefined_name": 63,
+      "arithmetic_error": 9
+    },
+    "15/100000": {
+      "unsupported": 18,
+      "numeric": 787,
+      "undefined_name": 70,
+      "syntax_error": 7,
+      "arithmetic_error": 6
+    },
+    "18/50000": {
+      "numeric": 768,
+      "undefined_name": 83,
+      "unsupported": 23,
+      "syntax_error": 9,
+      "arithmetic_error": 5
+    },
+    "18/75000": {
+      "unsupported": 27,
+      "numeric": 782,
+      "undefined_name": 68,
+      "arithmetic_error": 6,
+      "syntax_error": 5
+    },
+    "18/100000": {
+      "unsupported": 25,
+      "numeric": 792,
+      "undefined_name": 58,
+      "syntax_error": 6,
+      "arithmetic_error": 7
+    }
+  },
+  "manual_first32": {
+    "source": "Reused pre-existing manual answers from15 audit; evaluation only, no targets changed",
+    "total_questions": 32,
+    "scored_questions": 23,
+    "excluded_questions": 9,
+    "summaries": {
+      "15/50000": {
+        "scored": 23,
+        "correct": 3,
+        "wrong": 20,
+        "unknown": 0
+      },
+      "15/75000": {
+        "scored": 23,
+        "correct": 2,
+        "wrong": 20,
+        "unknown": 1
+      },
+      "15/100000": {
+        "scored": 23,
+        "correct": 4,
+        "wrong": 17,
+        "unknown": 2
+      },
+      "18/50000": {
+        "scored": 23,
+        "correct": 5,
+        "wrong": 18,
+        "unknown": 0
+      },
+      "18/75000": {
+        "scored": 23,
+        "correct": 6,
+        "wrong": 16,
+        "unknown": 1
+      },
+      "18/100000": {
+        "scored": 23,
+        "correct": 6,
+        "wrong": 16,
+        "unknown": 1
+      }
+    },
+    "rows": [
+      {
+        "validation64_index": 0,
+        "question": "Mark has 10 crayons. He gives 2 crayons to his younger sister and loses another 4 while he was playing. How many crayons does Mark have left?",
+        "reference": {
+          "status": "numeric",
+          "value": 4
+        },
+        "status": "scored",
+        "expected_numeric_value": 4.0,
+        "reason": "10-2-4",
+        "reference_matches_manual_answer": true,
+        "generated": {
+          "15/50000": {
+            "status": "numeric",
+            "value": 6,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/75000": {
+            "status": "numeric",
+            "value": -2,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/100000": {
+            "status": "unsupported",
+            "matches_manual_answer": false,
+            "unresolved_unsupported": true
+          },
+          "18/50000": {
+            "status": "numeric",
+            "value": -8,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/75000": {
+            "status": "unsupported",
+            "matches_manual_answer": false,
+            "unresolved_unsupported": true
+          },
+          "18/100000": {
+            "status": "unsupported",
+            "matches_manual_answer": false,
+            "unresolved_unsupported": true
+          }
+        }
+      },
+      {
+        "validation64_index": 1,
+        "question": "Student: Allen's father can mow the lawn in 2 hours. Allen's mother can mow the lawn in 4 hours. If they both work together to mow the lawn, how much time will it take?",
+        "reference": {
+          "status": "numeric",
+          "value": 6
+        },
+        "status": "scored",
+        "expected_numeric_value": 1.3333333333333333,
+        "reason": "1/(1/2+1/4)",
+        "reference_matches_manual_answer": false,
+        "generated": {
+          "15/50000": {
+            "status": "numeric",
+            "value": 20,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/75000": {
+            "status": "numeric",
+            "value": 8,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/100000": {
+            "status": "numeric",
+            "value": 2.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/50000": {
+            "status": "numeric",
+            "value": 1.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/75000": {
+            "status": "numeric",
+            "value": 3,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/100000": {
+            "status": "numeric",
+            "value": 8,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 2,
+        "question": "Every morning, Sarah jogs around a circular track that is 0.4 miles long, while her sister, Liz, runs at three times her speed. During their workout, how many times does Liz circle the track?",
+        "reference": {
+          "status": "numeric",
+          "value": 3.0
+        },
+        "status": "excluded_from_manual_scalar_score",
+        "reason": "Duration or Sarah lap count is missing; absolute Liz laps not determined."
+      },
+      {
+        "validation64_index": 3,
+        "question": "At a party, there are 530 balloons. Two-thirds are red and the rest are blue. How many blue balloons are there?",
+        "reference": {
+          "status": "numeric",
+          "value": 176.66666666666669
+        },
+        "status": "excluded_from_manual_scalar_score",
+        "reason": "530/3 is not an integer number of balloons; inconsistent discrete data."
+      },
+      {
+        "validation64_index": 4,
+        "question": "A store has a sale where everything is 30% off. If a customer buys two shirts that cost $20 each, how much do they pay in total?",
+        "reference": {
+          "status": "numeric",
+          "value": 28.0
+        },
+        "status": "scored",
+        "expected_numeric_value": 28.0,
+        "reason": "2*20*(1-0.30)",
+        "reference_matches_manual_answer": true,
+        "generated": {
+          "15/50000": {
+            "status": "numeric",
+            "value": 180.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/75000": {
+            "status": "numeric",
+            "value": 1200,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/100000": {
+            "status": "numeric",
+            "value": 420.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/50000": {
+            "status": "numeric",
+            "value": 28.0,
+            "matches_manual_answer": true,
+            "unresolved_unsupported": false
+          },
+          "18/75000": {
+            "status": "numeric",
+            "value": 40,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/100000": {
+            "status": "numeric",
+            "value": 28.0,
+            "matches_manual_answer": true,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 5,
+        "question": "If a product costs $150 after a 25% discount, what was the original price of the product?",
+        "reference": {
+          "status": "unsupported"
+        },
+        "status": "scored",
+        "expected_numeric_value": 200.0,
+        "reason": "150/(1-0.25)",
+        "generated": {
+          "15/50000": {
+            "status": "numeric",
+            "value": 37.5,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/75000": {
+            "status": "numeric",
+            "value": 37.5,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/100000": {
+            "status": "numeric",
+            "value": 37.5,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/50000": {
+            "status": "numeric",
+            "value": 37.5,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/75000": {
+            "status": "numeric",
+            "value": 37.5,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/100000": {
+            "status": "numeric",
+            "value": 37.5,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 6,
+        "question": "Leo is planning a trip to the zoo with his family. The zoo charges $15 for adults, $10 for children, and $5 for seniors. Leo's family consists of 2 adults, 3 children, and 1 senior. They also need to pay $10 for parking. How much will the trip cost them in total?",
+        "reference": {
+          "status": "numeric",
+          "value": 75
+        },
+        "status": "scored",
+        "expected_numeric_value": 75.0,
+        "reason": "2*15+3*10+1*5+10",
+        "reference_matches_manual_answer": true,
+        "generated": {
+          "15/50000": {
+            "status": "undefined_name",
+            "name": "adult_children",
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/75000": {
+            "status": "syntax_error",
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/100000": {
+            "status": "numeric",
+            "value": 10,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/50000": {
+            "status": "numeric",
+            "value": 100,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/75000": {
+            "status": "numeric",
+            "value": 351,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/100000": {
+            "status": "numeric",
+            "value": 108,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 7,
+        "question": "If 15 workers can complete a project in 10 days, how many more workers are needed to complete the project in 5 days?",
+        "reference": {
+          "status": "numeric",
+          "value": 15.0
+        },
+        "status": "scored",
+        "expected_numeric_value": 15.0,
+        "reason": "15*10/5-15 additional workers",
+        "reference_matches_manual_answer": true,
+        "generated": {
+          "15/50000": {
+            "status": "numeric",
+            "value": 0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/75000": {
+            "status": "numeric",
+            "value": 0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/100000": {
+            "status": "numeric",
+            "value": 1.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/50000": {
+            "status": "numeric",
+            "value": 0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/75000": {
+            "status": "numeric",
+            "value": 50625,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/100000": {
+            "status": "numeric",
+            "value": 0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 8,
+        "question": "Andrew is decorating his living room and created a budget of $100 for the task. He bought 5 picture frames at $7 each, a lamp for $25, and a rug. If he has $30 remaining in his budget, how much did he spend on the rug?",
+        "reference": {
+          "status": "numeric",
+          "value": 10
+        },
+        "status": "scored",
+        "expected_numeric_value": 10.0,
+        "reason": "100-30-5*7-25",
+        "reference_matches_manual_answer": true,
+        "generated": {
+          "15/50000": {
+            "status": "numeric",
+            "value": 93,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/75000": {
+            "status": "numeric",
+            "value": 93,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/100000": {
+            "status": "numeric",
+            "value": 50,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/50000": {
+            "status": "numeric",
+            "value": 400,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/75000": {
+            "status": "numeric",
+            "value": 400,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/100000": {
+            "status": "numeric",
+            "value": 0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 9,
+        "question": "Emily is a teacher. She grades 10 exams per week. To save time, she grades all 10 exams at once. It takes her 45 minutes to set up her grading materials. Then she grades each exam for 15 minutes. She takes another 30 minutes to check and record the grades. Each exam takes 5 minutes to provide feedback for. How long does Emily take to grade 1 exam?",
+        "reference": {
+          "status": "numeric",
+          "value": 27.5
+        },
+        "status": "scored",
+        "expected_numeric_value": 27.5,
+        "reason": "(45+10*15+30+10*5)/10; average per exam",
+        "reference_matches_manual_answer": true,
+        "generated": {
+          "15/50000": {
+            "status": "numeric",
+            "value": 90,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/75000": {
+            "status": "numeric",
+            "value": 20,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/100000": {
+            "status": "numeric",
+            "value": 135,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/50000": {
+            "status": "numeric",
+            "value": 15,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/75000": {
+            "status": "undefined_name",
+            "name": "exam2",
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/100000": {
+            "status": "undefined_name",
+            "name": "exam5",
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 10,
+        "question": "Kevin and Alice are playing a board game that involves rolling two dice and moving the corresponding number of spaces on the board. Kevin is 30 spaces away from the finish line, and Alice is 24 spaces away. Kevin rolls a 4 and a 5, and Alice rolls a 6 and a 3. How many spaces away from the finish line are they now?",
+        "reference": {
+          "status": "unsupported"
+        },
+        "status": "excluded_from_manual_scalar_score",
+        "reason": "Question requests two distances (21 and15), outside this scalar-only audit."
+      },
+      {
+        "validation64_index": 11,
+        "question": "Ben bought a box of 12 cupcakes for his birthday party. He paid $18 for the box, but he got a 15% discount because he was a regular customer. He also got a free cupcake as a birthday gift. How much did each cupcake cost Ben after the discount and the gift?",
+        "reference": {
+          "status": "numeric",
+          "value": 1.3909090909090909
+        },
+        "status": "scored",
+        "expected_numeric_value": 1.176923076923077,
+        "reason": "18*0.85/13;12 purchased plus1 free cupcake",
+        "reference_matches_manual_answer": false,
+        "generated": {
+          "15/50000": {
+            "status": "numeric",
+            "value": 30.599999999999998,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/75000": {
+            "status": "numeric",
+            "value": 2.1675,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/100000": {
+            "status": "numeric",
+            "value": 13.004999999999999,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/50000": {
+            "status": "numeric",
+            "value": -30.599999999999994,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/75000": {
+            "status": "undefined_name",
+            "name": "gift_card_price",
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/100000": {
+            "status": "undefined_name",
+            "name": "gift_card",
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 12,
+        "question": "Sarah, Lisa, and Ashley played chess against one another. Sarah won 4 more games than Lisa, and Lisa won 2 more games than Ashley. If Ashley won 6 games, what was the total number of games they played?",
+        "reference": {
+          "status": "numeric",
+          "value": 26
+        },
+        "status": "scored",
+        "expected_numeric_value": 26.0,
+        "reason": "(6+2+4)+(6+2)+6; no draws assumed",
+        "reference_matches_manual_answer": true,
+        "generated": {
+          "15/50000": {
+            "status": "numeric",
+            "value": 12,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/75000": {
+            "status": "numeric",
+            "value": 20,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/100000": {
+            "status": "numeric",
+            "value": 20,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/50000": {
+            "status": "numeric",
+            "value": 20,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/75000": {
+            "status": "numeric",
+            "value": 126,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/100000": {
+            "status": "numeric",
+            "value": 42,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 13,
+        "question": "Student: Jessica is baking cupcakes. She needs to make 60 cupcakes. The recipe states that she needs 2/3 cup of sugar for each cupcake. How much sugar does Jessica need?",
+        "reference": {
+          "status": "numeric",
+          "value": 40.0
+        },
+        "status": "scored",
+        "expected_numeric_value": 40.0,
+        "reason": "60*2/3",
+        "reference_matches_manual_answer": true,
+        "generated": {
+          "15/50000": {
+            "status": "numeric",
+            "value": 0.4444444444444444,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/75000": {
+            "status": "numeric",
+            "value": 0.4444444444444444,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/100000": {
+            "status": "numeric",
+            "value": 40.0,
+            "matches_manual_answer": true,
+            "unresolved_unsupported": false
+          },
+          "18/50000": {
+            "status": "numeric",
+            "value": 40.0,
+            "matches_manual_answer": true,
+            "unresolved_unsupported": false
+          },
+          "18/75000": {
+            "status": "numeric",
+            "value": 40.0,
+            "matches_manual_answer": true,
+            "unresolved_unsupported": false
+          },
+          "18/100000": {
+            "status": "numeric",
+            "value": 40.0,
+            "matches_manual_answer": true,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 14,
+        "question": "Joe has a collection of coins. He had five coins yesterday, and today, he has four times as many coins as yesterday. How many coins does he have today?",
+        "reference": {
+          "status": "numeric",
+          "value": 20
+        },
+        "status": "scored",
+        "expected_numeric_value": 20.0,
+        "reason": "5*4",
+        "reference_matches_manual_answer": true,
+        "generated": {
+          "15/50000": {
+            "status": "numeric",
+            "value": 25,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/75000": {
+            "status": "unsupported",
+            "matches_manual_answer": false,
+            "unresolved_unsupported": true
+          },
+          "15/100000": {
+            "status": "unsupported",
+            "matches_manual_answer": false,
+            "unresolved_unsupported": true
+          },
+          "18/50000": {
+            "status": "numeric",
+            "value": 25,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/75000": {
+            "status": "numeric",
+            "value": 20,
+            "matches_manual_answer": true,
+            "unresolved_unsupported": false
+          },
+          "18/100000": {
+            "status": "numeric",
+            "value": 20,
+            "matches_manual_answer": true,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 15,
+        "question": "Larry sells flowers online. He has 1000 different types of flowers. He sold 25% of his flowers in the first week and sold another 40% of the remaining flowers in the second week. How many flowers did he have left at the end of the second week?",
+        "reference": {
+          "status": "numeric",
+          "value": 450.0
+        },
+        "status": "excluded_from_manual_scalar_score",
+        "reason": "1000 types of flowers does not specify item counts; wording ambiguity."
+      },
+      {
+        "validation64_index": 16,
+        "question": "A recipe calls for 1/2 cup of sugar to make 12 muffins. If you want to make 36 muffins, how much sugar do you need?",
+        "reference": {
+          "status": "numeric",
+          "value": 1.5
+        },
+        "status": "scored",
+        "expected_numeric_value": 1.5,
+        "reason": "0.5*36/12",
+        "reference_matches_manual_answer": true,
+        "generated": {
+          "15/50000": {
+            "status": "numeric",
+            "value": 1296,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/75000": {
+            "status": "numeric",
+            "value": 432,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/100000": {
+            "status": "numeric",
+            "value": 18.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/50000": {
+            "status": "numeric",
+            "value": 18.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/75000": {
+            "status": "numeric",
+            "value": 72.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/100000": {
+            "status": "numeric",
+            "value": 18.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 17,
+        "question": "A toy store has 123 action figures and 95 dolls. If they sell 20 action figures and 15 dolls, how many toys do they have left in their inventory?",
+        "reference": {
+          "status": "unsupported"
+        },
+        "status": "scored",
+        "expected_numeric_value": 183.0,
+        "reason": "123+95-20-15",
+        "generated": {
+          "15/50000": {
+            "status": "numeric",
+            "value": 0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/75000": {
+            "status": "numeric",
+            "value": 0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/100000": {
+            "status": "numeric",
+            "value": 0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/50000": {
+            "status": "numeric",
+            "value": -15,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/75000": {
+            "status": "numeric",
+            "value": -45,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/100000": {
+            "status": "numeric",
+            "value": -15,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 18,
+        "question": "The ratio of hotdogs to buns that a vendor needs for his stand is 2:1. If he needs a total of 45 buns, how many hotdogs should he prepare?",
+        "reference": {
+          "status": "numeric",
+          "value": 30.0
+        },
+        "status": "scored",
+        "expected_numeric_value": 90.0,
+        "reason": "45*2/1",
+        "reference_matches_manual_answer": false,
+        "generated": {
+          "15/50000": {
+            "status": "numeric",
+            "value": 1,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/75000": {
+            "status": "numeric",
+            "value": 1,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/100000": {
+            "status": "numeric",
+            "value": 1,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/50000": {
+            "status": "numeric",
+            "value": 90,
+            "matches_manual_answer": true,
+            "unresolved_unsupported": false
+          },
+          "18/75000": {
+            "status": "numeric",
+            "value": 90,
+            "matches_manual_answer": true,
+            "unresolved_unsupported": false
+          },
+          "18/100000": {
+            "status": "numeric",
+            "value": 90,
+            "matches_manual_answer": true,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 19,
+        "question": "A rectangular pool measures 30 feet by 15 feet. If the pool needs to be covered with tiles measuring 2 feet by 2 feet, how many tiles are needed?",
+        "reference": {
+          "status": "numeric",
+          "value": 112.5
+        },
+        "status": "excluded_from_manual_scalar_score",
+        "reason": "Tile count requires a rule for cuts/reuse/rounding; area ratio112.5 is not a whole tile count."
+      },
+      {
+        "validation64_index": 20,
+        "question": "Eric is learning how to bake and he wants to bake 3 dozen cookies. How many cookies will he need to bake?",
+        "reference": {
+          "status": "numeric",
+          "value": 36
+        },
+        "status": "scored",
+        "expected_numeric_value": 36.0,
+        "reason": "3*12",
+        "reference_matches_manual_answer": true,
+        "generated": {
+          "15/50000": {
+            "status": "numeric",
+            "value": 36,
+            "matches_manual_answer": true,
+            "unresolved_unsupported": false
+          },
+          "15/75000": {
+            "status": "numeric",
+            "value": 1.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/100000": {
+            "status": "numeric",
+            "value": 1.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/50000": {
+            "status": "numeric",
+            "value": 144,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/75000": {
+            "status": "numeric",
+            "value": 144,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/100000": {
+            "status": "numeric",
+            "value": 144,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 21,
+        "question": "Alex has 5 fewer books than Maria and Maria has twice the number of books as Eva. If Eva has 10 books, how many books does Alex have?",
+        "reference": {
+          "status": "numeric",
+          "value": 15
+        },
+        "status": "scored",
+        "expected_numeric_value": 15.0,
+        "reason": "2*10-5",
+        "reference_matches_manual_answer": true,
+        "generated": {
+          "15/50000": {
+            "status": "numeric",
+            "value": 5,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/75000": {
+            "status": "numeric",
+            "value": 5,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/100000": {
+            "status": "numeric",
+            "value": 5,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/50000": {
+            "status": "numeric",
+            "value": 30,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/75000": {
+            "status": "numeric",
+            "value": -5,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/100000": {
+            "status": "numeric",
+            "value": 20,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 22,
+        "question": "A jar contains 120 red marbles, 80 blue marbles, and 100 green marbles. If a marble is chosen at random, what is the probability it will be blue?",
+        "reference": {
+          "status": "numeric",
+          "value": 0.26666666666666666
+        },
+        "status": "scored",
+        "expected_numeric_value": 0.26666666666666666,
+        "reason": "80/(120+80+100)",
+        "reference_matches_manual_answer": true,
+        "generated": {
+          "15/50000": {
+            "status": "numeric",
+            "value": 0.6666666666666666,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/75000": {
+            "status": "numeric",
+            "value": 0.6666666666666666,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/100000": {
+            "status": "numeric",
+            "value": 0.6666666666666666,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/50000": {
+            "status": "numeric",
+            "value": 0.6666666666666666,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/75000": {
+            "status": "numeric",
+            "value": 0.26666666666666666,
+            "matches_manual_answer": true,
+            "unresolved_unsupported": false
+          },
+          "18/100000": {
+            "status": "numeric",
+            "value": 0.4,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 23,
+        "question": "A library has 30 shelves of books, each containing 50 books of different genres. On average, it takes 2 minutes to find a book of a specific genre. How long would it take to find all the books of each genre?",
+        "reference": {
+          "status": "numeric",
+          "value": 3000
+        },
+        "status": "excluded_from_manual_scalar_score",
+        "reason": "Number of genres and meaning of find all books of each genre are unspecified."
+      },
+      {
+        "validation64_index": 24,
+        "question": "At a restaurant, 70% of customers ordered burgers, while 40% ordered fries. If 30% ordered both, what percentage of customers ordered neither burgers nor fries?",
+        "reference": {
+          "status": "numeric",
+          "value": 0.19999999999999996
+        },
+        "status": "scored",
+        "expected_numeric_value": 20.0,
+        "reason": "100-(70+40-30), percent;0.2 is equivalent fraction",
+        "reference_matches_manual_answer": true,
+        "generated": {
+          "15/50000": {
+            "status": "undefined_name",
+            "name": "mugs_percentage",
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/75000": {
+            "status": "numeric",
+            "value": 0.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/100000": {
+            "status": "numeric",
+            "value": 0.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/50000": {
+            "status": "numeric",
+            "value": 0.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/75000": {
+            "status": "numeric",
+            "value": 0.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/100000": {
+            "status": "numeric",
+            "value": -2772.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 25,
+        "question": "Student: Tom had 24 candies and he gave away some to his friends. He kept one-third of the candies for himself and divided the rest equally among 6 friends. How many candies did each friend get?",
+        "reference": {
+          "status": "numeric",
+          "value": 2
+        },
+        "status": "excluded_from_manual_scalar_score",
+        "reason": "Remaining16 candies cannot be divided equally among6 with whole candies; fractional interpretation8/3 versus reference floor2."
+      },
+      {
+        "validation64_index": 26,
+        "question": "Jane has 48 apples, and she gave some to her friends. If she gave away 1/6 of her apples, how many apples are left with her?",
+        "reference": {
+          "status": "numeric",
+          "value": 40.0
+        },
+        "status": "scored",
+        "expected_numeric_value": 40.0,
+        "reason": "48*(1-1/6)",
+        "reference_matches_manual_answer": true,
+        "generated": {
+          "15/50000": {
+            "status": "numeric",
+            "value": 40.0,
+            "matches_manual_answer": true,
+            "unresolved_unsupported": false
+          },
+          "15/75000": {
+            "status": "numeric",
+            "value": 40.0,
+            "matches_manual_answer": true,
+            "unresolved_unsupported": false
+          },
+          "15/100000": {
+            "status": "numeric",
+            "value": 40.0,
+            "matches_manual_answer": true,
+            "unresolved_unsupported": false
+          },
+          "18/50000": {
+            "status": "numeric",
+            "value": 40.0,
+            "matches_manual_answer": true,
+            "unresolved_unsupported": false
+          },
+          "18/75000": {
+            "status": "numeric",
+            "value": 40.0,
+            "matches_manual_answer": true,
+            "unresolved_unsupported": false
+          },
+          "18/100000": {
+            "status": "numeric",
+            "value": 40.0,
+            "matches_manual_answer": true,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 27,
+        "question": "A company offers a bonus of $500 to any employee who brings in a customer who purchases at least $1,000 worth of products. If John just brought in a customer who purchased $2,500 worth of products, how much will he receive as a bonus?",
+        "reference": {
+          "status": "unsupported"
+        },
+        "status": "scored",
+        "expected_numeric_value": 500.0,
+        "reason": "fixed bonus once purchase>=1000, not proportional",
+        "generated": {
+          "15/50000": {
+            "status": "numeric",
+            "value": 1.0040160642570282,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/75000": {
+            "status": "numeric",
+            "value": 249000.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/100000": {
+            "status": "numeric",
+            "value": 500.0,
+            "matches_manual_answer": true,
+            "unresolved_unsupported": false
+          },
+          "18/50000": {
+            "status": "arithmetic_error",
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/75000": {
+            "status": "numeric",
+            "value": 0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/100000": {
+            "status": "numeric",
+            "value": 1.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 28,
+        "question": "At a store, a 10-pack of pens costs $5.50 and a 20-pack of pens costs $10. How much does a 30-pack of pens cost?",
+        "reference": {
+          "status": "numeric",
+          "value": 26.5
+        },
+        "status": "excluded_from_manual_scalar_score",
+        "reason": "Price of a30-pack is not specified by prices of10/20-packs; assumes a pricing or purchase rule."
+      },
+      {
+        "validation64_index": 29,
+        "question": "John runs 1 mile the first day and then increased his distance by 25% for the five consecutive days. What is the total distance he runs in miles after 5 days?",
+        "reference": {
+          "status": "unsupported"
+        },
+        "status": "excluded_from_manual_scalar_score",
+        "reason": "Five increases after first day versus total after5 days; conflicting horizon."
+      },
+      {
+        "validation64_index": 30,
+        "question": "A jar has 100 marbles, 60% of them are red and the rest are blue. How many blue marbles are there?",
+        "reference": {
+          "status": "numeric",
+          "value": 40.0
+        },
+        "status": "scored",
+        "expected_numeric_value": 40.0,
+        "reason": "100*(1-0.60)",
+        "reference_matches_manual_answer": true,
+        "generated": {
+          "15/50000": {
+            "status": "numeric",
+            "value": 40.0,
+            "matches_manual_answer": true,
+            "unresolved_unsupported": false
+          },
+          "15/75000": {
+            "status": "numeric",
+            "value": 40.0,
+            "matches_manual_answer": true,
+            "unresolved_unsupported": false
+          },
+          "15/100000": {
+            "status": "numeric",
+            "value": 40.0,
+            "matches_manual_answer": true,
+            "unresolved_unsupported": false
+          },
+          "18/50000": {
+            "status": "numeric",
+            "value": 40.0,
+            "matches_manual_answer": true,
+            "unresolved_unsupported": false
+          },
+          "18/75000": {
+            "status": "numeric",
+            "value": 40.0,
+            "matches_manual_answer": true,
+            "unresolved_unsupported": false
+          },
+          "18/100000": {
+            "status": "numeric",
+            "value": 40.0,
+            "matches_manual_answer": true,
+            "unresolved_unsupported": false
+          }
+        }
+      },
+      {
+        "validation64_index": 31,
+        "question": "Student: If a car travels 160 miles in 4 hours, how long will it take to travel 240 miles?",
+        "reference": {
+          "status": "numeric",
+          "value": 6.0
+        },
+        "status": "scored",
+        "expected_numeric_value": 6.0,
+        "reason": "240/(160/4)",
+        "reference_matches_manual_answer": true,
+        "generated": {
+          "15/50000": {
+            "status": "numeric",
+            "value": 40.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/75000": {
+            "status": "numeric",
+            "value": 40.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "15/100000": {
+            "status": "numeric",
+            "value": 40.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/50000": {
+            "status": "numeric",
+            "value": 40.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/75000": {
+            "status": "numeric",
+            "value": 40.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          },
+          "18/100000": {
+            "status": "numeric",
+            "value": 40.0,
+            "matches_manual_answer": false,
+            "unresolved_unsupported": false
+          }
+        }
+      }
+    ]
+  },
+  "official_pass_at_1_evaluated": false,
+  "new_training_updates": 0,
+  "saved_within_run_paired_transitions_verified": true,
+  "known_reference_caveat_indices": [
+    {
+      "index": 3,
+      "question": "At a party, there are 530 balloons. Two-thirds are red and the rest are blue. How many blue balloons are there?",
+      "reference_code": "def solve() -> int:\n    \n    red = 530 * 2/3 # calculate two-thirds in total balloons\n    \n    blue = 530 - red # calculate total blue balloons\n    \n    result = blue # assign result\n\n    return result\n",
+      "scope": "Previously identified ambiguous or inconsistent task/reference; reference agreement is not verified correctness."
+    },
+    {
+      "index": 923,
+      "question": "Tim and Hal are playing a card game and have 10 cardseach. If they divide the cards equally, how many cards does each person have?",
+      "reference_code": "def solve() -> int:\n    cards_per_person = 10 / 2\n    result = cards_per_person\n\n    return result\n",
+      "scope": "Previously identified ambiguous or inconsistent task/reference; reference agreement is not verified correctness."
+    },
+    {
+      "index": 929,
+      "question": "David has 41 pieces of candy and wants to divide them between 5 of his friends. How many pieces of candy will each friend get?",
+      "reference_code": "def solve() -> int:\n    divide = 41 / 5 # divide 41 by 5\n    result = divide # each friend will get 8 pieces of candy\n\n    return result\n",
+      "scope": "Previously identified ambiguous or inconsistent task/reference; reference agreement is not verified correctness."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+--- a/courses/nlp/index.md
++++ b/courses/nlp/index.md
+@@ -1,4 +1,6 @@
+ # NLP — Глубинное обучение для обработки текстов
++
++ДЗ2: [[work/notes/architecture-decision|Архитектура за180с — реальные T4 замеры]]:13/13 COMPLETE за332,46с. 6+6/768:229pairs/s, sample1,35×C;8+4/768:247pairs/s,1,18×. Прогноз single K8≈75,25/74,74% tune против74,95%; K>8 — экстраполяция. Сейчас не расходовать80GPU-ч; сначала cold timer/K16 C, затем только условные короткие pilots.
+ 
+ ДЗ2: [[work/notes/r1-review|R1: независимое ревью и запуск]] — smokev1 COMPLETE348,65с; base/deep0,3509/0,4641с (1,323×), выбран encoder12. CUDA AMP/FP16 identity/Adam/scaler/stable/v7 прошли;15CPU tests. Private friend2 R1v1 RUNNING: C-long2x12vs6, ordinary weighted order/q10%,9ч30мин main+20мин cooldown, Secrets optional; early anchors passed. ETA≈18:20–18:40UTC, hard≈19:42UTC.
+ 
+--- a/courses/nlp/progress.md
++++ b/courses/nlp/progress.md
+@@ -1,4 +1,6 @@
+ # NLP — текущее состояние
++
++2026-10-15 — ДЗ2: [[work/notes/architecture-decision|пересчёт архитектуры по T4]]: shape bench13/13 COMPLETE,332,46с; SHA6модулей/lengths/summary сверены, компактная квитанция сохранена. C bench423 vs historical332pairs/s: основной прогноз скорректирован×0,7864, C slope и full4k→tune−0,3906п.п. согласованы. Для13форм — tokens36ч main, memory/micro, single/v6/v7 adaptive160/180с, hybrid+C и отдельный ненаблюдённыйK9–16 tail. Single K8≈75,25% для6+6/768 и74,74% для8+4/768; широкие сценарии не доказывают выигрыша над77,92%public/74,4–74,95%tune. Рекомендация: не обучать2×40ч; сначала cold timer и независимыйK16 C≤0,5GPU-ч, pilots только после сигнала. CPU checks passed; новоеGPU/exec/push0, submission не менялась.
+ 
+ 2026-10-15 — ДЗ2: [[work/notes/r1-review|R1: независимое ревью и запуск]] — smokev1 COMPLETE348,65с; base/deep0,3509/0,4641с (1,323×), выбран encoder12. CUDA AMP/FP16 identity/Adam/scaler/stable/v7 прошли;15CPU tests. Private friend2 R1v1 RUNNING: C-long2x12vs6, ordinary weighted order/q10%,9ч30мин main+20мин cooldown, Secrets optional; early anchors passed. ETA≈18:20–18:40UTC, hard≈19:42UTC. Следующий шаг — после завершения скачать журналы/FP16 и сравнить paired greedy eval2048, bins/old991, K8 и test timing; stable сохранить для продолжения.
+ 
+--- a/README.md
++++ b/README.md
+@@ -1,4 +1,6 @@
+ # ДЗ 2 — генерация кода
++
++[Архитектура с учётом180с](work/notes/architecture-decision.md): реальные T4 замеры13/13 COMPLETE за332,46с; [квитанция](work/results/architecture-shape-bench.json), откалиброванные токены/greedy/voting, adaptive160/180с и hybrid+C. Прогноз single K8:6+6/768≈75,25%,8+4/768≈74,74% tune;80GPU-ч пока не рекомендованы. Сначала cold timer иK16 нынешних C; K>8 по качеству — экстраполяция.
+ 
+ [R1 review и запуск](work/notes/r1-review.md): smoke COMPLETE5мин49с,0,3509/0,4641с на T4,12слоёв; private friend2 R1v1 RUNNING, q10%/исходный weighted order,9,5ч main+20мин cooldown, Secrets optional. Ранние anchors прошли; hard≈19:42UTC.
+ 
+--- a/dashboard.md
++++ b/dashboard.md
+@@ -1,4 +1,6 @@
+ # Учебный dashboard
++
++NLP ДЗ2: [[work/notes/architecture-decision|Архитектура и180с: T4 COMPLETE13/13]] —332,46с, measured speeds/memory/micro и13прогнозов. Single K8:6+6/768≈75,25%,8+4/768≈74,74% tune против74,95%; не запускать2×40GPU-ч. Сначала cold timer/K16 C; хвостK>8 не наблюдался.
+ 
+ NLP ДЗ2: [[work/notes/d1-results|D1: результаты]] — полный CE9,73M, paired greedy135 324, A38 644; по дублям13,66% точности, CE-порог ухудшает. Ручные30:13–14 ошибок reference (proxy). C121 — резерв, оба order типа и protected-only control проверены R1 loader; R1 без D1-удалений. Следующая полезная разметка —11 097 strict-minority за10–20мин; full greedy18,55ч без safety.
+ 
+--- a/knowledge/bibliography.md
++++ b/knowledge/bibliography.md
+@@ -1,4 +1,6 @@
+ # Библиография
++
++- <a id="nlp-hw02-architecture-decision"></a> **nlp-hw02-architecture-decision**. Собственный пересчёт15.10.2026: [[work/notes/architecture-decision|13форм с учётом180с]], [384K8 журнала/кривые/сценарии](../work/results/architecture-decision.json), [реальный T4 benchmark13/13 COMPLETE](../work/results/architecture-shape-bench.json). Пользовательский thisarivson/nlp-hw02-shape-bench/v1,332,46с; SHA модулей/lengths сверены. Throughput/memory — измерения; size effects, quality transfer иK>8 — гипотезы. CPU-пересчёт без нового GPU/exec/push.
+ 
+ - <a id="nlp-hw02-d1-results"></a> **nlp-hw02-d1-results**. Собственные train-only измерения15.10.2026: [[work/notes/d1-results|полные результаты]], [[work/notes/d1-manual-review|30 ручных разборов]], [diagnostics](../work/results/d1-results.json), [orders/SHA](../work/checks/d1-filtered-orders.json). D1 COMPLETE, CE9 725 737, paired135 324,1271 receipts; A precision-proxy121/886=13,66%, CE хуже, C121 строка. Ручная оценка13–14/30 reference errors — proxy; исходный T4 code не сохранён,60 CPU replay answers совпали. R1 protected-only control рекомендован; реальное улучшение фильтром не измерено.
+ 
+--- a/courses/nlp/backlog.md
++++ b/courses/nlp/backlog.md
+@@ -1,6 +1,8 @@
+ # NLP — backlog
+ 
+ ## Ближайшие темы
++
++- [x] ДЗ2: пользовательский T4 [[work/notes/architecture-decision|shape bench]]13/13 COMPLETE,332,46с; замеры подставлены, SHA/CPU-проверки прошли. Две новые модели по40ч пока не рекомендованы.
+- [ ] ДЗ2: сначала полный cold timer текущего финала; отдельный K16 C≤0,5GPU-ч с новыми samples иmatched-time replay. Только после положительного сигнала — до4GPU-ч pilot на6+6/768 и8+4/768; неизвестны quality/stop rate/length drift, а K>8 в прогнозе экстраполирован.
+ 
+ - [ ] При необходимости отдельно разобрать код семинара 1: обучение BPE и LSTM на TinyStories, сравнение метрик генерации. Исходный ноутбук не запускался.
+ 

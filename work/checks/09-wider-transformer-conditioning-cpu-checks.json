@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-08",
+  "device": "CPU",
+  "torch": "2.14.1",
+  "scope": "new teacher-forcing sensitivity and bounded128-prefix generation checks on saved user weights; no updates or GPU measurements",
+  "fixed_tokenizer_sha256": "73614c921b43aa6ef715bb23bba583b96785a82304c1964f74ab11d8deef7f86",
+  "validation_examples": 64,
+  "bpe09_loss": {
+    "correct": 1.943602842012431,
+    "rotated": 1.9619465716283289,
+    "reversed": 1.9657313370658889
+  },
+  "bpe08_loss": {
+    "correct": 1.5732803198289047,
+    "rotated": 2.95026894128254,
+    "reversed": 3.0137533528333433
+  },
+  "rotated_minus_correct09": 0.01834372961589792,
+  "rotated_minus_correct08": 1.376988621453635,
+  "CPU_full_cached_greedy_equal": true,
+  "CPU_saved_T4_matches": [
+    {
+      "validation_index": 0,
+      "tokens_checked": 39,
+      "CPU_cached_equals_saved_T4_prefix": true
+    },
+    {
+      "validation_index": 1,
+      "tokens_checked": 39,
+      "CPU_cached_equals_saved_T4_prefix": true
+    },
+    {
+      "validation_index": 4,
+      "tokens_checked": 128,
+      "CPU_cached_equals_saved_T4_prefix": true
+    }
+  ],
+  "limits": "128-token check on3 questions, including1 capped. Not full512/1919 parity, no functional quality or optimizer-cause proof."
+}

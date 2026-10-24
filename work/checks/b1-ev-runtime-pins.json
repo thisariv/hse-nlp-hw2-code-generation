@@ -1,0 +1,15 @@
+{
+  "source": "friend2/nlp-hw02-kaggle-b1/1",
+  "implementation_sha256": {
+    "b1_runtime.py": "eaa7d9a81151e660b324779f127142a474471c67abd14d35600012687f440b36",
+    "b1_data.py": "cba9f8278c5a696949ff2de501b7b7fd04e5ea69b257e10188fe6193889bbfc3",
+    "exp26_core.py": "7247eae92a09a73b62c86fee80c261d3e3a0043cb863d7bc069426d214f575ce",
+    "exp26_train.py": "0392b8fabcae875eb7972a6c69f6594974603ae81090f4c484fbc47244fb2570",
+    "exp26_order.py": "98f6e43cf31810d4e86fdbf36b37aaf8dfe7c40ec82d065f82194d7056172783",
+    "l1_runtime.py": "cbcf26636a1a1a62d13ee8fe82a4e9deb420db13f2e811a0fb51832c3811f038",
+    "l2_runtime.py": "43ce7e35dbfbb5712a427e4aa9f8fb39532d873dde38cd029b9ba8a9fa771ed3",
+    "p1_math.py": "0e3fa4b4c388cf58ec4411719af8dab693fe84aa3a0e7f39a63567fcae8545db",
+    "r1_growth.py": "8d9cb97fe328e35b17a7345bef27cd6fa256f77d52afc27f16d48c660e18d5c0",
+    "s3_representation.py": "51c18fd6b9d158086c96da9f23dd72030da84e27cff18b51028934b0f21d519c"
+  }
+}

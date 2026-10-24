@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "assemblies": [
+    {
+      "owner": "friend2",
+      "smoke": false,
+      "modules": 87,
+      "passed": true
+    },
+    {
+      "owner": "friend2",
+      "smoke": true,
+      "modules": 87,
+      "passed": true
+    },
+    {
+      "owner": "thisarivson",
+      "smoke": false,
+      "modules": 87,
+      "passed": true
+    },
+    {
+      "owner": "thisarivson",
+      "smoke": true,
+      "modules": 87,
+      "passed": true
+    },
+    {
+      "owner": "friend1",
+      "smoke": false,
+      "modules": 87,
+      "passed": true
+    },
+    {
+      "owner": "friend1",
+      "smoke": true,
+      "modules": 87,
+      "passed": true
+    }
+  ],
+  "resume_final_assembly": true,
+  "session_envelope_seconds": {
+    "fresh": 39420,
+    "final": 40020
+  },
+  "hard_wall_seconds": 40800,
+  "GPU_run": false,
+  "push": false
+}

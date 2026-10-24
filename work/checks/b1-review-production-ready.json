@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "private": true,
+  "owner": "friend2",
+  "source_port_sha256": "9c9703751da827b6def744f049be06acf2b87bb655aea99a2d96199ea647c268",
+  "smoke_version": 2,
+  "CPU_tests": 20,
+  "main_seconds": 34200,
+  "marks": [
+    9000,
+    28370,
+    34200
+  ],
+  "cooldown_seconds": 900,
+  "eval_seconds": 600,
+  "main_q": 0,
+  "dropout": 0,
+  "peak_lr": 0.001,
+  "fresh": true,
+  "full_stable_states": true,
+  "worker_deadline_seconds": 40260,
+  "hard_wall_seconds": 40800,
+  "session_timeout_seconds": 40800,
+  "free_quota_seconds": 71322.736
+}

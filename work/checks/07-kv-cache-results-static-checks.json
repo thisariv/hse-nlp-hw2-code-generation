@@ -1,0 +1,155 @@
+{
+  "experiment": "07-kv-cache-byte-20k-pairs-checkpoint-50000",
+  "checked_on": "2026-10-07",
+  "method": "Read/parse/hash/AST/arithmetic only; no model forward, training, program execution or speed benchmark",
+  "archive_crc_and_manifest_hashes_valid": true,
+  "code_cells_identical_to_prepared": 10,
+  "execution_counts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "error_outputs": 0,
+  "printed_json_matches_archive": true,
+  "all_example_fields_and_aggregates_recomputed": true,
+  "checked_example_records": 3966,
+  "validation_questions_and_references_unchanged": true,
+  "test_question_order_matches_pinned_parquet": true,
+  "validation_tokens_equal": 64,
+  "test_tokens_equal": 1919,
+  "validation_code_equal_to_experiment06": 64,
+  "source_checkpoint_and_archive_sha256_match": true,
+  "model_fingerprint_matches_cpu_preparation": true,
+  "recomputed_quality": {
+    "validation_64": {
+      "examples": 64,
+      "generated_tokens": 13498,
+      "mean_generated_tokens": 210.90625,
+      "max_generated_tokens": 512,
+      "eos_emitted_count": 61,
+      "reached_cap_without_eos_count": 3,
+      "parses_as_python_count": 41,
+      "defines_solve_count": 41,
+      "solve_has_value_return_count": 40,
+      "exact_code_match_count": 0,
+      "exact_tokens_with_eos_count": 0
+    },
+    "test_1919": {
+      "examples": 1919,
+      "generated_tokens": 391751,
+      "mean_generated_tokens": 204.14330380406463,
+      "max_generated_tokens": 512,
+      "eos_emitted_count": 1820,
+      "reached_cap_without_eos_count": 99,
+      "parses_as_python_count": 1088,
+      "defines_solve_count": 1088,
+      "solve_has_value_return_count": 1060
+    }
+  },
+  "syntax_error_breakdowns": {
+    "validation_64": {
+      "IndentationError: unindent does not match any outer indentation level": 1,
+      "IndentationError: unexpected indent": 19,
+      "SyntaxError: unmatched ')'": 1,
+      "SyntaxError: invalid syntax": 1,
+      "SyntaxError: cannot assign to expression": 1
+    },
+    "test_1919": {
+      "IndentationError: unindent does not match any outer indentation level": 180,
+      "IndentationError: unexpected indent": 574,
+      "SyntaxError: '(' was never closed": 6,
+      "SyntaxError: invalid syntax": 50,
+      "SyntaxError: cannot assign to expression": 15,
+      "SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers": 3,
+      "SyntaxError: invalid decimal literal": 3
+    }
+  },
+  "batch_statistics": {
+    "test_batches": 60,
+    "batches_reaching_cap": 49,
+    "max_padded_input_tokens": 717,
+    "generation_slots": 933024,
+    "active_tokens": 391751,
+    "already_finished_slots": 541273,
+    "already_finished_fraction": 0.580127628013856
+  },
+  "timing_arithmetic": {
+    "validation64": {
+      "median_seconds": {
+        "reference": 12.199947019000035,
+        "cached": 2.001475327000037
+      },
+      "speedup": 6.095477098529234,
+      "all_three_repeat_seconds": {
+        "reference": [
+          11.877136231000009,
+          12.199947019000035,
+          12.428083030999971
+        ],
+        "cached": [
+          2.001475327000037,
+          1.986846642000046,
+          2.0458915549999688
+        ]
+      },
+      "peak_gpu_memory_mib": {
+        "reference": 485.8701171875,
+        "cached": 170.396484375
+      }
+    },
+    "test1919": {
+      "reference": {
+        "path": "reference",
+        "split": "test_1919",
+        "repeat": 1,
+        "examples": 1919,
+        "seconds": 370.032955831,
+        "answers_per_second": 5.186024568245316,
+        "generated_tokens": 391751,
+        "tokens_per_second": 1058.6921889706466,
+        "mean_generated_tokens": 204.14330380406463,
+        "max_generated_tokens": 512,
+        "peak_gpu_memory_mib": 575.03271484375,
+        "eos_emitted_count": 1820,
+        "reached_cap_without_eos_count": 99,
+        "parses_as_python_count": 1088,
+        "defines_solve_count": 1088,
+        "solve_has_value_return_count": 1060
+      },
+      "cached": {
+        "path": "cached",
+        "split": "test_1919",
+        "repeat": 1,
+        "examples": 1919,
+        "seconds": 61.397356916000035,
+        "answers_per_second": 31.255417112261917,
+        "generated_tokens": 391751,
+        "tokens_per_second": 6380.5841110712445,
+        "mean_generated_tokens": 204.14330380406463,
+        "max_generated_tokens": 512,
+        "peak_gpu_memory_mib": 575.03271484375,
+        "eos_emitted_count": 1820,
+        "reached_cap_without_eos_count": 99,
+        "parses_as_python_count": 1088,
+        "defines_solve_count": 1088,
+        "solve_has_value_return_count": 1060
+      },
+      "speedup": 6.026854809682696,
+      "remaining_to_180_seconds": 118.60264308399996,
+      "limit_ratio": 2.9317222929688094,
+      "time_reduction_percent": 83.40759763461685
+    }
+  },
+  "all_checks_passed": true,
+  "gpu_training_or_inference_rerun_now": false,
+  "model_forward_performed_now": false,
+  "generated_or_reference_programs_executed": false,
+  "functional_quality_evaluated_now": false
+}

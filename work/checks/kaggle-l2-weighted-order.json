@@ -1,0 +1,29 @@
+{
+  "seed": 2026101302,
+  "rows": 9725737,
+  "slots": 11227811,
+  "batch": 128,
+  "chunk": 4096,
+  "length_source": "verified compact target-offsets",
+  "original_lengths_available": false,
+  "threshold": 79,
+  "heldout_original_ge90": 626,
+  "heldout_rows": 4096,
+  "target_long_fraction": 0.15283203125,
+  "train_long_rows": 1502074,
+  "train_long_fraction": 0.15444320569227812,
+  "fraction_error": 0.0016111744422781238,
+  "weighted_long_fraction": 0.2675631073590391,
+  "multiplicity": {
+    "short": 1,
+    "long": 2
+  },
+  "cache_manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+  "file": {
+    "file": "order.npy",
+    "sha256": "72bc3dfd3a3e738979c489c0cf8f41cde092c41d4ae90f2de8378a034603a4db",
+    "bytes": 44911372
+  },
+  "selection": "nearest attainable threshold; higher threshold wins ties; no loss reweighting",
+  "lengths_sha256": "06b94974710dca43173fa06467c643c1d5a45996e8cc6c62f18b4f67b6578f83"
+}

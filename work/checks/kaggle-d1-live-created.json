@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "account": "friend1",
+  "ref": "friend1/nlp-hw02-d1-live",
+  "private": true,
+  "version": 1,
+  "already_existed": true,
+  "seed_sha256": "6fd712d4b805e8cd49b709e01260aef15ae28875dfc31e659f0a4d81c9c52d36",
+  "seed_bytes": 29642620,
+  "remote_seed_file": "seed-evidence.npz",
+  "source_datasets": {
+    "friend1/nlp-hw02-compact-cache-verified": {
+      "private": true,
+      "version": 1
+    },
+    "friend1/nlp-hw02-l3-live": {
+      "private": true,
+      "version": 12
+    },
+    "friend1/nlp-hw02-d1-live": {
+      "private": true,
+      "version": 1
+    }
+  },
+  "L3_final_weight_files_verified": true,
+  "GPU": false,
+  "kernel_push": false
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-09",
+  "training_pairs": 20000,
+  "training_corpus_sha256": "1304183967f02f01097d76c12fb24df30916a4ec44e54833cd3509264359300e",
+  "training_corpus_utf8_bytes": 7983574,
+  "content_vocab_achieved": 8189,
+  "model_vocab_including_specials": 8192,
+  "train_seconds_CPU": 4.023003499954939,
+  "probe_round_trip": true,
+  "digit1500_tokens": [
+    "1",
+    "5",
+    "0",
+    "0"
+  ],
+  "interpretation": "20k mechanically suffices to learn requested8k vocabulary; this does not establish tokenizer/LM quality. Delivered19 uses all500k per user steering.",
+  "model_training_performed": false
+}

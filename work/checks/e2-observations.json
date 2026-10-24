@@ -1,0 +1,177 @@
+[
+  {
+    "at_utc": "2026-10-20T08:02:52.253716+00:00",
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 36.956634,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 28885.767035,
+      "used_seconds": 79114.232965,
+      "reserved_seconds": 0.0
+    },
+    "current_version": 1,
+    "all_code_cells_exact": true,
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs",
+      "thisarivson/nlp-hw02-b6-fp16",
+      "thisarivson/nlp-hw02-p1-weights"
+    ],
+    "last_run_time_utc": "2026-10-17 08:02:49.603000"
+  },
+  {
+    "at_utc": "2026-10-20T08:08:21.850165+00:00",
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 329.596482,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 28556.228389,
+      "used_seconds": 79443.771611,
+      "reserved_seconds": 0.0
+    },
+    "current_version": 1,
+    "all_code_cells_exact": true,
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs",
+      "thisarivson/nlp-hw02-b6-fp16",
+      "thisarivson/nlp-hw02-p1-weights"
+    ],
+    "last_run_time_utc": "2026-10-17 08:08:19.184000"
+  },
+  {
+    "at_utc": "2026-10-20T08:09:14.535541+00:00",
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 382.281851,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 28503.555882,
+      "used_seconds": 79496.444118,
+      "reserved_seconds": 0.0
+    },
+    "current_version": 1,
+    "all_code_cells_exact": true,
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs",
+      "thisarivson/nlp-hw02-b6-fp16",
+      "thisarivson/nlp-hw02-p1-weights"
+    ],
+    "last_run_time_utc": "2026-10-17 08:09:12.159000"
+  },
+  {
+    "at_utc": "2026-10-20T08:10:23.362911+00:00",
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 451.109222,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 28434.726372,
+      "used_seconds": 79565.273628,
+      "reserved_seconds": 0.0
+    },
+    "current_version": 1,
+    "all_code_cells_exact": true,
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs",
+      "thisarivson/nlp-hw02-b6-fp16",
+      "thisarivson/nlp-hw02-p1-weights"
+    ],
+    "last_run_time_utc": "2026-10-17 08:10:20.985000"
+  },
+  {
+    "at_utc": "2026-10-20T08:11:46.055468+00:00",
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 533.80179,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 28352.008958,
+      "used_seconds": 79647.991042,
+      "reserved_seconds": 0.0
+    },
+    "current_version": 1,
+    "all_code_cells_exact": true,
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs",
+      "thisarivson/nlp-hw02-b6-fp16",
+      "thisarivson/nlp-hw02-p1-weights"
+    ],
+    "last_run_time_utc": "2026-10-17 08:11:43.583000"
+  },
+  {
+    "at_utc": "2026-10-20T08:13:11.537738+00:00",
+    "status": "COMPLETE",
+    "output_visible": true,
+    "log_chars": 4938,
+    "status_seconds": 85.48231,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 28303.605,
+      "used_seconds": 79696.395,
+      "reserved_seconds": 0.0
+    },
+    "current_version": 1,
+    "all_code_cells_exact": true,
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs",
+      "thisarivson/nlp-hw02-b6-fp16",
+      "thisarivson/nlp-hw02-p1-weights"
+    ],
+    "last_run_time_utc": "2026-10-17 08:13:10.263000"
+  },
+  {
+    "at_utc": "2026-10-20T08:15:51.596896+00:00",
+    "status": "COMPLETE",
+    "output_visible": true,
+    "log_chars": 4938,
+    "status_seconds": 245.541445,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 28303.605,
+      "used_seconds": 79696.395,
+      "reserved_seconds": 0.0
+    },
+    "current_version": 1,
+    "all_code_cells_exact": true,
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs",
+      "thisarivson/nlp-hw02-b6-fp16",
+      "thisarivson/nlp-hw02-p1-weights"
+    ],
+    "last_run_time_utc": "2026-10-17 08:15:50.016000"
+  }
+]

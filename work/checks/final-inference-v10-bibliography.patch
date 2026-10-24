@@ -1,0 +1,8 @@
+--- a/knowledge/bibliography.md
++++ b/knowledge/bibliography.md
+@@ -368,3 +368,5 @@
+ - <a id="li2023-diverse"></a> **li2023-diverse**. Li Y. et al. «Making Language Models Better Reasoners with Step-Aware Verifier». ACL2023, pp5315–5333. [ACL Anthology](https://aclanthology.org/2023.acl-long.291/). Разнообразие prompts, sampling и step-aware verifier; источник мотивации [[work/notes/tta-experiment|TTA]], без переноса внешних моделей/данных.
+ 
+ - <a id="nlp-hw02-tta"></a> **nlp-hw02-tta**. Предрегистрированный19.10.2026 TTA-опыт ДЗ2: train-only survey120000 вопросов sealed cache SlavaYus/tinysms_qa_12m, три детерминированных правила, frozen v8 weights/decode/execute; план свежих tune2048/eval2048 и парного bootstrap при равном числе samples. Единственный private push после60мин остаётся QUEUED/output0; GPU-метрик нет. [[work/notes/tta-experiment|Протокол, измерения и решение]].
++
++- <a id="nlp-hw02-ensemble-inference-v10"></a> **nlp-hw02-ensemble-inference-v10**. Собственная сборка19.10.2026 по фиксированному протоколу оркестратора: C-long2x B6/P1-B/W B6, greedy C, K1=1/1/1→K2=1/5/6, production replay1553/2048 с2048точными winners, strict FP16/регрессии/статика; один private API push friend1/v1; внешнийv2 с exact code parity, обе версии CANCEL_ACKNOWLEDGED/output0 после60мин ожидания; cold test1919/fresh tune2048/JSONL остаются pending. [[work/notes/final-inference#V10: C-long2x B6 / P1-B / W B6|Протокол, проверки и измерения v10]], [source identity](../work/kaggle/final-v10-source-identity.json). Offline и proxy — exploratory, свежий GPU-tune сравнивается с v8 1532; новых внешних научных источников нет.

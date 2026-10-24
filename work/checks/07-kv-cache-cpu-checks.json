@@ -1,0 +1,292 @@
+{
+  "experiment": "07-kv-cache-byte-20k-pairs-checkpoint-50000",
+  "checked_on": "2026-10-07",
+  "runtime": {
+    "device": "CPU",
+    "torch": "2.14.1",
+    "threads": 2,
+    "dtype": "FP32"
+  },
+  "notebook_sha256": "6175ffc4f8a88e85506783ebb7de40be3d143010a513e1d13a71ec53b715d483",
+  "source_checkpoint_sha256": "3dbd745c9662aa2a73b3832e6ed09990dd9f41974c3dd7172eda1f00d5007271",
+  "source_archive_sha256": "a3c93ccc5995849518a31e10eeace2748343efbf5ccb6ac87f8c14b9f49f9195",
+  "gpu_benchmark_performed": false,
+  "training_performed": false,
+  "functional_quality_evaluated": false,
+  "full_1919_test_inference_performed": false,
+  "compiled_code_cells": 10,
+  "reference_class_ast_identical_to_06": true,
+  "scope": "Real weights: padded prefix logits, full-cap greedy and cache calls. CPU smoke: original notebook cells with explicit reduced generation/row/repeat limits; no T4 timing claim.",
+  "prefix_check": {
+    "examples": 3,
+    "atol": 0.0001,
+    "rtol": 0.0001,
+    "positions": [
+      {
+        "position": 0,
+        "max_abs_error": 9.5367431640625e-06,
+        "all_close": true
+      },
+      {
+        "position": 1,
+        "max_abs_error": 9.5367431640625e-06,
+        "all_close": true
+      },
+      {
+        "position": 2,
+        "max_abs_error": 8.58306884765625e-06,
+        "all_close": true
+      },
+      {
+        "position": 7,
+        "max_abs_error": 6.67572021484375e-06,
+        "all_close": true
+      },
+      {
+        "position": 31,
+        "max_abs_error": 9.5367431640625e-06,
+        "all_close": true
+      },
+      {
+        "position": 63,
+        "max_abs_error": 1.1444091796875e-05,
+        "all_close": true
+      },
+      {
+        "position": 127,
+        "max_abs_error": 1.049041748046875e-05,
+        "all_close": true
+      },
+      {
+        "position": 191,
+        "max_abs_error": 1.33514404296875e-05,
+        "all_close": true
+      },
+      {
+        "position": 297,
+        "max_abs_error": 1.239776611328125e-05,
+        "all_close": true
+      }
+    ],
+    "all_close": true
+  },
+  "source_test": {
+    "url": "https://huggingface.co/datasets/SlavaYus/tinysms_qa_12m/resolve/b2724689ff079e9c22efd548fe134bfb29036dbb/data/test/test.parquet",
+    "file_sha256": "8bde59c8d8bb7edc4e8a503be22fc132c4a47773025d333432e78c5489e6522a",
+    "rows": 1919,
+    "questions_sha256": "d6b52e39fb2d2a27ee34c081be596ab884d84dab30a99cf5011fabd0ff02d0db",
+    "row_order": "unchanged parquet order"
+  },
+  "model_fingerprint_before": "ba270be11c70444ea74b1d6e2b519642ced2ee22e48dd93443aef0d4dd8c05e0",
+  "full_cap_real_greedy": {
+    "validation_indices": [
+      0,
+      1,
+      16
+    ],
+    "cap": 512,
+    "raw_tensor_equal": true,
+    "fresh_cache_repeat_equal": true,
+    "shape": [
+      3,
+      512
+    ],
+    "active_lengths": [
+      145,
+      154,
+      512
+    ],
+    "eos": [
+      true,
+      true,
+      false
+    ],
+    "token_sequences_sha256": "ce92f995a63cb46c2c02bf3ad32f9148e8f0fade71889ad9c048713ac453bb6e"
+  },
+  "padding_and_position_boundary": [
+    {
+      "position": 255,
+      "max_abs_error": 1.239776611328125e-05,
+      "all_close": true
+    },
+    {
+      "position": 511,
+      "max_abs_error": 7.62939453125e-06,
+      "all_close": true
+    }
+  ],
+  "cache_call_structure": {
+    "encoder": 1,
+    "self_qkv": [
+      [
+        2,
+        1,
+        128
+      ],
+      [
+        2,
+        1,
+        128
+      ],
+      [
+        2,
+        1,
+        128
+      ],
+      [
+        2,
+        1,
+        128
+      ],
+      [
+        2,
+        1,
+        128
+      ],
+      [
+        2,
+        1,
+        128
+      ],
+      [
+        2,
+        1,
+        128
+      ],
+      [
+        2,
+        1,
+        128
+      ]
+    ],
+    "cross_kv": [
+      [
+        2,
+        143,
+        128
+      ],
+      [
+        2,
+        143,
+        128
+      ]
+    ],
+    "cross_q": [
+      [
+        2,
+        1,
+        128
+      ],
+      [
+        2,
+        1,
+        128
+      ],
+      [
+        2,
+        1,
+        128
+      ],
+      [
+        2,
+        1,
+        128
+      ],
+      [
+        2,
+        1,
+        128
+      ],
+      [
+        2,
+        1,
+        128
+      ],
+      [
+        2,
+        1,
+        128
+      ],
+      [
+        2,
+        1,
+        128
+      ]
+    ]
+  },
+  "capacity_and_token_shape_guards": true,
+  "eos_and_pad_fixtures": [
+    {
+      "name": "all_eos_first",
+      "both_paths_match_expected": true,
+      "tokens": [
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "name": "mixed_eos_and_cap",
+      "both_paths_match_expected": true,
+      "tokens": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          43,
+          43,
+          2
+        ],
+        [
+          44,
+          44,
+          44
+        ]
+      ]
+    },
+    {
+      "name": "eos_on_last_step",
+      "both_paths_match_expected": true,
+      "tokens": [
+        [
+          43,
+          43,
+          2
+        ],
+        [
+          44,
+          44,
+          2
+        ],
+        [
+          45,
+          45,
+          2
+        ]
+      ]
+    }
+  ],
+  "reduced_cpu_cell_flow": {
+    "generation_cap": 8,
+    "batch": 2,
+    "repeats": 2,
+    "validation_rows": 3,
+    "test_rows": 4,
+    "original_control_cells_completed": true,
+    "zip_crc_manifest_hashes_valid": true,
+    "download_called": true
+  },
+  "partial_zip_ignores_stale_test_and_test_gate": true,
+  "validation_mismatch_persists_and_stops": true,
+  "model_fingerprint_after": "ba270be11c70444ea74b1d6e2b519642ced2ee22e48dd93443aef0d4dd8c05e0",
+  "weights_and_source_files_unchanged": true,
+  "all_checks_passed": true
+}

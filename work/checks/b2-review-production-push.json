@@ -1,0 +1,13 @@
+{
+  "ref": "friend2/nlp-hw02-b2",
+  "checked_at_utc": "2026-10-16T08:26:43.942009+00:00",
+  "quota_free_seconds": 33568.076,
+  "quota_margin_seconds": 2068.076000000001,
+  "refresh_utc": "2026-10-17T00:00:00+00:00",
+  "version": 1,
+  "private": true,
+  "backend_timeout_seconds": 31500,
+  "pushed_at_utc": "2026-10-16T08:26:47.206130+00:00",
+  "requested_ref": "friend2/nlp-hw02-kaggle-b2",
+  "canonical_ref_verified_by": "own kernels_list and private pinned get_kernel, source SHA exact"
+}

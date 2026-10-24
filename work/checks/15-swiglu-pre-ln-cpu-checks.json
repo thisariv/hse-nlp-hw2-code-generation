@@ -1,0 +1,89 @@
+{
+  "date": "2026-10-08",
+  "notebook_sha256": "b46c5e6ab9604634f05ee8f1b27e52ca59b9fce39bd9a1e9059c972fe54566a1",
+  "runtime": {
+    "device": "CPU",
+    "torch": "2.14.1"
+  },
+  "model_parameters": 6306112,
+  "relu_reference_parameters": 6312960,
+  "unchanged_initial_tensors_exactly_equal_to13": 52,
+  "non_FFN_initial_weights_and_CPU_RNG_match13": true,
+  "all_four_biased_SwiGLU680_FFNs_match_formula": true,
+  "Pre_LN_final_norms_and_encoder_gated_fastpath_guard": true,
+  "all_gate_value_output_and_attention_gradients_finite_nonzero": true,
+  "minimum_checked_gradient_L1": 0.1071111336350441,
+  "causal_target_and_source_padding_invariance": true,
+  "full_prefix_vs_KV_before_and_after_training": [
+    {
+      "positions": [
+        0,
+        1,
+        2,
+        7,
+        15,
+        31,
+        63,
+        127,
+        255,
+        383,
+        511
+      ],
+      "max_abs_error": 1.3113021850585938e-06,
+      "greedy_64_tokens_equal": true
+    },
+    {
+      "positions": [
+        0,
+        1,
+        2,
+        7,
+        15,
+        31,
+        63,
+        127,
+        255,
+        383,
+        511
+      ],
+      "max_abs_error": 1.3113021850585938e-06,
+      "greedy_64_tokens_equal": true
+    }
+  ],
+  "LR_samples": {
+    "1": 1e-06,
+    "999": 0.000999,
+    "1000": 0.001,
+    "1001": 0.0009999999990751099,
+    "25000": 0.000564423209907245,
+    "49999": 0.00010000000092489007,
+    "50000": 0.0001,
+    "50001": 0.0001,
+    "75000": 0.0001,
+    "100000": 0.0001
+  },
+  "LR_floor_all50000_to100000": true,
+  "total_full_model_optimizer_updates": 11,
+  "diagnostic_run_updates": 4,
+  "uninterrupted_control_updates": 4,
+  "checkpoint_resume_updates": 2,
+  "controlled_interruption_updates": 1,
+  "weights_AdamW_scheduler_RNG_equal_with_without_diagnostics": true,
+  "checkpoint_resume_exact_CPU_match": true,
+  "early64_and_full1024_control_paths_executed": true,
+  "fixed_reference_numeric_denominators": {
+    "original256": 223,
+    "all1024": 888
+  },
+  "same_question_reference_hashes_as14": true,
+  "rerun_guard": true,
+  "interruption_saves_consistent_step1": true,
+  "complete_and_interrupted_ZIP_CRC_and_manifest_SHA256": true,
+  "full_public_train_and_heldout_selection_executed": true,
+  "generation_cap_during_heldout_smoke": 4,
+  "test_rows_during_smoke": 2,
+  "scope": "CPU implementation check with11 total optimizer updates, not learning/quality or T4 speed results. Full100000-step training and full1919 test generation have not run.",
+  "executed_notebook_sha256": "8a1096baae1b6d7e2e4437cc764829f316861e533a3a22038ce4143037e437d2",
+  "code_cells_unchanged_after_execution": true,
+  "post_execution_change": "Markdown heading numbering and spacing only; no code/metadata/output changes to code cells"
+}

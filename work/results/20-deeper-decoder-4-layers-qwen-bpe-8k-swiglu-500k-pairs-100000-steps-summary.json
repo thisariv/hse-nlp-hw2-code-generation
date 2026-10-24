@@ -1,0 +1,457 @@
+{
+  "date": "2026-10-09",
+  "experiment": "20-deeper-decoder4-qwen-bpe8k-swiglu-500k-pairs-100000-steps-heldout1024",
+  "source_notebook": {
+    "name": "20_deeper_decoder_4_layers_qwen_bpe_8k_swiglu_500k_pairs_100000_steps.ipynb",
+    "bytes": 1435919,
+    "sha256": "d58d528ae6c9de243ca3b12ef796d445270867f06f17b613e18107dcb75a46aa"
+  },
+  "source_archive": {
+    "name": "hw02-decoder4-qwen-bpe8k-swiglu-500k-100000steps-results.zip",
+    "bytes": 451499268,
+    "sha256": "13dc7e22bd688a640ed66f10f565e7227c4e9899db51dc067f6ea4fcb2a0ebc8"
+  },
+  "stored_notebook": {
+    "file": "20-deeper-decoder-4-layers-qwen-bpe-8k-swiglu-500k-pairs-100000-steps-results.ipynb",
+    "sha256": "9a501e28fd005a3f35e3a042978cd152c15e2ecde3eadb7d8693fefd29ba0bfb",
+    "changes": "Colab metadata only; code, original partial execution counts and outputs preserved"
+  },
+  "manifest": {
+    "experiment": "20-deeper-decoder4-qwen-bpe8k-swiglu-500k-pairs-100000-steps-heldout1024",
+    "actual_steps": 100000,
+    "phase": "complete",
+    "files": [
+      {
+        "name": "README.txt",
+        "bytes": 533,
+        "sha256": "28ba36bccb1d564d8f8c717df49d92b05fb25bc2e6c7cbadbd15e32a5d45a569"
+      },
+      {
+        "name": "fresh-heldout-reserved.json",
+        "bytes": 460807,
+        "sha256": "7de47cf272e357ef36f3a87eb1fd2574d033aaa72ea0d3e223977d176c14ece1"
+      },
+      {
+        "name": "latest.pt",
+        "bytes": 127323787,
+        "sha256": "61131a5b9002ab54549f7d9c3ab2536c84dd7e830f270efb9bd64d9b8823e3bd"
+      },
+      {
+        "name": "results.json",
+        "bytes": 15064413,
+        "sha256": "99a37dac876e4c06b372e80f5084c1580f1298f86e18f3e740cc6070837d8e2d"
+      },
+      {
+        "name": "step-100000.pt",
+        "bytes": 127326152,
+        "sha256": "e6acfde6e616f1e8e5e9d32fb33a7595b3a4bc1a3aca7b9d9673c1c500cdcfdf"
+      },
+      {
+        "name": "step-50000.pt",
+        "bytes": 127325615,
+        "sha256": "6f8de94ec5237ef7387660b4cbe8a82ca30ece87f7c68b8165aa0b6474aa3ead"
+      },
+      {
+        "name": "step-75000.pt",
+        "bytes": 127325743,
+        "sha256": "c1fe1a1dbc2d08138bdff8880ed24496d64fb78b3cc36a299c2620fe1ef4e8c4"
+      },
+      {
+        "name": "test-generations.json",
+        "bytes": 3609486,
+        "sha256": "a0901356c2e6d966d3ce8f7285725a872c0e3b0ff3358ad51e7db74667e7e89a"
+      },
+      {
+        "name": "tokenizer.json",
+        "bytes": 545866,
+        "sha256": "261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d"
+      }
+    ]
+  },
+  "checkpoints": [
+    {
+      "source_member": "step-50000.pt",
+      "local_file": "checkpoints/20-deeper-decoder-4-layers-qwen-bpe-8k-swiglu-500k-pairs-step-50000.pt",
+      "bytes": 127325615,
+      "sha256": "6f8de94ec5237ef7387660b4cbe8a82ca30ece87f7c68b8165aa0b6474aa3ead",
+      "steps": 50000,
+      "finite_model_and_AdamW": true,
+      "unique_train_rows_seen": 275423,
+      "same_Python_RNG_seen_rows_as19": true
+    },
+    {
+      "source_member": "step-75000.pt",
+      "local_file": "checkpoints/20-deeper-decoder-4-layers-qwen-bpe-8k-swiglu-500k-pairs-step-75000.pt",
+      "bytes": 127325743,
+      "sha256": "c1fe1a1dbc2d08138bdff8880ed24496d64fb78b3cc36a299c2620fe1ef4e8c4",
+      "steps": 75000,
+      "finite_model_and_AdamW": true,
+      "unique_train_rows_seen": 349535,
+      "same_Python_RNG_seen_rows_as19": true
+    },
+    {
+      "source_member": "step-100000.pt",
+      "local_file": "checkpoints/20-deeper-decoder-4-layers-qwen-bpe-8k-swiglu-500k-pairs-step-100000.pt",
+      "bytes": 127326152,
+      "sha256": "e6acfde6e616f1e8e5e9d32fb33a7595b3a4bc1a3aca7b9d9673c1c500cdcfdf",
+      "steps": 100000,
+      "finite_model_and_AdamW": true,
+      "unique_train_rows_seen": 399353,
+      "same_Python_RNG_seen_rows_as19": true
+    },
+    {
+      "source_member": "latest.pt",
+      "local_file": "checkpoints/20-deeper-decoder-4-layers-qwen-bpe-8k-swiglu-500k-pairs-latest-step-100000.pt",
+      "bytes": 127323787,
+      "sha256": "61131a5b9002ab54549f7d9c3ab2536c84dd7e830f270efb9bd64d9b8823e3bd",
+      "steps": 100000,
+      "finite_model_and_AdamW": true,
+      "unique_train_rows_seen": 399353,
+      "same_Python_RNG_seen_rows_as19": true
+    }
+  ],
+  "runtime": {
+    "device": "cuda",
+    "gpu": "Tesla T4",
+    "torch": "2.11.0+cu130",
+    "cuda": "13.0",
+    "tokenizers": "0.23.2",
+    "cpu_threads": 1
+  },
+  "config": {
+    "seed": 42,
+    "train_size": 500000,
+    "batch_size_train": 8,
+    "total_steps": 100000,
+    "evaluation_steps": [
+      2000,
+      5000,
+      10000,
+      20000,
+      30000,
+      50000,
+      75000,
+      100000
+    ],
+    "full_evaluation_steps": [
+      50000,
+      75000,
+      100000
+    ],
+    "d_model": 256,
+    "encoder_layers": 2,
+    "decoder_layers": 4,
+    "heads": 4,
+    "ffn_dim": 680,
+    "relu_reference_ffn_dim": 1024,
+    "dropout": 0.1,
+    "activation": "SwiGLU (SiLU gate * linear value)",
+    "ffn_bias": true,
+    "norm_first": true,
+    "lr": 0.001,
+    "optimizer": "AdamW",
+    "weight_decay": 0.01,
+    "clip_norm": 1.0,
+    "scheduler": {
+      "name": "LambdaLR",
+      "schedule": "linear_warmup_then_cosine",
+      "total_steps": 50000,
+      "warmup_steps": 1000,
+      "cosine_steps": 49000,
+      "peak_lr": 0.001,
+      "eta_min": 0.0001,
+      "first_update_lr": 1e-06,
+      "restarts": false,
+      "step_unit": "optimizer update",
+      "indexing": "s=1..T; updateW uses peak; updateT uses floor; scheduler index counts completed updates",
+      "lr_after_original_horizon": 0.0001
+    },
+    "dtype": "float32",
+    "tokenizer": "own Qwen-style byte-level BPE",
+    "vocab": 8192,
+    "content_id_offset": 3,
+    "special_ids": {
+      "pad": 0,
+      "bos": 1,
+      "eos": 2
+    },
+    "tokenizer_sha256": "261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d",
+    "max_positions": 2048,
+    "generation_cap": 512,
+    "batch_size_inference": 32,
+    "inference": "Pre-LN incremental KV cache",
+    "tokenizer_source_experiment": "19",
+    "training_from_scratch": true,
+    "ffn_initialization": "Vocab8192 encoder2/decoder4 initialized from scratch; SwiGLU under isolated seed42 CPU RNG, Xavier matrices and nn.Linear biases; no checkpoint loaded; initial common tensors not constrained to saved19",
+    "parameter_change_vs18": 4204704,
+    "parameter_change_vs19": 2103456,
+    "experiment_factor": "decoder depth2 to4; same encoder2/width256/Qwen BPE8k/train500k/100k updates/LR/FP32/cache as19; from scratch; one seed, not a guarantee of capacity bottleneck",
+    "data_preparation": "cached BPE IDs as16/B; FP32 weights/AdamW; no AMP",
+    "training_coverage_tracking": "per-row CPU byte flags and useful target token count, included in train timer"
+  },
+  "data": {
+    "revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+    "training_examples": 500000,
+    "shards_used": [
+      {
+        "shard": 0,
+        "path": "data/train/part-00000.parquet",
+        "bytes": 26169796,
+        "sha256": "91831d582faa12d73b1a6b3878e496446cd5df074f17ee4ffea8cc2887c708ec",
+        "source_rows": 200000,
+        "rows_scanned": 200000,
+        "question_over512": 694,
+        "code_512_or_more": 5418,
+        "eligible_rows": 194060,
+        "test_copies_excluded": 0,
+        "hash_heldout_rows_excluded": 19541,
+        "accepted_train_pairs": 174519
+      },
+      {
+        "shard": 1,
+        "path": "data/train/part-00001.parquet",
+        "bytes": 26166175,
+        "sha256": "5222d657a1af07a531f1b22503f35741a6547f0831509897d0a279bc8f67d068",
+        "source_rows": 200000,
+        "rows_scanned": 200000,
+        "question_over512": 682,
+        "code_512_or_more": 5369,
+        "eligible_rows": 194120,
+        "test_copies_excluded": 0,
+        "hash_heldout_rows_excluded": 19275,
+        "accepted_train_pairs": 174845
+      },
+      {
+        "shard": 2,
+        "path": "data/train/part-00002.parquet",
+        "bytes": 26162244,
+        "sha256": "c6082401ea966aeaa8375018ae1f1d9c7c55cc30e421c45cc933ceacd97dc3de",
+        "source_rows": 200000,
+        "rows_scanned": 172788,
+        "question_over512": 604,
+        "code_512_or_more": 4806,
+        "eligible_rows": 167523,
+        "test_copies_excluded": 0,
+        "hash_heldout_rows_excluded": 16887,
+        "accepted_train_pairs": 150636
+      }
+    ],
+    "selection": "first500k eligible non-hash-heldout, non-test rows across consecutive pinned shards0..; original100k exact prefix; question<=512/code<512 UTF8 bytes; duplicate train questions retained as before",
+    "train_sha256": "61483f4dc6970ff5f2b1afffa45d57391dcfc01ab6ec4f140c6e6b6c792c8c38",
+    "train_locations_sha256": "c2332a54a923ffa85da9ac91ec0a39a2e4ead7f7c2e328abecef702e1d306ba7",
+    "base20k_sha256": "1304183967f02f01097d76c12fb24df30916a4ec44e54833cd3509264359300e",
+    "base100k_sha256": "7a141e91ce958206be7e18d3c50b5ccf72a10f1d94890c5f0c3927aa497e47b9",
+    "base20k_prefix_unchanged": true,
+    "base100k_prefix_unchanged": true,
+    "train64_sha256": "125106742b04a01ebe70f106730c0bd9a30f52244bef86b4215f27591d200203",
+    "unique_train_questions": 485373,
+    "duplicate_question_rows": 14627,
+    "validation_examples": 64,
+    "validation64_sha256": "0edf2b479ebdc103ec05efc704c7bb0ac8084e41a8a44b58afef224702563050",
+    "extra_heldout_examples": 192,
+    "extra_heldout_sha256": "a2140e9f3e05f8ea10e4647b3a28335d4c9e240c083c14e8b23cf30a6dbe8bfc",
+    "new_heldout_examples": 768,
+    "new_heldout_sha256": "e8273f55b276a9c5d73e18ff89bc8cbf550dbfec2a25380063635fa39d3fd3bd",
+    "total_heldout_examples": 1024,
+    "heldout1024_sha256": "e187bc297218365f1a1452a15376e0ff2fceaf8a5a5517820549854b90564743",
+    "heldout256_sha256": "6735359ee7a7e1b0738f8180d810b3aaff855307ec1b067c504e099295ff37f8",
+    "question_overlap_train_heldout": 0,
+    "question_overlap_train_test": 0,
+    "fresh_heldout_reserved": {
+      "examples": 1024,
+      "pairs_sha256": "eaf5f7c00559d6b1e5650a0dd879e5b4a214931ee803f8c1f6efd956c54971b2",
+      "file": "fresh-heldout-reserved.json",
+      "train_question_overlap": 0,
+      "old_heldout_question_overlap": 0,
+      "selection": "first1024 distinct eligible hash-heldout questions from shard1 onward; no old-heldout/test copies",
+      "scope": "reserved for final comparison of selected models; not evaluated or used to tune this run"
+    },
+    "total_pair_presentations_planned": 800000,
+    "mean_pair_presentations_planned": 1.6,
+    "download_and_selection_seconds": 23.112863830000038,
+    "intervention_scope": "same pinned train500k/heldout/tokenizer recipe as19; decoder2 to4 only"
+  },
+  "training_coverage": {
+    "unique_train_rows_seen": 399353,
+    "fraction_train_rows_seen": 0.798706,
+    "pair_presentations": 800000,
+    "useful_target_tokens": 52789363,
+    "target_slots_with_padding": 85115448,
+    "target_padding_fraction": 0.37979104568655975
+  },
+  "comparison": {
+    "reference_agreements": {
+      "18": 142,
+      "19": 136,
+      "20": 170,
+      "denominator": 888
+    },
+    "byte_nll": {
+      "18": 0.251605382453931,
+      "19": 0.254695704394066,
+      "20": 0.2192506373712695
+    },
+    "train_seconds": {
+      "18_chain17_18": 2111.8943490980027,
+      "19": 2237.7189688820004,
+      "20": 3404.7507965739874
+    },
+    "test_seconds": {
+      "18": 46.63507939300007,
+      "19": 40.61133490500015,
+      "20": 51.74478179700054
+    },
+    "timing_scope": "Saved separate T4 runs, not paired speed benchmark; test timer excludes preparation/loss/checkpoint loading."
+  },
+  "test": {
+    "split": "test1919",
+    "examples": 1919,
+    "bpe_loss": null,
+    "seconds": 51.74478179700054,
+    "answers_per_second": 37.085865151164626,
+    "generated_tokens_including_eos": 121748,
+    "generated_utf8_bytes": 409463,
+    "mean_tokens_including_eos": 63.443460135487236,
+    "mean_utf8_bytes": 213.37311099531007,
+    "max_new_tokens": 512,
+    "max_output_bytes": null,
+    "batch_size_inference": 32,
+    "peak_gpu_memory_mib": 399.69189453125,
+    "timer_scope": "same as08: encode, transfers, encoder/KV decode, CPU decoding and AST; excludes loss, warmup, data loading and extra arithmetic/repetition diagnostics",
+    "extra_diagnostics_seconds_excluded": 0.4519468970001981,
+    "unique_generated_code_count": 1913,
+    "most_common_generated_code_count": 3,
+    "most_common_generated_code_fraction": 0.001563314226159458,
+    "numeric_ast_scope": "restricted straight-line numeric AST; no exec/eval/calls/imports/conditions/loops/strings; unsupported not scored; reference may be wrong; not pass@1",
+    "numeric_ast_statuses": {
+      "numeric": 1785,
+      "undefined_name": 62,
+      "unsupported": 51,
+      "syntax_error": 14,
+      "arithmetic_error": 7
+    },
+    "numeric_ast_undefined_name_count": 62,
+    "repeated_tail_32_plus_count": 5,
+    "consecutive_lines_3_plus_count": 74,
+    "syntax_error_types": {
+      "SyntaxError": 14
+    },
+    "parses_as_python_count": 1905,
+    "defines_solve_count": 1905,
+    "solve_returns_value_count": 1899,
+    "indentation_error_count": 0,
+    "valid_utf8_count": 1919,
+    "eos_emitted_count": 1906,
+    "reached_token_cap_count": 13,
+    "token_cap_without_eos_count": 13,
+    "byte_budget_stop_count": 0,
+    "bpe_tokens_per_second": 2352.855607307968,
+    "output_bytes_per_second": 7913.12642125655,
+    "within_180_seconds": true
+  },
+  "controls": {
+    "50000": {
+      "examples": 1024,
+      "bpe_loss": 0.8350912898849955,
+      "reference_target_tokens_including_eos": 67962,
+      "reference_utf8_bytes": 232162,
+      "nll_sum_including_eos": 56754.47424316406,
+      "nll_per_utf8_byte": 0.24446065352281623,
+      "numeric_audit": {
+        "heldout_pairs_total": 1024,
+        "reference_numeric_pairs": 888,
+        "reference_unsupported_pairs": 136,
+        "questions_and_references_sha256": "962724938ba673e6b613f62965766e27155bb01b5cb2d72b96b7807c8a18f179",
+        "generated_statuses_on_fixed_reference_subset": {
+          "unsupported": 24,
+          "numeric": 814,
+          "undefined_name": 42,
+          "syntax_error": 5,
+          "arithmetic_error": 3
+        },
+        "numeric_reference_agreements": 137,
+        "wrong_numeric_count": 677,
+        "definite_failure_count": 50,
+        "unresolved_generated_unsupported_count": 24,
+        "scope": "same heldout pairs whose reference is supported numeric arithmetic; failures stay in denominator; unsupported unresolved; references may be wrong; not official pass@1"
+      },
+      "parses_as_python_count": 1019,
+      "eos_emitted_count": 1018,
+      "token_cap_without_eos_count": 6,
+      "undefined_name_count": 45,
+      "generation_seconds_sum": 28.009722137000608,
+      "timing_scope": "sum of separately timed heldout groups, not a new single inference pass; loss/extra arithmetic excluded"
+    },
+    "75000": {
+      "examples": 1024,
+      "bpe_loss": 0.786548131223894,
+      "reference_target_tokens_including_eos": 67962,
+      "reference_utf8_bytes": 232162,
+      "nll_sum_including_eos": 53455.38409423828,
+      "nll_per_utf8_byte": 0.2302503600685654,
+      "numeric_audit": {
+        "heldout_pairs_total": 1024,
+        "reference_numeric_pairs": 888,
+        "reference_unsupported_pairs": 136,
+        "questions_and_references_sha256": "962724938ba673e6b613f62965766e27155bb01b5cb2d72b96b7807c8a18f179",
+        "generated_statuses_on_fixed_reference_subset": {
+          "unsupported": 26,
+          "numeric": 818,
+          "syntax_error": 7,
+          "undefined_name": 34,
+          "arithmetic_error": 2,
+          "no_return": 1
+        },
+        "numeric_reference_agreements": 152,
+        "wrong_numeric_count": 666,
+        "definite_failure_count": 44,
+        "unresolved_generated_unsupported_count": 26,
+        "scope": "same heldout pairs whose reference is supported numeric arithmetic; failures stay in denominator; unsupported unresolved; references may be wrong; not official pass@1"
+      },
+      "parses_as_python_count": 1013,
+      "eos_emitted_count": 1012,
+      "token_cap_without_eos_count": 12,
+      "undefined_name_count": 40,
+      "generation_seconds_sum": 33.45236011599991,
+      "timing_scope": "sum of separately timed heldout groups, not a new single inference pass; loss/extra arithmetic excluded"
+    },
+    "100000": {
+      "examples": 1024,
+      "bpe_loss": 0.7489724621610411,
+      "reference_target_tokens_including_eos": 67962,
+      "reference_utf8_bytes": 232162,
+      "nll_sum_including_eos": 50901.66647338867,
+      "nll_per_utf8_byte": 0.2192506373712695,
+      "numeric_audit": {
+        "heldout_pairs_total": 1024,
+        "reference_numeric_pairs": 888,
+        "reference_unsupported_pairs": 136,
+        "questions_and_references_sha256": "962724938ba673e6b613f62965766e27155bb01b5cb2d72b96b7807c8a18f179",
+        "generated_statuses_on_fixed_reference_subset": {
+          "unsupported": 20,
+          "numeric": 826,
+          "undefined_name": 38,
+          "arithmetic_error": 3,
+          "no_return": 1
+        },
+        "numeric_reference_agreements": 170,
+        "wrong_numeric_count": 656,
+        "definite_failure_count": 42,
+        "unresolved_generated_unsupported_count": 20,
+        "scope": "same heldout pairs whose reference is supported numeric arithmetic; failures stay in denominator; unsupported unresolved; references may be wrong; not official pass@1"
+      },
+      "parses_as_python_count": 1022,
+      "eos_emitted_count": 1021,
+      "token_cap_without_eos_count": 3,
+      "undefined_name_count": 42,
+      "generation_seconds_sum": 23.371642715000235,
+      "timing_scope": "sum of separately timed heldout groups, not a new single inference pass; loss/extra arithmetic excluded"
+    }
+  },
+  "limits": [
+    "Reference proxy is not official pass@1; references have known errors.",
+    "Only saved user GPU timings; no new GPU or model training.",
+    "One-seed architecture comparison; initial shared tensors are not held exactly equal after adding decoder layers.",
+    "First7 code execution counts are missing in received ipynb; last8..11/outputs retained, full completion verified in ZIP/checkpoints/logs."
+  ]
+}

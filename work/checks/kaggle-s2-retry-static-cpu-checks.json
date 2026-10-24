@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "notebook_sha256": "b4824d500e2a59f6979afc7d7e1c04d9d857410d97f9970072b8cd99a01c57e8",
+  "port_sha256": "0bc58e004b26b6cc60fa596a7d27496671b5a7c6ae01540dfc708840ee1c0126",
+  "frozen_exp26_modules_verified": 12,
+  "embedded_sources_compile": 26,
+  "first_cell_watchdog_before_install": true,
+  "budget_seconds": 11700,
+  "worker_deadline_seconds": 11400,
+  "hard_watchdog_seconds": 12000,
+  "backend_session_timeout_request_seconds": 13200,
+  "push_command_mock_checked": true,
+  "live_secret_env_only_and_no_config_credentials": true,
+  "live_watchdog_hook_and_all_wait_timeouts": true,
+  "expanded_input_readonly_memmap": true,
+  "archive_fallback_outside_working": true,
+  "real_starter_SHA_verified": true,
+  "model_only_loader_exact": true,
+  "incomplete_and_orphan_checkpoint_cleanup": true,
+  "parameter_counts": {
+    "M": 15766464,
+    "B": 31940096
+  },
+  "tensor_storage_estimate": {
+    "latest_and_final_plus_four_FP32_points_and_initial_per_model_bytes": 2099088640,
+    "both_latest_in_branch_with_embedded_anchor_bytes": 2671567360,
+    "scope": "FP32 model and AdamW first/second moment; excludes JSON, generators, serialization overhead and transient writes"
+  },
+  "network_calls": 0,
+  "GPU_runs": 0,
+  "unverified": [
+    "Kaggle acceptance of timeout and output collection after emergency exit",
+    "real CUDA D-state",
+    "full-size GPU gates, speed and total output size"
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "session_wall_seconds": 464.17716321300003,
+  "small_files_SHA_verified": 64,
+  "manifest_files": 76,
+  "output_bytes": 6711342239,
+  "workers": [
+    {
+      "gpu": 0,
+      "model": "E",
+      "spec": {
+        "d_model": 768,
+        "heads": 12,
+        "encoder_layers": 8,
+        "decoder_layers": 4,
+        "swiglu_dim": 2048,
+        "vocab": 8195
+      },
+      "parameters": 108694019,
+      "micro": 64,
+      "probe_allocated_GiB": 12.294073581695557,
+      "probe_reserved_GiB": 13.39453125,
+      "train_allocated_GiB": 9.754628658294678,
+      "train_reserved_GiB": 11.802734375,
+      "weighted_pairs_per_second": 229.10135532232712,
+      "shape_bench_pairs_per_second": 272.37837472141143,
+      "shape_bench_ratio": 1.1040874532687939,
+      "AMP_skips": 0,
+      "peak_lr_AMP_skips": 0,
+      "stable_bytes": 1304589827,
+      "stable_sha256": "1f3a75cb145d35fc56e2b39e71aa6159bbedcadc47eff9d498ea2fe9edc02408",
+      "CUDA_resume_bit_exact": true,
+      "eval_restore_continuation_bit_exact": true
+    },
+    {
+      "gpu": 1,
+      "model": "W",
+      "spec": {
+        "d_model": 768,
+        "heads": 12,
+        "encoder_layers": 6,
+        "decoder_layers": 6,
+        "swiglu_dim": 2048,
+        "vocab": 8195
+      },
+      "parameters": 113421827,
+      "micro": 32,
+      "probe_allocated_GiB": 7.5123748779296875,
+      "probe_reserved_GiB": 8.19921875,
+      "train_allocated_GiB": 6.399669170379639,
+      "train_reserved_GiB": 7.234375,
+      "weighted_pairs_per_second": 207.9866881337573,
+      "shape_bench_pairs_per_second": 248.04716980865877,
+      "shape_bench_ratio": 1.0812867036122875,
+      "AMP_skips": 0,
+      "peak_lr_AMP_skips": 0,
+      "stable_bytes": 1361337747,
+      "stable_sha256": "64e5fcba6fa5d28929fb8cf022c933e25830da38d37a410b71921acea26cac0b",
+      "CUDA_resume_bit_exact": true,
+      "eval_restore_continuation_bit_exact": true
+    }
+  ],
+  "large_PT_downloaded": false,
+  "quality_gate": false
+}

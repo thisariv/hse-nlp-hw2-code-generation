@@ -1,0 +1,1525 @@
+{
+  "date": "2026-10-12",
+  "pinned_version": 1,
+  "API_status": "COMPLETE",
+  "python": "3.13.7",
+  "packages": {
+    "torch": "2.14.1",
+    "numpy": "2.5.4",
+    "tokenizers": "0.23.3",
+    "sympy": "1.14.0"
+  },
+  "internal_session": {
+    "status": "partial",
+    "exit_codes": [
+      1,
+      1
+    ],
+    "unreaped_worker_pids": [],
+    "process_groups": [
+      69,
+      70
+    ],
+    "wall_seconds": 2211.137145703,
+    "budget_seconds": 5400,
+    "hard_deadline_monotonic": 6294.7748446,
+    "termination_grace_seconds": 20,
+    "term_to_kill_seconds": 5.638700031340704e-05,
+    "GPU_launch": true,
+    "processes": 2,
+    "experiments": {
+      "30": {
+        "status": "partial",
+        "points": [
+          "p006250"
+        ],
+        "missing_points": [
+          "p012500"
+        ],
+        "scored_candidates": 0
+      },
+      "31": {
+        "status": "partial",
+        "points": [
+          "p006250"
+        ],
+        "missing_points": [
+          "p012500"
+        ],
+        "scored_candidates": 0
+      },
+      "32": {
+        "status": "missing",
+        "points": [],
+        "missing_points": null,
+        "scored_candidates": 0
+      }
+    },
+    "output_bytes": 404630508,
+    "output_policy": "individual files; no ZIP"
+  },
+  "download": {
+    "ref": "thisarivson/nlp-hw02-kaggle-s3/1",
+    "version_label": "v1",
+    "files": 84,
+    "CLI_224_compatibility": true
+  },
+  "SHA_inventory": [
+    {
+      "file": "download-version.json",
+      "bytes": 121,
+      "sha256": "70d237a679ed0e90ad6cd4665bcbdd161bcd10d62a90ec19221546adcdf7104b"
+    },
+    {
+      "file": "gpu0-exp30/30-summary.json",
+      "bytes": 167251,
+      "sha256": "2400b58cdbc0d7d002eda7ccb44f449bd506a44372987625cb08ae1195a20d58"
+    },
+    {
+      "file": "gpu0-exp30/checkpoints/latest.pt",
+      "bytes": 145241547,
+      "sha256": "54b0524febd782d14a69b33e528f1c9711f9e8e706277f5992826a0be42d929e"
+    },
+    {
+      "file": "gpu0-exp30/latest.json",
+      "bytes": 324,
+      "sha256": "16c24ffe98518b94a43213bb7ab865e1aebb9e9f19933dca478d339ea7f9ed04"
+    },
+    {
+      "file": "gpu0-exp30/points/p006250/evaluation/heldout4k-execution.json",
+      "bytes": 254419,
+      "sha256": "31d3de2417f7e9879d1d4c29e13136af116e8d1c6ca2cc0841c2503b2997aecc"
+    },
+    {
+      "file": "gpu0-exp30/points/p006250/evaluation/heldout4k-generations.json",
+      "bytes": 5138672,
+      "sha256": "57bdabdfa1a18cbfd99d32cde74772b63d10a2097c471a2e0d04a342d417c93f"
+    },
+    {
+      "file": "gpu0-exp30/points/p006250/evaluation/metrics.json",
+      "bytes": 118770,
+      "sha256": "c1abcec53ad35f7ada394a1ef014a861eab940cc4d1134e3693d9844be9b25e4"
+    },
+    {
+      "file": "gpu0-exp30/points/p006250/evaluation/old1024-execution.json",
+      "bytes": 63993,
+      "sha256": "e8b36b26b7abe82cb8810996b334d93e60e6d95d045aaa6c7501702dcebaf70b"
+    },
+    {
+      "file": "gpu0-exp30/points/p006250/evaluation/old1024-generations.json",
+      "bytes": 1288172,
+      "sha256": "5a5e5fbfcc41ef7d39aecb194ba61fe28ade07ccafeac59bf9d40b9ffbbfd521"
+    },
+    {
+      "file": "gpu0-exp30/points/p006250/training.json",
+      "bytes": 479,
+      "sha256": "6acfbc7b6468ba0a6364c7a17f5f53de710ad19c4e21e4a4fa64d734c014efe7"
+    },
+    {
+      "file": "gpu0-exp30/progress.json",
+      "bytes": 484,
+      "sha256": "3cf7e6abf3d7fe7fa7a7cf5939cc823aa968404fc6319237e69b59331f329dc4"
+    },
+    {
+      "file": "gpu0-exp30/representation-preparation.json",
+      "bytes": 196,
+      "sha256": "78345c60718e41eca5b8e59f95cc2ee2bd140e41f2a3f77ef9ccef5995f0c2fe"
+    },
+    {
+      "file": "gpu0-exp30/tokenizer.json",
+      "bytes": 546425,
+      "sha256": "2b6fbb6426c42e9fcf82d576d53516d5b6e585c3618942f0dde6c76349856c1e"
+    },
+    {
+      "file": "gpu0-exp30/weights/p006250.pt",
+      "bytes": 48401823,
+      "sha256": "22b380ad003425b126bc7ceec9501a02681582c7ea6aa8c67c8a7bed9d085ba3"
+    },
+    {
+      "file": "gpu0-exp32/32-summary.json",
+      "bytes": 102,
+      "sha256": "43d066d0b96f7b86097898a60406c4719938fead41e2cb7717b923d5f52a6832"
+    },
+    {
+      "file": "gpu0-failure.json",
+      "bytes": 356,
+      "sha256": "714290b28b6aa51d05ab7ba43a41eea12357b5a22203e5885785acf242a2a8df"
+    },
+    {
+      "file": "gpu0-process.log",
+      "bytes": 5169,
+      "sha256": "ba4264ff19ac720d3631b748300fba05cca532cb77e2b3cc39dd27425940b8cb"
+    },
+    {
+      "file": "gpu0-runtime.json",
+      "bytes": 473,
+      "sha256": "c4d0a51fd54816b44b6184b919b1147312043b960e3f8048a458a75d2e2be17c"
+    },
+    {
+      "file": "gpu1-exp31/31-summary.json",
+      "bytes": 163883,
+      "sha256": "19274560029bcb9fc41fc388bb1b10cb7425f11bf438db57cc7aab5ffb87a1a2"
+    },
+    {
+      "file": "gpu1-exp31/checkpoints/latest.pt",
+      "bytes": 145346187,
+      "sha256": "0e970133cb2625791861ced1b32fdc77abd102f6422e4acfdaa6605d0f2c9ceb"
+    },
+    {
+      "file": "gpu1-exp31/latest.json",
+      "bytes": 324,
+      "sha256": "dccbbbc291b9278b6dd2bb721a3568746a40a2751467ed376570625168bccb6d"
+    },
+    {
+      "file": "gpu1-exp31/points/p006250/evaluation/heldout4k-execution.json",
+      "bytes": 254900,
+      "sha256": "b1ce2df50b4f2e84eacf9de3dcf91c9f310b046672cefa5caef7e363e7a4ffe8"
+    },
+    {
+      "file": "gpu1-exp31/points/p006250/evaluation/heldout4k-generations.json",
+      "bytes": 5996072,
+      "sha256": "118955d7ea96178058ade8627df484050216b1f8f8bd698eaa9a86b0bc792571"
+    },
+    {
+      "file": "gpu1-exp31/points/p006250/evaluation/metrics.json",
+      "bytes": 116338,
+      "sha256": "158bbb098b990c2b633ce3dddd2d7173779ca25f82b1a1b3385df16fa0675d38"
+    },
+    {
+      "file": "gpu1-exp31/points/p006250/evaluation/old1024-execution.json",
+      "bytes": 64036,
+      "sha256": "d5f440dcef27a8f963ecad6fc65547868eb21849cfa5c8168570ec81351b2a6c"
+    },
+    {
+      "file": "gpu1-exp31/points/p006250/evaluation/old1024-generations.json",
+      "bytes": 1528066,
+      "sha256": "302b7d6c5f7da0b711308d97466d135652a864bf52d5e4c40a81ba3ef26e6282"
+    },
+    {
+      "file": "gpu1-exp31/points/p006250/training.json",
+      "bytes": 479,
+      "sha256": "e2091900712ea3f9ba2e3ff9f3eb4b6c122acc96f33e0cc70c401a9ab1cbf59b"
+    },
+    {
+      "file": "gpu1-exp31/progress.json",
+      "bytes": 483,
+      "sha256": "912e41de6941a5251d2e401c384fa49692924169119c4f8fc5f28e9db830431b"
+    },
+    {
+      "file": "gpu1-exp31/representation-preparation.json",
+      "bytes": 195,
+      "sha256": "b8686170e86c5e747368d82d570d5f387fb7586455b8d934cfa02d3deb585638"
+    },
+    {
+      "file": "gpu1-exp31/tokenizer.json",
+      "bytes": 549499,
+      "sha256": "0aff916baa7daacc08a89d50c4fdfd1e31986865d3d7fecce3256a5c878d288e"
+    },
+    {
+      "file": "gpu1-exp31/weights/p006250.pt",
+      "bytes": 48436703,
+      "sha256": "4e3006505b39a820f3512ef69b306bf76106ff920c2fd0492338aa6fd37bc3f7"
+    },
+    {
+      "file": "gpu1-failure.json",
+      "bytes": 356,
+      "sha256": "714290b28b6aa51d05ab7ba43a41eea12357b5a22203e5885785acf242a2a8df"
+    },
+    {
+      "file": "gpu1-process.log",
+      "bytes": 5163,
+      "sha256": "ed1e6be893f70cdd7a38f008e34eaca6e3af3de9d9132d11fb91a43278090df7"
+    },
+    {
+      "file": "gpu1-runtime.json",
+      "bytes": 473,
+      "sha256": "c4d0a51fd54816b44b6184b919b1147312043b960e3f8048a458a75d2e2be17c"
+    },
+    {
+      "file": "nlp-hw02-kaggle-s3.log",
+      "bytes": 39333,
+      "sha256": "ce73724df16b66714a2fc146b5df2387b621cb79d3b71b93bcdfd0ae6177b98b"
+    },
+    {
+      "file": "s3-output-manifest.json",
+      "bytes": 3309,
+      "sha256": "bf8c29aec042de3d13228b2ce353814a2b1955691ec00f284d54938192c33631"
+    },
+    {
+      "file": "s3-summary.json",
+      "bytes": 931,
+      "sha256": "ef6cd7f9e418d69437daf117247005b5af080e0a5c3a71fb00c8eaba8c6ca4a7"
+    },
+    {
+      "file": "session-config.json",
+      "bytes": 1119,
+      "sha256": "2440fd5c2e0a94d141d24b491a651934623601e06d22f1c920741d22d2aa925f"
+    },
+    {
+      "file": "session-live.json",
+      "bytes": 121,
+      "sha256": "8650bb0a900cc21718cf9eecd0b8d6c8e7b4c37448c47ae7be62577d5db698d1"
+    },
+    {
+      "file": "session-summary.json",
+      "bytes": 931,
+      "sha256": "ef6cd7f9e418d69437daf117247005b5af080e0a5c3a71fb00c8eaba8c6ca4a7"
+    },
+    {
+      "file": "src/__pycache__/exp26_cache.cpython-313.pyc",
+      "bytes": 44907,
+      "sha256": "3966edd269ec0649bade4f3d7d43d587f8c2c89ee7cd9d2b0b4f3c0b29b5d6e8"
+    },
+    {
+      "file": "src/__pycache__/exp26_common.cpython-313.pyc",
+      "bytes": 5129,
+      "sha256": "1b4013ead4c574dd235fe7fe1f2875029ad646677d370ae329e1767a376921fe"
+    },
+    {
+      "file": "src/__pycache__/exp26_core.cpython-313.pyc",
+      "bytes": 33096,
+      "sha256": "e5dc1febe55391b81e56f077463778b5749cf4df9a51085e8664f5e75bb6e9c0"
+    },
+    {
+      "file": "src/__pycache__/exp26_eval.cpython-313.pyc",
+      "bytes": 17534,
+      "sha256": "93ff35486fd198f687ffcbaed970a7ed68f2a323ffd9039df4f86d92545ab324"
+    },
+    {
+      "file": "src/__pycache__/exp26_exec.cpython-313.pyc",
+      "bytes": 19950,
+      "sha256": "cbb3728fb62e930828a15392915517c0152b10f7c6f6dc9e23b99867ca01bea0"
+    },
+    {
+      "file": "src/__pycache__/exp26_fast_exec.cpython-313.pyc",
+      "bytes": 7229,
+      "sha256": "a0a1d390b5af54f3671b9895427ae686aecab65655670f357a7963a618fb88f3"
+    },
+    {
+      "file": "src/__pycache__/exp26_input.cpython-313.pyc",
+      "bytes": 6288,
+      "sha256": "5d00a12320bcde7a3db654b3e3675e089b7d685183ea279f14a13c00c9d58624"
+    },
+    {
+      "file": "src/__pycache__/exp26_order.cpython-313.pyc",
+      "bytes": 6964,
+      "sha256": "191dcd4a5136afc95b43503e1fc009d89f537b08fc5bbd58b2be178ffc7eec9e"
+    },
+    {
+      "file": "src/__pycache__/exp26_protocol.cpython-313.pyc",
+      "bytes": 14859,
+      "sha256": "dd09063deff4b90a363fc96d46593b33eac8598638b8432a70a3d73ba775e46a"
+    },
+    {
+      "file": "src/__pycache__/exp26_train.cpython-313.pyc",
+      "bytes": 33820,
+      "sha256": "80e5ccf6f4f29f2ed512bb181834d417e34574f42ed5035f0e5c2cdbd0e6303b"
+    },
+    {
+      "file": "src/__pycache__/kaggle_io.cpython-313.pyc",
+      "bytes": 9754,
+      "sha256": "925bdce740a6658eb89016f10e94837bf3f64e3b26d6365f19688c6ff94d344a"
+    },
+    {
+      "file": "src/__pycache__/kaggle_runtime.cpython-313.pyc",
+      "bytes": 16700,
+      "sha256": "48c13c944bce22a0022907e458d0a3ec74ac94aa922a4e376f45b22ee14d87f0"
+    },
+    {
+      "file": "src/__pycache__/s2_exec.cpython-313.pyc",
+      "bytes": 2329,
+      "sha256": "0c1a78f4de9049bcc8fd388bff6f65260b277e2e834190da252c19b106371dbc"
+    },
+    {
+      "file": "src/__pycache__/s3_representation.cpython-313.pyc",
+      "bytes": 17964,
+      "sha256": "bd267a521ac44384a8d5fd1246e86822dfe9ff6f4f6ba0eaaa6c06c3a2dda9b6"
+    },
+    {
+      "file": "src/__pycache__/s3_runtime.cpython-313.pyc",
+      "bytes": 29677,
+      "sha256": "83f6cbfe764f69624e32bf31a76b56b715f38bff02efde1e46b98d4d81bf8449"
+    },
+    {
+      "file": "src/__pycache__/s3_score.cpython-313.pyc",
+      "bytes": 11070,
+      "sha256": "16558f62ca24a8d3e75e62d059fb98e15a8904840ffec3442bbb48de0608b008"
+    },
+    {
+      "file": "src/__pycache__/session_runner.cpython-313.pyc",
+      "bytes": 19958,
+      "sha256": "d112680e96437e9d10ef80c24ab3abbd2c06d8e87fb9c5bc5e5fc85f88e3db79"
+    },
+    {
+      "file": "src/__pycache__/session_watchdog.cpython-313.pyc",
+      "bytes": 13414,
+      "sha256": "4f2f9f0e4edac0cbb9e6ff1c0c8bf50d67f75c27ea48dfe39c2d00102e52a7e9"
+    },
+    {
+      "file": "src/cache_extension.py",
+      "bytes": 4864,
+      "sha256": "3bf3fbffd43fdc310f56ac272185dcd7a8e754782d676db91a2ae57a0f1d3501"
+    },
+    {
+      "file": "src/exp26_cache.py",
+      "bytes": 22008,
+      "sha256": "3f15d07c4f1d01e0ac09159b215a9e77bbd861f2e5c47a6632541c01a1f2643b"
+    },
+    {
+      "file": "src/exp26_common.py",
+      "bytes": 1962,
+      "sha256": "e7a3b34904721d2c6c51fbc0970872596e488b2baa40a04f04add5fb31bbb5a3"
+    },
+    {
+      "file": "src/exp26_core.py",
+      "bytes": 15194,
+      "sha256": "7247eae92a09a73b62c86fee80c261d3e3a0043cb863d7bc069426d214f575ce"
+    },
+    {
+      "file": "src/exp26_eval.py",
+      "bytes": 8830,
+      "sha256": "fc79ed8cea94017e9c6a25216f23409a5bebb1dbe646754313759e7dc75d855c"
+    },
+    {
+      "file": "src/exp26_exec.py",
+      "bytes": 10483,
+      "sha256": "0ccc458b2e7dfec27b55f482afb673215f6c06af0f53820cf624d42c5573faa3"
+    },
+    {
+      "file": "src/exp26_fast_exec.py",
+      "bytes": 3384,
+      "sha256": "061ce3617e66b3b1fc1825cbef52600f04edf3666ceefbc7f982f14383812002"
+    },
+    {
+      "file": "src/exp26_input.py",
+      "bytes": 2737,
+      "sha256": "0b4ed1214cf6f6d751b9d9201bbf0eb8256e1ed03841dd00e9f06b85a5096320"
+    },
+    {
+      "file": "src/exp26_order.py",
+      "bytes": 3134,
+      "sha256": "98f6e43cf31810d4e86fdbf36b37aaf8dfe7c40ec82d065f82194d7056172783"
+    },
+    {
+      "file": "src/exp26_pack.py",
+      "bytes": 2522,
+      "sha256": "b91eccaa13f16cd85e9a8ce15abcbf7275e1898850a568ebc1083676e02cd7fb"
+    },
+    {
+      "file": "src/exp26_protocol.py",
+      "bytes": 12893,
+      "sha256": "91d6c673a4a1ffb980c92511cd9d2072894d2ff4bd7251a1954178f15baba3c1"
+    },
+    {
+      "file": "src/exp26_train.py",
+      "bytes": 19154,
+      "sha256": "0392b8fabcae875eb7972a6c69f6594974603ae81090f4c484fbc47244fb2570"
+    },
+    {
+      "file": "src/exp26_workflow.py",
+      "bytes": 9949,
+      "sha256": "0e53a806cb908965bf5cf6ec89ac9da6aa2aefa622ba6f8c8516205c068d2080"
+    },
+    {
+      "file": "src/exp27_decode.py",
+      "bytes": 17757,
+      "sha256": "b0042aecba742c037d32fe7659e1d2b20336d63f96b6fe9d2f7b9a0af69fd966"
+    },
+    {
+      "file": "src/exp27b_fast.py",
+      "bytes": 14851,
+      "sha256": "d33b61e9cef0257fd749856f7c8cf29000815bc2d65f230f4414e2da97b23ba4"
+    },
+    {
+      "file": "src/exp28_capacity.py",
+      "bytes": 14221,
+      "sha256": "d240c8a55ec79d242d9c5ba307d5d4ad6e31909ac58ca034467809505744f330"
+    },
+    {
+      "file": "src/kaggle_io.py",
+      "bytes": 4667,
+      "sha256": "70c777ee48b1c39e79173afe4e9bfbb1a222b67f107a75f2aa0e61dbc59ad365"
+    },
+    {
+      "file": "src/kaggle_runtime.py",
+      "bytes": 10735,
+      "sha256": "589d034faa18b5ff377688a171dae4a31e6242575d558c414d8cc575f207daeb"
+    },
+    {
+      "file": "src/s2_exec.py",
+      "bytes": 1042,
+      "sha256": "b597809e1f0ff1d4d89d94dd1224282be0295b70134f8bb29b5b7d87c9014fdc"
+    },
+    {
+      "file": "src/s2_live_sync.py",
+      "bytes": 15642,
+      "sha256": "9205afc429e3244c1ec20f0b3c4fb83f9be152f026960b0a69998c99db982cbf"
+    },
+    {
+      "file": "src/s2_report.py",
+      "bytes": 4430,
+      "sha256": "770794d1954f49d14b531e41339aac85e06a38a1041c35de256e30d8e2f2cf35"
+    },
+    {
+      "file": "src/s2_runtime.py",
+      "bytes": 10546,
+      "sha256": "dc79f72b1eb03f5278c2ef0027b12775b0f14a0b2cba09535c77a7f24269336c"
+    },
+    {
+      "file": "src/s3_representation.py",
+      "bytes": 8823,
+      "sha256": "51c18fd6b9d158086c96da9f23dd72030da84e27cff18b51028934b0f21d519c"
+    },
+    {
+      "file": "src/s3_runtime.py",
+      "bytes": 18309,
+      "sha256": "b5633828eac7c650a5a40ad20426a47eb24f79249496e89703684b7f35b7bf7e"
+    },
+    {
+      "file": "src/s3_score.py",
+      "bytes": 5868,
+      "sha256": "b03e6471002f8a4223692995125e24a4205f8efcc14234e53472410eb5d1163d"
+    },
+    {
+      "file": "src/s3_worker.py",
+      "bytes": 4834,
+      "sha256": "9c09e470f393934af0ec4778048faf11fb13913e903306fb1c99b74795a8683d"
+    },
+    {
+      "file": "src/session_runner.py",
+      "bytes": 9832,
+      "sha256": "0613ea650da2c7ef12662383c65fb41197937ec9c6a6dd792d7732cf69ebca99"
+    },
+    {
+      "file": "src/session_watchdog.py",
+      "bytes": 7078,
+      "sha256": "ab21ff7f9fe916610f729d3450ea9d6d66b29a216411314bf39f8a84a8e1654d"
+    }
+  ],
+  "bytes": 404314068,
+  "manifest": {
+    "missing": [
+      "__notebook__.ipynb"
+    ],
+    "byte_differences": [],
+    "note": "Kaggle internal notebook omitted by SDK; manifest has bytes only, SHA is local plus producer receipts."
+  },
+  "source_identity": "original frozen26 modules and full pushed port SHA passed",
+  "experiments": {
+    "30": {
+      "status": "partial",
+      "missing_points": [
+        "p012500"
+      ],
+      "preparation": {
+        "rows": 1920000,
+        "seconds": 1299.3833121520001,
+        "included_in_training_timer": false,
+        "prefix_original_order_sha256": "b3891e559cc9a07bd8c34a73d67949799265e8b3d812a852bf877947e7e2fead"
+      },
+      "checkpoint": {
+        "file": "checkpoints/latest.pt",
+        "sha256": "54b0524febd782d14a69b33e528f1c9711f9e8e706277f5992826a0be42d929e",
+        "bytes": 145241547,
+        "main_updates": 6250,
+        "branch_updates": 0,
+        "data_cursor": 800000,
+        "phase": "main",
+        "model_tensor_sha256": "95918f2874a965b85fd0049270f709f973623c7dc75139578bc039414e5be2df",
+        "optimizer_steps": 6250,
+        "scaler": {
+          "scale": 8192.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 250
+        },
+        "history_train_seconds": 802.8368262749991,
+        "history_compute_pairs": 960000,
+        "phase_note": "stable anchor, not evaluated cooldown; history includes completed cooldown cost; load yields normal tensors"
+      },
+      "points": {
+        "p006250": {
+          "training": {
+            "main_updates": 6250,
+            "cooldown_updates": 1250,
+            "actual_pairs": 960000,
+            "train_seconds_total": 802.8368262749991,
+            "compute_updates_total": 7500,
+            "pairs_per_second_all_compute": 1195.7597964884176,
+            "AMP_skips": 0,
+            "counts": {
+              "pairs": 960000,
+              "source_tokens": 46797602,
+              "target_tokens": 51244729,
+              "source_slots": 70447232,
+              "target_slots": 73070208
+            },
+            "weights_sha256": "22b380ad003425b126bc7ceec9501a02681582c7ea6aa8c67c8a7bed9d085ba3",
+            "speed_ratio_vs_26b": 1.156046382123838
+          },
+          "splits": {
+            "heldout4k": {
+              "matches": 1876,
+              "denominator": 4096,
+              "accuracy": 0.4580078125,
+              "McNemar_vs_26b": {
+                "gains": 267,
+                "losses": 279,
+                "discordant": 546,
+                "exact_two_sided_p": 0.6378546821615391,
+                "delta_percentage_points": -0.29296875
+              },
+              "length_accuracy": {
+                "<60": {
+                  "denominator": 2013,
+                  "matches": 1319,
+                  "accuracy": 0.6552409339294585
+                },
+                "60–90": {
+                  "denominator": 1457,
+                  "matches": 462,
+                  "accuracy": 0.31708991077556625
+                },
+                "90–120": {
+                  "denominator": 488,
+                  "matches": 85,
+                  "accuracy": 0.17418032786885246
+                },
+                "≥120": {
+                  "denominator": 138,
+                  "matches": 10,
+                  "accuracy": 0.07246376811594203
+                }
+              },
+              "restore_errors": 0,
+              "restore_error_ids": [],
+              "errors": {
+                "errors": 2220,
+                "statuses": {
+                  "numeric": 2123,
+                  "execution_error": 85,
+                  "syntax_error": 12
+                },
+                "overlapping_tags": {
+                  "same_literal_set_wrong_program": 741,
+                  "other_numeric_or_structure": 759,
+                  "used_question_number_missing": 589,
+                  "runtime_or_non_numeric": 97,
+                  "number_not_from_question_or_known_constant": 214
+                },
+                "exclusive_priority_counts": {
+                  "same_literal_set_wrong_program": 668,
+                  "other_numeric_or_structure": 759,
+                  "used_question_number_missing": 494,
+                  "runtime_or_non_numeric": 97,
+                  "number_not_from_question_or_known_constant": 202
+                },
+                "by_reference_length": {
+                  "<60": {
+                    "other_numeric_or_structure": 278,
+                    "used_question_number_missing": 96,
+                    "same_literal_set_wrong_program": 241,
+                    "number_not_from_question_or_known_constant": 65,
+                    "runtime_or_non_numeric": 14
+                  },
+                  "60-90": {
+                    "same_literal_set_wrong_program": 328,
+                    "other_numeric_or_structure": 324,
+                    "used_question_number_missing": 223,
+                    "number_not_from_question_or_known_constant": 77,
+                    "runtime_or_non_numeric": 43
+                  },
+                  "90-120": {
+                    "used_question_number_missing": 124,
+                    "runtime_or_non_numeric": 24,
+                    "other_numeric_or_structure": 123,
+                    "same_literal_set_wrong_program": 84,
+                    "number_not_from_question_or_known_constant": 48
+                  },
+                  ">=120": {
+                    "used_question_number_missing": 51,
+                    "runtime_or_non_numeric": 16,
+                    "other_numeric_or_structure": 34,
+                    "number_not_from_question_or_known_constant": 12,
+                    "same_literal_set_wrong_program": 15
+                  }
+                },
+                "oversized_literal_rows": [],
+                "caveat": "Heuristic overlapping tags, exactly data-research: AST unsigned literal sets; missing only question digits used by reference; known/word/percent constants discounted."
+              },
+              "generation_seconds": 17.495449260999976
+            },
+            "old1024": {
+              "matches": 450,
+              "denominator": 991,
+              "accuracy": 0.45408678102926336,
+              "McNemar_vs_26b": {
+                "gains": 60,
+                "losses": 75,
+                "discordant": 135,
+                "exact_two_sided_p": 0.22810347806601292,
+                "delta_percentage_points": -1.513622603430878
+              },
+              "length_accuracy": {
+                "<60": {
+                  "denominator": 495,
+                  "matches": 321,
+                  "accuracy": 0.6484848484848484
+                },
+                "60–90": {
+                  "denominator": 345,
+                  "matches": 112,
+                  "accuracy": 0.32463768115942027
+                },
+                "90–120": {
+                  "denominator": 115,
+                  "matches": 11,
+                  "accuracy": 0.09565217391304348
+                },
+                "≥120": {
+                  "denominator": 36,
+                  "matches": 6,
+                  "accuracy": 0.16666666666666666
+                }
+              },
+              "restore_errors": 0,
+              "restore_error_ids": [],
+              "errors": {
+                "errors": 541,
+                "statuses": {
+                  "numeric": 515,
+                  "syntax_error": 4,
+                  "execution_error": 21,
+                  "timeout": 1
+                },
+                "overlapping_tags": {
+                  "number_not_from_question_or_known_constant": 55,
+                  "same_literal_set_wrong_program": 184,
+                  "runtime_or_non_numeric": 26,
+                  "used_question_number_missing": 142,
+                  "other_numeric_or_structure": 180
+                },
+                "exclusive_priority_counts": {
+                  "number_not_from_question_or_known_constant": 53,
+                  "same_literal_set_wrong_program": 159,
+                  "runtime_or_non_numeric": 26,
+                  "used_question_number_missing": 123,
+                  "other_numeric_or_structure": 180
+                },
+                "by_reference_length": {
+                  "<60": {
+                    "same_literal_set_wrong_program": 69,
+                    "other_numeric_or_structure": 63,
+                    "used_question_number_missing": 24,
+                    "number_not_from_question_or_known_constant": 16,
+                    "runtime_or_non_numeric": 2
+                  },
+                  "60-90": {
+                    "number_not_from_question_or_known_constant": 27,
+                    "same_literal_set_wrong_program": 68,
+                    "used_question_number_missing": 58,
+                    "other_numeric_or_structure": 76,
+                    "runtime_or_non_numeric": 4
+                  },
+                  "90-120": {
+                    "runtime_or_non_numeric": 16,
+                    "used_question_number_missing": 35,
+                    "same_literal_set_wrong_program": 15,
+                    "other_numeric_or_structure": 30,
+                    "number_not_from_question_or_known_constant": 8
+                  },
+                  ">=120": {
+                    "used_question_number_missing": 6,
+                    "same_literal_set_wrong_program": 7,
+                    "other_numeric_or_structure": 11,
+                    "runtime_or_non_numeric": 4,
+                    "number_not_from_question_or_known_constant": 2
+                  }
+                },
+                "oversized_literal_rows": [],
+                "caveat": "Heuristic overlapping tags, exactly data-research: AST unsigned literal sets; missing only question digits used by reference; known/word/percent constants discounted."
+              },
+              "generation_seconds": 4.753230798000004
+            }
+          }
+        }
+      },
+      "failure": {
+        "status": "partial",
+        "error": "RuntimeError",
+        "message": "Inference tensors cannot be saved for backward. Please do not use Tensors created in inference mode in computation tracked by autograd. To work around this, you can make a clone to get a normal tensor and use it in autograd, or use `torch.no_grad()` instead of `torch.inference_mode()`."
+      },
+      "decision": "pending: missing registered1.92M point",
+      "equal_time": {
+        "status": "pending",
+        "interpolation_performed": false,
+        "reason": "No saved equal-time branch; compact802.84s is below earliest positive control928.12s, log-time interpolation cannot bracket it; extrapolation not used."
+      }
+    },
+    "31": {
+      "status": "partial",
+      "missing_points": [
+        "p012500"
+      ],
+      "preparation": {
+        "rows": 1920000,
+        "seconds": 829.9378048780001,
+        "included_in_training_timer": false,
+        "prefix_original_order_sha256": "b3891e559cc9a07bd8c34a73d67949799265e8b3d812a852bf877947e7e2fead"
+      },
+      "checkpoint": {
+        "file": "checkpoints/latest.pt",
+        "sha256": "0e970133cb2625791861ced1b32fdc77abd102f6422e4acfdaa6605d0f2c9ceb",
+        "bytes": 145346187,
+        "main_updates": 6250,
+        "branch_updates": 0,
+        "data_cursor": 800000,
+        "phase": "main",
+        "model_tensor_sha256": "f6a8f38220b718589749a12007e85479def4128668dba3abbaa3756051968d73",
+        "optimizer_steps": 6250,
+        "scaler": {
+          "scale": 8192.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 250
+        },
+        "history_train_seconds": 915.8649503689976,
+        "history_compute_pairs": 960000,
+        "phase_note": "stable anchor, not evaluated cooldown; history includes completed cooldown cost; load yields normal tensors"
+      },
+      "points": {
+        "p006250": {
+          "training": {
+            "main_updates": 6250,
+            "cooldown_updates": 1250,
+            "actual_pairs": 960000,
+            "train_seconds_total": 915.8649503689976,
+            "compute_updates_total": 7500,
+            "pairs_per_second_all_compute": 1048.1894733641905,
+            "AMP_skips": 0,
+            "counts": {
+              "pairs": 960000,
+              "source_tokens": 52397744,
+              "target_tokens": 61981895,
+              "source_slots": 77947008,
+              "target_slots": 84510208
+            },
+            "weights_sha256": "4e3006505b39a820f3512ef69b306bf76106ff920c2fd0492338aa6fd37bc3f7",
+            "speed_ratio_vs_26b": 1.0133771448258428
+          },
+          "splits": {
+            "heldout4k": {
+              "matches": 1733,
+              "denominator": 4096,
+              "accuracy": 0.423095703125,
+              "McNemar_vs_26b": {
+                "gains": 233,
+                "losses": 388,
+                "discordant": 621,
+                "exact_two_sided_p": 5.252975213397555e-10,
+                "delta_percentage_points": -3.7841796875
+              },
+              "length_accuracy": {
+                "<60": {
+                  "denominator": 2013,
+                  "matches": 1240,
+                  "accuracy": 0.6159960258320915
+                },
+                "60–90": {
+                  "denominator": 1457,
+                  "matches": 421,
+                  "accuracy": 0.28894989704873025
+                },
+                "90–120": {
+                  "denominator": 488,
+                  "matches": 64,
+                  "accuracy": 0.13114754098360656
+                },
+                "≥120": {
+                  "denominator": 138,
+                  "matches": 8,
+                  "accuracy": 0.057971014492753624
+                }
+              },
+              "restore_errors": 0,
+              "restore_error_ids": [],
+              "errors": {
+                "errors": 2363,
+                "statuses": {
+                  "numeric": 2222,
+                  "execution_error": 114,
+                  "syntax_error": 21,
+                  "timeout": 2,
+                  "non_number": 4
+                },
+                "overlapping_tags": {
+                  "same_literal_set_wrong_program": 876,
+                  "other_numeric_or_structure": 850,
+                  "used_question_number_missing": 467,
+                  "number_not_from_question_or_known_constant": 206,
+                  "runtime_or_non_numeric": 141
+                },
+                "exclusive_priority_counts": {
+                  "same_literal_set_wrong_program": 783,
+                  "other_numeric_or_structure": 850,
+                  "used_question_number_missing": 391,
+                  "number_not_from_question_or_known_constant": 198,
+                  "runtime_or_non_numeric": 141
+                },
+                "by_reference_length": {
+                  "<60": {
+                    "other_numeric_or_structure": 304,
+                    "same_literal_set_wrong_program": 296,
+                    "runtime_or_non_numeric": 19,
+                    "number_not_from_question_or_known_constant": 70,
+                    "used_question_number_missing": 84
+                  },
+                  "60-90": {
+                    "same_literal_set_wrong_program": 357,
+                    "other_numeric_or_structure": 356,
+                    "number_not_from_question_or_known_constant": 80,
+                    "runtime_or_non_numeric": 73,
+                    "used_question_number_missing": 170
+                  },
+                  "90-120": {
+                    "same_literal_set_wrong_program": 106,
+                    "other_numeric_or_structure": 147,
+                    "used_question_number_missing": 100,
+                    "runtime_or_non_numeric": 33,
+                    "number_not_from_question_or_known_constant": 38
+                  },
+                  ">=120": {
+                    "used_question_number_missing": 37,
+                    "same_literal_set_wrong_program": 24,
+                    "number_not_from_question_or_known_constant": 10,
+                    "other_numeric_or_structure": 43,
+                    "runtime_or_non_numeric": 16
+                  }
+                },
+                "oversized_literal_rows": [],
+                "caveat": "Heuristic overlapping tags, exactly data-research: AST unsigned literal sets; missing only question digits used by reference; known/word/percent constants discounted."
+              },
+              "generation_seconds": 28.71368375300017
+            },
+            "old1024": {
+              "matches": 436,
+              "denominator": 991,
+              "accuracy": 0.4399596367305752,
+              "McNemar_vs_26b": {
+                "gains": 60,
+                "losses": 89,
+                "discordant": 149,
+                "exact_two_sided_p": 0.02148335077772227,
+                "delta_percentage_points": -2.9263370332996974
+              },
+              "length_accuracy": {
+                "<60": {
+                  "denominator": 495,
+                  "matches": 324,
+                  "accuracy": 0.6545454545454545
+                },
+                "60–90": {
+                  "denominator": 345,
+                  "matches": 93,
+                  "accuracy": 0.26956521739130435
+                },
+                "90–120": {
+                  "denominator": 115,
+                  "matches": 14,
+                  "accuracy": 0.12173913043478261
+                },
+                "≥120": {
+                  "denominator": 36,
+                  "matches": 5,
+                  "accuracy": 0.1388888888888889
+                }
+              },
+              "restore_errors": 0,
+              "restore_error_ids": [],
+              "errors": {
+                "errors": 555,
+                "statuses": {
+                  "numeric": 523,
+                  "non_number": 3,
+                  "execution_error": 24,
+                  "syntax_error": 5
+                },
+                "overlapping_tags": {
+                  "same_literal_set_wrong_program": 205,
+                  "used_question_number_missing": 110,
+                  "other_numeric_or_structure": 201,
+                  "number_not_from_question_or_known_constant": 46,
+                  "runtime_or_non_numeric": 32
+                },
+                "exclusive_priority_counts": {
+                  "same_literal_set_wrong_program": 188,
+                  "used_question_number_missing": 90,
+                  "other_numeric_or_structure": 201,
+                  "number_not_from_question_or_known_constant": 44,
+                  "runtime_or_non_numeric": 32
+                },
+                "by_reference_length": {
+                  "<60": {
+                    "same_literal_set_wrong_program": 80,
+                    "other_numeric_or_structure": 57,
+                    "used_question_number_missing": 18,
+                    "number_not_from_question_or_known_constant": 15,
+                    "runtime_or_non_numeric": 1
+                  },
+                  "60-90": {
+                    "used_question_number_missing": 36,
+                    "same_literal_set_wrong_program": 87,
+                    "other_numeric_or_structure": 90,
+                    "number_not_from_question_or_known_constant": 20,
+                    "runtime_or_non_numeric": 19
+                  },
+                  "90-120": {
+                    "same_literal_set_wrong_program": 16,
+                    "used_question_number_missing": 29,
+                    "other_numeric_or_structure": 42,
+                    "runtime_or_non_numeric": 7,
+                    "number_not_from_question_or_known_constant": 7
+                  },
+                  ">=120": {
+                    "same_literal_set_wrong_program": 5,
+                    "used_question_number_missing": 7,
+                    "other_numeric_or_structure": 12,
+                    "number_not_from_question_or_known_constant": 2,
+                    "runtime_or_non_numeric": 5
+                  }
+                },
+                "oversized_literal_rows": [],
+                "caveat": "Heuristic overlapping tags, exactly data-research: AST unsigned literal sets; missing only question digits used by reference; known/word/percent constants discounted."
+              },
+              "generation_seconds": 7.735410013000092
+            }
+          }
+        }
+      },
+      "failure": {
+        "status": "partial",
+        "error": "RuntimeError",
+        "message": "Inference tensors cannot be saved for backward. Please do not use Tensors created in inference mode in computation tracked by autograd. To work around this, you can make a clone to get a normal tensor and use it in autograd, or use `torch.no_grad()` instead of `torch.inference_mode()`."
+      },
+      "decision": "pending: missing registered1.92M point",
+      "equal_time": {
+        "status": "not required"
+      }
+    }
+  },
+  "source_receipts": {
+    "results/kaggle-runs/nlp-hw02-kaggle-s1/1/inputs/tokenizer.json": "261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d",
+    "results/kaggle-runs/nlp-hw02-kaggle-s1/1/inputs/heldout4k.json": "28a3c0c9088c5b4a17d75d216e4abc4262cc9ca62884966c43e7ec09b6f040c2",
+    "results/kaggle-runs/nlp-hw02-kaggle-s1/1/inputs/heldout4k-reference-execution.json": "3855680e9a37292aa2e351b8e8e4f7a5cbbe76444096d136470e4a9be8797111",
+    "results/kaggle-runs/nlp-hw02-kaggle-s1/1/inputs/old1024.json": "2ba73d6034ea8c258c3ecda5c8c110143cba7fcd800dbdbdb7ce5cc666d408b2",
+    "results/kaggle-runs/nlp-hw02-kaggle-s1/1/inputs/old1024-reference-execution.json": "f7cd4cac0ff393cdd622f5d9018b762bcae1f7a397da334dbad5fca3ece2bcf3",
+    "kaggle/staging/drive-merged/26-wsd-data-scaling/points/p006250/training.json": "40eb062d8edffd28db93c8e9ef3ef36a2d1f6c6a1a6116bf215fd06732468de8",
+    "kaggle/staging/drive-merged/26-wsd-data-scaling/points/p006250/evaluation/metrics.json": "07c6c469c1efc863979a02cab4bbf8d1ca4f5528ae69d017c3edb2584b423260",
+    "kaggle/staging/drive-merged/26-wsd-data-scaling/points/p006250/evaluation/heldout4k-generations.json": "6f56d30dbd65a42b205d2b0c179c59a76c386b52adb16e9474d018fff74a923b",
+    "kaggle/staging/drive-merged/26-wsd-data-scaling/points/p006250/evaluation/heldout4k-execution.json": "92718881fc8a2d1a0c3ae74671ed0cd29a4c6dbc67d522187ba577c1f164c84a",
+    "kaggle/staging/drive-merged/26-wsd-data-scaling/points/p006250/evaluation/old1024-generations.json": "29b941fbcfaac14e6ba9a98a167b678dd128f6d55389a6fb0071f870ef749765",
+    "kaggle/staging/drive-merged/26-wsd-data-scaling/points/p006250/evaluation/old1024-execution.json": "ca8d8099a782bd920db1cab24d0ed3d8d02cb1a0b6fdca1cb01430aa3c45c529",
+    "kaggle/staging/drive-merged/26-wsd-data-scaling/points/p012500/training.json": "34b4af4ad253ed812583a64ad64a0d5220bbe3b927d60276b5a3b6345530febe",
+    "kaggle/staging/drive-merged/26-wsd-data-scaling/points/p012500/evaluation/metrics.json": "fe6da11259065b2f6f6e710d3d95fe89d23385ee0607e68fdefed1a2e177c2a5",
+    "kaggle/staging/drive-merged/26-wsd-data-scaling/points/p012500/evaluation/heldout4k-generations.json": "b2f5cf2a5c2452deec6092323974de10e59f47d492a95b524fcd35f3b3e8cc73",
+    "kaggle/staging/drive-merged/26-wsd-data-scaling/points/p012500/evaluation/heldout4k-execution.json": "da4fb601c8932098c560252ab396716ddad673eec4a178a3fbef711300f83524",
+    "kaggle/staging/drive-merged/26-wsd-data-scaling/points/p012500/evaluation/old1024-generations.json": "71130b2c15b6441e465205443b69440aca13be464f87c0274d7d3dde5a250574",
+    "kaggle/staging/drive-merged/26-wsd-data-scaling/points/p012500/evaluation/old1024-execution.json": "b41e87ea26baf962b36433a02858ce477322f500be8b7e19af26641e6992ebda"
+  },
+  "CPU_reexecution": {
+    "programs": 23113,
+    "statuses": {
+      "numeric": 22496,
+      "execution_error": 462,
+      "syntax_error": 93,
+      "non_number": 55,
+      "timeout": 7
+    },
+    "seconds": 10.547763291047886,
+    "chunk_retries": 0,
+    "pool_restarts": 0,
+    "chunk_rows": 2000,
+    "workers": 2,
+    "wall_limit": 3.0,
+    "cpu_limit": 2.0,
+    "saved_rows": 20480,
+    "unique_programs": 23113,
+    "evaluations": {
+      "26b/p006250/heldout4k": {
+        "matches": 1888,
+        "denominator": 4096,
+        "different_execution_indices": [],
+        "exact_match_set": true
+      },
+      "26b/p006250/old1024": {
+        "matches": 465,
+        "denominator": 991,
+        "different_execution_indices": [],
+        "exact_match_set": true
+      },
+      "26b/p012500/heldout4k": {
+        "matches": 2210,
+        "denominator": 4096,
+        "different_execution_indices": [],
+        "exact_match_set": true
+      },
+      "26b/p012500/old1024": {
+        "matches": 537,
+        "denominator": 991,
+        "different_execution_indices": [],
+        "exact_match_set": true
+      },
+      "30/p006250/heldout4k": {
+        "matches": 1876,
+        "denominator": 4096,
+        "different_execution_indices": [],
+        "exact_match_set": true
+      },
+      "30/p006250/old1024": {
+        "matches": 450,
+        "denominator": 991,
+        "different_execution_indices": [],
+        "exact_match_set": true
+      },
+      "31/p006250/heldout4k": {
+        "matches": 1733,
+        "denominator": 4096,
+        "different_execution_indices": [],
+        "exact_match_set": true
+      },
+      "31/p006250/old1024": {
+        "matches": 436,
+        "denominator": 991,
+        "different_execution_indices": [],
+        "exact_match_set": true
+      }
+    }
+  },
+  "controls": {
+    "p006250": {
+      "training": {
+        "nominal_main_updates": 6250,
+        "nominal_pairs": 800000,
+        "actual_updates": 7500,
+        "successful_optimizer_steps": 7500,
+        "AMP_skips_trajectory": 0,
+        "actual_pairs": 960000,
+        "cooldown_updates": 1250,
+        "counts": {
+          "pairs": 960000,
+          "source_tokens": 46797602,
+          "target_tokens": 64315631,
+          "source_slots": 70447232,
+          "target_slots": 85651200
+        },
+        "data": {
+          "presentations": 960000,
+          "unique_rows_seen": 960000,
+          "unique_fraction_of_cache": 0.13562250943741946,
+          "seen_rows_repeated": 0,
+          "row_indices_prefix_sha256": "db103aa3e3d10fd6e98f5708cb1d8a043e1b36b0dac2364d76afe325fd105787"
+        },
+        "compute_updates_total": 7500,
+        "train_seconds_total": 928.1166084509971
+      },
+      "splits": {
+        "heldout4k": {
+          "matches": 1888,
+          "denominator": 4096,
+          "length_accuracy": {
+            "<60": {
+              "denominator": 2013,
+              "matches": 1307,
+              "accuracy": 0.6492796820665673
+            },
+            "60–90": {
+              "denominator": 1457,
+              "matches": 483,
+              "accuracy": 0.33150308853809196
+            },
+            "90–120": {
+              "denominator": 488,
+              "matches": 86,
+              "accuracy": 0.1762295081967213
+            },
+            "≥120": {
+              "denominator": 138,
+              "matches": 12,
+              "accuracy": 0.08695652173913043
+            }
+          },
+          "errors": {
+            "errors": 2208,
+            "statuses": {
+              "numeric": 2069,
+              "execution_error": 99,
+              "syntax_error": 33,
+              "non_number": 5,
+              "timeout": 2
+            },
+            "overlapping_tags": {
+              "same_literal_set_wrong_program": 717,
+              "other_numeric_or_structure": 753,
+              "used_question_number_missing": 579,
+              "runtime_or_non_numeric": 139,
+              "number_not_from_question_or_known_constant": 208
+            },
+            "exclusive_priority_counts": {
+              "same_literal_set_wrong_program": 642,
+              "other_numeric_or_structure": 753,
+              "used_question_number_missing": 477,
+              "runtime_or_non_numeric": 139,
+              "number_not_from_question_or_known_constant": 197
+            },
+            "by_reference_length": {
+              "<60": {
+                "other_numeric_or_structure": 272,
+                "used_question_number_missing": 110,
+                "runtime_or_non_numeric": 19,
+                "same_literal_set_wrong_program": 239,
+                "number_not_from_question_or_known_constant": 66
+              },
+              "60-90": {
+                "same_literal_set_wrong_program": 309,
+                "other_numeric_or_structure": 322,
+                "number_not_from_question_or_known_constant": 74,
+                "runtime_or_non_numeric": 55,
+                "used_question_number_missing": 214
+              },
+              "90-120": {
+                "same_literal_set_wrong_program": 72,
+                "runtime_or_non_numeric": 42,
+                "used_question_number_missing": 112,
+                "other_numeric_or_structure": 132,
+                "number_not_from_question_or_known_constant": 44
+              },
+              ">=120": {
+                "same_literal_set_wrong_program": 22,
+                "used_question_number_missing": 41,
+                "other_numeric_or_structure": 27,
+                "number_not_from_question_or_known_constant": 13,
+                "runtime_or_non_numeric": 23
+              }
+            },
+            "oversized_literal_rows": [
+              597
+            ],
+            "caveat": "Heuristic overlapping tags, exactly data-research: AST unsigned literal sets; missing only question digits used by reference; known/word/percent constants discounted."
+          }
+        },
+        "old1024": {
+          "matches": 465,
+          "denominator": 991,
+          "length_accuracy": {
+            "<60": {
+              "denominator": 495,
+              "matches": 335,
+              "accuracy": 0.6767676767676768
+            },
+            "60–90": {
+              "denominator": 345,
+              "matches": 113,
+              "accuracy": 0.32753623188405795
+            },
+            "90–120": {
+              "denominator": 115,
+              "matches": 12,
+              "accuracy": 0.10434782608695652
+            },
+            "≥120": {
+              "denominator": 36,
+              "matches": 5,
+              "accuracy": 0.1388888888888889
+            }
+          },
+          "errors": {
+            "errors": 526,
+            "statuses": {
+              "numeric": 495,
+              "execution_error": 21,
+              "syntax_error": 7,
+              "non_number": 2,
+              "timeout": 1
+            },
+            "overlapping_tags": {
+              "other_numeric_or_structure": 162,
+              "same_literal_set_wrong_program": 181,
+              "used_question_number_missing": 146,
+              "number_not_from_question_or_known_constant": 59,
+              "runtime_or_non_numeric": 31
+            },
+            "exclusive_priority_counts": {
+              "other_numeric_or_structure": 162,
+              "same_literal_set_wrong_program": 155,
+              "used_question_number_missing": 122,
+              "number_not_from_question_or_known_constant": 56,
+              "runtime_or_non_numeric": 31
+            },
+            "by_reference_length": {
+              "<60": {
+                "same_literal_set_wrong_program": 64,
+                "other_numeric_or_structure": 56,
+                "used_question_number_missing": 23,
+                "number_not_from_question_or_known_constant": 11,
+                "runtime_or_non_numeric": 6
+              },
+              "60-90": {
+                "other_numeric_or_structure": 70,
+                "same_literal_set_wrong_program": 67,
+                "used_question_number_missing": 55,
+                "number_not_from_question_or_known_constant": 27,
+                "runtime_or_non_numeric": 13
+              },
+              "90-120": {
+                "used_question_number_missing": 34,
+                "same_literal_set_wrong_program": 19,
+                "runtime_or_non_numeric": 10,
+                "number_not_from_question_or_known_constant": 13,
+                "other_numeric_or_structure": 27
+              },
+              ">=120": {
+                "used_question_number_missing": 10,
+                "runtime_or_non_numeric": 2,
+                "same_literal_set_wrong_program": 5,
+                "number_not_from_question_or_known_constant": 5,
+                "other_numeric_or_structure": 9
+              }
+            },
+            "oversized_literal_rows": [
+              971
+            ],
+            "caveat": "Heuristic overlapping tags, exactly data-research: AST unsigned literal sets; missing only question digits used by reference; known/word/percent constants discounted."
+          }
+        }
+      }
+    },
+    "p012500": {
+      "training": {
+        "nominal_main_updates": 12500,
+        "nominal_pairs": 1600000,
+        "actual_updates": 15000,
+        "successful_optimizer_steps": 15000,
+        "AMP_skips_trajectory": 0,
+        "actual_pairs": 1920000,
+        "cooldown_updates": 2500,
+        "counts": {
+          "pairs": 1920000,
+          "source_tokens": 93602247,
+          "target_tokens": 128585103,
+          "source_slots": 140806656,
+          "target_slots": 171168768
+        },
+        "data": {
+          "presentations": 1920000,
+          "unique_rows_seen": 1920000,
+          "unique_fraction_of_cache": 0.27124501887483893,
+          "seen_rows_repeated": 0,
+          "row_indices_prefix_sha256": "b3891e559cc9a07bd8c34a73d67949799265e8b3d812a852bf877947e7e2fead"
+        },
+        "compute_updates_total": 16250,
+        "train_seconds_total": 2018.225873703993
+      },
+      "splits": {
+        "heldout4k": {
+          "matches": 2210,
+          "denominator": 4096,
+          "length_accuracy": {
+            "<60": {
+              "denominator": 2013,
+              "matches": 1449,
+              "accuracy": 0.7198211624441133
+            },
+            "60–90": {
+              "denominator": 1457,
+              "matches": 608,
+              "accuracy": 0.4172958133150309
+            },
+            "90–120": {
+              "denominator": 488,
+              "matches": 134,
+              "accuracy": 0.27459016393442626
+            },
+            "≥120": {
+              "denominator": 138,
+              "matches": 19,
+              "accuracy": 0.13768115942028986
+            }
+          },
+          "errors": {
+            "errors": 1886,
+            "statuses": {
+              "numeric": 1794,
+              "execution_error": 75,
+              "non_number": 7,
+              "syntax_error": 9,
+              "timeout": 1
+            },
+            "overlapping_tags": {
+              "same_literal_set_wrong_program": 680,
+              "other_numeric_or_structure": 658,
+              "used_question_number_missing": 418,
+              "number_not_from_question_or_known_constant": 192,
+              "runtime_or_non_numeric": 92
+            },
+            "exclusive_priority_counts": {
+              "same_literal_set_wrong_program": 612,
+              "other_numeric_or_structure": 658,
+              "used_question_number_missing": 343,
+              "number_not_from_question_or_known_constant": 181,
+              "runtime_or_non_numeric": 92
+            },
+            "by_reference_length": {
+              "<60": {
+                "other_numeric_or_structure": 221,
+                "used_question_number_missing": 65,
+                "same_literal_set_wrong_program": 208,
+                "number_not_from_question_or_known_constant": 61,
+                "runtime_or_non_numeric": 9
+              },
+              "60-90": {
+                "same_literal_set_wrong_program": 294,
+                "other_numeric_or_structure": 280,
+                "used_question_number_missing": 158,
+                "number_not_from_question_or_known_constant": 77,
+                "runtime_or_non_numeric": 40
+              },
+              "90-120": {
+                "same_literal_set_wrong_program": 87,
+                "used_question_number_missing": 81,
+                "runtime_or_non_numeric": 32,
+                "other_numeric_or_structure": 120,
+                "number_not_from_question_or_known_constant": 34
+              },
+              ">=120": {
+                "other_numeric_or_structure": 37,
+                "same_literal_set_wrong_program": 23,
+                "runtime_or_non_numeric": 11,
+                "used_question_number_missing": 39,
+                "number_not_from_question_or_known_constant": 9
+              }
+            },
+            "oversized_literal_rows": [
+              866
+            ],
+            "caveat": "Heuristic overlapping tags, exactly data-research: AST unsigned literal sets; missing only question digits used by reference; known/word/percent constants discounted."
+          }
+        },
+        "old1024": {
+          "matches": 537,
+          "denominator": 991,
+          "length_accuracy": {
+            "<60": {
+              "denominator": 495,
+              "matches": 362,
+              "accuracy": 0.7313131313131314
+            },
+            "60–90": {
+              "denominator": 345,
+              "matches": 149,
+              "accuracy": 0.4318840579710145
+            },
+            "90–120": {
+              "denominator": 115,
+              "matches": 19,
+              "accuracy": 0.16521739130434782
+            },
+            "≥120": {
+              "denominator": 36,
+              "matches": 7,
+              "accuracy": 0.19444444444444445
+            }
+          },
+          "errors": {
+            "errors": 454,
+            "statuses": {
+              "numeric": 436,
+              "execution_error": 17,
+              "syntax_error": 1
+            },
+            "overlapping_tags": {
+              "other_numeric_or_structure": 148,
+              "same_literal_set_wrong_program": 190,
+              "used_question_number_missing": 92,
+              "number_not_from_question_or_known_constant": 41,
+              "runtime_or_non_numeric": 18
+            },
+            "exclusive_priority_counts": {
+              "other_numeric_or_structure": 148,
+              "same_literal_set_wrong_program": 170,
+              "used_question_number_missing": 77,
+              "number_not_from_question_or_known_constant": 41,
+              "runtime_or_non_numeric": 18
+            },
+            "by_reference_length": {
+              "<60": {
+                "same_literal_set_wrong_program": 63,
+                "other_numeric_or_structure": 46,
+                "number_not_from_question_or_known_constant": 13,
+                "used_question_number_missing": 10,
+                "runtime_or_non_numeric": 1
+              },
+              "60-90": {
+                "other_numeric_or_structure": 61,
+                "same_literal_set_wrong_program": 78,
+                "number_not_from_question_or_known_constant": 20,
+                "runtime_or_non_numeric": 5,
+                "used_question_number_missing": 32
+              },
+              "90-120": {
+                "used_question_number_missing": 28,
+                "same_literal_set_wrong_program": 23,
+                "other_numeric_or_structure": 31,
+                "number_not_from_question_or_known_constant": 5,
+                "runtime_or_non_numeric": 9
+              },
+              ">=120": {
+                "used_question_number_missing": 7,
+                "same_literal_set_wrong_program": 6,
+                "runtime_or_non_numeric": 3,
+                "other_numeric_or_structure": 10,
+                "number_not_from_question_or_known_constant": 3
+              }
+            },
+            "oversized_literal_rows": [],
+            "caveat": "Heuristic overlapping tags, exactly data-research: AST unsigned literal sets; missing only question digits used by reference; known/word/percent constants discounted."
+          }
+        }
+      }
+    }
+  },
+  "experiment32": {
+    "status": "pending: B scoring never started",
+    "scored_candidates": 0,
+    "expected": 332800,
+    "cause": "GPU0 RuntimeError escaped representation worker before B.run; generic partial summary is not a score receipt",
+    "B_weights_SHA_verified": "cbbe292cf65e37ec4876b8206b19b06b6fbe7541fd7be1115799c3ce085f720a"
+  },
+  "acceptance_rule": {
+    "primary_1920000_min_matches": 2251,
+    "secondary_min_matches": 528,
+    "compact_equal_time_required": true,
+    "missing_or_misaligned": "pending, not accepted or rejected based on early point"
+  },
+  "local_fix": {
+    "file": "../kaggle/src/s3_runtime.py",
+    "change": "evaluate: inference_mode -> no_grad",
+    "regression": "../checks/kaggle-s3-dtype-regression.json",
+    "GPU_verified": false,
+    "frozen_v1_source_unchanged": true,
+    "rebuilt_notebook": false
+  },
+  "unverified": [
+    "30/31 at1.92M",
+    "30 equal-time quality",
+    "B scores and A/B selection",
+    "real CUDA fix and speed/memory",
+    "production full1919 T4 pipeline<=180s",
+    "fresh/official score"
+  ],
+  "new_GPU_runs": 0,
+  "pushes": 0,
+  "seconds": 13.896573457866907,
+  "status": "passed saved-artifact audit; experiment decisions pending"
+}

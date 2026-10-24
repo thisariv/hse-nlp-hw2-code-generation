@@ -1,0 +1,71 @@
+{
+  "paths": [
+    "courses/nlp/index.md",
+    "courses/nlp/progress.md",
+    "courses/nlp/backlog.md",
+    "dashboard.md",
+    "knowledge/bibliography.md",
+    "README.md",
+    "work/notes/b3-results.md",
+    "work/research/analyze-b3-results.py",
+    "work/results/b3-results.json",
+    "work/results/b3-ensemble-grid.csv",
+    "work/results/b3-learning-curve.png",
+    "work/checks/b3-results-cpu.json",
+    "work/checks/b3-results-git.json"
+  ],
+  "message": "nlp: analyze B3 W-QK curves and cost-matched ensembles",
+  "actions": [
+    {
+      "command": [
+        "git",
+        "add",
+        "--",
+        "courses/nlp/index.md",
+        "courses/nlp/progress.md",
+        "courses/nlp/backlog.md",
+        "dashboard.md",
+        "knowledge/bibliography.md",
+        "README.md",
+        "work/notes/b3-results.md",
+        "work/research/analyze-b3-results.py",
+        "work/results/b3-results.json",
+        "work/results/b3-ensemble-grid.csv",
+        "work/results/b3-learning-curve.png",
+        "work/checks/b3-results-cpu.json",
+        "work/checks/b3-results-git.json"
+      ],
+      "returncode": 128,
+      "stdout": "",
+      "stderr": "fatal: Unable to create '<vault>/.git/worktrees/study1/index.lock': Operation not permitted\n"
+    },
+    {
+      "command": [
+        "git",
+        "commit",
+        "--only",
+        "-m",
+        "nlp: analyze B3 W-QK curves and cost-matched ensembles",
+        "--",
+        "courses/nlp/index.md",
+        "courses/nlp/progress.md",
+        "courses/nlp/backlog.md",
+        "dashboard.md",
+        "knowledge/bibliography.md",
+        "README.md",
+        "work/notes/b3-results.md",
+        "work/research/analyze-b3-results.py",
+        "work/results/b3-results.json",
+        "work/results/b3-ensemble-grid.csv",
+        "work/results/b3-learning-curve.png",
+        "work/checks/b3-results-cpu.json",
+        "work/checks/b3-results-git.json"
+      ],
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "error: pathspec 'work/notes/b3-results.md' did not match any file(s) known to git\nerror: pathspec 'work/research/analyze-b3-results.py' did not match any file(s) known to git\nerror: pathspec 'work/results/b3-results.json' did not match any file(s) known to git\nerror: pathspec 'work/results/b3-ensemble-grid.csv' did not match any file(s) known to git\nerror: pathspec 'work/results/b3-learning-curve.png' did not match any file(s) known to git\nerror: pathspec 'work/checks/b3-results-cpu.json' did not match any file(s) known to git\nerror: pathspec 'work/checks/b3-results-git.json' did not match any file(s) known to git\n"
+    }
+  ],
+  "committed": false,
+  "status": " M courses/nlp/backlog.md\n M README.md\n M courses/nlp/index.md\n M courses/nlp/progress.md\n M dashboard.md\n M knowledge/bibliography.md\n?? work/checks/b3-results-cpu.json\n?? work/checks/b3-results-git.json\n?? work/notes/b3-results.md\n?? work/research/analyze-b3-results.py\n?? work/results/b3-ensemble-grid.csv\n?? work/results/b3-learning-curve.png\n?? work/results/b3-results.json\n"
+}

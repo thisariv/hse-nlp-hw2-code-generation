@@ -1,0 +1,63 @@
+{
+  "checked_on": "2026-10-07",
+  "origin": "agent local data/CPU code checks, not a T4 experiment",
+  "notebook_format_and_all_seven_code_cells_compile": true,
+  "encoding_model_initialization_and_optimizer_cell_identical_to_byte_2000": true,
+  "data": {
+    "revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+    "shard": 0,
+    "training_examples": 20000,
+    "unique_train_questions": 19960,
+    "duplicate_rows_beyond_first_question": 40,
+    "max_question_multiplicity": 5,
+    "validation_examples": 64,
+    "train_sha256": "1304183967f02f01097d76c12fb24df30916a4ec44e54833cd3509264359300e",
+    "validation_sha256": "0edf2b479ebdc103ec05efc704c7bb0ac8084e41a8a44b58afef224702563050",
+    "train_prefix512_sha256": "3801627c7dcaae0c82c6694e0aa8514ca8ced044c07c7f30e779bb6a3130bc35",
+    "train_row_indices_sha256": "8280c88a7aa6ba3ebe31bfdf9123e5d3fb7a8b3d57272c6fe7fc7e02abdaf142",
+    "first_train_row_index": 1,
+    "last_train_row_index": 22958,
+    "raw_rows_scanned": 22959,
+    "rejected_length_before_last_selected_row": 691,
+    "excluded_hash_heldout_before_last_selected_row": 2268,
+    "selection": "first 20000 eligible non-heldout rows of shard 0; question<=512 bytes, code<512 bytes",
+    "question_overlap_train_validation": 0,
+    "download_and_selection_seconds": 0.2408087090589106,
+    "syntax_errors_in_selected_train": 0,
+    "test_question_overlap_checked_locally_only": 0,
+    "same_original_512_prefix_and_validation_64": true
+  },
+  "metric_checks": [
+    "UTF-8 plus EOS exact",
+    "matching text without EOS does not pass token exact",
+    "EOS at cap",
+    "truncation",
+    "token-weighted loss over uneven chunks; PAD excluded and EOS included"
+  ],
+  "cpu_smoke": {
+    "parameters": 1254915,
+    "training_data_pool": 20000,
+    "real_updates": 6,
+    "smoke_control_points": [
+      2,
+      4,
+      6
+    ],
+    "generation_cap_override_for_check_only": 8,
+    "train_64_and_validation_64_checked_at_every_point": true,
+    "weights_adam_and_rng_equal_same_six_updates_without_diagnostics": true,
+    "timing_checked_with_controlled_clock": true,
+    "evaluation_and_checkpoint_delay_excluded_from_training_timer": true,
+    "loss_delay_excluded_from_generation_timer": true,
+    "metrics_checkpoint_counter_and_rng_consistent": true,
+    "finite_loss_and_gradients": true,
+    "train_cell_repeat_rejected": true
+  },
+  "runtime": {
+    "torch": "2.14.1",
+    "device": "CPU"
+  },
+  "ten_thousand_update_or_t4_experiment_executed": false,
+  "cpu_training_or_inference_speed_benchmarked": false,
+  "generated_or_reference_programs_executed": false
+}

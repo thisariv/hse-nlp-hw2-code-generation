@@ -1,0 +1,28 @@
+hw02-data/
+*.pt
+hw02-exploratory-predictions.json
+hw02-byte-2000-predictions.json
+
+# Runtime artifacts of experiment 06; import selected results explicitly.
+hw02-byte-20k-continue-results.json
+hw02-byte-20k-continue-*.zip
+hw02-byte-20k-continue-latest.tmp
+
+# Runtime artifacts of experiment 07; import selected results explicitly.
+hw02-kv-cache-*.json
+hw02-kv-cache-*.zip
+hw02-kv-cache-*.tmp
+
+# Full per-example test dumps; keep summaries/notebook outputs in Git.
+results/generations/
+
+# Runtime files of experiment09; selected results are imported separately.
+hw02-bpe4k-width256-20k/
+hw02-bpe4k-width256-20k-results.zip
+
+# Runtime files of experiment10; selected results are imported separately.
+hw02-bpe4k-width256-cosine-20k/
+hw02-bpe4k-width256-cosine-20k-results.zip
+
+# D1 full train diagnostics and filtered row orders; import summaries separately.
+results/d1-labels/

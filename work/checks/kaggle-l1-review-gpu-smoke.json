@@ -1,0 +1,129 @@
+{
+  "passed": true,
+  "version_ref": "thisarivson/nlp-hw02-l1-gpu-smoke/2",
+  "server_status": "COMPLETE",
+  "internal_status": "complete",
+  "exit_codes": [
+    0,
+    0
+  ],
+  "wall_seconds": 341.95175137,
+  "manifest_files_verified": 50,
+  "manifest_service_files_unavailable": [
+    {
+      "file": "__notebook__.ipynb",
+      "reason": "Kaggle service notebook is not exposed by output API; source verified via pinned pull"
+    }
+  ],
+  "downloaded_files": 110,
+  "output_bytes": 4099761726,
+  "full_states_and_weights_downloaded": true,
+  "models": {
+    "C": {
+      "parameter_count": 53646403,
+      "micro_batch": 64,
+      "peak_reserved_bytes": 11630804992,
+      "AMP_skips": 0,
+      "phases": [
+        "full longest-row memory probe",
+        "main train",
+        "cooldown branch",
+        "CUDA FP16 greedy/CE",
+        "heldout restored execution",
+        "test256 greedy timer",
+        "full anchor restore",
+        "train after eval",
+        "full state resume into new model/Adam/scaler",
+        "train after resume"
+      ],
+      "CUDA_late_OOM_regression": {
+        "passed": true,
+        "injected_after_scaled_backward": true,
+        "retry_micro_batch": 32,
+        "max_weight_difference_from_clean_update": 0.0,
+        "weight_tolerance": 1e-06,
+        "scaler_and_CUDA_RNG_exact": true
+      },
+      "checkpoints": [
+        {
+          "file": "model-C/checkpoints/main-826a8347d432.pt",
+          "bytes": 644025235,
+          "updates": 256,
+          "cursor": 32768,
+          "optimizer_states": 212,
+          "CUDA_RNG_states": 1,
+          "FP32_full_main": true
+        },
+        {
+          "file": "model-C/checkpoints/main-c2aa7a8b1d09.pt",
+          "bytes": 644025235,
+          "updates": 288,
+          "cursor": 36864,
+          "optimizer_states": 212,
+          "CUDA_RNG_states": 1,
+          "FP32_full_main": true
+        }
+      ],
+      "test256_full_pipeline_seconds": 7.514309242000024,
+      "test256_greedy_seconds": 6.2185584790000235,
+      "effective_batch": 128,
+      "main_updates": 288,
+      "cursor": 36864,
+      "cooldown_updates": 19
+    },
+    "D": {
+      "parameter_count": 103902979,
+      "micro_batch": 32,
+      "peak_reserved_bytes": 9292480512,
+      "AMP_skips": 0,
+      "phases": [
+        "full longest-row memory probe",
+        "main train",
+        "cooldown branch",
+        "CUDA FP16 greedy/CE",
+        "heldout restored execution",
+        "test256 greedy timer",
+        "full anchor restore",
+        "train after eval",
+        "full state resume into new model/Adam/scaler",
+        "train after resume"
+      ],
+      "CUDA_late_OOM_regression": {
+        "passed": true,
+        "injected_after_scaled_backward": true,
+        "retry_micro_batch": 16,
+        "max_weight_difference_from_clean_update": 0.0,
+        "weight_tolerance": 1e-06,
+        "scaler_and_CUDA_RNG_exact": true
+      },
+      "checkpoints": [
+        {
+          "file": "model-D/checkpoints/main-1d02d2d788cd.pt",
+          "bytes": 1247187325,
+          "updates": 288,
+          "cursor": 36864,
+          "optimizer_states": 280,
+          "CUDA_RNG_states": 1,
+          "FP32_full_main": true
+        },
+        {
+          "file": "model-D/checkpoints/main-9c4ff7c098b1.pt",
+          "bytes": 1247187325,
+          "updates": 256,
+          "cursor": 32768,
+          "optimizer_states": 280,
+          "CUDA_RNG_states": 1,
+          "FP32_full_main": true
+        }
+      ],
+      "test256_full_pipeline_seconds": 13.211368033999975,
+      "test256_greedy_seconds": 11.128608848999988,
+      "effective_batch": 128,
+      "main_updates": 288,
+      "cursor": 36864,
+      "cooldown_updates": 19
+    }
+  },
+  "source_static_check": "kaggle-l1-review-static.json",
+  "production_L1_launched": false
+}

@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "private": true,
+  "models": [
+    {
+      "name": "C-long2x-B6",
+      "source": "friend1/nlp-hw02-b6/1",
+      "source_path": "model-GPU1/weights/b6-final-fp16.pt",
+      "sha256": "ee30794048bb6200cf97ac4d7e5c1606f0e97893ea04f6567c9487f6c04345fa",
+      "checkpoint_sha256": "965684099b7e43c47c836a7598537ccee9bec3d8d3e366a40ec263d9000f7a7c",
+      "bytes": 107364659
+    },
+    {
+      "name": "W-B6",
+      "source": "friend1/nlp-hw02-b6/1",
+      "source_path": "model-GPU0/weights/b6-final-fp16.pt",
+      "sha256": "cb34c81e6cda83c73bf4662c5c425446be8cdb48c30dd5e9e217fd6cbc1cd496",
+      "checkpoint_sha256": "fbaed8d7e2787555557e68e477cacd85ec2662a82149927e37702d6b8d6c536a",
+      "bytes": 226949203
+    },
+    {
+      "name": "C-long2x-B7",
+      "source": "friend1/nlp-hw02-b7/1",
+      "source_path": "model-GPU1/weights/b6-final-fp16.pt",
+      "sha256": "bcb41c54d031b70523d357dd7d14dc24ec7d1393a6cb8714d8eacfe761cca32b",
+      "checkpoint_sha256": "843e775c9732fdaddc53be4af023b10fcbc2aa26a18fa0cb2f8de51df70d85a6",
+      "bytes": 107364659
+    },
+    {
+      "name": "W-B7",
+      "source": "friend1/nlp-hw02-b7/1",
+      "source_path": "model-GPU0/weights/b6-final-fp16.pt",
+      "sha256": "3378c368f601c7cd046d40de22cf5cc6f5081deff190819bb4f616f0eb2761ac",
+      "checkpoint_sha256": "d202bf28812ebb30e05cb47ae9978f9a82d2792eedd6250624ca9f1617438f9d",
+      "bytes": 226949203
+    },
+    {
+      "name": "pilot-b",
+      "source": "friend1/nlp-hw02-kaggle-p1/3",
+      "source_path": "model-pilot-b/weights/long-truncation-fp16.pt",
+      "sha256": "8439037720dda16dda6b73fe676860d5498bbcba4cacebc0d709bbb22db464a5",
+      "checkpoint_sha256": "929c4a5c36f31790a844e21f2ff2cdaf0c8c18dd35ba377c1794be7d61db8264",
+      "bytes": 107366185
+    }
+  ],
+  "at_utc": "2026-10-20T16:16:55.284254+00:00"
+}

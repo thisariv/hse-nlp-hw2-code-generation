@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "private": true,
+  "one_smoke_push": true,
+  "one_production_push": true,
+  "smoke_complete": true,
+  "smoke_version": 1,
+  "production_version": 1,
+  "production_status": "RUNNING",
+  "production_code_exact": true,
+  "review_file": "notes/b6-review.md",
+  "protected_service_files_unchanged": true,
+  "tracked_diff": [],
+  "index_changed": false,
+  "commit_created": false,
+  "start_utc": "2026-10-19T10:05:10.161420+00:00",
+  "ETA_utc": "2026-10-19T14:55:04.899237+00:00",
+  "status_checked_at_utc": "2026-10-19T10:06:53.918210+00:00"
+}

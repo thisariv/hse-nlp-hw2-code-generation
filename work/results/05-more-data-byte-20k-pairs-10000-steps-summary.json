@@ -1,0 +1,2403 @@
+{
+  "read_on": "2026-10-07",
+  "origin": "saved user Colab notebook outputs; extracted summary, not original results JSON",
+  "source_filename": "byte_20k_pairs.ipynb",
+  "source_sha256": "61cbfbadf31d1d5fda7b8d552c88c3c35aa6b5de576c694a7f5f09b4db352844",
+  "all_seven_code_cells_match_prepared_notebook_ignoring_surrounding_blank_lines": true,
+  "execution_counts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "error_outputs_present": false,
+  "saved_colab_result": {
+    "hardware": "Tesla T4",
+    "pytorch": "2.11.0+cu130",
+    "config": {
+      "seed": 42,
+      "batch_size_train": 8,
+      "total_steps": 10000,
+      "evaluation_steps": [
+        2000,
+        5000,
+        10000
+      ],
+      "d_model": 128,
+      "encoder_layers": 2,
+      "decoder_layers": 2,
+      "heads": 4,
+      "ffn_dim": 512,
+      "dropout": 0.1,
+      "norm_first": false,
+      "lr": 0.001,
+      "optimizer": "AdamW",
+      "weight_decay": 0.01,
+      "clip_norm": 1.0,
+      "scheduler": null,
+      "tokenizer": "UTF-8 bytes",
+      "max_positions": 2048,
+      "generation_cap": 512,
+      "batch_size_inference": 32
+    },
+    "data": {
+      "revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+      "shard": 0,
+      "training_examples": 20000,
+      "unique_train_questions": 19960,
+      "duplicate_rows_beyond_first_question": 40,
+      "max_question_multiplicity": 5,
+      "validation_examples": 64,
+      "train_sha256": "1304183967f02f01097d76c12fb24df30916a4ec44e54833cd3509264359300e",
+      "validation_sha256": "0edf2b479ebdc103ec05efc704c7bb0ac8084e41a8a44b58afef224702563050",
+      "train_prefix512_sha256": "3801627c7dcaae0c82c6694e0aa8514ca8ced044c07c7f30e779bb6a3130bc35",
+      "train_row_indices_sha256": "8280c88a7aa6ba3ebe31bfdf9123e5d3fb7a8b3d57272c6fe7fc7e02abdaf142",
+      "first_train_row_index": 1,
+      "last_train_row_index": 22958,
+      "raw_rows_scanned": 22959,
+      "rejected_length_before_last_selected_row": 691,
+      "excluded_hash_heldout_before_last_selected_row": 2268,
+      "selection": "first 20000 eligible non-heldout rows of shard 0; question<=512 bytes, code<512 bytes",
+      "question_overlap_train_validation": 0,
+      "download_and_selection_seconds": 2.028613174000043
+    },
+    "loss_history_as_printed": [
+      {
+        "step": 0,
+        "train_batch_loss": null,
+        "validation_loss_16": 5.674649044339758,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 0.0
+      },
+      {
+        "step": 1,
+        "train_batch_loss": 5.6814069747924805,
+        "validation_loss_16": 4.619830624280783,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 0.4500378179999984,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 2.2220354823602926,
+        "mean_training_pair_presentations": 0.0004
+      },
+      {
+        "step": 50,
+        "train_batch_loss": 2.230156660079956,
+        "validation_loss_16": 2.1919953902653915,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 1.663593920999972,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 30.055411581418518,
+        "mean_training_pair_presentations": 0.02
+      },
+      {
+        "step": 100,
+        "train_batch_loss": 1.9688485860824585,
+        "validation_loss_16": 2.0672912246475836,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 2.78020526399996,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 35.96856724748703,
+        "mean_training_pair_presentations": 0.04
+      },
+      {
+        "step": 150,
+        "train_batch_loss": 2.2097928524017334,
+        "validation_loss_16": 2.013885814109249,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 3.8905512429999476,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 38.55494777761549,
+        "mean_training_pair_presentations": 0.06
+      },
+      {
+        "step": 200,
+        "train_batch_loss": 2.172970771789551,
+        "validation_loss_16": 1.9735865971572928,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 5.002003124999931,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 39.98398141744519,
+        "mean_training_pair_presentations": 0.08
+      },
+      {
+        "step": 250,
+        "train_batch_loss": 2.215569496154785,
+        "validation_loss_16": 1.9479042114679228,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 6.086613252999939,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 41.07374489035939,
+        "mean_training_pair_presentations": 0.1
+      },
+      {
+        "step": 300,
+        "train_batch_loss": 1.8334901332855225,
+        "validation_loss_16": 1.9206099076704546,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 7.200840514999925,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 41.66180314299089,
+        "mean_training_pair_presentations": 0.12
+      },
+      {
+        "step": 350,
+        "train_batch_loss": 1.9348502159118652,
+        "validation_loss_16": 1.8855989058903913,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 8.306933819999927,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.13347639261716,
+        "mean_training_pair_presentations": 0.14
+      },
+      {
+        "step": 400,
+        "train_batch_loss": 1.8535243272781372,
+        "validation_loss_16": 1.8479467464398733,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 9.400066698999922,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.55288954944928,
+        "mean_training_pair_presentations": 0.16
+      },
+      {
+        "step": 450,
+        "train_batch_loss": 2.2177834510803223,
+        "validation_loss_16": 1.82749877508271,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 10.662363476999928,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.204526320145355,
+        "mean_training_pair_presentations": 0.18
+      },
+      {
+        "step": 500,
+        "train_batch_loss": 2.019821882247925,
+        "validation_loss_16": 1.815324052430955,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 12.014137193999943,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 41.61763694938561,
+        "mean_training_pair_presentations": 0.2
+      },
+      {
+        "step": 550,
+        "train_batch_loss": 1.910002589225769,
+        "validation_loss_16": 1.811352763817966,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 13.238540622999949,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 41.54536483005224,
+        "mean_training_pair_presentations": 0.22
+      },
+      {
+        "step": 600,
+        "train_batch_loss": 1.6508716344833374,
+        "validation_loss_16": 1.7908547843696059,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 14.321910613999933,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 41.89385174723049,
+        "mean_training_pair_presentations": 0.24
+      },
+      {
+        "step": 650,
+        "train_batch_loss": 1.7921501398086548,
+        "validation_loss_16": 1.8008908182897008,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 15.459144076999962,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.04631231602704,
+        "mean_training_pair_presentations": 0.26
+      },
+      {
+        "step": 700,
+        "train_batch_loss": 1.8960531949996948,
+        "validation_loss_16": 1.8041340396648446,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 16.57211230799993,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.23963650439937,
+        "mean_training_pair_presentations": 0.28
+      },
+      {
+        "step": 750,
+        "train_batch_loss": 1.9733458757400513,
+        "validation_loss_16": 1.808160533839183,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 17.68368830399993,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.41196672926853,
+        "mean_training_pair_presentations": 0.3
+      },
+      {
+        "step": 800,
+        "train_batch_loss": 1.8109368085861206,
+        "validation_loss_16": 1.7844036001330552,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 18.76490047899989,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.632786723025426,
+        "mean_training_pair_presentations": 0.32
+      },
+      {
+        "step": 850,
+        "train_batch_loss": 1.8413615226745605,
+        "validation_loss_16": 1.7749133005789701,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 19.862848505999864,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.79345934412404,
+        "mean_training_pair_presentations": 0.34
+      },
+      {
+        "step": 900,
+        "train_batch_loss": 1.735565185546875,
+        "validation_loss_16": 1.755682239598317,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 20.921663737999836,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 43.01761137501401,
+        "mean_training_pair_presentations": 0.36
+      },
+      {
+        "step": 950,
+        "train_batch_loss": 1.8513612747192383,
+        "validation_loss_16": 1.7456970566024166,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 22.043181547999836,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 43.09722704643793,
+        "mean_training_pair_presentations": 0.38
+      },
+      {
+        "step": 1000,
+        "train_batch_loss": 1.7962623834609985,
+        "validation_loss_16": 1.7490602412075662,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 23.42749810399988,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.68488233616656,
+        "mean_training_pair_presentations": 0.4
+      },
+      {
+        "step": 1050,
+        "train_batch_loss": 1.633271336555481,
+        "validation_loss_16": 1.773723782274885,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 24.761647425999854,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.40428683664621,
+        "mean_training_pair_presentations": 0.42
+      },
+      {
+        "step": 1100,
+        "train_batch_loss": 2.0075085163116455,
+        "validation_loss_16": 1.7015313432735184,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 25.86284890399986,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.53205066785499,
+        "mean_training_pair_presentations": 0.44
+      },
+      {
+        "step": 1150,
+        "train_batch_loss": 1.881098985671997,
+        "validation_loss_16": 1.7192395454994966,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 26.96432709099986,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.6489411776883,
+        "mean_training_pair_presentations": 0.46
+      },
+      {
+        "step": 1200,
+        "train_batch_loss": 1.7582859992980957,
+        "validation_loss_16": 1.7356009005951525,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 28.128005966999865,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.662106990728574,
+        "mean_training_pair_presentations": 0.48
+      },
+      {
+        "step": 1250,
+        "train_batch_loss": 1.674174189567566,
+        "validation_loss_16": 1.7002248116549195,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 29.238602462999893,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.751701336677,
+        "mean_training_pair_presentations": 0.5
+      },
+      {
+        "step": 1300,
+        "train_batch_loss": 1.8736048936843872,
+        "validation_loss_16": 1.7192073773734178,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 30.338602446999914,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.84969956249757,
+        "mean_training_pair_presentations": 0.52
+      },
+      {
+        "step": 1350,
+        "train_batch_loss": 1.7634658813476562,
+        "validation_loss_16": 1.6907027653912543,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 31.470683136999924,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.89706690265048,
+        "mean_training_pair_presentations": 0.54
+      },
+      {
+        "step": 1400,
+        "train_batch_loss": 1.8924368619918823,
+        "validation_loss_16": 1.7048376366513234,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 32.600470498999925,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.944165485064005,
+        "mean_training_pair_presentations": 0.56
+      },
+      {
+        "step": 1450,
+        "train_batch_loss": 1.7240633964538574,
+        "validation_loss_16": 1.7049450978585299,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 33.71391163099992,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 43.00895179029674,
+        "mean_training_pair_presentations": 0.58
+      },
+      {
+        "step": 1500,
+        "train_batch_loss": 1.7368634939193726,
+        "validation_loss_16": 1.6711223501330552,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 34.915099890999954,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.96135496340522,
+        "mean_training_pair_presentations": 0.6
+      },
+      {
+        "step": 1550,
+        "train_batch_loss": 1.457346796989441,
+        "validation_loss_16": 1.6848567352470512,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 36.21715165099994,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.79740204133931,
+        "mean_training_pair_presentations": 0.62
+      },
+      {
+        "step": 1600,
+        "train_batch_loss": 1.737559199333191,
+        "validation_loss_16": 1.6814338499712314,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 37.4674439449999,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.70374040857204,
+        "mean_training_pair_presentations": 0.64
+      },
+      {
+        "step": 1650,
+        "train_batch_loss": 1.6276795864105225,
+        "validation_loss_16": 1.6863655467850978,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 38.568169028999876,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.78139309022798,
+        "mean_training_pair_presentations": 0.66
+      },
+      {
+        "step": 1700,
+        "train_batch_loss": 1.7292907238006592,
+        "validation_loss_16": 1.687865227632336,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 39.65741914899985,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.867136502574795,
+        "mean_training_pair_presentations": 0.68
+      },
+      {
+        "step": 1750,
+        "train_batch_loss": 1.755480408668518,
+        "validation_loss_16": 1.6712709696849828,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 40.76733334099987,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.92652613213772,
+        "mean_training_pair_presentations": 0.7
+      },
+      {
+        "step": 1800,
+        "train_batch_loss": 1.7497259378433228,
+        "validation_loss_16": 1.6662304069422469,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 41.83292091399983,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 43.02831264640694,
+        "mean_training_pair_presentations": 0.72
+      },
+      {
+        "step": 1850,
+        "train_batch_loss": 1.7692285776138306,
+        "validation_loss_16": 1.674332841493455,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 42.94327835099983,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 43.080083101222456,
+        "mean_training_pair_presentations": 0.74
+      },
+      {
+        "step": 1900,
+        "train_batch_loss": 1.7146317958831787,
+        "validation_loss_16": 1.6422290516667866,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 44.01493208099981,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 43.1671687349981,
+        "mean_training_pair_presentations": 0.76
+      },
+      {
+        "step": 1950,
+        "train_batch_loss": 1.8824076652526855,
+        "validation_loss_16": 1.6655161059766974,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 45.14879608199982,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 43.19052043953476,
+        "mean_training_pair_presentations": 0.78
+      },
+      {
+        "step": 2000,
+        "train_batch_loss": 1.6086273193359375,
+        "validation_loss_16": 1.6729070490056819,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 46.24833295599984,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 43.2448019673007,
+        "mean_training_pair_presentations": 0.8
+      },
+      {
+        "step": 2050,
+        "train_batch_loss": 1.5451359748840332,
+        "validation_loss_16": 1.6396265238420598,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 47.404031092999844,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 43.245267390408145,
+        "mean_training_pair_presentations": 0.82
+      },
+      {
+        "step": 2100,
+        "train_batch_loss": 1.9444175958633423,
+        "validation_loss_16": 1.6484094055667433,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 48.74496284299988,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 43.08137451584035,
+        "mean_training_pair_presentations": 0.84
+      },
+      {
+        "step": 2150,
+        "train_batch_loss": 1.7456802129745483,
+        "validation_loss_16": 1.6255278944008917,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 50.1907272599999,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.836597861244144,
+        "mean_training_pair_presentations": 0.86
+      },
+      {
+        "step": 2200,
+        "train_batch_loss": 1.8547152280807495,
+        "validation_loss_16": 1.649423474135141,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 51.29315378099989,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.89071421486523,
+        "mean_training_pair_presentations": 0.88
+      },
+      {
+        "step": 2250,
+        "train_batch_loss": 1.6285216808319092,
+        "validation_loss_16": 1.6192830637766111,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 52.48939960699988,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.86579798676044,
+        "mean_training_pair_presentations": 0.9
+      },
+      {
+        "step": 2300,
+        "train_batch_loss": 1.8137093782424927,
+        "validation_loss_16": 1.6517228630250287,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 53.626589513999875,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.889171600210695,
+        "mean_training_pair_presentations": 0.92
+      },
+      {
+        "step": 2350,
+        "train_batch_loss": 1.7298413515090942,
+        "validation_loss_16": 1.6354752903840621,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 54.751494903999856,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.92120250087128,
+        "mean_training_pair_presentations": 0.94
+      },
+      {
+        "step": 2400,
+        "train_batch_loss": 1.453126072883606,
+        "validation_loss_16": 1.6552231484644706,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 55.87368598799986,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.954030283870196,
+        "mean_training_pair_presentations": 0.96
+      },
+      {
+        "step": 2450,
+        "train_batch_loss": 1.5418498516082764,
+        "validation_loss_16": 1.6396158479574223,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 56.996482893999826,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.98510847689372,
+        "mean_training_pair_presentations": 0.98
+      },
+      {
+        "step": 2500,
+        "train_batch_loss": 1.5981584787368774,
+        "validation_loss_16": 1.6303799434964759,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 58.09196546299984,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 43.03521115312082,
+        "mean_training_pair_presentations": 1.0
+      },
+      {
+        "step": 2550,
+        "train_batch_loss": 1.8223289251327515,
+        "validation_loss_16": 1.6333530368958573,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 59.20502922199984,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 43.07066533889071,
+        "mean_training_pair_presentations": 1.02
+      },
+      {
+        "step": 2600,
+        "train_batch_loss": 1.758833408355713,
+        "validation_loss_16": 1.6491856547576238,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 60.48013262499984,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.98932371926172,
+        "mean_training_pair_presentations": 1.04
+      },
+      {
+        "step": 2650,
+        "train_batch_loss": 1.9502838850021362,
+        "validation_loss_16": 1.6526282061367232,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 61.75128688299981,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.91408541851049,
+        "mean_training_pair_presentations": 1.06
+      },
+      {
+        "step": 2700,
+        "train_batch_loss": 1.5872613191604614,
+        "validation_loss_16": 1.6079581977308688,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 63.01668036099977,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.845798676361184,
+        "mean_training_pair_presentations": 1.08
+      },
+      {
+        "step": 2750,
+        "train_batch_loss": 1.8793563842773438,
+        "validation_loss_16": 1.646063660861982,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 64.20493152599977,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.83160085431114,
+        "mean_training_pair_presentations": 1.1
+      },
+      {
+        "step": 2800,
+        "train_batch_loss": 1.524385690689087,
+        "validation_loss_16": 1.6080787228495397,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 65.36445292899975,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.83673884705222,
+        "mean_training_pair_presentations": 1.12
+      },
+      {
+        "step": 2850,
+        "train_batch_loss": 1.8725944757461548,
+        "validation_loss_16": 1.6179758297971807,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 66.56227217499975,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.817047959345906,
+        "mean_training_pair_presentations": 1.14
+      },
+      {
+        "step": 2900,
+        "train_batch_loss": 1.3975422382354736,
+        "validation_loss_16": 1.6175933240883917,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 67.68609326899974,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.84484241799491,
+        "mean_training_pair_presentations": 1.16
+      },
+      {
+        "step": 2950,
+        "train_batch_loss": 1.801108717918396,
+        "validation_loss_16": 1.6411694701165132,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 68.83772485299971,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.85440877512455,
+        "mean_training_pair_presentations": 1.18
+      },
+      {
+        "step": 3000,
+        "train_batch_loss": 1.7824246883392334,
+        "validation_loss_16": 1.5989946688003451,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 70.0003003649997,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.856958960993346,
+        "mean_training_pair_presentations": 1.2
+      },
+      {
+        "step": 3050,
+        "train_batch_loss": 1.6765468120574951,
+        "validation_loss_16": 1.6253295477021001,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 71.09710183299973,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.89907635284709,
+        "mean_training_pair_presentations": 1.22
+      },
+      {
+        "step": 3100,
+        "train_batch_loss": 1.7444504499435425,
+        "validation_loss_16": 1.6001874179642548,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 72.22517672399971,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.92132107680812,
+        "mean_training_pair_presentations": 1.24
+      },
+      {
+        "step": 3150,
+        "train_batch_loss": 1.5818848609924316,
+        "validation_loss_16": 1.5793091803617665,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 74.81295598799971,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.10500652460881,
+        "mean_training_pair_presentations": 1.26
+      },
+      {
+        "step": 3200,
+        "train_batch_loss": 1.6988400220870972,
+        "validation_loss_16": 1.6016408834687859,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 75.95921717799973,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.127869650120935,
+        "mean_training_pair_presentations": 1.28
+      },
+      {
+        "step": 3250,
+        "train_batch_loss": 1.473949909210205,
+        "validation_loss_16": 1.587808308310558,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 77.12997539099973,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.13666584910179,
+        "mean_training_pair_presentations": 1.3
+      },
+      {
+        "step": 3300,
+        "train_batch_loss": 1.6509312391281128,
+        "validation_loss_16": 1.5749173180829257,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 78.26790480199975,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.162876447865315,
+        "mean_training_pair_presentations": 1.32
+      },
+      {
+        "step": 3350,
+        "train_batch_loss": 1.508654236793518,
+        "validation_loss_16": 1.5653753247716484,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 79.40116264799974,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.19081797140905,
+        "mean_training_pair_presentations": 1.34
+      },
+      {
+        "step": 3400,
+        "train_batch_loss": 1.7808682918548584,
+        "validation_loss_16": 1.6120564731821778,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 80.58797395199974,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.18991784090672,
+        "mean_training_pair_presentations": 1.36
+      },
+      {
+        "step": 3450,
+        "train_batch_loss": 1.748241901397705,
+        "validation_loss_16": 1.6081129980581128,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 81.75111193799972,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.201260853999024,
+        "mean_training_pair_presentations": 1.38
+      },
+      {
+        "step": 3500,
+        "train_batch_loss": 1.6498383283615112,
+        "validation_loss_16": 1.6022301642063435,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 83.02403646399972,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.156466356795896,
+        "mean_training_pair_presentations": 1.4
+      },
+      {
+        "step": 3550,
+        "train_batch_loss": 1.6996489763259888,
+        "validation_loss_16": 1.5849440808400461,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 84.2006648309997,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.161187291397916,
+        "mean_training_pair_presentations": 1.42
+      },
+      {
+        "step": 3600,
+        "train_batch_loss": 1.7528339624404907,
+        "validation_loss_16": 1.5607263984285098,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 85.44867486099969,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.1305538775898,
+        "mean_training_pair_presentations": 1.44
+      },
+      {
+        "step": 3650,
+        "train_batch_loss": 1.4923685789108276,
+        "validation_loss_16": 1.5687611253955696,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 86.79637781599968,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.05244610250515,
+        "mean_training_pair_presentations": 1.46
+      },
+      {
+        "step": 3700,
+        "train_batch_loss": 1.6436654329299927,
+        "validation_loss_16": 1.595240690628596,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 88.00235234499968,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.04433065032988,
+        "mean_training_pair_presentations": 1.48
+      },
+      {
+        "step": 3750,
+        "train_batch_loss": 1.6214970350265503,
+        "validation_loss_16": 1.5995252321723965,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 89.13420811899971,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.071389639693855,
+        "mean_training_pair_presentations": 1.5
+      },
+      {
+        "step": 3800,
+        "train_batch_loss": 1.736559510231018,
+        "validation_loss_16": 1.587249510033084,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 90.26110640499968,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.10008220982225,
+        "mean_training_pair_presentations": 1.52
+      },
+      {
+        "step": 3850,
+        "train_batch_loss": 1.8263050317764282,
+        "validation_loss_16": 1.5693761125395569,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 91.36875229399965,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.13694401354802,
+        "mean_training_pair_presentations": 1.54
+      },
+      {
+        "step": 3900,
+        "train_batch_loss": 1.5211058855056763,
+        "validation_loss_16": 1.5511374874136938,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 92.52071713199962,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.152721259562405,
+        "mean_training_pair_presentations": 1.56
+      },
+      {
+        "step": 3950,
+        "train_batch_loss": 1.5568444728851318,
+        "validation_loss_16": 1.5401199744677792,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 93.6655118369996,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.171338441772946,
+        "mean_training_pair_presentations": 1.58
+      },
+      {
+        "step": 4000,
+        "train_batch_loss": 1.6634689569473267,
+        "validation_loss_16": 1.550125806872123,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 94.82062313299957,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.18491576868699,
+        "mean_training_pair_presentations": 1.6
+      },
+      {
+        "step": 4050,
+        "train_batch_loss": 1.8047115802764893,
+        "validation_loss_16": 1.5568724040743671,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 96.01556005999959,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.18066319114504,
+        "mean_training_pair_presentations": 1.62
+      },
+      {
+        "step": 4100,
+        "train_batch_loss": 1.5227376222610474,
+        "validation_loss_16": 1.5549897961018413,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 97.19761335599958,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.18210569618812,
+        "mean_training_pair_presentations": 1.64
+      },
+      {
+        "step": 4150,
+        "train_batch_loss": 1.6163204908370972,
+        "validation_loss_16": 1.5493360723532796,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 98.49463488199962,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.134274673659746,
+        "mean_training_pair_presentations": 1.66
+      },
+      {
+        "step": 4200,
+        "train_batch_loss": 1.7769200801849365,
+        "validation_loss_16": 1.5494926988186852,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 99.82599688399961,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.073208694129136,
+        "mean_training_pair_presentations": 1.68
+      },
+      {
+        "step": 4250,
+        "train_batch_loss": 1.7674070596694946,
+        "validation_loss_16": 1.543712550120469,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 101.00662600699962,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.07644753627827,
+        "mean_training_pair_presentations": 1.7
+      },
+      {
+        "step": 4300,
+        "train_batch_loss": 1.7181587219238281,
+        "validation_loss_16": 1.5513538145497698,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 102.18008775199962,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.082563194078396,
+        "mean_training_pair_presentations": 1.72
+      },
+      {
+        "step": 4350,
+        "train_batch_loss": 1.6451233625411987,
+        "validation_loss_16": 1.5632371979286537,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 103.29423912399966,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.112706738446846,
+        "mean_training_pair_presentations": 1.74
+      },
+      {
+        "step": 4400,
+        "train_batch_loss": 1.6674264669418335,
+        "validation_loss_16": 1.5539313383288982,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 104.40655992299963,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.14294583831727,
+        "mean_training_pair_presentations": 1.76
+      },
+      {
+        "step": 4450,
+        "train_batch_loss": 1.6407179832458496,
+        "validation_loss_16": 1.539769074996404,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 105.56935858699967,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.15238265687441,
+        "mean_training_pair_presentations": 1.78
+      },
+      {
+        "step": 4500,
+        "train_batch_loss": 1.7907841205596924,
+        "validation_loss_16": 1.577322622986191,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 106.73649136399962,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.159901852627065,
+        "mean_training_pair_presentations": 1.8
+      },
+      {
+        "step": 4550,
+        "train_batch_loss": 1.4359698295593262,
+        "validation_loss_16": 1.5424425412651035,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 107.84912148999962,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.18856803967478,
+        "mean_training_pair_presentations": 1.82
+      },
+      {
+        "step": 4600,
+        "train_batch_loss": 1.4269918203353882,
+        "validation_loss_16": 1.5716323764743958,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 109.00650997399958,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.19931452806993,
+        "mean_training_pair_presentations": 1.84
+      },
+      {
+        "step": 4650,
+        "train_batch_loss": 1.6573501825332642,
+        "validation_loss_16": 1.5429110159396577,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 110.27249177699963,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.168268124416194,
+        "mean_training_pair_presentations": 1.86
+      },
+      {
+        "step": 4700,
+        "train_batch_loss": 1.7874454259872437,
+        "validation_loss_16": 1.5497374013323504,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 111.63055709499957,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.10316711041957,
+        "mean_training_pair_presentations": 1.88
+      },
+      {
+        "step": 4750,
+        "train_batch_loss": 1.5090141296386719,
+        "validation_loss_16": 1.5594027292056243,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 112.74918152999948,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.12890892459521,
+        "mean_training_pair_presentations": 1.9
+      },
+      {
+        "step": 4800,
+        "train_batch_loss": 1.6795845031738281,
+        "validation_loss_16": 1.5360597669735327,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 113.86207458699954,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.156266846626124,
+        "mean_training_pair_presentations": 1.92
+      },
+      {
+        "step": 4850,
+        "train_batch_loss": 1.639743685722351,
+        "validation_loss_16": 1.5189990009619534,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 114.9954788529995,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.17557114745207,
+        "mean_training_pair_presentations": 1.94
+      },
+      {
+        "step": 4900,
+        "train_batch_loss": 1.5443381071090698,
+        "validation_loss_16": 1.536828992556099,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 116.12911937399946,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.19441279167297,
+        "mean_training_pair_presentations": 1.96
+      },
+      {
+        "step": 4950,
+        "train_batch_loss": 1.8880887031555176,
+        "validation_loss_16": 1.551902217886939,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 117.30423144099944,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.19796625571605,
+        "mean_training_pair_presentations": 1.98
+      },
+      {
+        "step": 5000,
+        "train_batch_loss": 1.5529383420944214,
+        "validation_loss_16": 1.5147816051136365,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 118.43834094199946,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.21605909228798,
+        "mean_training_pair_presentations": 2.0
+      },
+      {
+        "step": 5050,
+        "train_batch_loss": 1.5073574781417847,
+        "validation_loss_16": 1.528294465621404,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 119.59888379799946,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.22447433982215,
+        "mean_training_pair_presentations": 2.02
+      },
+      {
+        "step": 5100,
+        "train_batch_loss": 1.6814188957214355,
+        "validation_loss_16": 1.532527734824511,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 120.75898245799948,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.23288318758237,
+        "mean_training_pair_presentations": 2.04
+      },
+      {
+        "step": 5150,
+        "train_batch_loss": 1.5265123844146729,
+        "validation_loss_16": 1.5272421886237773,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 122.05794682099946,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.19307414332131,
+        "mean_training_pair_presentations": 2.06
+      },
+      {
+        "step": 5200,
+        "train_batch_loss": 1.703589677810669,
+        "validation_loss_16": 1.5322729183148733,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 123.43371806099941,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.12787301303056,
+        "mean_training_pair_presentations": 2.08
+      },
+      {
+        "step": 5250,
+        "train_batch_loss": 1.7156959772109985,
+        "validation_loss_16": 1.547366793054157,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 124.60876770999943,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.13186677375918,
+        "mean_training_pair_presentations": 2.1
+      },
+      {
+        "step": 5300,
+        "train_batch_loss": 1.5341746807098389,
+        "validation_loss_16": 1.5372166957350404,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 125.72700175899939,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.1548269333531,
+        "mean_training_pair_presentations": 2.12
+      },
+      {
+        "step": 5350,
+        "train_batch_loss": 1.684154987335205,
+        "validation_loss_16": 1.4943799895713463,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 126.89636586599937,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.1603878368709,
+        "mean_training_pair_presentations": 2.14
+      },
+      {
+        "step": 5400,
+        "train_batch_loss": 1.6476798057556152,
+        "validation_loss_16": 1.5204694635986047,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 128.0672802659994,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.165336757242336,
+        "mean_training_pair_presentations": 2.16
+      },
+      {
+        "step": 5450,
+        "train_batch_loss": 1.65128755569458,
+        "validation_loss_16": 1.5101818440286967,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 129.1918443689994,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.18532544851392,
+        "mean_training_pair_presentations": 2.18
+      },
+      {
+        "step": 5500,
+        "train_batch_loss": 1.4788347482681274,
+        "validation_loss_16": 1.5547990349000287,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 130.2916545339994,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.21298762128148,
+        "mean_training_pair_presentations": 2.2
+      },
+      {
+        "step": 5550,
+        "train_batch_loss": 1.591575026512146,
+        "validation_loss_16": 1.508963247986191,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 131.38477026399943,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.24233896248436,
+        "mean_training_pair_presentations": 2.22
+      },
+      {
+        "step": 5600,
+        "train_batch_loss": 1.764240026473999,
+        "validation_loss_16": 1.491100245432969,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 132.51237608199943,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.260203654749105,
+        "mean_training_pair_presentations": 2.24
+      },
+      {
+        "step": 5650,
+        "train_batch_loss": 1.4143335819244385,
+        "validation_loss_16": 1.4850416809011795,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 133.70376711499938,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.25759768713474,
+        "mean_training_pair_presentations": 2.26
+      },
+      {
+        "step": 5700,
+        "train_batch_loss": 1.511401891708374,
+        "validation_loss_16": 1.4936517818613348,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 134.98421385099942,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.227160031408346,
+        "mean_training_pair_presentations": 2.28
+      },
+      {
+        "step": 5750,
+        "train_batch_loss": 1.5924373865127563,
+        "validation_loss_16": 1.4856125597849539,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 136.26944797999948,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.195811939033746,
+        "mean_training_pair_presentations": 2.3
+      },
+      {
+        "step": 5800,
+        "train_batch_loss": 1.8143994808197021,
+        "validation_loss_16": 1.5161833768609752,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 137.42346644899948,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.205309979955224,
+        "mean_training_pair_presentations": 2.32
+      },
+      {
+        "step": 5850,
+        "train_batch_loss": 1.7509455680847168,
+        "validation_loss_16": 1.499474493625935,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 138.54439282599952,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.22473303085693,
+        "mean_training_pair_presentations": 2.34
+      },
+      {
+        "step": 5900,
+        "train_batch_loss": 1.433659315109253,
+        "validation_loss_16": 1.5058818505466054,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 139.6917961759995,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.235837475856584,
+        "mean_training_pair_presentations": 2.36
+      },
+      {
+        "step": 5950,
+        "train_batch_loss": 1.773930311203003,
+        "validation_loss_16": 1.4816627634134063,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 140.8307149939995,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.24930619896034,
+        "mean_training_pair_presentations": 2.38
+      },
+      {
+        "step": 6000,
+        "train_batch_loss": 1.778313398361206,
+        "validation_loss_16": 1.4781933818505466,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 141.99809786799943,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.254087132755565,
+        "mean_training_pair_presentations": 2.4
+      },
+      {
+        "step": 6050,
+        "train_batch_loss": 1.647490382194519,
+        "validation_loss_16": 1.474400914305236,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 143.14405702599942,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.2651147780528,
+        "mean_training_pair_presentations": 2.42
+      },
+      {
+        "step": 6100,
+        "train_batch_loss": 1.821765661239624,
+        "validation_loss_16": 1.504646538316312,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 144.35366270099945,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.257327495977464,
+        "mean_training_pair_presentations": 2.44
+      },
+      {
+        "step": 6150,
+        "train_batch_loss": 1.5543122291564941,
+        "validation_loss_16": 1.496601837825446,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 145.4686878739994,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.27713943035594,
+        "mean_training_pair_presentations": 2.46
+      },
+      {
+        "step": 6200,
+        "train_batch_loss": 1.8778659105300903,
+        "validation_loss_16": 1.4764103686439154,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 146.81793228399937,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.22917394046213,
+        "mean_training_pair_presentations": 2.48
+      },
+      {
+        "step": 6250,
+        "train_batch_loss": 1.711737036705017,
+        "validation_loss_16": 1.4860258288981587,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 148.1809495089994,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.17816136763533,
+        "mean_training_pair_presentations": 2.5
+      },
+      {
+        "step": 6300,
+        "train_batch_loss": 1.6523152589797974,
+        "validation_loss_16": 1.4895714868473102,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 149.34168321599935,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.185141243439965,
+        "mean_training_pair_presentations": 2.52
+      },
+      {
+        "step": 6350,
+        "train_batch_loss": 1.6349183320999146,
+        "validation_loss_16": 1.4847941689441888,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 150.5030035269993,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.191849007590406,
+        "mean_training_pair_presentations": 2.54
+      },
+      {
+        "step": 6400,
+        "train_batch_loss": 1.3978536128997803,
+        "validation_loss_16": 1.4811031223029345,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 151.65848445699925,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.200078834459376,
+        "mean_training_pair_presentations": 2.56
+      },
+      {
+        "step": 6450,
+        "train_batch_loss": 1.5133532285690308,
+        "validation_loss_16": 1.483434117430236,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 152.82541892699925,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.205020900881664,
+        "mean_training_pair_presentations": 2.58
+      },
+      {
+        "step": 6500,
+        "train_batch_loss": 1.68142831325531,
+        "validation_loss_16": 1.476523308265607,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 154.00512056099916,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.20638882864577,
+        "mean_training_pair_presentations": 2.6
+      },
+      {
+        "step": 6550,
+        "train_batch_loss": 1.6525570154190063,
+        "validation_loss_16": 1.4756154366549195,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 155.17186008999914,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.2112617339318,
+        "mean_training_pair_presentations": 2.62
+      },
+      {
+        "step": 6600,
+        "train_batch_loss": 1.8150829076766968,
+        "validation_loss_16": 1.4602997563650748,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 156.29768038799915,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.22711420678743,
+        "mean_training_pair_presentations": 2.64
+      },
+      {
+        "step": 6650,
+        "train_batch_loss": 1.580438256263733,
+        "validation_loss_16": 1.4760298295454546,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 157.47216140899917,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.22968644424771,
+        "mean_training_pair_presentations": 2.66
+      },
+      {
+        "step": 6700,
+        "train_batch_loss": 1.7089297771453857,
+        "validation_loss_16": 1.4669568727973965,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 158.7597250589992,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.202139097369354,
+        "mean_training_pair_presentations": 2.68
+      },
+      {
+        "step": 6750,
+        "train_batch_loss": 1.52531099319458,
+        "validation_loss_16": 1.4608718994983458,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 160.1894752319992,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.137599803133824,
+        "mean_training_pair_presentations": 2.7
+      },
+      {
+        "step": 6800,
+        "train_batch_loss": 1.541297197341919,
+        "validation_loss_16": 1.4733923241513234,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 161.36673507999916,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.140035842138296,
+        "mean_training_pair_presentations": 2.72
+      },
+      {
+        "step": 6850,
+        "train_batch_loss": 1.5584042072296143,
+        "validation_loss_16": 1.4616786311493095,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 162.4739888919991,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.16059473097187,
+        "mean_training_pair_presentations": 2.74
+      },
+      {
+        "step": 6900,
+        "train_batch_loss": 1.197558045387268,
+        "validation_loss_16": 1.4619556422612199,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 163.62490497899915,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.169619599691124,
+        "mean_training_pair_presentations": 2.76
+      },
+      {
+        "step": 6950,
+        "train_batch_loss": 1.6023274660110474,
+        "validation_loss_16": 1.4602512934677072,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 164.7270509589991,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.19100602808624,
+        "mean_training_pair_presentations": 2.78
+      },
+      {
+        "step": 7000,
+        "train_batch_loss": 1.5718566179275513,
+        "validation_loss_16": 1.4693794557771145,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 165.85221329799907,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.20625013561065,
+        "mean_training_pair_presentations": 2.8
+      },
+      {
+        "step": 7050,
+        "train_batch_loss": 1.5596758127212524,
+        "validation_loss_16": 1.494204680307825,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 167.01236423899906,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.212443564425364,
+        "mean_training_pair_presentations": 2.82
+      },
+      {
+        "step": 7100,
+        "train_batch_loss": 1.540037989616394,
+        "validation_loss_16": 1.470595944737126,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 168.215345170999,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.20780210498934,
+        "mean_training_pair_presentations": 2.84
+      },
+      {
+        "step": 7150,
+        "train_batch_loss": 1.6111258268356323,
+        "validation_loss_16": 1.4702023417272008,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 169.33180530199905,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.22479047718267,
+        "mean_training_pair_presentations": 2.86
+      },
+      {
+        "step": 7200,
+        "train_batch_loss": 1.503089427947998,
+        "validation_loss_16": 1.4698920387118815,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 170.588568948999,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.20681399908214,
+        "mean_training_pair_presentations": 2.88
+      },
+      {
+        "step": 7250,
+        "train_batch_loss": 1.7304904460906982,
+        "validation_loss_16": 1.4370735265031647,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 171.96571559499904,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.15956637004707,
+        "mean_training_pair_presentations": 2.9
+      },
+      {
+        "step": 7300,
+        "train_batch_loss": 1.5547975301742554,
+        "validation_loss_16": 1.4706595786284522,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 173.231830212999,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.14006162160966,
+        "mean_training_pair_presentations": 2.92
+      },
+      {
+        "step": 7350,
+        "train_batch_loss": 1.2629592418670654,
+        "validation_loss_16": 1.453035659702244,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 174.38523127799903,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.14806463904549,
+        "mean_training_pair_presentations": 2.94
+      },
+      {
+        "step": 7400,
+        "train_batch_loss": 1.6026477813720703,
+        "validation_loss_16": 1.4429834714830265,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 175.50374709599902,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.1643419154593,
+        "mean_training_pair_presentations": 2.96
+      },
+      {
+        "step": 7450,
+        "train_batch_loss": 1.9179596900939941,
+        "validation_loss_16": 1.460871478081847,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 176.62182229199908,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.180518258289325,
+        "mean_training_pair_presentations": 2.98
+      },
+      {
+        "step": 7500,
+        "train_batch_loss": 1.2319297790527344,
+        "validation_loss_16": 1.451611552880466,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 177.74963884499908,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.19417855774175,
+        "mean_training_pair_presentations": 3.0
+      },
+      {
+        "step": 7550,
+        "train_batch_loss": 1.5460901260375977,
+        "validation_loss_16": 1.4709385563506905,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 178.89287935899898,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.20402749988051,
+        "mean_training_pair_presentations": 3.02
+      },
+      {
+        "step": 7600,
+        "train_batch_loss": 1.5568876266479492,
+        "validation_loss_16": 1.4352190129638953,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 180.01198218799897,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.219411772616304,
+        "mean_training_pair_presentations": 3.04
+      },
+      {
+        "step": 7650,
+        "train_batch_loss": 1.6856123208999634,
+        "validation_loss_16": 1.4423991072712887,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 181.13946003199902,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.23265322005816,
+        "mean_training_pair_presentations": 3.06
+      },
+      {
+        "step": 7700,
+        "train_batch_loss": 1.4926278591156006,
+        "validation_loss_16": 1.4550008653085442,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 182.28480942699895,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.2415889958383,
+        "mean_training_pair_presentations": 3.08
+      },
+      {
+        "step": 7750,
+        "train_batch_loss": 1.6461395025253296,
+        "validation_loss_16": 1.4929320024813004,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 183.6127104429989,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.20840693055357,
+        "mean_training_pair_presentations": 3.1
+      },
+      {
+        "step": 7800,
+        "train_batch_loss": 1.5283111333847046,
+        "validation_loss_16": 1.439641217230653,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 184.92343895599885,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.179617922073966,
+        "mean_training_pair_presentations": 3.12
+      },
+      {
+        "step": 7850,
+        "train_batch_loss": 1.4044474363327026,
+        "validation_loss_16": 1.4367574641290277,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 186.0441153579988,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.194293460421974,
+        "mean_training_pair_presentations": 3.14
+      },
+      {
+        "step": 7900,
+        "train_batch_loss": 1.8391320705413818,
+        "validation_loss_16": 1.437924225942175,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 187.15706885099877,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.21053497204223,
+        "mean_training_pair_presentations": 3.16
+      },
+      {
+        "step": 7950,
+        "train_batch_loss": 1.5200490951538086,
+        "validation_loss_16": 1.44649049958645,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 188.28609399599878,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.22298010053224,
+        "mean_training_pair_presentations": 3.18
+      },
+      {
+        "step": 8000,
+        "train_batch_loss": 1.4682916402816772,
+        "validation_loss_16": 1.4648170602884063,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 189.4100902149989,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.236398234746744,
+        "mean_training_pair_presentations": 3.2
+      },
+      {
+        "step": 8050,
+        "train_batch_loss": 1.394637107849121,
+        "validation_loss_16": 1.42724609375,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 190.55867891699887,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.244205542096125,
+        "mean_training_pair_presentations": 3.22
+      },
+      {
+        "step": 8100,
+        "train_batch_loss": 1.5659979581832886,
+        "validation_loss_16": 1.4053356666696635,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 191.6963299999988,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.254330064639475,
+        "mean_training_pair_presentations": 3.24
+      },
+      {
+        "step": 8150,
+        "train_batch_loss": 1.3476847410202026,
+        "validation_loss_16": 1.4508851713086162,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 192.8372016079988,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.263629279206164,
+        "mean_training_pair_presentations": 3.26
+      },
+      {
+        "step": 8200,
+        "train_batch_loss": 1.4948464632034302,
+        "validation_loss_16": 1.4228321773410528,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 193.99109030899882,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.26998253857239,
+        "mean_training_pair_presentations": 3.28
+      },
+      {
+        "step": 8250,
+        "train_batch_loss": 1.6278018951416016,
+        "validation_loss_16": 1.4230017272457567,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 195.30792512199872,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.240989426551195,
+        "mean_training_pair_presentations": 3.3
+      },
+      {
+        "step": 8300,
+        "train_batch_loss": 1.4346303939819336,
+        "validation_loss_16": 1.4274615780530782,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 196.70045371899874,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.196140593845136,
+        "mean_training_pair_presentations": 3.32
+      },
+      {
+        "step": 8350,
+        "train_batch_loss": 1.459591031074524,
+        "validation_loss_16": 1.4069231426208286,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 197.87221000099868,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.19895254597832,
+        "mean_training_pair_presentations": 3.34
+      },
+      {
+        "step": 8400,
+        "train_batch_loss": 1.3957854509353638,
+        "validation_loss_16": 1.4109305325805523,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 199.04998626899868,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.20045505880183,
+        "mean_training_pair_presentations": 3.36
+      },
+      {
+        "step": 8450,
+        "train_batch_loss": 1.3312532901763916,
+        "validation_loss_16": 1.4215989721932538,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 200.17019620999866,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.21407662075277,
+        "mean_training_pair_presentations": 3.38
+      },
+      {
+        "step": 8500,
+        "train_batch_loss": 1.7023041248321533,
+        "validation_loss_16": 1.3947204660079833,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 201.31578263099863,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.22222365734761,
+        "mean_training_pair_presentations": 3.4
+      },
+      {
+        "step": 8550,
+        "train_batch_loss": 1.4198386669158936,
+        "validation_loss_16": 1.4139388844936709,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 202.48233264999868,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.22590627093932,
+        "mean_training_pair_presentations": 3.42
+      },
+      {
+        "step": 8600,
+        "train_batch_loss": 1.4507508277893066,
+        "validation_loss_16": 1.4149139017998418,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 203.58498059399875,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.242801875206254,
+        "mean_training_pair_presentations": 3.44
+      },
+      {
+        "step": 8650,
+        "train_batch_loss": 1.6776154041290283,
+        "validation_loss_16": 1.3949338432285674,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 204.6955860919988,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.25787260557893,
+        "mean_training_pair_presentations": 3.46
+      },
+      {
+        "step": 8700,
+        "train_batch_loss": 1.3891565799713135,
+        "validation_loss_16": 1.4098196786895858,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 205.8491527509987,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.263958261338,
+        "mean_training_pair_presentations": 3.48
+      },
+      {
+        "step": 8750,
+        "train_batch_loss": 1.352805495262146,
+        "validation_loss_16": 1.4208650051244247,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 207.10839459599873,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.24840821671381,
+        "mean_training_pair_presentations": 3.5
+      },
+      {
+        "step": 8800,
+        "train_batch_loss": 1.6953548192977905,
+        "validation_loss_16": 1.4207745410493384,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 208.4777774349987,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.21073396057166,
+        "mean_training_pair_presentations": 3.52
+      },
+      {
+        "step": 8850,
+        "train_batch_loss": 1.446577787399292,
+        "validation_loss_16": 1.4147546063632768,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 209.72788581499873,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.197535943344214,
+        "mean_training_pair_presentations": 3.54
+      },
+      {
+        "step": 8900,
+        "train_batch_loss": 1.4464479684829712,
+        "validation_loss_16": 1.3995726555757335,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 210.86882982899868,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.206332757749635,
+        "mean_training_pair_presentations": 3.56
+      },
+      {
+        "step": 8950,
+        "train_batch_loss": 1.4522050619125366,
+        "validation_loss_16": 1.476129845727848,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 211.9775774819987,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.22144675070664,
+        "mean_training_pair_presentations": 3.58
+      },
+      {
+        "step": 9000,
+        "train_batch_loss": 1.5267202854156494,
+        "validation_loss_16": 1.4113331258091197,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 213.1314015569987,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.227470631975784,
+        "mean_training_pair_presentations": 3.6
+      },
+      {
+        "step": 9050,
+        "train_batch_loss": 1.4510575532913208,
+        "validation_loss_16": 1.3969705491675057,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 214.29652444099867,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.23120287931547,
+        "mean_training_pair_presentations": 3.62
+      },
+      {
+        "step": 9100,
+        "train_batch_loss": 1.1910871267318726,
+        "validation_loss_16": 1.4252047522295743,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 215.43883516699867,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.239366885483214,
+        "mean_training_pair_presentations": 3.64
+      },
+      {
+        "step": 9150,
+        "train_batch_loss": 1.3696595430374146,
+        "validation_loss_16": 1.4123130596411104,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 216.53228851099863,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.25697729849298,
+        "mean_training_pair_presentations": 3.66
+      },
+      {
+        "step": 9200,
+        "train_batch_loss": 1.1465531587600708,
+        "validation_loss_16": 1.4265243477596374,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 217.66943380599872,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.26592516521931,
+        "mean_training_pair_presentations": 3.68
+      },
+      {
+        "step": 9250,
+        "train_batch_loss": 1.430803894996643,
+        "validation_loss_16": 1.4133944143771577,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 218.84570621299866,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.26722177951775,
+        "mean_training_pair_presentations": 3.7
+      },
+      {
+        "step": 9300,
+        "train_batch_loss": 1.5798280239105225,
+        "validation_loss_16": 1.41259765625,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 220.12213772899867,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.24927168138631,
+        "mean_training_pair_presentations": 3.72
+      },
+      {
+        "step": 9350,
+        "train_batch_loss": 1.3952131271362305,
+        "validation_loss_16": 1.4123557631796606,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 221.4422649669986,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.2231952937865,
+        "mean_training_pair_presentations": 3.74
+      },
+      {
+        "step": 9400,
+        "train_batch_loss": 1.46346116065979,
+        "validation_loss_16": 1.4079481680181962,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 222.5991813569986,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.22836734032967,
+        "mean_training_pair_presentations": 3.76
+      },
+      {
+        "step": 9450,
+        "train_batch_loss": 1.52804434299469,
+        "validation_loss_16": 1.4018626328304804,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 223.76063721399856,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.232629106084815,
+        "mean_training_pair_presentations": 3.78
+      },
+      {
+        "step": 9500,
+        "train_batch_loss": 1.5130524635314941,
+        "validation_loss_16": 1.394305932645282,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 224.94300785299862,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.23291975453755,
+        "mean_training_pair_presentations": 3.8
+      },
+      {
+        "step": 9550,
+        "train_batch_loss": 1.5858622789382935,
+        "validation_loss_16": 1.4068590873130034,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 226.12366189799872,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.23352797244135,
+        "mean_training_pair_presentations": 3.82
+      },
+      {
+        "step": 9600,
+        "train_batch_loss": 1.5703539848327637,
+        "validation_loss_16": 1.3612563437230294,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 227.25075030599868,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.2440849461371,
+        "mean_training_pair_presentations": 3.84
+      },
+      {
+        "step": 9650,
+        "train_batch_loss": 1.5355032682418823,
+        "validation_loss_16": 1.3794657506383055,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 228.4048358969987,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.2495432817883,
+        "mean_training_pair_presentations": 3.86
+      },
+      {
+        "step": 9700,
+        "train_batch_loss": 1.349738359451294,
+        "validation_loss_16": 1.3609728708914701,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 229.5593432589987,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.25486909960377,
+        "mean_training_pair_presentations": 3.88
+      },
+      {
+        "step": 9750,
+        "train_batch_loss": 1.6264469623565674,
+        "validation_loss_16": 1.3873194089830265,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 230.71492797999878,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.25994427567015,
+        "mean_training_pair_presentations": 3.9
+      },
+      {
+        "step": 9800,
+        "train_batch_loss": 1.5915188789367676,
+        "validation_loss_16": 1.3740216113618384,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 231.9995854859987,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.2414547830795,
+        "mean_training_pair_presentations": 3.92
+      },
+      {
+        "step": 9850,
+        "train_batch_loss": 1.437724232673645,
+        "validation_loss_16": 1.4141977746961305,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 233.38678442799863,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.204617644229934,
+        "mean_training_pair_presentations": 3.94
+      },
+      {
+        "step": 9900,
+        "train_batch_loss": 1.448070764541626,
+        "validation_loss_16": 1.3581262024417433,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 234.55436896399857,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.20769812869927,
+        "mean_training_pair_presentations": 3.96
+      },
+      {
+        "step": 9950,
+        "train_batch_loss": 1.5499975681304932,
+        "validation_loss_16": 1.3578854331487342,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 235.67803178599848,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.21861462690272,
+        "mean_training_pair_presentations": 3.98
+      },
+      {
+        "step": 10000,
+        "train_batch_loss": 1.3874409198760986,
+        "validation_loss_16": 1.3694318238007048,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 236.7992673299985,
+        "training_updates_per_second_excluding_evaluation_logging_and_checkpoints": 42.229860390844074,
+        "mean_training_pair_presentations": 4.0
+      }
+    ],
+    "diagnostic_summaries": [
+      {
+        "step": 2000,
+        "validation_loss_16": 1.6729070490056819,
+        "previous_512_validation_loss_16_at_2000": 1.7727019786834717,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 46.24833295599984,
+        "mean_training_pair_presentations": 0.8,
+        "train_64": {
+          "split": "train_64",
+          "examples": 64,
+          "loss": 1.647394097099085,
+          "mean_generated_tokens": 512.0,
+          "min_generated_tokens": 512,
+          "max_generated_tokens": 512,
+          "seconds": 12.077519557999949,
+          "answers_per_second": 5.299101333899928,
+          "generated_tokens": 32768,
+          "tokens_per_second": 2713.1398829567634,
+          "batch_size_inference": 32,
+          "max_new_tokens": 512,
+          "timer_scope": "encoding, transfers, greedy, CPU decoding and AST/exact checks; loss/checkpoint excluded",
+          "peak_gpu_memory_mib": 512.47509765625,
+          "eos_emitted_count": 0,
+          "eos_emitted_fraction": 0.0,
+          "early_eos_count": 0,
+          "early_eos_fraction": 0.0,
+          "reached_cap_count": 64,
+          "reached_cap_fraction": 1.0,
+          "parses_as_python_count": 40,
+          "parses_as_python_fraction": 0.625,
+          "defines_solve_count": 40,
+          "defines_solve_fraction": 0.625,
+          "exact_code_match_count": 0,
+          "exact_code_match_fraction": 0.0,
+          "exact_tokens_with_eos_count": 0,
+          "exact_tokens_with_eos_fraction": 0.0
+        },
+        "validation_64": {
+          "split": "validation_64",
+          "examples": 64,
+          "loss": 1.6813324210514757,
+          "mean_generated_tokens": 512.0,
+          "min_generated_tokens": 512,
+          "max_generated_tokens": 512,
+          "seconds": 11.823492059999978,
+          "answers_per_second": 5.412952423465333,
+          "generated_tokens": 32768,
+          "tokens_per_second": 2771.4316408142504,
+          "batch_size_inference": 32,
+          "max_new_tokens": 512,
+          "timer_scope": "encoding, transfers, greedy, CPU decoding and AST/exact checks; loss/checkpoint excluded",
+          "peak_gpu_memory_mib": 511.0283203125,
+          "eos_emitted_count": 0,
+          "eos_emitted_fraction": 0.0,
+          "early_eos_count": 0,
+          "early_eos_fraction": 0.0,
+          "reached_cap_count": 64,
+          "reached_cap_fraction": 1.0,
+          "parses_as_python_count": 38,
+          "parses_as_python_fraction": 0.59375,
+          "defines_solve_count": 38,
+          "defines_solve_fraction": 0.59375,
+          "exact_code_match_count": 0,
+          "exact_code_match_fraction": 0.0,
+          "exact_tokens_with_eos_count": 0,
+          "exact_tokens_with_eos_fraction": 0.0
+        }
+      },
+      {
+        "step": 5000,
+        "validation_loss_16": 1.5147816051136365,
+        "previous_512_validation_loss_16_at_2000": 1.7727019786834717,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 118.43834094199946,
+        "mean_training_pair_presentations": 2.0,
+        "train_64": {
+          "split": "train_64",
+          "examples": 64,
+          "loss": 1.4744037974767714,
+          "mean_generated_tokens": 512.0,
+          "min_generated_tokens": 512,
+          "max_generated_tokens": 512,
+          "seconds": 12.697743866999986,
+          "answers_per_second": 5.040265473170304,
+          "generated_tokens": 32768,
+          "tokens_per_second": 2580.6159222631954,
+          "batch_size_inference": 32,
+          "max_new_tokens": 512,
+          "timer_scope": "encoding, transfers, greedy, CPU decoding and AST/exact checks; loss/checkpoint excluded",
+          "peak_gpu_memory_mib": 512.60205078125,
+          "eos_emitted_count": 0,
+          "eos_emitted_fraction": 0.0,
+          "early_eos_count": 0,
+          "early_eos_fraction": 0.0,
+          "reached_cap_count": 64,
+          "reached_cap_fraction": 1.0,
+          "parses_as_python_count": 18,
+          "parses_as_python_fraction": 0.28125,
+          "defines_solve_count": 18,
+          "defines_solve_fraction": 0.28125,
+          "exact_code_match_count": 0,
+          "exact_code_match_fraction": 0.0,
+          "exact_tokens_with_eos_count": 0,
+          "exact_tokens_with_eos_fraction": 0.0
+        },
+        "validation_64": {
+          "split": "validation_64",
+          "examples": 64,
+          "loss": 1.51722188213721,
+          "mean_generated_tokens": 507.03125,
+          "min_generated_tokens": 263,
+          "max_generated_tokens": 512,
+          "seconds": 12.29611606100002,
+          "answers_per_second": 5.204895568852901,
+          "generated_tokens": 32450,
+          "tokens_per_second": 2639.0447063949478,
+          "batch_size_inference": 32,
+          "max_new_tokens": 512,
+          "timer_scope": "encoding, transfers, greedy, CPU decoding and AST/exact checks; loss/checkpoint excluded",
+          "peak_gpu_memory_mib": 511.1865234375,
+          "eos_emitted_count": 2,
+          "eos_emitted_fraction": 0.03125,
+          "early_eos_count": 2,
+          "early_eos_fraction": 0.03125,
+          "reached_cap_count": 62,
+          "reached_cap_fraction": 0.96875,
+          "parses_as_python_count": 10,
+          "parses_as_python_fraction": 0.15625,
+          "defines_solve_count": 10,
+          "defines_solve_fraction": 0.15625,
+          "exact_code_match_count": 0,
+          "exact_code_match_fraction": 0.0,
+          "exact_tokens_with_eos_count": 0,
+          "exact_tokens_with_eos_fraction": 0.0
+        }
+      },
+      {
+        "step": 10000,
+        "validation_loss_16": 1.3694318238007048,
+        "previous_512_validation_loss_16_at_2000": 1.7727019786834717,
+        "training_seconds_excluding_evaluation_logging_and_checkpoints": 236.7992673299985,
+        "mean_training_pair_presentations": 4.0,
+        "train_64": {
+          "split": "train_64",
+          "examples": 64,
+          "loss": 1.3372655806706149,
+          "mean_generated_tokens": 491.5625,
+          "min_generated_tokens": 154,
+          "max_generated_tokens": 512,
+          "seconds": 12.797075122000024,
+          "answers_per_second": 5.001142791603586,
+          "generated_tokens": 31460,
+          "tokens_per_second": 2458.3742534976377,
+          "batch_size_inference": 32,
+          "max_new_tokens": 512,
+          "timer_scope": "encoding, transfers, greedy, CPU decoding and AST/exact checks; loss/checkpoint excluded",
+          "peak_gpu_memory_mib": 512.572265625,
+          "eos_emitted_count": 4,
+          "eos_emitted_fraction": 0.0625,
+          "early_eos_count": 4,
+          "early_eos_fraction": 0.0625,
+          "reached_cap_count": 60,
+          "reached_cap_fraction": 0.9375,
+          "parses_as_python_count": 14,
+          "parses_as_python_fraction": 0.21875,
+          "defines_solve_count": 14,
+          "defines_solve_fraction": 0.21875,
+          "exact_code_match_count": 0,
+          "exact_code_match_fraction": 0.0,
+          "exact_tokens_with_eos_count": 0,
+          "exact_tokens_with_eos_fraction": 0.0
+        },
+        "validation_64": {
+          "split": "validation_64",
+          "examples": 64,
+          "loss": 1.3713495915319747,
+          "mean_generated_tokens": 485.78125,
+          "min_generated_tokens": 151,
+          "max_generated_tokens": 512,
+          "seconds": 12.451804354000046,
+          "answers_per_second": 5.139817345382599,
+          "generated_tokens": 31090,
+          "tokens_per_second": 2496.8268948116406,
+          "batch_size_inference": 32,
+          "max_new_tokens": 512,
+          "timer_scope": "encoding, transfers, greedy, CPU decoding and AST/exact checks; loss/checkpoint excluded",
+          "peak_gpu_memory_mib": 511.5517578125,
+          "eos_emitted_count": 5,
+          "eos_emitted_fraction": 0.078125,
+          "early_eos_count": 5,
+          "early_eos_fraction": 0.078125,
+          "reached_cap_count": 59,
+          "reached_cap_fraction": 0.921875,
+          "parses_as_python_count": 31,
+          "parses_as_python_fraction": 0.484375,
+          "defines_solve_count": 31,
+          "defines_solve_fraction": 0.484375,
+          "exact_code_match_count": 0,
+          "exact_code_match_fraction": 0.0,
+          "exact_tokens_with_eos_count": 0,
+          "exact_tokens_with_eos_fraction": 0.0
+        }
+      }
+    ],
+    "final_result": {
+      "actual_steps": 10000,
+      "run_finished": true,
+      "training_examples": 20000,
+      "unique_train_questions": 19960,
+      "training_seconds_excluding_evaluation_logging_and_checkpoints": 236.7992673299985,
+      "active_wall_seconds_including_diagnostics_and_checkpointing": 318.46752796799996,
+      "checkpoint_files": {
+        "2000": "hw02-byte-20k-step-2000.pt",
+        "5000": "hw02-byte-20k-step-5000.pt",
+        "10000": "hw02-byte-20k-step-10000.pt"
+      },
+      "results_file": "hw02-byte-20k-results.json"
+    },
+    "printed_examples": [
+      {
+        "step": 2000,
+        "split": "train_64",
+        "example": {
+          "question": "A group of tourists went on a hike. They hiked for 5 hours and took a 30 minute break. If they hiked in total for 10 miles, what was their average speed in miles/hour?",
+          "reference_code": "def solve() -> int:\n    total_time = 5.5 #hours\n    total_distance_travelled = 10 #miles\n    average_speed = total_distance_travelled / total_time\n    result = average_speed\n\n    return result\n",
+          "generated_code": "def solve() -> int:\n    tototal_pl_pl_pler_pler_pler_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per_per",
+          "generated_tokens": 512,
+          "expected_tokens_including_eos": 194,
+          "eos_emitted": false,
+          "early_eos": false,
+          "reached_cap": true,
+          "parses_as_python": true,
+          "defines_solve": true,
+          "exact_code_match": false,
+          "exact_tokens_with_eos": false
+        }
+      },
+      {
+        "step": 2000,
+        "split": "train_64",
+        "example": {
+          "question": "A ball is kicked and its height above the ground is given by the equation h(t) = -16t^2 + 32t + 15. What is the maximum height of the ball above the ground?",
+          "reference_code": "def solve() -> int:\n    a = -16\n    b = 32\n    c = 15\n    t_max = -b / (2 * a)\n    h_max = -a * (t_max**2) + b * t_max + c\n    result = h_max\n\n    return result\n",
+          "generated_code": "def solve() -> int:\n    boks = 12\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ",
+          "generated_tokens": 512,
+          "expected_tokens_including_eos": 162,
+          "eos_emitted": false,
+          "early_eos": false,
+          "reached_cap": true,
+          "parses_as_python": true,
+          "defines_solve": true,
+          "exact_code_match": false,
+          "exact_tokens_with_eos": false
+        }
+      },
+      {
+        "step": 2000,
+        "split": "train_64",
+        "example": {
+          "question": "Kim has 4 times the number of crayons than 8 less than the number of markers she has. If she has 60 crayons, how many markers does she have?",
+          "reference_code": "def solve() -> int:\n    number_crayons = 60\n    number_markers = number_crayons // 4 + 8\n    result = number_markers\n\n    return result\n",
+          "generated_code": "def solve() -> int:\n    boks = 30\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ",
+          "generated_tokens": 512,
+          "expected_tokens_including_eos": 137,
+          "eos_emitted": false,
+          "early_eos": false,
+          "reached_cap": true,
+          "parses_as_python": true,
+          "defines_solve": true,
+          "exact_code_match": false,
+          "exact_tokens_with_eos": false
+        }
+      },
+      {
+        "step": 2000,
+        "split": "validation_64",
+        "example": {
+          "question": "Mark has 10 crayons. He gives 2 crayons to his younger sister and loses another 4 while he was playing. How many crayons does Mark have left?",
+          "reference_code": "def solve() -> int:\n    crayonsTotal = 10\n    crayonsGiven = 2\n    crayonsLost = 4\n    crayonsLeft = crayonsTotal - crayonsGiven - crayonsLost\n    result = crayonsLeft\n\n    return result\n",
+          "generated_code": "def solve() -> int:\n    cos_cos = 10\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ",
+          "generated_tokens": 512,
+          "expected_tokens_including_eos": 188,
+          "eos_emitted": false,
+          "early_eos": false,
+          "reached_cap": true,
+          "parses_as_python": true,
+          "defines_solve": true,
+          "exact_code_match": false,
+          "exact_tokens_with_eos": false
+        }
+      },
+      {
+        "step": 2000,
+        "split": "validation_64",
+        "example": {
+          "question": "Student: Allen's father can mow the lawn in 2 hours. Allen's mother can mow the lawn in 4 hours. If they both work together to mow the lawn, how much time will it take?",
+          "reference_code": "def solve() -> int:\n    father_time = 2\n    mother_time = 4\n    total_time = father_time + mother_time\n    result = total_time\n\n    return result\n",
+          "generated_code": "def solve() -> int:\n    tototal_cot = 25\n            =                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ",
+          "generated_tokens": 512,
+          "expected_tokens_including_eos": 147,
+          "eos_emitted": false,
+          "early_eos": false,
+          "reached_cap": true,
+          "parses_as_python": false,
+          "defines_solve": false,
+          "exact_code_match": false,
+          "exact_tokens_with_eos": false
+        }
+      },
+      {
+        "step": 2000,
+        "split": "validation_64",
+        "example": {
+          "question": "Every morning, Sarah jogs around a circular track that is 0.4 miles long, while her sister, Liz, runs at three times her speed. During their workout, how many times does Liz circle the track?",
+          "reference_code": "def solve() -> int:\n    track_length = 0.4  # miles\n    \n    sarah_speed = 1  # unit: times the track length per hour\n    \n    liz_speed = 3 * sarah_speed  # unit: times the track length per hour\n    \n    liz_circles = liz_speed / sarah_speed\n    \n    result = liz_circles\n    \n    return result\n",
+          "generated_code": "def solve() -> int:\n    cos_cos = 80\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ",
+          "generated_tokens": 512,
+          "expected_tokens_including_eos": 297,
+          "eos_emitted": false,
+          "early_eos": false,
+          "reached_cap": true,
+          "parses_as_python": true,
+          "defines_solve": true,
+          "exact_code_match": false,
+          "exact_tokens_with_eos": false
+        }
+      },
+      {
+        "step": 5000,
+        "split": "train_64",
+        "example": {
+          "question": "A group of tourists went on a hike. They hiked for 5 hours and took a 30 minute break. If they hiked in total for 10 miles, what was their average speed in miles/hour?",
+          "reference_code": "def solve() -> int:\n    total_time = 5.5 #hours\n    total_distance_travelled = 10 #miles\n    average_speed = total_distance_travelled / total_time\n    result = average_speed\n\n    return result\n",
+          "generated_code": "def solve() -> int:\n    total_total_tal_total_tal_total_total_tal_total_tal_total_tal_total_tal_total_total_tal_total_tal_total_tal_tototal_total_tal_tal_tal_tototal_tal_total = / 10\n      =       tototototototototototal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal",
+          "generated_tokens": 512,
+          "expected_tokens_including_eos": 194,
+          "eos_emitted": false,
+          "early_eos": false,
+          "reached_cap": true,
+          "parses_as_python": false,
+          "defines_solve": false,
+          "exact_code_match": false,
+          "exact_tokens_with_eos": false
+        }
+      },
+      {
+        "step": 5000,
+        "split": "train_64",
+        "example": {
+          "question": "A ball is kicked and its height above the ground is given by the equation h(t) = -16t^2 + 32t + 15. What is the maximum height of the ball above the ground?",
+          "reference_code": "def solve() -> int:\n    a = -16\n    b = 32\n    c = 15\n    t_max = -b / (2 * a)\n    h_max = -a * (t_max**2) + b * t_max + c\n    result = h_max\n\n    return result\n",
+          "generated_code": "def solve() -> int:\n    bas = 12\n         = 12\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ",
+          "generated_tokens": 512,
+          "expected_tokens_including_eos": 162,
+          "eos_emitted": false,
+          "early_eos": false,
+          "reached_cap": true,
+          "parses_as_python": false,
+          "defines_solve": false,
+          "exact_code_match": false,
+          "exact_tokens_with_eos": false
+        }
+      },
+      {
+        "step": 5000,
+        "split": "train_64",
+        "example": {
+          "question": "Kim has 4 times the number of crayons than 8 less than the number of markers she has. If she has 60 crayons, how many markers does she have?",
+          "reference_code": "def solve() -> int:\n    number_crayons = 60\n    number_markers = number_crayons // 4 + 8\n    result = number_markers\n\n    return result\n",
+          "generated_code": "def solve() -> int:\n    total_stal_stal_stars = 60\n      = 4\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ",
+          "generated_tokens": 512,
+          "expected_tokens_including_eos": 137,
+          "eos_emitted": false,
+          "early_eos": false,
+          "reached_cap": true,
+          "parses_as_python": false,
+          "defines_solve": false,
+          "exact_code_match": false,
+          "exact_tokens_with_eos": false
+        }
+      },
+      {
+        "step": 5000,
+        "split": "validation_64",
+        "example": {
+          "question": "Mark has 10 crayons. He gives 2 crayons to his younger sister and loses another 4 while he was playing. How many crayons does Mark have left?",
+          "reference_code": "def solve() -> int:\n    crayonsTotal = 10\n    crayonsGiven = 2\n    crayonsLost = 4\n    crayonsLeft = crayonsTotal - crayonsGiven - crayonsLost\n    result = crayonsLeft\n\n    return result\n",
+          "generated_code": "def solve() -> int:\n    total_cons = 120\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ",
+          "generated_tokens": 512,
+          "expected_tokens_including_eos": 188,
+          "eos_emitted": false,
+          "early_eos": false,
+          "reached_cap": true,
+          "parses_as_python": true,
+          "defines_solve": true,
+          "exact_code_match": false,
+          "exact_tokens_with_eos": false
+        }
+      },
+      {
+        "step": 5000,
+        "split": "validation_64",
+        "example": {
+          "question": "Student: Allen's father can mow the lawn in 2 hours. Allen's mother can mow the lawn in 4 hours. If they both work together to mow the lawn, how much time will it take?",
+          "reference_code": "def solve() -> int:\n    father_time = 2\n    mother_time = 4\n    total_time = father_time + mother_time\n    result = total_time\n\n    return result\n",
+          "generated_code": "def solve() -> int:\n    total_cotal_cos = 25\n      total_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal_tal",
+          "generated_tokens": 512,
+          "expected_tokens_including_eos": 147,
+          "eos_emitted": false,
+          "early_eos": false,
+          "reached_cap": true,
+          "parses_as_python": false,
+          "defines_solve": false,
+          "exact_code_match": false,
+          "exact_tokens_with_eos": false
+        }
+      },
+      {
+        "step": 5000,
+        "split": "validation_64",
+        "example": {
+          "question": "Every morning, Sarah jogs around a circular track that is 0.4 miles long, while her sister, Liz, runs at three times her speed. During their workout, how many times does Liz circle the track?",
+          "reference_code": "def solve() -> int:\n    track_length = 0.4  # miles\n    \n    sarah_speed = 1  # unit: times the track length per hour\n    \n    liz_speed = 3 * sarah_speed  # unit: times the track length per hour\n    \n    liz_circles = liz_speed / sarah_speed\n    \n    result = liz_circles\n    \n    return result\n",
+          "generated_code": "def solve() -> int:\n    total_cotal_cos = 60\n        =                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ",
+          "generated_tokens": 512,
+          "expected_tokens_including_eos": 297,
+          "eos_emitted": false,
+          "early_eos": false,
+          "reached_cap": true,
+          "parses_as_python": false,
+          "defines_solve": false,
+          "exact_code_match": false,
+          "exact_tokens_with_eos": false
+        }
+      },
+      {
+        "step": 10000,
+        "split": "train_64",
+        "example": {
+          "question": "A group of tourists went on a hike. They hiked for 5 hours and took a 30 minute break. If they hiked in total for 10 miles, what was their average speed in miles/hour?",
+          "reference_code": "def solve() -> int:\n    total_time = 5.5 #hours\n    total_distance_travelled = 10 #miles\n    average_speed = total_distance_travelled / total_time\n    result = average_speed\n\n    return result\n",
+          "generated_code": "def solve() -> int:\n    distance = 10\n     distance = 10\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ",
+          "generated_tokens": 512,
+          "expected_tokens_including_eos": 194,
+          "eos_emitted": false,
+          "early_eos": false,
+          "reached_cap": true,
+          "parses_as_python": false,
+          "defines_solve": false,
+          "exact_code_match": false,
+          "exact_tokens_with_eos": false
+        }
+      },
+      {
+        "step": 10000,
+        "split": "train_64",
+        "example": {
+          "question": "A ball is kicked and its height above the ground is given by the equation h(t) = -16t^2 + 32t + 15. What is the maximum height of the ball above the ground?",
+          "reference_code": "def solve() -> int:\n    a = -16\n    b = 32\n    c = 15\n    t_max = -b / (2 * a)\n    h_max = -a * (t_max**2) + b * t_max + c\n    result = h_max\n\n    return result\n",
+          "generated_code": "def solve() -> int:\n    bight = 12\n       = 12\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ",
+          "generated_tokens": 512,
+          "expected_tokens_including_eos": 162,
+          "eos_emitted": false,
+          "early_eos": false,
+          "reached_cap": true,
+          "parses_as_python": false,
+          "defines_solve": false,
+          "exact_code_match": false,
+          "exact_tokens_with_eos": false
+        }
+      },
+      {
+        "step": 10000,
+        "split": "train_64",
+        "example": {
+          "question": "Kim has 4 times the number of crayons than 8 less than the number of markers she has. If she has 60 crayons, how many markers does she have?",
+          "reference_code": "def solve() -> int:\n    number_crayons = 60\n    number_markers = number_crayons // 4 + 8\n    result = number_markers\n\n    return result\n",
+          "generated_code": "def solve() -> int:\n    marbles = 40\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ",
+          "generated_tokens": 512,
+          "expected_tokens_including_eos": 137,
+          "eos_emitted": false,
+          "early_eos": false,
+          "reached_cap": true,
+          "parses_as_python": true,
+          "defines_solve": true,
+          "exact_code_match": false,
+          "exact_tokens_with_eos": false
+        }
+      },
+      {
+        "step": 10000,
+        "split": "validation_64",
+        "example": {
+          "question": "Mark has 10 crayons. He gives 2 crayons to his younger sister and loses another 4 while he was playing. How many crayons does Mark have left?",
+          "reference_code": "def solve() -> int:\n    crayonsTotal = 10\n    crayonsGiven = 2\n    crayonsLost = 4\n    crayonsLeft = crayonsTotal - crayonsGiven - crayonsLost\n    result = crayonsLeft\n\n    return result\n",
+          "generated_code": "def solve() -> int:\n    cans_cos = 10\n     cans_cans = 10\n    cans_cans cans = cans cans cans //////// cans_cans_cans\n  result = cans\n    retureturesurn result\n",
+          "generated_tokens": 161,
+          "expected_tokens_including_eos": 188,
+          "eos_emitted": true,
+          "early_eos": true,
+          "reached_cap": false,
+          "parses_as_python": false,
+          "defines_solve": false,
+          "exact_code_match": false,
+          "exact_tokens_with_eos": false
+        }
+      },
+      {
+        "step": 10000,
+        "split": "validation_64",
+        "example": {
+          "question": "Student: Allen's father can mow the lawn in 2 hours. Allen's mother can mow the lawn in 4 hours. If they both work together to mow the lawn, how much time will it take?",
+          "reference_code": "def solve() -> int:\n    father_time = 2\n    mother_time = 4\n    total_time = father_time + mother_time\n    result = total_time\n\n    return result\n",
+          "generated_code": "def solve() -> int:\n    waters = 24\n    wateeeks = 2\n       weeks_weks_weeks_weeks_weks = weks_weeks_weks_weeeks weeks * weks_weks weks_weks weks weks weks_weks weks weks weks weks weks weks_weks weks_weks weks weks wekeks_weks weksks weks weks_weks weks wekeks_wekeks wekeks wekeks_weks weks_wekeks = weks_weksks_wekskskskekskekekekskekekskskekeks_wekskekekekskeksks_wekskskskekskekekskekekskekekekskekskekekeks_wekskekekekskekekeks_wekskskeks_wekskskekekekeksksks wekeksks * weks_wekekekskeks_weks_wekekeks_wek",
+          "generated_tokens": 512,
+          "expected_tokens_including_eos": 147,
+          "eos_emitted": false,
+          "early_eos": false,
+          "reached_cap": true,
+          "parses_as_python": false,
+          "defines_solve": false,
+          "exact_code_match": false,
+          "exact_tokens_with_eos": false
+        }
+      },
+      {
+        "step": 10000,
+        "split": "validation_64",
+        "example": {
+          "question": "Every morning, Sarah jogs around a circular track that is 0.4 miles long, while her sister, Liz, runs at three times her speed. During their workout, how many times does Liz circle the track?",
+          "reference_code": "def solve() -> int:\n    track_length = 0.4  # miles\n    \n    sarah_speed = 1  # unit: times the track length per hour\n    \n    liz_speed = 3 * sarah_speed  # unit: times the track length per hour\n    \n    liz_circles = liz_speed / sarah_speed\n    \n    result = liz_circles\n    \n    return result\n",
+          "generated_code": "def solve() -> int:\n    lices_sticers = 40\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ",
+          "generated_tokens": 512,
+          "expected_tokens_including_eos": 297,
+          "eos_emitted": false,
+          "early_eos": false,
+          "reached_cap": true,
+          "parses_as_python": true,
+          "defines_solve": true,
+          "exact_code_match": false,
+          "exact_tokens_with_eos": false
+        }
+      }
+    ]
+  },
+  "available_generation_details": {
+    "printed_examples": 18,
+    "total_diagnostic_generations": 384,
+    "all_individual_generations_available": false
+  },
+  "original_results_json_provided": false,
+  "checkpoints_manifest": "05-more-data-byte-20k-pairs-checkpoints.json",
+  "checks_performed_now": [
+    "code/source comparison",
+    "execution order and absence of error outputs",
+    "Python compilation of seven code cells",
+    "source/checkpoint SHA-256",
+    "read-only safe CPU checkpoint inspection"
+  ],
+  "gpu_training_or_inference_rerun_now": false,
+  "programs_executed_now": false,
+  "functional_quality_or_full_test_speed_evaluated": false,
+  "review_performed_on": "2026-10-07",
+  "derived_checks_performed_now": {
+    "origin": "arithmetic and static AST inspection of saved notebook outputs; no model or generated code executed",
+    "validation64_loss_relative_decrease_2000_to_10000": 0.18436736580957813,
+    "train_validation64_loss_gap_at_10000": 0.034084010861359815,
+    "mean_train_pair_presentations_at_10000": 4.0,
+    "validation_reached_cap_fraction_at_10000": 0.921875,
+    "observed_training_updates_per_second": 42.229860390844074,
+    "additional_40000_steps_training_seconds_projection_excluding_diagnostics": 947.1970693199941,
+    "static_audit_of_all_18_printed_generations": [
+      {
+        "step": 2000,
+        "split": "train_64",
+        "question_sha256": "3fb05d1d6674bddab448e7189a5fa6903e3ed63d4fea13ba5556f3f2a741686e",
+        "parses_as_python": true,
+        "contains_return_node_if_valid": false,
+        "trailing_whitespace_bytes": 0
+      },
+      {
+        "step": 2000,
+        "split": "train_64",
+        "question_sha256": "59659800371a176a0f5c0ece638aeaa939d86d042ec8b02d4fffcba4ac9bb53f",
+        "parses_as_python": true,
+        "contains_return_node_if_valid": false,
+        "trailing_whitespace_bytes": 479
+      },
+      {
+        "step": 2000,
+        "split": "train_64",
+        "question_sha256": "a0e7d387953341cc0759d9045d3e491e042ce89b96cf616febab9dd329919604",
+        "parses_as_python": true,
+        "contains_return_node_if_valid": false,
+        "trailing_whitespace_bytes": 479
+      },
+      {
+        "step": 2000,
+        "split": "validation_64",
+        "question_sha256": "ba6810bbe23120a85e1dd105ddad9de45a82a368fed78037c9d311dbcee2c9ba",
+        "parses_as_python": true,
+        "contains_return_node_if_valid": false,
+        "trailing_whitespace_bytes": 476
+      },
+      {
+        "step": 2000,
+        "split": "validation_64",
+        "question_sha256": "c58e37637db24287765bc954bf04d10a4f2a49fcad18ac47c12bfe964912444e",
+        "parses_as_python": false,
+        "contains_return_node_if_valid": null,
+        "trailing_whitespace_bytes": 458
+      },
+      {
+        "step": 2000,
+        "split": "validation_64",
+        "question_sha256": "63e5c6ecb640198a776d41e37f08b56df156c95eacc39ee41ce5bbe5dc5737a3",
+        "parses_as_python": true,
+        "contains_return_node_if_valid": false,
+        "trailing_whitespace_bytes": 476
+      },
+      {
+        "step": 5000,
+        "split": "train_64",
+        "question_sha256": "3fb05d1d6674bddab448e7189a5fa6903e3ed63d4fea13ba5556f3f2a741686e",
+        "parses_as_python": false,
+        "contains_return_node_if_valid": null,
+        "trailing_whitespace_bytes": 0
+      },
+      {
+        "step": 5000,
+        "split": "train_64",
+        "question_sha256": "59659800371a176a0f5c0ece638aeaa939d86d042ec8b02d4fffcba4ac9bb53f",
+        "parses_as_python": false,
+        "contains_return_node_if_valid": null,
+        "trailing_whitespace_bytes": 466
+      },
+      {
+        "step": 5000,
+        "split": "train_64",
+        "question_sha256": "a0e7d387953341cc0759d9045d3e491e042ce89b96cf616febab9dd329919604",
+        "parses_as_python": false,
+        "contains_return_node_if_valid": null,
+        "trailing_whitespace_bytes": 452
+      },
+      {
+        "step": 5000,
+        "split": "validation_64",
+        "question_sha256": "ba6810bbe23120a85e1dd105ddad9de45a82a368fed78037c9d311dbcee2c9ba",
+        "parses_as_python": true,
+        "contains_return_node_if_valid": false,
+        "trailing_whitespace_bytes": 472
+      },
+      {
+        "step": 5000,
+        "split": "validation_64",
+        "question_sha256": "c58e37637db24287765bc954bf04d10a4f2a49fcad18ac47c12bfe964912444e",
+        "parses_as_python": false,
+        "contains_return_node_if_valid": null,
+        "trailing_whitespace_bytes": 0
+      },
+      {
+        "step": 5000,
+        "split": "validation_64",
+        "question_sha256": "63e5c6ecb640198a776d41e37f08b56df156c95eacc39ee41ce5bbe5dc5737a3",
+        "parses_as_python": false,
+        "contains_return_node_if_valid": null,
+        "trailing_whitespace_bytes": 458
+      },
+      {
+        "step": 10000,
+        "split": "train_64",
+        "question_sha256": "3fb05d1d6674bddab448e7189a5fa6903e3ed63d4fea13ba5556f3f2a741686e",
+        "parses_as_python": false,
+        "contains_return_node_if_valid": null,
+        "trailing_whitespace_bytes": 456
+      },
+      {
+        "step": 10000,
+        "split": "train_64",
+        "question_sha256": "59659800371a176a0f5c0ece638aeaa939d86d042ec8b02d4fffcba4ac9bb53f",
+        "parses_as_python": false,
+        "contains_return_node_if_valid": null,
+        "trailing_whitespace_bytes": 466
+      },
+      {
+        "step": 10000,
+        "split": "train_64",
+        "question_sha256": "a0e7d387953341cc0759d9045d3e491e042ce89b96cf616febab9dd329919604",
+        "parses_as_python": true,
+        "contains_return_node_if_valid": false,
+        "trailing_whitespace_bytes": 476
+      },
+      {
+        "step": 10000,
+        "split": "validation_64",
+        "question_sha256": "ba6810bbe23120a85e1dd105ddad9de45a82a368fed78037c9d311dbcee2c9ba",
+        "parses_as_python": false,
+        "contains_return_node_if_valid": null,
+        "trailing_whitespace_bytes": 1
+      },
+      {
+        "step": 10000,
+        "split": "validation_64",
+        "question_sha256": "c58e37637db24287765bc954bf04d10a4f2a49fcad18ac47c12bfe964912444e",
+        "parses_as_python": false,
+        "contains_return_node_if_valid": null,
+        "trailing_whitespace_bytes": 0
+      },
+      {
+        "step": 10000,
+        "split": "validation_64",
+        "question_sha256": "63e5c6ecb640198a776d41e37f08b56df156c95eacc39ee41ce5bbe5dc5737a3",
+        "parses_as_python": true,
+        "contains_return_node_if_valid": false,
+        "trailing_whitespace_bytes": 470
+      }
+    ],
+    "printed_programs_parsing_as_python": 8,
+    "printed_valid_programs_containing_a_return_node": 0,
+    "complete_diagnostic_generations_or_functional_quality_available": false
+  }
+}

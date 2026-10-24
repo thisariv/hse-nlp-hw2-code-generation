@@ -1,0 +1,515 @@
+{
+  "updated_at_utc": "2026-10-19T17:10:39.194359+00:00",
+  "ref": "friend1/nlp-hw02-e1-ensembles",
+  "own_push_calls": 1,
+  "own_pushed_version": 1,
+  "monitor_version": 4,
+  "last_remote_status": "COMPLETE",
+  "exact_code_parity": true,
+  "observed_versions": {
+    "1": "RUNNING",
+    "2": "QUEUED",
+    "3": "CANCEL_ACKNOWLEDGED",
+    "4": "COMPLETE"
+  },
+  "notebook_sha256": "108ca8a3a7f1158e320ba3ccee668ae1d9ea7fcad0ba1e1c44a66cbaf37f1438",
+  "preregistration_sha256": "4bad635b003d71195ee339507c0560a2202569c8fb7bcb5f5fb5d424f033cda7",
+  "status": "complete",
+  "analysis_pending": false,
+  "primary": "budget-1-8-8",
+  "primary_success": true,
+  "best_frozen_on_tune": [
+    {
+      "name": "baseline",
+      "tune": {
+        "policy": {
+          "name": "baseline",
+          "family": "baseline",
+          "anchor": "C/g",
+          "limits": [
+            1,
+            5,
+            6
+          ]
+        },
+        "n": 2048,
+        "baseline_matches": 1543,
+        "matches": 1543,
+        "accuracy_pp": 75.341796875,
+        "delta_pp": 0.0,
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "gains": 0,
+        "losses": 0,
+        "bootstrap": "paired tasks;20000;seed2026101904;percentile95",
+        "early_stops": 1261,
+        "mean_generated_candidates": 7.45849609375,
+        "mean_scored_unique": 0.0,
+        "winner_sha256": "19260e98c1fd7ebfae0ba3267831cee4faeb9587ab2facc7de0f8e99af434627",
+        "timing": {
+          "test1919_seconds": 115.76587892273164,
+          "under_155": true,
+          "under_140": true,
+          "uncalibrated_generation_seconds": 46.04736880244254,
+          "generation_calibration": 2.012782041844167,
+          "fixed_seconds": 23.082561922999957,
+          "LL_seconds": 0.0,
+          "soup_seconds": 0.0,
+          "kind": "tune-throughput calibrated to existing v10; forecast, not a cold test"
+        }
+      },
+      "eval": {
+        "policy": {
+          "name": "baseline",
+          "family": "baseline",
+          "anchor": "C/g",
+          "limits": [
+            1,
+            5,
+            6
+          ]
+        },
+        "n": 2048,
+        "baseline_matches": 1559,
+        "matches": 1559,
+        "accuracy_pp": 76.123046875,
+        "delta_pp": 0.0,
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "gains": 0,
+        "losses": 0,
+        "bootstrap": "paired tasks;20000;seed2026101904;percentile95",
+        "early_stops": 1276,
+        "mean_generated_candidates": 7.392578125,
+        "mean_scored_unique": 0.0,
+        "winner_sha256": "052f3b32f082236b2d009a6bc6afb6e74695b321d1f9445c11955a6c978d7231",
+        "timing": {
+          "test1919_seconds": 115.76587892273164,
+          "under_155": true,
+          "under_140": true,
+          "uncalibrated_generation_seconds": 46.04736880244254,
+          "generation_calibration": 2.012782041844167,
+          "fixed_seconds": 23.082561922999957,
+          "LL_seconds": 0.0,
+          "soup_seconds": 0.0,
+          "kind": "tune-throughput calibrated to existing v10; forecast, not a cold test"
+        }
+      },
+      "primary": false
+    },
+    {
+      "name": "token-greedy",
+      "tune": {
+        "policy": {
+          "name": "token-greedy",
+          "family": "token",
+          "anchor": "E/g",
+          "kind": "greedy"
+        },
+        "n": 2048,
+        "baseline_matches": 1543,
+        "matches": 1487,
+        "accuracy_pp": 72.607421875,
+        "delta_pp": -2.734375,
+        "ci95_pp": [
+          -3.857421875,
+          -1.66015625
+        ],
+        "gains": 39,
+        "losses": 95,
+        "bootstrap": "paired tasks;20000;seed2026101904;percentile95",
+        "early_stops": 2048,
+        "mean_generated_candidates": 1.0,
+        "mean_scored_unique": 0.0,
+        "winner_sha256": "f8c682702ab63da261656c031875b7074996539880ecda942c6eac4e74f5ca62",
+        "timing": {
+          "test1919_seconds": 67.57847235165946,
+          "under_155": true,
+          "under_140": true,
+          "uncalibrated_generation_seconds": 22.106671017340314,
+          "generation_calibration": 2.012782041844167,
+          "fixed_seconds": 23.082561922999957,
+          "LL_seconds": 0.0,
+          "soup_seconds": 0.0,
+          "kind": "tune-throughput calibrated to existing v10; forecast, not a cold test"
+        }
+      },
+      "eval": {
+        "policy": {
+          "name": "token-greedy",
+          "family": "token",
+          "anchor": "E/g",
+          "kind": "greedy"
+        },
+        "n": 2048,
+        "baseline_matches": 1559,
+        "matches": 1513,
+        "accuracy_pp": 73.876953125,
+        "delta_pp": -2.24609375,
+        "ci95_pp": [
+          -3.3203125,
+          -1.171875
+        ],
+        "gains": 38,
+        "losses": 84,
+        "bootstrap": "paired tasks;20000;seed2026101904;percentile95",
+        "early_stops": 2048,
+        "mean_generated_candidates": 1.0,
+        "mean_scored_unique": 0.0,
+        "winner_sha256": "eafc97c350245df54ab756e929269b09179edaefe74e50f4e256523263fd1a40",
+        "timing": {
+          "test1919_seconds": 67.57847235165946,
+          "under_155": true,
+          "under_140": true,
+          "uncalibrated_generation_seconds": 22.106671017340314,
+          "generation_calibration": 2.012782041844167,
+          "fixed_seconds": 23.082561922999957,
+          "LL_seconds": 0.0,
+          "soup_seconds": 0.0,
+          "kind": "tune-throughput calibrated to existing v10; forecast, not a cold test"
+        }
+      },
+      "primary": false
+    },
+    {
+      "name": "ll-weight-0.5",
+      "tune": {
+        "policy": {
+          "name": "ll-weight-0.5",
+          "family": "LL",
+          "anchor": "C/g",
+          "limits": [
+            1,
+            5,
+            6
+          ],
+          "LL": "weight",
+          "lam": 0.5
+        },
+        "n": 2048,
+        "baseline_matches": 1543,
+        "matches": 1547,
+        "accuracy_pp": 75.537109375,
+        "delta_pp": 0.1953125,
+        "ci95_pp": [
+          -0.1953125,
+          0.5859375
+        ],
+        "gains": 10,
+        "losses": 6,
+        "bootstrap": "paired tasks;20000;seed2026101904;percentile95",
+        "early_stops": 1261,
+        "mean_generated_candidates": 7.45849609375,
+        "mean_scored_unique": 4.4794921875,
+        "winner_sha256": "a65682ad3cb802e8fd3f9f5906c1d0401e56878b22fa22357a068c399fddb13f",
+        "timing": {
+          "test1919_seconds": 138.74599675273362,
+          "under_155": true,
+          "under_140": true,
+          "uncalibrated_generation_seconds": 46.04736880244254,
+          "generation_calibration": 2.012782041844167,
+          "fixed_seconds": 23.082561922999957,
+          "LL_seconds": 22.980117830001987,
+          "soup_seconds": 0.0,
+          "kind": "tune-throughput calibrated to existing v10; forecast, not a cold test"
+        }
+      },
+      "eval": {
+        "policy": {
+          "name": "ll-weight-0.5",
+          "family": "LL",
+          "anchor": "C/g",
+          "limits": [
+            1,
+            5,
+            6
+          ],
+          "LL": "weight",
+          "lam": 0.5
+        },
+        "n": 2048,
+        "baseline_matches": 1559,
+        "matches": 1562,
+        "accuracy_pp": 76.26953125,
+        "delta_pp": 0.146484375,
+        "ci95_pp": [
+          -0.244140625,
+          0.537109375
+        ],
+        "gains": 9,
+        "losses": 6,
+        "bootstrap": "paired tasks;20000;seed2026101904;percentile95",
+        "early_stops": 1276,
+        "mean_generated_candidates": 7.392578125,
+        "mean_scored_unique": 4.45068359375,
+        "winner_sha256": "d4c4e39074bbde6cfec1e22a172bdc26d27062132cff1b9806562b6d319db280",
+        "timing": {
+          "test1919_seconds": 138.74599675273362,
+          "under_155": true,
+          "under_140": true,
+          "uncalibrated_generation_seconds": 46.04736880244254,
+          "generation_calibration": 2.012782041844167,
+          "fixed_seconds": 23.082561922999957,
+          "LL_seconds": 22.980117830001987,
+          "soup_seconds": 0.0,
+          "kind": "tune-throughput calibrated to existing v10; forecast, not a cold test"
+        }
+      },
+      "primary": false
+    },
+    {
+      "name": "soup-0.5-anchor",
+      "tune": {
+        "policy": {
+          "name": "soup-0.5-anchor",
+          "family": "soup",
+          "anchor": "S0.5/g",
+          "limits": [
+            1,
+            5,
+            6
+          ]
+        },
+        "n": 2048,
+        "baseline_matches": 1543,
+        "matches": 1540,
+        "accuracy_pp": 75.1953125,
+        "delta_pp": -0.146484375,
+        "ci95_pp": [
+          -0.634765625,
+          0.29296875
+        ],
+        "gains": 10,
+        "losses": 13,
+        "bootstrap": "paired tasks;20000;seed2026101904;percentile95",
+        "early_stops": 1260,
+        "mean_generated_candidates": 7.462890625,
+        "mean_scored_unique": 0.0,
+        "winner_sha256": "70d3ca767998de057b617beb191e23cad800c52d807dfaddf10392782d983bee",
+        "timing": {
+          "test1919_seconds": 116.14265026306924,
+          "under_155": true,
+          "under_140": true,
+          "uncalibrated_generation_seconds": 45.56245675862873,
+          "generation_calibration": 2.012782041844167,
+          "fixed_seconds": 23.082561922999957,
+          "LL_seconds": 0.0,
+          "soup_seconds": 1.3527935939999907,
+          "kind": "tune-throughput calibrated to existing v10; forecast, not a cold test"
+        }
+      },
+      "eval": {
+        "policy": {
+          "name": "soup-0.5-anchor",
+          "family": "soup",
+          "anchor": "S0.5/g",
+          "limits": [
+            1,
+            5,
+            6
+          ]
+        },
+        "n": 2048,
+        "baseline_matches": 1559,
+        "matches": 1558,
+        "accuracy_pp": 76.07421875,
+        "delta_pp": -0.048828125,
+        "ci95_pp": [
+          -0.537109375,
+          0.390625
+        ],
+        "gains": 11,
+        "losses": 12,
+        "bootstrap": "paired tasks;20000;seed2026101904;percentile95",
+        "early_stops": 1275,
+        "mean_generated_candidates": 7.39697265625,
+        "mean_scored_unique": 0.0,
+        "winner_sha256": "1954ac8f813244ffeda8bafc6ab15d7f43ddce54f374c79d91bd1b804bbfc430",
+        "timing": {
+          "test1919_seconds": 116.14265026306924,
+          "under_155": true,
+          "under_140": true,
+          "uncalibrated_generation_seconds": 45.56245675862873,
+          "generation_calibration": 2.012782041844167,
+          "fixed_seconds": 23.082561922999957,
+          "LL_seconds": 0.0,
+          "soup_seconds": 1.3527935939999907,
+          "kind": "tune-throughput calibrated to existing v10; forecast, not a cold test"
+        }
+      },
+      "primary": false
+    },
+    {
+      "name": "budget-1-8-8",
+      "tune": {
+        "policy": {
+          "name": "budget-1-8-8",
+          "family": "budget",
+          "anchor": "C/g",
+          "limits": [
+            1,
+            8,
+            8
+          ]
+        },
+        "n": 2048,
+        "baseline_matches": 1543,
+        "matches": 1550,
+        "accuracy_pp": 75.68359375,
+        "delta_pp": 0.341796875,
+        "ci95_pp": [
+          -0.244140625,
+          0.927734375
+        ],
+        "gains": 23,
+        "losses": 16,
+        "bootstrap": "paired tasks;20000;seed2026101904;percentile95",
+        "early_stops": 1261,
+        "mean_generated_candidates": 9.3798828125,
+        "mean_scored_unique": 0.0,
+        "winner_sha256": "6a64ea1b85bca52fdd3e5fb9835d66ca742b5690a0ff1d77da6d182862adbbcb",
+        "timing": {
+          "test1919_seconds": 137.32182664221392,
+          "under_155": true,
+          "under_140": true,
+          "uncalibrated_generation_seconds": 56.75689783805145,
+          "generation_calibration": 2.012782041844167,
+          "fixed_seconds": 23.082561922999957,
+          "LL_seconds": 0.0,
+          "soup_seconds": 0.0,
+          "kind": "tune-throughput calibrated to existing v10; forecast, not a cold test"
+        }
+      },
+      "eval": {
+        "policy": {
+          "name": "budget-1-8-8",
+          "family": "budget",
+          "anchor": "C/g",
+          "limits": [
+            1,
+            8,
+            8
+          ]
+        },
+        "n": 2048,
+        "baseline_matches": 1559,
+        "matches": 1574,
+        "accuracy_pp": 76.85546875,
+        "delta_pp": 0.732421875,
+        "ci95_pp": [
+          0.09765625,
+          1.3671875
+        ],
+        "gains": 29,
+        "losses": 14,
+        "bootstrap": "paired tasks;20000;seed2026101904;percentile95",
+        "early_stops": 1276,
+        "mean_generated_candidates": 9.27734375,
+        "mean_scored_unique": 0.0,
+        "winner_sha256": "807b99a479e7b93affbd3157edfafa925162e86b4fd59d341f9543c5b8437361",
+        "timing": {
+          "test1919_seconds": 137.32182664221392,
+          "under_155": true,
+          "under_140": true,
+          "uncalibrated_generation_seconds": 56.75689783805145,
+          "generation_calibration": 2.012782041844167,
+          "fixed_seconds": 23.082561922999957,
+          "LL_seconds": 0.0,
+          "soup_seconds": 0.0,
+          "kind": "tune-throughput calibrated to existing v10; forecast, not a cold test"
+        }
+      },
+      "primary": true
+    },
+    {
+      "name": "temperature-1-8-8",
+      "tune": {
+        "policy": {
+          "name": "temperature-1-8-8",
+          "family": "temperature",
+          "anchor": "C/g",
+          "limits": [
+            1,
+            8,
+            8
+          ],
+          "mixed_T": true
+        },
+        "n": 2048,
+        "baseline_matches": 1543,
+        "matches": 1548,
+        "accuracy_pp": 75.5859375,
+        "delta_pp": 0.244140625,
+        "ci95_pp": [
+          -0.390625,
+          0.830078125
+        ],
+        "gains": 23,
+        "losses": 18,
+        "bootstrap": "paired tasks;20000;seed2026101904;percentile95",
+        "early_stops": 1261,
+        "mean_generated_candidates": 9.3798828125,
+        "mean_scored_unique": 0.0,
+        "winner_sha256": "7ea266431ee4825d899051a821a364b894c343f0c424d1319e320f5464fe633c",
+        "timing": {
+          "test1919_seconds": 140.59869287133222,
+          "under_155": true,
+          "under_140": false,
+          "uncalibrated_generation_seconds": 58.38492618935567,
+          "generation_calibration": 2.012782041844167,
+          "fixed_seconds": 23.082561922999957,
+          "LL_seconds": 0.0,
+          "soup_seconds": 0.0,
+          "kind": "tune-throughput calibrated to existing v10; forecast, not a cold test"
+        }
+      },
+      "eval": {
+        "policy": {
+          "name": "temperature-1-8-8",
+          "family": "temperature",
+          "anchor": "C/g",
+          "limits": [
+            1,
+            8,
+            8
+          ],
+          "mixed_T": true
+        },
+        "n": 2048,
+        "baseline_matches": 1559,
+        "matches": 1573,
+        "accuracy_pp": 76.806640625,
+        "delta_pp": 0.68359375,
+        "ci95_pp": [
+          -0.09765625,
+          1.46484375
+        ],
+        "gains": 38,
+        "losses": 24,
+        "bootstrap": "paired tasks;20000;seed2026101904;percentile95",
+        "early_stops": 1276,
+        "mean_generated_candidates": 9.27734375,
+        "mean_scored_unique": 0.0,
+        "winner_sha256": "1490a5f0af00095588dd30050d1a832bf048797d76a534e74c3d1db351e18b62",
+        "timing": {
+          "test1919_seconds": 140.59869287133222,
+          "under_155": true,
+          "under_140": false,
+          "uncalibrated_generation_seconds": 58.38492618935567,
+          "generation_calibration": 2.012782041844167,
+          "fixed_seconds": 23.082561922999957,
+          "LL_seconds": 0.0,
+          "soup_seconds": 0.0,
+          "kind": "tune-throughput calibrated to existing v10; forecast, not a cold test"
+        }
+      },
+      "primary": false
+    }
+  ],
+  "selection_sha256": "ec56bc5287d1ee96377c36599eaea35b72340294e81dfbc27ff6ab6b688e29d9",
+  "decision": "draft v11; cold test remains a separate future check"
+}

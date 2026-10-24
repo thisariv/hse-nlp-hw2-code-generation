@@ -1,0 +1,14 @@
+diff --git a/knowledge/bibliography.md b/knowledge/bibliography.md
+index 1a77688..06e9c8b 100644
+--- a/knowledge/bibliography.md
++++ b/knowledge/bibliography.md
+@@ -1,5 +1,9 @@
+ # Библиография
+ 
++- <a id="kaggle-cli-t4-pool"></a> **kaggle-cli-t4-pool**. Kaggle CLI, [официальное пояснение к `machine_shape`, issue1196](https://github.com/Kaggle/kaggle-cli/issues/1196), ответ команды Kaggle17.09.2026: `NvidiaTeslaT4` соответствует pool GPU T4×2; single-device benchmark требует отдельно ограничить используемые устройства. В v8 `CUDA_VISIBLE_DEVICES=0`, worker видит одну T4.
++
++- <a id="nlp-hw02-ensemble-inference-v8"></a> **nlp-hw02-ensemble-inference-v8**. Собственная сборка18.10.2026: [[work/notes/final-inference#V8: C-long2x / P1-B / W plain B4|Финальный v8]]. C-long2x/P1-B/W plain B4, greedy C-long,1/1/1→1/8/1. Production replay1541/2048,2048winner parity с анализом B4; strict FP16 load, CPU W greedy4/4, регрессии v7 и mixed-QK pipeline/static. Private [single-T4 test+tune, версия3](https://www.kaggle.com/code/thisarivson/nlp-hw02-ensemble-inference-v8/versions?versionNumber=3) COMPLETE:91,924/65,102с, tune1532/2048, guard/fallback0; peak reserved14,22/14,40GiB, один обработанный W OOM на test.1919code-only ответов,1216отличий от v7; [receipt](../work/checks/final-inference-v8-output.json).
++
+ - <a id="kaggle-b4-results"></a> **kaggle-b4-results**. Собственный CPU-разбор18.10.2026 pinned `thisarivson/nlp-hw02-b4/1`: [[work/notes/b4-results|B4: кривая W600, A/B truncation и ансамбль]]. Проверены230producer SHA,71087main/10485cooldown updates, общий32570-update префикс и320K8 journals. [Агрегаты/provenance](../work/results/b4-results.json), [воспроизводимый анализ](../work/research/analyze-b4-results.py). CI/интерполяции/бюджеты и рекомендации — собственные расчёты; нового GPU/forward/sampling/execution нет.
+ 
+ - <a id="kaggle-b4-independent-review"></a> **kaggle-b4-independent-review**. Собственное независимое ревью17.10.2026: [[work/notes/b4-review|B4: общий B3 W600, main/cooldown truncation, restore, бюджет и API-запуск]]. Код/CPU/API/GPU receipts; источники и границы результатов перечислены в отчёте. GPU gate требует200 main updates на каждой ветке, прямой полный restore и ≤15% замедления truncation.

@@ -1,0 +1,215 @@
+{
+  "sandbox_module_SHA256": "0ccc458b2e7dfec27b55f482afb673215f6c06af0f53820cf624d42c5573faa3",
+  "platform": "darwin",
+  "summary": {
+    "programs": 35840,
+    "unique_programs": 32404,
+    "statuses": {
+      "numeric": 34200,
+      "non_number": 195,
+      "execution_error": 1250,
+      "syntax_error": 188,
+      "timeout": 6,
+      "non_finite": 1
+    },
+    "pool_restarts": 0,
+    "seconds": 42.12131891702302,
+    "complete": true
+  },
+  "references": {
+    "heldout4k": {
+      "different_rows": [],
+      "statuses": {
+        "numeric": 4096
+      }
+    },
+    "old1024": {
+      "different_rows": [],
+      "statuses": {
+        "numeric": 991,
+        "non_number": 33
+      }
+    }
+  },
+  "scores": {
+    "control22": {
+      "heldout4k": {
+        "saved_matches": 820,
+        "CPU_matches": 820,
+        "CPU_denominator": 4096,
+        "gained": [],
+        "lost": [],
+        "generation_statuses": {
+          "numeric": 3837,
+          "execution_error": 211,
+          "syntax_error": 24,
+          "non_number": 22,
+          "timeout": 2
+        }
+      },
+      "old1024": {
+        "saved_matches": 190,
+        "CPU_matches": 190,
+        "CPU_denominator": 991,
+        "gained": [],
+        "lost": [],
+        "generation_statuses": {
+          "numeric": 951,
+          "execution_error": 54,
+          "non_number": 11,
+          "syntax_error": 8
+        }
+      }
+    },
+    "R1": {
+      "heldout4k": {
+        "saved_matches": 739,
+        "CPU_matches": 739,
+        "CPU_denominator": 4096,
+        "gained": [],
+        "lost": [],
+        "generation_statuses": {
+          "numeric": 3875,
+          "execution_error": 191,
+          "syntax_error": 21,
+          "non_number": 8,
+          "non_finite": 1
+        }
+      },
+      "old1024": {
+        "saved_matches": 178,
+        "CPU_matches": 178,
+        "CPU_denominator": 991,
+        "gained": [],
+        "lost": [],
+        "generation_statuses": {
+          "numeric": 971,
+          "syntax_error": 11,
+          "execution_error": 35,
+          "non_number": 7
+        }
+      }
+    },
+    "R2": {
+      "heldout4k": {
+        "saved_matches": 916,
+        "CPU_matches": 916,
+        "CPU_denominator": 4096,
+        "gained": [],
+        "lost": [],
+        "generation_statuses": {
+          "numeric": 3937,
+          "execution_error": 130,
+          "non_number": 16,
+          "syntax_error": 13
+        }
+      },
+      "old1024": {
+        "saved_matches": 220,
+        "CPU_matches": 220,
+        "CPU_denominator": 991,
+        "gained": [],
+        "lost": [],
+        "generation_statuses": {
+          "numeric": 973,
+          "execution_error": 33,
+          "non_number": 10,
+          "syntax_error": 7,
+          "timeout": 1
+        }
+      }
+    },
+    "R3": {
+      "heldout4k": {
+        "saved_matches": 535,
+        "CPU_matches": 535,
+        "CPU_denominator": 4096,
+        "gained": [],
+        "lost": [],
+        "generation_statuses": {
+          "numeric": 3956,
+          "non_number": 18,
+          "execution_error": 92,
+          "syntax_error": 28,
+          "timeout": 2
+        }
+      },
+      "old1024": {
+        "saved_matches": 132,
+        "CPU_matches": 132,
+        "CPU_denominator": 991,
+        "gained": [],
+        "lost": [],
+        "generation_statuses": {
+          "numeric": 989,
+          "non_number": 6,
+          "execution_error": 21,
+          "syntax_error": 8
+        }
+      }
+    },
+    "R4": {
+      "heldout4k": {
+        "saved_matches": 880,
+        "CPU_matches": 880,
+        "CPU_denominator": 4096,
+        "gained": [],
+        "lost": [],
+        "generation_statuses": {
+          "numeric": 3802,
+          "execution_error": 234,
+          "non_number": 18,
+          "syntax_error": 42
+        }
+      },
+      "old1024": {
+        "saved_matches": 207,
+        "CPU_matches": 207,
+        "CPU_denominator": 991,
+        "gained": [],
+        "lost": [],
+        "generation_statuses": {
+          "numeric": 943,
+          "syntax_error": 12,
+          "execution_error": 57,
+          "non_number": 11,
+          "timeout": 1
+        }
+      }
+    },
+    "R5": {
+      "heldout4k": {
+        "saved_matches": 1602,
+        "CPU_matches": 1602,
+        "CPU_denominator": 4096,
+        "gained": [],
+        "lost": [],
+        "generation_statuses": {
+          "numeric": 3916,
+          "execution_error": 153,
+          "non_number": 16,
+          "syntax_error": 11
+        }
+      },
+      "old1024": {
+        "saved_matches": 406,
+        "CPU_matches": 406,
+        "CPU_denominator": 991,
+        "gained": [],
+        "lost": [],
+        "generation_statuses": {
+          "numeric": 963,
+          "execution_error": 39,
+          "syntax_error": 3,
+          "non_number": 19
+        }
+      }
+    }
+  },
+  "new_LM_updates": 0,
+  "new_GPU_runs": 0,
+  "fresh_evaluations": 0,
+  "limitation": "RLIMIT_AS applies on Linux only; CPU and per-program wall limits apply here.",
+  "all_scores_exact": true,
+  "all_reference_numbers_reproduced": true
+}

@@ -1,0 +1,22 @@
+{
+  "dataset_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+  "shard": 0,
+  "source_rows": 200000,
+  "source_file_sha256": "91831d582faa12d73b1a6b3878e496446cd5df074f17ee4ffea8cc2887c708ec",
+  "total_eligible_train_rows_in_shard": 174519,
+  "total_eligible_heldout_rows_in_shard": 19541,
+  "train_pairs": 100000,
+  "unique_train_questions": 99212,
+  "train_sha256": "7a141e91ce958206be7e18d3c50b5ccf72a10f1d94890c5f0c3927aa497e47b9",
+  "train_row_indices_sha256": "fd49ac534874f1a49777ea2277b8c940c2a3fbea908ec05027bbe1245db34d86",
+  "last_selected_row_index": 114463,
+  "base20k_sha256": "1304183967f02f01097d76c12fb24df30916a4ec44e54833cd3509264359300e",
+  "base20k_prefix_unchanged": true,
+  "train64_sha256": "125106742b04a01ebe70f106730c0bd9a30f52244bef86b4215f27591d200203",
+  "validation64_sha256": "0edf2b479ebdc103ec05efc704c7bb0ac8084e41a8a44b58afef224702563050",
+  "extra192_sha256": "a2140e9f3e05f8ea10e4647b3a28335d4c9e240c083c14e8b23cf30a6dbe8bfc",
+  "validation_pairs": 64,
+  "extra_validation_pairs": 192,
+  "question_overlap_train_heldout": 0,
+  "selection": "first100000 eligible non-heldout rows of pinned shard0, preserving old20000 as prefix; not uniform random corpus sample"
+}

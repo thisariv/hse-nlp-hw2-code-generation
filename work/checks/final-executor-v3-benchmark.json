@@ -1,0 +1,166 @@
+{
+  "CPU_only": true,
+  "GPU_used": false,
+  "workers": 4,
+  "programs": 2000,
+  "corpus": "both L2 l2-28800 K8 tune journals; unique shuffled seed270042; SymPy included",
+  "corpus_sha256": "cad41ca4041cd922c461e3b47517cfe4532ede8e419ae037eb075a76b31283c9",
+  "sympy_programs": 1,
+  "baseline_commit": "2cd5208",
+  "v2": [
+    {
+      "seconds": 1.1963296248577535,
+      "programs_per_second": 1671.7800499488633,
+      "result_sha256": "6fe2f6b8c4c78f7c11767efc1a4b7048cfaeb13238ee73b4bcb91d547158f2e7",
+      "execution": {
+        "workers": 4,
+        "requested_candidates": 2000,
+        "unique_programs": 2000,
+        "deduplicated": 0,
+        "completed_unique": 2000,
+        "service_wall_seconds": 1.1962678751442581,
+        "sum_worker_task_wall_seconds": 0.0,
+        "sum_worker_task_cpu_seconds": 0.0,
+        "first_submit_to_last_result_seconds": 1.1875562500208616,
+        "service_wall_includes_GPU_wait": true,
+        "wall_limit": 3.0,
+        "cpu_limit": 2.0,
+        "memory_bytes": 805306368,
+        "overlap": true,
+        "isolation": "fresh numeric namespaces / pristine SymPy fork",
+        "error": null
+      }
+    },
+    {
+      "seconds": 1.2814265410415828,
+      "programs_per_second": 1560.7605554777558,
+      "result_sha256": "6fe2f6b8c4c78f7c11767efc1a4b7048cfaeb13238ee73b4bcb91d547158f2e7",
+      "execution": {
+        "workers": 4,
+        "requested_candidates": 2000,
+        "unique_programs": 2000,
+        "deduplicated": 0,
+        "completed_unique": 2000,
+        "service_wall_seconds": 1.2804550000000745,
+        "sum_worker_task_wall_seconds": 0.0,
+        "sum_worker_task_cpu_seconds": 0.0,
+        "first_submit_to_last_result_seconds": 1.2709098339546472,
+        "service_wall_includes_GPU_wait": true,
+        "wall_limit": 3.0,
+        "cpu_limit": 2.0,
+        "memory_bytes": 805306368,
+        "overlap": true,
+        "isolation": "fresh numeric namespaces / pristine SymPy fork",
+        "error": null
+      }
+    },
+    {
+      "seconds": 2.0272665419615805,
+      "programs_per_second": 986.5500952157986,
+      "result_sha256": "6fe2f6b8c4c78f7c11767efc1a4b7048cfaeb13238ee73b4bcb91d547158f2e7",
+      "execution": {
+        "workers": 4,
+        "requested_candidates": 2000,
+        "unique_programs": 2000,
+        "deduplicated": 0,
+        "completed_unique": 2000,
+        "service_wall_seconds": 2.0265409171115607,
+        "sum_worker_task_wall_seconds": 0.0,
+        "sum_worker_task_cpu_seconds": 0.0,
+        "first_submit_to_last_result_seconds": 2.0182548749726266,
+        "service_wall_includes_GPU_wait": true,
+        "wall_limit": 3.0,
+        "cpu_limit": 2.0,
+        "memory_bytes": 805306368,
+        "overlap": true,
+        "isolation": "fresh numeric namespaces / pristine SymPy fork",
+        "error": null
+      }
+    }
+  ],
+  "v3": [
+    {
+      "seconds": 0.42087479191832244,
+      "programs_per_second": 4752.007101409229,
+      "result_sha256": "6fe2f6b8c4c78f7c11767efc1a4b7048cfaeb13238ee73b4bcb91d547158f2e7",
+      "execution": {
+        "workers": 4,
+        "requested_candidates": 2000,
+        "unique_programs": 2000,
+        "deduplicated": 0,
+        "completed_unique": 2000,
+        "service_wall_seconds": 0.42019516695290804,
+        "sum_worker_task_wall_seconds": 0.8239616106729954,
+        "sum_worker_task_cpu_seconds": 0.8055380000000003,
+        "first_submit_to_last_result_seconds": 0.4129260419867933,
+        "service_wall_includes_GPU_wait": true,
+        "wall_limit": 3.0,
+        "cpu_limit": 2.0,
+        "memory_bytes": 805306368,
+        "overlap": true,
+        "isolation": "fresh numeric namespaces / pristine SymPy fork",
+        "error": null
+      }
+    },
+    {
+      "seconds": 0.6714424169622362,
+      "programs_per_second": 2978.6619812440085,
+      "result_sha256": "6fe2f6b8c4c78f7c11767efc1a4b7048cfaeb13238ee73b4bcb91d547158f2e7",
+      "execution": {
+        "workers": 4,
+        "requested_candidates": 2000,
+        "unique_programs": 2000,
+        "deduplicated": 0,
+        "completed_unique": 2000,
+        "service_wall_seconds": 0.6724546251352876,
+        "sum_worker_task_wall_seconds": 1.4891439429484308,
+        "sum_worker_task_cpu_seconds": 1.3835829999999991,
+        "first_submit_to_last_result_seconds": 0.6665271657984704,
+        "service_wall_includes_GPU_wait": true,
+        "wall_limit": 3.0,
+        "cpu_limit": 2.0,
+        "memory_bytes": 805306368,
+        "overlap": true,
+        "isolation": "fresh numeric namespaces / pristine SymPy fork",
+        "error": null
+      }
+    },
+    {
+      "seconds": 0.5046840829309076,
+      "programs_per_second": 3962.875128506489,
+      "result_sha256": "6fe2f6b8c4c78f7c11767efc1a4b7048cfaeb13238ee73b4bcb91d547158f2e7",
+      "execution": {
+        "workers": 4,
+        "requested_candidates": 2000,
+        "unique_programs": 2000,
+        "deduplicated": 0,
+        "completed_unique": 2000,
+        "service_wall_seconds": 0.5062947501428425,
+        "sum_worker_task_wall_seconds": 1.0628043736796826,
+        "sum_worker_task_cpu_seconds": 1.0459800000000001,
+        "first_submit_to_last_result_seconds": 0.49763245810754597,
+        "service_wall_includes_GPU_wait": true,
+        "wall_limit": 3.0,
+        "cpu_limit": 2.0,
+        "memory_bytes": 805306368,
+        "overlap": true,
+        "isolation": "fresh numeric namespaces / pristine SymPy fork",
+        "error": null
+      }
+    }
+  ],
+  "baseline_source_sha256": {
+    "final_execute.py": "5ac50ae4aa24dedaee3d40f2ef7140f064f558debe005b50cb6f0b1b76d24a79",
+    "final_numeric.py": "2854e3c3880efd09e450e13f1207429184637581374fe5571b2aec71ad7e6234"
+  },
+  "v2_median_seconds": 1.2814265410415828,
+  "v2_programs_per_second": 1560.7605554777558,
+  "v3_median_seconds": 0.5046840829309076,
+  "v3_programs_per_second": 3962.875128506489,
+  "speedup": 2.539066684250894,
+  "bit_identical_result_bytes": true,
+  "result_mismatches": 0,
+  "target_150_programs_per_second_CPU_host": true,
+  "platform": "darwin",
+  "T4_4vCPU_GPU_overlap_verified": false
+}

@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "ref": "friend1/nlp-hw02-b5/3",
+  "status": "RUNNING",
+  "private": true,
+  "machine_shape": "NvidiaTeslaT4",
+  "modules_match_smoke": true,
+  "full_notebook_code_exact": true,
+  "runtime_deadlines": [
+    40500,
+    40740,
+    40800
+  ],
+  "backend_timeout_not_exposed_by_API": true,
+  "first_observed_RUNNING_utc": "2026-10-18T13:13:24.490557+00:00",
+  "ETA_utc": "2026-10-19T00:33:24.490557+00:00",
+  "ETA_moscow": "2026-10-19T03:33:24.490557+03:00",
+  "reviewer_pushed_version": 1,
+  "concurrent_active_version": 3,
+  "retry_not_pushed": true,
+  "all_code_cell_SHA256": [
+    "3d7f48b0632a6799bcd67d2b7a2c376b76c6b57b83254978a15bb1d094c91a9f",
+    "5d0deedad71410f5d98cd449ff5f321d586453548bb3e7b009ccf43e81010fc6",
+    "eca02ef019ea25f2f4fc60e03f1e21850276ff88cd42cac94740fda14be3f54a"
+  ],
+  "mounts_match_successful_smoke": true
+}

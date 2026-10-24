@@ -1,0 +1,1057 @@
+{
+  "split": "eval2048",
+  "primary": [
+    {
+      "rules": [
+        "dollar-words"
+      ],
+      "n": 2048,
+      "original_mean": 0.75634765625,
+      "mixed_mean": 0.755859375,
+      "delta_pp": -0.048828125,
+      "ci95_pp": [
+        -0.390625,
+        0.29296875
+      ],
+      "gains": 6,
+      "losses": 7,
+      "original_sum": 1549.0,
+      "mixed_sum": 1548.0,
+      "bootstrap": "paired tasks;20000;seed2026101902;percentile95",
+      "mean_samples": 5.86767578125,
+      "max_samples": 10,
+      "early_stops": 1209,
+      "mean_variant_samples": 0.369140625
+    }
+  ],
+  "single_model": [
+    {
+      "model": "C-long2x",
+      "K": 4,
+      "rules": [
+        "dollar-words"
+      ],
+      "n": 2048,
+      "original_mean": 0.724609375,
+      "mixed_mean": 0.7265625,
+      "delta_pp": 0.1953125,
+      "ci95_pp": [
+        -0.29296875,
+        0.68359375
+      ],
+      "gains": 15,
+      "losses": 11,
+      "original_sum": 1484.0,
+      "mixed_sum": 1488.0,
+      "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+    },
+    {
+      "model": "C-long2x",
+      "K": 8,
+      "rules": [
+        "dollar-words"
+      ],
+      "n": 2048,
+      "original_mean": 0.7431640625,
+      "mixed_mean": 0.74169921875,
+      "delta_pp": -0.146484375,
+      "ci95_pp": [
+        -0.5859375,
+        0.244140625
+      ],
+      "gains": 8,
+      "losses": 11,
+      "original_sum": 1522.0,
+      "mixed_sum": 1519.0,
+      "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+    },
+    {
+      "model": "pilot-b",
+      "K": 4,
+      "rules": [
+        "dollar-words"
+      ],
+      "n": 2048,
+      "original_mean": 0.7412109375,
+      "mixed_mean": 0.7392578125,
+      "delta_pp": -0.1953125,
+      "ci95_pp": [
+        -0.68359375,
+        0.244140625
+      ],
+      "gains": 10,
+      "losses": 14,
+      "original_sum": 1518.0,
+      "mixed_sum": 1514.0,
+      "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+    },
+    {
+      "model": "pilot-b",
+      "K": 8,
+      "rules": [
+        "dollar-words"
+      ],
+      "n": 2048,
+      "original_mean": 0.74951171875,
+      "mixed_mean": 0.74755859375,
+      "delta_pp": -0.1953125,
+      "ci95_pp": [
+        -0.5859375,
+        0.1953125
+      ],
+      "gains": 7,
+      "losses": 11,
+      "original_sum": 1535.0,
+      "mixed_sum": 1531.0,
+      "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+    },
+    {
+      "model": "W600",
+      "K": 4,
+      "rules": [
+        "dollar-words"
+      ],
+      "n": 2048,
+      "original_mean": 0.732421875,
+      "mixed_mean": 0.73388671875,
+      "delta_pp": 0.146484375,
+      "ci95_pp": [
+        -0.29296875,
+        0.5859375
+      ],
+      "gains": 13,
+      "losses": 10,
+      "original_sum": 1500.0,
+      "mixed_sum": 1503.0,
+      "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+    },
+    {
+      "model": "W600",
+      "K": 8,
+      "rules": [
+        "dollar-words"
+      ],
+      "n": 2048,
+      "original_mean": 0.73974609375,
+      "mixed_mean": 0.73681640625,
+      "delta_pp": -0.29296875,
+      "ci95_pp": [
+        -0.634765625,
+        0.048828125
+      ],
+      "gains": 3,
+      "losses": 9,
+      "original_sum": 1515.0,
+      "mixed_sum": 1509.0,
+      "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+    }
+  ],
+  "diagnostics": {
+    "C-long2x": {
+      "dollar-words": {
+        "coverage": 456,
+        "all": {
+          "greedy": {
+            "n": 2048,
+            "original_mean": 0.71484375,
+            "mixed_mean": 0.7177734375,
+            "delta_pp": 0.29296875,
+            "ci95_pp": [
+              -0.146484375,
+              0.732421875
+            ],
+            "gains": 13,
+            "losses": 7,
+            "original_sum": 1464.0,
+            "mixed_sum": 1470.0,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "per_sample": {
+            "n": 2048,
+            "original_mean": 0.67626953125,
+            "mixed_mean": 0.6744384765625,
+            "delta_pp": -0.18310546875,
+            "ci95_pp": [
+              -0.469970703125,
+              0.103759765625
+            ],
+            "gains": 77,
+            "losses": 102,
+            "original_sum": 1385.0,
+            "mixed_sum": 1381.25,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "error_correlation": {
+            "n": 2048,
+            "within": 0.6714561061481968,
+            "cross": 0.7009858434939564,
+            "within_finite": 28,
+            "cross_finite": 64,
+            "within_total": 28,
+            "cross_total": 64
+          }
+        },
+        "applicable": {
+          "greedy": {
+            "n": 456,
+            "original_mean": 0.7214912280701754,
+            "mixed_mean": 0.7346491228070176,
+            "delta_pp": 1.3157894736842104,
+            "ci95_pp": [
+              -0.6578947368421052,
+              3.289473684210526
+            ],
+            "gains": 13,
+            "losses": 7,
+            "original_sum": 329.0,
+            "mixed_sum": 335.0,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "per_sample": {
+            "n": 456,
+            "original_mean": 0.6853070175438597,
+            "mixed_mean": 0.6770833333333334,
+            "delta_pp": -0.8223684210526315,
+            "ci95_pp": [
+              -2.083333333333333,
+              0.46600877192982454
+            ],
+            "gains": 77,
+            "losses": 102,
+            "original_sum": 312.5,
+            "mixed_sum": 308.75,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "error_correlation": {
+            "n": 456,
+            "within": 0.6500088021348541,
+            "cross": 0.6415385642930332,
+            "within_finite": 28,
+            "cross_finite": 64,
+            "within_total": 28,
+            "cross_total": 64
+          }
+        }
+      },
+      "ungroup": {
+        "coverage": 49,
+        "all": {
+          "greedy": {
+            "n": 2048,
+            "original_mean": 0.71484375,
+            "mixed_mean": 0.7138671875,
+            "delta_pp": -0.09765625,
+            "ci95_pp": [
+              -0.244140625,
+              0.0
+            ],
+            "gains": 0,
+            "losses": 2,
+            "original_sum": 1464.0,
+            "mixed_sum": 1462.0,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "per_sample": {
+            "n": 2048,
+            "original_mean": 0.67626953125,
+            "mixed_mean": 0.675537109375,
+            "delta_pp": -0.0732421875,
+            "ci95_pp": [
+              -0.18310546875,
+              0.0244140625
+            ],
+            "gains": 7,
+            "losses": 12,
+            "original_sum": 1385.0,
+            "mixed_sum": 1383.5,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "error_correlation": {
+            "n": 2048,
+            "within": 0.6714561061481968,
+            "cross": 0.7107463329418893,
+            "within_finite": 28,
+            "cross_finite": 64,
+            "within_total": 28,
+            "cross_total": 64
+          }
+        },
+        "applicable": {
+          "greedy": {
+            "n": 49,
+            "original_mean": 0.7142857142857143,
+            "mixed_mean": 0.673469387755102,
+            "delta_pp": -4.081632653061225,
+            "ci95_pp": [
+              -10.204081632653061,
+              0.0
+            ],
+            "gains": 0,
+            "losses": 2,
+            "original_sum": 35.0,
+            "mixed_sum": 33.0,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "per_sample": {
+            "n": 49,
+            "original_mean": 0.6632653061224489,
+            "mixed_mean": 0.6326530612244898,
+            "delta_pp": -3.061224489795918,
+            "ci95_pp": [
+              -7.653061224489796,
+              1.0204081632653061
+            ],
+            "gains": 7,
+            "losses": 12,
+            "original_sum": 32.5,
+            "mixed_sum": 31.0,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "error_correlation": {
+            "n": 49,
+            "within": 0.7435388873635771,
+            "cross": 0.7066536483974922,
+            "within_finite": 28,
+            "cross_finite": 64,
+            "within_total": 28,
+            "cross_total": 64
+          }
+        }
+      },
+      "price-trim": {
+        "coverage": 58,
+        "all": {
+          "greedy": {
+            "n": 2048,
+            "original_mean": 0.71484375,
+            "mixed_mean": 0.71484375,
+            "delta_pp": 0.0,
+            "ci95_pp": [
+              -0.146484375,
+              0.146484375
+            ],
+            "gains": 1,
+            "losses": 1,
+            "original_sum": 1464.0,
+            "mixed_sum": 1464.0,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "per_sample": {
+            "n": 2048,
+            "original_mean": 0.67626953125,
+            "mixed_mean": 0.676025390625,
+            "delta_pp": -0.0244140625,
+            "ci95_pp": [
+              -0.10986328125,
+              0.067138671875
+            ],
+            "gains": 8,
+            "losses": 13,
+            "original_sum": 1385.0,
+            "mixed_sum": 1384.5,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "error_correlation": {
+            "n": 2048,
+            "within": 0.6714561061481968,
+            "cross": 0.7113295684545349,
+            "within_finite": 28,
+            "cross_finite": 64,
+            "within_total": 28,
+            "cross_total": 64
+          }
+        },
+        "applicable": {
+          "greedy": {
+            "n": 58,
+            "original_mean": 0.6724137931034483,
+            "mixed_mean": 0.6724137931034483,
+            "delta_pp": 0.0,
+            "ci95_pp": [
+              -5.172413793103448,
+              5.172413793103448
+            ],
+            "gains": 1,
+            "losses": 1,
+            "original_sum": 39.0,
+            "mixed_sum": 39.0,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "per_sample": {
+            "n": 58,
+            "original_mean": 0.6681034482758621,
+            "mixed_mean": 0.6594827586206896,
+            "delta_pp": -0.8620689655172413,
+            "ci95_pp": [
+              -3.8793103448275863,
+              2.3706896551724137
+            ],
+            "gains": 8,
+            "losses": 13,
+            "original_sum": 38.75,
+            "mixed_sum": 38.25,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "error_correlation": {
+            "n": 58,
+            "within": 0.7097292423417808,
+            "cross": 0.7034568971567218,
+            "within_finite": 28,
+            "cross_finite": 64,
+            "within_total": 28,
+            "cross_total": 64
+          }
+        }
+      }
+    },
+    "pilot-b": {
+      "dollar-words": {
+        "coverage": 456,
+        "all": {
+          "greedy": {
+            "n": 2048,
+            "original_mean": 0.73095703125,
+            "mixed_mean": 0.73095703125,
+            "delta_pp": 0.0,
+            "ci95_pp": [
+              -0.390625,
+              0.390625
+            ],
+            "gains": 9,
+            "losses": 9,
+            "original_sum": 1497.0,
+            "mixed_sum": 1497.0,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "per_sample": {
+            "n": 2048,
+            "original_mean": 0.6939697265625,
+            "mixed_mean": 0.69287109375,
+            "delta_pp": -0.10986328125,
+            "ci95_pp": [
+              -0.384521484375,
+              0.164794921875
+            ],
+            "gains": 76,
+            "losses": 92,
+            "original_sum": 1421.25,
+            "mixed_sum": 1419.0,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "error_correlation": {
+            "n": 2048,
+            "within": 0.6748462909652263,
+            "cross": 0.7042747346823331,
+            "within_finite": 28,
+            "cross_finite": 64,
+            "within_total": 28,
+            "cross_total": 64
+          }
+        },
+        "applicable": {
+          "greedy": {
+            "n": 456,
+            "original_mean": 0.75,
+            "mixed_mean": 0.75,
+            "delta_pp": 0.0,
+            "ci95_pp": [
+              -1.7543859649122806,
+              1.7543859649122806
+            ],
+            "gains": 9,
+            "losses": 9,
+            "original_sum": 342.0,
+            "mixed_sum": 342.0,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "per_sample": {
+            "n": 456,
+            "original_mean": 0.7151864035087719,
+            "mixed_mean": 0.7102521929824561,
+            "delta_pp": -0.4934210526315789,
+            "ci95_pp": [
+              -1.7543859649122806,
+              0.7401315789473684
+            ],
+            "gains": 76,
+            "losses": 92,
+            "original_sum": 326.125,
+            "mixed_sum": 323.875,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "error_correlation": {
+            "n": 456,
+            "within": 0.6683814767260882,
+            "cross": 0.6575064875013876,
+            "within_finite": 28,
+            "cross_finite": 64,
+            "within_total": 28,
+            "cross_total": 64
+          }
+        }
+      },
+      "ungroup": {
+        "coverage": 49,
+        "all": {
+          "greedy": {
+            "n": 2048,
+            "original_mean": 0.73095703125,
+            "mixed_mean": 0.73046875,
+            "delta_pp": -0.048828125,
+            "ci95_pp": [
+              -0.146484375,
+              0.0
+            ],
+            "gains": 0,
+            "losses": 1,
+            "original_sum": 1497.0,
+            "mixed_sum": 1496.0,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "per_sample": {
+            "n": 2048,
+            "original_mean": 0.6939697265625,
+            "mixed_mean": 0.69427490234375,
+            "delta_pp": 0.030517578125,
+            "ci95_pp": [
+              -0.067138671875,
+              0.13427734375
+            ],
+            "gains": 12,
+            "losses": 11,
+            "original_sum": 1421.25,
+            "mixed_sum": 1421.875,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "error_correlation": {
+            "n": 2048,
+            "within": 0.6748462909652263,
+            "cross": 0.7148835481609532,
+            "within_finite": 28,
+            "cross_finite": 64,
+            "within_total": 28,
+            "cross_total": 64
+          }
+        },
+        "applicable": {
+          "greedy": {
+            "n": 49,
+            "original_mean": 0.7551020408163265,
+            "mixed_mean": 0.7346938775510204,
+            "delta_pp": -2.0408163265306123,
+            "ci95_pp": [
+              -6.122448979591836,
+              0.0
+            ],
+            "gains": 0,
+            "losses": 1,
+            "original_sum": 37.0,
+            "mixed_sum": 36.0,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "per_sample": {
+            "n": 49,
+            "original_mean": 0.6632653061224489,
+            "mixed_mean": 0.6760204081632653,
+            "delta_pp": 1.2755102040816326,
+            "ci95_pp": [
+              -2.806122448979592,
+              5.612244897959184
+            ],
+            "gains": 12,
+            "losses": 11,
+            "original_sum": 32.5,
+            "mixed_sum": 33.125,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "error_correlation": {
+            "n": 49,
+            "within": 0.6584448790416769,
+            "cross": 0.6736618286818961,
+            "within_finite": 28,
+            "cross_finite": 64,
+            "within_total": 28,
+            "cross_total": 64
+          }
+        }
+      },
+      "price-trim": {
+        "coverage": 58,
+        "all": {
+          "greedy": {
+            "n": 2048,
+            "original_mean": 0.73095703125,
+            "mixed_mean": 0.73095703125,
+            "delta_pp": 0.0,
+            "ci95_pp": [
+              0.0,
+              0.0
+            ],
+            "gains": 0,
+            "losses": 0,
+            "original_sum": 1497.0,
+            "mixed_sum": 1497.0,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "per_sample": {
+            "n": 2048,
+            "original_mean": 0.6939697265625,
+            "mixed_mean": 0.69476318359375,
+            "delta_pp": 0.079345703125,
+            "ci95_pp": [
+              -0.0244140625,
+              0.189208984375
+            ],
+            "gains": 12,
+            "losses": 6,
+            "original_sum": 1421.25,
+            "mixed_sum": 1422.875,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "error_correlation": {
+            "n": 2048,
+            "within": 0.6748462909652263,
+            "cross": 0.7135630748341795,
+            "within_finite": 28,
+            "cross_finite": 64,
+            "within_total": 28,
+            "cross_total": 64
+          }
+        },
+        "applicable": {
+          "greedy": {
+            "n": 58,
+            "original_mean": 0.6551724137931034,
+            "mixed_mean": 0.6551724137931034,
+            "delta_pp": 0.0,
+            "ci95_pp": [
+              0.0,
+              0.0
+            ],
+            "gains": 0,
+            "losses": 0,
+            "original_sum": 38.0,
+            "mixed_sum": 38.0,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "per_sample": {
+            "n": 58,
+            "original_mean": 0.6767241379310345,
+            "mixed_mean": 0.7047413793103449,
+            "delta_pp": 2.8017241379310347,
+            "ci95_pp": [
+              -0.8620689655172413,
+              6.68103448275862
+            ],
+            "gains": 12,
+            "losses": 6,
+            "original_sum": 39.25,
+            "mixed_sum": 40.875,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "error_correlation": {
+            "n": 58,
+            "within": 0.6794117349476059,
+            "cross": 0.6535166333795487,
+            "within_finite": 28,
+            "cross_finite": 64,
+            "within_total": 28,
+            "cross_total": 64
+          }
+        }
+      }
+    },
+    "W600": {
+      "dollar-words": {
+        "coverage": 456,
+        "all": {
+          "greedy": {
+            "n": 2048,
+            "original_mean": 0.71630859375,
+            "mixed_mean": 0.71630859375,
+            "delta_pp": 0.0,
+            "ci95_pp": [
+              -0.341796875,
+              0.341796875
+            ],
+            "gains": 6,
+            "losses": 6,
+            "original_sum": 1467.0,
+            "mixed_sum": 1467.0,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "per_sample": {
+            "n": 2048,
+            "original_mean": 0.675537109375,
+            "mixed_mean": 0.671875,
+            "delta_pp": -0.3662109375,
+            "ci95_pp": [
+              -0.640869140625,
+              -0.09765625
+            ],
+            "gains": 75,
+            "losses": 109,
+            "original_sum": 1383.5,
+            "mixed_sum": 1376.0,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "error_correlation": {
+            "n": 2048,
+            "within": 0.6697571323966669,
+            "cross": 0.7033766031735975,
+            "within_finite": 28,
+            "cross_finite": 64,
+            "within_total": 28,
+            "cross_total": 64
+          }
+        },
+        "applicable": {
+          "greedy": {
+            "n": 456,
+            "original_mean": 0.7083333333333334,
+            "mixed_mean": 0.7083333333333334,
+            "delta_pp": 0.0,
+            "ci95_pp": [
+              -1.5350877192982455,
+              1.5350877192982455
+            ],
+            "gains": 6,
+            "losses": 6,
+            "original_sum": 323.0,
+            "mixed_sum": 323.0,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "per_sample": {
+            "n": 456,
+            "original_mean": 0.6918859649122807,
+            "mixed_mean": 0.6754385964912281,
+            "delta_pp": -1.644736842105263,
+            "ci95_pp": [
+              -2.823464912280702,
+              -0.46600877192982454
+            ],
+            "gains": 75,
+            "losses": 109,
+            "original_sum": 315.5,
+            "mixed_sum": 308.0,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "error_correlation": {
+            "n": 456,
+            "within": 0.6397111655823486,
+            "cross": 0.6509440265629947,
+            "within_finite": 28,
+            "cross_finite": 64,
+            "within_total": 28,
+            "cross_total": 64
+          }
+        }
+      },
+      "ungroup": {
+        "coverage": 49,
+        "all": {
+          "greedy": {
+            "n": 2048,
+            "original_mean": 0.71630859375,
+            "mixed_mean": 0.7177734375,
+            "delta_pp": 0.146484375,
+            "ci95_pp": [
+              0.0,
+              0.341796875
+            ],
+            "gains": 3,
+            "losses": 0,
+            "original_sum": 1467.0,
+            "mixed_sum": 1470.0,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "per_sample": {
+            "n": 2048,
+            "original_mean": 0.675537109375,
+            "mixed_mean": 0.6759033203125,
+            "delta_pp": 0.03662109375,
+            "ci95_pp": [
+              -0.0732421875,
+              0.146484375
+            ],
+            "gains": 14,
+            "losses": 10,
+            "original_sum": 1383.5,
+            "mixed_sum": 1384.25,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "error_correlation": {
+            "n": 2048,
+            "within": 0.6697571323966669,
+            "cross": 0.7098833151466926,
+            "within_finite": 28,
+            "cross_finite": 64,
+            "within_total": 28,
+            "cross_total": 64
+          }
+        },
+        "applicable": {
+          "greedy": {
+            "n": 49,
+            "original_mean": 0.6938775510204082,
+            "mixed_mean": 0.7551020408163265,
+            "delta_pp": 6.122448979591836,
+            "ci95_pp": [
+              0.0,
+              14.285714285714285
+            ],
+            "gains": 3,
+            "losses": 0,
+            "original_sum": 34.0,
+            "mixed_sum": 37.0,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "per_sample": {
+            "n": 49,
+            "original_mean": 0.6403061224489796,
+            "mixed_mean": 0.6556122448979592,
+            "delta_pp": 1.530612244897959,
+            "ci95_pp": [
+              -3.061224489795918,
+              6.122448979591836
+            ],
+            "gains": 14,
+            "losses": 10,
+            "original_sum": 31.375,
+            "mixed_sum": 32.125,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "error_correlation": {
+            "n": 49,
+            "within": 0.5958425458874153,
+            "cross": 0.5986078160983498,
+            "within_finite": 28,
+            "cross_finite": 64,
+            "within_total": 28,
+            "cross_total": 64
+          }
+        }
+      },
+      "price-trim": {
+        "coverage": 58,
+        "all": {
+          "greedy": {
+            "n": 2048,
+            "original_mean": 0.71630859375,
+            "mixed_mean": 0.71728515625,
+            "delta_pp": 0.09765625,
+            "ci95_pp": [
+              0.0,
+              0.244140625
+            ],
+            "gains": 2,
+            "losses": 0,
+            "original_sum": 1467.0,
+            "mixed_sum": 1469.0,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "per_sample": {
+            "n": 2048,
+            "original_mean": 0.675537109375,
+            "mixed_mean": 0.67596435546875,
+            "delta_pp": 0.042724609375,
+            "ci95_pp": [
+              -0.042724609375,
+              0.13427734375
+            ],
+            "gains": 15,
+            "losses": 13,
+            "original_sum": 1383.5,
+            "mixed_sum": 1384.375,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "error_correlation": {
+            "n": 2048,
+            "within": 0.6697571323966669,
+            "cross": 0.7112952347274265,
+            "within_finite": 28,
+            "cross_finite": 64,
+            "within_total": 28,
+            "cross_total": 64
+          }
+        },
+        "applicable": {
+          "greedy": {
+            "n": 58,
+            "original_mean": 0.6724137931034483,
+            "mixed_mean": 0.7068965517241379,
+            "delta_pp": 3.4482758620689653,
+            "ci95_pp": [
+              0.0,
+              8.620689655172415
+            ],
+            "gains": 2,
+            "losses": 0,
+            "original_sum": 39.0,
+            "mixed_sum": 41.0,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "per_sample": {
+            "n": 58,
+            "original_mean": 0.6702586206896551,
+            "mixed_mean": 0.6853448275862069,
+            "delta_pp": 1.5086206896551724,
+            "ci95_pp": [
+              -1.5086206896551724,
+              4.741379310344827
+            ],
+            "gains": 15,
+            "losses": 13,
+            "original_sum": 38.875,
+            "mixed_sum": 39.75,
+            "bootstrap": "paired tasks;20000;seed2026101902;percentile95"
+          },
+          "error_correlation": {
+            "n": 58,
+            "within": 0.5853265409831645,
+            "cross": 0.6450300050329443,
+            "within_finite": 28,
+            "cross_finite": 64,
+            "within_total": 28,
+            "cross_total": 64
+          }
+        }
+      }
+    }
+  },
+  "journal_sha256": {
+    "tta/C-long2x/original/eval2048-batch-00000.json": "6f9f5e1bd16c0f88e4405e13d8e03ab453ea4f4aecf755b15f4b38cd1176a33b",
+    "tta/C-long2x/original/eval2048-batch-00064.json": "7746735d55b225ae5d5995e2ba3998cb626b80ff322866331529851e0ff8940f",
+    "tta/C-long2x/original/eval2048-batch-00128.json": "933d5530cc6e17f24d0e927b01eff98c18327d9e114d94f7dfc5e36f88522d9d",
+    "tta/C-long2x/original/eval2048-batch-00192.json": "01962bcc4b3a33fab8c62be74eec739505c04be11cedf6ac0eb9cc22bb012c22",
+    "tta/C-long2x/original/eval2048-batch-00256.json": "cfadd5eeb505531b3b9b9abe1d94df40a34d74c4a0279d4b4c688f1660292a14",
+    "tta/C-long2x/original/eval2048-batch-00320.json": "28f67bcc0ff91f46774b54b7f0b14608d14a0502c48946e3ad2bcefd233654fb",
+    "tta/C-long2x/original/eval2048-batch-00384.json": "344f498cbf1031f345e5b6065277dc6191e3a59eaf9eb37945e854881ee75566",
+    "tta/C-long2x/original/eval2048-batch-00448.json": "58961e65ce4aff0d46d528a3623b048da2833f48bde38d94983bd258bd3893d5",
+    "tta/C-long2x/original/eval2048-batch-00512.json": "d2e17cb2dd0ce67cd8599f0a524d973b232460206012135b661841be8e255585",
+    "tta/C-long2x/original/eval2048-batch-00576.json": "d382de7d99d9d5c01bffcb0644bb92a9691dd3b760587b79fd468b7f3be62b29",
+    "tta/C-long2x/original/eval2048-batch-00640.json": "f05e5802f7a8589dd5f47da59b39f0ec83141404a4289671229fe6ff905e30a1",
+    "tta/C-long2x/original/eval2048-batch-00704.json": "a7fe21e75138aa05db55e0f6b41bd3f8043ca88bb5970c0dd74b05b9609b1092",
+    "tta/C-long2x/original/eval2048-batch-00768.json": "1362c1ed6014112967a287376b49dd742e05e83262cfbfa95ab1ec5adba0b937",
+    "tta/C-long2x/original/eval2048-batch-00832.json": "2446536b081d8f4a6a7c99e3d7042dedee23641c462a4d962d09b4ef2066a18d",
+    "tta/C-long2x/original/eval2048-batch-00896.json": "d5bf67a00afef3fd79003e989a6b5ce9cd91be5933f7173daddb80077e39a9d1",
+    "tta/C-long2x/original/eval2048-batch-00960.json": "ba32c93209cd32e13e89624342b9bb94b691ea3f1bf5ba5f6e94d9186ceab713",
+    "tta/C-long2x/original/eval2048-batch-01024.json": "c507719e984d92ae3fd83ec9456b97a6a6d4f1c998276b2930f67b2ed648066f",
+    "tta/C-long2x/original/eval2048-batch-01088.json": "30c453797e9764511f61273aafbba059907dccec33535a9754b05743ba40cb4a",
+    "tta/C-long2x/original/eval2048-batch-01152.json": "066ceb16acf96dbf6a261a616106605429cdf05412c149f8660388a554f652e9",
+    "tta/C-long2x/original/eval2048-batch-01216.json": "0ee05b83f2e74c83494b88cc849af3098bf048183ce9617a07875812a93201f0",
+    "tta/C-long2x/original/eval2048-batch-01280.json": "02a081b0495207345c29c49e9211c5c1eb76fc90353ee3765b134309c29125ca",
+    "tta/C-long2x/original/eval2048-batch-01344.json": "a2a6ad06746990848e82507dba2061d560345d72b52855b3cb2f73666f6e862d",
+    "tta/C-long2x/original/eval2048-batch-01408.json": "5d1801153d601c16f611fc9e60da9e4cc0d53767bc5eb8c6a2c8c8d72f2581ee",
+    "tta/C-long2x/original/eval2048-batch-01472.json": "b83d3d1c8a70e73cf545b6a0666d1dd2643ece992faa5a370155f3db047f6e74",
+    "tta/C-long2x/original/eval2048-batch-01536.json": "98fec538504ce84a88e73d79a41e2d545fc8746680a311de154d38070085f546",
+    "tta/C-long2x/original/eval2048-batch-01600.json": "7ad0a1ea06ddfee4a776960fe95c9cc474a8114e0d4b37a2dd2c9fd184d15c20",
+    "tta/C-long2x/original/eval2048-batch-01664.json": "948922bfed5326fa04e1df15ffe8262f559813fb4de1337428bca1c472ec4f17",
+    "tta/C-long2x/original/eval2048-batch-01728.json": "838f261b4bc73d48bcdb7fa888376798041f49f9eba80e4ba1e30595fe5d8534",
+    "tta/C-long2x/original/eval2048-batch-01792.json": "b3797f52fbb51f5cfe03c6607cf2bd1e3d9f787ee927bfe2e074d2d2172c4ecf",
+    "tta/C-long2x/original/eval2048-batch-01856.json": "e3faa4274bdbb6ed4318d4bda015761fd7504c57730e1d4b5c1c4d56e1be5757",
+    "tta/C-long2x/original/eval2048-batch-01920.json": "b40d4945688e69022cc65bf52d353a66d88dce32d8f633e1267ff1e0f3f6e766",
+    "tta/C-long2x/original/eval2048-batch-01984.json": "3a820a00e7964fceee1d5892ee0c9633f1fa5dc6ee0e0800df4485617b60390f",
+    "tta/C-long2x/dollar-words/eval2048-batch-00000.json": "48c3dee96f919b59cc1574b772e2db559d6ca1945d761e1f8c48e97b71e2a9ae",
+    "tta/C-long2x/dollar-words/eval2048-batch-00064.json": "d6aef2d9682bf40418c5286188b86d45b9367a6f6d3ac591d262148217cf5b6c",
+    "tta/C-long2x/dollar-words/eval2048-batch-00128.json": "712b0cb0105282c4d9706a8e8985308c320692f83d756d576992901b6a379957",
+    "tta/C-long2x/dollar-words/eval2048-batch-00192.json": "c978e3d9b2411544235b13640d05f0ce7d56c28e9e91aec9a10dad8538a947f5",
+    "tta/C-long2x/dollar-words/eval2048-batch-00256.json": "efefdd48fad5f147ca8c79dcdbee6051db612a52b106c38369a703b15c02abd2",
+    "tta/C-long2x/dollar-words/eval2048-batch-00320.json": "893986040865c96fbde9df8d2667d45e63f6b2347f77fb895efafb83acbb9865",
+    "tta/C-long2x/dollar-words/eval2048-batch-00384.json": "a8f839a6f196c98c437e3a022f26bc09713662ab42220e5cb2827350b2281a3a",
+    "tta/C-long2x/dollar-words/eval2048-batch-00448.json": "94871ee5b906f8fd6016051f111d8214fd3be3bf14ee54a766a7ce1b31a33062",
+    "tta/C-long2x/ungroup/eval2048-batch-00000.json": "e0ba19fce6e3381da18b02581051c5c4aaf249b45a989bef37228de1a21a6a59",
+    "tta/C-long2x/price-trim/eval2048-batch-00000.json": "4f0da6badb50badcadf6407aa904747038831ab2597a2b2394938aa0585aa1d0",
+    "tta/pilot-b/original/eval2048-batch-00000.json": "c6eeda3bdda83d7e889dad1d5b651245df24403bb3ba87dfe396d9de860056bf",
+    "tta/pilot-b/original/eval2048-batch-00064.json": "59ffd4a47ba7e98ab44f6aaadb5797c50c9936a45db2a4fcdb9e2e6393b40432",
+    "tta/pilot-b/original/eval2048-batch-00128.json": "0adcd6bf1283cb6765eeb9e9a858aef6346eb6f6ae8b468104ba06ad403ad8f9",
+    "tta/pilot-b/original/eval2048-batch-00192.json": "ecfa4be1a1da75d3d22196288d1a7708a6158cc1048237fe7155416df653c8ef",
+    "tta/pilot-b/original/eval2048-batch-00256.json": "d15e8bf174e325ea073fb0fec8fbae7871f53e2d0a4cb6f5ba8669f58a241cb4",
+    "tta/pilot-b/original/eval2048-batch-00320.json": "90296f507097ac8896beff28a360bbed4f3da25a098909a6a7790bc7e728cb3c",
+    "tta/pilot-b/original/eval2048-batch-00384.json": "e6faaec60bb065e76ba8576c843df4967fdbf1cd07371e4cfc13938e3b45a9f4",
+    "tta/pilot-b/original/eval2048-batch-00448.json": "29da99e21f90a250af8b66ce6bcc635616b38291bef04803c0f9096cb50b80bf",
+    "tta/pilot-b/original/eval2048-batch-00512.json": "f486ff89dbf8f1c39c89106a79683eda5e77264d159e329614f36ba5e9b9b8c5",
+    "tta/pilot-b/original/eval2048-batch-00576.json": "d24353886a563d52c8cec7c13e1977db453f6ed34059e166406714da1604e864",
+    "tta/pilot-b/original/eval2048-batch-00640.json": "381e3e016060fa2e81345e205f8d26ed7b20395759358f3a94aadf0767393582",
+    "tta/pilot-b/original/eval2048-batch-00704.json": "aca5af6f2f062610de6068bef3a03ae7fffc2a298aed389ecabc7d08e3c50b11",
+    "tta/pilot-b/original/eval2048-batch-00768.json": "8bf2571e18b2e4b40265e97dbb49a2b86fd17507d31319124a0cff3bccaad7e0",
+    "tta/pilot-b/original/eval2048-batch-00832.json": "2b3e9e7f2b0156301e39161c91cd3cc2aac9702a5d49759e10bcffe023c2ccd2",
+    "tta/pilot-b/original/eval2048-batch-00896.json": "1ba946c9fae0cc74e4bd6c91c4107869f2f0ac6099adaf9a6357ca1b9caecabd",
+    "tta/pilot-b/original/eval2048-batch-00960.json": "84e92e44302085e49c6cbd74d2637cd2316037e8162459e1d1fb5b98ad9b3950",
+    "tta/pilot-b/original/eval2048-batch-01024.json": "a545bdc87ed0813caa85179d86e739325fb9bf3e04d17d3583e9bdd7c3c1e0f6",
+    "tta/pilot-b/original/eval2048-batch-01088.json": "b14e664d9d4824038a77a4f119d4d3d72c86dd92c9b90e915131fc699ef4ab7f",
+    "tta/pilot-b/original/eval2048-batch-01152.json": "698e86f8365b25a1d548850f6b988a8feb23964eed6de7facb32143ea589c924",
+    "tta/pilot-b/original/eval2048-batch-01216.json": "f3d90aac1808da1d5399f1f8dcefc05fa470a07ef2b1f6df67991d82c2e7b136",
+    "tta/pilot-b/original/eval2048-batch-01280.json": "0dd7844af35a1018afb5e63ca605ebb13a7c7bfc6ebe282c8982f9bb8f5cb04c",
+    "tta/pilot-b/original/eval2048-batch-01344.json": "fdc0546c79681faf1ebd268c3231ae9e30ecc7a3c9105840b5625e8adbe9d393",
+    "tta/pilot-b/original/eval2048-batch-01408.json": "e28ef56235818aa688f0f3b81d5ef4d7b1cd3bc94628717d3cb1eb9bcc86bc58",
+    "tta/pilot-b/original/eval2048-batch-01472.json": "1be9ccb38fc0e5fee74daf44b578485b34b37f11baa73f742da5793b61288e0a",
+    "tta/pilot-b/original/eval2048-batch-01536.json": "edd512005a0d1ee9ed8130589242f2520309f39b7361f08fc15f3fa1088dfd6b",
+    "tta/pilot-b/original/eval2048-batch-01600.json": "e299a014bc12ae69fe7f53015b14614eb3185f9ea406f24d184f9c664a5b1390",
+    "tta/pilot-b/original/eval2048-batch-01664.json": "05e84394b471da6166230163702e783e1f541bec2ef091fa13271ad7ce20f60a",
+    "tta/pilot-b/original/eval2048-batch-01728.json": "0af61e4d5a704e3535cafe376bdbcb117e5ea2b1bb69cfc1c1f29c1b6a602562",
+    "tta/pilot-b/original/eval2048-batch-01792.json": "4f63b2ee642d86d8bbb6488572fb20322d12307710daf8f5b96e2255bb3ef9a9",
+    "tta/pilot-b/original/eval2048-batch-01856.json": "190e8e22189c9908f3a8135e7087b24734b847f5821208362ee2ae36bc2c6b5b",
+    "tta/pilot-b/original/eval2048-batch-01920.json": "1f969ed2c94b4bd2d1fbc2876e182a00d4107d6e5bced34576b235d7a9eae1b5",
+    "tta/pilot-b/original/eval2048-batch-01984.json": "1bbe0768f7f6d1d7f8f615d76ef967c68a3ba4fde5d19a6670c2d0440d7b82ae",
+    "tta/pilot-b/dollar-words/eval2048-batch-00000.json": "4739966bb3b50d2a2e76f56feb2d013e46bd3df4a3275b1fdc8f27b0fa89d410",
+    "tta/pilot-b/dollar-words/eval2048-batch-00064.json": "b3a8481d9612b5ee0cf2fe5cf4eba945ad59fa3f2381e8829b1d862cf31b01c6",
+    "tta/pilot-b/dollar-words/eval2048-batch-00128.json": "b5f8b89f6bb63026fe5fbf7d65be8f672ff61eb300486046a5c84d6f2fb9f60d",
+    "tta/pilot-b/dollar-words/eval2048-batch-00192.json": "bae9f035268cedb9dc1c1c7ab97f2a24b8e3da29292ea2d03b8b1105dde3886f",
+    "tta/pilot-b/dollar-words/eval2048-batch-00256.json": "d78e35fcd5657d4a36d400a8a75f9b04ba77c14ea63286bd58935f742058f746",
+    "tta/pilot-b/dollar-words/eval2048-batch-00320.json": "ce9b65759b15d2bff6e264752c1b1c9de5e16e6f916ff0f0793452a6ecff9f4b",
+    "tta/pilot-b/dollar-words/eval2048-batch-00384.json": "5ff42c9283584c23d6736fd356197b87aebe0f0139789c16b45f84fd2c409a63",
+    "tta/pilot-b/dollar-words/eval2048-batch-00448.json": "80ff86831f07aca20e136cae288542880a0fe91097933bb91888a65df49b8937",
+    "tta/pilot-b/ungroup/eval2048-batch-00000.json": "125f35508da0218672de70a6b397c9a23d4156cc7a9d162eb729fe8b89becb5f",
+    "tta/pilot-b/price-trim/eval2048-batch-00000.json": "c215062a8abf51341909e3b9648aa68f035f7a5c5a0e4e8585494a6d2798642f",
+    "tta/W600/original/eval2048-batch-00000.json": "20b9532a2bcfa7bd666e69ed18f359b1fb07c835b1b59261e4f65f7ad526cdc1",
+    "tta/W600/original/eval2048-batch-00064.json": "593851cfc17005841b75eb02c4d499f2c1eaf8852ba5b30c413435c6b40aa009",
+    "tta/W600/original/eval2048-batch-00128.json": "a3b585321ac8278106e518655fabf8d359db929d506fcfd24d259be2e7e80ab3",
+    "tta/W600/original/eval2048-batch-00192.json": "06509b5ea762373ff109c3fa728924107619e11281a1fba70c7240c981afae35",
+    "tta/W600/original/eval2048-batch-00256.json": "b10600b391d6f9f67f9b8d2b30f7440bd43528438992d6355de219b4cdd87200",
+    "tta/W600/original/eval2048-batch-00320.json": "f35490bd4e3045c941729da7624e0bd69065f32064ea22b4f474d5dab0ce3812",
+    "tta/W600/original/eval2048-batch-00384.json": "b19d67e7643fea2e49dc4c82e1a6591bfbc40642d3976e308886bc814caf401d",
+    "tta/W600/original/eval2048-batch-00448.json": "6968d25f563011285866d15c6aa3a79b65fef030f8e630ebfab6f04c070a8a40",
+    "tta/W600/original/eval2048-batch-00512.json": "b1ef53d9557851dd159b9ae39d6bffd90a6afa8d946812b9eff7925a9ce224c8",
+    "tta/W600/original/eval2048-batch-00576.json": "49b72dfee4ab067880351c164e67a91685bae09ed20ce8bc5cb47c88dc5768c0",
+    "tta/W600/original/eval2048-batch-00640.json": "ef53412d6bb0697d6b5c0b147e0ce9eaa492e03422c6a6b6730bd0e0466d165d",
+    "tta/W600/original/eval2048-batch-00704.json": "121e1a7e1d0b35893f0e4f5da9dee3517d430cdfeb1a355f0e9defe9cacde034",
+    "tta/W600/original/eval2048-batch-00768.json": "25967d755ba3f8fd64f3d904121383cfeb56a0c3ea4b30cb2c9616f787c63003",
+    "tta/W600/original/eval2048-batch-00832.json": "32d83965b74f075ca28e250b4306beafda2b771e6b8fce2c6dce26cf10e23c00",
+    "tta/W600/original/eval2048-batch-00896.json": "dca227029609325f05cffd686d37cece2074dc0cfacffe0bfbfa8c9cf5c47554",
+    "tta/W600/original/eval2048-batch-00960.json": "10a7b1462ef313a23eb5782907bd69617bd57c858708930a093385615beec88c",
+    "tta/W600/original/eval2048-batch-01024.json": "d46a6ecb3bbe926d0d0a6933d80277759e774a6053adf23fe805c5cd7c94384c",
+    "tta/W600/original/eval2048-batch-01088.json": "3d61f5a8452e01c7af208d7adecdffae313fe85ab27f097433eaa4e64cfca781",
+    "tta/W600/original/eval2048-batch-01152.json": "23c3af5168f0e6e85570f7f9660d33e238ada7ab859b5910122931734742076c",
+    "tta/W600/original/eval2048-batch-01216.json": "e60a47900721e91f3eaf54e6c183deec90a962075fb92e7839179c66bbe0e7c6",
+    "tta/W600/original/eval2048-batch-01280.json": "ee5f04503a8c5eeb1b8fe435e084cb18f2aa4adc28d82e5fda71cf6a7d67251e",
+    "tta/W600/original/eval2048-batch-01344.json": "60014dcb867e2e021da8e9c27c1b2ca33fd952aea7d70991ef87d4e8ad2073db",
+    "tta/W600/original/eval2048-batch-01408.json": "f080eaff491e7272d3021b28d3c84ea9a4e2fbc3a6702ce9e76bef0dc872ad27",
+    "tta/W600/original/eval2048-batch-01472.json": "7fd68c0ca60bb708b74558eccc5a09e61aaffda51e6d7b1158b11dd51ac5c76a",
+    "tta/W600/original/eval2048-batch-01536.json": "69169d8b40db557232f060a234af1f0505042937e973605735d17c238a766fca",
+    "tta/W600/original/eval2048-batch-01600.json": "4ffe3f1a79fbf123d2b7b54dae3e49d9ecb85f674e6a346c8755e31d4eea3286",
+    "tta/W600/original/eval2048-batch-01664.json": "0f7e324fee2a68726b939f4d04a44814667913f4169d4d9e56cb8ff8b69194fd",
+    "tta/W600/original/eval2048-batch-01728.json": "d8dacb1385d0cf1b00d796abca1705b236476fbced2cdc3679239667f7287c62",
+    "tta/W600/original/eval2048-batch-01792.json": "99acd83cf154d062f3b6e61cfa9780b1e15238d0092925aaba20b2b8cf317d18",
+    "tta/W600/original/eval2048-batch-01856.json": "299b654f53f1d787976e373a885d982fdf6bf5e86a0e6296e7ef75a619afe8b0",
+    "tta/W600/original/eval2048-batch-01920.json": "626774be36bd0396d3e7a8fefcefe991ad3fc44315758e5e15779118a7abbd1e",
+    "tta/W600/original/eval2048-batch-01984.json": "2bb7a461b65c286a57a37b284a91e9e9f15924420dca4b0581420d241694e736",
+    "tta/W600/dollar-words/eval2048-batch-00000.json": "7a86c3e7c7d74f14ac4fe118aa34a4e243fa3043855c7b1a98a694ca9aa71491",
+    "tta/W600/dollar-words/eval2048-batch-00064.json": "b1ea882b66c65cf806add1521c188b0b42a6eb8c2f36b83827d6426f729cb372",
+    "tta/W600/dollar-words/eval2048-batch-00128.json": "cd6e8e67df284f8bba9e4e35a00a9f5c9733a8870d6e0f3452a7509033817193",
+    "tta/W600/dollar-words/eval2048-batch-00192.json": "977b70423fdf1dd11a3f23b3249786011c4367442d2404d8b5d0566b20df8c8a",
+    "tta/W600/dollar-words/eval2048-batch-00256.json": "2166400d95c2866c481f49f607e07cb6a54eaec40e7264c4d35619887784ec22",
+    "tta/W600/dollar-words/eval2048-batch-00320.json": "c47aa863b4d52c7c9f1510950d45274e4f171d9dc39a1f218d3dd6550617bdf1",
+    "tta/W600/dollar-words/eval2048-batch-00384.json": "fb30f55f3c08d514b3779cfd10071853d15f2d4d306f81b402af4483be0ec011",
+    "tta/W600/dollar-words/eval2048-batch-00448.json": "2fe528e2ab215d5a1648989740e1d65204b9aa7effc851b5f4522a9e8ec72975",
+    "tta/W600/ungroup/eval2048-batch-00000.json": "187df749509e18dfc1d54900b5e1470dee4d01647433b0687d35a842e22cc997",
+    "tta/W600/price-trim/eval2048-batch-00000.json": "e2ad4e0d825618809cd2c63498be173496a0a0cef48d32da10684e705a1a920b"
+  },
+  "selected_rules": [
+    "dollar-words"
+  ],
+  "original_matches": 1549,
+  "N": 2048,
+  "success": false,
+  "selection_sha256": "2f9c4a585c24a6f5913183d3cbbe60d02952ca58fd159a0e70916e3888ca31da"
+}

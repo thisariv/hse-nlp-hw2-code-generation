@@ -1,0 +1,69 @@
+{
+  "extracted": {
+    "final_core.py": {
+      "source": "exp26_core.py",
+      "source_sha256": "7247eae92a09a73b62c86fee80c261d3e3a0043cb863d7bc069426d214f575ce",
+      "definitions": [
+        "SwiGLUInput",
+        "replace_ffn_with_swiglu",
+        "SimpleTransformer",
+        "encode",
+        "decode_bytes",
+        "active_tokens",
+        "BudgetExpired",
+        "check_deadline",
+        "sync"
+      ],
+      "generated_sha256": "1da5c419ccc1ef3667bfc27456296fd0545822073db6f24804a761864aa46aec"
+    },
+    "final_fast.py": {
+      "source": "exp27b_fast.py",
+      "source_sha256": "d33b61e9cef0257fd749856f7c8cf29000815bc2d65f230f4414e2da97b23ba4",
+      "definitions": [
+        "Context",
+        "Decoder"
+      ],
+      "generated_sha256": "8cd730d568f75f7402edcff28a448d2389a4ed064a1b22882600864621d660fc"
+    },
+    "final_choose.py": {
+      "source": "exp27_decode.py",
+      "source_sha256": "b0042aecba742c037d32fe7659e1d2b20336d63f96b6fe9d2f7b9a0af69fd966",
+      "definitions": [
+        "choose"
+      ],
+      "generated_sha256": "c5cd8774597ff454771c337a66eb2248fabb485a9d29e5ba4ee133cfaf9fe7fb"
+    },
+    "final_split.py": {
+      "source": "l2_sampler.py",
+      "source_sha256": "41936d9c3bb792426870685b7052acf2220c6bc8bec116318ed183231f601e52",
+      "definitions": [
+        "fixed_split"
+      ],
+      "generated_sha256": "23659f25e6bfee015395c890f7b9fd521fae007eb0ab97efea74466110ad58c1"
+    },
+    "final_representation.py": {
+      "source": "s3_representation.py",
+      "source_sha256": "51c18fd6b9d158086c96da9f23dd72030da84e27cff18b51028934b0f21d519c",
+      "definitions": [
+        "restore_compact",
+        "tokenizer"
+      ],
+      "generated_sha256": "9a97a8818ae1a9977801f1c68cc011cc427af9d6d954acde5efb15e2e8334305"
+    }
+  },
+  "embedded_source_sha256": {
+    "final_core.py": "1da5c419ccc1ef3667bfc27456296fd0545822073db6f24804a761864aa46aec",
+    "final_fast.py": "8cd730d568f75f7402edcff28a448d2389a4ed064a1b22882600864621d660fc",
+    "final_choose.py": "c5cd8774597ff454771c337a66eb2248fabb485a9d29e5ba4ee133cfaf9fe7fb",
+    "final_split.py": "23659f25e6bfee015395c890f7b9fd521fae007eb0ab97efea74466110ad58c1",
+    "final_representation.py": "9a97a8818ae1a9977801f1c68cc011cc427af9d6d954acde5efb15e2e8334305",
+    "final_decode.py": "a1936b12f0989a0cfacb2d3d33aa461ff93b0ff5e5538e92d80e8a6d0d30aced",
+    "final_numeric.py": "655f9555ecdcad01bb64c39987a92483ca29a8a6eac0344d82f406f49f5c3c46",
+    "final_vote.py": "2c92dddd19c03d662f1b9f112ae49e250b7fa00b4000a97545e4b8cea76378ac",
+    "final_execute.py": "67b01880705d97e7d23f49e0a1e6ec09b077fc1ffd856e4df4f2e83a11c95a62",
+    "final_executor.py": "24d2045220597277fcb56d4b0582a5e1e72cc4ab01a23bbb2eef53e650efd5e8",
+    "final_inference.py": "e194ba2fae480629e167bb1adfaacba3a29fc544d583264b447393e4f0166099",
+    "final_runner.py": "cb909cc3c5b75238eb55e7d271ece9949dc112764e266e9bda3e9700008b96fd",
+    "final_session.py": "7002f7d97ea27885d60e231c4dabdd31e1775b9ebf407d81e8950c66fddc247e"
+  }
+}

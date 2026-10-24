@@ -1,0 +1,43 @@
+{
+  "ref": "friend1/nlp-hw02-ensemble-inference-v11",
+  "requested_at_utc": "2026-10-19T17:15:17.143143+00:00",
+  "push_calls": 1,
+  "private": true,
+  "preflight": {
+    "target_absent_in_complete_owned_inventory": true,
+    "owned_count": 39,
+    "active_version": false
+  },
+  "quota_before": {
+    "free_seconds": 51139.573,
+    "used_seconds": 56860.427,
+    "reserved_seconds": 0.0,
+    "reset_utc": "2026-10-24 00:00:00"
+  },
+  "timeout_seconds": 720,
+  "maximum_T4_pair_quota_seconds": 1440,
+  "quota_budget_seconds": 2400,
+  "notebook_sha256": "18f2cdb96dd70b2fac8b6693067bc7dce2087d49bc5d638999a349a44b67dcb6",
+  "push_started": true,
+  "CLI_returncode": 0,
+  "push_accepted": true,
+  "version": 1,
+  "push_finished_at_utc": "2026-10-19T17:15:20.542827+00:00",
+  "first_status_seen_at_utc": {
+    "1:QUEUED": "2026-10-19T17:15:35.825189+00:00",
+    "1:CANCEL_ACKNOWLEDGED": "2026-10-19T17:27:58.665295+00:00"
+  },
+  "monitor_version": 1,
+  "external_versions": [],
+  "observed_version_statuses": {
+    "1": "CANCEL_ACKNOWLEDGED"
+  },
+  "status": "CANCEL_ACKNOWLEDGED",
+  "last_quota_observation": {
+    "free_seconds": 50722.250616,
+    "used_seconds": 57277.749384,
+    "reserved_seconds": 0.0,
+    "reset_utc": "2026-10-24 00:00:00"
+  },
+  "wait_threshold_crossed_at_utc": "2026-10-19T17:25:41.381040+00:00"
+}

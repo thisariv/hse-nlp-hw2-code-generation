@@ -1,0 +1,15 @@
+{
+  "ref": "friend1/nlp-hw02-b6",
+  "version": 1,
+  "status": "RUNNING",
+  "checked_at_utc": "2026-10-19T10:06:53.918210+00:00",
+  "private": true,
+  "machine_shape": "NvidiaTeslaT4",
+  "enable_gpu": true,
+  "enable_internet": true,
+  "full_notebook_code_exact": true,
+  "server_source_sha256": "4c6e03f1839a1f4aad70a74ca60e09c8a8f4c3c30bd471d5a5861af3a5a72dff",
+  "output_files_first_page": 0,
+  "output_has_next_page": false,
+  "log_characters": 0
+}

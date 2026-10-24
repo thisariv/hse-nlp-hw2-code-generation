@@ -1,0 +1,75 @@
+{
+  "passed": true,
+  "ref": "thisarivson/nlp-hw02-d1-gpu-smoke/1",
+  "session": {
+    "status": "complete",
+    "worker_status": {
+      "C-main": "complete",
+      "C-long2x": "complete"
+    },
+    "reason": "workers completed",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "failed_workers": [],
+    "unreaped_worker_pids": [],
+    "wall_seconds": 168.71763203399996,
+    "hard_shutdown_seconds": 660,
+    "GPU": true,
+    "training": false
+  },
+  "all_receipts_SHA_verified": 49,
+  "CUDA_CE_parity": true,
+  "no_C_main_CE": true,
+  "CE_rows_per_second_per_GPU": [
+    1359.895538168389,
+    1307.9932577427842
+  ],
+  "full_CE_projected_seconds": 3717.8089192844136,
+  "CE_safety": 1.15,
+  "full_CE_conservative_seconds": 4275.480257177075,
+  "generation": {
+    "C-main": {
+      "rows": 4193,
+      "pipeline_seconds": 48.216096233999906,
+      "GPU_seconds": 37.61972609999964,
+      "pipeline_rows_per_second": 86.96266034584687,
+      "GPU_rows_per_second": 111.4574834716843,
+      "reference_reused": 8,
+      "reference_executed": 4185,
+      "numeric": 4163
+    },
+    "C-long2x": {
+      "rows": 4193,
+      "pipeline_seconds": 52.91977300299993,
+      "GPU_seconds": 47.100543338999955,
+      "pipeline_rows_per_second": 79.23314409837522,
+      "GPU_rows_per_second": 89.02232761565901,
+      "reference_reused": 0,
+      "reference_executed": 0,
+      "numeric": 4151
+    }
+  },
+  "pilot_seconds_per_row_by_bin": [
+    0.060767596953123615,
+    0.0792874652031248,
+    0.049909362218748754,
+    0.050556051390625356
+  ],
+  "full_generation_projected_seconds": 25158.35304524654,
+  "generation_safety": 1.6,
+  "full_generation_conservative_seconds": 40253.364872394464,
+  "maximum_bin_quotas": [
+    212296,
+    116650,
+    44545,
+    15538
+  ],
+  "maximum_generation_rows": 389029,
+  "smoke_selected_rows": 4193,
+  "downloaded_bytes": 117997901,
+  "secrets_or_live_required": false,
+  "models_in_output": false,
+  "Kaggle_working_watchdog_probe": null
+}

@@ -1,0 +1,6 @@
+{
+  "files": 25,
+  "add_returncode": 128,
+  "add_stderr": "Unable to create shared worktree index.lock: Operation not permitted",
+  "commit_created": false
+}

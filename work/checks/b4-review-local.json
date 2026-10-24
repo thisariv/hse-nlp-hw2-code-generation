@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "reviewed_commit": "31872e7",
+  "checked_at_utc": "2026-10-17T18:58:04.564586+00:00",
+  "B4_tests": 18,
+  "inherited_tests": 67,
+  "static": true,
+  "nbformat": true,
+  "source_parity": true,
+  "post_edit_static_unit_test": true,
+  "review_helpers_compile": true,
+  "training_math_modified": "GPU1 equivalent analytic derivative and saved activation memory policy; GPU0 frozen"
+}

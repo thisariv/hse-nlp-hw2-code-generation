@@ -1,0 +1,197 @@
+{
+  "status": "passed",
+  "fixtures": 5,
+  "orders": {
+    "strict-two-thirds": {
+      "slots": 9506623,
+      "sha256": "d4628a11d21b21956f93d5ea1a1e213ec0fd93bdb8945e5db3d1aa1beac62566",
+      "deterministic_replay": true,
+      "unique_in_bounds": true,
+      "unmodified_L2_loader": true,
+      "epoch_wraparound": true
+    },
+    "all-modal-ties-kept": {
+      "slots": 9710055,
+      "sha256": "87c4430b3ae913308edc6ac90bee8f9ae91955a19f6b3856bedea0e9625bdf2e",
+      "deterministic_replay": true,
+      "unique_in_bounds": true,
+      "unmodified_L2_loader": true,
+      "epoch_wraparound": true
+    },
+    "ordinary-protected-safe": {
+      "slots": 9725736,
+      "sha256": "7dbc5bb4bd2a2477831fd23506b4688aa6e659b623121bd94fe8942ca9e6315f",
+      "deterministic_replay": true,
+      "unique_in_bounds": true,
+      "unmodified_L2_loader": true,
+      "epoch_wraparound": true
+    }
+  },
+  "full_compact_SHA": "360/360 verified during analysis",
+  "full_raw_SHA": "60/60 verified during analysis",
+  "original_length_SHA_alignment": "60/60 verified during analysis",
+  "protected_exact_normalized_hash_heldout_overlaps": 0,
+  "L2_raw_proxy": {
+    "input": {
+      "file": "results/clean-cooldown/heldout-source-proxy.json",
+      "sha256": "ff36df5719d68a5fd6ff27cbcb95a82a8eeb7ecd8e762df89ebdef6977655a00",
+      "bytes": 110025
+    },
+    "labels": {
+      "insufficient": 3831,
+      "unanimous": 248,
+      "conflicting": 17
+    },
+    "models": {
+      "C-main": {
+        "input": {
+          "file": "results/kaggle-runs/nlp-hw02-kaggle-l2/1/model-C-main/points/l2-28800/evaluation/heldout4k-per-example.json",
+          "sha256": "698cb9359993f10756578a727ccba6bfff6f4231829fd84167a9d985754fd819",
+          "bytes": 2261201
+        },
+        "IDs_SHA_correctness_rejoined": true,
+        "all_split_counts_and_cluster_CIs_replayed": true,
+        "heldout4k": {
+          "conflicting": {
+            "n": 17,
+            "errors": 5,
+            "error_rate": 0.29411764705882354,
+            "Wilson95": [
+              0.13279793865556402,
+              0.5313353332621391
+            ]
+          },
+          "unanimous": {
+            "n": 248,
+            "errors": 57,
+            "error_rate": 0.22983870967741934,
+            "Wilson95": [
+              0.18183353450829282,
+              0.2860859831567792
+            ]
+          },
+          "insufficient": {
+            "n": 3831,
+            "errors": 1166,
+            "error_rate": 0.30435917515009137,
+            "Wilson95": [
+              0.28999026410736367,
+              0.319120057424561
+            ]
+          },
+          "conflict_minus_unanimous_error_pp": 6.427893738140419,
+          "question_cluster_bootstrap95_pp": [
+            -15.066362217017954,
+            30.05327641813698
+          ],
+          "bootstrap_question_clusters": 265,
+          "length_standardized_delta_pp": 7.892276353703009,
+          "length_standardization_rows": 265
+        }
+      },
+      "C-long2x": {
+        "input": {
+          "file": "results/kaggle-runs/nlp-hw02-kaggle-l2/1/model-C-long2x/points/l2-28800/evaluation/heldout4k-per-example.json",
+          "sha256": "8bb4389e96cd0a61e6c34d5fbc82095ff1591904c173fcbe672d98d790314f78",
+          "bytes": 2268972
+        },
+        "IDs_SHA_correctness_rejoined": true,
+        "all_split_counts_and_cluster_CIs_replayed": true,
+        "heldout4k": {
+          "conflicting": {
+            "n": 17,
+            "errors": 7,
+            "error_rate": 0.4117647058823529,
+            "Wilson95": [
+              0.21610786039131383,
+              0.6399492561448447
+            ]
+          },
+          "unanimous": {
+            "n": 248,
+            "errors": 64,
+            "error_rate": 0.25806451612903225,
+            "Wilson95": [
+              0.20758613319104396,
+              0.3159238826284236
+            ]
+          },
+          "insufficient": {
+            "n": 3831,
+            "errors": 1141,
+            "error_rate": 0.2978334638475594,
+            "Wilson95": [
+              0.283560549937486,
+              0.31251142341338206
+            ]
+          },
+          "conflict_minus_unanimous_error_pp": 15.370018975332068,
+          "question_cluster_bootstrap95_pp": [
+            -8.622165169020112,
+            41.00263137489914
+          ],
+          "bootstrap_question_clusters": 265,
+          "length_standardized_delta_pp": 18.51919994529942,
+          "length_standardization_rows": 265
+        }
+      }
+    },
+    "direct_train_link_available": false
+  },
+  "L4_sensitivity": {
+    "n_eval": 2048,
+    "CI_level": 0.975,
+    "power": 0.8,
+    "approximation": "normal paired binary difference near zero; independent questions; fixed trained weights",
+    "scenarios": [
+      {
+        "discordance_fraction": 0.005,
+        "CI_halfwidth_pp": 0.3502191761882729,
+        "minimum_effect_80pct_power_pp": 0.48172249393404076,
+        "n_for_half_pp_80pct_power": 1902
+      },
+      {
+        "discordance_fraction": 0.01,
+        "CI_halfwidth_pp": 0.495284708768588,
+        "minimum_effect_80pct_power_pp": 0.6812584842217114,
+        "n_for_half_pp_80pct_power": 3803
+      },
+      {
+        "discordance_fraction": 0.05,
+        "CI_halfwidth_pp": 1.107490277022749,
+        "minimum_effect_80pct_power_pp": 1.5233402809682148,
+        "n_for_half_pp_80pct_power": 19011
+      },
+      {
+        "discordance_fraction": 0.1,
+        "CI_halfwidth_pp": 1.5662277699619076,
+        "minimum_effect_80pct_power_pp": 2.1543284854544904,
+        "n_for_half_pp_80pct_power": 38021
+      }
+    ],
+    "L2_uniform_sampling_scale": {
+      "C-main": {
+        "input": {
+          "file": "results/kaggle-runs/nlp-hw02-kaggle-l2/1/model-C-main/points/l2-28800/training.json",
+          "sha256": "b412d92210442b9341fc259bf3baa1487eab399d47c825ee714a1accda48b085",
+          "bytes": 492
+        },
+        "attempted_presentations": 1031296,
+        "expected_R1_excluded_at_uniform_sampling": 23234.26838318457,
+        "expected_arbitrary_nonmodal_at_uniform_sampling": 12415.54480200318
+      },
+      "C-long2x": {
+        "input": {
+          "file": "results/kaggle-runs/nlp-hw02-kaggle-l2/1/model-C-long2x/points/l2-28800/training.json",
+          "sha256": "1a4f5842efe1849b2cea94aa52ce4a8319f80632ca157d64f554efa95ec18f5c",
+          "bytes": 492
+        },
+        "attempted_presentations": 1022720,
+        "expected_R1_excluded_at_uniform_sampling": 23041.058009388697,
+        "expected_arbitrary_nonmodal_at_uniform_sampling": 12312.300231848752
+      }
+    }
+  },
+  "new_executions_GPU_Kaggle": 0,
+  "temporary_arrays_written": 0
+}

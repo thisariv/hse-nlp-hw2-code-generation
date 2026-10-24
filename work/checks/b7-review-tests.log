@@ -1,0 +1,562 @@
+test_b7_actual_budget_full_N_admitted (__main__.Tests.test_b7_actual_budget_full_N_admitted) ... /tmp/nlp-v8-cpu/lib/python3.13/site-packages/torch/nn/modules/transformer.py:144: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = TransformerEncoder(
+ok
+test_b7_exact_full_N_steps_and_zero_endpoint (__main__.Tests.test_b7_exact_full_N_steps_and_zero_endpoint) ... /tmp/nlp-v8-cpu/lib/python3.13/site-packages/torch/nn/modules/transformer.py:144: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = TransformerEncoder(
+ok
+test_b7_new_N_disk_resume_both_paths (__main__.Tests.test_b7_new_N_disk_resume_both_paths) ... ok
+test_b7_only_N_and_session_envelope_change (__main__.Tests.test_b7_only_N_and_session_envelope_change) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 4.180s
+
+OK
+test_b6_AMP_skip_consumes_one_schedule_slot (b6_tests.Tests.test_b6_AMP_skip_consumes_one_schedule_slot) ... /tmp/nlp-v8-cpu/lib/python3.13/site-packages/torch/nn/modules/transformer.py:144: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = TransformerEncoder(
+ok
+test_b6_both_paths_exact_N_and_uninterrupted_control (b6_tests.Tests.test_b6_both_paths_exact_N_and_uninterrupted_control) ... B6 W 6 / 6 LR 0.0
+B6 C 6 / 6 LR 0.0
+ok
+test_b6_checkpoint_between_steps_preserves_all_RNGs (b6_tests.Tests.test_b6_checkpoint_between_steps_preserves_all_RNGs) ... ok
+test_b6_deadline_and_stop_do_not_change_N_or_claim_final (b6_tests.Tests.test_b6_deadline_and_stop_do_not_change_N_or_claim_final) ... ok
+test_b6_exactly_one_push_per_target_no_retry_or_unknown_version (b6_tests.Tests.test_b6_exactly_one_push_per_target_no_retry_or_unknown_version) ... ok
+test_b6_full_schedules_endpoints_and_budget_from_actual_logs (b6_tests.Tests.test_b6_full_schedules_endpoints_and_budget_from_actual_logs) ... ok
+test_b6_incomplete_evaluation_preserves_FP16_and_partial (b6_tests.Tests.test_b6_incomplete_evaluation_preserves_FP16_and_partial) ... B6 W 6 / 6 LR 0.0
+B6 C 6 / 6 LR 0.0
+ok
+test_b6_output_receipt_accepts_relative_and_absolute_paths (b6_tests.Tests.test_b6_output_receipt_accepts_relative_and_absolute_paths) ... ok
+test_b6_pinned_mount_both_orders_no_full_state_copies_and_corruption (b6_tests.Tests.test_b6_pinned_mount_both_orders_no_full_state_copies_and_corruption) ... ok
+test_b6_reviewer_gates_source_config_and_retains_launch_history (b6_tests.Tests.test_b6_reviewer_gates_source_config_and_retains_launch_history) ... ok
+test_b6_same_smoke_controller_200_updates_both_paths (b6_tests.Tests.test_b6_same_smoke_controller_200_updates_both_paths) ... B6 W 100 / 200 LR 0.00017573593128807145
+B6 W 200 / 200 LR 0.0
+B6 C 100 / 200 LR 0.00043933982822017865
+B6 C 200 / 200 LR 0.0
+ok
+test_b6_unsafe_Adam_rolls_back_and_never_serializes_suspect_state (b6_tests.Tests.test_b6_unsafe_Adam_rolls_back_and_never_serializes_suspect_state) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 10.711s
+
+OK
+test_b5_W_transfer_and_C_live_mount_preserve_exact_pins (b5_tests.Tests.test_b5_W_transfer_and_C_live_mount_preserve_exact_pins) ... /tmp/nlp-v8-cpu/lib/python3.13/site-packages/torch/nn/modules/transformer.py:144: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = TransformerEncoder(
+ok
+test_b5_both_paths_probe_final_restore_next_stream_and_uncooled (b5_tests.Tests.test_b5_both_paths_probe_final_restore_next_stream_and_uncooled) ... ok
+test_b5_deadline_reserves_final_and_never_claims_complete (b5_tests.Tests.test_b5_deadline_reserves_final_and_never_claims_complete) ... ok
+test_b5_each_math_path_and_no_new_warmup (b5_tests.Tests.test_b5_each_math_path_and_no_new_warmup) ... ok
+test_b5_entire_smoke_controller_both_formats_on_CPU (b5_tests.Tests.test_b5_entire_smoke_controller_both_formats_on_CPU) ... B5 W 2100 91803.1 pairs 268800 LR 0.0006
+B5 W 2200 91805.3 pairs 281600 LR 0.0006
+B5 C 2100 91802.7 pairs 267520 LR 0.0015
+B5 C 2200 91804.3 pairs 280320 LR 0.0015
+ok
+test_b5_failed_evaluation_is_partial_and_restores_both_stables (b5_tests.Tests.test_b5_failed_evaluation_is_partial_and_restores_both_stables) ... ok
+test_b5_final_metric_contract (b5_tests.Tests.test_b5_final_metric_contract) ... ok
+test_b5_legacy_C_namespace_isolated_and_all_frozen_SHA_match (b5_tests.Tests.test_b5_legacy_C_namespace_isolated_and_all_frozen_SHA_match) ... /tmp/nlp-v8-cpu/lib/python3.13/site-packages/torch/nn/modules/transformer.py:144: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = TransformerEncoder(
+ok
+test_b5_push_rejects_untracked_version_and_duplicate_production (b5_tests.Tests.test_b5_push_rejects_untracked_version_and_duplicate_production) ... ok
+test_b5_rejects_transfer_manifest_and_blob_corruption (b5_tests.Tests.test_b5_rejects_transfer_manifest_and_blob_corruption) ... ok
+test_b5_stability_stops_on_last_stable_without_LR_change (b5_tests.Tests.test_b5_stability_stops_on_last_stable_without_LR_change) ... ok
+test_b5_static_preserves_launch_and_requires_both_source_namespaces (b5_tests.Tests.test_b5_static_preserves_launch_and_requires_both_source_namespaces) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 29.794s
+
+OK
+test_b4_AB_audit_detects_start_or_stream_difference (b4_tests.Tests.test_b4_AB_audit_detects_start_or_stream_difference) ... /tmp/nlp-v8-cpu/lib/python3.13/site-packages/torch/nn/modules/transformer.py:144: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = TransformerEncoder(
+ok
+test_b4_adam_oom_is_unsafe (b4_tests.Tests.test_b4_adam_oom_is_unsafe) ... ok
+test_b4_both_main_and_cooldowns_truncate_restore_all_fields_and_history (b4_tests.Tests.test_b4_both_main_and_cooldowns_truncate_restore_all_fields_and_history) ... ok
+test_b4_enabled_AMP_overflow_skips_Adam_and_halves_scale (b4_tests.Tests.test_b4_enabled_AMP_overflow_skips_Adam_and_halves_scale) ... ok
+test_b4_entire_smoke_controller_on_CPU_with_real_updates_and_restore (b4_tests.Tests.test_b4_entire_smoke_controller_on_CPU_with_real_updates_and_restore) ... B4 W600-trunc 2100 59403.4 pairs 268800 LR 0.0006
+B4 W600-trunc 2200 59405.8 pairs 281600 LR 0.0006
+ok
+test_b4_mask_stratification_top_ties_and_singletons (b4_tests.Tests.test_b4_mask_stratification_top_ties_and_singletons) ... ok
+test_b4_nonfinite_loss_or_backward_never_updates_adam (b4_tests.Tests.test_b4_nonfinite_loss_or_backward_never_updates_adam) ... ok
+test_b4_partial_eval_keeps_stable_and_final_FP16 (b4_tests.Tests.test_b4_partial_eval_keeps_stable_and_final_FP16) ... ok
+test_b4_q0_main_is_bit_exact_and_both_streams_consume_all128 (b4_tests.Tests.test_b4_q0_main_is_bit_exact_and_both_streams_consume_all128) ... ok
+test_b4_real_NaN_selection_and_retained_loss_never_update_Adam (b4_tests.Tests.test_b4_real_NaN_selection_and_retained_loss_never_update_Adam) ... ok
+test_b4_selection_RNG_restored_before_training_and_on_failure (b4_tests.Tests.test_b4_selection_RNG_restored_before_training_and_on_failure) ... ok
+test_b4_smoke_rejects_nonfinite_main_even_below_recovery_threshold (b4_tests.Tests.test_b4_smoke_rejects_nonfinite_main_even_below_recovery_threshold) ... B4 W600-trunc 2100 59402.2 pairs 268800 LR 0.0006
+B4 W600-trunc 2200 59404.5 pairs 281600 LR 0.0006
+ok
+test_b4_smoke_rejects_short_runs (b4_tests.Tests.test_b4_smoke_rejects_short_runs) ... ok
+test_b4_stability_stops_without_halving_lr (b4_tests.Tests.test_b4_stability_stops_without_halving_lr) ... ok
+test_b4_static_handoff_requires_same_source_smoke_and_preserves_launch (b4_tests.Tests.test_b4_static_handoff_requires_same_source_smoke_and_preserves_launch) ... ok
+test_b4_supervisor_publication_remains_watched_and_soft (b4_tests.Tests.test_b4_supervisor_publication_remains_watched_and_soft) ... ok
+test_b4_two_pass_matches_full_batch_masked_oracle_gradients_and_normalization (b4_tests.Tests.test_b4_two_pass_matches_full_batch_masked_oracle_gradients_and_normalization) ... ok
+test_b4_two_pass_oom_rng_scaler_grad_reset (b4_tests.Tests.test_b4_two_pass_oom_rng_scaler_grad_reset) ... OOM RETRY micro 16
+ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 35.481s
+
+OK
+test_b3_cpu_adapter_handles_loaded_fused_amp_protocol (b3_tests.Tests.test_b3_cpu_adapter_handles_loaded_fused_amp_protocol) ... /tmp/nlp-v8-cpu/lib/python3.13/site-packages/torch/nn/modules/transformer.py:144: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = TransformerEncoder(
+ok
+test_b3_direct_restore_audit_rejects_each_omitted_field (b3_tests.Tests.test_b3_direct_restore_audit_rejects_each_omitted_field) ... ok
+test_b3_embedded_watchdog_uses_actual_first_cell_deadlines (b3_tests.Tests.test_b3_embedded_watchdog_uses_actual_first_cell_deadlines) ... ok
+test_b3_final_linear_restore_and_history (b3_tests.Tests.test_b3_final_linear_restore_and_history) ... ok
+test_b3_incomplete_eval_retains_uncooled_latest (b3_tests.Tests.test_b3_incomplete_eval_retains_uncooled_latest) ... ok
+test_b3_main_stops_for_full_final_reserve (b3_tests.Tests.test_b3_main_stops_for_full_final_reserve) ... ok
+test_b3_mini_final_checks_actual_frozen_tune_ids (b3_tests.Tests.test_b3_mini_final_checks_actual_frozen_tune_ids) ... ok
+test_b3_output_download_reads_every_page_and_excludes_PT (b3_tests.Tests.test_b3_output_download_reads_every_page_and_excludes_PT) ... ok
+test_b3_partial_worker_and_notebook_publish_without_exception (b3_tests.Tests.test_b3_partial_worker_and_notebook_publish_without_exception) ... B3 RESULT W-lr1000 partial; B3 evaluation incomplete final_complete False
+ok
+test_b3_preflight_reports_each_actual_mount (b3_tests.Tests.test_b3_preflight_reports_each_actual_mount) ... ok
+test_b3_probe_cannot_spend_final_reserve (b3_tests.Tests.test_b3_probe_cannot_spend_final_reserve) ... ok
+test_b3_ready_gate_requires_passed_smoke_of_identical_modules (b3_tests.Tests.test_b3_ready_gate_requires_passed_smoke_of_identical_modules) ... ok
+test_b3_recovery_keeps_history_and_halves_lr (b3_tests.Tests.test_b3_recovery_keeps_history_and_halves_lr) ... ok
+test_b3_rejects_wrong_latest_without_loading (b3_tests.Tests.test_b3_rejects_wrong_latest_without_loading) ... ok
+test_b3_smoke_runs_hundreds_and_restores_full_protocol_on_cpu (b3_tests.Tests.test_b3_smoke_runs_hundreds_and_restores_full_protocol_on_cpu) ... {
+  "status": "partial",
+  "exit_codes": [
+    0,
+    0
+  ]
+}
+B3 SMOKE W-lr1000 strict real B2 resume
+B3 SMOKE W-lr1000 no-evaluation control 200 updates
+B3 SMOKE W-lr1000 independent no-evaluation replay 8 updates
+B3 SMOKE W-lr1000 continuation with probe and final K8
+B3 W-lr1000 2100 1.8 pairs 268800 LR 0.001
+B3 W-lr1000 2200 3.6 pairs 281600 LR 0.001
+B3 SMOKE W-lr1000 bit-exact restore passed; injected overflow and recovery
+B3 SMOKE W-lr1000 strict real B2 resume
+B3 SMOKE W-lr1000 no-evaluation control 200 updates
+B3 SMOKE W-lr1000 independent no-evaluation replay 8 updates
+B3 SMOKE W-lr1000 continuation with probe and final K8
+B3 W-lr1000 2100 3.0 pairs 268800 LR 0.001
+B3 W-lr1000 2200 7.1 pairs 281600 LR 0.001
+B3 SMOKE W-lr1000 bit-exact restore passed; injected overflow and recovery
+ok
+test_b3_two_cumulative_probes_and_final_bit_exact (b3_tests.Tests.test_b3_two_cumulative_probes_and_final_bit_exact) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 28.246s
+
+OK
+test_b2_transfer_materialize_and_strict_resume (b1_ev_b2_tests.Tests.test_b2_transfer_materialize_and_strict_resume) ... /tmp/nlp-v8-cpu/lib/python3.13/site-packages/torch/nn/modules/transformer.py:144: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = TransformerEncoder(
+ok
+test_cached_logits_match_full_prefix_training_eval_and_clean_v7 (b1_ev_b2_tests.Tests.test_cached_logits_match_full_prefix_training_eval_and_clean_v7) ... ok
+test_ev_frozen_runtime_and_cooldown_only_cpu (b1_ev_b2_tests.Tests.test_ev_frozen_runtime_and_cooldown_only_cpu) ... ok
+test_headwise_norm_forward_backward_and_masks (b1_ev_b2_tests.Tests.test_headwise_norm_forward_backward_and_masks) ... ok
+test_pair_probe_and_end_budget_reserve_restore (b1_ev_b2_tests.Tests.test_pair_probe_and_end_budget_reserve_restore) ... ok
+test_qk_zloss_cpu_amp_overflow_skips_adam (b1_ev_b2_tests.Tests.test_qk_zloss_cpu_amp_overflow_skips_adam) ... ok
+test_resume_qk_adam_rng_warmup_and_recovery (b1_ev_b2_tests.Tests.test_resume_qk_adam_rng_warmup_and_recovery) ... ok
+test_strict_model_spec_load_v7_clean_and_legacy (b1_ev_b2_tests.Tests.test_strict_model_spec_load_v7_clean_and_legacy) ... ok
+test_z_loss_mask_fp32_shift_gradient_and_microbatch_weight (b1_ev_b2_tests.Tests.test_z_loss_mask_fp32_shift_gradient_and_microbatch_weight) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 5.822s
+
+OK
+test_attention_matches_explicit_headwise_math_and_single_scale (b2_review_tests.ReviewTests.test_attention_matches_explicit_headwise_math_and_single_scale) ... /tmp/nlp-v8-cpu/lib/python3.13/site-packages/torch/nn/modules/transformer.py:144: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = TransformerEncoder(
+ok
+test_builder_and_push_receipt_use_canonical_title_slug (b2_review_tests.ReviewTests.test_builder_and_push_receipt_use_canonical_title_slug) ... ok
+test_half_norm_and_cached_prefix_v7_and_clean (b2_review_tests.ReviewTests.test_half_norm_and_cached_prefix_v7_and_clean) ... ok
+test_pair_branch_cannot_spend_end_main_reserve (b2_review_tests.ReviewTests.test_pair_branch_cannot_spend_end_main_reserve) ... ok
+test_recovery_thresholds_ignore_isolated_amp_skips (b2_review_tests.ReviewTests.test_recovery_thresholds_ignore_isolated_amp_skips) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 1.817s
+
+OK
+test_C_marks_end_main_timed_q0_and_restore (b1_tests.Tests.test_C_marks_end_main_timed_q0_and_restore) ... /tmp/nlp-v8-cpu/lib/python3.13/site-packages/torch/nn/modules/transformer.py:144: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = TransformerEncoder(
+ok
+test_bit_exact_full_resume_dropout_rng_adam_and_warmup (b1_tests.Tests.test_bit_exact_full_resume_dropout_rng_adam_and_warmup) ... ok
+test_disposable_probe_restores_all_numerics_and_eval_failure (b1_tests.Tests.test_disposable_probe_restores_all_numerics_and_eval_failure) ... ok
+test_dropout_attention_ffn_residual_and_eval (b1_tests.Tests.test_dropout_attention_ffn_residual_and_eval) ... ok
+test_final_cooldown_sqrt_truncation_stable_never_overwritten (b1_tests.Tests.test_final_cooldown_sqrt_truncation_stable_never_overwritten) ... ok
+test_incomplete_old991_or_deadline_cannot_report_complete (b1_tests.Tests.test_incomplete_old991_or_deadline_cannot_report_complete) ... ok
+test_intermediate_evaluator_runs_both_splits (b1_tests.Tests.test_intermediate_evaluator_runs_both_splits) ... ok
+test_nan_update_never_steps_adam_and_threshold_rollback (b1_tests.Tests.test_nan_update_never_steps_adam_and_threshold_rollback) ... ok
+test_output_download_explicit_version_and_streamed_exact_file (b1_tests.Tests.test_output_download_explicit_version_and_streamed_exact_file) ... ok
+test_probe_allocates_adam_and_restores_model_rng (b1_tests.Tests.test_probe_allocates_adam_and_restores_model_rng) ... ok
+test_real_parameter_counts_and_normalized_init (b1_tests.Tests.test_real_parameter_counts_and_normalized_init) ... ok
+test_recovery_restores_checkpoint_and_persists_halving (b1_tests.Tests.test_recovery_restores_checkpoint_and_persists_halving) ... ok
+test_requested_shapes_match_measured_specs_and_micro_caps (b1_tests.Tests.test_requested_shapes_match_measured_specs_and_micro_caps) ... ok
+test_stable_tamper_recipe_and_counters_rejected (b1_tests.Tests.test_stable_tamper_recipe_and_counters_rejected) ... ok
+test_transfer_cli_account_env_and_private_roundtrip_stub (b1_tests.Tests.test_transfer_cli_account_env_and_private_roundtrip_stub) ... ok
+test_transfer_dataset_single_file_zip_and_private_create_cli (b1_tests.Tests.test_transfer_dataset_single_file_zip_and_private_create_cli) ... ok
+test_v7_model_spec_load_for_both_architecture_shapes (b1_tests.Tests.test_v7_model_spec_load_for_both_architecture_shapes) ... ok
+test_warmup_AMP_skip_changes_group_lr_without_changing_weights_moments (b1_tests.Tests.test_warmup_AMP_skip_changes_group_lr_without_changing_weights_moments) ... ok
+test_watchdog_output_transfers_without_aggregate_manifest (b1_tests.Tests.test_watchdog_output_transfers_without_aggregate_manifest) ... ok
+test_weighted_order_reproducible_new_seed_and_tamper (b1_tests.Tests.test_weighted_order_reproducible_new_seed_and_tamper) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 16.832s
+
+OK
+test_both_pilot_branches_same_stream_and_full_restore (p1_tests.Tests.test_both_pilot_branches_same_stream_and_full_restore) ... /tmp/nlp-v8-cpu/lib/python3.13/site-packages/torch/nn/modules/transformer.py:144: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = TransformerEncoder(
+P1 PILOT a 3 3 LR 0.0 CE 3.1419275999069214
+P1 PILOT b 3 3 LR 0.0 CE 3.112417697906494
+ok
+test_budget_expired_pilot_saves_partial_weights_without_complete (p1_tests.Tests.test_budget_expired_pilot_saves_partial_weights_without_complete) ... ok
+test_failed_A_evaluation_does_not_stop_B_or_overwrite_stable (p1_tests.Tests.test_failed_A_evaluation_does_not_stop_B_or_overwrite_stable) ... P1 PILOT a 3 3 LR 0.0 CE 3.1419275999069214
+P1 PILOT b 3 3 LR 0.0 CE 3.112417697906494
+ok
+test_full_state_fingerprint_detects_tensor_and_rng_corruption (p1_tests.Tests.test_full_state_fingerprint_detects_tensor_and_rng_corruption) ... ok
+test_graph_mask_global_token_weighted_gradient_and_OOM_fallback (p1_tests.Tests.test_graph_mask_global_token_weighted_gradient_and_OOM_fallback) ... ok
+test_graph_partial_backward_NaN_restores_scaler_and_clears_gradients (p1_tests.Tests.test_graph_partial_backward_NaN_restores_scaler_and_clears_gradients) ... ok
+test_live_snapshot_retains_both_pilot_FP16_points_and_reviewer (p1_tests.Tests.test_live_snapshot_retains_both_pilot_FP16_points_and_reviewer) ... ok
+test_mask_stratification_determinism_top_losses_and_ties (p1_tests.Tests.test_mask_stratification_determinism_top_losses_and_ties) ... ok
+test_missing_or_false_K8_cannot_mark_complete (p1_tests.Tests.test_missing_or_false_K8_cannot_mark_complete) ... ok
+test_nonfinite_selection_is_rejected_before_adam (p1_tests.Tests.test_nonfinite_selection_is_rejected_before_adam) ... ok
+test_p1_supervisor_healthy_worker_completes_after_sibling_crash (p1_tests.Tests.test_p1_supervisor_healthy_worker_completes_after_sibling_crash) ... P1 GPU 0 status None 
+P1 GPU 1 status None 
+P1 worker failed 0 ; other worker continues independently
+P1 GPU 0 status 1 
+P1 GPU 1 status None 
+P1 GPU 0 status 1 
+P1 GPU 1 status None 
+P1 GPU 0 status 1 
+P1 GPU 1 status None 
+P1 GPU 0 status 1 
+P1 GPU 1 status None 
+P1 GPU 0 status 1 
+P1 GPU 1 status None 
+P1 GPU 0 status 1 
+P1 GPU 1 status None 
+P1 GPU 0 status 1 
+P1 GPU 1 status None 
+ok
+test_reverse_source_target_PAD_BOS_EOS (p1_tests.Tests.test_reverse_source_target_PAD_BOS_EOS) ... ok
+test_reviewer_failed_or_partial_CE_cannot_mark_complete_and_keeps_weights (p1_tests.Tests.test_reviewer_failed_or_partial_CE_cannot_mark_complete_and_keeps_weights) ... ok
+test_reviewer_real_WSD_keeps_uncooled_resumable_state (p1_tests.Tests.test_reviewer_real_WSD_keeps_uncooled_resumable_state) ... P1 REVIEWER 100 CE 1.3421024084091187 LR 0.0015
+P1 REVIEWER 200 CE 0.7682552635669708 LR 0.0015
+ok
+test_scorer_exp_beta_zero_and_reference_independence (p1_tests.Tests.test_scorer_exp_beta_zero_and_reference_independence) ... ok
+test_sqrt_schedule_bounds_monotonicity_and_zero_endpoint (p1_tests.Tests.test_sqrt_schedule_bounds_monotonicity_and_zero_endpoint) ... ok
+test_truncated_loss_normalization_matches_manual_retained_batch (p1_tests.Tests.test_truncated_loss_normalization_matches_manual_retained_batch) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 6.886s
+
+OK
+test_K8_journals_allow_gold_free_mixed_CPU_vote (__main__.main.<locals>.SandboxTests.test_K8_journals_allow_gold_free_mixed_CPU_vote) ... /tmp/nlp-v8-cpu/lib/python3.13/site-packages/torch/nn/modules/transformer.py:144: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = TransformerEncoder(
+ok
+test_actual_CPU_eval_journals_K8_and_offline_vote (__main__.main.<locals>.SandboxTests.test_actual_CPU_eval_journals_K8_and_offline_vote) ... ok
+test_bad_SHA_is_rejected_before_loading (__main__.main.<locals>.SandboxTests.test_bad_SHA_is_rejected_before_loading) ... ok
+test_checkpoint_L3_continuation_preserves_sampler_cursor_and_history (__main__.main.<locals>.SandboxTests.test_checkpoint_L3_continuation_preserves_sampler_cursor_and_history) ... L2 TRAIN C-long2x updates 3 main_s 0.0 CE 3.69132924079895 LR 0.0015 NF 0
+L2 TRAIN C-long2x updates 4 main_s 0.0 CE 3.657400608062744 LR 0.0015 NF 0
+L2 TRAIN C-long2x updates 5 main_s 0.0 CE 3.6255390644073486 LR 0.0015 NF 0
+ok
+test_cooldown_eval_failure_restores_exact_anchor_then_train (__main__.main.<locals>.SandboxTests.test_cooldown_eval_failure_restores_exact_anchor_then_train) ... L2 TRAIN control updates 3 main_s 0.0 CE 3.687963604927063 LR 0.0015 NF 0
+L2 TRAIN control updates 4 main_s 0.0 CE 3.6649935245513916 LR 0.0015 NF 0
+L2 TRAIN control updates 5 main_s 0.0 CE 3.627327799797058 LR 0.0015 NF 0
+L2 TRAIN control updates 6 main_s 0.0 CE 3.5956512689590454 LR 0.0015 NF 0
+L2 TRAIN C-main updates 3 main_s 0.0 CE 3.687963604927063 LR 0.0015 NF 0
+L2 POINT INCOMPLETE C-main l2-00000 ValueError
+L2 TRAIN C-main updates 4 main_s 0.0 CE 3.6649935245513916 LR 0.0015 NF 0
+L2 TRAIN C-main updates 5 main_s 0.0 CE 3.627327799797058 LR 0.0015 NF 0
+L2 TRAIN C-main updates 6 main_s 0.0 CE 3.5956512689590454 LR 0.0015 NF 0
+ok
+test_cooldown_nonfinite_threshold_rolls_back_and_halves_worker_LR (__main__.main.<locals>.SandboxTests.test_cooldown_nonfinite_threshold_rolls_back_and_halves_worker_LR) ... L2 TRAIN C-main updates 3 main_s 0.0 CE 3.687963604927063 LR 0.0015 NF 0
+L2 POINT INCOMPLETE C-main l2-00000 RuntimeError
+L2 TRAIN C-main updates 4 main_s 0.0 CE 3.6649935245513916 LR 0.00075 NF 3
+ok
+test_corrupt_Adam_moment_is_rejected_immediately (__main__.main.<locals>.SandboxTests.test_corrupt_Adam_moment_is_rejected_immediately) ... ok
+test_disk_guard_tolerates_rotation_between_is_file_and_stat (__main__.main.<locals>.SandboxTests.test_disk_guard_tolerates_rotation_between_is_file_and_stat) ... ok
+test_finite_update_bit_exact_with_L1 (__main__.main.<locals>.SandboxTests.test_finite_update_bit_exact_with_L1) ... ok
+test_fixed_split_matches_registered_candidate_selection (__main__.main.<locals>.SandboxTests.test_fixed_split_matches_registered_candidate_selection) ... ok
+test_fork_retains_state_and_changes_only_sampler_identity_cursor (__main__.main.<locals>.SandboxTests.test_fork_retains_state_and_changes_only_sampler_identity_cursor) ... L2 TRAIN C-long2x updates 3 main_s 0.0 CE 3.69132924079895 LR 0.0015 NF 0
+L2 TRAIN C-long2x updates 4 main_s 0.0 CE 3.657400608062744 LR 0.0015 NF 0
+ok
+test_killed_worker_does_not_stop_sibling_or_packaging (__main__.main.<locals>.SandboxTests.test_killed_worker_does_not_stop_sibling_or_packaging) ... L2 GPU 0 status None 
+L2 GPU 1 status None 
+L2 worker failed 0 ; other worker continues independently
+L2 GPU 0 status -9 
+L2 GPU 1 status None 
+L2 GPU 0 status -9 
+L2 GPU 1 status None 
+L2 GPU 0 status -9 
+L2 GPU 1 status None 
+ok
+test_live_rejects_secret_and_retains_order (__main__.main.<locals>.SandboxTests.test_live_rejects_secret_and_retains_order) ... L2 TRAIN C-main updates 3 main_s 0.0 CE 3.687963604927063 LR 0.0015 NF 0
+L2 TRAIN C-main updates 4 main_s 0.0 CE 3.6649935245513916 LR 0.0015 NF 0
+ok
+test_live_roundtrip_and_retention (__main__.main.<locals>.SandboxTests.test_live_roundtrip_and_retention) ... L2 TRAIN C-main updates 3 main_s 0.0 CE 3.687963604927063 LR 0.0015 NF 0
+L2 TRAIN C-main updates 4 main_s 0.0 CE 3.6649935245513916 LR 0.0015 NF 0
+ok
+test_nonfinite_gradient_skips_Adam (__main__.main.<locals>.SandboxTests.test_nonfinite_gradient_skips_Adam) ... ok
+test_nonfinite_loss_skips_Adam_and_clears_partial_grads (__main__.main.<locals>.SandboxTests.test_nonfinite_loss_skips_Adam_and_clears_partial_grads) ... ok
+test_normal_AMP_skip_is_not_nonfinite_escalation (__main__.main.<locals>.SandboxTests.test_normal_AMP_skip_is_not_nonfinite_escalation) ... ok
+test_order_SHA_bounds_integer_dtype_tail_and_large_cursor (__main__.main.<locals>.SandboxTests.test_order_SHA_bounds_integer_dtype_tail_and_large_cursor) ... ok
+test_persistent_AMP_skips_are_bounded_but_isolated_skips_are_normal (__main__.main.<locals>.SandboxTests.test_persistent_AMP_skips_are_bounded_but_isolated_skips_are_normal) ... L2 TRAIN C-main updates 3 main_s 0.0 CE 1.0 LR 0.0015 NF 0
+L2 TRAIN C-main updates 4 main_s 0.0 CE 1.0 LR 0.0015 NF 0
+L2 TRAIN C-main updates 5 main_s 0.0 CE 1.0 LR 0.0015 NF 0
+L2 TRAIN C-main updates 6 main_s 0.0 CE 1.0 LR 0.0015 NF 0
+L2 TRAIN C-main updates 7 main_s 0.0 CE 1.0 LR 0.0015 NF 0
+L2 TRAIN C-main updates 8 main_s 0.0 CE 1.0 LR 0.0015 NF 0
+L2 TRAIN C-main updates 9 main_s 0.0 CE 1.0 LR 0.0015 NF 0
+L2 TRAIN C-main updates 10 main_s 0.0 CE 1.0 LR 0.0015 NF 0
+L2 TRAIN C-main updates 11 main_s 0.0 CE 1.0 LR 0.0015 NF 0
+L2 TRAIN C-main updates 12 main_s 0.0 CE 1.0 LR 0.0015 NF 0
+L2 TRAIN C-main updates 13 main_s 0.0 CE 1.0 LR 0.0015 NF 0
+L2 TRAIN C-main updates 14 main_s 0.0 CE 1.0 LR 0.0015 NF 0
+L2 TRAIN C-main updates 15 main_s 0.0 CE 1.0 LR 0.0015 NF 0
+L2 TRAIN C-main updates 16 main_s 0.0 CE 1.0 LR 0.0015 NF 0
+L2 TRAIN C-main updates 17 main_s 0.0 CE 1.0 LR 0.0015 NF 0
+L2 TRAIN C-main updates 18 main_s 0.0 CE 1.0 LR 0.0015 NF 0
+L2 TRAIN C-main updates 19 main_s 0.0 CE 1.0 LR 0.0015 NF 0
+L2 TRAIN C-main updates 20 main_s 0.0 CE 1.0 LR 0.0015 NF 0
+L2 TRAIN C-main updates 21 main_s 0.0 CE 1.0 LR 0.0015 NF 0
+L2 TRAIN C-main updates 22 main_s 0.0 CE 1.0 LR 0.0015 NF 0
+L2 TRAIN C-main updates 23 main_s 0.0 CE 1.0 LR 0.0015 NF 0
+L2 TRAIN C-main updates 24 main_s 0.0 CE 1.0 LR 0.0015 NF 0
+L2 TRAIN C-main updates 25 main_s 0.0 CE 1.0 LR 0.0015 NF 0
+L2 TRAIN C-main updates 26 main_s 0.0 CE 1.0 LR 0.0015 NF 0
+L2 TRAIN C-main updates 27 main_s 0.0 CE 1.0 LR 0.0015 NF 0
+L2 TRAIN C-main updates 28 main_s 0.0 CE 1.0 LR 0.0015 NF 0
+L2 TRAIN C-main updates 29 main_s 0.0 CE 1.0 LR 0.0015 NF 0
+L2 TRAIN C-main updates 30 main_s 0.0 CE 1.0 LR 0.0015 NF 0
+L2 TRAIN C-main updates 31 main_s 0.0 CE 1.0 LR 0.0015 NF 0
+L2 TRAIN C-main updates 32 main_s 0.0 CE 1.0 LR 0.0015 NF 0
+L2 TRAIN C-main updates 33 main_s 0.0 CE 1.0 LR 0.0015 NF 0
+L2 TRAIN C-main updates 3 main_s 0.0 CE 1.0 LR 0.00075 NF 0
+L2 TRAIN C-main updates 4 main_s 0.0 CE 1.0 LR 0.00075 NF 0
+L2 TRAIN C-main updates 5 main_s 0.0 CE 1.0 LR 0.00075 NF 0
+L2 TRAIN C-main updates 6 main_s 0.0 CE 1.0 LR 0.00075 NF 0
+L2 TRAIN C-main updates 7 main_s 0.0 CE 1.0 LR 0.00075 NF 0
+L2 TRAIN C-main updates 8 main_s 0.0 CE 1.0 LR 0.00075 NF 0
+L2 TRAIN C-main updates 9 main_s 0.0 CE 1.0 LR 0.00075 NF 0
+L2 TRAIN C-main updates 10 main_s 0.0 CE 1.0 LR 0.00075 NF 0
+L2 TRAIN C-main updates 11 main_s 0.0 CE 1.0 LR 0.00075 NF 0
+L2 TRAIN C-main updates 12 main_s 0.0 CE 1.0 LR 0.00075 NF 0
+L2 TRAIN C-main updates 13 main_s 0.0 CE 1.0 LR 0.00075 NF 0
+L2 TRAIN C-main updates 14 main_s 0.0 CE 1.0 LR 0.00075 NF 0
+L2 TRAIN C-main updates 15 main_s 0.0 CE 1.0 LR 0.00075 NF 0
+L2 TRAIN C-main updates 16 main_s 0.0 CE 1.0 LR 0.00075 NF 0
+L2 TRAIN C-main updates 17 main_s 0.0 CE 1.0 LR 0.00075 NF 0
+L2 TRAIN C-main updates 18 main_s 0.0 CE 1.0 LR 0.00075 NF 0
+L2 TRAIN C-main updates 19 main_s 0.0 CE 1.0 LR 0.00075 NF 0
+L2 TRAIN C-main updates 20 main_s 0.1 CE 1.0 LR 0.00075 NF 0
+L2 TRAIN C-main updates 21 main_s 0.1 CE 1.0 LR 0.00075 NF 0
+L2 TRAIN C-main updates 22 main_s 0.1 CE 1.0 LR 0.00075 NF 0
+L2 TRAIN C-main updates 23 main_s 0.1 CE 1.0 LR 0.00075 NF 0
+L2 TRAIN C-main updates 24 main_s 0.1 CE 1.0 LR 0.00075 NF 0
+L2 TRAIN C-main updates 25 main_s 0.1 CE 1.0 LR 0.00075 NF 0
+L2 TRAIN C-main updates 26 main_s 0.1 CE 1.0 LR 0.00075 NF 0
+L2 TRAIN C-main updates 27 main_s 0.1 CE 1.0 LR 0.00075 NF 0
+L2 TRAIN C-main updates 28 main_s 0.1 CE 1.0 LR 0.00075 NF 0
+L2 TRAIN C-main updates 29 main_s 0.1 CE 1.0 LR 0.00075 NF 0
+L2 TRAIN C-main updates 30 main_s 0.1 CE 1.0 LR 0.00075 NF 0
+L2 TRAIN C-main updates 31 main_s 0.1 CE 1.0 LR 0.00075 NF 0
+L2 TRAIN C-main updates 32 main_s 0.1 CE 1.0 LR 0.00075 NF 0
+L2 TRAIN C-main updates 33 main_s 0.1 CE 1.0 LR 0.00075 NF 0
+L2 TRAIN C-main updates 3 main_s 0.1 CE 1.0 LR 0.000375 NF 0
+L2 TRAIN C-main updates 4 main_s 0.1 CE 1.0 LR 0.000375 NF 0
+L2 TRAIN C-main updates 5 main_s 0.1 CE 1.0 LR 0.000375 NF 0
+L2 TRAIN C-main updates 6 main_s 0.1 CE 1.0 LR 0.000375 NF 0
+L2 TRAIN C-main updates 7 main_s 0.1 CE 1.0 LR 0.000375 NF 0
+L2 TRAIN C-main updates 8 main_s 0.1 CE 1.0 LR 0.000375 NF 0
+L2 TRAIN C-main updates 9 main_s 0.1 CE 1.0 LR 0.000375 NF 0
+L2 TRAIN C-main updates 10 main_s 0.1 CE 1.0 LR 0.000375 NF 0
+L2 TRAIN C-main updates 11 main_s 0.1 CE 1.0 LR 0.000375 NF 0
+L2 TRAIN C-main updates 12 main_s 0.1 CE 1.0 LR 0.000375 NF 0
+L2 TRAIN C-main updates 13 main_s 0.1 CE 1.0 LR 0.000375 NF 0
+L2 TRAIN C-main updates 14 main_s 0.1 CE 1.0 LR 0.000375 NF 0
+L2 TRAIN C-main updates 15 main_s 0.1 CE 1.0 LR 0.000375 NF 0
+L2 TRAIN C-main updates 16 main_s 0.1 CE 1.0 LR 0.000375 NF 0
+L2 TRAIN C-main updates 17 main_s 0.1 CE 1.0 LR 0.000375 NF 0
+L2 TRAIN C-main updates 18 main_s 0.1 CE 1.0 LR 0.000375 NF 0
+L2 TRAIN C-main updates 19 main_s 0.1 CE 1.0 LR 0.000375 NF 0
+L2 TRAIN C-main updates 20 main_s 0.1 CE 1.0 LR 0.000375 NF 0
+L2 TRAIN C-main updates 21 main_s 0.1 CE 1.0 LR 0.000375 NF 0
+L2 TRAIN C-main updates 22 main_s 0.1 CE 1.0 LR 0.000375 NF 0
+L2 TRAIN C-main updates 23 main_s 0.1 CE 1.0 LR 0.000375 NF 0
+L2 TRAIN C-main updates 24 main_s 0.1 CE 1.0 LR 0.000375 NF 0
+L2 TRAIN C-main updates 25 main_s 0.1 CE 1.0 LR 0.000375 NF 0
+L2 TRAIN C-main updates 26 main_s 0.1 CE 1.0 LR 0.000375 NF 0
+L2 TRAIN C-main updates 27 main_s 0.1 CE 1.0 LR 0.000375 NF 0
+L2 TRAIN C-main updates 28 main_s 0.1 CE 1.0 LR 0.000375 NF 0
+L2 TRAIN C-main updates 29 main_s 0.1 CE 1.0 LR 0.000375 NF 0
+L2 TRAIN C-main updates 30 main_s 0.1 CE 1.0 LR 0.000375 NF 0
+L2 TRAIN C-main updates 31 main_s 0.1 CE 1.0 LR 0.000375 NF 0
+L2 TRAIN C-main updates 32 main_s 0.1 CE 1.0 LR 0.000375 NF 0
+L2 TRAIN C-main updates 33 main_s 0.1 CE 1.0 LR 0.000375 NF 0
+ok
+test_platform_and_API_credentials_are_removed_from_workers_and_helpers (__main__.main.<locals>.SandboxTests.test_platform_and_API_credentials_are_removed_from_workers_and_helpers) ... L2 GPU 0 status None 
+L2 GPU 1 status None 
+ok
+test_post_Adam_nonfinite_is_unsafe_and_good_checkpoint_not_overwritten (__main__.main.<locals>.SandboxTests.test_post_Adam_nonfinite_is_unsafe_and_good_checkpoint_not_overwritten) ... ok
+test_preflight_counter_mismatches_fail_early (__main__.main.<locals>.SandboxTests.test_preflight_counter_mismatches_fail_early) ... ok
+test_real_enabled_scaler_overflow_stays_a_normal_AMP_skip (__main__.main.<locals>.SandboxTests.test_real_enabled_scaler_overflow_stays_a_normal_AMP_skip) ... ok
+test_rejected_loss_resets_enabled_scaler_before_next_good_step (__main__.main.<locals>.SandboxTests.test_rejected_loss_resets_enabled_scaler_before_next_good_step) ... ok
+test_resume_does_not_overwrite_evaluated_points (__main__.main.<locals>.SandboxTests.test_resume_does_not_overwrite_evaluated_points) ... L2 TRAIN C-main updates 3 main_s 0.0 CE 3.687963604927063 LR 0.0015 NF 0
+L2 TRAIN C-main updates 4 main_s 0.0 CE 3.6649935245513916 LR 0.0015 NF 0
+L2 TRAIN C-main updates 5 main_s 0.0 CE 3.627327799797058 LR 0.0015 NF 0
+ok
+test_rollback_halving_then_graceful_K_stop_preserves_good_state (__main__.main.<locals>.SandboxTests.test_rollback_halving_then_graceful_K_stop_preserves_good_state) ... L2 TRAIN C-main updates 3 main_s 0.0 CE None LR 0.0015 NF 1
+L2 TRAIN C-main updates 4 main_s 0.0 CE None LR 0.0015 NF 2
+L2 TRAIN C-main updates 3 main_s 0.0 CE None LR 0.00075 NF 4
+L2 TRAIN C-main updates 4 main_s 0.0 CE None LR 0.00075 NF 5
+L2 TRAIN C-main updates 3 main_s 0.0 CE None LR 0.000375 NF 7
+L2 TRAIN C-main updates 4 main_s 0.0 CE None LR 0.000375 NF 8
+ok
+test_sampler_deterministic_multiplicity_and_nearest_fraction (__main__.main.<locals>.SandboxTests.test_sampler_deterministic_multiplicity_and_nearest_fraction) ... ok
+test_secret_gate_smoke_optional_production_required (__main__.main.<locals>.SandboxTests.test_secret_gate_smoke_optional_production_required) ... ok
+test_stable_rotation_and_corruption_refusal (__main__.main.<locals>.SandboxTests.test_stable_rotation_and_corruption_refusal) ... L2 TRAIN C-main updates 3 main_s 0.0 CE 3.687963604927063 LR 0.0015 NF 0
+L2 TRAIN C-main updates 4 main_s 0.0 CE 3.6649935245513916 LR 0.0015 NF 0
+ok
+test_supervisor_error_still_records_and_packages_outputs (__main__.main.<locals>.SandboxTests.test_supervisor_error_still_records_and_packages_outputs) ... skipped 'macOS sandbox denies killpg; inherited Linux supervisor unchanged'
+test_unreadable_summary_and_failed_final_sync_still_package (__main__.main.<locals>.SandboxTests.test_unreadable_summary_and_failed_final_sync_still_package) ... L2 GPU 0 status None 
+L2 GPU 1 status None 
+ok
+test_unsafe_attempt_time_survives_rollback (__main__.main.<locals>.SandboxTests.test_unsafe_attempt_time_survives_rollback) ... ok
+test_window_threshold (__main__.main.<locals>.SandboxTests.test_window_threshold) ... ok
+test_worker_failure_does_not_stop_healthy_worker (__main__.main.<locals>.SandboxTests.test_worker_failure_does_not_stop_healthy_worker) ... L2 GPU 0 status None 
+L2 GPU 1 status None 
+L2 worker failed 0 ; other worker continues independently
+L2 GPU 0 status 1 
+L2 GPU 1 status None 
+L2 GPU 0 status 1 
+L2 GPU 1 status None 
+L2 GPU 0 status 1 
+L2 GPU 1 status None 
+L2 GPU 0 status 1 
+L2 GPU 1 status None 
+L2 GPU 0 status 1 
+L2 GPU 1 status None 
+ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 7.473s
+
+OK (skipped=1)
+test_anchor_mismatch_fails_before_loading_large_PT (l3_tests.Tests.test_anchor_mismatch_fails_before_loading_large_PT) ... ok
+test_exact_cumulative_targets_without_mutating_anchor_history (l3_tests.Tests.test_exact_cumulative_targets_without_mutating_anchor_history) ... ok
+test_expanded_and_original_gzip_verify_producer_SHA (l3_tests.Tests.test_expanded_and_original_gzip_verify_producer_SHA) ... ok
+test_full_state_counters_LR_history_checked (l3_tests.Tests.test_full_state_counters_LR_history_checked) ... ok
+test_incomplete_K8_or_missing_point_cannot_report_complete (l3_tests.Tests.test_incomplete_K8_or_missing_point_cannot_report_complete) ... ok
+test_latest_manifest_pin_require_own_identity_and_counters (l3_tests.Tests.test_latest_manifest_pin_require_own_identity_and_counters) ... ok
+test_legacy_GPU_smoke_preserves_own_cursor_and_old_points (l3_tests.Tests.test_legacy_GPU_smoke_preserves_own_cursor_and_old_points) ... ok
+test_owner_qualified_mounts_disambiguate_original_and_fallback_cache (l3_tests.Tests.test_owner_qualified_mounts_disambiguate_original_and_fallback_cache) ... ok
+test_real_failed_eval_reports_partial_and_preserves_resumable_state (l3_tests.Tests.test_real_failed_eval_reports_partial_and_preserves_resumable_state) ... /tmp/nlp-v8-cpu/lib/python3.13/site-packages/torch/nn/modules/transformer.py:144: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = TransformerEncoder(
+L2 TRAIN C-main updates 3 main_s 0.0 CE 3.687963604927063 LR 0.0015 NF 0
+L2 POINT INCOMPLETE C-main l2-00000 ValueError
+L2 TRAIN C-main updates 4 main_s 0.0 CE 3.6649935245513916 LR 0.0015 NF 0
+L2 TRAIN C-main updates 5 main_s 0.0 CE 3.627327799797058 LR 0.0015 NF 0
+L2 TRAIN C-main updates 6 main_s 0.0 CE 3.5956512689590454 LR 0.0015 NF 0
+L2 TRAIN C-main updates 7 main_s 0.0 CE 3.562785506248474 LR 0.0015 NF 0
+L2 TRAIN C-main updates 8 main_s 0.1 CE 3.533922791481018 LR 0.0015 NF 0
+L2 TRAIN C-main updates 9 main_s 0.1 CE 3.5147863626480103 LR 0.0015 NF 0
+L2 TRAIN C-main updates 10 main_s 0.1 CE 3.4850080013275146 LR 0.0015 NF 0
+L2 TRAIN C-main updates 11 main_s 0.1 CE 3.447737216949463 LR 0.0015 NF 0
+L2 TRAIN C-main updates 12 main_s 0.1 CE 3.4193352460861206 LR 0.0015 NF 0
+L2 TRAIN C-main updates 13 main_s 0.1 CE 3.404715061187744 LR 0.0015 NF 0
+L2 TRAIN C-main updates 14 main_s 0.1 CE 3.3726675510406494 LR 0.0015 NF 0
+L2 TRAIN C-main updates 15 main_s 0.1 CE 3.339884877204895 LR 0.0015 NF 0
+L2 TRAIN C-main updates 16 main_s 0.1 CE 3.3216845989227295 LR 0.0015 NF 0
+L2 TRAIN C-main updates 17 main_s 0.1 CE 3.28885018825531 LR 0.0015 NF 0
+L2 TRAIN C-main updates 18 main_s 0.2 CE 3.261749505996704 LR 0.0015 NF 0
+L2 TRAIN C-main updates 19 main_s 0.2 CE 3.2466996908187866 LR 0.0015 NF 0
+L2 TRAIN C-main updates 20 main_s 0.2 CE 3.2206664085388184 LR 0.0015 NF 0
+L2 TRAIN C-main updates 21 main_s 0.2 CE 3.195205569267273 LR 0.0015 NF 0
+L2 TRAIN C-main updates 22 main_s 0.2 CE 3.163563847541809 LR 0.0015 NF 0
+L2 TRAIN C-main updates 23 main_s 0.2 CE 3.136572003364563 LR 0.0015 NF 0
+L2 TRAIN C-main updates 24 main_s 0.2 CE 3.1255215406417847 LR 0.0015 NF 0
+L2 TRAIN C-main updates 25 main_s 0.2 CE 3.096880793571472 LR 0.0015 NF 0
+L2 TRAIN C-main updates 26 main_s 0.2 CE 3.073741316795349 LR 0.0015 NF 0
+L2 TRAIN C-main updates 27 main_s 0.2 CE 3.044817328453064 LR 0.0015 NF 0
+L2 TRAIN C-main updates 28 main_s 0.2 CE 3.033095598220825 LR 0.0015 NF 0
+L2 TRAIN C-main updates 29 main_s 0.3 CE 3.0077844858169556 LR 0.0015 NF 0
+L2 TRAIN C-main updates 30 main_s 0.3 CE 2.984672784805298 LR 0.0015 NF 0
+L2 TRAIN C-main updates 31 main_s 0.3 CE 2.9637811183929443 LR 0.0015 NF 0
+L2 TRAIN C-main updates 32 main_s 0.3 CE 2.9445486068725586 LR 0.0015 NF 0
+L2 TRAIN C-main updates 33 main_s 0.3 CE 2.9067025184631348 LR 0.0015 NF 0
+L2 TRAIN C-main updates 34 main_s 0.3 CE 2.8978960514068604 LR 0.0015 NF 0
+L2 TRAIN C-main updates 35 main_s 0.3 CE 2.8835761547088623 LR 0.0015 NF 0
+L2 TRAIN C-main updates 36 main_s 0.3 CE 2.863412857055664 LR 0.0015 NF 0
+L2 TRAIN C-main updates 37 main_s 0.3 CE 2.8349803686141968 LR 0.0015 NF 0
+L2 TRAIN C-main updates 38 main_s 0.3 CE 2.8117741346359253 LR 0.0015 NF 0
+L2 TRAIN C-main updates 39 main_s 0.4 CE 2.8079549074172974 LR 0.0015 NF 0
+L2 TRAIN C-main updates 40 main_s 0.4 CE 2.7841739654541016 LR 0.0015 NF 0
+L2 TRAIN C-main updates 41 main_s 0.4 CE 2.760082960128784 LR 0.0015 NF 0
+L2 TRAIN C-main updates 42 main_s 0.4 CE 2.7341511249542236 LR 0.0015 NF 0
+L2 TRAIN C-main updates 43 main_s 0.4 CE 2.7332160472869873 LR 0.0015 NF 0
+L2 TRAIN C-main updates 44 main_s 0.4 CE 2.7101045846939087 LR 0.0015 NF 0
+L2 TRAIN C-main updates 45 main_s 0.4 CE 2.6964434385299683 LR 0.0015 NF 0
+L2 TRAIN C-main updates 46 main_s 0.4 CE 2.675317883491516 LR 0.0015 NF 0
+L2 TRAIN C-main updates 47 main_s 0.4 CE 2.662024140357971 LR 0.0015 NF 0
+L2 TRAIN C-main updates 48 main_s 0.4 CE 2.638237953186035 LR 0.0015 NF 0
+L2 TRAIN C-main updates 49 main_s 0.5 CE 2.616928815841675 LR 0.0015 NF 0
+L2 TRAIN C-main updates 50 main_s 0.5 CE 2.6100481748580933 LR 0.0015 NF 0
+L2 TRAIN C-main updates 51 main_s 0.5 CE 2.593654155731201 LR 0.0015 NF 0
+L2 TRAIN C-main updates 52 main_s 0.5 CE 2.5783684253692627 LR 0.0015 NF 0
+L2 TRAIN C-main updates 53 main_s 0.5 CE 2.5524742603302 LR 0.0015 NF 0
+L2 TRAIN C-main updates 54 main_s 0.5 CE 2.549670696258545 LR 0.0015 NF 0
+L2 TRAIN C-main updates 55 main_s 0.5 CE 2.5317060947418213 LR 0.0015 NF 0
+L2 TRAIN C-main updates 56 main_s 0.5 CE 2.51941180229187 LR 0.0015 NF 0
+L2 TRAIN C-main updates 57 main_s 0.5 CE 2.498899817466736 LR 0.0015 NF 0
+L2 TRAIN C-main updates 58 main_s 0.5 CE 2.473558783531189 LR 0.0015 NF 0
+L2 TRAIN C-main updates 59 main_s 0.5 CE 2.475539445877075 LR 0.0015 NF 0
+L2 TRAIN C-main updates 60 main_s 0.6 CE 2.4647539854049683 LR 0.0015 NF 0
+L2 TRAIN C-main updates 61 main_s 0.6 CE 2.4438018798828125 LR 0.0015 NF 0
+L2 TRAIN C-main updates 62 main_s 0.6 CE 2.435243010520935 LR 0.0015 NF 0
+L2 TRAIN C-main updates 63 main_s 0.6 CE 2.413168787956238 LR 0.0015 NF 0
+L2 TRAIN C-main updates 64 main_s 0.6 CE 2.392518162727356 LR 0.0015 NF 0
+L2 TRAIN C-main updates 65 main_s 0.6 CE 2.397558093070984 LR 0.0015 NF 0
+L2 TRAIN C-main updates 66 main_s 0.6 CE 2.379622220993042 LR 0.0015 NF 0
+L2 TRAIN C-main updates 67 main_s 0.6 CE 2.3609765768051147 LR 0.0015 NF 0
+L2 TRAIN C-main updates 68 main_s 0.6 CE 2.3393036127090454 LR 0.0015 NF 0
+L2 TRAIN C-main updates 69 main_s 0.6 CE 2.342291831970215 LR 0.0015 NF 0
+L2 TRAIN C-main updates 70 main_s 0.7 CE 2.3254934549331665 LR 0.0015 NF 0
+L2 TRAIN C-main updates 71 main_s 0.7 CE 2.317612886428833 LR 0.0015 NF 0
+L2 TRAIN C-main updates 72 main_s 0.7 CE 2.297498345375061 LR 0.0015 NF 0
+L2 TRAIN C-main updates 73 main_s 0.7 CE 2.2754627466201782 LR 0.0015 NF 0
+L2 TRAIN C-main updates 74 main_s 0.7 CE 2.2870041131973267 LR 0.0015 NF 0
+L2 TRAIN C-main updates 75 main_s 0.7 CE 2.2578723430633545 LR 0.0015 NF 0
+L2 TRAIN C-main updates 76 main_s 0.7 CE 2.2497448921203613 LR 0.0015 NF 0
+L2 TRAIN C-main updates 77 main_s 0.7 CE 2.239603877067566 LR 0.0015 NF 0
+L2 TRAIN C-main updates 78 main_s 0.7 CE 2.226032018661499 LR 0.0015 NF 0
+L2 TRAIN C-main updates 79 main_s 0.7 CE 2.2081867456436157 LR 0.0015 NF 0
+L2 TRAIN C-main updates 80 main_s 0.7 CE 2.203290104866028 LR 0.0015 NF 0
+L2 TRAIN C-main updates 81 main_s 0.8 CE 2.1905239820480347 LR 0.0015 NF 0
+L2 TRAIN C-main updates 82 main_s 0.8 CE 2.17983615398407 LR 0.0015 NF 0
+L2 TRAIN C-main updates 83 main_s 0.8 CE 2.1640931367874146 LR 0.0015 NF 0
+L2 TRAIN C-main updates 84 main_s 0.8 CE 2.139809012413025 LR 0.0015 NF 0
+L2 TRAIN C-main updates 85 main_s 0.8 CE 2.1421011686325073 LR 0.0015 NF 0
+L2 TRAIN C-main updates 86 main_s 0.8 CE 2.1348825693130493 LR 0.0015 NF 0
+L2 TRAIN C-main updates 87 main_s 0.8 CE 2.1129651069641113 LR 0.0015 NF 0
+L2 TRAIN C-main updates 88 main_s 0.8 CE 2.0970919132232666 LR 0.0015 NF 0
+L2 TRAIN C-main updates 89 main_s 0.8 CE 2.0965263843536377 LR 0.0015 NF 0
+L2 TRAIN C-main updates 90 main_s 0.8 CE 2.0814520120620728 LR 0.0015 NF 0
+L2 TRAIN C-main updates 91 main_s 0.8 CE 2.0718847513198853 LR 0.0015 NF 0
+L2 TRAIN C-main updates 92 main_s 0.9 CE 2.05426561832428 LR 0.0015 NF 0
+L2 TRAIN C-main updates 93 main_s 0.9 CE 2.0385541915893555 LR 0.0015 NF 0
+L2 TRAIN C-main updates 94 main_s 0.9 CE 2.0227694511413574 LR 0.0015 NF 0
+L2 TRAIN C-main updates 95 main_s 0.9 CE 2.0185344219207764 LR 0.0015 NF 0
+L2 TRAIN C-main updates 96 main_s 0.9 CE 2.003434419631958 LR 0.0015 NF 0
+L2 TRAIN C-main updates 97 main_s 0.9 CE 1.9983521103858948 LR 0.0015 NF 0
+L2 TRAIN C-main updates 98 main_s 0.9 CE 1.978457272052765 LR 0.0015 NF 0
+L2 TRAIN C-main updates 99 main_s 0.9 CE 1.9546051025390625 LR 0.0015 NF 0
+L2 TRAIN C-main updates 100 main_s 0.9 CE 1.9612743258476257 LR 0.0015 NF 0
+L2 TRAIN C-main updates 101 main_s 0.9 CE 1.9364216923713684 LR 0.0015 NF 0
+L2 TRAIN C-main updates 102 main_s 1.0 CE 1.9260274767875671 LR 0.0015 NF 0
+L2 TRAIN C-main updates 103 main_s 1.0 CE 1.9098654389381409 LR 0.0015 NF 0
+L2 TRAIN C-main updates 104 main_s 1.0 CE 1.9001625776290894 LR 0.0015 NF 0
+L2 TRAIN C-main updates 105 main_s 1.0 CE 1.891146183013916 LR 0.0015 NF 0
+L2 TRAIN C-main updates 106 main_s 1.0 CE 1.8748096823692322 LR 0.0015 NF 0
+L2 TRAIN C-main updates 107 main_s 1.0 CE 1.8596937656402588 LR 0.0015 NF 0
+L2 TRAIN C-main updates 108 main_s 1.0 CE 1.8456862568855286 LR 0.0015 NF 0
+L2 TRAIN C-main updates 109 main_s 1.0 CE 1.8328242301940918 LR 0.0015 NF 0
+L2 TRAIN C-main updates 110 main_s 1.0 CE 1.8067036867141724 LR 0.0015 NF 0
+L2 TRAIN C-main updates 111 main_s 1.0 CE 1.8052991032600403 LR 0.0015 NF 0
+L2 POINT INCOMPLETE C-main l2-00001 ValueError
+ok
+test_worker_without_L3_kind_keeps_both_L2_routes (l3_tests.Tests.test_worker_without_L3_kind_keeps_both_L2_routes) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 1.673s
+
+OK

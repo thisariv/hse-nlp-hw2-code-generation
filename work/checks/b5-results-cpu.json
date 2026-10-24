@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "producer_files": 207,
+  "producer_missing": 150,
+  "K8_journals": 384,
+  "K8_samples": 98304,
+  "replay_configurations": 22025,
+  "parity_rows": 18432,
+  "no_GPU": true,
+  "no_API": true,
+  "no_forward": true,
+  "no_new_execution": true,
+  "no_sampling": true,
+  "per_update_logs_audited": true,
+  "native_python_bit_comparisons": 399360,
+  "native_fixture_checks": [
+    "native bridge removal",
+    "native duplicate multiplicity",
+    "native empty-pool greedy fallback"
+  ],
+  "main_updates": 127170,
+  "cooldown_updates": 14631,
+  "historical_L1_rows_reaudited": 5087,
+  "source_compile": true,
+  "K8_aggregate_matches": true,
+  "markdown_links_checked": true,
+  "plot_visual_QA": true,
+  "diff_check": true
+}

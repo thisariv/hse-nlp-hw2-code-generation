@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "rows": 9725737,
+  "slots": 9725736,
+  "source_rule": "protected-control",
+  "source_order_sha256": "0457bf4eb6d7f1c0e04787ac3378a906cdd4abcf0afd87cdf29df2c3463ebb81",
+  "new_order_sha256": "45f65aee45c38e67229b630e4fa108196177292d252bde161cd1934387c57f8a",
+  "seed": 2026101701,
+  "membership_unchanged": true,
+  "multiplicity_unchanged": true,
+  "filtered_multiplicity": null,
+  "protected_row_excluded": true,
+  "GPU": false,
+  "limitation": "CPU format/membership check only; no evidence of training benefit"
+}

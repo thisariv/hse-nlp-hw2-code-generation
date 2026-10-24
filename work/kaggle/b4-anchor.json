@@ -1,0 +1,70 @@
+{
+  "source": "thisarivson/nlp-hw02-b3/1",
+  "source_model_root": "model-GPU1",
+  "anchor": {
+    "file": "checkpoints/main-667d29a22ed6.pt",
+    "bytes": 1361617533,
+    "sha256": "e32b8649d41ef73133fd2dcf031a649bf8af6a07013f76bc057b897643b119c0",
+    "updates": 73416,
+    "cursor": 9397248,
+    "main_seconds": 59400.86158832819,
+    "model_spec": {
+      "d_model": 768,
+      "heads": 12,
+      "encoder_layers": 6,
+      "decoder_layers": 6,
+      "swiglu_dim": 2048,
+      "vocab": 8195,
+      "qk_norm": "layernorm"
+    },
+    "identity": {
+      "model": "W-lr600",
+      "recipe": {
+        "architecture": {
+          "d_model": 768,
+          "heads": 12,
+          "encoder_layers": 6,
+          "decoder_layers": 6,
+          "swiglu_dim": 2048,
+          "vocab": 8195,
+          "qk_norm": "layernorm"
+        },
+        "normalized_token_init": true,
+        "seed": 42,
+        "dropout": 0.0,
+        "peak_lr": 0.0006,
+        "warmup_updates": 2000,
+        "z_loss": 0.0001,
+        "qk_norm": "headwise LayerNorm",
+        "effective_batch": 128,
+        "weight_decay": 0.01,
+        "clip": 1.0,
+        "AMP": "FP16+GradScaler",
+        "fused_AdamW": true,
+        "main_truncation_q": 0.0,
+        "main_schedule": "warmup then constant; emergency factor persists",
+        "torch": "2.11.0+cu128",
+        "CUDA": "12.8",
+        "implementation_sha256": {
+          "b2_runtime.py": "e95682ce5680b2f4466df811ca1e46912295c9babd7d9adab21dbc42ae4c9db3",
+          "b2_optim.py": "48357f22193299e3d758dd0dcb4e28ed91ef147cba5786ff5da500569c394f32",
+          "qk_attention.py": "68215829f8a88abf611f92303315b625625ea694d34be952c7b9f7278e3f68fd",
+          "b1_data.py": "cba9f8278c5a696949ff2de501b7b7fd04e5ea69b257e10188fe6193889bbfc3",
+          "exp26_core.py": "b9dd4c542ca41b5a70fb556e477e45e1ae76c3afedac7c31a4b487030bec4c9e",
+          "exp26_train.py": "0392b8fabcae875eb7972a6c69f6594974603ae81090f4c484fbc47244fb2570",
+          "exp26_order.py": "98f6e43cf31810d4e86fdbf36b37aaf8dfe7c40ec82d065f82194d7056172783",
+          "l1_runtime.py": "cbcf26636a1a1a62d13ee8fe82a4e9deb420db13f2e811a0fb51832c3811f038",
+          "l2_runtime.py": "43ce7e35dbfbb5712a427e4aa9f8fb39532d873dde38cd029b9ba8a9fa771ed3",
+          "s3_representation.py": "51c18fd6b9d158086c96da9f23dd72030da84e27cff18b51028934b0f21d519c"
+        }
+      },
+      "recipe_sha256": "81f2eb4b21dba22ea36840abd870e115f75f66e7ae8d78252cad1ad21ff0a0a9",
+      "cache_manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+      "order_sha256": "8e9595f655ed2b4456bf5b94e9b5b6b3db040e3f5696a4dc0ef364588048bee8",
+      "order_seed": 2026101501,
+      "cpu_test": false
+    },
+    "purpose": "uncooled full B2 stable"
+  },
+  "source_manifest_sha256": "fa5d3d8d424985cb9a7ce88ba2f2720126c1ac27ebacc8f62f4ecee27c2453b8"
+}

@@ -1,0 +1,194 @@
+{
+  "source_notebook": {
+    "original_name": "07_kv_cache_byte_20k_pairs_checkpoint_50000.ipynb",
+    "bytes": 60103,
+    "sha256": "17bfa6ee085b9b8f289807a18ea0da22b401e7ae42189d682b40898e80bcece1"
+  },
+  "source_archive": {
+    "original_name": "hw02-kv-cache-checkpoint-50000-results.zip",
+    "bytes": 786422,
+    "sha256": "8c900ae460d8c43cb02f0051dae5d9d60ea41527a694e5995d39235c50650357"
+  },
+  "archive_manifest": {
+    "experiment": "07-kv-cache-byte-20k-pairs-checkpoint-50000",
+    "phase": "finished",
+    "run_finished": true,
+    "full_test_completed": true,
+    "source_checkpoint_sha256": "3dbd745c9662aa2a73b3832e6ed09990dd9f41974c3dd7172eda1f00d5007271",
+    "notebook_with_outputs_included": false,
+    "files": [
+      {
+        "filename": "hw02-kv-cache-results.json",
+        "bytes": 540136,
+        "sha256": "98eeede5dbacb4208411e351d00a2094b0445dfcee5cc6543b4ec40b7b052c2a"
+      },
+      {
+        "filename": "hw02-kv-cache-test-generations.json",
+        "bytes": 12471152,
+        "sha256": "be52ab4f61d175e24d2197b4ca391305b897ede648392b6c9daa91dfae0de2f7"
+      }
+    ]
+  },
+  "experiment": "07-kv-cache-byte-20k-pairs-checkpoint-50000",
+  "gpu": "Tesla T4",
+  "torch_version": "2.11.0+cu130",
+  "dtype": "torch.float32",
+  "config": {
+    "checkpoint_step": 50000,
+    "tokenizer": "UTF-8 bytes",
+    "batch_size_inference": 32,
+    "generation_cap": 512,
+    "validation_repeats": 3,
+    "decoding": "greedy",
+    "finished_rows_remain_in_batch": true,
+    "norm_first": false
+  },
+  "parameters": 1254915,
+  "checkpoint_sha256": "3dbd745c9662aa2a73b3832e6ed09990dd9f41974c3dd7172eda1f00d5007271",
+  "run_finished": true,
+  "full_test_completed": true,
+  "training_performed": false,
+  "functional_quality_evaluated": false,
+  "weights_unchanged": true,
+  "prefix_check_max_abs_error": 2.3603439331054688e-05,
+  "timing": {
+    "validation64": {
+      "median_seconds": {
+        "reference": 12.199947019000035,
+        "cached": 2.001475327000037
+      },
+      "speedup": 6.095477098529234,
+      "all_three_repeat_seconds": {
+        "reference": [
+          11.877136231000009,
+          12.199947019000035,
+          12.428083030999971
+        ],
+        "cached": [
+          2.001475327000037,
+          1.986846642000046,
+          2.0458915549999688
+        ]
+      },
+      "peak_gpu_memory_mib": {
+        "reference": 485.8701171875,
+        "cached": 170.396484375
+      }
+    },
+    "test1919": {
+      "reference": {
+        "path": "reference",
+        "split": "test_1919",
+        "repeat": 1,
+        "examples": 1919,
+        "seconds": 370.032955831,
+        "answers_per_second": 5.186024568245316,
+        "generated_tokens": 391751,
+        "tokens_per_second": 1058.6921889706466,
+        "mean_generated_tokens": 204.14330380406463,
+        "max_generated_tokens": 512,
+        "peak_gpu_memory_mib": 575.03271484375,
+        "eos_emitted_count": 1820,
+        "reached_cap_without_eos_count": 99,
+        "parses_as_python_count": 1088,
+        "defines_solve_count": 1088,
+        "solve_has_value_return_count": 1060
+      },
+      "cached": {
+        "path": "cached",
+        "split": "test_1919",
+        "repeat": 1,
+        "examples": 1919,
+        "seconds": 61.397356916000035,
+        "answers_per_second": 31.255417112261917,
+        "generated_tokens": 391751,
+        "tokens_per_second": 6380.5841110712445,
+        "mean_generated_tokens": 204.14330380406463,
+        "max_generated_tokens": 512,
+        "peak_gpu_memory_mib": 575.03271484375,
+        "eos_emitted_count": 1820,
+        "reached_cap_without_eos_count": 99,
+        "parses_as_python_count": 1088,
+        "defines_solve_count": 1088,
+        "solve_has_value_return_count": 1060
+      },
+      "speedup": 6.026854809682696,
+      "remaining_to_180_seconds": 118.60264308399996,
+      "limit_ratio": 2.9317222929688094,
+      "time_reduction_percent": 83.40759763461685
+    }
+  },
+  "quality": {
+    "validation_64": {
+      "examples": 64,
+      "generated_tokens": 13498,
+      "mean_generated_tokens": 210.90625,
+      "max_generated_tokens": 512,
+      "eos_emitted_count": 61,
+      "reached_cap_without_eos_count": 3,
+      "parses_as_python_count": 41,
+      "defines_solve_count": 41,
+      "solve_has_value_return_count": 40,
+      "exact_code_match_count": 0,
+      "exact_tokens_with_eos_count": 0
+    },
+    "test_1919": {
+      "examples": 1919,
+      "generated_tokens": 391751,
+      "mean_generated_tokens": 204.14330380406463,
+      "max_generated_tokens": 512,
+      "eos_emitted_count": 1820,
+      "reached_cap_without_eos_count": 99,
+      "parses_as_python_count": 1088,
+      "defines_solve_count": 1088,
+      "solve_has_value_return_count": 1060
+    }
+  },
+  "validation_equal_to_previous64": 64,
+  "validation_tokens_equal64": 64,
+  "test_tokens_equal1919": 1919,
+  "previous_validation_loss": {
+    "value": 0.7666764174224789,
+    "origin": "saved experiment06; not recomputed or measured in experiment07"
+  },
+  "previous_training_speed": {
+    "updates_per_second": 42.10417955825892,
+    "origin": "saved experiment06; no training in experiment07"
+  },
+  "test_data": {
+    "url": "https://huggingface.co/datasets/SlavaYus/tinysms_qa_12m/resolve/b2724689ff079e9c22efd548fe134bfb29036dbb/data/test/test.parquet",
+    "file_sha256": "8bde59c8d8bb7edc4e8a503be22fc132c4a47773025d333432e78c5489e6522a",
+    "rows": 1919,
+    "questions_sha256": "d6b52e39fb2d2a27ee34c081be596ab884d84dab30a99cf5011fabd0ff02d0db",
+    "row_order": "unchanged parquet order"
+  },
+  "batch_statistics": {
+    "test_batches": 60,
+    "batches_reaching_cap": 49,
+    "max_padded_input_tokens": 717,
+    "generation_slots": 933024,
+    "active_tokens": 391751,
+    "already_finished_slots": 541273,
+    "already_finished_fraction": 0.580127628013856
+  },
+  "test_peak_memory_interpretation": "Both reported 575.03 MiB. Cached validation peak is smaller, but full-test peak is unchanged. Shared encoder/longer sources may dominate; no profiler or per-stage memory measurement is available.",
+  "timer_scope": "question encoding, transfers, encoder/cache preparation, greedy, CPU token conversion/decoding and AST/return/exact checks; warmup, prefix checks, comparisons, printing, downloads and file writes excluded",
+  "limit_scope": "full test timed end-to-end through decoded/inspected answers; official checker and final submission timer have not been specified",
+  "notebook_metadata_only_removed": true,
+  "notebook_code_counts_outputs_preserved": true,
+  "saved_notebook_sha256": "edafcef90bbd73b493d31223cd41b0c1b00b5978805732c9b8c8141c4a93bf54",
+  "saved_results_json_sha256": "98eeede5dbacb4208411e351d00a2094b0445dfcee5cc6543b4ec40b7b052c2a",
+  "repository_paths": {
+    "notebook": "work/results/07-kv-cache-byte-20k-pairs-checkpoint-50000-results.ipynb",
+    "results_json": "work/results/07-kv-cache-byte-20k-pairs-checkpoint-50000-results.json",
+    "summary": "work/results/07-kv-cache-byte-20k-pairs-checkpoint-50000-summary.json",
+    "generations": "work/results/generations/07-kv-cache-byte-20k-pairs-checkpoint-50000-test-generations.json",
+    "checks": "work/checks/07-kv-cache-results-static-checks.json"
+  },
+  "test_generations_local_ignored": true,
+  "full_test_generations_sha256": "be52ab4f61d175e24d2197b4ca391305b897ede648392b6c9daa91dfae0de2f7",
+  "gpu_training_or_inference_rerun_now": false,
+  "model_forward_performed_now": false,
+  "generated_or_reference_programs_executed": false,
+  "all_static_checks_passed": true
+}

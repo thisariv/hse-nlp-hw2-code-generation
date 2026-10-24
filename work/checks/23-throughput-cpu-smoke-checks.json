@@ -1,0 +1,219 @@
+{
+  "date": "2026-10-10",
+  "notebook_sha256": "505388f0f17237bc777a93ae1d2baf8e662c222380897307ab8ad98747736dea",
+  "core": {
+    "date": "2026-10-09",
+    "device": "CPU",
+    "gpu_tested": false,
+    "model_parameters": {
+      "A": 12086912,
+      "B": 31940096,
+      "C": 53643328
+    },
+    "SHA_PT_tokenizer_and_original_ZIP": true,
+    "bad_SHA_rejected": true,
+    "tiny_cached_logits_max_error": 2.384185791015625e-07,
+    "tiny_cached_and_preallocated_greedy_equal": true,
+    "tiny_scratch_train_updates": 5,
+    "tiny_scratch_train": {
+      "model_spec": {
+        "d_model": 16,
+        "heads": 2,
+        "encoder_layers": 1,
+        "decoder_layers": 1,
+        "swiglu_dim": 24,
+        "vocab": 37,
+        "max_positions": 128
+      },
+      "precision": "fp32",
+      "batch_pairs": 4,
+      "warmup_planned": 2,
+      "measured_planned": 3,
+      "fused_adamw": false,
+      "status": "ok",
+      "completed_warmup": 2,
+      "completed_measured": 3,
+      "parameters": 9189,
+      "warmup_seconds": 0.28368433308787644,
+      "seconds": 0.014718082966282964,
+      "ms_per_step": 4.906027655427654,
+      "pairs_per_second": 815.3235735584786,
+      "useful_target_tokens_per_second": 3668.956081013154,
+      "useful_source_tokens_per_second": 19431.87850314374,
+      "useful_source_plus_target_tokens_per_second": 23100.834584156895,
+      "counts": {
+        "source_tokens": 286,
+        "target_tokens": 54,
+        "source_slots": 316,
+        "target_slots": 72,
+        "pairs": 12
+      },
+      "source_padding_fraction": 0.09493670886075944,
+      "target_padding_fraction": 0.25,
+      "total_padding_fraction": 0.12371134020618557,
+      "all_measured_losses_finite": true,
+      "all_measured_gradient_norms_finite": true,
+      "measured_AMP_skipped_updates": 0,
+      "final_scale": null,
+      "peak_allocated_bytes": null,
+      "peak_reserved_bytes": null
+    },
+    "restore_order_valid_and_invalid_permutation": true,
+    "real22_strict_load_and_3_saved_greedy_prefixes": true,
+    "real22_sort_restore_3_rows_token_equal": true,
+    "quality_model_training_updates": 0,
+    "exact_train500k_heldout1024_selection_and_cache": {
+      "revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+      "train_rows": 500000,
+      "heldout_rows": 1024,
+      "test_rows": 1919,
+      "train_sha256": "61483f4dc6970ff5f2b1afffa45d57391dcfc01ab6ec4f140c6e6b6c792c8c38",
+      "locations_sha256": "c2332a54a923ffa85da9ac91ec0a39a2e4ead7f7c2e328abecef702e1d306ba7",
+      "heldout_sha256": "e187bc297218365f1a1452a15376e0ff2fceaf8a5a5517820549854b90564743",
+      "shards": [
+        {
+          "path": "data/train/part-00000.parquet",
+          "bytes": 26169796,
+          "sha256": "91831d582faa12d73b1a6b3878e496446cd5df074f17ee4ffea8cc2887c708ec"
+        },
+        {
+          "path": "data/train/part-00001.parquet",
+          "bytes": 26166175,
+          "sha256": "5222d657a1af07a531f1b22503f35741a6547f0831509897d0a279bc8f67d068"
+        },
+        {
+          "path": "data/train/part-00002.parquet",
+          "bytes": 26162244,
+          "sha256": "c6082401ea966aeaa8375018ae1f1d9c7c55cc30e421c45cc933ceacd97dc3de"
+        }
+      ],
+      "selection_seconds": 4.672811166848987,
+      "filter_reference_non_number": false,
+      "fresh_heldout_not_evaluated": true,
+      "bpe_cache_seconds": 52.38286920799874,
+      "source_tokens": 24187619,
+      "target_tokens": 32988665
+    },
+    "bucket_plan_shared_FP32_AMP": true,
+    "all_passed": true
+  },
+  "edge_cases": {
+    "date": "2026-10-10",
+    "CPU_AMP_path_finite": true,
+    "CPU_AMP_actual_measured_skips": 0,
+    "CPU_AMP_skip_diagnostic": "GradScaler one-device found_inf, stored on device beforeclip, host read outside timer",
+    "CPU_AMP_warmup_updates": 10,
+    "CPU_AMP_measured_updates": 3,
+    "CPU_additional_FP32_scratch_updates": 13,
+    "GPU_exercised": false,
+    "OOM_record_and_next_config": true,
+    "expired_deadline_not_a_winner": true,
+    "selection_memory_steps_AMP_skips": true,
+    "selection_4_lost_allowed_5_lost_rejected": true,
+    "actual_pack_cell_cases": [
+      "before-setup",
+      "interrupt",
+      "finished"
+    ],
+    "ZIP_CRC_SHA_no_weights": true,
+    "all_passed": true
+  },
+  "sandbox": {
+    "date": "2026-10-09",
+    "fixture_statuses": [
+      "numeric",
+      "numeric",
+      "non_finite",
+      "non_number",
+      "blocked_import",
+      "blocked_attribute",
+      "timeout",
+      "numeric"
+    ],
+    "bool_is_int": true,
+    "worker_kill_recovery": {
+      "programs": 4,
+      "unique_programs": 3,
+      "statuses": {
+        "timeout_or_worker_exit": 1,
+        "numeric": 3
+      },
+      "pool_restarts": 1,
+      "seconds": 1.5844663330353796,
+      "complete": true
+    },
+    "duplicates_and_order_preserved": true,
+    "torch_loaded_in_worker_module": false
+  },
+  "controller": {
+    "date": "2026-10-10",
+    "actual_notebook_controller_cells": [
+      9,
+      11,
+      13,
+      15
+    ],
+    "model_and_numeric_calls_mocked_for_control_flow": true,
+    "not_GPU_or_quality_evidence": true,
+    "20_train_9_infer_grid_wiring": true,
+    "shared_FP32_AMP_plan_objects": true,
+    "OOM_does_not_stop_next_config": true,
+    "winner_files_control_files_and_restore_diagnostics": true,
+    "interrupt_status_persisted": true,
+    "embedded_module_source_matches_tested_core": true,
+    "all_passed": true
+  },
+  "GPU_tested": false,
+  "quality_checkpoint_updates": 0,
+  "unverified": [
+    "T4 throughput/CUDA SDPA/fused optimizer/FP16 numerical effects and GPU GradScaler",
+    "real GPU OOM and peaks for large batches/models",
+    "full new cap512 heldout1024 and test1919 control189±3 /991",
+    "20train+9infer grid within60min onT4",
+    "Linux RLIMIT_AS",
+    "actual Colab upload/download UI"
+  ],
+  "static": {
+    "date": "2026-10-10",
+    "notebook_cells": 18,
+    "code_cells": 9,
+    "all_cells_and_modules_compile": true,
+    "valid_unique_cell_ids": true,
+    "no_outputs_or_execution_counts": true,
+    "no_local_absolute_paths_in_notebook": true,
+    "navigation_links_exist": true,
+    "module_sources_equal_CPU_tested_sources": true,
+    "notebook_sha256": "505388f0f17237bc777a93ae1d2baf8e662c222380897307ab8ad98747736dea",
+    "module_sha256": {
+      "bench23_core.py": "f0d48269934d51610fe33bdd08b601bf462694804228e201e53fa78a134e8dc3",
+      "bench23_exec.py": "0ccc458b2e7dfec27b55f482afb673215f6c06af0f53820cf624d42c5573faa3",
+      "bench23_data.py": "bc7a5b309a6b1f8aadba1dedccc4794b54e605179f302fad189d95410c0cd497",
+      "bench23_input.py": "e1c7bc04750a5b04f59f5ccec5f6ce5a215132e6d8eef9ebcc778d14a126db4f"
+    },
+    "previous_notebooks_sha256": {
+      "work/notebooks/01-baseline-byte-512-pairs-200-steps.ipynb": "0d73e36d6e6e774dcf449db32ef2c4fbe4042e61a00d6076f5810cea8c548771",
+      "work/notebooks/02-longer-training-byte-512-pairs-2000-steps.ipynb": "60ef2ad7b7e65628b9dad23e2215e146b933bcdbbdd7cf1380373f53405e890a",
+      "work/notebooks/03-overfit-byte-16-pairs-1000-steps.ipynb": "38803c040e6171de76e1ff0564834728e1ad45a2e9ea7af198bb19e21ef3c97d",
+      "work/notebooks/04-overfit-byte-16-pairs-continue-to-3000-steps.ipynb": "d530f40f8db6ec33230ef4b5ab75d79ec1bb95f46594aefbbaf89d41cc593d00",
+      "work/notebooks/04-overfit-byte-16-pairs-continue-to-3000-steps.py": "49248a745f4917093cddae3d816b60adcee11e2b466d8905a034d9b291cc8d84",
+      "work/notebooks/05-more-data-byte-20k-pairs-10000-steps.ipynb": "b48fe6423901d6004ba746b3314ddd33ced5ed5a2c90d29989663265a048118d",
+      "work/notebooks/06-longer-training-byte-20k-pairs-continue-to-50000-steps.ipynb": "9af56e48e4d4cfeb75b631af54750226efd5627a5e21087c94571939f7d363d5",
+      "work/notebooks/07-kv-cache-byte-20k-pairs-checkpoint-50000.ipynb": "6175ffc4f8a88e85506783ebb7de40be3d143010a513e1d13a71ec53b715d483",
+      "work/notebooks/08-bpe-4k-20k-pairs-50000-steps.ipynb": "8e59cd6b81f0ee292242f8b9f6617b6d30d0d8cbbd84eac4c9a2b82447e3ba97",
+      "work/notebooks/09-wider-transformer-bpe-4k-20k-pairs-50000-steps.ipynb": "08bfadde54091b05117dd6d0513bd342eb396ee9a9f0882081acd4456332a515",
+      "work/notebooks/10-cosine-learning-rate-wider-transformer-bpe-4k-20k-pairs-50000-steps.ipynb": "c9321490ad2e2aa6886dde0c610dafa727e42979914e36a367613d15ad04fdf0",
+      "work/notebooks/11-more-data-100k-pairs-wider-transformer-bpe-4k-cosine-50000-steps.ipynb": "a4381f48ee27a8417dc97587b545d76654121cebfcdf2923deb6b20c129319d3",
+      "work/notebooks/12-warmup-1000-wider-transformer-bpe-4k-100k-pairs-50000-steps.ipynb": "9ead16733de1a16de474a69f5eedcf5f213b865d952a1a8876a060981421564c",
+      "work/notebooks/13-pre-ln-warmup-1000-wider-transformer-bpe-4k-100k-pairs-50000-steps.ipynb": "b273915b86fd99dc7a028e73c573396e931458b211bafa111e3ed96ef5ba9e3e",
+      "work/notebooks/14-continue-pre-ln-100k-pairs-to-100000-steps-heldout-1024.ipynb": "9bca2451bfdd8c887cd7c96a0a927469c251edcb58ae1682e8aae966f3e736bf",
+      "work/notebooks/15-swiglu-pre-ln-bpe-4k-100k-pairs-100000-steps-heldout-1024.ipynb": "b46c5e6ab9604634f05ee8f1b27e52ca59b9fce39bd9a1e9059c972fe54566a1",
+      "work/notebooks/16-training-speed-bpe-cache-amp-fp16-swiglu-bpe-4k-100k-pairs.ipynb": "5e742e884788309127d3431814825d6f197d80d7562ac96e6173c1b0c8930730",
+      "work/notebooks/17-more-data-500k-pairs-swiglu-bpe-4k-50000-steps.ipynb": "449c1707660216146166c6faadbfe102b9056d21f8a1294222e3c488e474c0cf",
+      "work/notebooks/18-continue-swiglu-500k-pairs-to-100000-steps.ipynb": "5e1f5e6c6e7eee3667a56a7fb7dac21cfd467a1f7ca23319b0c8f4b2f2466fd5",
+      "work/notebooks/19-qwen-style-bpe-8k-swiglu-500k-pairs-100000-steps.ipynb": "11651074a534aff02e42e24059f82de1c6903e3649c55197cfc01815cd927aba",
+      "work/notebooks/20-deeper-decoder-4-layers-qwen-bpe-8k-swiglu-500k-pairs-100000-steps.ipynb": "e435094c9bda22cef96bffa2e2b1a1f54eccb292132d215b0d283d2e64bcf593",
+      "work/notebooks/21-deeper-encoder-4-layers-decoder-4-qwen-bpe-8k-swiglu-500k-pairs-100000-steps.ipynb": "470a8b296b1ff579a085c82a8c6f501af387e874dd53dff03fe5cb1fba73dc8e",
+      "work/notebooks/22-cosine-tail-from-75000-to-100000-steps-encoder4-decoder4-qwen-bpe-8k-swiglu-500k-pairs.ipynb": "4caefb22072195c9512dcf6234d09ee3c9354bfbd2125017579ef49eff0fcff2"
+    }
+  }
+}

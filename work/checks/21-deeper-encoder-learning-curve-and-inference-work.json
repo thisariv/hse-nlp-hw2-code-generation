@@ -1,0 +1,484 @@
+{
+  "date": "2026-10-09",
+  "learning_curves": {
+    "20": {
+      "full_heldout": {
+        "50000": {
+          "examples": 1024,
+          "bpe_loss": 0.8350912898849955,
+          "reference_target_tokens_including_eos": 67962,
+          "reference_utf8_bytes": 232162,
+          "nll_sum_including_eos": 56754.47424316406,
+          "nll_per_utf8_byte": 0.24446065352281623,
+          "numeric_audit": {
+            "heldout_pairs_total": 1024,
+            "reference_numeric_pairs": 888,
+            "reference_unsupported_pairs": 136,
+            "questions_and_references_sha256": "962724938ba673e6b613f62965766e27155bb01b5cb2d72b96b7807c8a18f179",
+            "generated_statuses_on_fixed_reference_subset": {
+              "unsupported": 24,
+              "numeric": 814,
+              "undefined_name": 42,
+              "syntax_error": 5,
+              "arithmetic_error": 3
+            },
+            "numeric_reference_agreements": 137,
+            "wrong_numeric_count": 677,
+            "definite_failure_count": 50,
+            "unresolved_generated_unsupported_count": 24,
+            "scope": "same heldout pairs whose reference is supported numeric arithmetic; failures stay in denominator; unsupported unresolved; references may be wrong; not official pass@1"
+          },
+          "parses_as_python_count": 1019,
+          "eos_emitted_count": 1018,
+          "token_cap_without_eos_count": 6,
+          "undefined_name_count": 45,
+          "generation_seconds_sum": 28.009722137000608,
+          "timing_scope": "sum of separately timed heldout groups, not a new single inference pass; loss/extra arithmetic excluded"
+        },
+        "75000": {
+          "examples": 1024,
+          "bpe_loss": 0.786548131223894,
+          "reference_target_tokens_including_eos": 67962,
+          "reference_utf8_bytes": 232162,
+          "nll_sum_including_eos": 53455.38409423828,
+          "nll_per_utf8_byte": 0.2302503600685654,
+          "numeric_audit": {
+            "heldout_pairs_total": 1024,
+            "reference_numeric_pairs": 888,
+            "reference_unsupported_pairs": 136,
+            "questions_and_references_sha256": "962724938ba673e6b613f62965766e27155bb01b5cb2d72b96b7807c8a18f179",
+            "generated_statuses_on_fixed_reference_subset": {
+              "unsupported": 26,
+              "numeric": 818,
+              "syntax_error": 7,
+              "undefined_name": 34,
+              "arithmetic_error": 2,
+              "no_return": 1
+            },
+            "numeric_reference_agreements": 152,
+            "wrong_numeric_count": 666,
+            "definite_failure_count": 44,
+            "unresolved_generated_unsupported_count": 26,
+            "scope": "same heldout pairs whose reference is supported numeric arithmetic; failures stay in denominator; unsupported unresolved; references may be wrong; not official pass@1"
+          },
+          "parses_as_python_count": 1013,
+          "eos_emitted_count": 1012,
+          "token_cap_without_eos_count": 12,
+          "undefined_name_count": 40,
+          "generation_seconds_sum": 33.45236011599991,
+          "timing_scope": "sum of separately timed heldout groups, not a new single inference pass; loss/extra arithmetic excluded"
+        },
+        "100000": {
+          "examples": 1024,
+          "bpe_loss": 0.7489724621610411,
+          "reference_target_tokens_including_eos": 67962,
+          "reference_utf8_bytes": 232162,
+          "nll_sum_including_eos": 50901.66647338867,
+          "nll_per_utf8_byte": 0.2192506373712695,
+          "numeric_audit": {
+            "heldout_pairs_total": 1024,
+            "reference_numeric_pairs": 888,
+            "reference_unsupported_pairs": 136,
+            "questions_and_references_sha256": "962724938ba673e6b613f62965766e27155bb01b5cb2d72b96b7807c8a18f179",
+            "generated_statuses_on_fixed_reference_subset": {
+              "unsupported": 20,
+              "numeric": 826,
+              "undefined_name": 38,
+              "arithmetic_error": 3,
+              "no_return": 1
+            },
+            "numeric_reference_agreements": 170,
+            "wrong_numeric_count": 656,
+            "definite_failure_count": 42,
+            "unresolved_generated_unsupported_count": 20,
+            "scope": "same heldout pairs whose reference is supported numeric arithmetic; failures stay in denominator; unsupported unresolved; references may be wrong; not official pass@1"
+          },
+          "parses_as_python_count": 1022,
+          "eos_emitted_count": 1021,
+          "token_cap_without_eos_count": 3,
+          "undefined_name_count": 42,
+          "generation_seconds_sum": 23.371642715000235,
+          "timing_scope": "sum of separately timed heldout groups, not a new single inference pass; loss/extra arithmetic excluded"
+        }
+      },
+      "rolling_validation16": [
+        {
+          "start_step_exclusive": 45000,
+          "end_step_inclusive": 50000,
+          "observations": 100,
+          "mean": 0.8248965268396219
+        },
+        {
+          "start_step_exclusive": 50000,
+          "end_step_inclusive": 55000,
+          "observations": 100,
+          "mean": 0.8103943923424031
+        },
+        {
+          "start_step_exclusive": 60000,
+          "end_step_inclusive": 65000,
+          "observations": 100,
+          "mean": 0.7964804380467165
+        },
+        {
+          "start_step_exclusive": 70000,
+          "end_step_inclusive": 75000,
+          "observations": 100,
+          "mean": 0.7738110989150846
+        },
+        {
+          "start_step_exclusive": 80000,
+          "end_step_inclusive": 85000,
+          "observations": 100,
+          "mean": 0.7576553245683713
+        },
+        {
+          "start_step_exclusive": 90000,
+          "end_step_inclusive": 95000,
+          "observations": 100,
+          "mean": 0.7490505777169435
+        },
+        {
+          "start_step_exclusive": 95000,
+          "end_step_inclusive": 100000,
+          "observations": 100,
+          "mean": 0.7418265247151529
+        }
+      ]
+    },
+    "21": {
+      "full_heldout": {
+        "50000": {
+          "examples": 1024,
+          "bpe_loss": 0.8835040288052745,
+          "reference_target_tokens_including_eos": 67962,
+          "reference_utf8_bytes": 232162,
+          "nll_sum_including_eos": 60044.70080566406,
+          "nll_per_utf8_byte": 0.2586327685222563,
+          "numeric_audit": {
+            "heldout_pairs_total": 1024,
+            "reference_numeric_pairs": 888,
+            "reference_unsupported_pairs": 136,
+            "questions_and_references_sha256": "962724938ba673e6b613f62965766e27155bb01b5cb2d72b96b7807c8a18f179",
+            "generated_statuses_on_fixed_reference_subset": {
+              "unsupported": 16,
+              "numeric": 811,
+              "undefined_name": 55,
+              "arithmetic_error": 2,
+              "syntax_error": 4
+            },
+            "numeric_reference_agreements": 149,
+            "wrong_numeric_count": 662,
+            "definite_failure_count": 61,
+            "unresolved_generated_unsupported_count": 16,
+            "scope": "same heldout pairs whose reference is supported numeric arithmetic; failures stay in denominator; unsupported unresolved; references may be wrong; not official pass@1"
+          },
+          "parses_as_python_count": 1016,
+          "eos_emitted_count": 1016,
+          "token_cap_without_eos_count": 8,
+          "undefined_name_count": 64,
+          "generation_seconds_sum": 33.765976167999725,
+          "timing_scope": "sum of separately timed heldout groups, not a new single inference pass; loss/extra arithmetic excluded"
+        },
+        "75000": {
+          "examples": 1024,
+          "bpe_loss": 0.8240649928122172,
+          "reference_target_tokens_including_eos": 67962,
+          "reference_utf8_bytes": 232162,
+          "nll_sum_including_eos": 56005.105041503906,
+          "nll_per_utf8_byte": 0.24123286774538427,
+          "numeric_audit": {
+            "heldout_pairs_total": 1024,
+            "reference_numeric_pairs": 888,
+            "reference_unsupported_pairs": 136,
+            "questions_and_references_sha256": "962724938ba673e6b613f62965766e27155bb01b5cb2d72b96b7807c8a18f179",
+            "generated_statuses_on_fixed_reference_subset": {
+              "unsupported": 22,
+              "numeric": 802,
+              "undefined_name": 53,
+              "syntax_error": 9,
+              "arithmetic_error": 2
+            },
+            "numeric_reference_agreements": 164,
+            "wrong_numeric_count": 638,
+            "definite_failure_count": 64,
+            "unresolved_generated_unsupported_count": 22,
+            "scope": "same heldout pairs whose reference is supported numeric arithmetic; failures stay in denominator; unsupported unresolved; references may be wrong; not official pass@1"
+          },
+          "parses_as_python_count": 1012,
+          "eos_emitted_count": 1010,
+          "token_cap_without_eos_count": 14,
+          "undefined_name_count": 60,
+          "generation_seconds_sum": 41.0609616200004,
+          "timing_scope": "sum of separately timed heldout groups, not a new single inference pass; loss/extra arithmetic excluded"
+        },
+        "100000": {
+          "examples": 1024,
+          "bpe_loss": 0.7757584174523194,
+          "reference_target_tokens_including_eos": 67962,
+          "reference_utf8_bytes": 232162,
+          "nll_sum_including_eos": 52722.09356689453,
+          "nll_per_utf8_byte": 0.2270918305618255,
+          "numeric_audit": {
+            "heldout_pairs_total": 1024,
+            "reference_numeric_pairs": 888,
+            "reference_unsupported_pairs": 136,
+            "questions_and_references_sha256": "962724938ba673e6b613f62965766e27155bb01b5cb2d72b96b7807c8a18f179",
+            "generated_statuses_on_fixed_reference_subset": {
+              "unsupported": 32,
+              "numeric": 802,
+              "arithmetic_error": 4,
+              "undefined_name": 42,
+              "syntax_error": 7,
+              "no_return": 1
+            },
+            "numeric_reference_agreements": 178,
+            "wrong_numeric_count": 624,
+            "definite_failure_count": 54,
+            "unresolved_generated_unsupported_count": 32,
+            "scope": "same heldout pairs whose reference is supported numeric arithmetic; failures stay in denominator; unsupported unresolved; references may be wrong; not official pass@1"
+          },
+          "parses_as_python_count": 1014,
+          "eos_emitted_count": 1013,
+          "token_cap_without_eos_count": 11,
+          "undefined_name_count": 49,
+          "generation_seconds_sum": 35.097250590999465,
+          "timing_scope": "sum of separately timed heldout groups, not a new single inference pass; loss/extra arithmetic excluded"
+        }
+      },
+      "rolling_validation16": [
+        {
+          "start_step_exclusive": 45000,
+          "end_step_inclusive": 50000,
+          "observations": 100,
+          "mean": 0.8333790826700763
+        },
+        {
+          "start_step_exclusive": 50000,
+          "end_step_inclusive": 55000,
+          "observations": 100,
+          "mean": 0.8177621738518952
+        },
+        {
+          "start_step_exclusive": 60000,
+          "end_step_inclusive": 65000,
+          "observations": 100,
+          "mean": 0.797623083644658
+        },
+        {
+          "start_step_exclusive": 70000,
+          "end_step_inclusive": 75000,
+          "observations": 100,
+          "mean": 0.7740267244845811
+        },
+        {
+          "start_step_exclusive": 80000,
+          "end_step_inclusive": 85000,
+          "observations": 100,
+          "mean": 0.7498427861892669
+        },
+        {
+          "start_step_exclusive": 90000,
+          "end_step_inclusive": 95000,
+          "observations": 100,
+          "mean": 0.7431367860991379
+        },
+        {
+          "start_step_exclusive": 95000,
+          "end_step_inclusive": 100000,
+          "observations": 100,
+          "mean": 0.7398175643085224
+        }
+      ]
+    }
+  },
+  "inference_work": {
+    "20": {
+      "total_decoder_steps": 11612,
+      "decoder_query_rows": 371502,
+      "self_attention_query_key_pairs_per_head_layer_proxy": 56374709,
+      "cap_batches": 10,
+      "summary": {
+        "split": "test1919",
+        "examples": 1919,
+        "bpe_loss": null,
+        "seconds": 51.74478179700054,
+        "answers_per_second": 37.085865151164626,
+        "generated_tokens_including_eos": 121748,
+        "generated_utf8_bytes": 409463,
+        "mean_tokens_including_eos": 63.443460135487236,
+        "mean_utf8_bytes": 213.37311099531007,
+        "max_new_tokens": 512,
+        "max_output_bytes": null,
+        "batch_size_inference": 32,
+        "peak_gpu_memory_mib": 399.69189453125,
+        "timer_scope": "same as08: encode, transfers, encoder/KV decode, CPU decoding and AST; excludes loss, warmup, data loading and extra arithmetic/repetition diagnostics",
+        "extra_diagnostics_seconds_excluded": 0.4519468970001981,
+        "unique_generated_code_count": 1913,
+        "most_common_generated_code_count": 3,
+        "most_common_generated_code_fraction": 0.001563314226159458,
+        "numeric_ast_scope": "restricted straight-line numeric AST; no exec/eval/calls/imports/conditions/loops/strings; unsupported not scored; reference may be wrong; not pass@1",
+        "numeric_ast_statuses": {
+          "numeric": 1785,
+          "undefined_name": 62,
+          "unsupported": 51,
+          "syntax_error": 14,
+          "arithmetic_error": 7
+        },
+        "numeric_ast_undefined_name_count": 62,
+        "repeated_tail_32_plus_count": 5,
+        "consecutive_lines_3_plus_count": 74,
+        "syntax_error_types": {
+          "SyntaxError": 14
+        },
+        "parses_as_python_count": 1905,
+        "defines_solve_count": 1905,
+        "solve_returns_value_count": 1899,
+        "indentation_error_count": 0,
+        "valid_utf8_count": 1919,
+        "eos_emitted_count": 1906,
+        "reached_token_cap_count": 13,
+        "token_cap_without_eos_count": 13,
+        "byte_budget_stop_count": 0,
+        "bpe_tokens_per_second": 2352.855607307968,
+        "output_bytes_per_second": 7913.12642125655,
+        "within_180_seconds": true
+      }
+    },
+    "21": {
+      "total_decoder_steps": 16351,
+      "decoder_query_rows": 523128,
+      "self_attention_query_key_pairs_per_head_layer_proxy": 104445068,
+      "cap_batches": 22,
+      "summary": {
+        "split": "test1919",
+        "examples": 1919,
+        "bpe_loss": null,
+        "seconds": 74.70151730199996,
+        "answers_per_second": 25.688902572647255,
+        "generated_tokens_including_eos": 130595,
+        "generated_utf8_bytes": 439080,
+        "mean_tokens_including_eos": 68.05367378843148,
+        "mean_utf8_bytes": 228.8066701406983,
+        "max_new_tokens": 512,
+        "max_output_bytes": null,
+        "batch_size_inference": 32,
+        "peak_gpu_memory_mib": 424.802734375,
+        "timer_scope": "same as08: encode, transfers, encoder/KV decode, CPU decoding and AST; excludes loss, warmup, data loading and extra arithmetic/repetition diagnostics",
+        "extra_diagnostics_seconds_excluded": 0.4577489390003393,
+        "unique_generated_code_count": 1912,
+        "most_common_generated_code_count": 3,
+        "most_common_generated_code_fraction": 0.001563314226159458,
+        "numeric_ast_scope": "restricted straight-line numeric AST; no exec/eval/calls/imports/conditions/loops/strings; unsupported not scored; reference may be wrong; not pass@1",
+        "numeric_ast_statuses": {
+          "numeric": 1712,
+          "undefined_name": 103,
+          "unsupported": 75,
+          "syntax_error": 24,
+          "arithmetic_error": 5
+        },
+        "numeric_ast_undefined_name_count": 103,
+        "repeated_tail_32_plus_count": 9,
+        "consecutive_lines_3_plus_count": 83,
+        "syntax_error_types": {
+          "SyntaxError": 22,
+          "IndentationError": 2
+        },
+        "parses_as_python_count": 1895,
+        "defines_solve_count": 1895,
+        "solve_returns_value_count": 1882,
+        "indentation_error_count": 2,
+        "valid_utf8_count": 1919,
+        "eos_emitted_count": 1891,
+        "reached_token_cap_count": 28,
+        "token_cap_without_eos_count": 28,
+        "byte_budget_stop_count": 0,
+        "bpe_tokens_per_second": 1748.2241956617343,
+        "output_bytes_per_second": 5877.792257216235,
+        "within_180_seconds": true
+      }
+    },
+    "relative21_vs20": {
+      "total_decoder_steps": 0.4081122976231484,
+      "decoder_query_rows": 0.40814315939079737,
+      "self_attention_query_key_pairs_per_head_layer_proxy": 0.8526936963878606
+    },
+    "scope": "Computed from saved output lengths and unchanged batch32 order/code; decoder still processes finished rows until slowest row. Work proxies, no new GPU profiling/timing. Encoder4 also adds compute."
+  },
+  "relative_metrics": {
+    "CE21_vs20_relative": 0.03576360499822884,
+    "train21_vs20_relative": 0.1929955941616086,
+    "test21_vs20_relative": 0.44365315125031857,
+    "CE21_50k_to100k_relative": -0.12195259765669086,
+    "headroom_to180_seconds": 105.29848269800004
+  },
+  "coverage": {
+    "unique_train_rows_seen": 399353,
+    "fraction_train_rows_seen": 0.798706,
+    "pair_presentations": 800000,
+    "useful_target_tokens": 52789363,
+    "target_slots_with_padding": 85115448,
+    "target_padding_fraction": 0.37979104568655975
+  },
+  "LR_after50k": 0.0001,
+  "hypothesis_for_next_experiment": "Restart saved21/75000 model+AdamW+RNG+coverage. Repeat same25k updates to100000 with cosineLR1e-4 to1e-5, no new warmup. Existing21/75k->100k constant1e-4 is the control, so no new constant branch is needed. Same data/batch/sampling/final100k budget, no architecture change. Notebook22 not created.",
+  "new_training_updates": 0,
+  "new_GPU_measurements": false,
+  "tail_80k_to100k": {
+    "windows_5k": [
+      {
+        "start_step_exclusive": 75000,
+        "end_step_inclusive": 80000,
+        "observations": 100,
+        "validation16_mean": 0.7561263090988686,
+        "validation16_sample_stddev_across_updates": 0.007021954122600504,
+        "training_batch_loss_mean": 0.8497336727380752,
+        "clip_fraction_gradient_norm_gt1": 0.08
+      },
+      {
+        "start_step_exclusive": 80000,
+        "end_step_inclusive": 85000,
+        "observations": 100,
+        "validation16_mean": 0.7498427861892669,
+        "validation16_sample_stddev_across_updates": 0.005990084766371232,
+        "training_batch_loss_mean": 0.8105670064687729,
+        "clip_fraction_gradient_norm_gt1": 0.02
+      },
+      {
+        "start_step_exclusive": 85000,
+        "end_step_inclusive": 90000,
+        "observations": 100,
+        "validation16_mean": 0.7475774174626411,
+        "validation16_sample_stddev_across_updates": 0.005063512860027001,
+        "training_batch_loss_mean": 0.8225292077660561,
+        "clip_fraction_gradient_norm_gt1": 0.09
+      },
+      {
+        "start_step_exclusive": 90000,
+        "end_step_inclusive": 95000,
+        "observations": 100,
+        "validation16_mean": 0.7431367860991379,
+        "validation16_sample_stddev_across_updates": 0.005570968926096007,
+        "training_batch_loss_mean": 0.8218882438540459,
+        "clip_fraction_gradient_norm_gt1": 0.09
+      },
+      {
+        "start_step_exclusive": 95000,
+        "end_step_inclusive": 100000,
+        "observations": 100,
+        "validation16_mean": 0.7398175643085224,
+        "validation16_sample_stddev_across_updates": 0.006142398089665819,
+        "training_batch_loss_mean": 0.7855933681130409,
+        "clip_fraction_gradient_norm_gt1": 0.1
+      }
+    ],
+    "fixed_validation_examples": 16,
+    "validation16_point80k": 0.7587485787351039,
+    "validation16_point100k": 0.7558808549180718,
+    "mean80_85k_to95_100k_relative": -0.01336976505661025,
+    "full1024_75k_to100k_relative": -0.05861986103189021,
+    "interpretation": "Clear slowing on fixed16 tail; averages still decrease. Point100k0.7559 exceeds tail mean0.7398. Full1024 only saved75k/100k, no80k full checkpoint. Noise comes from training updates, evaluation uses same16 examples in eval mode; not random validation resampling.",
+    "LR_constant": 0.0001,
+    "limits": "Window observations are correlated and no causal LR attribution can be inferred from curve alone."
+  }
+}

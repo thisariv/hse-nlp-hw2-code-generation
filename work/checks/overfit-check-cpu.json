@@ -1,0 +1,28 @@
+{
+  "sampled_train_normalized_protected_overlaps": 0,
+  "normalization": "lower + collapse whitespace",
+  "sample_rows": 4096,
+  "sample_unique_questions": 4095,
+  "complete": true,
+  "models": 6,
+  "evaluated_rows": 49152,
+  "metric_arrays": 12,
+  "sample_seed_reproduced": true,
+  "saved_arrays_finite_counts_and_aggregates": true,
+  "counts_equal_across_models": true,
+  "GPU_weights_SHA_and_token_counts_match": true,
+  "max_abs_CPU_minus_saved_GPU_CE": 1.3647356213897233e-05,
+  "arrays_sha256": "62b8849003f56341eed6f0ec4082c6be1e5a1d888acfbc14c617627270456f4b",
+  "results_sha256": "28d053c9572ca7d186f8710f18e0661e3b607b3b85ce8a36da1b53e236c9f6e6",
+  "script_sha256": "1776ab15700927e70d6232294e32a607629f927872a64b60909f7fa69b8625ef",
+  "batch_single": {
+    "rows": 3,
+    "max_abs_NLL_difference": 3.958819434046745e-06,
+    "token_counts_and_argmax_matches": true
+  },
+  "markdown_local_links_valid": true,
+  "AST_valid": true,
+  "additional_verification_model_forwards": 0,
+  "CPU_run_seconds": 1178.024967916077,
+  "execution_calls": 0
+}

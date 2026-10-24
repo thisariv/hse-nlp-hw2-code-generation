@@ -1,0 +1,39 @@
+{
+  "kernel": "friend1/nlp-hw02-b5",
+  "version_from_user": 6,
+  "endpoint": "CLI latest output, immutable local manifest equality required",
+  "manifest_sha256": "f662a966b5031a93bb46d25530a2710753a26f69e5262af80eca05ac6c6aa525",
+  "files": [
+    {
+      "file": "model-GPU0/points/b5-final-125641/cooldown-updates.jsonl",
+      "bytes": 1154132,
+      "sha256": "a74e82e880f3483c0d91161c3741f72ed55bdbc1327d5b6cc059e3ca24a9f54c"
+    },
+    {
+      "file": "model-GPU0/points/b5-probe-108002/cooldown-updates.jsonl",
+      "bytes": 346751,
+      "sha256": "75533eab5a6c46da23d6e27b5ca3590d9604c04719dde899f335d95ae56766c9"
+    },
+    {
+      "file": "model-GPU0/updates.jsonl",
+      "bytes": 16755957,
+      "sha256": "480928198800e176ea2b695e126b4970b45f143216577f2568be4b7fbf75eac1"
+    },
+    {
+      "file": "model-GPU1/points/b5-final-113690/cooldown-updates.jsonl",
+      "bytes": 2045050,
+      "sha256": "e8a41face1aff957ffb6bd2403323f1f1ad5e4e8090673317a91bbb9568d85e8"
+    },
+    {
+      "file": "model-GPU1/points/b5-probe-096050/cooldown-updates.jsonl",
+      "bytes": 613884,
+      "sha256": "e3092fe50d82d8e34ccf3a003dc1264708abd8d35b2355ac450a1529de83705b"
+    },
+    {
+      "file": "model-GPU1/updates.jsonl",
+      "bytes": 30368292,
+      "sha256": "b3e1088af59a6c96df6d873c9c84e34243a4070397611fb54f40f0f0535d4099"
+    }
+  ],
+  "credentials_contents_read": false
+}

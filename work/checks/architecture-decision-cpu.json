@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "measured_T4_shapes": 13,
+  "summary_sha256": "ddfa4b735f75964cf33e73a7f1357823dbb79d6ac3c3fe5dc91bdc19b0d195ec",
+  "saved_replay": true,
+  "journal_files": 384,
+  "one_model_gt8_unobserved": true,
+  "calibrated_C_slope_and_tune_scale": true,
+  "separate_greedy_sample_ratios": true,
+  "unchanged_fixed_execution_overhead": true,
+  "rounded_v7_baseline_exact": true,
+  "raw_and_calibrated_tokens": true,
+  "GPU": false,
+  "push": false,
+  "new_execution": false
+}

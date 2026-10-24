@@ -1,0 +1,62 @@
+{
+  "session_status": "partial",
+  "exit_codes": [
+    1,
+    0
+  ],
+  "wall_seconds": 600.3182302770001,
+  "small_files_SHA_verified": 117,
+  "workers": [
+    {
+      "gpu": 0,
+      "status": "complete",
+      "updates": 34353,
+      "cursor": 4397184,
+      "final_complete": true,
+      "AMP_skips": 6,
+      "nonfinite_skips": 0,
+      "last_lr": 0.001,
+      "micro_batch": 32,
+      "points": [
+        {
+          "tag": "b3-probe-027001",
+          "anchor_updates": 34154,
+          "complete": true
+        },
+        {
+          "tag": "b3-final-027156",
+          "anchor_updates": 34353,
+          "complete": true
+        }
+      ],
+      "smoke_passed": false
+    },
+    {
+      "gpu": 1,
+      "status": "complete",
+      "updates": 32699,
+      "cursor": 4185472,
+      "final_complete": true,
+      "AMP_skips": 4,
+      "nonfinite_skips": 0,
+      "last_lr": 0.0006,
+      "micro_batch": 32,
+      "points": [
+        {
+          "tag": "b3-probe-027001",
+          "anchor_updates": 32500,
+          "complete": true
+        },
+        {
+          "tag": "b3-final-027159",
+          "anchor_updates": 32699,
+          "complete": true
+        }
+      ],
+      "smoke_passed": true
+    }
+  ],
+  "full_PT_downloaded": false,
+  "quota_delta_after_v1_seconds": 639.203,
+  "note": "Old GPU0 assertion compared independent trajectories, not the anchor immediately around restore; v2 audits that invariant directly"
+}

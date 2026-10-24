@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-09",
+  "device": "CPU",
+  "torch": "2.14.1",
+  "training_updates": 0,
+  "checkpoint_sha256": "5e6a2740af730719bf3923bb2986309fa7835e0adb72978566e63711410c3bdb",
+  "scope": "new forward/permutation64, complete greedy3 on saved user weights; no optimizer steps or GPU measurements",
+  "validation64_loss": {
+    "correct": 0.7511558680000453,
+    "rotated": 2.334700772200772,
+    "reversed": 2.402479959730936
+  },
+  "rotated_minus_correct": 1.5835449042007266,
+  "teacher_forcing_correct_rotated_reproduces_saved_T4_within_1e-5": true,
+  "CPU_full_cached_greedy_equal": true,
+  "full_greedy_answer_matches_saved_T4": [
+    {
+      "validation_index": 14,
+      "tokens": 34,
+      "complete_answer_equal_saved_T4": true
+    },
+    {
+      "validation_index": 24,
+      "tokens": 96,
+      "complete_answer_equal_saved_T4": true
+    },
+    {
+      "validation_index": 20,
+      "tokens": 44,
+      "complete_answer_equal_saved_T4": true
+    }
+  ],
+  "model_weights_unchanged": true,
+  "limits": "Three full answers only, not1919 parity. Cases: correct20 coins, undefined name and wrong3-dozen cookies. Semantic labels from fixed manual audit. Not official functional evaluation; causes unresolved."
+}

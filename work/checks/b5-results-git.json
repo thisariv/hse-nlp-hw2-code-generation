@@ -1,0 +1,29 @@
+{
+  "message": "nlp: analyze B5 curves and ensembles; plan final B6 cooldown",
+  "paths": [
+    "courses/nlp/backlog.md",
+    "courses/nlp/index.md",
+    "courses/nlp/progress.md",
+    "dashboard.md",
+    "knowledge/bibliography.md",
+    "README.md",
+    "work/notes/final-inference.md",
+    "work/research/README.md",
+    "work/notes/b5-results.md",
+    "work/research/analyze-b5-results.py",
+    "work/research/b5-replay.cpp",
+    "work/results/b5-results.json",
+    "work/results/b5-ensemble-grid.csv",
+    "work/results/b5-learning-curve.png",
+    "work/results/b5-length-curves.png",
+    "work/checks/b5-results-cpu.json",
+    "work/checks/b5-results-download.json",
+    "work/checks/b5-results-git.json"
+  ],
+  "git_add_exit": 128,
+  "git_add_stderr": "fatal: Unable to create '<vault>/.git/worktrees/study1/index.lock': Operation not permitted",
+  "index_before_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "foreign_untracked_untouched": "work/checks/cleanup-2026-10-18.md",
+  "index_unchanged": true,
+  "git_commit_attempted": false
+}

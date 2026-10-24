@@ -1,0 +1,9 @@
+{
+  "at_utc": "2026-10-20T08:13:25.878679+00:00",
+  "version": 1,
+  "status": "COMPLETE",
+  "files": 98,
+  "binding": "explicit version label; exact code/version before and after",
+  "output": "results/kaggle-runs/nlp-hw02-e2-policy/1",
+  "notebook_sha256": "d3fc68c0c7aa942c359ec0c81233bf191aeaeafc9a046f1658d74dd1996d9656"
+}

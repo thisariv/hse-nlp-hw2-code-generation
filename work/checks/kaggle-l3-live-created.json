@@ -1,0 +1,8 @@
+{
+  "dataset": "friend1/nlp-hw02-l3-live",
+  "private": true,
+  "version": 1,
+  "status": "ready",
+  "created_before_training": true,
+  "training_started": false
+}

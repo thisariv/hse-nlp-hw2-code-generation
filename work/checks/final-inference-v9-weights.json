@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "models": {
+    "C-long2x-B5": {
+      "sha256": "32475040a951f74869663b740d0047ddfdc233309d55d5eb0dfb28c2068860c7",
+      "spec": {
+        "d_model": 512,
+        "heads": 8,
+        "encoder_layers": 6,
+        "decoder_layers": 6,
+        "swiglu_dim": 1368,
+        "vocab": 8195
+      },
+      "keys": 212,
+      "FP16_resident_bytes": 107292806,
+      "QK_norm_keys": 0,
+      "strict_load_exact": true,
+      "finite": true
+    },
+    "pilot-b": {
+      "sha256": "8439037720dda16dda6b73fe676860d5498bbcba4cacebc0d709bbb22db464a5",
+      "spec": {
+        "d_model": 512,
+        "heads": 8,
+        "encoder_layers": 6,
+        "decoder_layers": 6,
+        "swiglu_dim": 1368,
+        "vocab": 8195
+      },
+      "keys": 212,
+      "FP16_resident_bytes": 107292806,
+      "QK_norm_keys": 0,
+      "strict_load_exact": true,
+      "finite": true
+    },
+    "W-B5": {
+      "sha256": "30ff358be26dc3b0e9093fd73f3f56539ac00c33b8eaf00f9963c015ba14755a",
+      "spec": {
+        "d_model": 768,
+        "heads": 12,
+        "encoder_layers": 6,
+        "decoder_layers": 6,
+        "swiglu_dim": 2048,
+        "vocab": 8195,
+        "qk_norm": "layernorm"
+      },
+      "keys": 284,
+      "FP16_resident_bytes": 226852870,
+      "QK_norm_keys": 72,
+      "strict_load_exact": true,
+      "finite": true
+    }
+  },
+  "resident_bytes": 441438482,
+  "B5_version6_manifest_exact": true,
+  "P1_v8_payload_exact": true
+}

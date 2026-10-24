@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-09",
+  "source_code_and_markdown_match_prepared": true,
+  "cells": 25,
+  "code_cells": 13,
+  "execution_counts": [
+    1,
+    2,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "saved_outputs_errors": 0,
+  "rows_checked": 4671,
+  "checkpoint_inventory": [
+    {
+      "source_member": "step-75000.pt",
+      "local_file": "checkpoints/22-cosine-tail-from-75000-to-100000-steps-encoder4-decoder4-qwen-bpe-8k-swiglu-500k-pairs-step-75000.pt",
+      "bytes": 146271791,
+      "sha256": "44ed1391697381a07e55a2808fc5d066545dbaa0744d641585504c9a4b94d85b",
+      "steps": 75000,
+      "finite_model_and_AdamW": true,
+      "unique_train_rows_seen": 349535,
+      "same_sampling_RNG_and_coverage_as21": true,
+      "same_Torch_CPU_CUDA_RNG_as21": true
+    },
+    {
+      "source_member": "step-100000.pt",
+      "local_file": "checkpoints/22-cosine-tail-from-75000-to-100000-steps-encoder4-decoder4-qwen-bpe-8k-swiglu-500k-pairs-step-100000.pt",
+      "bytes": 146272376,
+      "sha256": "5d115cf06c55f8d6245b5244d4cd622e38480fd5ef7dfe8806ba8bbcd70d4833",
+      "steps": 100000,
+      "finite_model_and_AdamW": true,
+      "unique_train_rows_seen": 399353,
+      "same_sampling_RNG_and_coverage_as21": true,
+      "same_Torch_CPU_CUDA_RNG_as21": true
+    },
+    {
+      "source_member": "latest.pt",
+      "local_file": "checkpoints/22-cosine-tail-from-75000-to-100000-steps-encoder4-decoder4-qwen-bpe-8k-swiglu-500k-pairs-latest-step-100000.pt",
+      "bytes": 146269451,
+      "sha256": "13f8ae4ae2ee2c15fc9d034cf8773de420226e073550c9774adb1846f3e27b23",
+      "steps": 100000,
+      "finite_model_and_AdamW": true,
+      "unique_train_rows_seen": 399353,
+      "same_sampling_RNG_and_coverage_as21": true,
+      "same_Torch_CPU_CUDA_RNG_as21": true
+    }
+  ],
+  "CRC_manifest_SHA_all8_payloads": true,
+  "safe_weights_only_load": true,
+  "latest_equals100000_state": true,
+  "source75k_model_AdamW_scheduler_CPU_CUDA_Python_RNG_coverage_exact": true,
+  "same_final_sampling_CPU_CUDA_Python_RNG_coverage_as21": true,
+  "history21_and_secondary18_19_20_unchanged": true,
+  "manual74_labels_and_audit_source_sha_verified": true,
+  "same_train_model_tokenizer_batch_precision_except_future_LR": true,
+  "weighted_byte_NLL_reference_proxy_and_manual_scores_recomputed": true,
+  "all_saved_row_tokens_code_AST_repetition_aggregates_verified": true,
+  "test1919_data_order_verified": true,
+  "saved_75k_baseline_exact1024_token_ID_parity": true,
+  "fresh1024_reserved_unchanged_not_scored": true,
+  "LR_counters_endpoints_logs_timer_scope_verified": true,
+  "new_training_updates": 0,
+  "new_GPU_measurements": false,
+  "limits": [
+    "Received execution counts1,2,5..15 preserved; gaps not proof of one uninterrupted execution. Completion verified separately in saved state/logs.",
+    "One seed and two separate T4 sessions; timing comparison not a paired kernel benchmark. Reference888 is not official correctness.74 manual cases are small/adaptive."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "at_utc": "2026-10-19T12:46:34.567885+00:00",
+  "source": "thisarivson/nlp-hw02-26b-inputs",
+  "account": "friend2",
+  "local_analysis_inputs_only": true,
+  "reason": "Frozen prepare_inputs returns direct mount paths without copying JSONs into output",
+  "runtime_and_v8_sha256_equal": true,
+  "sha256": {
+    "tokenizer.json": "261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d",
+    "test.json": "20cacb334e3fc81291433d2173d9085b17a15e1834bd84aea67b350403182503",
+    "heldout4k.json": "28a3c0c9088c5b4a17d75d216e4abc4262cc9ca62884966c43e7ec09b6f040c2",
+    "heldout4k-reference-execution.json": "3855680e9a37292aa2e351b8e8e4f7a5cbbe76444096d136470e4a9be8797111"
+  },
+  "experiment_code_changed": false,
+  "raw_summary_sha256": "b3288a9dc2d5c9739db25333ff5eca13a054b35a9cda996c314819dd6a849fce"
+}

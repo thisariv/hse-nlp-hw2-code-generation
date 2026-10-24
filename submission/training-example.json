@@ -1,0 +1,27 @@
+{
+  "cache": "compact-cache",
+  "order": null,
+  "output": "training-output",
+  "device": "cuda",
+  "model_spec": {
+    "d_model": 512,
+    "heads": 8,
+    "encoder_layers": 6,
+    "decoder_layers": 6,
+    "swiglu_dim": 1368,
+    "vocab": 8195
+  },
+  "seed": 42,
+  "dropout": 0.0,
+  "batch": 128,
+  "micro_batch": 64,
+  "peak_lr": 0.0015,
+  "warmup_updates": 1000,
+  "main_updates": 100000,
+  "cooldown_updates": 10000,
+  "cooldown": "linear",
+  "main_truncation": 0.0,
+  "cooldown_truncation": 0.0,
+  "checkpoint_every": 1000,
+  "resume": null
+}

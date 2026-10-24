@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "nbformat": true,
+  "frozen_v8_modules": 20,
+  "notebook_sha256": "7326f671384e8e616b15b6590e2b186328412a023c03116c871f3d9e7a942c9b",
+  "config": {
+    "models": [
+      {
+        "name": "C-long2x",
+        "filename": "model-C-long2x__weights__l2-62280-fp16.pt",
+        "sha256": "d10bf0018d0b14fd6cc3c8b9c7121f127b5cec97057544fd63e5824253a55057",
+        "dataset": "thisarivson/nlp-hw02-l3-live",
+        "K1": 1,
+        "K2": 1
+      },
+      {
+        "name": "pilot-b",
+        "filename": "model-pilot-b__weights__long-truncation-fp16.pt",
+        "sha256": "8439037720dda16dda6b73fe676860d5498bbcba4cacebc0d709bbb22db464a5",
+        "dataset": "thisarivson/nlp-hw02-p1-weights",
+        "K1": 1,
+        "K2": 8
+      },
+      {
+        "name": "W600",
+        "filename": "b4-final-091801-fp16.pt",
+        "relative_path": "model-GPU0/weights/b4-final-091801-fp16.pt",
+        "sha256": "777b21996352df7c489af4efc17f6b8922ff6e005775f0f601d12143c8c1496c",
+        "dataset": "thisarivson/nlp-hw02-b4",
+        "source_kind": "notebooks",
+        "K1": 1,
+        "K2": 1
+      }
+    ],
+    "K": 8,
+    "batch": 64,
+    "rules": [
+      "dollar-words",
+      "ungroup",
+      "price-trim"
+    ],
+    "seed": 270042,
+    "output": "/kaggle/working/tta"
+  }
+}

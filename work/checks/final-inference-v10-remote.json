@@ -1,0 +1,17 @@
+{
+  "checked_at_utc": "2026-10-19T15:36:04.239403+00:00",
+  "ref": "friend1/nlp-hw02-ensemble-inference-v10",
+  "version": 2,
+  "private": true,
+  "machine_shape": "NvidiaTeslaT4",
+  "current_version": 2,
+  "all_code_cells_exact": true,
+  "last_run_time_utc": "2026-10-16 15:36:00.437000",
+  "dataset_sources": [
+    "thisarivson/nlp-hw02-26b-inputs"
+  ],
+  "kernel_sources": [
+    "friend1/nlp-hw02-kaggle-p1",
+    "friend1/nlp-hw02-b6"
+  ]
+}

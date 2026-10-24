@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "all_input_hashes_verified": 423,
+  "CSV_rows": 86310,
+  "eligible_rows": 15486,
+  "source_digest_current": true,
+  "grid_gzip_digest_verified": true,
+  "v8_cost_exact": 6.14944670184774,
+  "grouped_folds_no_question_overlap": true,
+  "fold_normalized_question_counts": [
+    [
+      1024,
+      1024
+    ],
+    [
+      1024,
+      1024
+    ],
+    [
+      1024,
+      1024
+    ],
+    [
+      1024,
+      1024
+    ],
+    [
+      1024,
+      1024
+    ],
+    [
+      1024,
+      1024
+    ],
+    [
+      1024,
+      1024
+    ],
+    [
+      1024,
+      1024
+    ],
+    [
+      1024,
+      1024
+    ],
+    [
+      1024,
+      1024
+    ]
+  ],
+  "primary_OOF": 1533,
+  "note_sources_and_local_links_exist": true
+}

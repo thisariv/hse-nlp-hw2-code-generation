@@ -1,0 +1,86 @@
+{
+  "new_training_updates": 0,
+  "new_GPU_runs": 0,
+  "runtime": {
+    "torch": "2.14.1",
+    "platform": "darwin"
+  },
+  "full_checkpoints": [
+    {
+      "file": "gpu0-a26/checkpoints/complete-058750-a57762e322.pt",
+      "sha256": "13e45e3d1999ce617ffc14b71a932e41cd039aa379082a45c9882be51ea689e8",
+      "tensor_sha256": "f570b1fac50df92e1ca7b71f03eb90ec6159146a5575aaed82341cec046d5b5a",
+      "optimizer_steps": [
+        49991
+      ],
+      "trajectory_AMP_skips": 9,
+      "all_compute_AMP_skips": 10,
+      "scaler": {
+        "scale": 8388608.0,
+        "growth_factor": 2.0,
+        "backoff_factor": 0.5,
+        "growth_interval": 2000,
+        "_growth_tracker": 1630
+      },
+      "execution_runtime": {
+        "torch": "2.11.0+cu128",
+        "CUDA": "12.8"
+      },
+      "history_train_seconds": 7312.883812298975
+    },
+    {
+      "file": "gpu0-a26/checkpoints/final-evaluation-pending-058750-a505ae23ec.pt",
+      "sha256": "bc3fcff41aae3c22b1e508b38cf721542f1c6790869180950480b8077f8cf7b6",
+      "tensor_sha256": "f570b1fac50df92e1ca7b71f03eb90ec6159146a5575aaed82341cec046d5b5a",
+      "optimizer_steps": [
+        49991
+      ],
+      "trajectory_AMP_skips": 9,
+      "all_compute_AMP_skips": 10,
+      "scaler": {
+        "scale": 8388608.0,
+        "growth_factor": 2.0,
+        "backoff_factor": 0.5,
+        "growth_interval": 2000,
+        "_growth_tracker": 1630
+      },
+      "execution_runtime": {
+        "torch": "2.11.0+cu128",
+        "CUDA": "12.8"
+      },
+      "history_train_seconds": 7312.883812298975
+    }
+  ],
+  "CPU_CE64": {
+    "CE": 0.2910069513427917,
+    "useful_target_tokens": 4011,
+    "rows": 64,
+    "precision": "FP32",
+    "batch": 32,
+    "seconds": 2.3084020419046283
+  },
+  "full_CPU_CE": {
+    "heldout4k": {
+      "CE": 0.3149203963180559,
+      "useful_target_tokens": 269613,
+      "rows": 4096,
+      "precision": "FP32",
+      "batch": 32,
+      "seconds": 64.115032290807,
+      "saved_GPU_CE": 0.3149237286406813,
+      "absolute_difference": 3.3323226253934024e-06
+    },
+    "old1024": {
+      "CE": 0.3310143674038433,
+      "useful_target_tokens": 67962,
+      "rows": 1024,
+      "precision": "FP32",
+      "batch": 32,
+      "seconds": 16.633829792030156,
+      "saved_GPU_CE": 0.33101758611429916,
+      "absolute_difference": 3.21871045583233e-06
+    }
+  },
+  "wall_seconds": 83.37019666703418,
+  "status": "passed"
+}

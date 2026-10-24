@@ -1,0 +1,14 @@
+[
+  {
+    "checked_at_utc": "2026-10-20T08:21:24.469207+00:00",
+    "ref": "friend1/nlp-hw02-b7",
+    "version": 1,
+    "status": "RUNNING",
+    "private": true,
+    "machine_shape": "NvidiaTeslaT4",
+    "exact_server_code": true,
+    "output_first_page_files": 0,
+    "has_output": false,
+    "has_log": false
+  }
+]

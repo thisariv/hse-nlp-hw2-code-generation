@@ -1,0 +1,37 @@
+--- a/courses/nlp/index.md
++++ b/courses/nlp/index.md
+@@ -1,0 +2,2 @@
++
++ДЗ2: [[work/notes/overfit-check|CPU-проверка переобучения]]: шесть FP16→CPU FP32 моделей, train4096/heldout4k; gap0,047–0,054. R1 ухудшила обе CE: позднее переобучение как причина плато не доказано. Для новой модели — отдельная абляция dropout0,05, wd0,01 сохранить. Exec/GPU/обучение0, проход19,63мин.
+--- a/courses/nlp/progress.md
++++ b/courses/nlp/progress.md
+@@ -1,0 +2,2 @@
++
++2026-10-15 — ДЗ2: [[work/notes/overfit-check|CPU-проверка переобучения]]: шесть FP16→CPU FP32 моделей, train4096/heldout4k; gap0,047–0,054. R1 ухудшила обе CE: позднее переобучение как причина плато не доказано. Для новой модели — отдельная абляция dropout0,05, wd0,01 сохранить. Exec/GPU/обучение0, проход19,63мин. Следующий шаг — одинаковый50-минутный cooldown R1, затем фиксированная unfiltered train/heldout CE; L2 train не измерена: FP16 недоступен.
+--- a/dashboard.md
++++ b/dashboard.md
+@@ -1,0 +2,2 @@
++
++NLP ДЗ2: [[work/notes/overfit-check|CPU-проверка переобучения]]: шесть FP16→CPU FP32 моделей, train4096/heldout4k; gap0,047–0,054. R1 ухудшила обе CE: позднее переобучение как причина плато не доказано. Для новой модели — отдельная абляция dropout0,05, wd0,01 сохранить. Exec/GPU/обучение0, проход19,63мин.
+--- a/README.md
++++ b/README.md
+@@ -1,0 +2,2 @@
++
++[CPU-проверка переобучения](work/notes/overfit-check.md): train/heldout gap0,047–0,054; P1-A улучшает обе CE, R1 ухудшает обе. Сценарий train↓/heldout↔ не подтверждён. Dropout0,05 — отдельная проверка для новой большой модели, wd0,01 сохранить; шесть моделей за19,63мин CPU, exec0.
+--- a/work/research/README.md
++++ b/work/research/README.md
+@@ -1,0 +2,2 @@
++
++[CPU-проверка переобучения](../notes/overfit-check.md), [JSON](../results/overfit-check.json), [NLL/count/correct](../results/overfit-check-rows.npz). `check-overfit.py` считает FP32 train4096/heldout4k CE и teacher-forcing token accuracy по model_spec; seed2026101503, protected SHA всех9,73M строк, парные CI. Torch/NumPy/tokenizers, без exec/GPU/обучения; `--summarize-only` пересчитывает интервалы без forwards.
+--- a/courses/nlp/backlog.md
++++ b/courses/nlp/backlog.md
+@@ -3,0 +4,2 @@
++
++- [ ] ДЗ2: при отдельном GPU-бюджете сравнить dropout0 против0,05 на новой большой модели при прежнем wd0,01 и одинаковых предъявлениях/LR/cooldown; измерять unfiltered train/heldout CE и скорость. [[work/notes/overfit-check|CPU-диагностика]] не подтвердила сценарий train↓/heldout↔. Сначала уравнять cooldown R1; здесь новые GPU-абляции не запускались.
+--- a/knowledge/bibliography.md
++++ b/knowledge/bibliography.md
+@@ -1,0 +2,4 @@
++
++- <a id="nlp-hw02-overfit-check"></a> **nlp-hw02-overfit-check**. Собственная CPU FP32 диагностика15.10.2026: [[work/notes/overfit-check|train4096 против heldout4k]], [код](../work/research/check-overfit.py), [CE/accuracy/IDs/SHA](../work/results/overfit-check.json), [метрики по строкам](../work/results/overfit-check-rows.npz). FP16 checkpoints загружаются по model_spec; 0 точных protected/heldout-question overlaps во всём compact-кеше. Интерпретация разрыва и рекомендации регуляризации — собственные выводы; exec/обучение/GPU не запускались.
++
++- Srivastava N. et al. «Dropout: A Simple Way to Prevent Neural Networks from Overfitting». JMLR15(56),2014,1929–1958. [JMLR](https://jmlr.org/papers/v15/srivastava14a.html). [[work/notes/overfit-check|Регуляризация ДЗ2]]; конкретный dropout0,05–0,1 — кандидат для локального сравнения, а не результат статьи на этих данных. См. также Vaswani2017 и Loshchilov–Hutter2019 ниже.

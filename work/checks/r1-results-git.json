@@ -1,0 +1,33 @@
+{
+  "status": "blocked_by_filesystem_sandbox",
+  "command": "git add -- explicit R1 paths",
+  "exit_code": 128,
+  "stderr": "fatal: Unable to create '<vault>/.git/worktrees/study1/index.lock': Operation not permitted",
+  "commit_created": false,
+  "paths": [
+    "courses/nlp/backlog.md",
+    "README.md",
+    "work/notes/r1-plan.md",
+    "work/notes/r1-review.md",
+    "work/notes/r1-results.md",
+    "work/research/README.md",
+    "work/research/analyze-r1-results.py",
+    "work/results/r1-results.json",
+    "work/results/r1-train-ce.png",
+    "work/checks/r1-results-cpu.py",
+    "work/checks/r1-results-cpu.json",
+    "work/checks/r1-results-git.json",
+    "courses/nlp/index.md",
+    "courses/nlp/progress.md",
+    "dashboard.md",
+    "knowledge/bibliography.md"
+  ],
+  "message": "nlp: analyze R1 encoder growth and ensemble results",
+  "validation": [
+    "185 available manifest entries match bytes/SHA; executed notebook missing",
+    "30522 greedy rows aligned; 384 K8 journals/98304 samples replayed",
+    "v7 frozen reproduced1535/2048; paired arithmetic/vote vectors checked",
+    "real full stable/FP16 finite with valid optimizer second moments",
+    "AST/strict JSON/source SHA/direct note links/diff whitespace passed; CE plot visually inspected"
+  ]
+}

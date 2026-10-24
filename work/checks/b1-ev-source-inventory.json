@@ -1,0 +1,898 @@
+{
+  "source": "friend2/nlp-hw02-kaggle-b1/1",
+  "files": [
+    {
+      "file": "b1-output-manifest.json",
+      "bytes": null
+    },
+    {
+      "file": "gpu0-failure.json",
+      "bytes": 83,
+      "sha256": "a3e7e745e87a8d070ae2673b844d1aae5b63d673ffc901ee9fb79372f93a3780"
+    },
+    {
+      "file": "gpu0-process.log",
+      "bytes": 27513,
+      "sha256": "b5dd7b4edbac53d491b984eb6eeaf2a9b3a1decba39b6af359871a31b8e11136"
+    },
+    {
+      "file": "gpu1-failure.json",
+      "bytes": 56,
+      "sha256": "c32fdac694e48911e70a5d05001c7f8ed6ae1c73a038566102393ff8a7983a50"
+    },
+    {
+      "file": "gpu1-process.log",
+      "bytes": 28332,
+      "sha256": "4108daf8b0bb1f5374c83904a9231f2dac01b597045e0d6912cc956ba710c21c"
+    },
+    {
+      "file": "input-preflight.json",
+      "bytes": 340,
+      "sha256": "8611eb67733e56fb4dcef763a91d24d8ff87d88f4753eea475f0d9642f647114"
+    },
+    {
+      "file": "model-GPU0/checkpoints/main-33e1c16da2fa.pt",
+      "bytes": 1304613059,
+      "sha256": "a75f9ecc13114cbb2cbdcfebaa571f64dfba33659adee8e9b1b100bcf40d6dc3"
+    },
+    {
+      "file": "model-GPU0/checkpoints/main-63bf1a6d8aa7.pt",
+      "bytes": 1304613251,
+      "sha256": "83b17a2a7c187c618178a5a7d2ac3c6122c9bdc846ec5e0243912f808f4c1649"
+    },
+    {
+      "file": "model-GPU0/identity.json",
+      "bytes": 1871,
+      "sha256": "b4c19af873aba5b4df76f3b29e7e8b38c1b6c0126d9f0963ed300233c26ac37f"
+    },
+    {
+      "file": "model-GPU0/latest.json",
+      "bytes": 2395,
+      "sha256": "4e618bad07b6cfc7fa80516fe952d5d2cb54d93d9e0469b9461a7499a845c98f"
+    },
+    {
+      "file": "model-GPU0/memory-probe.json",
+      "bytes": 298,
+      "sha256": "81c7e5c19a77fd679fbf81d0f804b1eef6b4fa159a5daedb728a1a2396ff67de"
+    },
+    {
+      "file": "model-GPU0/points/end-main-034200/checkpoint.json",
+      "bytes": 200,
+      "sha256": "fbd791970569654fd29a03f7720eaf23dee9d0c60314427fce949e347eb81065"
+    },
+    {
+      "file": "model-GPU0/points/end-main-034200/evaluation/heldout4k-execution.json",
+      "bytes": 227520,
+      "sha256": "91d7c3a8a3b4f385867a299847e6b606131200803343f53f1bfbf04a7871ff79"
+    },
+    {
+      "file": "model-GPU0/points/end-main-034200/evaluation/heldout4k-generations.json",
+      "bytes": 3732661,
+      "sha256": "0bf7d5c6b5e4295c51e3ec177b0727c81c82ae526f0a1c962d7e6efc521fef07"
+    },
+    {
+      "file": "model-GPU0/points/end-main-034200/incomplete.json",
+      "bytes": 3084,
+      "sha256": "a690369d02808131df31f25bef873404b9ed105b57af046b386fe039680869de"
+    },
+    {
+      "file": "model-GPU0/points/end-main-034200/training.json",
+      "bytes": 2857,
+      "sha256": "27e371bacd592044a5cebd194fd9d58efd3907a37730abbc29904b673acf5ea3"
+    },
+    {
+      "file": "model-GPU0/points/probe-009000/checkpoint.json",
+      "bytes": 197,
+      "sha256": "692f4bfd9913ad511b6f2ac07ccc891938cf5cdbaf690cbc81d569693504bb68"
+    },
+    {
+      "file": "model-GPU0/points/probe-009000/complete.json",
+      "bytes": 139636,
+      "sha256": "a360b638f261ebdb11e30a915b735ba396f9e76cf4a49f7b5c10bdb4b61ad70f"
+    },
+    {
+      "file": "model-GPU0/points/probe-009000/evaluation/heldout4k-execution.json",
+      "bytes": 254262,
+      "sha256": "d2bb23da1f18c6ad444d0d705eef282a36d1a55325c5731b70b20c63c3c0b59d"
+    },
+    {
+      "file": "model-GPU0/points/probe-009000/evaluation/heldout4k-generations.json",
+      "bytes": 5237413,
+      "sha256": "c01b76fdb5950db34d27fa30257caca59ada79b6bf83ed19fa04536a16d1df20"
+    },
+    {
+      "file": "model-GPU0/points/probe-009000/evaluation/heldout4k-per-example.json",
+      "bytes": 2249044,
+      "sha256": "12bc646ad2ec59aede26e374ab0936553635a02963b0b6538031f7a9557cbe58"
+    },
+    {
+      "file": "model-GPU0/points/probe-009000/evaluation/metrics.json",
+      "bytes": 121079,
+      "sha256": "86cb5be33a27a7ae229c64e33de25232fe6530f53ad9c641791e77e05d5ecde7"
+    },
+    {
+      "file": "model-GPU0/points/probe-009000/evaluation/old991-execution.json",
+      "bytes": 61937,
+      "sha256": "0ea71848c5618b41899046eff6427270c1e0463ca82d0c5bcb15f928d6b422bd"
+    },
+    {
+      "file": "model-GPU0/points/probe-009000/evaluation/old991-generations.json",
+      "bytes": 1252836,
+      "sha256": "38134ee0474dce31cf496249fa8ef3189dc81797afe180ec3c950a2abef73796"
+    },
+    {
+      "file": "model-GPU0/points/probe-009000/evaluation/old991-per-example.json",
+      "bytes": 542502,
+      "sha256": "59df3e4a90bde9789e76792c6ee993ed4f2363e8799204444fc1b2d012837e22"
+    },
+    {
+      "file": "model-GPU0/points/probe-009000/evaluation/partial-metrics.json",
+      "bytes": 121079,
+      "sha256": "86cb5be33a27a7ae229c64e33de25232fe6530f53ad9c641791e77e05d5ecde7"
+    },
+    {
+      "file": "model-GPU0/points/probe-009000/training.json",
+      "bytes": 2853,
+      "sha256": "98ec0cc753b120c500794f39a1f7284c2a2f89aff18044f31299aadf3599c002"
+    },
+    {
+      "file": "model-GPU0/points/probe-028370/checkpoint.json",
+      "bytes": 197,
+      "sha256": "8e9762e0c4136c06e41512fccfbff5f1706c67bfafee7aa2e583996b92d47132"
+    },
+    {
+      "file": "model-GPU0/points/probe-028370/evaluation/heldout4k-execution.json",
+      "bytes": 229265,
+      "sha256": "84324de6e700313cc3d1e76c27034a8b6f19c5c508a81c6b772ab2536c0d5b8f"
+    },
+    {
+      "file": "model-GPU0/points/probe-028370/evaluation/heldout4k-generations.json",
+      "bytes": 3885543,
+      "sha256": "ea427ef6ba9e523fe4b5e4f855794edc74f7606da59754e622407959eb8236a8"
+    },
+    {
+      "file": "model-GPU0/points/probe-028370/incomplete.json",
+      "bytes": 3085,
+      "sha256": "fabdcb9bed75a33e3757dacb158cc8b6c8a70f5b629b0fe7e0929de08662e152"
+    },
+    {
+      "file": "model-GPU0/points/probe-028370/training.json",
+      "bytes": 2858,
+      "sha256": "2e6f3a6490b7a10069178845f979fc9aaea214311104da2b725014d2dc6dbedf"
+    },
+    {
+      "file": "model-GPU0/progress.json",
+      "bytes": 192433,
+      "sha256": "216662aef7cac41b4f5fe52be8a723ba968d4c2b779681e8cd6dba959a3f91be"
+    },
+    {
+      "file": "model-GPU0/stability-history.json",
+      "bytes": 612,
+      "sha256": "94208429718bbb9e9c56ed023449773e21b3ba4a591204c64469872a9645924d"
+    },
+    {
+      "file": "model-GPU0/summary.json",
+      "bytes": 198178,
+      "sha256": "ce353ff4151611659a0cd4309a82ffe273685a3438c18ed2578ac2197cf77645"
+    },
+    {
+      "file": "model-GPU0/weights/end-main-034200-fp16.pt",
+      "bytes": 217457829,
+      "sha256": "f9d2c1608d23a2279494ed19d84b831151424b2aaa44297cb94b1bccb7551228"
+    },
+    {
+      "file": "model-GPU0/weights/probe-009000-fp16.pt",
+      "bytes": 217457211,
+      "sha256": "cfccdcfa2cbb28a205df7fea24bce6fdfcb2a098d84c278cd3fcd9838fc3a2a9"
+    },
+    {
+      "file": "model-GPU0/weights/probe-028370-fp16.pt",
+      "bytes": 217457211,
+      "sha256": "41769c7d394146018d43498cc30d80734e0d76880e758590f520fd5215b66e05"
+    },
+    {
+      "file": "model-GPU1/checkpoints/main-5c5fee482c41.pt",
+      "bytes": 1361386323,
+      "sha256": "1f4ddbaf957325e4f1fbc358d9fad81549d77a4101fdf4a6fbbf360cae4cdf04"
+    },
+    {
+      "file": "model-GPU1/checkpoints/main-7bb6a1232f35.pt",
+      "bytes": 1361386515,
+      "sha256": "988305015bde3ed62e92a1eacf1fcd24c6c90508ee853bfec800f97a2fc454d5"
+    },
+    {
+      "file": "model-GPU1/identity.json",
+      "bytes": 1871,
+      "sha256": "1bb76e2c23993e18c096ea35e2f79b5518c4a371ee8ac3988c66925024fac18b"
+    },
+    {
+      "file": "model-GPU1/latest.json",
+      "bytes": 2394,
+      "sha256": "32b701e669ebee692c969410c18b7c7fc94d803b837695e1ce9c08fb0d460ae0"
+    },
+    {
+      "file": "model-GPU1/memory-probe.json",
+      "bytes": 296,
+      "sha256": "36d6532cbdfbd804cd68cc2238603435c11aecb33e5e74f7542fdf01f52b19f3"
+    },
+    {
+      "file": "model-GPU1/points/end-main-034200/checkpoint.json",
+      "bytes": 200,
+      "sha256": "3d13eab4fc7e680503dbb66a9274237d8385eec6b5c060eeedb47ad452165cc4"
+    },
+    {
+      "file": "model-GPU1/points/end-main-034200/complete.json",
+      "bytes": 149707,
+      "sha256": "f5d5172244890ab1ec84e21bfbd1e3dc48377d85def17e370d166e7d90aa74e4"
+    },
+    {
+      "file": "model-GPU1/points/end-main-034200/evaluation/heldout4k-execution.json",
+      "bytes": 253752,
+      "sha256": "2ca70026e2bc119c9033e942f5a91dba143d992190dfdc91b87f380d762c573d"
+    },
+    {
+      "file": "model-GPU1/points/end-main-034200/evaluation/heldout4k-generations.json",
+      "bytes": 5305946,
+      "sha256": "9239d39d09643eeb128c9bf6a442506886d57b96b276bf25f73eba01b75a59d2"
+    },
+    {
+      "file": "model-GPU1/points/end-main-034200/evaluation/heldout4k-per-example.json",
+      "bytes": 2259959,
+      "sha256": "af8ff2790724df7e3d10c0b0bbbe2549b4dc822dc8e0dcdd2ecf910f00b914e8"
+    },
+    {
+      "file": "model-GPU1/points/end-main-034200/evaluation/metrics.json",
+      "bytes": 130001,
+      "sha256": "b43e3d637682004e872ebee274ae6d02ddcc9fc671bf78712d48e79d959c13a1"
+    },
+    {
+      "file": "model-GPU1/points/end-main-034200/evaluation/old991-execution.json",
+      "bytes": 61855,
+      "sha256": "b52856b227e186daa3fc97e036cc01095f3fa4edad762ecdc6f2fcecd54fab09"
+    },
+    {
+      "file": "model-GPU1/points/end-main-034200/evaluation/old991-generations.json",
+      "bytes": 1271226,
+      "sha256": "9c6a9a9e2363eb23c21fdc1f0393a137b0bc6bfb993e36939f19d4dfe00a5c53"
+    },
+    {
+      "file": "model-GPU1/points/end-main-034200/evaluation/old991-per-example.json",
+      "bytes": 545697,
+      "sha256": "89ccffa33aaa5b43aa758301d78e72cbd2476e7194a7a4ed0471d4a4dcfa525b"
+    },
+    {
+      "file": "model-GPU1/points/end-main-034200/evaluation/partial-metrics.json",
+      "bytes": 130001,
+      "sha256": "b43e3d637682004e872ebee274ae6d02ddcc9fc671bf78712d48e79d959c13a1"
+    },
+    {
+      "file": "model-GPU1/points/end-main-034200/training.json",
+      "bytes": 2854,
+      "sha256": "7aaa66736f9d61f45e7d31fe7d4ce3dbe2dd3f13e86dfc06d23d7d3c665995d3"
+    },
+    {
+      "file": "model-GPU1/points/probe-009000/checkpoint.json",
+      "bytes": 197,
+      "sha256": "460802ba98155f1a1935630af7dd2cc490a85e692ad4b2a475e79d903e281d64"
+    },
+    {
+      "file": "model-GPU1/points/probe-009000/complete.json",
+      "bytes": 139885,
+      "sha256": "2d260929e9e91ec5cc36a5fbc81f8a4c232f253c64662dd75cb6de3814bff086"
+    },
+    {
+      "file": "model-GPU1/points/probe-009000/evaluation/heldout4k-execution.json",
+      "bytes": 254490,
+      "sha256": "2c20c1e7920f72f9a39d390bcaa0eee7c13fe86bd45ddec92928d46d4055af60"
+    },
+    {
+      "file": "model-GPU1/points/probe-009000/evaluation/heldout4k-generations.json",
+      "bytes": 5267211,
+      "sha256": "39cc0da8d0d61dcc93b555001f3dad4a7319ba5492f313858f00e8d687c22a41"
+    },
+    {
+      "file": "model-GPU1/points/probe-009000/evaluation/heldout4k-per-example.json",
+      "bytes": 2254709,
+      "sha256": "d3657d0a3d110cda345caef53e6d68c93f3175c3404f158d7fbcaa953b4e1c70"
+    },
+    {
+      "file": "model-GPU1/points/probe-009000/evaluation/metrics.json",
+      "bytes": 121300,
+      "sha256": "7901ea0e41bf420050b4160110a04c244973bc1b67044a8f67a932149e094f78"
+    },
+    {
+      "file": "model-GPU1/points/probe-009000/evaluation/old991-execution.json",
+      "bytes": 61826,
+      "sha256": "c27c81a9cca0de6004dd2094bb05ca578f4849d4f41c3f0f8d01a99a9129e3de"
+    },
+    {
+      "file": "model-GPU1/points/probe-009000/evaluation/old991-generations.json",
+      "bytes": 1253470,
+      "sha256": "9e830e6232b7082b89ea6a342ff8773b72141f854820cf6a9dc55b7c078af0b2"
+    },
+    {
+      "file": "model-GPU1/points/probe-009000/evaluation/old991-per-example.json",
+      "bytes": 541834,
+      "sha256": "9e5ecaa8e4764dad907a2b599c2fd5667ccc6cbfd1b04cba2b4d1847524411b3"
+    },
+    {
+      "file": "model-GPU1/points/probe-009000/evaluation/partial-metrics.json",
+      "bytes": 121300,
+      "sha256": "7901ea0e41bf420050b4160110a04c244973bc1b67044a8f67a932149e094f78"
+    },
+    {
+      "file": "model-GPU1/points/probe-009000/training.json",
+      "bytes": 2855,
+      "sha256": "bd298c80017bb4bea35e60ef7d925aca55f6359820128189ee9d94918d27ae90"
+    },
+    {
+      "file": "model-GPU1/points/probe-028370/checkpoint.json",
+      "bytes": 197,
+      "sha256": "d502a861f98180d1809e5dfff22b63d67cdbbbaadc53e6128438c940061b266a"
+    },
+    {
+      "file": "model-GPU1/points/probe-028370/evaluation/heldout4k-execution.json",
+      "bytes": 253983,
+      "sha256": "c2fd077667d1155676e54f2161459abadea9facac17f41ff78e1df729d85009a"
+    },
+    {
+      "file": "model-GPU1/points/probe-028370/evaluation/heldout4k-generations.json",
+      "bytes": 5310442,
+      "sha256": "0c5e29c6e1081a88f386abceae5e3ceee3b8b8cb4e3e9f9062a9c8f98a760707"
+    },
+    {
+      "file": "model-GPU1/points/probe-028370/incomplete.json",
+      "bytes": 3083,
+      "sha256": "fb96a87c40c4bea27d80b00311c9a3f8fa1dac78648cb29e79cc91d27acbefb5"
+    },
+    {
+      "file": "model-GPU1/points/probe-028370/training.json",
+      "bytes": 2856,
+      "sha256": "1d749bf9eddf77d8604dc5aeeaf32491fffddc8741d1e273e13c338bbe107f80"
+    },
+    {
+      "file": "model-GPU1/progress.json",
+      "bytes": 192759,
+      "sha256": "f61bd6f5c471777f7dc81aa3712b5352df64673e8483dc086e06b5da52793d78"
+    },
+    {
+      "file": "model-GPU1/stability-history.json",
+      "bytes": 612,
+      "sha256": "a8cb8849fd7e2d8e3a393ab9dd8ce68004b9a0128637893992df12a4bc58cc38"
+    },
+    {
+      "file": "model-GPU1/summary.json",
+      "bytes": 394836,
+      "sha256": "90ca7eee88a60ed74c72c4bcc842992a2a6146f59424a2b75f36a9e0005e60dd"
+    },
+    {
+      "file": "model-GPU1/weights/end-main-034200-fp16.pt",
+      "bytes": 226917545,
+      "sha256": "80957caffa9068747764789e0605f66e4baf0cde7bbb008103ee204b0754e11a"
+    },
+    {
+      "file": "model-GPU1/weights/probe-009000-fp16.pt",
+      "bytes": 226916891,
+      "sha256": "741c46f4c72acb878e58202e065d4a2a60be35ae4fb3620b6f627fcd50912b4b"
+    },
+    {
+      "file": "model-GPU1/weights/probe-028370-fp16.pt",
+      "bytes": 226916891,
+      "sha256": "0f4e52e1f6f71f9940766c5e66d62ffb7076a047428b70e55c0ff1f4a1090a23"
+    },
+    {
+      "file": "session-config.json",
+      "bytes": 141156,
+      "sha256": "80cdc93aa7d39f1aad09ede6b43290cd358dec633316c10063771858dce1f7c3"
+    },
+    {
+      "file": "session-live.json",
+      "bytes": 116,
+      "sha256": "e18b2c5ae9751ac0fadaa4c0fdf39935f742894a50e03dfd0e3d98a47fdd3085"
+    },
+    {
+      "file": "session-summary.json",
+      "bytes": 634,
+      "sha256": "ed8b65896d9dbee154a1db2b81154b8ce93ce608bdf623c2556d27bbfbb4a7d3"
+    },
+    {
+      "file": "src/__pycache__/b1_data.cpython-313.pyc",
+      "bytes": null
+    },
+    {
+      "file": "src/__pycache__/b1_eval.cpython-313.pyc",
+      "bytes": null
+    },
+    {
+      "file": "src/__pycache__/b1_runtime.cpython-313.pyc",
+      "bytes": null
+    },
+    {
+      "file": "src/__pycache__/b1_session.cpython-313.pyc",
+      "bytes": null
+    },
+    {
+      "file": "src/__pycache__/exp26_common.cpython-313.pyc",
+      "bytes": null
+    },
+    {
+      "file": "src/__pycache__/exp26_core.cpython-313.pyc",
+      "bytes": null
+    },
+    {
+      "file": "src/__pycache__/exp26_eval.cpython-313.pyc",
+      "bytes": null
+    },
+    {
+      "file": "src/__pycache__/exp26_exec.cpython-313.pyc",
+      "bytes": null
+    },
+    {
+      "file": "src/__pycache__/exp26_fast_exec.cpython-313.pyc",
+      "bytes": null
+    },
+    {
+      "file": "src/__pycache__/exp26_input.cpython-313.pyc",
+      "bytes": null
+    },
+    {
+      "file": "src/__pycache__/exp26_order.cpython-313.pyc",
+      "bytes": null
+    },
+    {
+      "file": "src/__pycache__/exp26_protocol.cpython-313.pyc",
+      "bytes": null
+    },
+    {
+      "file": "src/__pycache__/exp26_train.cpython-313.pyc",
+      "bytes": null
+    },
+    {
+      "file": "src/__pycache__/exp27_decode.cpython-313.pyc",
+      "bytes": null
+    },
+    {
+      "file": "src/__pycache__/exp27b_fast.cpython-313.pyc",
+      "bytes": null
+    },
+    {
+      "file": "src/__pycache__/kaggle_io.cpython-313.pyc",
+      "bytes": null
+    },
+    {
+      "file": "src/__pycache__/kaggle_runtime.cpython-313.pyc",
+      "bytes": null
+    },
+    {
+      "file": "src/__pycache__/l1_cache.cpython-313.pyc",
+      "bytes": null
+    },
+    {
+      "file": "src/__pycache__/l1_eval.cpython-313.pyc",
+      "bytes": null
+    },
+    {
+      "file": "src/__pycache__/l1_runtime.cpython-313.pyc",
+      "bytes": null
+    },
+    {
+      "file": "src/__pycache__/l1_session.cpython-313.pyc",
+      "bytes": null
+    },
+    {
+      "file": "src/__pycache__/l2_eval.cpython-313.pyc",
+      "bytes": null
+    },
+    {
+      "file": "src/__pycache__/l2_resume.cpython-313.pyc",
+      "bytes": null
+    },
+    {
+      "file": "src/__pycache__/l2_runtime.cpython-313.pyc",
+      "bytes": null
+    },
+    {
+      "file": "src/__pycache__/l2_sampler.cpython-313.pyc",
+      "bytes": null
+    },
+    {
+      "file": "src/__pycache__/l2_session.cpython-313.pyc",
+      "bytes": null
+    },
+    {
+      "file": "src/__pycache__/l3_resume.cpython-313.pyc",
+      "bytes": null
+    },
+    {
+      "file": "src/__pycache__/p1_math.cpython-313.pyc",
+      "bytes": null
+    },
+    {
+      "file": "src/__pycache__/r1_growth.cpython-313.pyc",
+      "bytes": null
+    },
+    {
+      "file": "src/__pycache__/r1_live.cpython-313.pyc",
+      "bytes": null
+    },
+    {
+      "file": "src/__pycache__/s2_live_sync.cpython-313.pyc",
+      "bytes": null
+    },
+    {
+      "file": "src/__pycache__/s3_representation.cpython-313.pyc",
+      "bytes": null
+    },
+    {
+      "file": "src/__pycache__/session_runner.cpython-313.pyc",
+      "bytes": null
+    },
+    {
+      "file": "src/__pycache__/session_watchdog.cpython-313.pyc",
+      "bytes": null
+    },
+    {
+      "file": "src/b1_data.py",
+      "bytes": null
+    },
+    {
+      "file": "src/b1_eval.py",
+      "bytes": null
+    },
+    {
+      "file": "src/b1_gpu_smoke.py",
+      "bytes": null
+    },
+    {
+      "file": "src/b1_resume.py",
+      "bytes": null
+    },
+    {
+      "file": "src/b1_runtime.py",
+      "bytes": null
+    },
+    {
+      "file": "src/b1_session.py",
+      "bytes": null
+    },
+    {
+      "file": "src/b1_worker.py",
+      "bytes": null
+    },
+    {
+      "file": "src/cache_extension.py",
+      "bytes": null
+    },
+    {
+      "file": "src/exp26_cache.py",
+      "bytes": null
+    },
+    {
+      "file": "src/exp26_common.py",
+      "bytes": null
+    },
+    {
+      "file": "src/exp26_core.py",
+      "bytes": null
+    },
+    {
+      "file": "src/exp26_eval.py",
+      "bytes": null
+    },
+    {
+      "file": "src/exp26_exec.py",
+      "bytes": null
+    },
+    {
+      "file": "src/exp26_fast_exec.py",
+      "bytes": null
+    },
+    {
+      "file": "src/exp26_input.py",
+      "bytes": null
+    },
+    {
+      "file": "src/exp26_order.py",
+      "bytes": null
+    },
+    {
+      "file": "src/exp26_pack.py",
+      "bytes": null
+    },
+    {
+      "file": "src/exp26_protocol.py",
+      "bytes": null
+    },
+    {
+      "file": "src/exp26_train.py",
+      "bytes": null
+    },
+    {
+      "file": "src/exp26_workflow.py",
+      "bytes": null
+    },
+    {
+      "file": "src/exp27_decode.py",
+      "bytes": null
+    },
+    {
+      "file": "src/exp27b_fast.py",
+      "bytes": null
+    },
+    {
+      "file": "src/exp28_capacity.py",
+      "bytes": null
+    },
+    {
+      "file": "src/final_adaptive.py",
+      "bytes": null
+    },
+    {
+      "file": "src/final_choose.py",
+      "bytes": null
+    },
+    {
+      "file": "src/final_core.py",
+      "bytes": null
+    },
+    {
+      "file": "src/final_decode.py",
+      "bytes": null
+    },
+    {
+      "file": "src/final_ensemble.py",
+      "bytes": null
+    },
+    {
+      "file": "src/final_execute.py",
+      "bytes": null
+    },
+    {
+      "file": "src/final_execute_v6.py",
+      "bytes": null
+    },
+    {
+      "file": "src/final_executor.py",
+      "bytes": null
+    },
+    {
+      "file": "src/final_executor_v6.py",
+      "bytes": null
+    },
+    {
+      "file": "src/final_fast.py",
+      "bytes": null
+    },
+    {
+      "file": "src/final_inference.py",
+      "bytes": null
+    },
+    {
+      "file": "src/final_inference_v7.py",
+      "bytes": null
+    },
+    {
+      "file": "src/final_numeric.py",
+      "bytes": null
+    },
+    {
+      "file": "src/final_representation.py",
+      "bytes": null
+    },
+    {
+      "file": "src/final_runner.py",
+      "bytes": null
+    },
+    {
+      "file": "src/final_session.py",
+      "bytes": null
+    },
+    {
+      "file": "src/final_speed.py",
+      "bytes": null
+    },
+    {
+      "file": "src/final_split.py",
+      "bytes": null
+    },
+    {
+      "file": "src/final_vote.py",
+      "bytes": null
+    },
+    {
+      "file": "src/kaggle_io.py",
+      "bytes": null
+    },
+    {
+      "file": "src/kaggle_runtime.py",
+      "bytes": null
+    },
+    {
+      "file": "src/l1_cache.py",
+      "bytes": null
+    },
+    {
+      "file": "src/l1_cache_repair.py",
+      "bytes": null
+    },
+    {
+      "file": "src/l1_eval.py",
+      "bytes": null
+    },
+    {
+      "file": "src/l1_execute.py",
+      "bytes": null
+    },
+    {
+      "file": "src/l1_live.py",
+      "bytes": null
+    },
+    {
+      "file": "src/l1_resume.py",
+      "bytes": null
+    },
+    {
+      "file": "src/l1_roundtrip.py",
+      "bytes": null
+    },
+    {
+      "file": "src/l1_runtime.py",
+      "bytes": null
+    },
+    {
+      "file": "src/l1_session.py",
+      "bytes": null
+    },
+    {
+      "file": "src/l2_compare.py",
+      "bytes": null
+    },
+    {
+      "file": "src/l2_eval.py",
+      "bytes": null
+    },
+    {
+      "file": "src/l2_gpu_smoke.py",
+      "bytes": null
+    },
+    {
+      "file": "src/l2_live.py",
+      "bytes": null
+    },
+    {
+      "file": "src/l2_resume.py",
+      "bytes": null
+    },
+    {
+      "file": "src/l2_runtime.py",
+      "bytes": null
+    },
+    {
+      "file": "src/l2_sampler.py",
+      "bytes": null
+    },
+    {
+      "file": "src/l2_session.py",
+      "bytes": null
+    },
+    {
+      "file": "src/l2_worker.py",
+      "bytes": null
+    },
+    {
+      "file": "src/l3_resume.py",
+      "bytes": null
+    },
+    {
+      "file": "src/p1_eval.py",
+      "bytes": null
+    },
+    {
+      "file": "src/p1_gpu_smoke.py",
+      "bytes": null
+    },
+    {
+      "file": "src/p1_math.py",
+      "bytes": null
+    },
+    {
+      "file": "src/p1_runtime.py",
+      "bytes": null
+    },
+    {
+      "file": "src/p1_session.py",
+      "bytes": null
+    },
+    {
+      "file": "src/p1_worker.py",
+      "bytes": null
+    },
+    {
+      "file": "src/r1_data.py",
+      "bytes": null
+    },
+    {
+      "file": "src/r1_gpu_smoke.py",
+      "bytes": null
+    },
+    {
+      "file": "src/r1_growth.py",
+      "bytes": null
+    },
+    {
+      "file": "src/r1_live.py",
+      "bytes": null
+    },
+    {
+      "file": "src/r1_runtime.py",
+      "bytes": null
+    },
+    {
+      "file": "src/r1_session.py",
+      "bytes": null
+    },
+    {
+      "file": "src/r1_worker.py",
+      "bytes": null
+    },
+    {
+      "file": "src/s2_exec.py",
+      "bytes": null
+    },
+    {
+      "file": "src/s2_live_sync.py",
+      "bytes": null
+    },
+    {
+      "file": "src/s2_report.py",
+      "bytes": null
+    },
+    {
+      "file": "src/s2_runtime.py",
+      "bytes": null
+    },
+    {
+      "file": "src/s3_representation.py",
+      "bytes": null
+    },
+    {
+      "file": "src/s3_runtime.py",
+      "bytes": null
+    },
+    {
+      "file": "src/s3_score.py",
+      "bytes": null
+    },
+    {
+      "file": "src/session_runner.py",
+      "bytes": null
+    },
+    {
+      "file": "src/session_watchdog.py",
+      "bytes": null
+    },
+    {
+      "file": "src/shape_bench.py",
+      "bytes": null
+    },
+    {
+      "file": "src/shape_specs.py",
+      "bytes": null
+    },
+    {
+      "file": "startup-gate.json",
+      "bytes": 90,
+      "sha256": "c9253626afd1c59eeb95dce88df456a04c430e76e4fdea4046c08b89f2b3a551"
+    },
+    {
+      "file": "weighted-order/order.json",
+      "bytes": 449,
+      "sha256": "d6d78e00071c7a74c46613265002556194c12c76d6b752d498a81e7340144049"
+    },
+    {
+      "file": "weighted-order/order.npy",
+      "bytes": 44911372,
+      "sha256": "8e9595f655ed2b4456bf5b94e9b5b6b3db040e3f5696a4dc0ef364588048bee8"
+    }
+  ]
+}

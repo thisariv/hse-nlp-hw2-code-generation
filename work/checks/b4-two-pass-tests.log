@@ -1,0 +1,32 @@
+test_b4_AB_audit_detects_start_or_stream_difference (__main__.Tests.test_b4_AB_audit_detects_start_or_stream_difference) ... /tmp/nlp-l2-analysis-env/lib/python3.14/site-packages/torch/nn/modules/transformer.py:144: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = TransformerEncoder(
+ok
+test_b4_adam_oom_is_unsafe (__main__.Tests.test_b4_adam_oom_is_unsafe) ... /tmp/nlp-l2-analysis-env/lib/python3.14/site-packages/torch/nn/modules/transformer.py:144: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = TransformerEncoder(
+ok
+test_b4_both_main_and_cooldowns_truncate_restore_all_fields_and_history (__main__.Tests.test_b4_both_main_and_cooldowns_truncate_restore_all_fields_and_history) ... ok
+test_b4_enabled_AMP_overflow_skips_Adam_and_halves_scale (__main__.Tests.test_b4_enabled_AMP_overflow_skips_Adam_and_halves_scale) ... ok
+test_b4_entire_smoke_controller_on_CPU_with_real_updates_and_restore (__main__.Tests.test_b4_entire_smoke_controller_on_CPU_with_real_updates_and_restore) ... B4 W600-trunc 2100 59402.3 pairs 268800 LR 0.0006
+B4 W600-trunc 2200 59404.5 pairs 281600 LR 0.0006
+ok
+test_b4_mask_stratification_top_ties_and_singletons (__main__.Tests.test_b4_mask_stratification_top_ties_and_singletons) ... ok
+test_b4_nonfinite_loss_or_backward_never_updates_adam (__main__.Tests.test_b4_nonfinite_loss_or_backward_never_updates_adam) ... ok
+test_b4_partial_eval_keeps_stable_and_final_FP16 (__main__.Tests.test_b4_partial_eval_keeps_stable_and_final_FP16) ... ok
+test_b4_q0_main_is_bit_exact_and_both_streams_consume_all128 (__main__.Tests.test_b4_q0_main_is_bit_exact_and_both_streams_consume_all128) ... ok
+test_b4_real_NaN_selection_and_retained_loss_never_update_Adam (__main__.Tests.test_b4_real_NaN_selection_and_retained_loss_never_update_Adam) ... ok
+test_b4_selection_RNG_restored_before_training_and_on_failure (__main__.Tests.test_b4_selection_RNG_restored_before_training_and_on_failure) ... ok
+test_b4_smoke_rejects_nonfinite_main_even_below_recovery_threshold (__main__.Tests.test_b4_smoke_rejects_nonfinite_main_even_below_recovery_threshold) ... B4 W600-trunc 2100 59402.3 pairs 268800 LR 0.0006
+B4 W600-trunc 2200 59404.7 pairs 281600 LR 0.0006
+ok
+test_b4_smoke_rejects_short_runs (__main__.Tests.test_b4_smoke_rejects_short_runs) ... ok
+test_b4_stability_stops_without_halving_lr (__main__.Tests.test_b4_stability_stops_without_halving_lr) ... ok
+test_b4_static_handoff_requires_same_source_smoke_and_preserves_launch (__main__.Tests.test_b4_static_handoff_requires_same_source_smoke_and_preserves_launch) ... ok
+test_b4_supervisor_publication_remains_watched_and_soft (__main__.Tests.test_b4_supervisor_publication_remains_watched_and_soft) ... ok
+test_b4_two_pass_matches_full_batch_masked_oracle_gradients_and_normalization (__main__.Tests.test_b4_two_pass_matches_full_batch_masked_oracle_gradients_and_normalization) ... ok
+test_b4_two_pass_oom_rng_scaler_grad_reset (__main__.Tests.test_b4_two_pass_oom_rng_scaler_grad_reset) ... OOM RETRY micro 16
+ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 28.832s
+
+OK

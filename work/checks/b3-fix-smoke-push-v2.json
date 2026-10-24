@@ -1,0 +1,10 @@
+{
+  "ref": "thisarivson/nlp-hw02-b3-gpu-smoke",
+  "checked_at_utc": "2026-10-16T19:23:23.827639+00:00",
+  "quota_free_seconds": 3297.747,
+  "requested_ref": "thisarivson/nlp-hw02-b3-gpu-smoke",
+  "version": 2,
+  "private": true,
+  "backend_timeout_seconds": 720,
+  "pushed_at_utc": "2026-10-16T19:23:27.240607+00:00"
+}

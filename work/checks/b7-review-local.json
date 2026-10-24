@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-10-20T08:00:39.542834+00:00",
+  "historical_tests": 157,
+  "historical_skips": 1,
+  "independent_B7_guard_tests": 2,
+  "training_changes": false,
+  "receipts": {
+    "b7-review-tests.log": "825acf520007b7b00ab71adb51b39dbf42e1d40626f9850141a35ea1e7f14a42",
+    "b7-review-guard-tests.log": "fb57c88a9c3ded1308492b29406bb3fcb2cb0816de4fa7abc2bd5f39f4ca6aa7",
+    "b7-review-provenance-budget.json": "16399adea3256ed67936255930ea2b269ca553ec56aedb02fed6e6fb5b7364d8",
+    "b7-static.json": "065480d1d1c0432997494e1e51855cc5ff719f5a3222c4cf82d44c57b4b49a36"
+  }
+}

@@ -1,0 +1,111 @@
+---
+type: reference
+course:
+  - nlp
+status: complete
+understanding: 4
+created: 2026-10-24
+updated: 2026-10-24
+sources:
+  - work/kaggle/notebooks
+  - work/results/b7-results.json
+  - work/results/p1-results.json
+aliases:
+  - Происхождение финальных моделей
+---
+# Происхождение трёх финальных моделей ДЗ2 NLP
+
+Проверено локально 24.10.2026 по файлам репозитория, без новых запусков. Все пути ниже — относительно каталога ДЗ (корня публичного репозитория). Читаемая сводка — [submission/TRAINING.md](../../submission/TRAINING.md).
+
+**Цепочки весов:**
+
+- **W B7:** новая инициализация B2/GPU1 → B3/GPU1 → B4/plain/GPU0 → B5/GPU0 → B7/GPU0.
+- **C-long2x B7:** новая C в L1 → L2/C-long2x → L3/C-long2x → B5/GPU1 → B7/GPU1.
+- **P1-B:** та же C в L1 → L2/C-long2x → L3/C-long2x → P1/B.
+
+**B7 не продолжает охлаждённую B6:** обе заново ветвятся из одних uncooled B5 states. **P1-B не предок C B7:** P1 и C-ветка B5 независимо стартуют из одного uncooled L3 state. B1/EV, R1, L4 и обучение LM №19–26b не передавали этим финальным моделям свои веса. Из ранних опытов наследуются данные, tokenizer и код.
+
+В таблицах `src/` означает `work/kaggle/src/`; worker-файлы без `src/` находятся в `work/kaggle/`. Полные точные пути всех выбранных файлов — в `training-files.json`. «Аккаунт друга» скрывает имя внешнего аккаунта; у B2 и B5 это разные исходные аккаунты.
+
+## Общий рецепт и значение счётчиков
+
+Везде один verified compact30-корпус: **9 725 737 строк**, без текстовой дедупликации. FP32 parameters, AMP FP16, enabled GradScaler(init1024), fused AdamW(weight_decay=0,01), clip1, dropout0, effective batch128; micro обычно W32/C64. CE нормируется общим числом target-токенов batch, EOS включён, PAD/BOS исключены. Seed новой модели42, normalized token initialization: embedding делится на √d, forward умножает обратно. Архитектура Pre-LN, learned positions2048, shared encoder/decoder embedding, untied output head, SwiGLU. Для продолжений закреплён Torch2.11.0+cu128/CUDA12.8; notebook также фиксирует tokenizers0.23.2, pyarrow23.0.1, sympy1.14.0.
+
+`updates` — **attempted** main updates, включая AMP skips; main_s — накопленное время updates без setup, I/O и оценочных веток. Resume переносит FP32 model, AdamW moments/step/groups, scaler, scheduler, Python/NumPy/Torch CPU/CUDA RNG, order/cursor и историю. Warmup после resume не повторяется. Сохранение только FP16-весов для такого resume недостаточно.
+
+Промежуточные и final50 cooldown в L1/L2/L3/B2/B3/B4/B5 — **disposable**: после оценки восстанавливается полный uncooled anchor. Их градиенты не входят в дальнейшие main-веса. В B7 и выбранной P1-B, напротив, сохраняется результат самого cooldown. Пробы всё же перечислены ниже как фазы соответствующего запуска.
+
+## W B7 — 6+6/d768, QK LayerNorm
+
+W: 12 heads, SwiGLU2048, 113 426 435 parameters; headwise QK LayerNorm во всех attention и CE + z-loss1e−4. Используется W-order seed2026101501, long×2 при compact target length≥79.
+
+| Шаг | Запуск | Обучение и результат | Стартовый checkpoint | Ноутбук запуска | Ключевые .py |
+|---|---|---|---|---|---|
+| W1 | `nlp-hw02-b2` v1, аккаунт друга, **GPU1/W-lr600** | **С нуля**; warmup2000 → constant LR0,0006, q0. Main 27 000,345с: **0→32 499 updates**, cursor4 159 872. Gate24 219 updates/3 100 032 пары и конец: disposable linear cooldown900с. Uncooled выход `model-GPU1/checkpoints/main-612d2a094343.pt`. | Нет; seed42, новая QK-модель. B1 weights не загружаются. | `work/kaggle/notebooks/nlp-hw02-kaggle-b2.ipynb` | `b2_worker.py`; `src/{b2_runtime,b2_optim,qk_attention,b1_data,l1_runtime,exp26_core}.py` |
+| W2 | `nlp-hw02-b3` v1, мой аккаунт, **GPU1** | Constant0,0006, тот же order/cursor; +≈32 400с main, **32 499→73 416**. Total main59 400,862с, cursor9 397 248. Disposable CD15 на +3/+6ч и CD50 в конце. Выход `model-GPU1/checkpoints/main-667d29a22ed6.pt`. | W1 full state через private `nlp-hw02-b2-states` v1; SHA transfer и payload закреплены. | `work/kaggle/notebooks/nlp-hw02-b3.ipynb` | `b3_worker.py`; `src/{b3_runtime,b2_runtime,b2_optim,b1_resume}.py` |
+| W3 | `nlp-hw02-b4` v1, мой аккаунт, **GPU0/plain** | Constant0,0006, **q0**; +≈32 400,894с main, **73 416→111 933**, cursor14 327 424, total91 801,755с. Disposable CD15 на +3/+6ч, final CD50. Выход `model-GPU0/checkpoints/main-9bdf4998eb30.pt`. GPU1/trunc не наследуется. | W2/GPU1 full state, SHA `e32b8649…19c0`. | `work/kaggle/notebooks/nlp-hw02-b4.ipynb` | `b4_worker.py`; `src/{b4_runtime,b4_resume,b4_session,b2_runtime}.py` |
+| W4 | `nlp-hw02-b5` **v6†**, аккаунт друга, **GPU0** | Constant0,0006/q0; **+33 840,214с**, **111 933→154 559**; total125 641,970с, cursor19 783 552. Disposable CD15 на +4,5ч, final CD50; затем full restore. Сохранённый uncooled выход `model-GPU0/checkpoints/main-789d436a3fb0.pt`. | W3/GPU0 full state, SHA `f23fe1e3…abc7a`, через `nlp-hw02-b5-inputs` v1; order не перестраивается. | `work/kaggle/notebooks/nlp-hw02-b5.ipynb` | `b5_worker.py`; `src/{b5_runtime,b5_state,b5_resume,b4_runtime,b2_runtime}.py` |
+| W5 | `nlp-hw02-b7` v1, аккаунт друга, **GPU0** | **Только cooldown**, main0, q0: LR(j)=0,0006·(1−√(j/33000)), j=1…33 000. 13AMP skips, nonfinite0, последний LR0. Ещё4 224 000 предъявлений, cursor**24 007 552**. Финал `model-GPU0/points/b6-final`, экспорт `model-GPU0/weights/b6-final-fp16.pt`. | W4 uncooled state, SHA **`3b11360d5242e0e8b3fc1ac38254f0d4d544fba8bb62ee4c7bb034943e6cdc32`**; не B5 final50 и не B6. | `work/kaggle/notebooks/nlp-hw02-b7.ipynb` | **`b6_worker.py`**; `src/{b6_runtime,b6_state,b6_resume,b5_state,p1_math}.py` |
+
+Финальный W SHA **`3378c368f601c7cd046d40de22cf5cc6f5081deff190819bb4f616f0eb2761ac`**. Имена `b6-final`/`b6_worker` в B7 намеренно сохранены: B7 отличается CONFIG и N, не новым runtime.
+
+## C-long2x B7 — 6+6/d512
+
+C: 8 heads, SwiGLU1368, **53 646 403 parameters**, обычная token CE, без QK-нормировки и z-loss. Для C необходим старый core из `work/kaggle/legacy-c/`, а не общий core после добавления W/QK.
+
+| Шаг | Запуск | Обучение и результат | Стартовый checkpoint | Ноутбук запуска | Ключевые .py |
+|---|---|---|---|---|---|
+| C1 | `nlp-hw02-kaggle-l1`, мой аккаунт, **C/GPU0**, UI run `357694322`† | **С нуля** seed42, ordinary order seed2026101201; warmup1000 → constant0,0015. До остановки **47 155 updates**, main17 569,936с, cursor6 035 840. Оценена t009000 с disposable CD≈900с; затем main продолжен. Здоровая C остановлена из-за сбоя соседней D. Anchor опубликован в `nlp-hw02-l1-live` v7. | Нет; C создаётся заново, веса A/26b/№30 не загружаются. | `work/kaggle/notebooks/nlp-hw02-kaggle-l1.ipynb` | `l1_worker.py`; `src/{l1_runtime,l1_cache,exp26_train}.py`; `legacy-c/exp26_core.py` |
+| C2 | `nlp-hw02-kaggle-l2` **v2**, мой аккаунт, **C-long2x/GPU1** | LR0,0015 без warmup. **Замена order на long2x seed2026101302 и cursor→0**; model/Adam/scaler/RNG унаследованы. +28 800,310с main: **47 155→123 842**; cursor9 815 936, total46 370,246с. Disposable CD15 на +3/+6ч и CD50 на +8ч. Выход `model-C-long2x/checkpoints/main-826d479cdfe8.pt`, live v11. | `model-C__checkpoints__main-5746a4a2897e.pt` из L1 live v7, SHA `1da28095…01dc`. | `work/kaggle/notebooks/nlp-hw02-kaggle-l2.ipynb` | `l2_worker.py`; `src/{l2_runtime,l2_resume,l2_sampler,l1_runtime}.py` |
+| C3 | `nlp-hw02-kaggle-l3`, аккаунт друга, **C-long2x/GPU1**† | Constant0,0015, свой L2 order/cursor; **+33 480,183с**, **123 842→209 144**. Total79 850,429с, cursor20 734 592, l2_main62 280,493с. Disposable CD15 на +16 740с и CD50 в конце. Uncooled выход `main-2a27307d7a48.pt`, L3 live **v12**. | C2 full state из L2 live v11, SHA `a0ba33fe…40d2`; не L2 final50 FP16. | `work/kaggle/notebooks/nlp-hw02-kaggle-l3.ipynb` | **`l2_worker.py`**; `src/{l3_resume,l2_runtime,l2_resume,l2_sampler}.py` |
+| C4 | `nlp-hw02-b5` **v6†**, аккаунт друга, **GPU1** | Constant0,0015/q0, **+33 840,300с**, **209 144→293 688**. Total113 690,728с, cursor31 556 224. Disposable CD15 на +4,5ч, final CD50 и restore. Сохранённый uncooled выход `model-GPU1/checkpoints/main-6b2c636e5f7f.pt`. | `model-C-long2x__checkpoints__main-2a27307d7a48.pt` из **L3 live v12**, SHA **`48f2ba3fa4ffe6a722b45a084d3ee33a27cc4ed02b72433605c9cb1740f5a80b`**. Это также старт P1-B. | `work/kaggle/notebooks/nlp-hw02-b5.ipynb` | `b5_worker.py`; `src/{b5_runtime,b5_state,b5_resume,l2_runtime}.py`; `legacy-c/{exp26_core,exp27b_fast}.py` |
+| C5 | `nlp-hw02-b7` v1, аккаунт друга, **GPU1** | Только q0 cooldown: LR(j)=0,0015·(1−√(j/65800)), **65 800 attempts**, 31AMP skips, nonfinite0, endpoint0. Ещё8 422 400 предъявлений; cursor**39 978 624**. Финал `model-GPU1/points/b6-final`, экспорт `model-GPU1/weights/b6-final-fp16.pt`. | C4 uncooled state, SHA **`69dff4405d2236097f48733adbfc9e3bfd5d20b501a3fcfd1dae62ec2ce63074`**. | `work/kaggle/notebooks/nlp-hw02-b7.ipynb` | `b6_worker.py`; `src/{b6_runtime,b6_state,b6_resume,b5_state,p1_math}.py`; старый C namespace |
+
+Финальный C B7 SHA **`bcb41c54d031b70523d357dd7d14dc24ec7d1393a6cb8714d8eacfe761cca32b`**. У C total main pairs=`updates×128`, а order cursor меньше на **6 035 840** из-за сброса в L2; это не потеря обучения.
+
+## P1-B — та же C-long2x, отдельная длинная ветка
+
+| Шаг | Запуск | Обучение и результат | Стартовый checkpoint | Ноутбук запуска | Ключевые .py |
+|---|---|---|---|---|---|
+| P1 | L1/C, мой аккаунт, UI run `357694322`† | Те же C1: с нуля, ordinary order, warmup1000 → LR0,0015; **47 155 updates**, cursor6 035 840. | Нет, seed42. | `work/kaggle/notebooks/nlp-hw02-kaggle-l1.ipynb` | `l1_worker.py`; `src/l1_runtime.py`; `legacy-c/exp26_core.py` |
+| P2 | L2/C-long2x **v2**, мой аккаунт | Те же C2: long2x order/cursor0, constant0,0015; **123 842 updates**, cursor9 815 936. Disposable CD15/15/50 не наследуются. | L1 live v7 `main-5746a4a2897e.pt`, SHA `1da28095…01dc`. | `work/kaggle/notebooks/nlp-hw02-kaggle-l2.ipynb` | `l2_worker.py`; `src/{l2_runtime,l2_resume,l2_sampler}.py` |
+| P3 | L3/C-long2x, аккаунт друга† | Те же C3: constant0,0015; **209 144 updates**, cursor20 734 592. Disposable CD15/50 не наследуются. | L2 live v11 `main-826d479cdfe8.pt`, SHA `a0ba33fe…40d2`. | `work/kaggle/notebooks/nlp-hw02-kaggle-l3.ipynb` | `l2_worker.py`; `src/{l3_resume,l2_runtime}.py` |
+| P4 | `nlp-hw02-kaggle-p1` **v3**, аккаунт друга, **pilot B/GPU0** | **31 372 attempted cooldown updates**, без main/warmup: LR(j)=0,0015·(1−√(j/31372)), endpoint0. Stratified loss truncation: исключить13/128 highest-CE примеров по bins53/79/105, CE оставшихся token-weighted. 15AMP skips →31 357 Adam updates, nonfinite0; все шаги graph path, OOM-fallback0. **4 015 616** предъявлений из того же long2x order, endpoint cursor24 750 208. Выход `model-pilot-b/weights/long-truncation-fp16.pt`. | **Снова исходный uncooled L3 live v12** `main-2a27307d7a48.pt`, SHA `48f2ba3f…a80b`; не L3 final50 и не результат pilot A. | `work/kaggle/notebooks/nlp-hw02-kaggle-p1.ipynb` | `p1_worker.py`; `src/{p1_runtime,p1_math,p1_eval,l3_resume,l2_runtime,l2_gpu_smoke}.py`; старый C core |
+
+P1 сначала выполняла pilot A (такой же N, q0), затем **полностью восстанавливала L3 перед B**: fingerprints model/Adam/scaler/RNG/history и SHA потока совпали. A не обучает B. GPU1 reviewer обучался с нуля на обратных парах code→question и также не передавал B свои веса. Оба — соседние эксперименты внутри нужного notebook, не дополнительные предки.
+
+Финальный P1-B SHA **`8439037720dda16dda6b73fe676860d5498bbcba4cacebc0d709bbb22db464a5`**. В submission все три FP16-файла только переименованы; обучающего преобразования или усреднения при упаковке нет.
+
+## Подготовка данных, tokenizer, compact-кеша и orders
+
+| Этап | Что действительно наследуется | Чем сделано |
+|---|---|---|
+| Tokenizer №19 | **Свой** Qwen-style byte-BPE: regex отделяет цифры; 500k разрешённых пар из pinned shards0–2, 1M текстов question+code, min_frequency2, byte alphabet256, без normalizer. 8189 content IDs; model PAD0/BOS1/EOS2, content с offset+3. Файл SHA **`261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d`**. Нужны data/BPE-ячейки, не 100k LM-updates. | `work/notebooks/19-qwen-style-bpe-8k-swiglu-500k-pairs-100000-steps.ipynb` (data cell5, tokenizer cell7, необходимые определения из cell3). |
+| Protected/eval inputs | Test1919 и old1024/fresh1024 из раннего data protocol; **heldout4k** готовится в №24 из следующих pinned shards, hash-heldout, без пересечений с old/test/fresh, с finite references. №25 переносит те же данные дальше. Итоговые starter ZIP содержат tokenizer, protected questions, фиксированные eval/test/reference файлы и старые initial/D0 PT; **эти PT L1/B2 не используют**. Код именно сборки starter ZIP в tracked-файлах не найден†. | `work/notebooks/24-fast-recipe-equal-presentations-lr-and-ablations.ipynb`: embedded `recipe24_data.prepare_heldout4k`, cell6. `src/exp26_protocol.py` фиксирует SHA всех входов; `src/exp26_input.py` проверяет ZIP/исключения. `work/kaggle/build.py --kind static-inputs` только упаковывает готовые архивы для mount. |
+| Raw BPE-cache26a | Pinned public train revision **b2724689ff079e9c22efd548fe134bfb29036dbb**. Question≤512, code<512 UTF-8 bytes; убрать hash-heldout (`SHA256("42:"+question)[:8] mod10=0`) и тексты всех protected sets; оставить finite solve(), bool→int. Повторяющиеся тексты не удаляются, identity=(shard,row). Обработаны shards0–41: **7 078 471** строк; manifest `2c691fef…add`. | `work/notebooks/26a-sharded-reference-filtered-bpe-cache.ipynb`; embedded `exp26_{cache,input,protocol,fast_exec,exec,common,pack}`. Source/target int16; offsets int64; provenance uint32, question SHA. Текущие tracked эквиваленты в `work/kaggle/src/`. |
+| Расширение26c | Те же фильтры/tokenizer/schema, только shards42–59, **2 647 266** строк. Завершён CPU `nlp-hw02-26c-cpu-cache` **v2**, мой аккаунт. Manifest `7417b6ff…00a3`; база26a не меняется. | `work/kaggle/notebooks/26c-cpu-cache-extension.ipynb`; `src/cache_extension.py` + `src/exp26_*.py` из prep-списка. |
+| Compact30 CPU conversion | Все **60 shards /9 725 737** строк, без нового отбора. `compact()` убирает comments/безопасные blank lines, известные header/tail и ставит один из `<\|header_tail\|>`, `<\|header\|>`, `<\|raw\|>`; restore восстанавливает исполнимый code. Добавлены3 mode tokens, vocab модели**8195**. Source/provenance скопированы побайтно, target перекодирован. `nlp-hw02-compact-cpu-cache` v1 (мой аккаунт) успела построить массивы/order, но завершилась ERROR на executor-аудите. | `work/kaggle/notebooks/nlp-hw02-compact-cpu-cache.ipynb`; `src/{l1_cache,s3_representation}.py`. |
+| Verified cache и ordinary order | Готовые targets/order v1 переиспользованы через compact-targets-input v1; original source/provenance взяты из26a+26c. CPU `nlp-hw02-compact-cache-verified` **v2**, мой аккаунт: **360 array SHA**, offsets/provenance, **0/50 040** answer round-trip. Manifest **`46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be`**. Ordinary order seed2026101201: глобальная перестановка, length bucketing4096, shuffle batch128, хвост сохраняется, циклический cursor. SHA `09cf6db8…ab7d`. Compact tokenizer SHA **`2b6fbb6426c42e9fcf82d576d53516d5b6e585c3618942f0dde6c76349856c1e`**, отличается от исходного BPE. | `work/kaggle/notebooks/nlp-hw02-compact-cache-verified.ipynb`; `src/{l1_cache_repair,l1_cache,l1_roundtrip}.py`; `l1_cache.make_order`. |
+| C long2x order | Впервые строится **при setup L2**: weight2 при compact target length≥79, иначе1; **1 502 074 long rows /11 227 811 slots**. Порог выбран по доле original-BPE≥90 в heldout (626/4096); это proxy, не оригинальная длина train. Seed**2026101302**, bucketing4096/batch128. SHA **`72bc3dfd3a3e738979c489c0cf8f41cde092c41d4ae90f2de8378a034603a4db`**. L3/P1/B5/B7 переносят этот файл, не строят новый. | L2 notebook; **`src/l2_sampler.py:build_order`**. Это удвоение предъявлений, без множителя loss. |
+| W long2x order | Та же multiplicity/threshold, но **новая перестановка seed2026101501**; введена для B1, заново детерминированно строится setup B2. SHA **`8e9595f655ed2b4456bf5b94e9b5b6b3db040e3f5696a4dc0ef364588048bee8`**. Далее B3/B4/B5/B7 только перенос/проверка. B1 training для получения этого order не нужен. | B2 notebook; **`src/b1_data.py:build_order`**, `src/l2_sampler.py:load_order`. |
+
+## Что нужно для воспроизведения
+
+- **С нуля:** исходные публичные pinned Parquet/test, точные protected/eval inputs и BPE19; 26a+26c → compact verified → нужные orders; затем перечисленные main-запуски и только выбранный конечный cooldown. Старые обученные модели19–26b, B1, R1, B6 не нужны. Подготовительные ячейки19/24 можно выделить без запуска их LM-обучения.
+- **Из anchors:** достаточно verified cache/tokenizer/order, нужного полного uncooled state и его exact runtime/recipe. Для B7 это B5 latest, для P1-B — L3 latest. Нужны Adam/scaler/RNG/cursor, не только FP16. Старые disposable probes можно исключить из чистого математического replay при точном restore, но исторические timed main-фазы не гарантируют одинаковые counters на другой GPU: для повторения данной траектории ориентироваться на сохранённые updates/cursors и RNG.
+- **Оркестрация:** watchdog, bounded workers, live-sync, private mounts/transfers, quota/push guards, smoke и output packaging обеспечивают сохранность/запуск, но сами не добавляют градиентов. Они нужны готовым Kaggle notebooks как зависимости; отдельный тренер может заменить их. `l1_live/l2_live/s2_live_sync/r1_live` и supervisor-модули поэтому оставлены в `modules`, где их импортирует production; факт их присутствия не означает наследование моделей R1/S2.
+- **Исключение по имени:** `src/b3_gpu_smoke.py` даёт `fingerprints` production B4/B5/B7; `src/l2_gpu_smoke.py` даёт `digest` P1 и fingerprints. Оба входят в `modules`, хотя полноценные smoke-прогоны не являются предками. `exp27*_*.py` и eval/execute нужны оценочным фазам обучения. Чистые `final_*` в JSON не включены.
+
+`training-files.json`: **9 notebooks, 66 modules, 23 prep, 32 optional**. `notebooks` — только training-запуски трёх цепочек; CPU/ранние preparatory notebooks находятся в `prep`. `modules` — объединение production imports и subprocess entry points, включая импортируемые зависимости и оба C overrides; одного присутствия в `SOURCES` недостаточно. `prep` пересекается с `modules` там, где файл нужен и setup, и training. В `optional` объекты `{path, reason}`. **Каждый путь проверен через `git ls-files`**; ignored bundles, weights, caches и скачанные outputs в списки не добавлены.
+
+## Подтверждения и пробелы
+
+1. **Исходные привязки:** `submission/README.md`, раздел «Веса и происхождение»; `work/results/{b7,p1}-results.json`; полный recipe и anchors из CONFIG/SOURCES соответствующих tracked notebooks. B3/B4/B5/B7 code cells побайтно совпали с локальными bundle notebooks; все **95/101/106/111** module SHA их `source-identity.json` совпали с embedded SOURCES. Эти bundles и identities **ignored**, поэтому используются как свидетельства, но не включены в JSON.
+2. **L1/L3 †:** `work/notes/l2-plan.md` фиксирует L1 UI run357694322 и exact full state; `work/kaggle/l2-anchor.json` и `work/checks/kaggle-l2-real-resume.json` подтверждают anchor/restore. Серверный номер обучавшей L1 из этих файлов не установлен: опубликованная API v1 была только missing-Secrets gate, training0. Аналогично L3 привязана к **live v12 и full-state SHA**, не к доказанному номеру UI notebook version; production API v1 сама завершилась на Secrets gate. Не считать API gate предком весов.
+3. **B5 v6 †:** `work/notes/b5-results.md` и `work/results/b5-results.json` сообщают v6/start18.10 18:14UTC и отмену1–5 **со слов пользователя**; version-specific audit v6 отсутствует. Старые RUNNING-v3 записи подготовки не доказывают дополнительное продолжение: v6 содержит полный main от исходных B4/L3 anchors, без resume из v3. Доказательств отдельного вклада1–5 в финальные веса нет.
+4. **Удалённые B5 pre-final states:** после final50 и restore B5 ротация удалила исходные pre-final PT. Их receipts совпадают с сохранёнными latest по update/cursor/main_s/identity; сравнение двух retained post-restore состояний проверило model/Adam/scaler/RNG, различалась history. Это **не прямое tensor-сравнение с удалённым файлом**. См. `work/notes/b6-plan.md`, `work/checks/b6-final-anchor-gpu{0,1}.json`, `work/checks/b6-real-resume-gpu{0,1}.json`.
+5. **B7:** 98 800 cooldown attempts и endpoint0 подтверждены producer summaries. В компактном локальном snapshot нет двух пошаговых cooldown-журналов и исполненного notebook; текущий анализ не повторяет tensor/Adam/CUDA-аудит. Final SHA согласованы с checkpoint/metrics/producer manifest и submission. P1 results подтверждают31 372 attempts, stream/fingerprints и15skips; это сохранённые receipts, не новый запуск.
+6. **Исторические варианты кода:** C использует `legacy-c/{exp26_core,exp27b_fast}.py`; общий `src/exp26_core.py` предназначен также W/QK. Embedded `l2_worker.py` и `l3_resume.py` имеют несколько исторических версий, и текущий tracked `.py` покрывает только позднюю. Для точного раннего запуска извлекать его **собственный SOURCES из нужного ipynb**, не подменять весь набор сегодняшним `src/` и не ослаблять SHA-gates.
+7. **Starter ZIP †:** 26a/26b notebooks загружают уже подготовленные ZIP, `exp26_input` проверяет их SHA; tracked `build.py` только переносит их в staging. BPE/data-selection и heldout4k-generation код найден в19/24, но полный tracked скрипт сериализации `protected-questions.json` и сборки исходных starter ZIP не найден. Исходные ZIP/JSON/data/PT также не входят в Git. Поэтому одни файлы manifest без внешних входов **не являются полностью автономным воспроизведением exact bytes**. Причина первого executor-сбоя compact v1 также не установлена; переиспользованные массивы подтверждены последующим полным аудитом.
+
+Основные локальные источники: `work/notes/{wsd-data-scaling-and-sharded-cache,l1-long-training,l2-plan,l2-results,l3-plan,l3-results,p1-review,p1-results,b1-ev-b2-plan,b2-results,b3-plan,b3-results,b4-plan,b4-results,b5-plan,b5-results,b6-plan,b7-plan,b7-results}.md`; `work/kaggle/{l2-anchor,l3-anchors,b3-anchors,b4-anchor,b5-anchors,b6-anchors}.json`; `work/results/{l2-results,l3-final-results,p1-results,b2-results,b3-results,b4-results,b5-results,b7-results}.json`; `work/checks/kaggle-l1-cache-output.json`. `architecture-decision` и R1 объясняют выбор экспериментов, но не добавляют звеньев в наследование этих весов.

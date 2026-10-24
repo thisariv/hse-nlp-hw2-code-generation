@@ -1,0 +1,47 @@
+{
+  "ref": "friend1/nlp-hw02-ensemble-inference-v10",
+  "requested_at_utc": "2026-10-19T14:36:08.667592+00:00",
+  "push_calls": 1,
+  "private": true,
+  "preflight": {
+    "target_absent_in_complete_owned_inventory": true,
+    "owned_count": 37,
+    "active_version": false
+  },
+  "quota_before": {
+    "free_seconds": 53515.615,
+    "used_seconds": 54484.385,
+    "reserved_seconds": 0.0,
+    "reset_utc": "2026-10-24 00:00:00"
+  },
+  "timeout_seconds": 720,
+  "maximum_T4_pair_quota_seconds": 1440,
+  "quota_budget_seconds": 2400,
+  "notebook_sha256": "3fb1e3fc4f6f438fe2f5b1850583779babe6de19fe9ad1062612c9ac579f71c5",
+  "push_started": true,
+  "CLI_returncode": 0,
+  "push_accepted": true,
+  "version": 1,
+  "push_finished_at_utc": "2026-10-19T14:36:11.972616+00:00",
+  "monitor_version": 2,
+  "external_versions": [
+    2
+  ],
+  "observed_version_statuses": {
+    "1": "CANCEL_ACKNOWLEDGED",
+    "2": "CANCEL_ACKNOWLEDGED"
+  },
+  "status": "CANCEL_ACKNOWLEDGED",
+  "last_quota_observation": {
+    "free_seconds": 52295.961,
+    "used_seconds": 55704.039,
+    "reserved_seconds": 0.0,
+    "reset_utc": "2026-10-24 00:00:00"
+  },
+  "first_status_seen_at_utc": {
+    "1:QUEUED": "2026-10-19T14:36:26.268479+00:00",
+    "1:CANCEL_ACKNOWLEDGED": "2026-10-19T14:48:45.326909+00:00",
+    "2:QUEUED": "2026-10-19T14:49:54.293276+00:00",
+    "2:CANCEL_ACKNOWLEDGED": "2026-10-19T14:59:34.482335+00:00"
+  }
+}

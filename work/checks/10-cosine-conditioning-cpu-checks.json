@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-08",
+  "device": "CPU",
+  "torch": "2.14.1",
+  "training_updates": 0,
+  "scope": "new forward/permutation64, complete greedy3 and one eval-mode backward on saved user weights; no optimizer steps or GPU measurements",
+  "validation64_loss": {
+    "correct": 1.8450882338745351,
+    "rotated": 1.9185867456007828,
+    "reversed": 1.8957723372270874
+  },
+  "rotated_minus_correct": 0.07349851172624766,
+  "teacher_forcing_correct_rotated_reproduces_saved_T4_within_1e-5": true,
+  "CPU_full_cached_greedy_equal": true,
+  "full_greedy_answer_matches_saved_T4": [
+    {
+      "validation_index": 0,
+      "tokens": 39,
+      "complete_answer_equal_saved_T4": true
+    },
+    {
+      "validation_index": 2,
+      "tokens": 39,
+      "complete_answer_equal_saved_T4": true
+    },
+    {
+      "validation_index": 4,
+      "tokens": 41,
+      "complete_answer_equal_saved_T4": true
+    }
+  ],
+  "gradient_connectivity_one_eval_backward": {
+    "encoder": {
+      "l2_norm": 0.26116170765378827,
+      "nonzero_elements": 1408177,
+      "elements": 1580032
+    },
+    "decoder_cross_attention": {
+      "l2_norm": 0.49364561162019566,
+      "nonzero_elements": 526333,
+      "elements": 526336
+    },
+    "decoder_self_attention": {
+      "l2_norm": 1.940321950686775,
+      "nonzero_elements": 526336,
+      "elements": 526336
+    },
+    "tokens": {
+      "l2_norm": 0.30454414056972184,
+      "nonzero_elements": 35840,
+      "elements": 1048576
+    }
+  },
+  "model_weights_unchanged": true,
+  "limits": "Three full answers only, not1919 parity. Nonzero gradients prove connectivity on this batch, not useful source learning or original training gradient history. Not official functional evaluation; causes unresolved."
+}

@@ -1,0 +1,48 @@
+{
+  "kind": "E1",
+  "ref": "friend1/nlp-hw02-e1-ensembles",
+  "own_push_calls": 1,
+  "own_version": 1,
+  "latest_version": 4,
+  "status": "COMPLETE",
+  "private": true,
+  "internet": false,
+  "timeout_seconds": 4200,
+  "notebook_sha256": "108ca8a3a7f1158e320ba3ccee668ae1d9ea7fcad0ba1e1c44a66cbaf37f1438",
+  "restart_by_agent": false,
+  "restart_command": "KAGGLE_CONFIG_DIR=~/.kaggle-friend kaggle kernels push -p kaggle/bundles/e1_mine --accelerator NvidiaTeslaT4 --timeout 4200",
+  "observe_command": "python kaggle/e1_api.py observe",
+  "analysis_commands": [
+    "python research/e1-analysis.py tune <raw>",
+    "python research/e1-analysis.py confirm <raw>"
+  ],
+  "wait_until_utc": "2026-10-19T17:00:20.349048+00:00",
+  "external_versions": [
+    2,
+    3,
+    4
+  ],
+  "last_observed_at_utc": "2026-10-19T16:44:18.261179+00:00",
+  "exact_code_parity": true,
+  "report_command": "python research/e1-report.py --raw <raw>",
+  "rebuild_check_command": "python kaggle/build_e1.py --check",
+  "api_requires": "Python environment with kaggle SDK",
+  "cpu_requires": [
+    "torch==2.11.0",
+    "tokenizers",
+    "numpy",
+    "nbformat"
+  ],
+  "analysis_complete": true,
+  "GPU_run_complete": true,
+  "primary": "budget-1-8-8",
+  "primary_success": true,
+  "selection": "results/e1-selection.json",
+  "confirmation": "results/e1-confirm.json",
+  "report": "notes/e1-ensembles.md",
+  "v11_sketch": "results/e1-v11-policy.json",
+  "projected_test1919_seconds": 137.32182664221392,
+  "cold_v11_verified": false,
+  "own_pushes_remaining": 0,
+  "next_action": "Review v11 sketch; no further GPU work in E1"
+}

@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-08",
+  "notebook_sha256": "5e742e884788309127d3431814825d6f197d80d7562ac96e6173c1b0c8930730",
+  "source15_sha256": "b46c5e6ab9604634f05ee8f1b27e52ca59b9fce39bd9a1e9059c972fe54566a1",
+  "cells": 19,
+  "code_cells": 9,
+  "syntax_valid_outputs_empty_relative_paths": true,
+  "model_and_LR_AST_exactly_unchanged_from15": [
+    "SwiGLUInput",
+    "replace_ffn_with_swiglu",
+    "SimpleTransformer",
+    "learning_rate_for_update",
+    "learning_rate_multiplier"
+  ],
+  "tokenizer_hash": "73614c921b43aa6ef715bb23bba583b96785a82304c1964f74ab11d8deef7f86",
+  "train_hash": "7a141e91ce958206be7e18d3c50b5ccf72a10f1d94890c5f0c3927aa497e47b9",
+  "batch_size": 8,
+  "default_maximum_attempts": 5460,
+  "full_T4_benchmark_performed": false,
+  "new_quality_training_performed": false
+}

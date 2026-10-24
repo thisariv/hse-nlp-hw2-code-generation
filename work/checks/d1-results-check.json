@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "receipts": 1271,
+  "paired_rows": 135324,
+  "manual_rows": 30,
+  "replayed_answers_match": 60,
+  "reference_reexecutions_match": 30,
+  "C_rows": 121,
+  "orders_verified": 4,
+  "R1_tests": 11,
+  "R1_static_passed": true,
+  "source_analysis_sha256": "eff54fd41fa96f72c4b37822d13c2a08f298163e057774c4b918c3e72c716b29",
+  "diagnostics_sha256": "9a6bd614ef2dd1a82b28e325b575a41e59cb0a4acef9a7d52dd74e9eb1068e3c",
+  "manual_receipt_sha256": "14347fa464954ac3079410f60a1063a48c1acd0deb5e07f4037740a5e830f42d",
+  "GPU": false,
+  "API": false,
+  "private": true
+}

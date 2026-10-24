@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+  "rows": 9725737,
+  "shards": 60,
+  "remote_files": 428,
+  "required_shard_files": 360,
+  "remote_size_mismatches": [],
+  "all_remote_sizes_verified": true,
+  "content_SHA_scope": "remote manifest exact; payload SHA checked by CompactCache verify=True on GPU mount; remote metadata alone cannot verify payload bytes"
+}

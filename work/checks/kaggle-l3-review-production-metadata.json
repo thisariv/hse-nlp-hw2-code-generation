@@ -1,0 +1,19 @@
+{
+  "ref": "friend1/nlp-hw02-kaggle-l3",
+  "version": "1",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": [
+    "thisarivson/nlp-hw02-26b-inputs",
+    "thisarivson/nlp-hw02-l2-live"
+  ],
+  "kernel_sources": [
+    "thisarivson/nlp-hw02-compact-cache-verified"
+  ],
+  "source_SHA256": "514a5b5c745aeefd3a89bf0b7c2e6b71824511113afd4abdbac01f5c735549fd",
+  "source_port_sha256": "78013232b9f8b072e273d1b6f34f243a493e34c87c8ebe48d770f63bcbd49b5b",
+  "owner": "friend1",
+  "gpu_smoke": false
+}

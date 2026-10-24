@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "owner": "friend2",
+  "source_port_sha256": "8d6985776b0ddca7ec2a64b4696ae6c13113fe08f78c071f01e13ec1abbd053b",
+  "smoke_modules_exact": true,
+  "deep_layers": 12,
+  "main_seconds": 34200,
+  "cooldown_seconds": 1200,
+  "eval_seconds": 3600,
+  "hard_shutdown_seconds": 40800,
+  "private": true,
+  "live_secrets_optional": true,
+  "inputs_accessible": true
+}

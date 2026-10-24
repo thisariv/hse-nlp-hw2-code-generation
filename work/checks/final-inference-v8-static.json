@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "nbformat": true,
+  "v7_worker_decoder_selector_executor_supervisor_unchanged": true,
+  "QK_norm_already_supported": true,
+  "private": true,
+  "single_T4": true,
+  "kernel_output_mounts": true,
+  "guard_generation_execution_verification_supervisor": [
+    160,
+    166,
+    170,
+    172
+  ],
+  "notebook_sha256": "4b3b745a6112613b18c58196f781c6cfe7910d45b755987b03ebd126c5b174a4"
+}

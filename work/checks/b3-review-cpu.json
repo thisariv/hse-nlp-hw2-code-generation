@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "server_modules_match_production": true,
+  "modules": 95,
+  "checks": {
+    "b3-cpu": {
+      "passed": true,
+      "tests": 15
+    },
+    "b1-ev-b2-cpu": {
+      "passed": true,
+      "tests": 9
+    },
+    "b2-review-regressions": {
+      "passed": true,
+      "tests": 5
+    },
+    "b1-cpu": {
+      "passed": true,
+      "tests": 20
+    }
+  },
+  "frozen_B2_implementation_SHA_unchanged": true,
+  "production_pushes": 0,
+  "note": "The CUDA output gate is separate; all B3 CPU tests and inherited B2/B1 tests were run in this review",
+  "watchdog_process_TERM_KILL_and_forced_exit": true,
+  "total_tests": 49
+}

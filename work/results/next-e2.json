@@ -1,0 +1,44 @@
+{
+  "at_utc": "2026-10-20T08:15:51.596896+00:00",
+  "status": "COMPLETE",
+  "output_visible": true,
+  "log_chars": 4938,
+  "status_seconds": 245.541445,
+  "wait_threshold_crossed": false,
+  "own_push_calls": 1,
+  "quota": {
+    "free_seconds": 28303.605,
+    "used_seconds": 79696.395,
+    "reserved_seconds": 0.0
+  },
+  "current_version": 1,
+  "all_code_cells_exact": true,
+  "private": true,
+  "internet": false,
+  "T4_pair": true,
+  "dataset_sources": [
+    "thisarivson/nlp-hw02-26b-inputs",
+    "thisarivson/nlp-hw02-b6-fp16",
+    "thisarivson/nlp-hw02-p1-weights"
+  ],
+  "last_run_time_utc": "2026-10-17 08:15:50.016000",
+  "ref": "thisarivson/nlp-hw02-e2-policy",
+  "bundle": "kaggle/bundles/e2_mine",
+  "notebook_sha256": "d3fc68c0c7aa942c359ec0c81233bf191aeaeafc9a046f1658d74dd1996d9656",
+  "selection_sha256": "71004333d3b2bbc8f02a27fa33ef5be17a25e3088bec0df75e2ce87b049d5338",
+  "requested_at_utc": "2026-10-20T08:02:15.297109+00:00",
+  "agent_must_not_repush": true,
+  "monitor": "kaggle/e2_api.py observe",
+  "download": "kaggle/e2_api.py download",
+  "analysis_pending": false,
+  "completed": true,
+  "confirmation": "results/e2-confirm.json",
+  "decision": "retain_v11",
+  "delta_pp": 0.1953125,
+  "ci95_pp": [
+    -0.244140625,
+    0.634765625
+  ],
+  "forecast_seconds": 148.90956968382517,
+  "independent_tasks": false
+}

@@ -1,0 +1,795 @@
+{
+  "read_on": "2026-10-07",
+  "origin": "user-supplied saved T4 outputs; not rerun by agent",
+  "source_filename": "baseline_first_try_overfit16pairs3000steps_results.ipynb",
+  "source_sha256": "07d25f45ffe66eed17eae321215a117b626e869fe9329f5f9f338f1f94287bf3",
+  "all_eight_code_cells_match_prepared_original_and_continuation": true,
+  "execution_counts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "error_outputs_present": false,
+  "saved_colab_result": {
+    "gpu": "Tesla T4",
+    "torch_version": "2.11.0+cu130",
+    "parameters": 1254915,
+    "dtype": "torch.float32",
+    "training_examples": 16,
+    "small_train_sha256": "d09cd3121ebfaac0707b52136008a00f6389fed0b3eec3b4a1c502e739bdeb6b",
+    "initial_1000_summary": {
+      "actual_steps": 1000,
+      "max_steps": 1000,
+      "memorization_passed": false,
+      "last_teacher_forcing": {
+        "step": 1000,
+        "train_batch_loss": 0.17789992690086365,
+        "fixed_train_loss": 0.04916375130414963,
+        "token_accuracy": 0.9883278608322144,
+        "teacher_forced_sequence_exact_count": 3,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      "last_greedy": {
+        "examples": 16,
+        "mean_generated_tokens": 257.125,
+        "exact_code_match_count": 3,
+        "exact_tokens_with_eos_count": 3,
+        "eos_emitted_count": 16,
+        "early_eos_count": 16,
+        "reached_cap_count": 0,
+        "parses_as_python_count": 7,
+        "defines_solve_count": 7
+      },
+      "wall_seconds_including_diagnostics_and_checkpointing": 42.871838771
+    },
+    "continuation": {
+      "from_step": 1000,
+      "total_steps_limit": 3000,
+      "maximum_extra_updates": 2000
+    },
+    "training_log": [
+      {
+        "step": 0,
+        "train_batch_loss": null,
+        "fixed_train_loss": 5.672550678253174,
+        "token_accuracy": 0.00583608215674758,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 0.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 1,
+        "train_batch_loss": 5.686527252197266,
+        "fixed_train_loss": 4.6454973220825195,
+        "token_accuracy": 0.22760720551013947,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 0.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 50,
+        "train_batch_loss": 1.8093054294586182,
+        "fixed_train_loss": 1.7245177030563354,
+        "token_accuracy": 0.4973357021808624,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 0.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 100,
+        "train_batch_loss": 1.221821665763855,
+        "fixed_train_loss": 1.217724323272705,
+        "token_accuracy": 0.5820857882499695,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 0.4375,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 150,
+        "train_batch_loss": 1.1859831809997559,
+        "fixed_train_loss": 1.0725377798080444,
+        "token_accuracy": 0.6105049252510071,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 0.8125,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 200,
+        "train_batch_loss": 1.0259225368499756,
+        "fixed_train_loss": 0.996288537979126,
+        "token_accuracy": 0.6302968859672546,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 0.8125,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 250,
+        "train_batch_loss": 0.9865645170211792,
+        "fixed_train_loss": 0.8794002532958984,
+        "token_accuracy": 0.6617609858512878,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 0.9375,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 300,
+        "train_batch_loss": 0.9963064789772034,
+        "fixed_train_loss": 0.849934458732605,
+        "token_accuracy": 0.6795229911804199,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 0.8125,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 350,
+        "train_batch_loss": 0.9652976989746094,
+        "fixed_train_loss": 0.7643117308616638,
+        "token_accuracy": 0.7064197063446045,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 0.75,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 400,
+        "train_batch_loss": 0.7998440265655518,
+        "fixed_train_loss": 0.7176316976547241,
+        "token_accuracy": 0.7272266149520874,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 0.875,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 450,
+        "train_batch_loss": 0.764593780040741,
+        "fixed_train_loss": 0.6439766883850098,
+        "token_accuracy": 0.7627505660057068,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 0.9375,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 500,
+        "train_batch_loss": 0.6673609018325806,
+        "fixed_train_loss": 0.5534390807151794,
+        "token_accuracy": 0.7967520952224731,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 550,
+        "train_batch_loss": 0.6050145030021667,
+        "fixed_train_loss": 0.4402637183666229,
+        "token_accuracy": 0.8449631929397583,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 600,
+        "train_batch_loss": 0.5430149435997009,
+        "fixed_train_loss": 0.38763779401779175,
+        "token_accuracy": 0.8632326722145081,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 0.9375,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 650,
+        "train_batch_loss": 0.4062730669975281,
+        "fixed_train_loss": 0.2811072766780853,
+        "token_accuracy": 0.9053539633750916,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 700,
+        "train_batch_loss": 0.4194498062133789,
+        "fixed_train_loss": 0.2312408685684204,
+        "token_accuracy": 0.926922082901001,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 750,
+        "train_batch_loss": 0.33022424578666687,
+        "fixed_train_loss": 0.17375847697257996,
+        "token_accuracy": 0.9492514729499817,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 800,
+        "train_batch_loss": 0.30056238174438477,
+        "fixed_train_loss": 0.13695667684078217,
+        "token_accuracy": 0.9588937163352966,
+        "teacher_forced_sequence_exact_count": 0,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 850,
+        "train_batch_loss": 0.20166566967964172,
+        "fixed_train_loss": 0.1276838630437851,
+        "token_accuracy": 0.9680284261703491,
+        "teacher_forced_sequence_exact_count": 2,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 900,
+        "train_batch_loss": 0.20555105805397034,
+        "fixed_train_loss": 0.1251039355993271,
+        "token_accuracy": 0.9563562870025635,
+        "teacher_forced_sequence_exact_count": 1,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 950,
+        "train_batch_loss": 0.1500864177942276,
+        "fixed_train_loss": 0.08370871841907501,
+        "token_accuracy": 0.9743719696998596,
+        "teacher_forced_sequence_exact_count": 4,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 1000,
+        "train_batch_loss": 0.17789992690086365,
+        "fixed_train_loss": 0.04916375130414963,
+        "token_accuracy": 0.9883278608322144,
+        "teacher_forced_sequence_exact_count": 3,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 1050,
+        "train_batch_loss": 0.11668220162391663,
+        "fixed_train_loss": 0.04395946487784386,
+        "token_accuracy": 0.9873128533363342,
+        "teacher_forced_sequence_exact_count": 3,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 1100,
+        "train_batch_loss": 0.11045734584331512,
+        "fixed_train_loss": 0.03325778990983963,
+        "token_accuracy": 0.9898502826690674,
+        "teacher_forced_sequence_exact_count": 4,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 1150,
+        "train_batch_loss": 0.11388597637414932,
+        "fixed_train_loss": 0.034422606229782104,
+        "token_accuracy": 0.9895965456962585,
+        "teacher_forced_sequence_exact_count": 8,
+        "eos_target_accuracy": 0.9375,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 1200,
+        "train_batch_loss": 0.07617667317390442,
+        "fixed_train_loss": 0.048981983214616776,
+        "token_accuracy": 0.9890890717506409,
+        "teacher_forced_sequence_exact_count": 6,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 1250,
+        "train_batch_loss": 0.06690442562103271,
+        "fixed_train_loss": 0.03846951201558113,
+        "token_accuracy": 0.9898502826690674,
+        "teacher_forced_sequence_exact_count": 8,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 1300,
+        "train_batch_loss": 0.05989783629775047,
+        "fixed_train_loss": 0.010104622691869736,
+        "token_accuracy": 0.9982237815856934,
+        "teacher_forced_sequence_exact_count": 12,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 1350,
+        "train_batch_loss": 0.05865040048956871,
+        "fixed_train_loss": 0.018593862652778625,
+        "token_accuracy": 0.9951788783073425,
+        "teacher_forced_sequence_exact_count": 9,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 1400,
+        "train_batch_loss": 0.041700392961502075,
+        "fixed_train_loss": 0.006579407025128603,
+        "token_accuracy": 0.9987313151359558,
+        "teacher_forced_sequence_exact_count": 12,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 1450,
+        "train_batch_loss": 0.0764269232749939,
+        "fixed_train_loss": 0.012915597297251225,
+        "token_accuracy": 0.9959401488304138,
+        "teacher_forced_sequence_exact_count": 9,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 1500,
+        "train_batch_loss": 0.1431041806936264,
+        "fixed_train_loss": 0.023870468139648438,
+        "token_accuracy": 0.9918802380561829,
+        "teacher_forced_sequence_exact_count": 9,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 1550,
+        "train_batch_loss": 0.05179452523589134,
+        "fixed_train_loss": 0.007578244432806969,
+        "token_accuracy": 0.997208833694458,
+        "teacher_forced_sequence_exact_count": 12,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 1600,
+        "train_batch_loss": 0.02714998833835125,
+        "fixed_train_loss": 0.00449827965348959,
+        "token_accuracy": 0.9989850521087646,
+        "teacher_forced_sequence_exact_count": 14,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 1650,
+        "train_batch_loss": 0.020841088145971298,
+        "fixed_train_loss": 0.009737430140376091,
+        "token_accuracy": 0.9989850521087646,
+        "teacher_forced_sequence_exact_count": 15,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 1700,
+        "train_batch_loss": 0.03103930503129959,
+        "fixed_train_loss": 0.0023163415025919676,
+        "token_accuracy": 1.0,
+        "teacher_forced_sequence_exact_count": 16,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 1750,
+        "train_batch_loss": 0.013360116630792618,
+        "fixed_train_loss": 0.0013134583132341504,
+        "token_accuracy": 0.9997462630271912,
+        "teacher_forced_sequence_exact_count": 15,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 1800,
+        "train_batch_loss": 0.0421767421066761,
+        "fixed_train_loss": 0.01886063814163208,
+        "token_accuracy": 0.9977163076400757,
+        "teacher_forced_sequence_exact_count": 12,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 1850,
+        "train_batch_loss": 0.02263459749519825,
+        "fixed_train_loss": 0.003508766880258918,
+        "token_accuracy": 0.9992387890815735,
+        "teacher_forced_sequence_exact_count": 14,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 1900,
+        "train_batch_loss": 0.01764233224093914,
+        "fixed_train_loss": 0.0017885513370856643,
+        "token_accuracy": 1.0,
+        "teacher_forced_sequence_exact_count": 16,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 1950,
+        "train_batch_loss": 0.016597962006926537,
+        "fixed_train_loss": 0.002097903983667493,
+        "token_accuracy": 0.9992387890815735,
+        "teacher_forced_sequence_exact_count": 13,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 2000,
+        "train_batch_loss": 0.015073132701218128,
+        "fixed_train_loss": 0.005547274369746447,
+        "token_accuracy": 0.9987313151359558,
+        "teacher_forced_sequence_exact_count": 12,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 2050,
+        "train_batch_loss": 0.020993197336792946,
+        "fixed_train_loss": 0.01152939535677433,
+        "token_accuracy": 0.9964476227760315,
+        "teacher_forced_sequence_exact_count": 10,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 2100,
+        "train_batch_loss": 0.021593155339360237,
+        "fixed_train_loss": 0.0030873590148985386,
+        "token_accuracy": 0.9994925260543823,
+        "teacher_forced_sequence_exact_count": 14,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 2150,
+        "train_batch_loss": 0.008767716586589813,
+        "fixed_train_loss": 0.0034769210033118725,
+        "token_accuracy": 0.9989850521087646,
+        "teacher_forced_sequence_exact_count": 14,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 2200,
+        "train_batch_loss": 0.006878435146063566,
+        "fixed_train_loss": 0.0010746619664132595,
+        "token_accuracy": 0.9997462630271912,
+        "teacher_forced_sequence_exact_count": 15,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      {
+        "step": 2250,
+        "train_batch_loss": 0.004049381241202354,
+        "fixed_train_loss": 0.0002124345046468079,
+        "token_accuracy": 1.0,
+        "teacher_forced_sequence_exact_count": 16,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      }
+    ],
+    "greedy_history": [
+      {
+        "step": 250,
+        "examples": 16,
+        "mean_generated_tokens": 449.3125,
+        "exact_code_match_count": 0,
+        "exact_tokens_with_eos_count": 0,
+        "eos_emitted_count": 3,
+        "early_eos_count": 3,
+        "reached_cap_count": 13,
+        "parses_as_python_count": 2,
+        "defines_solve_count": 2
+      },
+      {
+        "step": 500,
+        "examples": 16,
+        "mean_generated_tokens": 314.0625,
+        "exact_code_match_count": 0,
+        "exact_tokens_with_eos_count": 0,
+        "eos_emitted_count": 13,
+        "early_eos_count": 13,
+        "reached_cap_count": 3,
+        "parses_as_python_count": 0,
+        "defines_solve_count": 0
+      },
+      {
+        "step": 750,
+        "examples": 16,
+        "mean_generated_tokens": 325.375,
+        "exact_code_match_count": 0,
+        "exact_tokens_with_eos_count": 0,
+        "eos_emitted_count": 12,
+        "early_eos_count": 12,
+        "reached_cap_count": 4,
+        "parses_as_python_count": 1,
+        "defines_solve_count": 1
+      },
+      {
+        "step": 1000,
+        "examples": 16,
+        "mean_generated_tokens": 257.125,
+        "exact_code_match_count": 3,
+        "exact_tokens_with_eos_count": 3,
+        "eos_emitted_count": 16,
+        "early_eos_count": 16,
+        "reached_cap_count": 0,
+        "parses_as_python_count": 7,
+        "defines_solve_count": 7
+      },
+      {
+        "step": 1250,
+        "examples": 16,
+        "mean_generated_tokens": 224.3125,
+        "exact_code_match_count": 8,
+        "exact_tokens_with_eos_count": 8,
+        "eos_emitted_count": 16,
+        "early_eos_count": 16,
+        "reached_cap_count": 0,
+        "parses_as_python_count": 10,
+        "defines_solve_count": 10
+      },
+      {
+        "step": 1500,
+        "examples": 16,
+        "mean_generated_tokens": 248.5625,
+        "exact_code_match_count": 9,
+        "exact_tokens_with_eos_count": 9,
+        "eos_emitted_count": 16,
+        "early_eos_count": 16,
+        "reached_cap_count": 0,
+        "parses_as_python_count": 11,
+        "defines_solve_count": 11
+      },
+      {
+        "step": 1750,
+        "examples": 16,
+        "mean_generated_tokens": 246.3125,
+        "exact_code_match_count": 15,
+        "exact_tokens_with_eos_count": 15,
+        "eos_emitted_count": 16,
+        "early_eos_count": 16,
+        "reached_cap_count": 0,
+        "parses_as_python_count": 16,
+        "defines_solve_count": 16
+      },
+      {
+        "step": 2000,
+        "examples": 16,
+        "mean_generated_tokens": 246.375,
+        "exact_code_match_count": 12,
+        "exact_tokens_with_eos_count": 12,
+        "eos_emitted_count": 16,
+        "early_eos_count": 16,
+        "reached_cap_count": 0,
+        "parses_as_python_count": 14,
+        "defines_solve_count": 14
+      },
+      {
+        "step": 2250,
+        "examples": 16,
+        "mean_generated_tokens": 246.3125,
+        "exact_code_match_count": 16,
+        "exact_tokens_with_eos_count": 16,
+        "eos_emitted_count": 16,
+        "early_eos_count": 16,
+        "reached_cap_count": 0,
+        "parses_as_python_count": 16,
+        "defines_solve_count": 16
+      }
+    ],
+    "final_summary": {
+      "actual_steps": 2250,
+      "max_steps": 3000,
+      "memorization_passed": true,
+      "last_teacher_forcing": {
+        "step": 2250,
+        "train_batch_loss": 0.004049381241202354,
+        "fixed_train_loss": 0.0002124345046468079,
+        "token_accuracy": 1.0,
+        "teacher_forced_sequence_exact_count": 16,
+        "eos_target_accuracy": 1.0,
+        "target_tokens_including_eos": 3941
+      },
+      "last_greedy": {
+        "examples": 16,
+        "mean_generated_tokens": 246.3125,
+        "exact_code_match_count": 16,
+        "exact_tokens_with_eos_count": 16,
+        "eos_emitted_count": 16,
+        "early_eos_count": 16,
+        "reached_cap_count": 0,
+        "parses_as_python_count": 16,
+        "defines_solve_count": 16
+      },
+      "wall_seconds_including_diagnostics_and_checkpointing": 91.83064656699997
+    },
+    "printed_initial_examples": [
+      {
+        "question": "A group of tourists went on a hike. They hiked for 5 hours and took a 30 minute break. If they hiked in total for 10 miles, what was their average speed in miles/hour?",
+        "reference_code": "def solve() -> int:\n    total_time = 5.5 #hours\n    total_distance_travelled = 10 #miles\n    average_speed = total_distance_travelled / total_time\n    result = average_speed\n\n    return result\n",
+        "generated_code": "def solve() -> int:\n    total_time = 5.5 #hours\n    total_distance_travelled = 10 #miles\n    average_speed = total_distancee_tragesped = #mil_timileedilestourageragele_speed\n\n    return result\n",
+        "expected_tokens": 194,
+        "generated_tokens": 194,
+        "exact_code_match": false,
+        "exact_tokens_with_eos": false,
+        "first_mismatch_token_position_0_based": 123,
+        "eos_emitted": true,
+        "early_eos": true,
+        "reached_cap": false,
+        "parses_as_python": false,
+        "defines_solve": false
+      },
+      {
+        "question": "A ball is kicked and its height above the ground is given by the equation h(t) = -16t^2 + 32t + 15. What is the maximum height of the ball above the ground?",
+        "reference_code": "def solve() -> int:\n    a = -16\n    b = 32\n    c = 15\n    t_max = -b / (2 * a)\n    h_max = -a * (t_max**2) + b * t_max + c\n    result = h_max\n\n    return result\n",
+        "generated_code": "def solve() -> int:\n    a = -16\n      = 32\n    c = 15\n    t_max = -b / (2 * a)\n    h_max = -a * (t_max*2)\n + b -ax*2)  + c\n    result = h_max\n\n    return result\n",
+        "expected_tokens": 162,
+        "generated_tokens": 162,
+        "exact_code_match": false,
+        "exact_tokens_with_eos": false,
+        "first_mismatch_token_position_0_based": 36,
+        "eos_emitted": true,
+        "early_eos": true,
+        "reached_cap": false,
+        "parses_as_python": false,
+        "defines_solve": false
+      },
+      {
+        "question": "Kim has 4 times the number of crayons than 8 less than the number of markers she has. If she has 60 crayons, how many markers does she have?",
+        "reference_code": "def solve() -> int:\n    number_crayons = 60\n    number_markers = number_crayons // 4 + 8\n    result = number_markers\n\n    return result\n",
+        "generated_code": "def solve() -> int:\n    number_crayons = 60\n    number_markers = number_crayons // 4 + 8\n    result = numarkerarkers\n\n    return result\n",
+        "expected_tokens": 137,
+        "generated_tokens": 137,
+        "exact_code_match": false,
+        "exact_tokens_with_eos": false,
+        "first_mismatch_token_position_0_based": 105,
+        "eos_emitted": true,
+        "early_eos": true,
+        "reached_cap": false,
+        "parses_as_python": true,
+        "defines_solve": true
+      }
+    ],
+    "printed_final_examples": [
+      {
+        "question": "A group of tourists went on a hike. They hiked for 5 hours and took a 30 minute break. If they hiked in total for 10 miles, what was their average speed in miles/hour?",
+        "reference_code": "def solve() -> int:\n    total_time = 5.5 #hours\n    total_distance_travelled = 10 #miles\n    average_speed = total_distance_travelled / total_time\n    result = average_speed\n\n    return result\n",
+        "generated_code": "def solve() -> int:\n    total_time = 5.5 #hours\n    total_distance_travelled = 10 #miles\n    average_speed = total_distance_travelled / total_time\n    result = average_speed\n\n    return result\n",
+        "expected_tokens": 194,
+        "generated_tokens": 194,
+        "exact_code_match": true,
+        "exact_tokens_with_eos": true,
+        "first_mismatch_token_position_0_based": null,
+        "eos_emitted": true,
+        "early_eos": true,
+        "reached_cap": false,
+        "parses_as_python": true,
+        "defines_solve": true
+      },
+      {
+        "question": "A ball is kicked and its height above the ground is given by the equation h(t) = -16t^2 + 32t + 15. What is the maximum height of the ball above the ground?",
+        "reference_code": "def solve() -> int:\n    a = -16\n    b = 32\n    c = 15\n    t_max = -b / (2 * a)\n    h_max = -a * (t_max**2) + b * t_max + c\n    result = h_max\n\n    return result\n",
+        "generated_code": "def solve() -> int:\n    a = -16\n    b = 32\n    c = 15\n    t_max = -b / (2 * a)\n    h_max = -a * (t_max**2) + b * t_max + c\n    result = h_max\n\n    return result\n",
+        "expected_tokens": 162,
+        "generated_tokens": 162,
+        "exact_code_match": true,
+        "exact_tokens_with_eos": true,
+        "first_mismatch_token_position_0_based": null,
+        "eos_emitted": true,
+        "early_eos": true,
+        "reached_cap": false,
+        "parses_as_python": true,
+        "defines_solve": true
+      },
+      {
+        "question": "Kim has 4 times the number of crayons than 8 less than the number of markers she has. If she has 60 crayons, how many markers does she have?",
+        "reference_code": "def solve() -> int:\n    number_crayons = 60\n    number_markers = number_crayons // 4 + 8\n    result = number_markers\n\n    return result\n",
+        "generated_code": "def solve() -> int:\n    number_crayons = 60\n    number_markers = number_crayons // 4 + 8\n    result = number_markers\n\n    return result\n",
+        "expected_tokens": 137,
+        "generated_tokens": 137,
+        "exact_code_match": true,
+        "exact_tokens_with_eos": true,
+        "first_mismatch_token_position_0_based": null,
+        "eos_emitted": true,
+        "early_eos": true,
+        "reached_cap": false,
+        "parses_as_python": true,
+        "defines_solve": true
+      }
+    ]
+  },
+  "derived_checks_performed_now": {
+    "continuation_updates": 1250,
+    "total_active_wall_seconds_with_diagnostics_and_checkpoints": 91.83064656699997,
+    "continuation_active_wall_seconds_with_diagnostics_and_checkpoints": 48.958807795999974,
+    "all_in_updates_per_second_not_pure_training_rate": 24.501624284637828,
+    "continuation_all_in_updates_per_second_not_pure_training_rate": 25.531667462338152,
+    "previous_512_pair_training_loop_updates_per_second_including_periodic_val_loss": 38.87269193391642,
+    "previous_512_pair_training_loop_ms_per_update_including_periodic_val_loss": 25.725,
+    "10000_update_seconds_if_previous_loop_rate_holds_projection_only": 257.25,
+    "required_test_answers_per_second": 10.661111111111111,
+    "previous_2000step_test_answers_per_second": 4.866495147773708,
+    "previous_2000step_full_test_seconds_extrapolated_not_measured": 394.3289660687099,
+    "required_speedup_from_previous_2000step_rate_at_same_workload": 2.1907164781594997,
+    "fixed_subset_target_tokens_including_eos": 3941,
+    "fixed_subset_mean_target_tokens_including_eos": 246.3125,
+    "fixed_subset_max_target_tokens_including_eos": 498,
+    "current_inference_seconds_or_rate_measured_separately": false,
+    "mean_length_alone_does_not_establish_speedup": "one batch of 16 still runs to the longest sequence: 498 decoder steps",
+    "early_stop_at_2250_first_observed_greedy_16_of_16": true,
+    "printed_example_text_ast_and_mismatch_checks": [
+      {
+        "cell": 7,
+        "first_mismatch_0_based": 123,
+        "text_exact": false,
+        "ast_valid": false
+      },
+      {
+        "cell": 7,
+        "first_mismatch_0_based": 36,
+        "text_exact": false,
+        "ast_valid": false
+      },
+      {
+        "cell": 7,
+        "first_mismatch_0_based": 105,
+        "text_exact": false,
+        "ast_valid": true
+      },
+      {
+        "cell": 8,
+        "first_mismatch_0_based": null,
+        "text_exact": true,
+        "ast_valid": true
+      },
+      {
+        "cell": 8,
+        "first_mismatch_0_based": null,
+        "text_exact": true,
+        "ast_valid": true
+      },
+      {
+        "cell": 8,
+        "first_mismatch_0_based": null,
+        "text_exact": true,
+        "ast_valid": true
+      }
+    ],
+    "initial_1000_metrics_differ_from_previous_uploaded_run": true,
+    "initial_1000_difference_cause_established": false
+  },
+  "previous_2000step_test_benchmark_for_context_not_current_model": {
+    "batch_size_inference": 32,
+    "max_new_tokens": 512,
+    "test_examples": 1919,
+    "completed": 896,
+    "seconds": 184.11607795600003,
+    "answers_per_second": 4.866495147773708,
+    "generated_tokens": 363320,
+    "tokens_per_second": 1973.320331572705,
+    "mean_generated_tokens": 405.49107142857144,
+    "eos_emitted_fraction": 0.36607142857142855,
+    "early_eos_fraction": 0.36495535714285715,
+    "reached_cap_fraction": 0.6350446428571429,
+    "complete": false,
+    "within_180_seconds": false,
+    "peak_gpu_memory_mib": 604.75341796875,
+    "timer_scope": "encoding, transfers, greedy generation, CPU decoding, predictions save"
+  },
+  "full_results_json_and_checkpoint_provided": false,
+  "all_16_individual_generations_available": false,
+  "programs_executed_now": false,
+  "gpu_training_or_inference_rerun_now": false,
+  "functional_quality_or_generalization_evaluated": false
+}

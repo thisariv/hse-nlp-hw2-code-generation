@@ -1,0 +1,243 @@
+{
+  "date": "2026-10-08",
+  "experiment": "16-training-speed-bpe-cache-amp-fp16-swiglu-bpe4k-100k",
+  "source_archive": "hw02-training-speed-bpe4k-swiglu-t4-results.zip",
+  "source_notebook": "16_training_speed_bpe_cache_amp_fp16_swiglu_bpe_4k_100k_pairs.ipynb",
+  "runtime": {
+    "device": "cuda",
+    "gpu": "Tesla T4",
+    "compute_capability": [
+      7,
+      5
+    ],
+    "torch": "2.11.0+cu130",
+    "cuda": "13.0",
+    "tokenizers": "0.23.2",
+    "cpu_threads": 1,
+    "native_bf16_supported": false
+  },
+  "config": {
+    "seed": 42,
+    "train_size": 100000,
+    "batch": 8,
+    "warmup_attempts": 100,
+    "measured_attempts": 500,
+    "repeats": 3,
+    "profile_attempts_first_repeat": 20,
+    "modes": [
+      "A_fp32_online_bpe",
+      "B_fp32_cached_bpe",
+      "C_amp_fp16_cached_bpe"
+    ],
+    "lr": "same warmup1000/cosine50000/floor as15",
+    "adamw_weight_decay": 0.01,
+    "clip_norm": 1.0,
+    "dropout": 0.1,
+    "data_preparation_factor": "online BPE versus cached IDs; CPU tensors and padding unchanged"
+  },
+  "data": {
+    "revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+    "shard": 0,
+    "train_sha256": "7a141e91ce958206be7e18d3c50b5ccf72a10f1d94890c5f0c3927aa497e47b9",
+    "validation64_sha256": "0edf2b479ebdc103ec05efc704c7bb0ac8084e41a8a44b58afef224702563050",
+    "train_examples": 100000,
+    "download_selection_seconds": 4.368263177000017
+  },
+  "tokenization": {
+    "sha256": "73614c921b43aa6ef715bb23bba583b96785a82304c1964f74ab11d8deef7f86",
+    "vocab": 4096,
+    "training_performed": false,
+    "cache_seconds": 27.432318710999994,
+    "train_cached_pairs": 100000,
+    "train_cached_ids": 11120481
+  },
+  "model": {
+    "parameters": 6306112,
+    "d_model": 256,
+    "encoder_layers": 2,
+    "decoder_layers": 2,
+    "heads": 4,
+    "swiglu_dim": 680,
+    "norm_first": true,
+    "initial_weights_sha256": "3907b78394672f3368b9f88b143884a12cd4b2d711e716f9424013a97e1129bb",
+    "source": "same model definitions and initialization as prepared15",
+    "weights_dtype": "float32",
+    "optimizer_moments_dtype": "float32"
+  },
+  "benchmark_finished": true,
+  "saved_attempts": 5460,
+  "saved_successful_updates": 5460,
+  "summary": [
+    {
+      "mode": "A_fp32_online_bpe",
+      "completed_repeats": 3,
+      "ms_median": 21.08204740000008,
+      "ms_min": 21.07650808799997,
+      "ms_max": 21.335632885999985,
+      "useful_target_tokens_per_second_median": 24798.0457306787,
+      "training_peak_allocated_mib_max": 366.44140625,
+      "measured_skips_total": 0,
+      "all_measured_blocks_stable": true
+    },
+    {
+      "mode": "B_fp32_cached_bpe",
+      "completed_repeats": 3,
+      "ms_median": 19.794341611999922,
+      "ms_min": 18.72534819400005,
+      "ms_max": 19.9842532859999,
+      "useful_target_tokens_per_second_median": 26474.94466909364,
+      "training_peak_allocated_mib_max": 366.44140625,
+      "measured_skips_total": 0,
+      "all_measured_blocks_stable": true
+    },
+    {
+      "mode": "C_amp_fp16_cached_bpe",
+      "completed_repeats": 3,
+      "ms_median": 24.600465254000028,
+      "ms_min": 22.671281452000017,
+      "ms_max": 25.020221109999966,
+      "useful_target_tokens_per_second_median": 21506.99161732201,
+      "training_peak_allocated_mib_max": 281.3984375,
+      "measured_skips_total": 0,
+      "all_measured_blocks_stable": true
+    }
+  ],
+  "recomputed_ratios": {
+    "cache_step_time_reduction_pct": 6.1080679858454,
+    "cache_updates_per_second_increase_pct": 6.505423687441625,
+    "amp_step_time_increase_vs_cached_fp32_pct": 24.28029048001521,
+    "amp_allocated_memory_reduction_pct": 23.20779456128943,
+    "cpu_prepare_speedup": 4.732750257548737
+  },
+  "paired_speedups": [
+    {
+      "repeat": 1,
+      "cache_speedup_A_over_B": 1.0676222213890176,
+      "AMP_speedup_B_over_C": 0.8123526559218414,
+      "combined_speedup_A_over_C": 0.8672857470665445
+    },
+    {
+      "repeat": 2,
+      "cache_speedup_A_over_B": 1.1255602763506034,
+      "AMP_speedup_B_over_C": 0.7484085816698074,
+      "combined_speedup_A_over_C": 0.8423789700074317
+    },
+    {
+      "repeat": 3,
+      "cache_speedup_A_over_B": 1.065054236874416,
+      "AMP_speedup_B_over_C": 0.8731020191297438,
+      "combined_speedup_A_over_C": 0.9299010046977412
+    }
+  ],
+  "fp32_pair_checks": [
+    {
+      "repeat": 1,
+      "max_abs_final_weight_difference": 0.0005014146445319057,
+      "initial_RNG_equal": true,
+      "scope": "FP32 online/cache trajectories; small CUDA nondeterminism possible"
+    },
+    {
+      "repeat": 2,
+      "max_abs_final_weight_difference": 0.00040092976996675134,
+      "initial_RNG_equal": true,
+      "scope": "FP32 online/cache trajectories; small CUDA nondeterminism possible"
+    },
+    {
+      "repeat": 3,
+      "max_abs_final_weight_difference": 0.0003640707291197032,
+      "initial_RNG_equal": true,
+      "scope": "FP32 online/cache trajectories; small CUDA nondeterminism possible"
+    }
+  ],
+  "validation64_CE": [
+    {
+      "repeat": 1,
+      "mode": "A_fp32_online_bpe",
+      "validation64_loss_fp32": 3.273345683678098
+    },
+    {
+      "repeat": 1,
+      "mode": "B_fp32_cached_bpe",
+      "validation64_loss_fp32": 3.273345127215541
+    },
+    {
+      "repeat": 1,
+      "mode": "C_amp_fp16_cached_bpe",
+      "validation64_loss_fp32": 3.269750203372421
+    },
+    {
+      "repeat": 2,
+      "mode": "B_fp32_cached_bpe",
+      "validation64_loss_fp32": 3.238627955460503
+    },
+    {
+      "repeat": 2,
+      "mode": "C_amp_fp16_cached_bpe",
+      "validation64_loss_fp32": 3.2372254940918905
+    },
+    {
+      "repeat": 2,
+      "mode": "A_fp32_online_bpe",
+      "validation64_loss_fp32": 3.2386236501975616
+    },
+    {
+      "repeat": 3,
+      "mode": "C_amp_fp16_cached_bpe",
+      "validation64_loss_fp32": 3.234228211034969
+    },
+    {
+      "repeat": 3,
+      "mode": "A_fp32_online_bpe",
+      "validation64_loss_fp32": 3.2244326834944066
+    },
+    {
+      "repeat": 3,
+      "mode": "B_fp32_cached_bpe",
+      "validation64_loss_fp32": 3.224431336269269
+    }
+  ],
+  "profiles_summary": [
+    {
+      "mode": "A_fp32_online_bpe",
+      "samples": 20,
+      "cpu_prepare_ms_median": 2.314932499984934,
+      "transfer_stream_span_ms_median": 0.09411200135946274,
+      "compute_stream_span_ms_median": 17.959296226501465,
+      "skipped_updates": 0,
+      "finite_losses_and_norms": true,
+      "scope": "separate serialized profile, not additive decomposition of primary block; event spans include launch/host waits"
+    },
+    {
+      "mode": "B_fp32_cached_bpe",
+      "samples": 20,
+      "cpu_prepare_ms_median": 0.4891305000285229,
+      "transfer_stream_span_ms_median": 0.09169599786400795,
+      "compute_stream_span_ms_median": 17.9475040435791,
+      "skipped_updates": 0,
+      "finite_losses_and_norms": true,
+      "scope": "separate serialized profile, not additive decomposition of primary block; event spans include launch/host waits"
+    },
+    {
+      "mode": "C_amp_fp16_cached_bpe",
+      "samples": 20,
+      "cpu_prepare_ms_median": 0.50781650000431,
+      "transfer_stream_span_ms_median": 0.0915680006146431,
+      "compute_stream_span_ms_median": 20.66324806213379,
+      "skipped_updates": 0,
+      "finite_losses_and_norms": true,
+      "scope": "separate serialized profile, not additive decomposition of primary block; event spans include launch/host waits"
+    }
+  ],
+  "cache_break_even_updates_estimate": 21303.250297261737,
+  "quality_base": "15/100000 updates;16 starts from scratch for timing only.",
+  "decision": "Adopt cached BPE IDs with FP32 at batch8. AMP FP16 is stable but slower here; do not adopt for this configuration.",
+  "next_proposal": "Expand allowed train100k to500k, same BPE/model/batch8/FP32/LR and fixed update budget; compare50k then100k to15. Audit coverage/leakage first; not a pure size-only intervention.",
+  "fresh_training_updates": 0,
+  "fresh_GPU_runs": 0,
+  "limits": [
+    "No weight files, full convergence, greedy quality or inference timings in16; no CUDA rerun or deterministic diagnosis of FP32 end-weight differences.",
+    "Median step time is the median of three block means, not the median of individual step latencies.",
+    "Serialized event spans are not additive to primary timing, pure kernel time or GPU utilization.",
+    "Cross-version CPU preparation and T4 initial hashes are not assumed identical; paired A/B/C within saved T4 runtime share the asserted start state."
+  ]
+}

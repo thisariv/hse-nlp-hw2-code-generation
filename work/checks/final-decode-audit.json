@@ -1,0 +1,100 @@
+{
+  "kind": "static estimates and existing observations; not a new GPU profile",
+  "KV_preallocated_in_baseline": true,
+  "cross_projected_once": true,
+  "per_step_cat": 0,
+  "per_step_item": 0,
+  "per_batch_Python_loop_in_decoder": false,
+  "EOS_sync_every_steps": 16,
+  "baseline_torch_threads": 1,
+  "self_KV_capacity_bytes_at_1024_512": 6442450944,
+  "cross_KV_bytes_at_1024_source203": 2554331136,
+  "projection_FLOPs_per_step_at_1024": 53740568576,
+  "KV_model": "logical K/V reads, no measured DRAM counter; ignores attention buffers/activations/weights",
+  "runs": [
+    {
+      "path": "results/kaggle-runs/nlp-hw02-kaggle-l3/final/inference-v4/final-inference-l3/test-1/timing.json",
+      "sha256": "a24dd5c87a4f8fd0e07a1853a2eaa878a6ac65a2ced8f50d1908967389bc53db",
+      "batch_count": 18,
+      "cap512_batches": 3,
+      "greedy_phase_seconds": 23.50433977499995
+    },
+    {
+      "path": "results/kaggle-runs/nlp-hw02-kaggle-l3/final/inference-v4/final-inference-l3/tune/timing.json",
+      "sha256": "70115b9e539b5c0b443903a6be1cebdd7011ffe577085e41ba09693ed617d458",
+      "batch_count": 18,
+      "cap512_batches": 1,
+      "greedy_phase_seconds": 28.34350923799991
+    },
+    {
+      "path": "results/kaggle-runs/nlp-hw02-kaggle-l3/final/inference-v5/final-inference-l3-v5/test-1/timing.json",
+      "sha256": "45778e48b6c2cd35c885cbfda356180cd95b08de85690b308dbeb8f6e66aa2e5",
+      "batch_count": 14,
+      "cap512_batches": 4,
+      "greedy_phase_seconds": 22.73062618900002
+    },
+    {
+      "path": "results/kaggle-runs/nlp-hw02-kaggle-l3/final/inference-v5/final-inference-l3-v5/tune/timing.json",
+      "sha256": "c4051f5f466ac443627d1fabb8a2cd039ad3d8cca51b4c7b01d40b8055a7bb15",
+      "batch_count": 15,
+      "cap512_batches": 3,
+      "greedy_phase_seconds": 27.888044487000002
+    },
+    {
+      "path": "results/kaggle-runs/nlp-hw02-kaggle-l3/final/inference-v5b/final-inference-l3-v5/test-1/timing.json",
+      "sha256": "a36d384b3bd3e74f090fee23431490db90d6cff6c6bd58c78eef6754f55512fd",
+      "batch_count": 14,
+      "cap512_batches": 4,
+      "greedy_phase_seconds": 22.361833079999997,
+      "greedy_batches": [
+        {
+          "sequences": 1024,
+          "source_tokens": 47,
+          "decode_steps": 112,
+          "wall_seconds": 2.097189521999951,
+          "self_KV_logical_read_bytes": 79624667136,
+          "cross_KV_logical_read_bytes": 66236448768,
+          "KV_logical_read_seconds_at_320GBps": 0.4558159872
+        },
+        {
+          "sequences": 895,
+          "source_tokens": 203,
+          "decode_steps": 512,
+          "wall_seconds": 20.263426955,
+          "self_KV_logical_read_bytes": 1444313825280,
+          "cross_KV_logical_read_bytes": 1143063183360,
+          "KV_logical_read_seconds_at_320GBps": 8.085553152
+        }
+      ],
+      "cap512_fraction_greedy_batch_wall": 0.9062105678456087
+    },
+    {
+      "path": "results/kaggle-runs/nlp-hw02-kaggle-l3/final/inference-v5b/final-inference-l3-v5/tune/timing.json",
+      "sha256": "f53a86063843e7f240154c294cb2def912f4b58e63c5cd34e5bd1290d5bbc35a",
+      "batch_count": 14,
+      "cap512_batches": 2,
+      "greedy_phase_seconds": 26.86853182099992,
+      "greedy_batches": [
+        {
+          "sequences": 1024,
+          "source_tokens": 45,
+          "decode_steps": 176,
+          "wall_seconds": 3.8532358490000433,
+          "self_KV_logical_read_bytes": 195991437312,
+          "cross_KV_logical_read_bytes": 99656663040,
+          "KV_logical_read_seconds_at_320GBps": 0.9239003136
+        },
+        {
+          "sequences": 1024,
+          "source_tokens": 149,
+          "decode_steps": 512,
+          "wall_seconds": 23.014115713000024,
+          "self_KV_logical_read_bytes": 1652488667136,
+          "cross_KV_logical_read_bytes": 959925190656,
+          "KV_logical_read_seconds_at_320GBps": 8.1637933056
+        }
+      ],
+      "cap512_fraction_greedy_batch_wall": 0.8565829668730772
+    }
+  ]
+}

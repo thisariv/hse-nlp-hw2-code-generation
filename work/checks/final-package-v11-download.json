@@ -1,0 +1,10 @@
+{
+  "ref": "thisarivson/nlp-hw02-final-package-v11",
+  "version": 1,
+  "files": 19,
+  "downloaded_at_utc": "2026-10-20T08:27:38.186785+00:00",
+  "binding": "latest output; exact server version and code verified before and after",
+  "output": "results/kaggle-runs/nlp-hw02-final-package-v11/1",
+  "executed_notebook_sha256": "043e753c1c433dab0196be1d365fc3240ff9fd7e13ad7b6b2c73f3b5f12a668f",
+  "executed_notebook_code_cells_exact": true
+}

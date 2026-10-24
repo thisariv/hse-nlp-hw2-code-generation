@@ -1,0 +1,19 @@
+{
+  "paths": [
+    "work/kaggle/src/b4_math.py",
+    "work/kaggle/src/b4_runtime.py",
+    "work/kaggle/src/b4_gpu_smoke.py",
+    "work/kaggle/b4_tests.py",
+    "work/kaggle/build_b4.py",
+    "work/kaggle/b4_static_check.py",
+    "work/kaggle/b4_review_api.py",
+    "work/kaggle/b4_review_output.py",
+    "work/kaggle/notebooks/nlp-hw02-b4.ipynb",
+    "work/kaggle/notebooks/nlp-hw02-b4-gpu-smoke.ipynb"
+  ],
+  "message": "nlp: fix B4 truncation memory and independent review gates",
+  "GPU_smoke_v2_pending": true,
+  "attempted": true,
+  "add_returncode": 128,
+  "add_stderr": "fatal: Unable to create '<vault>/.git/worktrees/study1/index.lock': Operation not permitted\n"
+}

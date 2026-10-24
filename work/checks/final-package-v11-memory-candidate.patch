@@ -1,0 +1,96 @@
+--- a/code/hw2_codegen/config.json
++++ b/code/hw2_codegen/config.json
+@@ -32,8 +32,8 @@
+     }
+   ],
+   "unanimity_threshold": 1.0,
+-  "sequence_budget": 768,
+-  "greedy_sequence_budget": 768,
++  "sequence_budget": 640,
++  "greedy_sequence_budget": 640,
+   "scorer_enabled": false,
+   "scorer_weight": 0.0,
+   "device": "cuda:0",
+@@ -60,5 +60,7 @@
+     "verification": 170.0,
+     "supervisor": 172.0,
+     "greedy": 130.0
+-  }
++  },
++  "cuda_allocator": "expandable_segments:True,garbage_collection_threshold:0.8",
++  "release_cache_between_batches": true
+ }
+--- a/code/hw2_codegen/runner.py
++++ b/code/hw2_codegen/runner.py
+@@ -73,7 +73,9 @@
+         MKL_NUM_THREADS="1",
+         OPENBLAS_NUM_THREADS="1",
+         CUBLAS_WORKSPACE_CONFIG=":4096:8",
++        PYTORCH_ALLOC_CONF=config["cuda_allocator"],
+     )
++    env.pop("PYTORCH_CUDA_ALLOC_CONF", None)
+     env["PYTHONPATH"] = (
+         str(Path(__file__).resolve().parent.parent)
+         + os.pathsep
+--- a/code/hw2_codegen/pipeline.py
++++ b/code/hw2_codegen/pipeline.py
+@@ -242,8 +242,8 @@
+                     import gc
+ 
+                     gc.collect()
+-                    if device.type == "cuda":
+-                        torch.cuda.empty_cache()
++                if device.type == "cuda" and (oom or config.get("release_cache_between_batches", False)):
++                    torch.cuda.empty_cache()
+ 
+     stopped, escalated = [], []
+     try:
+--- a/inference.ipynb
++++ b/inference.ipynb
+@@ -63,18 +63,7 @@
+    "id": "6b03d193",
+    "metadata": {},
+    "outputs": [],
+-   "source": [
+-    "import sys\n",
+-    "sys.path.insert(0, str(CODE_ROOT.resolve()))\n",
+-    "from hw2_codegen.config import default_config\n",
+-    "from hw2_codegen.runner import run_cold\n",
+-    "\n",
+-    "config = default_config()\n",
+-    "config.update(weights_root=str(WEIGHTS_ROOT.resolve()), tokenizer=str((WEIGHTS_ROOT / \"tokenizer.json\").resolve()),\n",
+-    "              rows=str(TEST_PATH.resolve()), output=str((OUTPUT_DIR / \"test-1\").resolve()),\n",
+-    "              device=\"cpu\" if DRY_RUN else \"cuda:0\", dry_run=DRY_RUN)\n",
+-    "print(\"Budget:\", config[\"sequence_budget\"], \"| Models:\", [(m[\"name\"], m[\"K1\"], m[\"K2\"]) for m in config[\"models\"]])\n"
+-   ]
++   "source": "import sys\nsys.path.insert(0, str(CODE_ROOT.resolve()))\nfrom hw2_codegen.config import default_config\nfrom hw2_codegen.runner import run_cold\n\nconfig = default_config()\nconfig.update(weights_root=str(WEIGHTS_ROOT.resolve()), tokenizer=str((WEIGHTS_ROOT / \"tokenizer.json\").resolve()),\n              rows=str(TEST_PATH.resolve()), output=str((OUTPUT_DIR / \"test-1\").resolve()),\n              device=\"cpu\" if DRY_RUN else \"cuda:0\", dry_run=DRY_RUN)\nprint(\"Budget:\", config[\"sequence_budget\"], \"| Models:\", [(m[\"name\"], m[\"K1\"], m[\"K2\"]) for m in config[\"models\"]])\n"
+   },
+   {
+    "cell_type": "markdown",
+@@ -94,16 +83,7 @@
+    "id": "4037d4e6",
+    "metadata": {},
+    "outputs": [],
+-   "source": [
+-    "test_result = run_cold(config)\n",
+-    "answers_path = OUTPUT_DIR / \"answers.jsonl\"\n",
+-    "answers_path.write_bytes((OUTPUT_DIR / \"test-1/answers.jsonl\").read_bytes())\n",
+-    "answers = [json.loads(line) for line in answers_path.read_text().splitlines()]\n",
+-    "assert len(answers) == (8 if DRY_RUN else 1919)\n",
+-    "assert all(set(row) == {\"code\"} and isinstance(row[\"code\"], str) for row in answers)\n",
+-    "print(json.dumps({k: test_result.get(k) for k in [\"status\", \"rows\", \"elapsed_seconds\", \"peak_allocated_bytes\", \"peak_reserved_bytes\", \"peak_device_used_bytes\", \"guards\", \"oom_attempts\"]}, indent=2))\n",
+-    "print(\"Bot output:\", answers_path)\n"
+-   ]
++   "source": "test_result = run_cold(config)\nanswers_path = OUTPUT_DIR / \"answers.jsonl\"\nanswers_path.write_bytes((OUTPUT_DIR / \"test-1/answers.jsonl\").read_bytes())\nanswers = [json.loads(line) for line in answers_path.read_text().splitlines()]\nassert len(answers) == (8 if DRY_RUN else 1919)\nassert all(set(row) == {\"code\"} and isinstance(row[\"code\"], str) for row in answers)\nprint(json.dumps({k: test_result.get(k) for k in [\"status\", \"rows\", \"elapsed_seconds\", \"peak_allocated_bytes\", \"peak_reserved_bytes\", \"peak_device_used_bytes\", \"guards\", \"oom_attempts\"]}, indent=2))\nprint(\"Bot output:\", answers_path)\n"
+   },
+   {
+    "cell_type": "markdown",
+@@ -123,7 +103,7 @@
+    "id": "6dfde87d",
+    "metadata": {},
+    "outputs": [],
+-   "source": "RUN_TUNE = True\nsummary = {\"test\": test_result, \"training\": False, \"policy\": \"v11-budget768\"}\nif RUN_TUNE and not DRY_RUN:\n    tune_config = dict(config, rows=str((WEIGHTS_ROOT / \"tune2048.json\").resolve()),\n                       reference=str((WEIGHTS_ROOT / \"tune2048-reference.json\").resolve()),\n                       output=str((OUTPUT_DIR / \"tune\").resolve()))\n    tune_result = run_cold(tune_config)\n    quality = json.loads((OUTPUT_DIR / \"tune/quality.json\").read_text())\n    summary.update(tune=tune_result, quality=quality)\n    print(\"Tune:\", quality[\"matches\"], \"/\", quality[\"n\"], \"| time:\", round(tune_result[\"elapsed_seconds\"], 3))\n    print(\"Tune memory:\", {k: tune_result.get(k) for k in [\"peak_allocated_bytes\", \"peak_reserved_bytes\", \"peak_device_used_bytes\"]})\nruns = [summary[k] for k in [\"test\", \"tune\"] if k in summary]\nsummary[\"gates\"] = dict(test_time=test_result[\"elapsed_seconds\"] <= 150,\n    complete=all(r[\"status\"] == \"complete\" and not r.get(\"fallback_rows\") and not r.get(\"partial_rows\") for r in runs),\n    reexecution=all(not r.get(\"verification\", {}).get(\"mismatch_rows\", []) for r in runs),\n    no_oom=all(not r.get(\"oom_attempts\") for r in runs))\nif not DRY_RUN:\n    summary[\"gates\"][\"memory\"] = all(isinstance(r.get(\"peak_device_used_bytes\"), int) and r[\"peak_device_used_bytes\"] <= 14 * 1024**3 for r in runs)\n    if \"quality\" in summary:\n        summary[\"gates\"][\"tune\"] = abs(summary[\"quality\"][\"matches\"] - config[\"expected_tune_matches\"]) <= .01 * summary[\"quality\"][\"n\"]\nsummary[\"status\"] = \"passed\" if all(summary[\"gates\"].values()) else \"review_required\"\n(OUTPUT_DIR / \"summary.json\").write_text(json.dumps(summary, ensure_ascii=False, indent=2) + \"\\n\")\nprint(\"Gates:\", summary[\"gates\"], \"| status:\", summary[\"status\"])\nassert test_result[\"within_budget\"], \"Превышен официальный лимит 180 с\"\n"
++   "source": "RUN_TUNE = True\nsummary = {\"test\": test_result, \"training\": False, \"policy\": \"v11-budget768\"}\nif RUN_TUNE and not DRY_RUN:\n    tune_config = dict(config, rows=str((WEIGHTS_ROOT / \"tune2048.json\").resolve()),\n                       reference=str((WEIGHTS_ROOT / \"tune2048-reference.json\").resolve()),\n                       output=str((OUTPUT_DIR / \"tune\").resolve()))\n    tune_result = run_cold(tune_config)\n    quality = json.loads((OUTPUT_DIR / \"tune/quality.json\").read_text())\n    summary.update(tune=tune_result, quality=quality)\n    print(\"Tune:\", quality[\"matches\"], \"/\", quality[\"n\"], \"| time:\", round(tune_result[\"elapsed_seconds\"], 3))\n    print(\"Tune memory:\", {k: tune_result.get(k) for k in [\"peak_allocated_bytes\", \"peak_reserved_bytes\", \"peak_device_used_bytes\"]})\nruns = [summary[k] for k in [\"test\", \"tune\"] if k in summary]\nsummary[\"gates\"] = dict(test_time=test_result[\"elapsed_seconds\"] <= 150,\n    complete=all(r[\"status\"] == \"complete\" and not r.get(\"fallback_rows\") and not r.get(\"partial_rows\") for r in runs),\n    reexecution=all(not r.get(\"verification\", {}).get(\"mismatch_rows\", []) for r in runs),\n    no_oom=all(not r.get(\"oom_attempts\") for r in runs))\nif not DRY_RUN:\n    summary[\"gates\"][\"memory\"] = all(isinstance(r.get(\"peak_device_used_bytes\"), int) and r[\"peak_device_used_bytes\"] <= 14_000_000_000 for r in runs)\n    if \"quality\" in summary:\n        summary[\"gates\"][\"tune\"] = abs(summary[\"quality\"][\"matches\"] - config[\"expected_tune_matches\"]) <= .01 * summary[\"quality\"][\"n\"]\nsummary[\"status\"] = \"passed\" if all(summary[\"gates\"].values()) else \"review_required\"\n(OUTPUT_DIR / \"summary.json\").write_text(json.dumps(summary, ensure_ascii=False, indent=2) + \"\\n\")\nprint(\"Gates:\", summary[\"gates\"], \"| status:\", summary[\"status\"])\nassert test_result[\"within_budget\"], \"Превышен официальный лимит 180 с\"\n"
+   },
+   {
+    "cell_type": "markdown",

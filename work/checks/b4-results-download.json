@@ -1,0 +1,49 @@
+{
+  "ref": "thisarivson/nlp-hw02-b4/1",
+  "binding": "latest matched to archived v1 manifest",
+  "files": [
+    {
+      "file": "model-GPU1/updates.jsonl",
+      "bytes": 39763385,
+      "sha256": "e4c533b26373e03ab642dba700acdee834bec199052ba1b0f7fa3d87f3a47087"
+    },
+    {
+      "file": "model-GPU0/updates.jsonl",
+      "bytes": 15074182,
+      "sha256": "d514933676b24c3fec928cb849cc1cb515f8a6a4924b74a8576b084a55f3be4e"
+    },
+    {
+      "file": "model-GPU0/points/b4-probe-070201/cooldown-updates.jsonl",
+      "bytes": 332326,
+      "sha256": "599ae6fa8f53c86b5ec9ff5dd6fd68d11c554388000458f2565a5e67e307ce4d"
+    },
+    {
+      "file": "model-GPU0/points/b4-probe-081002/cooldown-updates.jsonl",
+      "bytes": 322863,
+      "sha256": "796291c5e2465145a227853fcb9c7ff0262a75c19fdaad25a34b3eb9e10e9af2"
+    },
+    {
+      "file": "model-GPU0/points/b4-final-091801/cooldown-updates.jsonl",
+      "bytes": 1084462,
+      "sha256": "c4f9b198428e02b58468d9f591c333ccfa90db926895e861875e1cef9d400c98"
+    },
+    {
+      "file": "model-GPU1/points/b4-probe-070201/cooldown-updates.jsonl",
+      "bytes": 1042000,
+      "sha256": "dd99925e40137784b3ac4a9efb15f367877e4853212435aae05ce29b1876a73a"
+    },
+    {
+      "file": "model-GPU1/points/b4-probe-081002/cooldown-updates.jsonl",
+      "bytes": 1011232,
+      "sha256": "026a04ad911fb5b8072a7e16b4f71ee75aced3433bbdee1abb0768827c163a8f"
+    },
+    {
+      "file": "model-GPU1/points/b4-final-091801/cooldown-updates.jsonl",
+      "bytes": 3400762,
+      "sha256": "84fb4bf3cea3f928293507c97620dd3f4cf6ed4a54bacb29294ed649dbb12707"
+    }
+  ],
+  "manifest_sha256": "bc2201191cb3552ff21a468df730d33cac19013e572877411afaa137d27a4da6",
+  "GPU": false,
+  "weights_downloaded": false
+}

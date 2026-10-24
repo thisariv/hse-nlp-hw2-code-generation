@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-10-20T08:22:32.218333+00:00",
+  "private": true,
+  "smoke_pushes": 1,
+  "production_pushes": 1,
+  "production_status": "RUNNING",
+  "protected_paths_unchanged": true,
+  "files": {
+    "notes/b7-review.md": "6a77911058779f76138eb572a05bbd2ac255159be9fd4f25c6edbeb209c83daa",
+    "results/next-b7.json": "59c4570b734c604fb04c6da56bf07078f2e958db9acf2b079b07809c13af36c1",
+    "checks/b7-review-gpu-smoke.json": "05e9d682bedba902aaec09c141dcb7951bceb23125a849fec212fb6691b8c234",
+    "checks/b7-review-extra-gpu-smoke.json": "1994a2092af220e0dd6915efa030182c2f4396eae829bf70cf08747144a0437d",
+    "checks/b7-review-production-observations.json": "49f9845fe2fada98e01b076dae98ea7d88490149cf1e9547fcf0b6ea9bb694a7"
+  },
+  "commit_created": false,
+  "commit_reason": "Sandbox denied git index.lock; checks/b7-review-git.json"
+}

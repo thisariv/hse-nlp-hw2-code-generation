@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "source": "friend2/nlp-hw02-kaggle-b1/1",
+  "dataset": "thisarivson/nlp-hw02-b1-ev-inputs",
+  "version": 1,
+  "private": true,
+  "transfer_sha256": "d2de397f80135936084d8913d7e5b906c0ad21c0026c45435b86b33a02866dc6",
+  "files": [
+    {
+      "file": "weighted-order__order.json",
+      "original": "weighted-order/order.json",
+      "bytes": 449,
+      "sha256": "d6d78e00071c7a74c46613265002556194c12c76d6b752d498a81e7340144049"
+    },
+    {
+      "file": "weighted-order__order.npy",
+      "original": "weighted-order/order.npy",
+      "bytes": 44911372,
+      "sha256": "8e9595f655ed2b4456bf5b94e9b5b6b3db040e3f5696a4dc0ef364588048bee8"
+    },
+    {
+      "file": "model-GPU0__latest.json",
+      "original": "model-GPU0/latest.json",
+      "bytes": 2395,
+      "sha256": "4e618bad07b6cfc7fa80516fe952d5d2cb54d93d9e0469b9461a7499a845c98f"
+    },
+    {
+      "file": "model-GPU0__checkpoints__main-63bf1a6d8aa7.pt",
+      "original": "model-GPU0/checkpoints/main-63bf1a6d8aa7.pt",
+      "bytes": 1304613251,
+      "sha256": "83b17a2a7c187c618178a5a7d2ac3c6122c9bdc846ec5e0243912f808f4c1649"
+    },
+    {
+      "file": "model-GPU0__weights__probe-028370-fp16.pt",
+      "original": "model-GPU0/weights/probe-028370-fp16.pt",
+      "bytes": 217457211,
+      "sha256": "41769c7d394146018d43498cc30d80734e0d76880e758590f520fd5215b66e05"
+    },
+    {
+      "file": "model-GPU0__points__probe-028370__checkpoint.json",
+      "original": "model-GPU0/points/probe-028370/checkpoint.json",
+      "bytes": 197,
+      "sha256": "8e9762e0c4136c06e41512fccfbff5f1706c67bfafee7aa2e583996b92d47132"
+    },
+    {
+      "file": "model-GPU1__latest.json",
+      "original": "model-GPU1/latest.json",
+      "bytes": 2394,
+      "sha256": "32b701e669ebee692c969410c18b7c7fc94d803b837695e1ce9c08fb0d460ae0"
+    },
+    {
+      "file": "model-GPU1__checkpoints__main-7bb6a1232f35.pt",
+      "original": "model-GPU1/checkpoints/main-7bb6a1232f35.pt",
+      "bytes": 1361386515,
+      "sha256": "988305015bde3ed62e92a1eacf1fcd24c6c90508ee853bfec800f97a2fc454d5"
+    },
+    {
+      "file": "model-GPU1__weights__probe-028370-fp16.pt",
+      "original": "model-GPU1/weights/probe-028370-fp16.pt",
+      "bytes": 226916891,
+      "sha256": "0f4e52e1f6f71f9940766c5e66d62ffb7076a047428b70e55c0ff1f4a1090a23"
+    },
+    {
+      "file": "model-GPU1__points__probe-028370__checkpoint.json",
+      "original": "model-GPU1/points/probe-028370/checkpoint.json",
+      "bytes": 197,
+      "sha256": "d502a861f98180d1809e5dfff22b63d67cdbbbaadc53e6128438c940061b266a"
+    },
+    {
+      "file": "b1-transfer.json",
+      "bytes": 2621,
+      "sha256": "d2de397f80135936084d8913d7e5b906c0ad21c0026c45435b86b33a02866dc6"
+    }
+  ],
+  "remote_SHA_verified": true,
+  "local_payload_deleted": true,
+  "streaming_one_payload": true
+}

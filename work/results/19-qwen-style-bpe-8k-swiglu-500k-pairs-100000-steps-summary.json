@@ -1,0 +1,454 @@
+{
+  "date": "2026-10-09",
+  "experiment": "19-qwen-style-bpe8k-swiglu-500k-pairs-100000-steps-heldout1024",
+  "source_notebook": {
+    "name": "19_qwen_style_bpe_8k_swiglu_500k_pairs_100000_steps.ipynb",
+    "bytes": 1416832,
+    "sha256": "218251c9ddbe1b07f02d4d26176aa59ce31e90259f23669bf46e0517c22b7889"
+  },
+  "source_archive": {
+    "name": "hw02-qwen-bpe8k-swiglu-500k-100000steps-results.zip",
+    "bytes": 359066360,
+    "sha256": "44245bab77f01083eca38ef3a30b7e1107f44e4694a7cf06d85d7555cfa75867"
+  },
+  "stored_notebook": {
+    "file": "19-qwen-style-bpe-8k-swiglu-500k-pairs-100000-steps-results.ipynb",
+    "sha256": "b422fa80862676812daac9f859af9b8148a25333c8e10db675b774399f478f6b",
+    "changes": "Colab metadata only; code, execution counts and outputs preserved"
+  },
+  "manifest": {
+    "experiment": "19-qwen-style-bpe8k-swiglu-500k-pairs-100000-steps-heldout1024",
+    "actual_steps": 100000,
+    "phase": "complete",
+    "files": [
+      {
+        "name": "README.txt",
+        "bytes": 484,
+        "sha256": "53293b36cc5762c4d40abb01ac364279f9a0e550d4a6eda1e70e020932b47d91"
+      },
+      {
+        "name": "fresh-heldout-reserved.json",
+        "bytes": 460807,
+        "sha256": "7de47cf272e357ef36f3a87eb1fd2574d033aaa72ea0d3e223977d176c14ece1"
+      },
+      {
+        "name": "latest.pt",
+        "bytes": 102035915,
+        "sha256": "014736c3180d5bfcf77fcff16d7c358a01ed92051bb306d528f0f302e476374a"
+      },
+      {
+        "name": "results.json",
+        "bytes": 15566493,
+        "sha256": "164f208fd91ac4f69fb46a6443295ad8e83243909aa3fb3315682f29dd430084"
+      },
+      {
+        "name": "step-100000.pt",
+        "bytes": 102037480,
+        "sha256": "024d1b9c0662ef60b81be25de3180db4148b894c9fd6e8a4343758299a8be664"
+      },
+      {
+        "name": "step-50000.pt",
+        "bytes": 102037103,
+        "sha256": "e8dbf943481fafc9b9fc7303c4a6aa55e1e22da7b50f6175746eda6f7742bd77"
+      },
+      {
+        "name": "step-75000.pt",
+        "bytes": 102037231,
+        "sha256": "08c6dc61332f256f1b8994c52bfb60c935608866790e25c0e43a16d9360b94b1"
+      },
+      {
+        "name": "test-generations.json",
+        "bytes": 3769685,
+        "sha256": "d2fa43d7d969181156da539a83fee727c2cf9c499322aaf25b70f9bc1595d554"
+      },
+      {
+        "name": "tokenizer.json",
+        "bytes": 545866,
+        "sha256": "261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d"
+      }
+    ]
+  },
+  "checkpoints": [
+    {
+      "source_member": "step-50000.pt",
+      "local_file": "checkpoints/19-qwen-style-bpe-8k-swiglu-500k-pairs-step-50000.pt",
+      "bytes": 102037103,
+      "sha256": "e8dbf943481fafc9b9fc7303c4a6aa55e1e22da7b50f6175746eda6f7742bd77",
+      "steps": 50000,
+      "finite_model_and_AdamW": true,
+      "unique_train_rows_seen": 275423,
+      "same_Python_RNG_seen_rows_as18": true
+    },
+    {
+      "source_member": "step-75000.pt",
+      "local_file": "checkpoints/19-qwen-style-bpe-8k-swiglu-500k-pairs-step-75000.pt",
+      "bytes": 102037231,
+      "sha256": "08c6dc61332f256f1b8994c52bfb60c935608866790e25c0e43a16d9360b94b1",
+      "steps": 75000,
+      "finite_model_and_AdamW": true,
+      "unique_train_rows_seen": 349535,
+      "same_Python_RNG_seen_rows_as18": true
+    },
+    {
+      "source_member": "step-100000.pt",
+      "local_file": "checkpoints/19-qwen-style-bpe-8k-swiglu-500k-pairs-step-100000.pt",
+      "bytes": 102037480,
+      "sha256": "024d1b9c0662ef60b81be25de3180db4148b894c9fd6e8a4343758299a8be664",
+      "steps": 100000,
+      "finite_model_and_AdamW": true,
+      "unique_train_rows_seen": 399353,
+      "same_Python_RNG_seen_rows_as18": true
+    },
+    {
+      "source_member": "latest.pt",
+      "local_file": "checkpoints/19-qwen-style-bpe-8k-swiglu-500k-pairs-latest-step-100000.pt",
+      "bytes": 102035915,
+      "sha256": "014736c3180d5bfcf77fcff16d7c358a01ed92051bb306d528f0f302e476374a",
+      "steps": 100000,
+      "finite_model_and_AdamW": true,
+      "unique_train_rows_seen": 399353,
+      "same_Python_RNG_seen_rows_as18": true
+    }
+  ],
+  "runtime": {
+    "device": "cuda",
+    "gpu": "Tesla T4",
+    "torch": "2.11.0+cu130",
+    "cuda": "13.0",
+    "tokenizers": "0.23.2",
+    "cpu_threads": 1
+  },
+  "config": {
+    "seed": 42,
+    "train_size": 500000,
+    "batch_size_train": 8,
+    "total_steps": 100000,
+    "evaluation_steps": [
+      2000,
+      5000,
+      10000,
+      20000,
+      30000,
+      50000,
+      75000,
+      100000
+    ],
+    "full_evaluation_steps": [
+      50000,
+      75000,
+      100000
+    ],
+    "d_model": 256,
+    "encoder_layers": 2,
+    "decoder_layers": 2,
+    "heads": 4,
+    "ffn_dim": 680,
+    "relu_reference_ffn_dim": 1024,
+    "dropout": 0.1,
+    "activation": "SwiGLU (SiLU gate * linear value)",
+    "ffn_bias": true,
+    "norm_first": true,
+    "lr": 0.001,
+    "optimizer": "AdamW",
+    "weight_decay": 0.01,
+    "clip_norm": 1.0,
+    "scheduler": {
+      "name": "LambdaLR",
+      "schedule": "linear_warmup_then_cosine",
+      "total_steps": 50000,
+      "warmup_steps": 1000,
+      "cosine_steps": 49000,
+      "peak_lr": 0.001,
+      "eta_min": 0.0001,
+      "first_update_lr": 1e-06,
+      "restarts": false,
+      "step_unit": "optimizer update",
+      "indexing": "s=1..T; updateW uses peak; updateT uses floor; scheduler index counts completed updates",
+      "lr_after_original_horizon": 0.0001
+    },
+    "dtype": "float32",
+    "tokenizer": "own Qwen-style byte-level BPE",
+    "vocab": 8192,
+    "content_id_offset": 3,
+    "special_ids": {
+      "pad": 0,
+      "bos": 1,
+      "eos": 2
+    },
+    "tokenizer_sha256": "261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d",
+    "max_positions": 2048,
+    "generation_cap": 512,
+    "batch_size_inference": 32,
+    "inference": "Pre-LN incremental KV cache",
+    "tokenizer_source_experiment": "19",
+    "training_from_scratch": true,
+    "ffn_initialization": "Current vocab8192 model initialized from scratch; SwiGLU under isolated seed42 CPU RNG, Xavier matrices and nn.Linear biases; no checkpoint loaded",
+    "parameter_change_vs18": 2101248,
+    "experiment_factor": "tokenizer component: Qwen-style boundaries + vocabulary4096 to8192 + tokenizer-training20k to500k; same LM train500k/model blocks/100k updates as18; cannot isolate boundaries versus vocabulary/corpus/extra embedding parameters",
+    "data_preparation": "cached BPE IDs as16/B; FP32 weights/AdamW; no AMP",
+    "training_coverage_tracking": "per-row CPU byte flags and useful target token count, included in train timer"
+  },
+  "data": {
+    "revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+    "training_examples": 500000,
+    "shards_used": [
+      {
+        "shard": 0,
+        "path": "data/train/part-00000.parquet",
+        "bytes": 26169796,
+        "sha256": "91831d582faa12d73b1a6b3878e496446cd5df074f17ee4ffea8cc2887c708ec",
+        "source_rows": 200000,
+        "rows_scanned": 200000,
+        "question_over512": 694,
+        "code_512_or_more": 5418,
+        "eligible_rows": 194060,
+        "test_copies_excluded": 0,
+        "hash_heldout_rows_excluded": 19541,
+        "accepted_train_pairs": 174519
+      },
+      {
+        "shard": 1,
+        "path": "data/train/part-00001.parquet",
+        "bytes": 26166175,
+        "sha256": "5222d657a1af07a531f1b22503f35741a6547f0831509897d0a279bc8f67d068",
+        "source_rows": 200000,
+        "rows_scanned": 200000,
+        "question_over512": 682,
+        "code_512_or_more": 5369,
+        "eligible_rows": 194120,
+        "test_copies_excluded": 0,
+        "hash_heldout_rows_excluded": 19275,
+        "accepted_train_pairs": 174845
+      },
+      {
+        "shard": 2,
+        "path": "data/train/part-00002.parquet",
+        "bytes": 26162244,
+        "sha256": "c6082401ea966aeaa8375018ae1f1d9c7c55cc30e421c45cc933ceacd97dc3de",
+        "source_rows": 200000,
+        "rows_scanned": 172788,
+        "question_over512": 604,
+        "code_512_or_more": 4806,
+        "eligible_rows": 167523,
+        "test_copies_excluded": 0,
+        "hash_heldout_rows_excluded": 16887,
+        "accepted_train_pairs": 150636
+      }
+    ],
+    "selection": "first500k eligible non-hash-heldout, non-test rows across consecutive pinned shards0..; original100k exact prefix; question<=512/code<512 UTF8 bytes; duplicate train questions retained as before",
+    "train_sha256": "61483f4dc6970ff5f2b1afffa45d57391dcfc01ab6ec4f140c6e6b6c792c8c38",
+    "train_locations_sha256": "c2332a54a923ffa85da9ac91ec0a39a2e4ead7f7c2e328abecef702e1d306ba7",
+    "base20k_sha256": "1304183967f02f01097d76c12fb24df30916a4ec44e54833cd3509264359300e",
+    "base100k_sha256": "7a141e91ce958206be7e18d3c50b5ccf72a10f1d94890c5f0c3927aa497e47b9",
+    "base20k_prefix_unchanged": true,
+    "base100k_prefix_unchanged": true,
+    "train64_sha256": "125106742b04a01ebe70f106730c0bd9a30f52244bef86b4215f27591d200203",
+    "unique_train_questions": 485373,
+    "duplicate_question_rows": 14627,
+    "validation_examples": 64,
+    "validation64_sha256": "0edf2b479ebdc103ec05efc704c7bb0ac8084e41a8a44b58afef224702563050",
+    "extra_heldout_examples": 192,
+    "extra_heldout_sha256": "a2140e9f3e05f8ea10e4647b3a28335d4c9e240c083c14e8b23cf30a6dbe8bfc",
+    "new_heldout_examples": 768,
+    "new_heldout_sha256": "e8273f55b276a9c5d73e18ff89bc8cbf550dbfec2a25380063635fa39d3fd3bd",
+    "total_heldout_examples": 1024,
+    "heldout1024_sha256": "e187bc297218365f1a1452a15376e0ff2fceaf8a5a5517820549854b90564743",
+    "heldout256_sha256": "6735359ee7a7e1b0738f8180d810b3aaff855307ec1b067c504e099295ff37f8",
+    "question_overlap_train_heldout": 0,
+    "question_overlap_train_test": 0,
+    "fresh_heldout_reserved": {
+      "examples": 1024,
+      "pairs_sha256": "eaf5f7c00559d6b1e5650a0dd879e5b4a214931ee803f8c1f6efd956c54971b2",
+      "file": "fresh-heldout-reserved.json",
+      "train_question_overlap": 0,
+      "old_heldout_question_overlap": 0,
+      "selection": "first1024 distinct eligible hash-heldout questions from shard1 onward; no old-heldout/test copies",
+      "scope": "reserved for final comparison of selected models; not evaluated or used to tune this run"
+    },
+    "total_pair_presentations_planned": 800000,
+    "mean_pair_presentations_planned": 1.6,
+    "download_and_selection_seconds": 23.805706356999963,
+    "intervention_scope": "same pinned train500k/heldout as18; tokenizer component changes"
+  },
+  "training_coverage": {
+    "unique_train_rows_seen": 399353,
+    "fraction_train_rows_seen": 0.798706,
+    "pair_presentations": 800000,
+    "useful_target_tokens": 52789363,
+    "target_slots_with_padding": 85115448,
+    "target_padding_fraction": 0.37979104568655975
+  },
+  "comparison": {
+    "reference_agreements": {
+      "18": 142,
+      "19": 136,
+      "denominator": 888
+    },
+    "byte_nll": {
+      "18": 0.251605382453931,
+      "19": 0.254695704394066
+    },
+    "train_seconds": {
+      "18_chain17_18": 2111.8943490980027,
+      "19": 2237.7189688820004
+    },
+    "test_seconds": {
+      "18": 46.63507939300007,
+      "19": 40.61133490500015
+    },
+    "timing_scope": "Saved separate T4 runs, not paired speed benchmark; test timer excludes preparation/loss/checkpoint loading."
+  },
+  "test": {
+    "split": "test1919",
+    "examples": 1919,
+    "bpe_loss": null,
+    "seconds": 40.61133490500015,
+    "answers_per_second": 47.252817581323306,
+    "generated_tokens_including_eos": 131684,
+    "generated_utf8_bytes": 453662,
+    "mean_tokens_including_eos": 68.62115685252736,
+    "mean_utf8_bytes": 236.40541948931735,
+    "max_new_tokens": 512,
+    "max_output_bytes": null,
+    "batch_size_inference": 32,
+    "peak_gpu_memory_mib": 278.212890625,
+    "timer_scope": "same as08: encode, transfers, encoder/KV decode, CPU decoding and AST; excludes loss, warmup, data loading and extra arithmetic/repetition diagnostics",
+    "extra_diagnostics_seconds_excluded": 0.43995284999982687,
+    "unique_generated_code_count": 1912,
+    "most_common_generated_code_count": 3,
+    "most_common_generated_code_fraction": 0.001563314226159458,
+    "numeric_ast_scope": "restricted straight-line numeric AST; no exec/eval/calls/imports/conditions/loops/strings; unsupported not scored; reference may be wrong; not pass@1",
+    "numeric_ast_statuses": {
+      "numeric": 1680,
+      "undefined_name": 122,
+      "arithmetic_error": 13,
+      "unsupported": 75,
+      "syntax_error": 29
+    },
+    "numeric_ast_undefined_name_count": 122,
+    "repeated_tail_32_plus_count": 16,
+    "consecutive_lines_3_plus_count": 112,
+    "syntax_error_types": {
+      "SyntaxError": 27,
+      "IndentationError": 2
+    },
+    "parses_as_python_count": 1890,
+    "defines_solve_count": 1890,
+    "solve_returns_value_count": 1877,
+    "indentation_error_count": 2,
+    "valid_utf8_count": 1919,
+    "eos_emitted_count": 1891,
+    "reached_token_cap_count": 28,
+    "token_cap_without_eos_count": 28,
+    "byte_budget_stop_count": 0,
+    "bpe_tokens_per_second": 3242.543006971849,
+    "output_bytes_per_second": 11170.822162364928,
+    "within_180_seconds": true
+  },
+  "controls": {
+    "50000": {
+      "examples": 1024,
+      "bpe_loss": 0.9555335330140833,
+      "reference_target_tokens_including_eos": 67962,
+      "reference_utf8_bytes": 232162,
+      "nll_sum_including_eos": 64939.969970703125,
+      "nll_per_utf8_byte": 0.2797183430996594,
+      "numeric_audit": {
+        "heldout_pairs_total": 1024,
+        "reference_numeric_pairs": 888,
+        "reference_unsupported_pairs": 136,
+        "questions_and_references_sha256": "962724938ba673e6b613f62965766e27155bb01b5cb2d72b96b7807c8a18f179",
+        "generated_statuses_on_fixed_reference_subset": {
+          "numeric": 774,
+          "undefined_name": 65,
+          "syntax_error": 24,
+          "unsupported": 17,
+          "no_return": 3,
+          "arithmetic_error": 5
+        },
+        "numeric_reference_agreements": 113,
+        "wrong_numeric_count": 661,
+        "definite_failure_count": 97,
+        "unresolved_generated_unsupported_count": 17,
+        "scope": "same heldout pairs whose reference is supported numeric arithmetic; failures stay in denominator; unsupported unresolved; references may be wrong; not official pass@1"
+      },
+      "parses_as_python_count": 995,
+      "eos_emitted_count": 1001,
+      "token_cap_without_eos_count": 23,
+      "undefined_name_count": 75,
+      "generation_seconds_sum": 30.232657665000715,
+      "timing_scope": "sum of separately timed heldout groups, not a new single inference pass; loss/extra arithmetic excluded"
+    },
+    "75000": {
+      "examples": 1024,
+      "bpe_loss": 0.9052400290097775,
+      "reference_target_tokens_including_eos": 67962,
+      "reference_utf8_bytes": 232162,
+      "nll_sum_including_eos": 61521.9228515625,
+      "nll_per_utf8_byte": 0.2649956618721518,
+      "numeric_audit": {
+        "heldout_pairs_total": 1024,
+        "reference_numeric_pairs": 888,
+        "reference_unsupported_pairs": 136,
+        "questions_and_references_sha256": "962724938ba673e6b613f62965766e27155bb01b5cb2d72b96b7807c8a18f179",
+        "generated_statuses_on_fixed_reference_subset": {
+          "unsupported": 31,
+          "numeric": 788,
+          "undefined_name": 52,
+          "arithmetic_error": 5,
+          "syntax_error": 11,
+          "no_return": 1
+        },
+        "numeric_reference_agreements": 127,
+        "wrong_numeric_count": 661,
+        "definite_failure_count": 69,
+        "unresolved_generated_unsupported_count": 31,
+        "scope": "same heldout pairs whose reference is supported numeric arithmetic; failures stay in denominator; unsupported unresolved; references may be wrong; not official pass@1"
+      },
+      "parses_as_python_count": 1003,
+      "eos_emitted_count": 1007,
+      "token_cap_without_eos_count": 17,
+      "undefined_name_count": 56,
+      "generation_seconds_sum": 23.27393720200007,
+      "timing_scope": "sum of separately timed heldout groups, not a new single inference pass; loss/extra arithmetic excluded"
+    },
+    "100000": {
+      "examples": 1024,
+      "bpe_loss": 0.8700547971445095,
+      "reference_target_tokens_including_eos": 67962,
+      "reference_utf8_bytes": 232162,
+      "nll_sum_including_eos": 59130.664123535156,
+      "nll_per_utf8_byte": 0.254695704394066,
+      "numeric_audit": {
+        "heldout_pairs_total": 1024,
+        "reference_numeric_pairs": 888,
+        "reference_unsupported_pairs": 136,
+        "questions_and_references_sha256": "962724938ba673e6b613f62965766e27155bb01b5cb2d72b96b7807c8a18f179",
+        "generated_statuses_on_fixed_reference_subset": {
+          "unsupported": 28,
+          "numeric": 796,
+          "syntax_error": 4,
+          "undefined_name": 49,
+          "arithmetic_error": 10,
+          "no_return": 1
+        },
+        "numeric_reference_agreements": 136,
+        "wrong_numeric_count": 660,
+        "definite_failure_count": 64,
+        "unresolved_generated_unsupported_count": 28,
+        "scope": "same heldout pairs whose reference is supported numeric arithmetic; failures stay in denominator; unsupported unresolved; references may be wrong; not official pass@1"
+      },
+      "parses_as_python_count": 1014,
+      "eos_emitted_count": 1016,
+      "token_cap_without_eos_count": 8,
+      "undefined_name_count": 54,
+      "generation_seconds_sum": 16.934340362000057,
+      "timing_scope": "sum of separately timed heldout groups, not a new single inference pass; loss/extra arithmetic excluded"
+    }
+  },
+  "limits": [
+    "Proxy is not official pass@1; references have known errors.",
+    "Only saved user GPU timings; no new GPU or model training.",
+    "Tokenizer regex/vocab/corpus changed together; cannot attribute effects to one factor."
+  ]
+}

@@ -1,0 +1,1800 @@
+[
+  {
+    "at_utc": "2026-10-19T15:47:02.822275+00:00",
+    "version": 1,
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 2.5e-05,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52196.913011,
+      "used_seconds": 55803.086989,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 1,
+    "last_run_time_utc": "2026-10-16 15:47:00.169000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T15:48:50.097298+00:00",
+    "version": 1,
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 107.275007,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52089.622367,
+      "used_seconds": 55910.377633,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 1,
+    "last_run_time_utc": "2026-10-16 15:48:46.265000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T15:50:08.197414+00:00",
+    "version": 1,
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 185.37512,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52011.497861,
+      "used_seconds": 55988.502139,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 1,
+    "last_run_time_utc": "2026-10-16 15:50:05.441000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T15:51:09.163707+00:00",
+    "version": 1,
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 246.341416,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 51950.562663,
+      "used_seconds": 56049.437337,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 1,
+    "last_run_time_utc": "2026-10-16 15:51:05.940000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T15:52:03.319925+00:00",
+    "version": 1,
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 300.497632,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 51896.421144,
+      "used_seconds": 56103.578856,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 1,
+    "last_run_time_utc": "2026-10-16 15:52:00.879000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T15:52:58.481854+00:00",
+    "version": 1,
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 355.659565,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 51841.245522,
+      "used_seconds": 56158.754478,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 1,
+    "last_run_time_utc": "2026-10-16 15:52:55.767000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T15:53:54.395381+00:00",
+    "version": 1,
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 411.57309,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 51785.330514,
+      "used_seconds": 56214.669486,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 1,
+    "last_run_time_utc": "2026-10-16 15:53:50.824000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T15:54:48.664226+00:00",
+    "version": 1,
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 465.841942,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 51731.066822,
+      "used_seconds": 56268.933178,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 1,
+    "last_run_time_utc": "2026-10-16 15:54:45.894000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T15:55:43.556648+00:00",
+    "version": 1,
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 520.734363,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 51675.865512,
+      "used_seconds": 56324.134488,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 1,
+    "last_run_time_utc": "2026-10-16 15:55:40.891000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T15:56:38.843485+00:00",
+    "version": 1,
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 576.021203,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 51620.433023,
+      "used_seconds": 56379.566977,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 1,
+    "last_run_time_utc": "2026-10-16 15:56:35.985000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T15:57:33.629036+00:00",
+    "version": 1,
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 630.806752,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 51566.091756,
+      "used_seconds": 56433.908244,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 1,
+    "last_run_time_utc": "2026-10-16 15:57:31.060000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T15:58:28.724634+00:00",
+    "version": 2,
+    "status": "QUEUED",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 1.1e-05,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 2,
+    "last_run_time_utc": "2026-10-16 15:58:25.984000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T15:59:24.122347+00:00",
+    "version": 2,
+    "status": "QUEUED",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 55.397682,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 2,
+    "last_run_time_utc": "2026-10-16 15:59:20.927000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:00:18.809826+00:00",
+    "version": 2,
+    "status": "QUEUED",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 110.08518,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 2,
+    "last_run_time_utc": "2026-10-16 16:00:16.224000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:01:13.379442+00:00",
+    "version": 2,
+    "status": "QUEUED",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 164.654793,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 2,
+    "last_run_time_utc": "2026-10-16 16:01:10.915000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:02:08.963740+00:00",
+    "version": 2,
+    "status": "QUEUED",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 220.239097,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 2,
+    "last_run_time_utc": "2026-10-16 16:02:05.963000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:03:03.486763+00:00",
+    "version": 2,
+    "status": "QUEUED",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 274.762113,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 2,
+    "last_run_time_utc": "2026-10-16 16:03:01.001000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:03:58.568028+00:00",
+    "version": 2,
+    "status": "QUEUED",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 329.843376,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 2,
+    "last_run_time_utc": "2026-10-16 16:03:55.945000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:04:54.680587+00:00",
+    "version": 2,
+    "status": "QUEUED",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 385.955938,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 2,
+    "last_run_time_utc": "2026-10-16 16:04:50.954000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:05:48.665516+00:00",
+    "version": 2,
+    "status": "QUEUED",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 439.940874,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 2,
+    "last_run_time_utc": "2026-10-16 16:05:46.036000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:06:43.755926+00:00",
+    "version": 2,
+    "status": "QUEUED",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 495.031275,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 2,
+    "last_run_time_utc": "2026-10-16 16:06:41.136000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:07:39.647073+00:00",
+    "version": 2,
+    "status": "QUEUED",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 550.922426,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 2,
+    "last_run_time_utc": "2026-10-16 16:07:36.025000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:08:34.475638+00:00",
+    "version": 2,
+    "status": "QUEUED",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 605.750983,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 2,
+    "last_run_time_utc": "2026-10-16 16:08:31.386000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:09:28.759028+00:00",
+    "version": 3,
+    "status": "QUEUED",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 2.7e-05,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 3,
+    "last_run_time_utc": "2026-10-16 16:09:26.240000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:10:24.210361+00:00",
+    "version": 3,
+    "status": "QUEUED",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 55.451314,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 3,
+    "last_run_time_utc": "2026-10-16 16:10:21.319000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:11:18.937901+00:00",
+    "version": 3,
+    "status": "QUEUED",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 110.17886,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 3,
+    "last_run_time_utc": "2026-10-16 16:11:16.115000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:12:13.584309+00:00",
+    "version": 3,
+    "status": "QUEUED",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 164.82527,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 3,
+    "last_run_time_utc": "2026-10-16 16:12:10.978000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:13:08.488404+00:00",
+    "version": 3,
+    "status": "QUEUED",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 219.729356,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 3,
+    "last_run_time_utc": "2026-10-16 16:13:05.998000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:14:04.481627+00:00",
+    "version": 3,
+    "status": "QUEUED",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 275.722587,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 3,
+    "last_run_time_utc": "2026-10-16 16:14:01.248000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:14:58.722528+00:00",
+    "version": 3,
+    "status": "QUEUED",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 329.963485,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 3,
+    "last_run_time_utc": "2026-10-16 16:14:56.052000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:15:54.955891+00:00",
+    "version": 3,
+    "status": "QUEUED",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 386.196851,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 3,
+    "last_run_time_utc": "2026-10-16 16:15:51.086000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:16:48.952851+00:00",
+    "version": 3,
+    "status": "QUEUED",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 440.193812,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 3,
+    "last_run_time_utc": "2026-10-16 16:16:46.179000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:17:43.829152+00:00",
+    "version": 3,
+    "status": "QUEUED",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 495.0701,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 3,
+    "last_run_time_utc": "2026-10-16 16:17:41.126000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:18:39.036816+00:00",
+    "version": 3,
+    "status": "QUEUED",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 550.27777,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 3,
+    "last_run_time_utc": "2026-10-16 16:18:36.087000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:19:34.060002+00:00",
+    "version": 3,
+    "status": "QUEUED",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 605.300956,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 3,
+    "last_run_time_utc": "2026-10-16 16:19:31.275000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:20:29.653785+00:00",
+    "version": 3,
+    "status": "QUEUED",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 660.894748,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 3,
+    "last_run_time_utc": "2026-10-16 16:20:26.162000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:21:24.079542+00:00",
+    "version": 3,
+    "status": "QUEUED",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 715.3205,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 3,
+    "last_run_time_utc": "2026-10-16 16:21:21.074000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:22:19.711670+00:00",
+    "version": 3,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 2e-05,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 3,
+    "last_run_time_utc": "2026-10-16 16:22:16.515000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:23:13.638126+00:00",
+    "version": 4,
+    "status": "QUEUED",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 2.7e-05,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52295.961,
+      "used_seconds": 55704.039,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 4,
+    "last_run_time_utc": "2026-10-16 16:23:11.126000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:24:09.173026+00:00",
+    "version": 4,
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 3.1e-05,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52276.27314,
+      "used_seconds": 55723.72686,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 4,
+    "last_run_time_utc": "2026-10-16 16:24:06.131000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:25:04.133123+00:00",
+    "version": 4,
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 54.96008,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52221.335021,
+      "used_seconds": 55778.664979,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 4,
+    "last_run_time_utc": "2026-10-16 16:25:01.318000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:25:59.236198+00:00",
+    "version": 4,
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 110.063158,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52166.244218,
+      "used_seconds": 55833.755782,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 4,
+    "last_run_time_utc": "2026-10-16 16:25:56.037000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:26:53.922582+00:00",
+    "version": 4,
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 164.749541,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52111.567979,
+      "used_seconds": 55888.432021,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 4,
+    "last_run_time_utc": "2026-10-16 16:26:51.042000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:27:49.557445+00:00",
+    "version": 4,
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 220.384401,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 52055.81761,
+      "used_seconds": 55944.18239,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 4,
+    "last_run_time_utc": "2026-10-16 16:27:46.106000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:28:48.031465+00:00",
+    "version": 4,
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 278.858417,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 51997.102982,
+      "used_seconds": 56002.897018,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 4,
+    "last_run_time_utc": "2026-10-16 16:28:41.265000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:29:40.336601+00:00",
+    "version": 4,
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 331.163555,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 51945.034213,
+      "used_seconds": 56054.965787,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 4,
+    "last_run_time_utc": "2026-10-16 16:29:36.589000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:30:35.448287+00:00",
+    "version": 4,
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 386.275246,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 51889.974943,
+      "used_seconds": 56110.025057,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 4,
+    "last_run_time_utc": "2026-10-16 16:30:31.200000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:31:30.325163+00:00",
+    "version": 4,
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 441.152116,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 51834.676925,
+      "used_seconds": 56165.323075,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 4,
+    "last_run_time_utc": "2026-10-16 16:31:26.626000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:32:25.285180+00:00",
+    "version": 4,
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 496.112134,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 51780.058185,
+      "used_seconds": 56219.941815,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 4,
+    "last_run_time_utc": "2026-10-16 16:32:21.245000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:33:19.703993+00:00",
+    "version": 4,
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 550.530951,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 51725.379024,
+      "used_seconds": 56274.620976,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 4,
+    "last_run_time_utc": "2026-10-16 16:33:16.185000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:34:14.548806+00:00",
+    "version": 4,
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 605.375764,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 51670.879788,
+      "used_seconds": 56329.120212,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 4,
+    "last_run_time_utc": "2026-10-16 16:34:11.203000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:35:10.542281+00:00",
+    "version": 4,
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 661.369233,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 51614.280364,
+      "used_seconds": 56385.719636,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 4,
+    "last_run_time_utc": "2026-10-16 16:35:06.444000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:36:05.040319+00:00",
+    "version": 4,
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 715.867282,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 51560.426248,
+      "used_seconds": 56439.573752,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 4,
+    "last_run_time_utc": "2026-10-16 16:36:01.613000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:37:00.246504+00:00",
+    "version": 4,
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 771.073466,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 51505.219687,
+      "used_seconds": 56494.780313,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 4,
+    "last_run_time_utc": "2026-10-16 16:36:56.307000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:37:55.857610+00:00",
+    "version": 4,
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 826.684569,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 51449.513786,
+      "used_seconds": 56550.486214,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 4,
+    "last_run_time_utc": "2026-10-16 16:37:51.882000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:38:49.869864+00:00",
+    "version": 4,
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 880.696829,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 51395.322704,
+      "used_seconds": 56604.677296,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 4,
+    "last_run_time_utc": "2026-10-16 16:38:46.408000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:39:46.156053+00:00",
+    "version": 4,
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 936.983012,
+    "wait_threshold_crossed": true,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 51339.161046,
+      "used_seconds": 56660.838954,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 4,
+    "last_run_time_utc": "2026-10-16 16:39:41.501000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:40:39.689396+00:00",
+    "version": 4,
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 990.516353,
+    "wait_threshold_crossed": true,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 51285.809451,
+      "used_seconds": 56714.190549,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 4,
+    "last_run_time_utc": "2026-10-16 16:40:36.617000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:41:36.111362+00:00",
+    "version": 4,
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 1046.938329,
+    "wait_threshold_crossed": true,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 51228.236922,
+      "used_seconds": 56771.763078,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 4,
+    "last_run_time_utc": "2026-10-16 16:41:31.507000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:42:30.618672+00:00",
+    "version": 4,
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 1101.445636,
+    "wait_threshold_crossed": true,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 51174.457686,
+      "used_seconds": 56825.542314,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 4,
+    "last_run_time_utc": "2026-10-16 16:42:26.719000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:43:27.699468+00:00",
+    "version": 4,
+    "status": "RUNNING",
+    "output_visible": false,
+    "log_chars": 0,
+    "status_seconds": 1158.526431,
+    "wait_threshold_crossed": true,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 51117.254497,
+      "used_seconds": 56882.745503,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 4,
+    "last_run_time_utc": "2026-10-16 16:43:21.626000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  {
+    "at_utc": "2026-10-19T16:44:18.261179+00:00",
+    "version": 4,
+    "status": "COMPLETE",
+    "output_visible": true,
+    "log_chars": 7184,
+    "status_seconds": 2.3e-05,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 51139.573,
+      "used_seconds": 56860.427,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 4,
+    "last_run_time_utc": "2026-10-16 16:44:16.476000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "checks": [
+    "real S1 reference SHA/identity/finite-index/value/gate receipts reused",
+    "original reference_execution reads reused receipts without execution",
+    "changed questions rejected before copy"
+  ],
+  "references": {
+    "heldout4k": {
+      "sha256": "664f4b6f28574f0b39a4bbe8151bc737459289d087ac4f3b73e1989bfb655a49",
+      "numeric": 4096
+    },
+    "old1024": {
+      "sha256": "7d5da0e871bd9e7c592b030a0887ec7f6f2f6b92e3c693f1aa95c97923904e17",
+      "numeric": 991
+    }
+  },
+  "new_training_updates": 0,
+  "new_GPU_runs": 0
+}

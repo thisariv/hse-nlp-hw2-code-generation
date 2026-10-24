@@ -1,0 +1,55 @@
+{
+  "kernel": "thisarivson/nlp-hw02-ensemble-inference-v8",
+  "private": true,
+  "requested_at_UTC": "2026-10-18T09:08:06.227362+00:00",
+  "attempt": 2,
+  "quota_budget_seconds": 2400,
+  "timeout_seconds": 720,
+  "accelerator": "NvidiaTeslaT4",
+  "version": 3,
+  "push_successful": true,
+  "url": "https://www.kaggle.com/code/thisarivson/nlp-hw02-ensemble-inference-v8/versions?versionNumber=1",
+  "remote_metadata_verified": {
+    "id": "thisarivson/nlp-hw02-ensemble-inference-v8",
+    "is_private": true,
+    "enable_gpu": true,
+    "enable_internet": false,
+    "machine_shape": "NvidiaTeslaT4",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs",
+      "thisarivson/nlp-hw02-l3-live",
+      "thisarivson/nlp-hw02-p1-weights"
+    ],
+    "kernel_sources": [
+      "thisarivson/nlp-hw02-b4"
+    ]
+  },
+  "attempts": [
+    {
+      "version": 1,
+      "requested_at_UTC": "2026-10-18T09:08:06.227362+00:00",
+      "timeout_seconds": 720,
+      "observed": "QUEUED about 30min; transient CANCEL_ACKNOWLEDGED; no execution logs or output",
+      "retry_reason": "scheduler did not start worker"
+    },
+    {
+      "version": 3,
+      "requested_at_UTC": "2026-10-18T09:38:59.248496+00:00",
+      "timeout_seconds": 720,
+      "source_unchanged": true
+    }
+  ],
+  "repeat_requested_at_UTC": "2026-10-18T09:38:59.248496+00:00",
+  "maximum_requested_session_seconds_total": 1440,
+  "same_notebook_sha256": "4b3b745a6112613b18c58196f781c6cfe7910d45b755987b03ebd126c5b174a4",
+  "unexpected_version": 2,
+  "maximum_our_requested_session_seconds_total": 1440,
+  "final_status": "COMPLETE",
+  "selected_output_version": 3,
+  "output_sha256": "0b23fd5d8e639dc5da43af5b6752374d720e8b3f614f42465f058c3bd81fff60",
+  "source_parity_modules": 20,
+  "quota_before_repeat_GPU_used_h": 21.92,
+  "quota_after_GPU_used_h": 21.97,
+  "quota_observed_delta_minutes": 3.0,
+  "result": "passed"
+}

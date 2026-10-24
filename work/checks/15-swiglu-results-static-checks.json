@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-08",
+  "prepared_notebook_sha256": "b46c5e6ab9604634f05ee8f1b27e52ca59b9fce39bd9a1e9059c972fe54566a1",
+  "input_notebook_sha256": "3db61c57f12a32c672d354d790bda7efe6f953d649d442a07113e9712d65fdae",
+  "input_archive_sha256": "795717bbede32bb87f0f2f466a7b317da232a6b450d116805eaebf101d98a6cc",
+  "checks": {
+    "saved_examples_verified": 5887,
+    "source_code_identical": true,
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "no_saved_error_outputs": true,
+    "CRC_manifest_hashes": true,
+    "four_safe_checkpoints_finite_and_consistent": true,
+    "latest_equals100000_state": true,
+    "all_fixed_question_reference_pairs_and_denominators": true,
+    "token_decode_AST_numeric_aggregates": true,
+    "1919_test_question_order": true,
+    "printed_diagnostics_equal_JSON": true,
+    "byte512_prefix_rule": true,
+    "all_saved_LRs_match_original_warmup_cosine_floor": true,
+    "historical14_source_config_data_metrics_verified": true
+  },
+  "scope": "Saved user T4 results and new static checks. No training/full1919 inference rerun, official checker or supplied program execution; numerical reference agreement is not accuracy/pass@1."
+}

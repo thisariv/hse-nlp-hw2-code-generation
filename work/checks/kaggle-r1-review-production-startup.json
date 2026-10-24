@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "ref": "friend2/nlp-hw02-kaggle-r1/1",
+  "checked_at_utc": "2026-10-15T08:26:52.008702+00:00",
+  "anchor_preflight_logged": true,
+  "anchors": {
+    "C-main": {
+      "updates": 213386,
+      "cursor": 27313408,
+      "main_seconds": 79850.5201694716,
+      "l2_main_seconds": 62280.58429107212,
+      "sha256": "c6ad6dda249f5cd87e598a29fd7714549fc8e25b5f00a45b92bbf3027e2e53e3"
+    },
+    "C-long2x": {
+      "updates": 209144,
+      "cursor": 20734592,
+      "main_seconds": 79850.42887455746,
+      "l2_main_seconds": 62280.4929961593,
+      "sha256": "48f2ba3fa4ffe6a722b45a084d3ee33a27cc4ed02b72433605c9cb1740f5a80b"
+    }
+  },
+  "worker_spawn_logged": true,
+  "input_full_SHA_pass_inferred_from_launch_order": true,
+  "live_sync_enabled": false,
+  "local_stable_watchdog_enabled": true,
+  "log_api": "GetKernelSessionLogsStream; explicit version_label v1",
+  "training_progress": "both workers have >=100 real main updates; finite CE",
+  "first_main_progress": {
+    "1": {
+      "main_updates": 200,
+      "CE": 0.17699961736798286
+    },
+    "0": {
+      "main_updates": 100,
+      "CE": 0.17293128371238708
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "device": "CPU",
+  "checks": [
+    {
+      "variant": 30,
+      "original_error_reproduced": "Inference tensors cannot be saved for backward",
+      "actual_evaluate_then_two_AdamW_updates": true,
+      "parameter_identity_preserved": true,
+      "inference_parameters_after_fix": 0,
+      "evaluated_splits": [
+        "heldout4k",
+        "old1024"
+      ]
+    },
+    {
+      "variant": 31,
+      "original_error_reproduced": "Inference tensors cannot be saved for backward",
+      "actual_evaluate_then_two_AdamW_updates": true,
+      "parameter_identity_preserved": true,
+      "inference_parameters_after_fix": 0,
+      "evaluated_splits": [
+        "heldout4k",
+        "old1024"
+      ]
+    }
+  ],
+  "old_smoke_gap": "FP32->FP32 on CPU did not exercise CUDA half/float conversion",
+  "CUDA_verified": false,
+  "full_training_updates": 0,
+  "push": false
+}

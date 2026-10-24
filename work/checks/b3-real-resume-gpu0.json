@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "source": "friend2/nlp-hw02-b2/1",
+  "model": "W-lr1000",
+  "checkpoint_sha256": "c1fb59136ff63ce9dcab6390290187c450ef7f7f97e4d0a69b0f32a4a1c795f0",
+  "checkpoint_bytes": 1361526973,
+  "updates": 34153,
+  "cursor": 4371584,
+  "main_seconds": 27000.55821647101,
+  "full_initial_digests": {
+    "model": "d34f3a6f7bbb63d5f5e6a90beced0c80ad3918a941ed36e975473e077d7c2c52",
+    "optimizer": "f9be3c6c17ab6352373fbf5feb982dc3068448d079f86cd4f01637a58c8c7cde",
+    "scaler": "fe0178b17269f379f140336d59b03fc5bb7cbe62a3aff939387cf3eb7cd71dd1",
+    "rng": "90c2f65cb00abe7b4f70a3f6e5afba4fd3e1ad848be244128c5d0a466e5dedd6",
+    "state": "659a7c7d54394a15ffe698be38a3deb291e36c8bacb36c2b5dd70b17c52172f5",
+    "scheduler": "bff446a614bc26e287c13178c5a09e2e737c446f27a4da79923ee2665e9c954a"
+  },
+  "restored_fields": [
+    "model",
+    "optimizer",
+    "scaler",
+    "rng",
+    "state",
+    "scheduler"
+  ],
+  "next_update": {
+    "model": "361ec21fdea67d51097dcda689b47f24f19c4e24fd46ef1c9cf439bbc6e7a898",
+    "optimizer": "4549aa987c9156c11072cf8ae3dbd68bcc169dfa31b34144938e12da1a58a6f5",
+    "scaler": "17941702d03a9b156fde4b48dc361c9ff5b4f41fa99fb60bd0d18dea0037d690",
+    "rng": "4026cbd6a8dac2fcd96b68db45f7795e67cb76fb37d48ab42834a4f1ec4a8ab7",
+    "state": "b39a23ee3cbc6428efa7c4e5a8a70292b9140d0350ede6dde170269883fedb07",
+    "CE": 0.23847490921616554,
+    "z_loss": 0.0011441789392847568
+  },
+  "next_batch_sha256": "55ece13d24e395e9f54daa581d178d63afaf7448e447059653bee8c18f40c938",
+  "steps_bit_exact": 1,
+  "effective_batch": 128,
+  "constant_lr": 0.001,
+  "seconds": 87.87095299991779,
+  "GPU": false,
+  "limitation": "CPU FP32, CPU GradScaler from B2, fused disabled after load audit; CUDA RNG bytes checked, CUDA replay pending reviewer",
+  "CPU_torch": "2.14.1",
+  "source_torch": "2.11.0+cu128",
+  "source_CUDA": "12.8",
+  "downloaded_anchor_removed": true,
+  "deleted_after_stream_upload": true
+}

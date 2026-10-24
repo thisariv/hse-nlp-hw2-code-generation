@@ -1,0 +1,49 @@
+{
+  "audit_passed": true,
+  "targets_passed": false,
+  "memory_target_passed": false,
+  "ref": "thisarivson/nlp-hw02-final-package-v11",
+  "version": 1,
+  "private": true,
+  "own_push_calls": 1,
+  "test_seconds": 134.37885268699998,
+  "tune_seconds": 103.10989549300001,
+  "tune_matches": 1542,
+  "tune_n": 2048,
+  "tune_accuracy_pp": 75.29296875,
+  "peak_memory_bytes": {
+    "test": {
+      "peak_device_used_bytes": 15184625664,
+      "peak_allocated_bytes": 12104000512,
+      "peak_reserved_bytes": 14547943424,
+      "total_device_memory_bytes": 15636037632
+    },
+    "tune": {
+      "peak_device_used_bytes": 15325134848,
+      "peak_allocated_bytes": 11035488768,
+      "peak_reserved_bytes": 14688452608,
+      "total_device_memory_bytes": 15636037632
+    }
+  },
+  "changed_code": 298,
+  "changed_numeric": 185,
+  "answers_sha256": "2202c645b5ee94c0a6aad4d866e8de6c49ce87eda6b78dc60d886b921714df16",
+  "question_order_verified": true,
+  "model_sha256": {
+    "C-long2x-B6": "ee30794048bb6200cf97ac4d7e5c1606f0e97893ea04f6567c9487f6c04345fa",
+    "pilot-b": "8439037720dda16dda6b73fe676860d5498bbcba4cacebc0d709bbb22db464a5",
+    "W-B6": "cb34c81e6cda83c73bf4662c5c425446be8cdb48c30dd5e9e217fd6cbc1cd496"
+  },
+  "tune_journal_replay_exact": true,
+  "executed_notebook": "results/kaggle-runs/nlp-hw02-final-package-v11/1/__notebook__.ipynb",
+  "submission": "submissions/final-package-v11.jsonl",
+  "gates": {
+    "test_time": true,
+    "complete": true,
+    "reexecution": true,
+    "no_oom": true,
+    "memory": false,
+    "tune": true
+  },
+  "dataset_manifest_sha256": "0a470e3b941fa52d1528587b924e476b8953cd2487d1007f34d7849a2875395f"
+}

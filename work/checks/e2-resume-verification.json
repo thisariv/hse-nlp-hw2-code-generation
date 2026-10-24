@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "at_utc": "2026-10-20T08:02:00.167437+00:00",
+  "selection_sha256": "71004333d3b2bbc8f02a27fa33ef5be17a25e3088bec0df75e2ce87b049d5338",
+  "preregistration_precedes_selection": true,
+  "policies_verified": 252,
+  "rows": 4096,
+  "baseline_production_parity_rows": 4096,
+  "immutable_selection_preserved": true,
+  "independent_tasks": false,
+  "primary": {
+    "name": "third-c2-t4-q0.5-p8-w0",
+    "family": "third",
+    "C": 2,
+    "K": 8,
+    "hot_every": 4,
+    "threshold": 0.5,
+    "extra": [
+      8,
+      0
+    ]
+  },
+  "forecast_seconds": 148.90956968382517
+}

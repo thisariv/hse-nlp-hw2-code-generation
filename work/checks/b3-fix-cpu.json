@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "GPU": false,
+  "total_tests": 50,
+  "checks": {
+    "b3-cpu": {
+      "passed": true,
+      "tests": 16
+    },
+    "b1-ev-b2-cpu": {
+      "passed": true,
+      "tests": 9
+    },
+    "b2-review-regressions": {
+      "passed": true,
+      "tests": 5
+    },
+    "b1-cpu": {
+      "passed": true,
+      "tests": 20
+    }
+  },
+  "server_modules_match_production": true,
+  "modules": 95,
+  "frozen_B2_implementation_SHA_unchanged": true,
+  "production_pushes": 0
+}

@@ -1,0 +1,20 @@
+{
+  "status": "push_rejected_awaiting_user",
+  "account": "friend1",
+  "kernel": "friend1/nlp-hw02-variants",
+  "own_push_calls": 1,
+  "server_version": null,
+  "launch_receipt": "checks/final-variants-launch.json",
+  "notebook": "kaggle/notebooks/nlp-hw02-variants.ipynb",
+  "notebook_sha256": "8a50a626ee602575ccc348871c7b1344905f7a897b0eebaa1240d54c8dd6bca7",
+  "observe_command": "python work/kaggle/variants_watch.py",
+  "output_command": "python work/kaggle/variants_api.py output",
+  "audit_command": "python work/kaggle/variants_results.py",
+  "interactive_root": "results/kaggle-runs/nlp-hw02-variants/interactive",
+  "queued_threshold_seconds": 600,
+  "running_no_output_threshold_seconds": 720,
+  "wait_until_seconds": 4500,
+  "no_automatic_repush": true,
+  "no_cancellation": true,
+  "private": true
+}

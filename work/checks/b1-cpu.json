@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "tests": 20,
+  "failures": 0,
+  "errors": 0,
+  "checks": [
+    "test_C_marks_end_main_timed_q0_and_restore",
+    "test_bit_exact_full_resume_dropout_rng_adam_and_warmup",
+    "test_disposable_probe_restores_all_numerics_and_eval_failure",
+    "test_dropout_attention_ffn_residual_and_eval",
+    "test_final_cooldown_sqrt_truncation_stable_never_overwritten",
+    "test_incomplete_old991_or_deadline_cannot_report_complete",
+    "test_intermediate_evaluator_runs_both_splits",
+    "test_nan_update_never_steps_adam_and_threshold_rollback",
+    "test_output_download_explicit_version_and_streamed_exact_file",
+    "test_probe_allocates_adam_and_restores_model_rng",
+    "test_real_parameter_counts_and_normalized_init",
+    "test_recovery_restores_checkpoint_and_persists_halving",
+    "test_requested_shapes_match_measured_specs_and_micro_caps",
+    "test_stable_tamper_recipe_and_counters_rejected",
+    "test_transfer_cli_account_env_and_private_roundtrip_stub",
+    "test_transfer_dataset_single_file_zip_and_private_create_cli",
+    "test_v7_model_spec_load_for_both_architecture_shapes",
+    "test_warmup_AMP_skip_changes_group_lr_without_changing_weights_moments",
+    "test_watchdog_output_transfers_without_aggregate_manifest",
+    "test_weighted_order_reproducible_new_seed_and_tamper"
+  ],
+  "seconds": 28.917364415945485,
+  "torch": "2.14.1",
+  "device": "CPU",
+  "real_parameter_counts": {
+    "E": 108694019,
+    "W": 113421827
+  },
+  "GPU_run": false,
+  "push": false,
+  "runtime_sha256": "eaa7d9a81151e660b324779f127142a474471c67abd14d35600012687f440b36"
+}

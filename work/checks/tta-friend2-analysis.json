@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "at_utc": "2026-10-19T12:48:53.537624+00:00",
+  "numpy_version": "2.5.4",
+  "separate_tune_and_confirm_processes": true,
+  "selection_unchanged_since_before_eval": true,
+  "selection_sha256": "2f9c4a585c24a6f5913183d3cbbe60d02952ca58fd159a0e70916e3888ca31da",
+  "frozen_preregistration_exact": true,
+  "experiment_sources_unchanged": true,
+  "all_branches_complete": true,
+  "OOM": 0,
+  "raw_summary_sha256": "b3288a9dc2d5c9739db25333ff5eca13a054b35a9cda996c314819dd6a849fce",
+  "tune_sha256": "cc9cb5d0fb5e5119b9c5d3bbbaf3b918df1f62492d11cce0802d9e9a941ebdf9",
+  "confirm_sha256": "13f5fd623d16c8c34985320d7fcb98808aa7446279c2db685796493e07bd3cbf",
+  "success": false,
+  "decision": "retain_v8"
+}

@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-08",
+  "notebook_sha256": "b273915b86fd99dc7a028e73c573396e931458b211bafa111e3ed96ef5ba9e3e",
+  "base_notebook_sha256": "9ead16733de1a16de474a69f5eedcf5f213b865d952a1a8876a060981421564c",
+  "cells": 21,
+  "code_cells": 11,
+  "code_compiles": true,
+  "outputs_and_counts_empty": true,
+  "no_host_paths_or_control_characters": true,
+  "colab_title_matches_filename": true,
+  "only_model_constructor_norm_first_and_config_inference_label_changed_from12": true,
+  "data_selection_cell_identical_to12": true,
+  "fixed_BPE_payload_and_tokenization_cell_identical_to12": true,
+  "LR_scheduler_cell_identical_after_normalizing_model_change": true,
+  "cached_decoder_cell_identical_except_PreLN_order_and_guard": true,
+  "cross_KV_memory_and_final_decoder_norm_preserved": true,
+  "training_loop_identical_except_saved_comparison_names": true,
+  "loss_conditioning_and_checkpoint_functions_unchanged": [
+    "arithmetic",
+    "repetition_properties",
+    "extra_properties",
+    "evaluate_loss",
+    "check_question_conditioning",
+    "inspect_split",
+    "save_checkpoint"
+  ],
+  "full_test_cell_identical_to12": true,
+  "embedded_saved12_config_data_six_control_summaries_extra192_and_test_verified": true,
+  "evaluation_only_fixed_reference_numeric_audit": {
+    "pairs_total": 256,
+    "reference_numeric_pairs": 223,
+    "saved12_agreements": 2,
+    "comparison_requires_identical_questions_and_references_hash": true,
+    "official_pass_at_1": false
+  },
+  "CPU_checked_code_sources_identical_to_final_notebook": true,
+  "training_factor": "Post-LN to Pre-LN only; same warmup1000/cosine49000/100k/BPE08/batch8/50000 updates/seed42 fresh weights",
+  "scope": "Static/source/history checks. CPU behavioral checks separate. No new T4, full50000 training, full1919 inference or quality result; unchanged timer/interruption/scalar50000 protocol not rerun in13."
+}

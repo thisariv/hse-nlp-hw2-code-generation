@@ -1,0 +1,45 @@
+--- a/courses/nlp/index.md
++++ b/courses/nlp/index.md
+@@ -2,7 +2,7 @@
+ 
+ ДЗ2: [[work/notes/final-inference#V7: ансамбль из трёх моделей|Final v7]] — C-main/C-long2x/pilot-B, K1=1/1/1→K2=3/5/4; tune1535/2048, Δv6+0,098п.п. CI[−0,668;+0,863],6,586samples. Прогноз test109,1с/осторожно test-tune127,1/139,3с; CPU/replay/v3–v6/static/projected-memory прошли, ready:true. Private thisarivson P1 weights dataset создан; kernel push0, холодный T4 gate pending.
+ 
+-ДЗ2: [[work/notes/d1-plan|D1: диагностика train-reference]] — полный CE обеих L3, top≤8% по длиновым bins, v6 greedy/CPU execution, фильтры A/B/C и L2 orders. Private friend live с1,25M cached references создан; CPU/реальные веса/статика пройдены. Hard5ч; GPU-smoke и push — независимому ревьюеру.
++ДЗ2: [[work/notes/d1-review|Независимое ревью D1]] — CE C-long2x на9 725 737 строках двумя GPU; pool top4%389029, common greedy по бюджету≈79–111k. Smoke v1/v2 COMPLETE169/198с, CE1308–1360/GPU и greedy112–128строк/с; Secrets/live false. Private friend1 D1v1 RUNNING, watchdog130/backend140мин; после окончания — audit и анализ flags.
+ 
+ ДЗ2: [[work/notes/p1-results|Финал P1 наCPU]] — A−L3 greedy4k +0,27п.п. [−0,63;+1,17], B−A +0,44 [−0,29;+1,17]; eval B +1,17 [0,10;2,25],97,5% gate не прошла. Reviewer все34816candidates/2048tasks: jointCV full17 Δ0 [−0,39;+0,39],8исправлено/8сломано;247oracle-misses вместо заявленных248. Финал — прежний50мин cooldown +адаптивное voting; после17.10 продолжать обе L3 stable, GPU здесь0.
+ 
+--- a/courses/nlp/progress.md
++++ b/courses/nlp/progress.md
+@@ -342,3 +342,5 @@
+ 2026-10-14 — [[work/notes/l4-review|Ревью L4]]: final K8-gate исправлен; L2 34/L3 10/L4 5 tests passed. CUDAv1 COMPLETE за612,7с: обе L3 C,808/671+64steps, две cooldown/eval/restore фазы, K8/greedy256, NaN/crash, max reserved11,06GiB; все входы/fallback payload SHA verified. Боевой private friend1 L4v1 ожидаемо ERROR на missing Secrets, training0. Следующий шаг — UI Save & Run All с friend Secrets; main8,5ч/hard10,5ч, реальные live-auth/длинная сессия ещё не измерены.
+ 
+ 2026-10-14 — [[work/notes/p1-plan|P1 вместо L4]]: по решению пользователя L4 не запускать. Подготовлены paired A/B cooldown31372updates из latest L3 C-long2x, 1−sqrt/stratified loss truncation10%, reviewer C с нуля на обращённых исходных парах, независимые workers/live/watchdog и offline CPU scorer. Private friend1/p1-live создан; L2 34/L3 10/L4 5/P1 12 tests passed, real L3 restore/2updates CPU bit-exact, PT удалён, scorer128random-model candidates и весь L3 vote replay прошли. Hard10ч30мин; качество/throughput/real Secrets-live ещё не измерены. Следующий шаг — независимое ревью, короткий GPU-smoke, затем private боевой push P1.
++
++2026-10-14 — [[work/notes/d1-review|Независимое ревью D1]]: исправлены квота/Secrets, two-long CE/disjoint global IDs, partial CE/greedy/reference status и single-CE analyzer.13 CPU regressions +real L3 CPU parity passed; thisarivson GPU v1/v2 COMPLETE168,718/197,551с,37/49 SHA receipts, actual Kaggle watchdog forced exit сохраняет batch. CE2561308–1360/GPU, greedy512112–128pipeline rows/s; full CE9 725 737, pool389029, прогноз common greedy79–111k. Private friend1 D1v1 RUNNING, hard130/backend140мин, setup/CE/greedy caps5/78/120мин. Окончания не ждём; следующий шаг — скачать, audit, analyze и ручная проверка flagged/retained. Доля шума пока неизвестна.
+--- a/dashboard.md
++++ b/dashboard.md
+@@ -1,4 +1,6 @@
+ # Учебный dashboard
++
++NLP ДЗ2: [[work/notes/d1-review|Независимое ревью D1]] — CE C-long2x на9 725 737 строках двумя GPU; pool top4%389029, common greedy по бюджету≈79–111k. Smoke v1/v2 COMPLETE169/198с, CE1308–1360/GPU и greedy112–128строк/с; Secrets/live false. Private friend1 D1v1 RUNNING, watchdog130/backend140мин; после окончания — audit и анализ flags.
+ 
+ NLP ДЗ2: [[work/notes/decode-speed|Ускорение decoder]] — cap512/неактивные lanes/KV-трафик, CPU-ready flags и private thisarivson profile bundle,≤12мин. Full greedy1919/≥2× наT4 pending; push0, P1 не изменён.
+ 
+--- a/README.md
++++ b/README.md
+@@ -1,4 +1,6 @@
+ # ДЗ 2 — генерация кода
++
++[D1: независимое ревью и запуск](work/notes/d1-review.md),14.10: оба API smoke на thisarivson COMPLETE, CE1308–1360/GPU, greedy112–128rows/s. Полный long CE9,73M / pool top4%389029 / сокращённый по бюджету greedy. Private friend1 D1v1 RUNNING, Secrets/live false, hard130/backend140мин. Partial artifacts сохраняются; следующий шаг — анализ output после окончания.
+ 
+ [Профиль decoder](work/notes/decode-speed.md),14.10.2026: KV уже предвыделен; реальные хвосты512 и KV-трафик объясняют часть задержки. Отдельные флаги compaction/async EOS/sampler/CPU; FP32/cache/static прошли. Private thisarivson/nlp-hw02-decode-profile,≤12мин: full1919 baseline/all +192 абляции, bundle ready, без push.2×/GPU greedy exact ещё не измерены; P1 не изменён.
+ 
+--- a/knowledge/bibliography.md
++++ b/knowledge/bibliography.md
+@@ -297,3 +297,5 @@
+ - <a id="nlp-hw02-final-inference-l3-v6"></a> **nlp-hw02-final-inference-l3-v6**. «Адаптивный инференс v6 с decoder all». Пользовательский протокол14.10.2026, предоставленный T4 decode-profilev2,128 L3 journals, v5 cold test/tune phases и собственные CPU/регрессионные проверки. [[work/notes/final-inference#V6: адаптивный инференс с decoder all|Перенос, известные FP16 отличия и выбор K6]]: frozen1533/2048, прогноз≤126,4с с резервом; полный GPU v6/push не выполнялся.
+ 
+ - <a id="nlp-hw02-ensemble-inference-v7"></a> **nlp-hw02-ensemble-inference-v7**. «Адаптивный ансамбль v7 из трёх моделей». Пользовательский протокол14.10.2026,192 L3/P1 K8 tune-журнала, checkpoint SHA/recover manifests, пользовательский `selection_analysis.py`, T4 profilev2/v5 phases и собственные CPU/регрессионные/статические проверки. [[work/notes/final-inference#V7: ансамбль из трёх моделей|Конфиг, CI и ограничения]]:1/1/1→3/5/4,1535/2048, Δv6+0,098п.п. CI[−0,668;+0,863], exploratory; прогноз≤139,3с, N3 memory-budget check. Private P1 weights dataset создан; kernel push/GPU v7 не выполнялись.
++
++- <a id="nlp-hw02-d1-independent-review"></a> **nlp-hw02-d1-independent-review**. Собственное независимое ревью14.10.2026: [[work/notes/d1-review|находки, T4 timings, бюджет и private API run]], [smoke v1](../work/checks/kaggle-d1-review-gpu-smoke-v1.json), [smoke v2](../work/checks/kaggle-d1-review-gpu-smoke-v2.json), [калибровка](../work/checks/kaggle-d1-review-calibration.json). Источники интерфейса: [официальная Kaggle CLI kernels API](https://github.com/Kaggle/kaggle-cli/blob/main/docs/kernels.md), [PyTorch2.11 CE](https://docs.pytorch.org/docs/2.11/generated/torch.nn.CrossEntropyLoss.html). CE long-only/partial output/optional Secrets; two thisarivson smokes passed, friend1 D1v1 RUNNING. Результаты диагностики не получены; гипотеза шума не подтверждена.

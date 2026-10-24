@@ -1,0 +1,80 @@
+{
+  "passed": true,
+  "checked_small_files": 92,
+  "wall_seconds": 348.65085805700005,
+  "anchor_preflight_seconds": 27.931249193000042,
+  "input_preflight_seconds": 78.56045634100002,
+  "branches": [
+    {
+      "gpu": 0,
+      "encoder_layers": 12,
+      "seconds_per_step": 0.46410206515624886,
+      "graph_OOM_fallbacks": 0,
+      "AMP_skips": 0,
+      "benchmark_allocated_GiB": 11.460634708404541,
+      "benchmark_reserved_GiB": 13.87890625,
+      "session_reserved_GiB": 14.12109375,
+      "main_updates": 256,
+      "cooldown_updates": 38,
+      "stable_bytes": 871629629,
+      "stable_sha256": "4e049197d3509e2a9a3aab90b20d9e6a93428f87c5f49a8de56809405e9890f4",
+      "stable_preserved": true,
+      "v7": {
+        "passed": true,
+        "encoder_layers": 12,
+        "rows": 4,
+        "logits_shape": [
+          4,
+          16,
+          8195
+        ],
+        "tokens_shape": [
+          4,
+          1,
+          8
+        ]
+      },
+      "K8_rows": 36,
+      "K8_samples": 288
+    },
+    {
+      "gpu": 1,
+      "encoder_layers": 6,
+      "seconds_per_step": 0.35089992187499774,
+      "graph_OOM_fallbacks": 0,
+      "AMP_skips": 0,
+      "benchmark_allocated_GiB": 8.688646793365479,
+      "benchmark_reserved_GiB": 10.505859375,
+      "session_reserved_GiB": 11.75390625,
+      "main_updates": 256,
+      "cooldown_updates": 47,
+      "stable_bytes": 644209683,
+      "stable_sha256": "9c3a703b2708db83032b958133e1860421e7f9dd585c84283feff95cf010c71d",
+      "stable_preserved": true,
+      "v7": {
+        "passed": true,
+        "encoder_layers": 6,
+        "rows": 4,
+        "logits_shape": [
+          4,
+          16,
+          8195
+        ],
+        "tokens_shape": [
+          4,
+          1,
+          8
+        ]
+      },
+      "K8_rows": 36,
+      "K8_samples": 288
+    }
+  ],
+  "deep_base_time_ratio": 1.3226052108429294,
+  "chosen_encoder_layers": 12,
+  "selection_rule": "6->9 after old1/3/5 only if T4 deep/base >1.7",
+  "large_PT_downloaded": false,
+  "require_secrets": false,
+  "live_sync": false,
+  "quality_not_measured": "smoke greedy/K8 cap8; full production uses cap512"
+}

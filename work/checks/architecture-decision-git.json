@@ -1,0 +1,25 @@
+{
+  "files": [
+    "work/checks/architecture-decision-cpu.py",
+    "work/checks/architecture-decision-cpu.json",
+    "work/checks/architecture-decision-navigation.patch",
+    "work/checks/shape-bench-cpu.py",
+    "work/checks/shape-bench-cpu.json",
+    "work/kaggle/build_shape_bench.py",
+    "work/kaggle/notebooks/nlp-hw02-shape-bench.ipynb",
+    "work/kaggle/shape-lengths.json",
+    "work/kaggle/src/shape_bench.py",
+    "work/kaggle/src/shape_specs.py",
+    "work/notes/architecture-decision.md",
+    "work/research/analyze-architecture-decision.py",
+    "work/research/prepare-shape-lengths.py",
+    "work/research/write-architecture-note.py",
+    "work/results/architecture-decision.json",
+    "work/results/architecture-voting-curve.png",
+    "work/results/next-shape-bench.json"
+  ],
+  "navigation_patch": "work/checks/architecture-decision-navigation.patch",
+  "committed": false,
+  "add_exit": 128,
+  "add_output": "fatal: Unable to create '<vault>/.git/worktrees/study1/index.lock': Operation not permitted\n"
+}

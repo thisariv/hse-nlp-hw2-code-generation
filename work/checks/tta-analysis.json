@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "mixing_cases": 168,
+  "distinct_lanes": true,
+  "original_anchor": true,
+  "exact_fallback": true,
+  "bootstrap_sanity": true
+}

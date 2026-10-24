@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-08",
+  "prepared_notebook_sha256": "449c1707660216146166c6faadbfe102b9056d21f8a1294222e3c488e474c0cf",
+  "input_notebook_sha256": "7853fd695323a16a1065ab471a7ff5bba71324e40178590bf10b2997ef4da9b4",
+  "input_archive_sha256": "c3544ad1358fa469a6b718657f43449132a333b773d4f49f36187aa135b2d197",
+  "checks": {
+    "saved_examples_verified": 3711,
+    "source_code_identical": true,
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "no_saved_error_outputs": true,
+    "CRC_manifest_hashes": true,
+    "two_safe_checkpoints_finite_and_consistent": true,
+    "latest_equals50000_state": true,
+    "all_fixed_question_reference_pairs_and_denominators": true,
+    "token_decode_AST_numeric_aggregates": true,
+    "1919_test_question_order": true,
+    "printed_diagnostics_equal_JSON": true,
+    "byte512_prefix_rule": true,
+    "all_saved_LRs_match_original_warmup_cosine_floor": true,
+    "historical15_source_config_data_metrics_verified": true,
+    "fresh1024_reserved_unscored_and_hash_verified": true,
+    "checkpoint_coverage_counts_verified": true,
+    "finite_logs_and_gradients": true
+  },
+  "scope": "Saved user T4 results and new static checks. No training/full1919 inference rerun, official checker or supplied program execution; numerical reference agreement is not accuracy/pass@1."
+}

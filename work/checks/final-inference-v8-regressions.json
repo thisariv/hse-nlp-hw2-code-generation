@@ -1,0 +1,590 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "mode": "fixture",
+      "case": "complete",
+      "result": {
+        "passed": true,
+        "case": "complete",
+        "N": 3,
+        "seconds": 5.250142999924719,
+        "real_executor": true,
+        "real_winner_reexecution": true,
+        "adaptive": {
+          "K1": {
+            "C-main": 1,
+            "C-long2x": 1,
+            "pilot-b": 1
+          },
+          "K2": {
+            "C-main": 3,
+            "C-long2x": 5,
+            "pilot-b": 4
+          },
+          "unanimity_threshold": 1.0,
+          "stopped_rows": [
+            0
+          ],
+          "escalated_rows": [
+            1,
+            2
+          ],
+          "undecided_rows": [],
+          "stage2_waves": [
+            {
+              "questions": 2,
+              "pending_stage1_rows": 0,
+              "row_ids": [
+                2,
+                1
+              ],
+              "leader_fraction_min": 0.25,
+              "leader_fraction_max": 0.75
+            }
+          ],
+          "stage2_order": [
+            2,
+            1
+          ],
+          "stage2_priority": "stage1_leader_fraction_then_length_then_id",
+          "stage1_leader_fractions": {
+            "1": 0.75,
+            "2": 0.25
+          },
+          "mean_sample_count": 9.0,
+          "scorer_enabled": false
+        },
+        "partial_vote_count": 0
+      }
+    },
+    {
+      "mode": "fixture",
+      "case": "complete2",
+      "result": {
+        "passed": true,
+        "case": "complete2",
+        "N": 2,
+        "seconds": 2.4786123340018094,
+        "real_executor": true,
+        "real_winner_reexecution": true,
+        "adaptive": {
+          "K1": {
+            "C-main": 1,
+            "C-long2x": 1
+          },
+          "K2": {
+            "C-main": 3,
+            "C-long2x": 5
+          },
+          "unanimity_threshold": 1.0,
+          "stopped_rows": [
+            0
+          ],
+          "escalated_rows": [
+            1,
+            2
+          ],
+          "undecided_rows": [],
+          "stage2_waves": [
+            {
+              "questions": 2,
+              "pending_stage1_rows": 0,
+              "row_ids": [
+                2,
+                1
+              ],
+              "leader_fraction_min": 0.3333333333333333,
+              "leader_fraction_max": 0.6666666666666666
+            }
+          ],
+          "stage2_order": [
+            2,
+            1
+          ],
+          "stage2_priority": "stage1_leader_fraction_then_length_then_id",
+          "stage1_leader_fractions": {
+            "1": 0.6666666666666666,
+            "2": 0.3333333333333333
+          },
+          "mean_sample_count": 6.0,
+          "scorer_enabled": false
+        },
+        "partial_vote_count": 0
+      }
+    },
+    {
+      "mode": "fixture",
+      "case": "complete4",
+      "result": {
+        "passed": true,
+        "case": "complete4",
+        "N": 4,
+        "seconds": 3.2864912087097764,
+        "real_executor": true,
+        "real_winner_reexecution": true,
+        "adaptive": {
+          "K1": {
+            "C-main": 1,
+            "C-long2x": 1,
+            "pilot-b": 1,
+            "extra": 1
+          },
+          "K2": {
+            "C-main": 3,
+            "C-long2x": 5,
+            "pilot-b": 4,
+            "extra": 2
+          },
+          "unanimity_threshold": 1.0,
+          "stopped_rows": [
+            0
+          ],
+          "escalated_rows": [
+            1,
+            2
+          ],
+          "undecided_rows": [],
+          "stage2_waves": [
+            {
+              "questions": 2,
+              "pending_stage1_rows": 0,
+              "row_ids": [
+                2,
+                1
+              ],
+              "leader_fraction_min": 0.2,
+              "leader_fraction_max": 0.8
+            }
+          ],
+          "stage2_order": [
+            2,
+            1
+          ],
+          "stage2_priority": "stage1_leader_fraction_then_length_then_id",
+          "stage1_leader_fractions": {
+            "1": 0.8,
+            "2": 0.2
+          },
+          "mean_sample_count": 10.666666666666666,
+          "scorer_enabled": false
+        },
+        "partial_vote_count": 0
+      }
+    },
+    {
+      "mode": "fixture",
+      "case": "guard1",
+      "result": {
+        "passed": true,
+        "case": "guard1",
+        "N": 3,
+        "seconds": 1.641733417287469,
+        "real_executor": true,
+        "real_winner_reexecution": true,
+        "adaptive": {
+          "K1": {
+            "C-main": 1,
+            "C-long2x": 1,
+            "pilot-b": 1
+          },
+          "K2": {
+            "C-main": 3,
+            "C-long2x": 5,
+            "pilot-b": 4
+          },
+          "unanimity_threshold": 1.0,
+          "stopped_rows": [],
+          "escalated_rows": [],
+          "undecided_rows": [
+            0,
+            1,
+            2
+          ],
+          "stage2_waves": [],
+          "stage2_order": [],
+          "stage2_priority": "stage1_leader_fraction_then_length_then_id",
+          "stage1_leader_fractions": {},
+          "mean_sample_count": 1.0,
+          "scorer_enabled": false
+        },
+        "partial_vote_count": 3
+      }
+    },
+    {
+      "mode": "fixture",
+      "case": "guard2",
+      "result": {
+        "passed": true,
+        "case": "guard2",
+        "N": 3,
+        "seconds": 1.4312760829925537,
+        "real_executor": true,
+        "real_winner_reexecution": true,
+        "adaptive": {
+          "K1": {
+            "C-main": 1,
+            "C-long2x": 1,
+            "pilot-b": 1
+          },
+          "K2": {
+            "C-main": 3,
+            "C-long2x": 5,
+            "pilot-b": 4
+          },
+          "unanimity_threshold": 1.0,
+          "stopped_rows": [
+            0
+          ],
+          "escalated_rows": [
+            1,
+            2
+          ],
+          "undecided_rows": [],
+          "stage2_waves": [
+            {
+              "questions": 2,
+              "pending_stage1_rows": 0,
+              "row_ids": [
+                2,
+                1
+              ],
+              "leader_fraction_min": 0.25,
+              "leader_fraction_max": 0.75
+            }
+          ],
+          "stage2_order": [
+            2,
+            1
+          ],
+          "stage2_priority": "stage1_leader_fraction_then_length_then_id",
+          "stage1_leader_fractions": {
+            "1": 0.75,
+            "2": 0.25
+          },
+          "mean_sample_count": 4.333333333333333,
+          "scorer_enabled": false
+        },
+        "partial_vote_count": 2
+      }
+    },
+    {
+      "mode": "fixture",
+      "case": "oom",
+      "result": {
+        "passed": true,
+        "case": "oom",
+        "N": 3,
+        "seconds": 1.4512421251274645,
+        "real_executor": true,
+        "real_winner_reexecution": true,
+        "adaptive": {
+          "K1": {
+            "C-main": 1,
+            "C-long2x": 1,
+            "pilot-b": 1
+          },
+          "K2": {
+            "C-main": 3,
+            "C-long2x": 5,
+            "pilot-b": 4
+          },
+          "unanimity_threshold": 1.0,
+          "stopped_rows": [
+            0
+          ],
+          "escalated_rows": [
+            1,
+            2
+          ],
+          "undecided_rows": [],
+          "stage2_waves": [
+            {
+              "questions": 2,
+              "pending_stage1_rows": 0,
+              "row_ids": [
+                2,
+                1
+              ],
+              "leader_fraction_min": 0.25,
+              "leader_fraction_max": 0.75
+            }
+          ],
+          "stage2_order": [
+            2,
+            1
+          ],
+          "stage2_priority": "stage1_leader_fraction_then_length_then_id",
+          "stage1_leader_fractions": {
+            "1": 0.75,
+            "2": 0.25
+          },
+          "mean_sample_count": 9.0,
+          "scorer_enabled": false
+        },
+        "partial_vote_count": 0
+      }
+    },
+    {
+      "mode": "fixture",
+      "case": "priority",
+      "result": {
+        "passed": true,
+        "case": "priority",
+        "N": 3,
+        "seconds": 2.239274290855974,
+        "real_executor": false,
+        "real_winner_reexecution": true,
+        "adaptive": {
+          "K1": {
+            "C-main": 1,
+            "C-long2x": 1,
+            "pilot-b": 1
+          },
+          "K2": {
+            "C-main": 3,
+            "C-long2x": 5,
+            "pilot-b": 4
+          },
+          "unanimity_threshold": 1.0,
+          "stopped_rows": [
+            0
+          ],
+          "escalated_rows": [
+            1,
+            2
+          ],
+          "undecided_rows": [],
+          "stage2_waves": [
+            {
+              "questions": 1,
+              "pending_stage1_rows": 0,
+              "row_ids": [
+                2
+              ],
+              "leader_fraction_min": 0.25,
+              "leader_fraction_max": 0.25
+            },
+            {
+              "questions": 1,
+              "pending_stage1_rows": 0,
+              "row_ids": [
+                1
+              ],
+              "leader_fraction_min": 0.75,
+              "leader_fraction_max": 0.75
+            }
+          ],
+          "stage2_order": [
+            2,
+            1
+          ],
+          "stage2_priority": "stage1_leader_fraction_then_length_then_id",
+          "stage1_leader_fractions": {
+            "1": 0.75,
+            "2": 0.25
+          },
+          "mean_sample_count": 9.0,
+          "scorer_enabled": false
+        },
+        "partial_vote_count": 0
+      }
+    },
+    {
+      "mode": "fixture",
+      "case": "priority_guard",
+      "result": {
+        "passed": true,
+        "case": "priority_guard",
+        "N": 3,
+        "seconds": 1.703287583310157,
+        "real_executor": true,
+        "real_winner_reexecution": true,
+        "adaptive": {
+          "K1": {
+            "C-main": 1,
+            "C-long2x": 1,
+            "pilot-b": 1
+          },
+          "K2": {
+            "C-main": 3,
+            "C-long2x": 5,
+            "pilot-b": 4
+          },
+          "unanimity_threshold": 1.0,
+          "stopped_rows": [
+            0
+          ],
+          "escalated_rows": [
+            1,
+            2
+          ],
+          "undecided_rows": [],
+          "stage2_waves": [
+            {
+              "questions": 1,
+              "pending_stage1_rows": 0,
+              "row_ids": [
+                2
+              ],
+              "leader_fraction_min": 0.25,
+              "leader_fraction_max": 0.25
+            },
+            {
+              "questions": 1,
+              "pending_stage1_rows": 0,
+              "row_ids": [
+                1
+              ],
+              "leader_fraction_min": 0.75,
+              "leader_fraction_max": 0.75
+            }
+          ],
+          "stage2_order": [
+            2,
+            1
+          ],
+          "stage2_priority": "stage1_leader_fraction_then_length_then_id",
+          "stage1_leader_fractions": {
+            "1": 0.75,
+            "2": 0.25
+          },
+          "mean_sample_count": 6.666666666666667,
+          "scorer_enabled": false
+        },
+        "partial_vote_count": 1
+      }
+    },
+    {
+      "mode": "fixture",
+      "case": "zero_extra",
+      "result": {
+        "passed": true,
+        "case": "zero_extra",
+        "N": 3,
+        "seconds": 1.079196167178452,
+        "real_executor": true,
+        "real_winner_reexecution": true,
+        "adaptive": {
+          "K1": {
+            "C-main": 1,
+            "C-long2x": 1,
+            "pilot-b": 1
+          },
+          "K2": {
+            "C-main": 1,
+            "C-long2x": 5,
+            "pilot-b": 4
+          },
+          "unanimity_threshold": 1.0,
+          "stopped_rows": [
+            0
+          ],
+          "escalated_rows": [
+            1,
+            2
+          ],
+          "undecided_rows": [],
+          "stage2_waves": [
+            {
+              "questions": 2,
+              "pending_stage1_rows": 0,
+              "row_ids": [
+                2,
+                1
+              ],
+              "leader_fraction_min": 0.25,
+              "leader_fraction_max": 0.75
+            }
+          ],
+          "stage2_order": [
+            2,
+            1
+          ],
+          "stage2_priority": "stage1_leader_fraction_then_length_then_id",
+          "stage1_leader_fractions": {
+            "1": 0.75,
+            "2": 0.25
+          },
+          "mean_sample_count": 7.666666666666667,
+          "scorer_enabled": false
+        },
+        "partial_vote_count": 0
+      }
+    },
+    {
+      "mode": "real_pipeline",
+      "case": null,
+      "result": {
+        "passed": true,
+        "real_tokenizer_decoder_pack_executor": true,
+        "N": 3,
+        "K1": [
+          1,
+          1,
+          1
+        ],
+        "K2": [
+          3,
+          5,
+          4
+        ],
+        "GPU": false
+      }
+    },
+    {
+      "mode": "cold_process",
+      "case": null,
+      "result": {
+        "passed": true,
+        "embedded_real_supervisor_worker_load_SHA_N3": true,
+        "full_timer_phases_and_stale_rejection": true,
+        "seconds": 2.1823744592256844,
+        "GPU": false
+      }
+    },
+    {
+      "mode": "offline",
+      "case": null,
+      "result": {
+        "passed": true,
+        "N2_v6_replay_code_execution_count_stop_exact_2048": true,
+        "N3_independent_union_find_vote_priority_code_execution_exact_2048": true,
+        "matches": 1535,
+        "all_winners_reexecution": {
+          "checked_rows": 2048,
+          "complete": true,
+          "mismatch_rows": [],
+          "execution": {
+            "workers": 4,
+            "worker_history": [
+              4
+            ],
+            "service_state": {
+              "workers": 4,
+              "nice_requested_increment": 10,
+              "nice": 0,
+              "nice_applied": false,
+              "nice_error": "[Errno 1] Operation not permitted"
+            },
+            "requested_candidates": 2048,
+            "unique_programs": 2041,
+            "deduplicated": 7,
+            "completed_unique": 2041,
+            "service_wall_seconds": 0.3586851670406759,
+            "sum_worker_task_wall_seconds": 0.5436746324412525,
+            "sum_worker_task_cpu_seconds": 0.5296040000000009,
+            "first_submit_to_last_result_seconds": 0.35042858263477683,
+            "service_wall_includes_GPU_wait": true,
+            "wall_limit": 3.0,
+            "cpu_limit": 2.0,
+            "memory_bytes": 805306368,
+            "overlap": true,
+            "isolation": "fresh numeric namespaces / pristine SymPy fork",
+            "error": null
+          }
+        }
+      }
+    }
+  ]
+}

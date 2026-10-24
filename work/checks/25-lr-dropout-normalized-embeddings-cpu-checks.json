@@ -1,0 +1,224 @@
+{
+  "experiment": 25,
+  "device": "CPU",
+  "torch": "2.14.1",
+  "full_A_training_updates": 0,
+  "new_T4_measurements": false,
+  "tiny_spec": {
+    "d_model": 16,
+    "heads": 2,
+    "encoder_layers": 1,
+    "decoder_layers": 1,
+    "swiglu_dim": 24,
+    "vocab": 37,
+    "max_positions": 64
+  },
+  "checks": {
+    "all9_code_cells_parse_empty_outputs": true,
+    "model_greedy_CE_arithmetic_sandbox_unchanged_from24": true,
+    "all31250_real_schedule_values_equal24": true,
+    "LR20vs21_L3_all_branches_D0_accept_reject_control_CE_gate": true,
+    "actual_notebook_controller_all3_L3_paths_mocked": [
+      {
+        "preferred": "L1",
+        "configurations": [
+          {
+            "id": "L1",
+            "peak_lr": 0.001,
+            "batch": 128,
+            "updates": 6250,
+            "dropout": 0.1,
+            "scaled_token_init": true
+          },
+          {
+            "id": "L2",
+            "peak_lr": 0.003,
+            "batch": 128,
+            "updates": 6250,
+            "dropout": 0.1,
+            "scaled_token_init": true
+          },
+          {
+            "id": "L3",
+            "peak_lr": 0.0005,
+            "batch": 128,
+            "updates": 6250,
+            "dropout": 0.1,
+            "scaled_token_init": true
+          },
+          {
+            "id": "D0",
+            "peak_lr": 0.001,
+            "batch": 128,
+            "updates": 6250,
+            "dropout": 0.0,
+            "scaled_token_init": true
+          }
+        ]
+      },
+      {
+        "preferred": "L2",
+        "configurations": [
+          {
+            "id": "L1",
+            "peak_lr": 0.001,
+            "batch": 128,
+            "updates": 6250,
+            "dropout": 0.1,
+            "scaled_token_init": true
+          },
+          {
+            "id": "L2",
+            "peak_lr": 0.003,
+            "batch": 128,
+            "updates": 6250,
+            "dropout": 0.1,
+            "scaled_token_init": true
+          },
+          {
+            "id": "L3",
+            "peak_lr": 0.0045,
+            "batch": 128,
+            "updates": 6250,
+            "dropout": 0.1,
+            "scaled_token_init": true
+          },
+          {
+            "id": "D0",
+            "peak_lr": 0.003,
+            "batch": 128,
+            "updates": 6250,
+            "dropout": 0.0,
+            "scaled_token_init": true
+          }
+        ]
+      },
+      {
+        "preferred": "R5",
+        "configurations": [
+          {
+            "id": "L1",
+            "peak_lr": 0.001,
+            "batch": 128,
+            "updates": 6250,
+            "dropout": 0.1,
+            "scaled_token_init": true
+          },
+          {
+            "id": "L2",
+            "peak_lr": 0.003,
+            "batch": 128,
+            "updates": 6250,
+            "dropout": 0.1,
+            "scaled_token_init": true
+          },
+          {
+            "id": "D0",
+            "peak_lr": 0.002,
+            "batch": 128,
+            "updates": 6250,
+            "dropout": 0.0,
+            "scaled_token_init": true
+          }
+        ]
+      }
+    ],
+    "tiny4_FP32_and4_CPU_FP16_GradScaler_full_checkpoint": true,
+    "checkpoint_next_update_exact_model_AdamW_GradScaler_scheduler_RNG_FP32_and_FP16": true,
+    "interrupt_does_not_create_completion_receipt": true,
+    "real_train_boundary_resume_no_duplicate_train_and_eval": true,
+    "real_generate_wrapper_checkpoint_load_answers_SHA_full_timer_and_CE": true,
+    "real_tiny_greedy_sorted_restore_equals_individual": true,
+    "starter100MB_full24_and_resume_manifest_CRC_SHA_inputs_rejected_corruption_code_zip_slip": true,
+    "Drive_copy_SHA_local_files_no_real_Drive_UI": true,
+    "actual_input_cell_auto_reuse_and_early_placeholder_resume_no_UI": true,
+    "actual_report_best_checkpoint_test_resume_and_R5_conditional_replay_mocked": true,
+    "standalone_final_cell_before_setup_after_interrupt_mocked_download": true
+  },
+  "completed_tiny_updates": 18,
+  "interrupted_tiny_updates": 2,
+  "starter": {
+    "file": "25-start-from-24-r5-and-fixed-plan.zip",
+    "bytes": 100083340,
+    "sha256": "9cb672cb3535aa4d37482da157f60cd3986bffe3127fea6e5a92cc00d73f21b0",
+    "entries": [
+      {
+        "file": "batch-plan.npy",
+        "bytes": 3200128,
+        "sha256": "48734ce4d9621e0adf464e5fad25bfc625772d7a222baeada107ea92c0a13628"
+      },
+      {
+        "file": "controls/R5/model.pt",
+        "bytes": 48394101,
+        "sha256": "0459432561dc0b19605d7516062e70ef9c45a4dcbb21b8cd8ee2a59687f7de09"
+      },
+      {
+        "file": "controls/R5/source-metrics24.json",
+        "bytes": 123378,
+        "sha256": "21bc5257a69d53522eb853e777ae3d5b6a6c16be1d05d376b62f050f02e025ea"
+      },
+      {
+        "file": "controls/R5/source-training24.json",
+        "bytes": 7572,
+        "sha256": "21e1d1b127976afd61b078a67ca613b98999f08a8d6c91ae19b2cabec918b58f"
+      },
+      {
+        "file": "heldout4k-reference-execution.json",
+        "bytes": 253468,
+        "sha256": "8a4ce348817706b65cbcedc6767338640605ff4558d6054b5df17d4fae7907ec"
+      },
+      {
+        "file": "heldout4k-selection.json",
+        "bytes": 138813,
+        "sha256": "1a68af06337036259c7a46b2be899ecd1cb62ed00872a53c888626812f57eb3b"
+      },
+      {
+        "file": "heldout4k.json",
+        "bytes": 1846416,
+        "sha256": "28a3c0c9088c5b4a17d75d216e4abc4262cc9ca62884966c43e7ec09b6f040c2"
+      },
+      {
+        "file": "initial.json",
+        "bytes": 188,
+        "sha256": "cbbb76fbca004a6e74635a0293c21b23e06d0ebcc29f5c3ba5333552f2ab0710"
+      },
+      {
+        "file": "initial.pt",
+        "bytes": 48394401,
+        "sha256": "daedd90fe51fef95dc151bc28e2f1ed0c66de80e5aa50a9ad8723ec50204c647"
+      },
+      {
+        "file": "old1024-reference-execution.json",
+        "bytes": 63093,
+        "sha256": "d233eae9f5836dc3a94b115aae9d7a51e1eaacdfac39a3b327b52b6d9dbce5e2"
+      },
+      {
+        "file": "old1024.json",
+        "bytes": 463882,
+        "sha256": "2ba73d6034ea8c258c3ecda5c8c110143cba7fcd800dbdbdb7ce5cc666d408b2"
+      },
+      {
+        "file": "plan.json",
+        "bytes": 253,
+        "sha256": "1c2ee606f727c1a24cf929e861cdd878ddc84b6d28cfeec52b03ed18c1e5108b"
+      },
+      {
+        "file": "starter.json",
+        "bytes": 288,
+        "sha256": "014da9672e6ae35f2579a2247596a026d3b97eb1a92654cf5811f74c4a3404d2"
+      },
+      {
+        "file": "tokenizer.json",
+        "bytes": 545866,
+        "sha256": "261f25b5d4be006a6a00e41e0eafbe522580741da627ba670f6b9805a2659b7d"
+      }
+    ],
+    "source24": "0a184d0a86a34098d2313926a2f83448e21c5972abd55fecc96a28a8cfebaae1"
+  },
+  "quality_results25": "not run",
+  "control_greedy_CE_on_T4": "not rerun",
+  "sandbox_full_reference_results": "24 saved and CPU-verified previously; sandbox unchanged",
+  "code_sha256": "85961ee88a307ac5d0457686ea3a7770aab878d6ada0e98f5841dfd1de52fa35",
+  "notebook_sha256": "698c26379feee621f5eb36ebd4c3e5c9a41b05e4845f783458a3d7984804b198",
+  "status": "passed"
+}

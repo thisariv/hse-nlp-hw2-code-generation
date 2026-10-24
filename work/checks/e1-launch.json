@@ -1,0 +1,89 @@
+{
+  "ref": "friend1/nlp-hw02-e1-ensembles",
+  "requested_at_utc": "2026-10-19T15:45:20.349048+00:00",
+  "own_push_calls": 1,
+  "private": true,
+  "preflight": {
+    "target_absent_in_full_owned_inventory": true,
+    "owned_count": 38
+  },
+  "dependencies": {
+    "friend1/nlp-hw02-b6": 1,
+    "friend1/nlp-hw02-kaggle-p1": 3
+  },
+  "quota_before": {
+    "free_seconds": 52295.961,
+    "used_seconds": 55704.039,
+    "reserved_seconds": 0.0,
+    "reset_utc": "2026-10-24 00:00:00"
+  },
+  "timeout_seconds": 4200,
+  "maximum_device_seconds": 8400,
+  "notebook_sha256": "108ca8a3a7f1158e320ba3ccee668ae1d9ea7fcad0ba1e1c44a66cbaf37f1438",
+  "notes_sha256": "cb3934912026af9db5cb3b4627c4af92237d8365b6e01aee8c947ce3ff6ab00b",
+  "preregistration_sha256": "4bad635b003d71195ee339507c0560a2202569c8fb7bcb5f5fb5d424f033cda7",
+  "grid_sha256": "f27aad0dfd8e2291af404652ad2a5afa4772982c009f838d5fd3448f7dfce816",
+  "timing_sha256": "8ed3e4c9475f773111ba7acb96e0d70bf781b4933552ac1cb189e68d0eed6ea9",
+  "CLI_returncode": 0,
+  "push_accepted": true,
+  "push_finished_at_utc": "2026-10-19T15:45:23.894472+00:00",
+  "version": 1,
+  "server_parity": {
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 1,
+    "last_run_time_utc": "2026-10-16 15:45:24.549000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  "monitor_version": 4,
+  "status": "COMPLETE",
+  "last_observation": {
+    "at_utc": "2026-10-19T16:44:18.261179+00:00",
+    "version": 4,
+    "status": "COMPLETE",
+    "output_visible": true,
+    "log_chars": 7184,
+    "status_seconds": 2.3e-05,
+    "wait_threshold_crossed": false,
+    "own_push_calls": 1,
+    "quota": {
+      "free_seconds": 51139.573,
+      "used_seconds": 56860.427,
+      "reserved_seconds": 0.0,
+      "reset_utc": "2026-10-24 00:00:00"
+    },
+    "private": true,
+    "internet": false,
+    "T4_pair": true,
+    "all_code_cells_exact": true,
+    "current_version": 4,
+    "last_run_time_utc": "2026-10-16 16:44:16.476000",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "kernel_sources": [
+      "friend1/nlp-hw02-kaggle-p1",
+      "friend1/nlp-hw02-b6"
+    ]
+  },
+  "external_versions": [
+    2,
+    3,
+    4
+  ],
+  "observed_version_statuses": {
+    "1": "RUNNING",
+    "2": "QUEUED",
+    "3": "CANCEL_ACKNOWLEDGED",
+    "4": "COMPLETE"
+  },
+  "wait_threshold_crossed_at_utc": "2026-10-19T16:39:46.156053+00:00"
+}

@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "model": "C-long2x",
+  "anchor_sha256": "a0ba33fef996f6a0c63e4059909a17796c67e1a94dadf1cc04c6afe1e94c40d2",
+  "anchor_bytes": 644138387,
+  "updates": 123842,
+  "cursor": 9815936,
+  "main_seconds": 46370.24584266532,
+  "initial_full_state_digests": {
+    "model": "f9c6355a945ca53b0d6508adefd1a1e821237bf11efae1bac1b7839a2868b740",
+    "optimizer": "90fa843c7b9879f892b532e7a96b32f64972f7689ae26fa06b4ae6821092acd7",
+    "scaler": "15df2bb952bfa2e4eccf7f91a004c961b96960b680fae06b43a5c6f5a4efdb3c",
+    "rng": "6b041ea116104079626d736e2b2a2622689fe1a8aed00f70614b1a0f059cb445",
+    "state": "a9e2481af672b9129f1e2f59a36aac5b19ddf5981265566307e7123459244aef"
+  },
+  "restored_initial_state": [
+    {
+      "state_exact": true,
+      "model_exact": true,
+      "optimizer_exact": true,
+      "scaler_exact": true
+    }
+  ],
+  "steps": [
+    {
+      "model": "94db438c3435f30e81a1039c0b6df3b2f6c6b737dd938419fd3e672eeb67433a",
+      "optimizer": "2bf7d99b56c93cb99efa463e6d41e7a2714d2c7e6cadcfddee62517ff1e4981f",
+      "scaler": "99d324ac2d51f6a681b2401118bf9e7de3b81ad5d5f9f736c449653a4643d720",
+      "rng": "ec1aeb643b94c44971f0ec2fd12bc891a8774a526c5c7fdb2e33bf457bbabb27",
+      "indices_sha256": "4e2abf551bb79323ad3159882076204b707a70bf6df5a6612fa01c8b99789f62"
+    },
+    {
+      "model": "5f81932eba709d4a41ed60f73e147aac9b73c48fd2a9646d7abfa9da4f436c86",
+      "optimizer": "ede6e2d5c6bad08bfe2b457e438d72d70eb67414a4f135473c97f509054bab24",
+      "scaler": "d4a59d7c808abcec348d6151e1baec8c78ef6ae7d3dbae4ffa19565d9c42d857",
+      "rng": "ec1aeb643b94c44971f0ec2fd12bc891a8774a526c5c7fdb2e33bf457bbabb27",
+      "indices_sha256": "70d276b0706b874587f6793cac61ad23b37eb4ba337b2bf83906df6d7f56e063"
+    }
+  ],
+  "steps_bit_exact": 2,
+  "effective_batch": 128,
+  "micro_batch": 64,
+  "identity_history_cursor_preserved": true,
+  "temporary_runtime_checkpoints_removed": true,
+  "GPU": false,
+  "limitation": "CPU FP32/no autocast, enabled CPU GradScaler restored, fused Adam disabled; CUDA/FP16/fused requires GPU smoke",
+  "seconds": 76.49796216702089,
+  "downloaded_anchor_removed": true
+}

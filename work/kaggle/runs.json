@@ -1,0 +1,2982 @@
+{
+  "schema_version": 1,
+  "phase_a_commit": "78e0df7",
+  "input_verification": "../checks/kaggle-phase-b-input-checks.json",
+  "datasets": [
+    {
+      "exists": true,
+      "private": true,
+      "version": 1,
+      "ref": "thisarivson/nlp-hw02-26-token-cache",
+      "status": "ready",
+      "source_files": 295,
+      "payload_sha256": "9f798601a23b01f35a882053b466b2764540b89fe430757d22b1c115968c8b86",
+      "recovered_after_visibility_delay": true,
+      "url": "https://www.kaggle.com/datasets/thisarivson/nlp-hw02-26-token-cache",
+      "checked_at": "2026-10-11T10:23:05.182233+00:00"
+    },
+    {
+      "exists": true,
+      "private": true,
+      "version": 1,
+      "ref": "thisarivson/nlp-hw02-26-resume",
+      "status": "ready",
+      "source_files": 99,
+      "payload_sha256": "01ccb3c0a9e202ea6c605197e15e365674851287af155199d83aed23a45584ff",
+      "recovered_after_visibility_delay": true,
+      "url": "https://www.kaggle.com/datasets/thisarivson/nlp-hw02-26-resume",
+      "checked_at": "2026-10-11T10:23:06.527481+00:00"
+    },
+    {
+      "exists": true,
+      "private": true,
+      "version": 1,
+      "ref": "thisarivson/nlp-hw02-26b-inputs",
+      "status": "ready",
+      "source_files": 1,
+      "payload_sha256": "0824449aa2746b7778cee06dfdb86cd835eb5e89ae6ebe3d863e75cb78ab0539",
+      "url": "https://www.kaggle.com/datasets/thisarivson/nlp-hw02-26b-inputs",
+      "checked_at": "2026-10-11T10:23:08.235128+00:00"
+    }
+  ],
+  "issues": [
+    "Вход order/order.npy приведён к ожидаемой адаптером раскладке только внутри staging; SHA/bytes совпали.",
+    "После create cache и resume возникла задержка видимости в --mine/status. Оба v1 подтверждены ready/private без повторной загрузки; ожидание видимости исправлено."
+  ],
+  "s1": {
+    "ref": "thisarivson/nlp-hw02-kaggle-s1",
+    "slug": "nlp-hw02-kaggle-s1",
+    "budget_seconds": 10800,
+    "machine_shape": "NvidiaTeslaT4",
+    "requested_gpu_count": 2,
+    "is_private": true,
+    "status": "COMPLETE",
+    "push_requested_at": "2026-10-11T10:23:08.235417+00:00",
+    "version": 1,
+    "url": "https://www.kaggle.com/code/thisarivson/nlp-hw02-kaggle-s1",
+    "push_accepted_at": "2026-10-11T10:23:16.048169+00:00",
+    "initial_status": "RUNNING",
+    "initial_status_checked_at": "2026-10-11T10:24:39.241278+00:00",
+    "status_checked_at": "2026-10-11T11:53:32.216442+00:00",
+    "control_check_seconds_after_push": 235.4,
+    "control_status": "RUNNING",
+    "control_status_checked_at": "2026-10-11T10:27:11.423824+00:00",
+    "restarted": false,
+    "internal_status": "partial",
+    "exit_codes": [
+      0,
+      1
+    ],
+    "output_downloaded": true,
+    "output_path": "../results/kaggle-runs/nlp-hw02-kaggle-s1/1",
+    "output_files": 1951,
+    "output_verified": true,
+    "output_verification": "../checks/kaggle-s1-v1-cpu-audit.json",
+    "phase_c_summary": "../results/kaggle-s1-v1-summary.json"
+  },
+  "26c": {
+    "ref": "thisarivson/nlp-hw02-26c-cpu-cache",
+    "version": 2,
+    "url": "https://www.kaggle.com/code/thisarivson/nlp-hw02-26c-cpu-cache",
+    "status": "COMPLETE",
+    "checked_at": "2026-10-11T10:27:11.423824+00:00",
+    "output_downloaded": true,
+    "output_path": "../results/kaggle-runs/nlp-hw02-26c-cpu-cache/2",
+    "output_files": 214,
+    "manifest_sha256": "7417b6ffc0a0cfeeafb501610fdee8b43bd1bcea2935ded64cc964cba79800a3",
+    "rows": 2647266,
+    "shards": [
+      42,
+      59
+    ],
+    "sealed": true,
+    "output_verification": "../checks/kaggle-26c-v2-output-checks.json",
+    "output_verified_at": "2026-10-11T10:34:23.097834+00:00"
+  },
+  "local_checks": {
+    "full_drive_sha_and_bytes": "passed",
+    "source_identity_build": "passed",
+    "upload_visibility_regression": "passed",
+    "python_compile": "passed"
+  },
+  "git": {
+    "branch": "codex/nlp-hw2-code-generation",
+    "phase_b_commit": "35ddb46",
+    "phase_c_commit_attempt": "blocked_by_sandbox",
+    "error": "Cannot create shared worktree index.lock: Operation not permitted",
+    "index_changed": false,
+    "commit_message": "nlp: analyze S1 and prepare pinned S2 for capacity B",
+    "manual_commands": "../kaggle/README.md#коммит-фазы-c",
+    "s2_commit_attempt": "blocked_by_sandbox",
+    "s2_index_changed": false,
+    "s2_error": "Cannot create shared worktree index.lock: Operation not permitted",
+    "s2_commit_message": "nlp: launch private S2 with fast sampler and equal-time M/B comparisons",
+    "s2_retry_commit_attempt": "blocked_by_sandbox",
+    "s2_retry_index_changed": false,
+    "s2_retry_error": "Cannot create shared worktree index.lock: Operation not permitted",
+    "s2_retry_commit_message": "nlp: prepare bounded S2 retry with watchdog and compact output",
+    "l1_commit_attempt": "blocked_by_sandbox",
+    "l1_error": "Cannot create shared .git/worktrees/study1/index.lock: Operation not permitted",
+    "l1_index_changed": false,
+    "l1_commit_message": "nlp: prepare long C/D L1 with verified full compact cache and live resume"
+  },
+  "s2_prepared": {
+    "ref": "thisarivson/nlp-hw02-kaggle-s2",
+    "previous_source": "thisarivson/nlp-hw02-kaggle-s1/1",
+    "budget_seconds": 10800,
+    "status": "prepared; not pushed",
+    "notebook": "notebooks/nlp-hw02-kaggle-s2.ipynb",
+    "reference_fix_check": "../checks/kaggle-s2-reference-reuse-cpu-checks.json"
+  },
+  "phase_b_commit": "35ddb46",
+  "s2": {
+    "ref": "thisarivson/nlp-hw02-kaggle-s2",
+    "url": "https://www.kaggle.com/code/thisarivson/nlp-hw02-kaggle-s2",
+    "version": 1,
+    "status": "QUEUED",
+    "budget_seconds": 11700,
+    "machine_shape": "NvidiaTeslaT4",
+    "requested_gpu_count": 2,
+    "processes": 2,
+    "is_private": true,
+    "previous_source": "thisarivson/nlp-hw02-kaggle-s1/1",
+    "experiments": {
+      "GPU0": [
+        "27b",
+        "29 M"
+      ],
+      "GPU1": [
+        "28 B"
+      ]
+    },
+    "targets": [
+      {
+        "A_point": "p006250",
+        "seconds": 928.1166084509971,
+        "actual_pairs": 960000
+      },
+      {
+        "A_point": "p012500",
+        "seconds": 2018.225873703993,
+        "actual_pairs": 1920000
+      },
+      {
+        "A_point": "p025000",
+        "seconds": 4203.38492590799,
+        "actual_pairs": 3840000
+      },
+      {
+        "A_point": "p050000",
+        "seconds": 7312.883812298975,
+        "actual_pairs": 6400000
+      }
+    ],
+    "notebook": "notebooks/nlp-hw02-kaggle-s2.ipynb",
+    "notebook_sha256": "1fd6c62f770159f8996650f20a2b5abb8d2a6774b478f255d5866cd79cbe7559",
+    "port_sha256": "a701758cb9bbeeb5e624e5d9f98ec180833d959faa342d6fa8de94da88f9d84b",
+    "protocol": "../notes/s2-fast-sampling-and-capacity.md",
+    "cpu_checks": "../checks/kaggle-s2-cpu-checks.json",
+    "static_checks": "../checks/kaggle-s2-static-checks.json",
+    "prepared_at": "2026-10-11T12:18:23.433821+00:00",
+    "unverified": [
+      "T4 memory2048/1024 and actual SDPA backend",
+      "full heldout greedy token identity and k16 quality2707±45",
+      "fulltest selected vote<=120s",
+      "M/B last7313s point within wall budget"
+    ],
+    "risks": [
+      "27b heldout gate may fail; GPU0 stops with partial",
+      "early A tensor checkpoints absent in S1; tie selection may remain pending on an earlier common point",
+      "last time point may be missing; reported explicitly"
+    ],
+    "automatic_restart": false,
+    "delete_actions": 0,
+    "push_accepted_at": "2026-10-11T12:19:55.207896+00:00",
+    "push_response": "Kernel version 1 successfully pushed",
+    "gpu_launch_authorized": true,
+    "status_checked_at": "2026-10-11T12:22:22.144677+00:00",
+    "server_private_verified": true,
+    "server_gpu_enabled_verified": true,
+    "server_v1_source_matches_local": true,
+    "server_metadata_verified_at": "2026-10-11T12:20:32.201795+00:00",
+    "git_commit": "blocked_by_sandbox; working changes retained",
+    "final_control_status": "QUEUED",
+    "final_control_checked_at": "2026-10-11T12:22:22.144796+00:00",
+    "user_reported_observation": {
+      "date": "2026-10-11",
+      "status": "RUNNING",
+      "elapsed_hours_approx": 4.5,
+      "output_bytes": 0,
+      "UI_log": "empty; commit log not visible yet",
+      "hypothesis": "unbounded wait after kill; possible CUDA/driver D-state",
+      "cause_confirmed": false,
+      "manual_stop_confirmed": true,
+      "new_API_status_check": true,
+      "results_lost": true,
+      "output_and_log_empty": true,
+      "API_status": "CANCEL_ACKNOWLEDGED"
+    }
+  },
+  "s2_retry": {
+    "ref": "thisarivson/nlp-hw02-kaggle-s2",
+    "status": "COMPLETE",
+    "same_slug_new_version": true,
+    "version": 2,
+    "previous_source": "thisarivson/nlp-hw02-kaggle-s1/1",
+    "resume_source": null,
+    "budget_seconds": 11700,
+    "worker_deadline_seconds": 11400,
+    "terminate_grace_seconds": 20,
+    "hard_watchdog_exit_seconds": 12000,
+    "backend_session_timeout_seconds": 13200,
+    "server_timeout_request_mock_verified": true,
+    "GPU0": [
+      "27b",
+      "29 M"
+    ],
+    "GPU1": [
+      "28 B"
+    ],
+    "targets": [
+      {
+        "A_point": "p006250",
+        "seconds": 928.1166084509971,
+        "actual_pairs": 960000
+      },
+      {
+        "A_point": "p012500",
+        "seconds": 2018.225873703993,
+        "actual_pairs": 1920000
+      },
+      {
+        "A_point": "p025000",
+        "seconds": 4203.38492590799,
+        "actual_pairs": 3840000
+      },
+      {
+        "A_point": "p050000",
+        "seconds": 7312.883812298975,
+        "actual_pairs": 6400000
+      }
+    ],
+    "output_policy": "individual files; no ZIP; latest/final AdamW only, FP32 model-only evaluated points",
+    "output_target_max_bytes": 4294967296,
+    "notebook": "notebooks/nlp-hw02-kaggle-s2.ipynb",
+    "notebook_sha256": "b4824d500e2a59f6979afc7d7e1c04d9d857410d97f9970072b8cd99a01c57e8",
+    "port_sha256": "0bc58e004b26b6cc60fa596a7d27496671b5a7c6ae01540dfc708840ee1c0126",
+    "bundle": "bundles/s2",
+    "protocol": "../notes/s2-fast-sampling-and-capacity.md",
+    "cpu_checks": "../checks/kaggle-s2-cpu-checks.json",
+    "watchdog_checks": "../checks/kaggle-s2-watchdog-cpu-checks.json",
+    "static_checks": "../checks/kaggle-s2-retry-static-cpu-checks.json",
+    "cli_checks": "../checks/kaggle-cli-224-metadata-checks.json",
+    "tiny_output_bytes": 65826067,
+    "prepared_date": "2026-10-11",
+    "GPU_runs_in_this_task": 1,
+    "network_calls_in_this_task": "private input probes, pinned S1 pull and single authorized GPU push",
+    "unverified": [
+      "CUDA numerical cause of35greedy token mismatches",
+      "fulltest1919 greedy/k8/k16 and120s eligibility",
+      "M training/points and A/M/B common-point selection",
+      "exact Secrets access failure",
+      "actual SDPA backend/train peak memory/GPU utilisation/quota debit",
+      "real CUDA D-state/emergency watchdog output: not exercised"
+    ],
+    "push_command": "python3 kaggle_tools.py push --folder bundles/s2 --run-gpu",
+    "automatic_restart": false,
+    "git_commit": "blocked_by_sandbox: cannot create shared .git/worktrees/study1/index.lock; working changes retained",
+    "live_dataset": "thisarivson/nlp-hw02-s2-live",
+    "live_dataset_url": "https://www.kaggle.com/datasets/thisarivson/nlp-hw02-s2-live",
+    "live_interval_seconds": 900,
+    "live_upload_timeout_seconds": 540,
+    "live_snapshot_timeout_seconds": 590,
+    "live_staging_limit_bytes": 450000000,
+    "live_final_timeout_seconds": 30,
+    "live_watchdog_final_timeout_seconds": 20,
+    "live_cpu_checks": "../checks/kaggle-s2-live-cpu-checks.json",
+    "credentials": "Kaggle Secrets -> process environment only; stripped from worker env; no config or auth file",
+    "live_dataset_pre_push_exists": false,
+    "full_repeat_authorized": true,
+    "gpu_launch_authorized": true,
+    "version_ref": "thisarivson/nlp-hw02-kaggle-s2/2",
+    "url": "https://www.kaggle.com/code/thisarivson/nlp-hw02-kaggle-s2",
+    "kernel_url": "https://www.kaggle.com/code/thisarivson/nlp-hw02-kaggle-s2",
+    "version_url": "https://www.kaggle.com/code/thisarivson/nlp-hw02-kaggle-s2/versions?versionNumber=2",
+    "push_response": "Kernel version 2 successfully pushed",
+    "push_accepted_at": "2026-10-11T17:47:06.516462+00:00",
+    "server_private_verified": true,
+    "server_gpu_enabled_verified": true,
+    "server_internet_enabled_verified": true,
+    "server_machine_shape": "NvidiaTeslaT4",
+    "server_version_source_matches_local": true,
+    "server_metadata_verified_at": "2026-10-11T17:48:05.547821+00:00",
+    "status_checked_at": "2026-10-11T20:16:02.699964+00:00",
+    "status_checked_after_push_seconds": 224.965622,
+    "final_control_status": "RUNNING",
+    "final_control_checked_at": "2026-10-11T17:50:51.482084+00:00",
+    "live_dataset_control_check": {
+      "exists": false,
+      "checked_at": "2026-10-11T17:51:34.091306+00:00",
+      "status": "not yet visible in --mine; real upload not confirmed"
+    },
+    "error_log_download_required": false,
+    "repush_count": 0,
+    "internal_status": "partial",
+    "exit_codes": [
+      1,
+      0
+    ],
+    "output_downloaded": true,
+    "downloaded_files": 216,
+    "output_summary": "../results/kaggle-s2-v2-summary.json",
+    "CPU_audit": "../checks/kaggle-s2-v2-cpu-audit.json",
+    "wall_seconds": 7860.523828277,
+    "last_kernel_log_seconds": 7877.357688234,
+    "live_dataset_exists": false,
+    "live_uploads_enabled": false,
+    "live_failure": "Kaggle Secrets unavailable; uploads disabled",
+    "final_decision": "pending;27b gate failed, M missing, no full test timing",
+    "new_GPU_runs_in_analysis": 0,
+    "analysis_git_commit": "blocked_by_sandbox; cannot create shared worktree index.lock; working changes retained",
+    "analysis_completed_at": "2026-10-11",
+    "analysis_no_push": true
+  },
+  "s3": {
+    "ref": "thisarivson/nlp-hw02-kaggle-s3",
+    "url": "https://www.kaggle.com/code/thisarivson/nlp-hw02-kaggle-s3",
+    "status": "COMPLETE",
+    "version": 1,
+    "budget_seconds": 5400,
+    "worker_deadline_seconds": 5100,
+    "hard_watchdog_exit_seconds": 6000,
+    "backend_session_timeout_seconds": 6300,
+    "is_private": true,
+    "machine_shape": "NvidiaTeslaT4",
+    "requested_gpu_count": 2,
+    "internet": true,
+    "previous_source": "thisarivson/nlp-hw02-kaggle-s1/1",
+    "b_source": "thisarivson/nlp-hw02-kaggle-s2/2",
+    "GPU0": [
+      30,
+      "32 inference-only Bscore"
+    ],
+    "GPU1": [
+      31
+    ],
+    "baseline_points": [
+      "p006250",
+      "p012500"
+    ],
+    "actual_pairs": [
+      960000,
+      1920000
+    ],
+    "baseline_heldout_matches": [
+      1888,
+      2210
+    ],
+    "protocol": "../notes/s3-data-representations-and-b-scoring.md",
+    "notebook": "notebooks/nlp-hw02-kaggle-s3.ipynb",
+    "bundle": "bundles/s3",
+    "notebook_sha256": "77c42c8506bd5f92cb98176103f6811badb6d671fa6efc12e368fa220111969b",
+    "port_sha256": "d9eca1e762ef6e6e248984e8a9313950935f9257af57f31d8f4d6fc76d84c03c",
+    "CPU_roundtrip": {
+      "30": {
+        "rows": 57702,
+        "mismatches": 0
+      },
+      "31": {
+        "rows": 57702,
+        "mismatches": 0
+      }
+    },
+    "CPU_checks": [
+      "../checks/kaggle-s3-roundtrip.json",
+      "../checks/kaggle-s3-smoke.json",
+      "../checks/kaggle-s3-static.json"
+    ],
+    "scoring_questions": 5120,
+    "scoring_candidates": 332800,
+    "b_weights_sha256": "cbbe292cf65e37ec4876b8206b19b06b6fbe7541fd7be1115799c3ce085f720a",
+    "output_policy": "individual files; no ZIP; latest full A states, FP32 model-only points, metrics/generations/Bscores",
+    "live_upload": false,
+    "gpu_launch_authorized": true,
+    "automatic_restart": false,
+    "repush_count": 0,
+    "prepared_at": "2026-10-12T08:11:26.441423+00:00",
+    "unverified": [
+      "T4 FP16/fused/SDPA behavior/memory",
+      "full GPU exec quality and CE",
+      "preprocessing/scoring throughput and completeness within budget",
+      "compact equal-time alignment",
+      "CPU ensemble selection and <=180s production timer"
+    ],
+    "version_ref": "thisarivson/nlp-hw02-kaggle-s3/1",
+    "version_url": "https://www.kaggle.com/code/thisarivson/nlp-hw02-kaggle-s3/versions?versionNumber=1",
+    "push_response": "Kernel version 1 successfully pushed",
+    "push_accepted_at": "2026-10-12T08:12:56.484030+00:00",
+    "GPU_runs_in_this_task": 1,
+    "server_private_verified": true,
+    "server_gpu_enabled_verified": true,
+    "server_internet_enabled_verified": true,
+    "server_machine_shape": "NvidiaTeslaT4",
+    "server_version_source_matches_local": true,
+    "server_metadata_verified_at": "2026-10-12T08:14:02.136418+00:00",
+    "git_commit": "blocked_by_sandbox; working changes retained",
+    "git_error": "Cannot create shared worktree index.lock: Operation not permitted",
+    "git_index_changed": false,
+    "status_checked_at": "2026-10-12T08:16:36.604609+00:00",
+    "status_checked_after_push_seconds": 220.120579,
+    "control_status": "RUNNING",
+    "control_checked_at": "2026-10-12T08:16:36.604609+00:00",
+    "error_log_download_required": false,
+    "internal_status": "partial",
+    "exit_codes": [
+      1,
+      1
+    ],
+    "wall_seconds": 2211.137145703,
+    "output_downloaded": true,
+    "output_path": "../results/kaggle-runs/nlp-hw02-kaggle-s3/1",
+    "downloaded_files": 84,
+    "downloaded_bytes_including_local_receipt_and_log": 404314068,
+    "output_verified": true,
+    "output_summary": "../results/kaggle-s3-v1-summary.json",
+    "CPU_audit": "../checks/kaggle-s3-v1-cpu-audit.json",
+    "representation_results": "../notes/s3-representations-results.md",
+    "candidate_results": "../results/32-candidate-ensemble-cpu-summary.json",
+    "failure": "RuntimeError: inference tensors from evaluation dtype conversion cannot be saved for backward",
+    "completed_points": [
+      "p006250"
+    ],
+    "missing_points": [
+      "p012500"
+    ],
+    "GPU_B_scored_candidates": 0,
+    "analysis_no_push": true,
+    "new_GPU_runs_in_analysis": 0,
+    "analysis_checked_at": "2026-10-12T09:20:21.479350+00:00",
+    "local_dtype_fix": "../checks/kaggle-s3-dtype-regression.json",
+    "local_fix_CUDA_verified": false,
+    "new_notebook_built": false,
+    "final_decision": "30/31 pending at1.92M/equal-time; CPU ensemble no convincing gain",
+    "CPU_B_scoring": "complete; requested33 candidates per question, FP32",
+    "CPU_B_scored_candidates": 168960,
+    "CPU_B_unique_programs": 129050,
+    "CPU_B_scoring_seconds": 1853.6721529590432,
+    "CPU_ensemble_winner": "B-mean tau0.2",
+    "CPU_ensemble_decision": "no convincing gain: k16 delta_vote +0.293pp/+0.404pp; previous tune winner net0/-1",
+    "analysis_git_commit": "blocked_by_sandbox_at_git_add",
+    "analysis_git_error": "Cannot create shared worktree index.lock: Operation not permitted",
+    "analysis_git_index_changed": false,
+    "analysis_completed_at": "2026-10-12T10:06:00.009063+00:00",
+    "error_logs_downloaded": true
+  },
+  "l1_cache": {
+    "ref": "thisarivson/nlp-hw02-compact-cache-verified",
+    "version": 2,
+    "url": "https://www.kaggle.com/code/thisarivson/nlp-hw02-compact-cache-verified",
+    "version_url": "https://www.kaggle.com/code/thisarivson/nlp-hw02-compact-cache-verified/versions?versionNumber=2",
+    "status": "COMPLETE",
+    "checked_at": "2026-10-12T12:38:20.682453+00:00",
+    "push_accepted_at": "2026-10-12T12:33:05.122241+00:00",
+    "push_response": "Kernel version 2 successfully pushed",
+    "is_private": true,
+    "enable_gpu": false,
+    "enable_tpu": false,
+    "rows_expected": 9725737,
+    "all_converted_arrays_reused": true,
+    "recovery_dataset": "thisarivson/nlp-hw02-compact-targets-input/1",
+    "recovery_dataset_private_verified": true,
+    "recovery_dataset_ready_verified": true,
+    "recovery_package_bytes": 481406946,
+    "roundtrip_executor": "Torch/NumPy-free, wall3s CPU2s; original/ref comparison",
+    "output_verified": true,
+    "output_download_started": true,
+    "output_path": "../results/kaggle-runs/nlp-hw02-compact-cache-verified/2",
+    "output_verified_at": "2026-10-12T12:51:16.595766+00:00",
+    "rows": 9725737,
+    "manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+    "order_sha256": "09cf6db8549b7df614fa71516553d23d4cbb3ca97c7911db0c6d599a8277ab7d",
+    "tokenizer_sha256": "2b6fbb6426c42e9fcf82d576d53516d5b6e585c3618942f0dde6c76349856c1e",
+    "roundtrip_rows": 50040,
+    "answer_mismatches": 0,
+    "output_files": 428,
+    "arrays_verified": 360,
+    "server_source_matches_local": true,
+    "server_metadata_verified": true,
+    "output_audit": "../checks/kaggle-l1-cache-output.json",
+    "repair_wall_seconds": 118.89076806499997,
+    "initial_conversion_wall_seconds": 4579.6
+  },
+  "l1_prepared": {
+    "status": "complete: cache verified, L1 private/T4x2 published, API gate exit13.35s verified; user UI launch required",
+    "parameter_counts": {
+      "C": 53646403,
+      "D": 103902979
+    },
+    "protocol": "../notes/l1-long-training.md",
+    "long_training_start": "user UI Save Version -> Save & Run All only",
+    "automatic_long_training_launch": false
+  },
+  "l1_cache_conversion_v1": {
+    "ref": "thisarivson/nlp-hw02-compact-cpu-cache",
+    "version": 1,
+    "url": "https://www.kaggle.com/code/thisarivson/nlp-hw02-compact-cpu-cache",
+    "version_url": "https://www.kaggle.com/code/thisarivson/nlp-hw02-compact-cpu-cache/versions?versionNumber=1",
+    "status": "ERROR",
+    "rows_expected": 9725737,
+    "order_seed": 2026101201,
+    "is_private": true,
+    "enable_gpu": false,
+    "enable_tpu": false,
+    "previous_source": "thisarivson/nlp-hw02-26c-cpu-cache/2",
+    "poll_interval_seconds": 240,
+    "wait_limit_seconds": 9000,
+    "push_response": "Kernel version 1 successfully pushed",
+    "push_accepted_at": "2026-10-12T10:48:51.357494+00:00",
+    "acceptance_time_basis": "local push response file mtime",
+    "checked_at": "2026-10-12T12:07:30.366071+00:00",
+    "cpu_smoke": "../checks/kaggle-l1-smoke.json",
+    "watchdog_smoke": "../checks/kaggle-l1-watchdog-smoke.json",
+    "automatic_restart": false,
+    "output_verified": false,
+    "server_source_matches_local": true,
+    "server_metadata_verified": true,
+    "status_history": [
+      {
+        "status": "RUNNING",
+        "checked_at": "2026-10-12T12:03:29.403687+00:00"
+      },
+      {
+        "status": "ERROR",
+        "checked_at": "2026-10-12T12:07:30.366071+00:00"
+      }
+    ],
+    "internal_failure": "All60shards/order completed; final original/restored numeric audit failed with NumPy-importing spawn entrypoint",
+    "wall_seconds": 4579.6,
+    "arrays_verified_locally": true,
+    "local_array_audit": "../checks/kaggle-l1-cache-v1-arrays.json",
+    "local_roundtrip_rows": 50040,
+    "local_roundtrip_mismatches": 0
+  },
+  "l1_cache_recovery_history": {
+    "invalid_source_attempt": {
+      "ref": "thisarivson/nlp-hw02-compact-cache-verified",
+      "version": 1,
+      "status": "ERROR",
+      "reason": "Kaggle rejected ERROR kernel output as a source; no conversion or GPU work"
+    },
+    "raw_full_payload_upload": {
+      "status": "timeout600s; no successful dataset publication confirmed",
+      "replaced_with": "compressed new targets only,481406946bytes"
+    }
+  },
+  "l1": {
+    "ref": "thisarivson/nlp-hw02-kaggle-l1",
+    "version": 1,
+    "url": "https://www.kaggle.com/code/thisarivson/nlp-hw02-kaggle-l1",
+    "version_url": "https://www.kaggle.com/code/thisarivson/nlp-hw02-kaggle-l1/versions?versionNumber=1",
+    "status": "ERROR; expected missing-Secrets gate exit",
+    "push_accepted_at": "2026-10-12T12:51:38.362608+00:00",
+    "push_response": "Kernel version 1 successfully pushed",
+    "is_private": true,
+    "machine_shape": "NvidiaTeslaT4",
+    "requested_gpu_count": 2,
+    "enable_internet": true,
+    "long_training_start": "user UI Edit -> Save Version -> Save & Run All only",
+    "API_launch_expected": "missing Secrets gate immediate exit; zero training",
+    "cache_source": "thisarivson/nlp-hw02-compact-cache-verified/2",
+    "cache_manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+    "budget_seconds": 40680,
+    "hard_shutdown_seconds": 42300,
+    "server_timeout_seconds": 43200,
+    "parameter_counts": {
+      "C": 53646403,
+      "D": 103902979
+    },
+    "live_dataset": "thisarivson/nlp-hw02-l1-live",
+    "live_staging_limit_bytes": 2500000000,
+    "live_full_state_interval_seconds": 5400,
+    "uninsured_stop_seconds": 7200,
+    "notebook": "notebooks/nlp-hw02-kaggle-l1.ipynb",
+    "notebook_sha256": "50ac26d9db2bd31ecc66b317fcdc9be756763982bbdc1ede883a32ccb932cb62",
+    "protocol": "../notes/l1-long-training.md",
+    "CPU_checks": [
+      "../checks/kaggle-l1-smoke.json",
+      "../checks/kaggle-l1-final-gates.json",
+      "../checks/kaggle-l1-watchdog-smoke.json",
+      "../checks/kaggle-l1-static.json"
+    ],
+    "automatic_long_restart": false,
+    "repush_count": 0,
+    "not_verified": [
+      "real UI Secrets and private live-sync",
+      "T4 FP16/fused/memory/backend/throughput",
+      "full GPU training quality/CE/test1919 timing",
+      "real CUDA D-state watchdog"
+    ],
+    "GPU_training_started": false,
+    "internal_status": "startup_gate_exit; zero training",
+    "API_gate_verified": true,
+    "API_gate_reason": "Kaggle Secrets unavailable: KAGGLE_USERNAME, KAGGLE_KEY",
+    "API_exit_log_seconds": 13.345266642,
+    "API_last_log_seconds": 19.576220161,
+    "server_private_verified": true,
+    "server_gpu_enabled_verified": true,
+    "server_internet_verified": true,
+    "server_machine_shape": "NvidiaTeslaT4",
+    "server_source_matches_local": true,
+    "server_cache_source_verified": true,
+    "gate_output_path": "../results/kaggle-runs/nlp-hw02-kaggle-l1/1",
+    "checked_at": "2026-10-12T12:57:19.497290+00:00",
+    "long_training_ready": false,
+    "review_note": "Published v1 needs reviewed local notebook; production was not launched or repushed during review"
+  },
+  "l1_review": {
+    "status": "complete: ready corrected local L1; published v1 must be replaced before UI run",
+    "production_L1_launched": false,
+    "regressions": "../checks/kaggle-l1-review-regressions.json",
+    "GPU_smoke_iterations": 2,
+    "review": "../notes/l1-review.md",
+    "regression_tests": 16,
+    "CUDA_verified": true,
+    "production_published_version_unchanged": 1,
+    "local_production_notebook": "notebooks/nlp-hw02-kaggle-l1.ipynb",
+    "static_checks": "../checks/kaggle-l1-review-static.json",
+    "local_production_ready": true,
+    "production_L1_repushed": false,
+    "production_notebook_sha256": "a8bbda38f025a0eb46e8414359a90a0e84c90fd192470a0464af544250a11a50",
+    "output_and_full_resume_state_verified": true,
+    "real_Secrets_live_upload_verified": false,
+    "checked_at": "2026-10-12T14:10:02.961119+00:00",
+    "git_commit": "git add and git commit blocked: shared worktree index.lock Operation not permitted; changes retained",
+    "git_index_changed": false
+  },
+  "l1_gpu_smoke": {
+    "ref": "thisarivson/nlp-hw02-l1-gpu-smoke",
+    "version": 2,
+    "version_ref": "thisarivson/nlp-hw02-l1-gpu-smoke/2",
+    "url": "https://www.kaggle.com/code/thisarivson/nlp-hw02-l1-gpu-smoke",
+    "status": "COMPLETE",
+    "is_private": true,
+    "machine_shape": "NvidiaTeslaT4",
+    "requested_gpu_count": 2,
+    "Secrets_required": false,
+    "live_sync_enabled": false,
+    "production_recipe_unchanged": true,
+    "main_updates": 256,
+    "resume_updates": 32,
+    "branch_anchor_updates": 192,
+    "budget_seconds": 900,
+    "hard_shutdown_seconds": 1020,
+    "server_timeout_seconds": 1080,
+    "notebook": "notebooks/nlp-hw02-l1-gpu-smoke.ipynb",
+    "notebook_sha256": "30767e9c4f9ef40af491241a0e4bc584a76df1dd326e96c861e65628c1696ec3",
+    "push_response": "Kernel version 2 successfully pushed",
+    "push_recorded_at": "2026-10-12T13:24:02.793461+00:00",
+    "iterations": 2,
+    "internal_status": "complete",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "wall_seconds": 341.95175137,
+    "output_downloaded": true,
+    "PT_files_downloaded": false,
+    "passed": true,
+    "reason_for_repeat": "Confirm final parent-death guard/resume timing fix and injected scaled-gradient OOM on CUDA",
+    "models": {
+      "C": {
+        "parameter_count": 53646403,
+        "micro_batch": 64,
+        "peak_reserved_bytes": 11630804992,
+        "AMP_skips": 0,
+        "phases": [
+          "full longest-row memory probe",
+          "main train",
+          "cooldown branch",
+          "CUDA FP16 greedy/CE",
+          "heldout restored execution",
+          "test256 greedy timer",
+          "full anchor restore",
+          "train after eval",
+          "full state resume into new model/Adam/scaler",
+          "train after resume"
+        ],
+        "CUDA_late_OOM_regression": {
+          "passed": true,
+          "injected_after_scaled_backward": true,
+          "retry_micro_batch": 32,
+          "max_weight_difference_from_clean_update": 0.0,
+          "weight_tolerance": 1e-06,
+          "scaler_and_CUDA_RNG_exact": true
+        },
+        "checkpoints": [
+          {
+            "file": "model-C/checkpoints/main-826a8347d432.pt",
+            "bytes": 644025235,
+            "updates": 256,
+            "cursor": 32768,
+            "optimizer_states": 212,
+            "CUDA_RNG_states": 1,
+            "FP32_full_main": true
+          },
+          {
+            "file": "model-C/checkpoints/main-c2aa7a8b1d09.pt",
+            "bytes": 644025235,
+            "updates": 288,
+            "cursor": 36864,
+            "optimizer_states": 212,
+            "CUDA_RNG_states": 1,
+            "FP32_full_main": true
+          }
+        ],
+        "test256_full_pipeline_seconds": 7.514309242000024,
+        "test256_greedy_seconds": 6.2185584790000235,
+        "effective_batch": 128,
+        "main_updates": 288,
+        "cursor": 36864,
+        "cooldown_updates": 19
+      },
+      "D": {
+        "parameter_count": 103902979,
+        "micro_batch": 32,
+        "peak_reserved_bytes": 9292480512,
+        "AMP_skips": 0,
+        "phases": [
+          "full longest-row memory probe",
+          "main train",
+          "cooldown branch",
+          "CUDA FP16 greedy/CE",
+          "heldout restored execution",
+          "test256 greedy timer",
+          "full anchor restore",
+          "train after eval",
+          "full state resume into new model/Adam/scaler",
+          "train after resume"
+        ],
+        "CUDA_late_OOM_regression": {
+          "passed": true,
+          "injected_after_scaled_backward": true,
+          "retry_micro_batch": 16,
+          "max_weight_difference_from_clean_update": 0.0,
+          "weight_tolerance": 1e-06,
+          "scaler_and_CUDA_RNG_exact": true
+        },
+        "checkpoints": [
+          {
+            "file": "model-D/checkpoints/main-1d02d2d788cd.pt",
+            "bytes": 1247187325,
+            "updates": 288,
+            "cursor": 36864,
+            "optimizer_states": 280,
+            "CUDA_RNG_states": 1,
+            "FP32_full_main": true
+          },
+          {
+            "file": "model-D/checkpoints/main-9c4ff7c098b1.pt",
+            "bytes": 1247187325,
+            "updates": 256,
+            "cursor": 32768,
+            "optimizer_states": 280,
+            "CUDA_RNG_states": 1,
+            "FP32_full_main": true
+          }
+        ],
+        "test256_full_pipeline_seconds": 13.211368033999975,
+        "test256_greedy_seconds": 11.128608848999988,
+        "effective_batch": 128,
+        "main_updates": 288,
+        "cursor": 36864,
+        "cooldown_updates": 19
+      }
+    },
+    "server_private_verified": true,
+    "server_T4x2_internet_verified": true,
+    "server_source_cells_exact": true,
+    "full_output_download": "complete",
+    "CUDA_late_OOM_regression_passed": true,
+    "CUDA_post_eval_backward_passed": true,
+    "CUDA_resume_passed": true,
+    "test_rows": 256,
+    "checked_at": "2026-10-12T13:48:31.064096+00:00",
+    "output_verified": true,
+    "output_path": "../results/kaggle-runs/nlp-hw02-l1-gpu-smoke/2",
+    "downloaded_files": 110,
+    "output_bytes": 4099761726,
+    "manifest_files_verified": 50,
+    "service_files_unavailable": [
+      {
+        "file": "__notebook__.ipynb",
+        "reason": "Kaggle service notebook is not exposed by output API; source verified via pinned pull"
+      }
+    ],
+    "output_audit": "../checks/kaggle-l1-review-gpu-smoke.json"
+  },
+  "l1_gpu_smoke_v1": {
+    "ref": "thisarivson/nlp-hw02-l1-gpu-smoke",
+    "version": 2,
+    "version_ref": "thisarivson/nlp-hw02-l1-gpu-smoke/2",
+    "url": "https://www.kaggle.com/code/thisarivson/nlp-hw02-l1-gpu-smoke",
+    "status": "RUNNING",
+    "is_private": true,
+    "machine_shape": "NvidiaTeslaT4",
+    "requested_gpu_count": 2,
+    "Secrets_required": false,
+    "live_sync_enabled": false,
+    "production_recipe_unchanged": true,
+    "main_updates": 256,
+    "resume_updates": 32,
+    "branch_anchor_updates": 192,
+    "budget_seconds": 900,
+    "hard_shutdown_seconds": 1020,
+    "server_timeout_seconds": 1080,
+    "notebook": "notebooks/nlp-hw02-l1-gpu-smoke.ipynb",
+    "notebook_sha256": "30767e9c4f9ef40af491241a0e4bc584a76df1dd326e96c861e65628c1696ec3",
+    "push_response": "Kernel version 2 successfully pushed",
+    "push_recorded_at": "2026-10-12T13:24:02.793461+00:00",
+    "iterations": 2,
+    "internal_status": "complete",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "wall_seconds": 336.93897725,
+    "output_downloaded": true,
+    "PT_files_downloaded": false,
+    "passed": true,
+    "reason_for_repeat": "Confirm final parent-death guard/resume timing fix and injected scaled-gradient OOM on CUDA"
+  },
+  "l2_preparation": {
+    "status": "PREPARED_NOT_PUSHED",
+    "prepared_at": "2026-10-12T21:13:05.227379+00:00",
+    "ref": "thisarivson/nlp-hw02-kaggle-l2",
+    "is_private": true,
+    "machine_shape": "NvidiaTeslaT4",
+    "requested_gpu_count": 2,
+    "internet": true,
+    "notebook": "notebooks/nlp-hw02-kaggle-l2.ipynb",
+    "notebook_sha256": "c652ef76f12d467adf1cab1edc860661b3f206ece913dea5f33280897edf097a",
+    "smoke_notebook": "notebooks/nlp-hw02-l2-gpu-smoke.ipynb",
+    "smoke_notebook_sha256": "99a473cdddf05677cc0e4f4cd4791068c468aeef89f2b4ab77755d2b2835a43b",
+    "GPU_smoke_run": false,
+    "production_push": false,
+    "workers": [
+      "C-main",
+      "C-long2x"
+    ],
+    "D_training": false,
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs",
+      "thisarivson/nlp-hw02-l1-live"
+    ],
+    "kernel_sources": [
+      "thisarivson/nlp-hw02-compact-cache-verified/2"
+    ],
+    "anchor": {
+      "live_version": 7,
+      "file": "model-C__checkpoints__main-5746a4a2897e.pt",
+      "sha256": "1da28095d960fb0958ff26883bc6dc832e4307c9bab4023a5621b1f9f6ff01dc",
+      "bytes": 644049235,
+      "updates": 47155,
+      "cursor": 6035840,
+      "main_seconds": 17569.935878398,
+      "identity_sha256": "7d74147e9569f965730dd1055f5f83bfc0585232b5bf39e56dc9a796833fd819"
+    },
+    "live_precreation": {
+      "dataset": "thisarivson/nlp-hw02-l2-live",
+      "private": true,
+      "version": 1,
+      "status": "ready",
+      "created_before_training": true,
+      "training_started": false
+    },
+    "main_targets_L2_seconds": [
+      10800,
+      21600,
+      28800
+    ],
+    "cooldown_seconds": [
+      900,
+      900,
+      3000
+    ],
+    "evaluation_caps_seconds": [
+      900,
+      900,
+      1800
+    ],
+    "final_vote": {
+      "K": 8,
+      "T": 0.7,
+      "split": "tune2048",
+      "cap_seconds": 900
+    },
+    "budget": {
+      "workers_seconds": 39600,
+      "final_sync_reserve_seconds": 1200,
+      "hard_watchdog_reserve_seconds": 240,
+      "hard_wall_seconds": 41040,
+      "server_timeout_seconds": 43200,
+      "quota_seconds": 45000,
+      "setup_seconds": 900,
+      "main_seconds": 28800,
+      "I_O_reserve_seconds": 1500
+    },
+    "sampler": {
+      "seed": 2026101302,
+      "rows": 9725737,
+      "slots": 11227811,
+      "batch": 128,
+      "chunk": 4096,
+      "length_source": "verified compact target-offsets",
+      "original_lengths_available": false,
+      "threshold": 79,
+      "heldout_original_ge90": 626,
+      "heldout_rows": 4096,
+      "target_long_fraction": 0.15283203125,
+      "train_long_rows": 1502074,
+      "train_long_fraction": 0.15444320569227812,
+      "fraction_error": 0.0016111744422781238,
+      "weighted_long_fraction": 0.2675631073590391,
+      "multiplicity": {
+        "short": 1,
+        "long": 2
+      },
+      "cache_manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+      "file": {
+        "file": "order.npy",
+        "sha256": "72bc3dfd3a3e738979c489c0cf8f41cde092c41d4ae90f2de8378a034603a4db",
+        "bytes": 44911372
+      },
+      "selection": "nearest attainable threshold; higher threshold wins ties; no loss reweighting",
+      "lengths_sha256": "06b94974710dca43173fa06467c643c1d5a45996e8cc6c62f18b4f67b6578f83"
+    },
+    "regressions": {
+      "passed": true,
+      "tests": 24,
+      "failures": 0,
+      "errors": 0,
+      "GPU": false
+    },
+    "L1_regressions": {
+      "tests": 16,
+      "passed": true
+    },
+    "CPU_real_resume": {
+      "passed": true,
+      "main_bit_exact": true,
+      "fork_same_state": true,
+      "GPU": false,
+      "existing_checkpoint_reused": true,
+      "new_PT_download_bytes": 0,
+      "D_downloaded": false,
+      "limitation": "CPU FP32 forward + restored enabled CPU scaler; fused CUDA/FP16 numerical identity requires reviewer GPU smoke"
+    },
+    "checks": [
+      "../checks/kaggle-l2-regressions.json",
+      "../checks/kaggle-l2-real-resume.json",
+      "../checks/kaggle-l2-weighted-order.json",
+      "../checks/kaggle-l2-static.json",
+      "../checks/kaggle-l2-live-input.json",
+      "../checks/kaggle-l2-live-created.json"
+    ],
+    "reviewer_remaining": [
+      "independent source/CPU audit",
+      "GPU smoke incl FP16/fused/scaler/CUDA RNG and eval-restore-train",
+      "production Secrets/private live gate",
+      "private production push/UI Save & Run All"
+    ],
+    "plan": "../notes/l2-plan.md",
+    "input_26b_private_verified": true,
+    "input_26b_version": 1,
+    "temporary_downloads_removed": true
+  },
+  "l2_review": {
+    "status": "GPU_SMOKE_RUNNING",
+    "reviewed_commit": "b387c06",
+    "note": "../notes/l2-review.md",
+    "regressions": "../checks/kaggle-l2-regressions.json",
+    "smoke_iterations": [
+      {
+        "ref": "thisarivson/nlp-hw02-l2-gpu-smoke/1",
+        "version": 1,
+        "status": "COMPLETE",
+        "is_private": true,
+        "notebook_sha256": "82e4d1e77372a918c11b402ef968c724ea0ee57cd71a46770159328b72217a9c",
+        "backend_timeout_seconds": 1080,
+        "pushed_at": "2026-10-12T21:28:29.333765+00:00",
+        "CUDA_primary_passed": true,
+        "wall_seconds": 563.938044762,
+        "metadata_only_download": true,
+        "reason_for_second_iteration": "Final worker/helper environment scrub also removes platform Secrets/IAP JWTs; run final supervisor source"
+      },
+      {
+        "ref": "thisarivson/nlp-hw02-l2-gpu-smoke/2",
+        "version": 2,
+        "status": "COMPLETE",
+        "is_private": true,
+        "notebook_sha256": "a9fa60ebd83a0533c1cc356a96634122bccb2224b8bef57153265f2db4b969b5",
+        "backend_timeout_seconds": 1080,
+        "pushed_at": "2026-10-12T21:43:33.806298+00:00",
+        "CUDA_primary_passed": true,
+        "wall_seconds": 565.704511158,
+        "metadata_only_download": true,
+        "reason_for_third_iteration": "Final disk guard tolerates checkpoint/atomic JSON disappearance during size scan; CPU race regression passed"
+      },
+      {
+        "ref": "thisarivson/nlp-hw02-l2-gpu-smoke/3",
+        "version": 3,
+        "status": "RUNNING",
+        "is_private": true,
+        "notebook_sha256": "7ed107ee75558d39cacd5cd29ac0d3090cb4bfa35915b52369f89f2c63c14462",
+        "backend_timeout_seconds": 1080,
+        "pushed_at": "2026-10-12T21:59:04.267094+00:00"
+      }
+    ],
+    "production_push": false,
+    "regression_count": 34,
+    "L1_regression_count": 16
+  },
+  "l2": {
+    "ref": "thisarivson/nlp-hw02-kaggle-l2/2",
+    "version": 2,
+    "url": "https://www.kaggle.com/code/thisarivson/nlp-hw02-kaggle-l2/versions?versionNumber=2",
+    "launch": "user UI Save & Run All",
+    "checked_at": "2026-10-13T08:30:22.173473+00:00",
+    "Kaggle_status": "COMPLETE",
+    "status": "complete",
+    "worker_status": {
+      "C-main": "complete",
+      "C-long2x": "complete"
+    },
+    "exit_codes": [
+      0,
+      0
+    ],
+    "wall_seconds": 34411.546853390006,
+    "failed_workers": [],
+    "server_version_1_status": "ERROR",
+    "is_private": true,
+    "GPU_training_started_by_agent": false,
+    "new_GPU_runs_in_this_analysis": 0,
+    "model_forwards_in_this_analysis": 0,
+    "output_directory": "../results/kaggle-runs/nlp-hw02-kaggle-l2/1/",
+    "local_directory_label_1_is_not_server_version": true,
+    "live_ref": "thisarivson/nlp-hw02-l2-live/11",
+    "live_private": true,
+    "L1_reference_ref": "thisarivson/nlp-hw02-l1-live/7",
+    "download": {
+      "files": 431,
+      "bytes_excluding_hardlinks": 813734584,
+      "full_states_downloaded": false,
+      "weighted_order_downloaded": false,
+      "final_live_weights_reused_as_hardlinks": true,
+      "receipt": "../results/kaggle-runs/nlp-hw02-kaggle-l2/1/download-receipt.json",
+      "audit": "../checks/l2-download-audit.json",
+      "weights_CPU": "../checks/l2-final-weights-cpu.json",
+      "producer_manifest_verified_files": 244,
+      "live_manifest_audit": {
+        "raw_sha_verified": 28,
+        "gzip_sha_reconstructed": 152,
+        "kernel_content_equal": 178,
+        "omitted": [
+          "model-C-long2x__checkpoints__main-826d479cdfe8.pt",
+          "model-C-main__checkpoints__main-6275fbfc4185.pt",
+          "weighted-order__order.npy"
+        ],
+        "kernel_content_differs": [
+          "l2-live-sync-status.json",
+          "session-summary.json"
+        ]
+      },
+      "pinned_producer_source_matches_local": {
+        "exp27_decode.py": "b0042aecba742c037d32fe7659e1d2b20336d63f96b6fe9d2f7b9a0af69fd966",
+        "l2_sampler.py": "41936d9c3bb792426870685b7052acf2220c6bc8bec116318ed183231f601e52",
+        "l2_eval.py": "57951cb430773c87c230cd12f0187d290102551e75dab076ebd5b4a27f61716e",
+        "l1_eval.py": "defcf12bfa065e70a00ef97fda03bffa29f805138116f8388bd24bf321b3d8f5"
+      }
+    },
+    "points": [
+      {
+        "model": "C (shared L1)",
+        "tag": "t009000",
+        "main_s": 9000.120216377067,
+        "l2_main_s": 0.0,
+        "updates": 24270,
+        "cooldown_s": 907.6378307169998,
+        "cooldown_updates": 2427,
+        "scores": {
+          "heldout4k": {
+            "n": 4096,
+            "matches": 2575,
+            "accuracy_pp": 62.8662109375
+          },
+          "old991": {
+            "n": 991,
+            "matches": 627,
+            "accuracy_pp": 63.269424823410695
+          },
+          "tune2048": {
+            "n": 2048,
+            "matches": 1286,
+            "accuracy_pp": 62.79296875
+          },
+          "eval2048": {
+            "n": 2048,
+            "matches": 1289,
+            "accuracy_pp": 62.939453125
+          }
+        },
+        "CE": {
+          "heldout4k": 0.3173460707749974,
+          "old991": 0.32168668636874126
+        }
+      },
+      {
+        "model": "C-main",
+        "tag": "l2-10800",
+        "main_s": 28370.02686063367,
+        "l2_main_s": 10800.090982235957,
+        "updates": 78056,
+        "cooldown_s": 900.2681752760054,
+        "cooldown_updates": 2427,
+        "scores": {
+          "heldout4k": {
+            "n": 4096,
+            "matches": 2765,
+            "accuracy_pp": 67.5048828125
+          },
+          "old991": {
+            "n": 991,
+            "matches": 704,
+            "accuracy_pp": 71.0393541876892
+          },
+          "tune2048": {
+            "n": 2048,
+            "matches": 1392,
+            "accuracy_pp": 67.96875
+          },
+          "eval2048": {
+            "n": 2048,
+            "matches": 1373,
+            "accuracy_pp": 67.041015625
+          }
+        },
+        "CE": {
+          "heldout4k": 0.27577593782539217,
+          "old991": 0.28128835420572174
+        }
+      },
+      {
+        "model": "C-long2x",
+        "tag": "l2-10800",
+        "main_s": 28370.081020346093,
+        "l2_main_s": 10800.145141948,
+        "updates": 75944,
+        "cooldown_s": 900.3903818410545,
+        "cooldown_updates": 2401,
+        "scores": {
+          "heldout4k": {
+            "n": 4096,
+            "matches": 2764,
+            "accuracy_pp": 67.48046875
+          },
+          "old991": {
+            "n": 991,
+            "matches": 690,
+            "accuracy_pp": 69.62663975782039
+          },
+          "tune2048": {
+            "n": 2048,
+            "matches": 1376,
+            "accuracy_pp": 67.1875
+          },
+          "eval2048": {
+            "n": 2048,
+            "matches": 1388,
+            "accuracy_pp": 67.7734375
+          }
+        },
+        "CE": {
+          "heldout4k": 0.27347460723769806,
+          "old991": 0.27827442469337915
+        }
+      },
+      {
+        "model": "C-main",
+        "tag": "l2-21600",
+        "main_s": 39170.17178807352,
+        "l2_main_s": 21600.235909676332,
+        "updates": 107090,
+        "cooldown_s": 900.1307025719361,
+        "cooldown_updates": 2418,
+        "scores": {
+          "heldout4k": {
+            "n": 4096,
+            "matches": 2800,
+            "accuracy_pp": 68.359375
+          },
+          "old991": {
+            "n": 991,
+            "matches": 710,
+            "accuracy_pp": 71.64480322906155
+          },
+          "tune2048": {
+            "n": 2048,
+            "matches": 1397,
+            "accuracy_pp": 68.212890625
+          },
+          "eval2048": {
+            "n": 2048,
+            "matches": 1403,
+            "accuracy_pp": 68.505859375
+          }
+        },
+        "CE": {
+          "heldout4k": 0.26967625094765074,
+          "old991": 0.2736314588577491
+        }
+      },
+      {
+        "model": "C-long2x",
+        "tag": "l2-21600",
+        "main_s": 39170.105459290266,
+        "l2_main_s": 21600.16958089193,
+        "updates": 104686,
+        "cooldown_s": 900.4261580710117,
+        "cooldown_updates": 2391,
+        "scores": {
+          "heldout4k": {
+            "n": 4096,
+            "matches": 2791,
+            "accuracy_pp": 68.1396484375
+          },
+          "old991": {
+            "n": 991,
+            "matches": 703,
+            "accuracy_pp": 70.93844601412714
+          },
+          "tune2048": {
+            "n": 2048,
+            "matches": 1379,
+            "accuracy_pp": 67.333984375
+          },
+          "eval2048": {
+            "n": 2048,
+            "matches": 1412,
+            "accuracy_pp": 68.9453125
+          }
+        },
+        "CE": {
+          "heldout4k": 0.2675884554879363,
+          "old991": 0.27027439419351323
+        }
+      },
+      {
+        "model": "C-main",
+        "tag": "l2-28800",
+        "main_s": 46370.1433977189,
+        "l2_main_s": 28800.207519321037,
+        "updates": 126452,
+        "cooldown_s": 3000.3189570201685,
+        "cooldown_updates": 8057,
+        "scores": {
+          "heldout4k": {
+            "n": 4096,
+            "matches": 2868,
+            "accuracy_pp": 70.01953125
+          },
+          "old991": {
+            "n": 991,
+            "matches": 723,
+            "accuracy_pp": 72.95660948536832
+          },
+          "tune2048": {
+            "n": 2048,
+            "matches": 1425,
+            "accuracy_pp": 69.580078125
+          },
+          "eval2048": {
+            "n": 2048,
+            "matches": 1443,
+            "accuracy_pp": 70.458984375
+          }
+        },
+        "CE": {
+          "heldout4k": 0.25588536305198817,
+          "old991": 0.2597439726133014
+        }
+      },
+      {
+        "model": "C-long2x",
+        "tag": "l2-28800",
+        "main_s": 46370.24584266532,
+        "l2_main_s": 28800.309964266355,
+        "updates": 123842,
+        "cooldown_s": 3000.2091505331227,
+        "cooldown_updates": 7990,
+        "scores": {
+          "heldout4k": {
+            "n": 4096,
+            "matches": 2884,
+            "accuracy_pp": 70.41015625
+          },
+          "old991": {
+            "n": 991,
+            "matches": 715,
+            "accuracy_pp": 72.14934409687184
+          },
+          "tune2048": {
+            "n": 2048,
+            "matches": 1445,
+            "accuracy_pp": 70.556640625
+          },
+          "eval2048": {
+            "n": 2048,
+            "matches": 1439,
+            "accuracy_pp": 70.263671875
+          }
+        },
+        "CE": {
+          "heldout4k": 0.2545566995860083,
+          "old991": 0.25706888820367235
+        }
+      }
+    ],
+    "verified_FP16_weights": [
+      {
+        "file": "model-C-long2x/weights/l2-10800-fp16.pt",
+        "sha256": "906d847c7bf16f5760e3ee34382ee07e0317b6588c7253760bcd1c2bb69b64ff",
+        "bytes": 107364659
+      },
+      {
+        "file": "model-C-long2x/weights/l2-21600-fp16.pt",
+        "sha256": "48c03dc8cab7d0f2eba7770af7a71d0719cd9e10f1aefb762b487d3bfeba7773",
+        "bytes": 107364659
+      },
+      {
+        "file": "model-C-long2x/weights/l2-28800-fp16.pt",
+        "sha256": "6227ee2fc8dd12e186137be229fef2b1ceba659848c35bedd90cec6502f41548",
+        "bytes": 107364659
+      },
+      {
+        "file": "model-C-main/weights/l2-10800-fp16.pt",
+        "sha256": "5a06b15829f0e93d75899afae1b4ad49903580d739d1da773cffa7adcbea2d38",
+        "bytes": 107363571
+      },
+      {
+        "file": "model-C-main/weights/l2-21600-fp16.pt",
+        "sha256": "be6d321741904f1b25d1da19147cd1371d4944450b248c972b786bf97bdf5015",
+        "bytes": 107363571
+      },
+      {
+        "file": "model-C-main/weights/l2-28800-fp16.pt",
+        "sha256": "3806a5827004fd88f533a7307abc0c1e387faafc5672f4224392b363c4d2ad3d",
+        "bytes": 107363571
+      }
+    ],
+    "stable_states_on_Kaggle": [
+      {
+        "model": "C-main",
+        "file": "checkpoints/main-6275fbfc4185.pt",
+        "bytes": 644137235,
+        "sha256": "d0de7f7bd5c479159a8d6189ab5af58897edf35bdba2e9439b0b745ab72bd29c",
+        "updates": 126452,
+        "cursor": 16185856,
+        "main_seconds": 46370.1433977189,
+        "l2_main_seconds": 28800.207519321037,
+        "purpose": "stable full L2 resume; uncooled; model/AdamW/scaler/all RNG/history",
+        "full_state_downloaded": false,
+        "kernel_live_receipt_equal": true,
+        "full_state_SHA_verified_locally": false
+      },
+      {
+        "model": "C-long2x",
+        "file": "checkpoints/main-826d479cdfe8.pt",
+        "bytes": 644138387,
+        "sha256": "a0ba33fef996f6a0c63e4059909a17796c67e1a94dadf1cc04c6afe1e94c40d2",
+        "updates": 123842,
+        "cursor": 9815936,
+        "main_seconds": 46370.24584266532,
+        "l2_main_seconds": 28800.309964266355,
+        "purpose": "stable full L2 resume; uncooled; model/AdamW/scaler/all RNG/history",
+        "full_state_downloaded": false,
+        "kernel_live_receipt_equal": true,
+        "full_state_SHA_verified_locally": false
+      }
+    ],
+    "tune_voting": {
+      "C_main_greedy_matches": 1425,
+      "C_long_greedy_matches": 1445,
+      "C_main_K8_matches": 1471,
+      "C_long_K8_matches": 1478,
+      "same_K_tune_candidate": {
+        "name": "mixed K4+K4 +greedy",
+        "K_samples": 8,
+        "greedy_vote": true,
+        "greedy_tie_anchor": "C-main",
+        "K_doubled": false,
+        "matches": 1492,
+        "n": 2048,
+        "accuracy_pp": 72.8515625,
+        "oracle_samples_matches": 1706,
+        "oracle_with_anchor_greedy_matches": 1717,
+        "oracle_matches": 1717,
+        "against_C_main_greedy": {
+          "n": 2048,
+          "gains": 99,
+          "losses": 32,
+          "delta_pp": 3.271484375,
+          "paired_95CI_pp": [
+            2.1853145952415742,
+            4.357654154758426
+          ],
+          "McNemar_exact_p": 3.6957118322321294e-09
+        },
+        "chosen_execution_sha256": "62104d458161d42ce5bd64cc4ee58f1a8a9a2e883b28decfdee0489eba5833dc",
+        "against_C_main_K8": {
+          "n": 2048,
+          "gains": 60,
+          "losses": 39,
+          "delta_pp": 1.025390625,
+          "paired_95CI_pp": [
+            0.0741927064313459,
+            1.9765885435686539
+          ],
+          "McNemar_exact_p": 0.043875293587014384
+        },
+        "against_C_main_K8_plus_greedy": {
+          "n": 2048,
+          "gains": 55,
+          "losses": 36,
+          "delta_pp": 0.927734375,
+          "paired_95CI_pp": [
+            0.015669381651675467,
+            1.8397993683483245
+          ],
+          "McNemar_exact_p": 0.05857352841019039
+        },
+        "against_C_long_K8": {
+          "n": 2048,
+          "gains": 69,
+          "losses": 55,
+          "delta_pp": 0.68359375,
+          "paired_95CI_pp": [
+            -0.38169981299298555,
+            1.7488873129929854
+          ],
+          "McNemar_exact_p": 0.24292283198051548
+        }
+      },
+      "mixed_K16_matches": 1504,
+      "K16_doubles_K": true,
+      "eval_vote_run": false,
+      "new_grid_or_sample_generation": false,
+      "fresh_evaluated": false
+    },
+    "long_weighting_verdict": "not confirmed by predeclared directed gates; mixed tune candidate only",
+    "long_weighting_gates": {
+      "l2-10800": {
+        "tune_overall_pp": -0.78125,
+        "tune_ge90_pp": -0.6329113924050633,
+        "tune_lt60_pp": -0.2,
+        "overall_ge_0_5": false,
+        "long_ge_3": false,
+        "short_ge_minus_0_5": true,
+        "all_main_gates": false
+      },
+      "l2-21600": {
+        "tune_overall_pp": -0.87890625,
+        "tune_ge90_pp": -1.89873417721519,
+        "tune_lt60_pp": 0.0,
+        "overall_ge_0_5": false,
+        "long_ge_3": false,
+        "short_ge_minus_0_5": true,
+        "all_main_gates": false
+      },
+      "l2-28800": {
+        "tune_overall_pp": 0.9765625,
+        "tune_ge90_pp": 1.2658227848101267,
+        "tune_lt60_pp": -0.2,
+        "overall_ge_0_5": true,
+        "long_ge_3": false,
+        "short_ge_minus_0_5": true,
+        "all_main_gates": false
+      },
+      "specialist_same_K8": {
+        "mixed_vs_main_K8": {
+          "n": 2048,
+          "gains": 56,
+          "losses": 40,
+          "delta_pp": 0.78125,
+          "paired_95CI_pp": [
+            -0.1558346146003328,
+            1.7183346146003329
+          ],
+          "McNemar_exact_p": 0.1253456971884935
+        },
+        "tune_delta_ge_0_5": true
+      }
+    },
+    "test_timing": {
+      "hardware": "one T4, sequential two-model generation; no two-GPU throughput credit",
+      "measured_K8_tune_seconds": {
+        "C-main": 156.37870537999697,
+        "C-long2x": 155.7219294470051
+      },
+      "scale_1919_over_2048": 0.93701171875,
+      "separate_sampler_and_sample_execution_seconds_saved": false,
+      "reserve_factor": 1.15,
+      "extra_cold_IO_single_s": 3,
+      "extra_cold_IO_mixed_s": 5,
+      "single_K8": {
+        "additive_nominal_s": 171.77345056220736,
+        "with_15pct_reserve_s": 197.53946814653844,
+        "180s_verified": false
+      },
+      "mixed_K4_plus_K4": {
+        "K4_relative_cost_scenarios": [
+          0.5,
+          1.0
+        ],
+        "nominal_s": [
+          171.10491021810395,
+          317.3258863492116
+        ],
+        "with_15pct_reserve_s": [
+          196.77064675081954,
+          364.9247693015933
+        ],
+        "180s_verified": false
+      },
+      "mixed_K8_plus_K8": {
+        "additive_nominal_s": 317.3258863492116,
+        "with_15pct_reserve_s": 364.9247693015933,
+        "180s_verified": false
+      },
+      "note": "K4 proportionality and test length/timeout distribution are assumptions; aggregate includes sample execution, journals and cleanup. Greedy used for ties even without +greedy; actual one-T4 full pipeline remains required."
+    },
+    "production_decoder": "pending one-T4 full1919 time gate and one final eval2048",
+    "L3_recommendation": {
+      "default_continue": "C-main",
+      "extra_main_hours": 8,
+      "final_cooldown_minutes": 50,
+      "C_long_policy": "retain specialist; continue both only if frozen mixed K4+K4+main greedy passes one-T4 timer with reserve",
+      "forecast_C_main_gain_pp": [
+        1.28,
+        1.84
+      ],
+      "forecast_is_not_CI": true,
+      "final_decode_candidate": "mixed K4+K4 + C-main greedy; one T4; T0.7",
+      "time_fallback": "preselected timed C-main K8+greedy; then C-main K4+greedy; otherwise greedy",
+      "final_eval2048_once": true,
+      "fresh1024_once_after_freeze": true
+    },
+    "results_note": "../notes/l2-results.md",
+    "CPU_analysis": "../results/l2-results.json",
+    "learning_curve": "../results/l2-learning-curve.png",
+    "git_commit_attempt": {
+      "stage": "git add explicit L2 file list",
+      "succeeded": false,
+      "reason": "sandbox: shared worktree index.lock Operation not permitted",
+      "index_changed": false,
+      "changes_preserved": true,
+      "unrelated_work_submissions_not_touched": true
+    }
+  },
+  "final_inference": {
+    "ref": "thisarivson/nlp-hw02-final-inference",
+    "status": "reviewed_CPU_GPU_blocked_environment_authorization",
+    "prepared_at": "2026-10-13",
+    "pushed": false,
+    "GPU_runs": 0,
+    "is_private": true,
+    "enable_internet": false,
+    "machine_shape": "NvidiaTeslaT4",
+    "used_GPU_count": 1,
+    "CUDA_VISIBLE_DEVICES": "0",
+    "session_timeout_seconds": 1800,
+    "session_watchdog_seconds": [
+      1740,
+      1770
+    ],
+    "test_guard_seconds": [
+      160,
+      172
+    ],
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-l2-live",
+      "thisarivson/nlp-hw02-26b-inputs"
+    ],
+    "notebook": "notebooks/nlp-hw02-final-inference.ipynb",
+    "bundle": "bundles/final_inference",
+    "source_identity": "final-source-identity.json",
+    "CPU_checks": "../checks/final-inference-cpu.json",
+    "note": "../notes/final-inference.md",
+    "protocol": "three fresh cold test1919 subprocesses + fixed tune2048; first test answers published",
+    "quality_gate_pp": 1.0,
+    "test_target_seconds": 150,
+    "test_max_seconds": 180,
+    "offline_matches": 1492,
+    "offline_n": 2048,
+    "offline_accuracy_pp": 72.8515625,
+    "offline_execution_and_code_mismatches": 0,
+    "restore_samples": 32768,
+    "CPU_reexecuted_unique_programs": 14799,
+    "CPU_execution_mismatches": 0,
+    "sampling": "unchanged physical4D algorithm; T0.7/seed270042 per model; K4/b64 changes RNG from L2 K8/b32",
+    "GPU_quality_and_timing_verified": false,
+    "expected_phase_seconds_scenario": {
+      "imports_read_load_encode": 5,
+      "warmup": 1,
+      "greedy": 18,
+      "main_K4": 50,
+      "long_K4": 50,
+      "CPU_tail": 5,
+      "vote_write_shutdown_bookkeeping": 1
+    },
+    "expected_total_seconds_scenario": 130,
+    "diagnostic_on_quality_failure": "no automatic extra GPU replay; exactly three test plus tune",
+    "public_greedy_C_long2x_user_confirmation": {
+      "matches": 681,
+      "n": 960,
+      "accuracy_pp": 70.9375
+    },
+    "secrets_read": false,
+    "training": false,
+    "adaptive_sampling": false,
+    "commit_status": "review_blocked_at_git_add_shared_index_lock_Operation_not_permitted",
+    "independent_review": {
+      "date": "2026-10-13",
+      "reviewed_commit": "0fd23b9",
+      "status": "blocked_environment_authorization",
+      "note": "../notes/final-inference-review.md",
+      "regressions": "final_review_checks.py",
+      "API_helper": "final_review_api.py",
+      "output_validator": "final_output_check.py",
+      "API_probe": {
+        "exit_code": 3,
+        "reason": "environment_authorization_unavailable",
+        "credential_files_read": false,
+        "HTTP_requests": 0
+      },
+      "API_push_attempts": [],
+      "GPU_iterations": 0,
+      "GPU_pipelines": 0,
+      "max_GPU_iterations": 2,
+      "session_timeout_seconds": 1800,
+      "test": [],
+      "tune_new_K4": null,
+      "fallback_GPU": null,
+      "deterministic_GPU": null,
+      "submission": "../submissions/final-mixed-k4k4-l2-28800.jsonl",
+      "submission_created": false,
+      "fixed": [
+        "sympy_string_eval_escape",
+        "shared_mutable_namespace",
+        "CPU2_prof_timer",
+        "worker_stdout_descriptors",
+        "fresh_selected_code_reexecution",
+        "deterministic_runtime_and_numeric_RNG",
+        "three_answer_SHA_gate",
+        "numeric_fallback_count",
+        "quality_tolerance_1pp_no_extra_replay",
+        "format_string_hidden_attribute_access",
+        "worker_death_pipe_send_race"
+      ],
+      "CPU": {
+        "frozen_matches": 1492,
+        "n": 2048,
+        "reexecuted_unique": 14799,
+        "numeric_mismatches": 0,
+        "nonnumeric_timeout_label_changes": 8,
+        "tiny_cold_seconds": 2.3879650412127376,
+        "forced_fallback_rows": 3,
+        "Linux_memory_and_parent_death_tree_not_tested": true,
+        "final_execution_seconds": 8.237179457908496,
+        "additional_audit_incomplete_before_pipe_race_fix": true,
+        "diagnostic_retry_completed_unique": 14799,
+        "final_complete_checks_passed": true
+      },
+      "commit_attempt": {
+        "status": "blocked_at_git_add",
+        "exit_code": 128,
+        "reason": "shared Git index.lock: Operation not permitted",
+        "index_changed": false,
+        "scope": "explicit final inference review files only; concurrent L3 excluded"
+      }
+    }
+  },
+  "l3_preparation": {
+    "ref": "friend1/nlp-hw02-kaggle-l3",
+    "status": "prepared_for_independent_review",
+    "prepared_at": "2026-10-13",
+    "pushed": false,
+    "GPU_runs": 0,
+    "is_private": true,
+    "enable_internet": true,
+    "machine_shape": "NvidiaTeslaT4",
+    "used_GPU_count": 2,
+    "account": "friend1",
+    "CLI": "2.2.4",
+    "account_selection": "KAGGLE_CONFIG_DIR=~/.kaggle-friend",
+    "dataset_sources": [
+      "thisarivson/nlp-hw02-26b-inputs",
+      "thisarivson/nlp-hw02-l2-live"
+    ],
+    "kernel_sources": [
+      "thisarivson/nlp-hw02-compact-cache-verified/2"
+    ],
+    "chosen_cache_source": "thisarivson/nlp-hw02-compact-cache-verified/2",
+    "fallback_cache_source": "friend1/nlp-hw02-compact-cache-verified",
+    "cache_manifest_sha256": "46ef881bba60dba2563a25a7490becf05104a0537b70c3510629bef8c93902be",
+    "live_dataset": "friend1/nlp-hw02-l3-live",
+    "live_private_ready": true,
+    "source_access_verified_from_friend1": true,
+    "anchors": "l3-anchors.json",
+    "anchor_models": [
+      "C-main",
+      "C-long2x"
+    ],
+    "strict_continuation": true,
+    "new_fork": false,
+    "cursor_reset": false,
+    "warmup_repeated": false,
+    "LR": 0.0015,
+    "weighted_order_rebuilt": false,
+    "main_added_seconds_per_model": 33480,
+    "intermediate_at_added_main_seconds": 16740,
+    "cooldown_seconds": [
+      900,
+      3000
+    ],
+    "evaluation_caps_seconds": [
+      300,
+      1800
+    ],
+    "worker_deadline_seconds": 40260,
+    "hard_watchdog_seconds": 40800,
+    "session_timeout_seconds": 43200,
+    "margin_to_11_4h_seconds": 240,
+    "L3_L4_hard_total_hours": 22.666666666666668,
+    "notebook": "notebooks/nlp-hw02-kaggle-l3.ipynb",
+    "bundle": "bundles/l3",
+    "smoke_notebook": "notebooks/nlp-hw02-l3-gpu-smoke.ipynb",
+    "smoke_bundle": "bundles/l3_gpu_smoke",
+    "smoke_requires_Secrets": false,
+    "production_Secrets_account": "friend1",
+    "source_access_receipt": "../checks/kaggle-l3-source-access.json",
+    "live_created_receipt": "../checks/kaggle-l3-live-created.json",
+    "fallback_receipt": "../checks/kaggle-l3-cache-fallback.json",
+    "L2_regressions": {
+      "passed": true,
+      "tests": 34
+    },
+    "L3_regressions": "../checks/kaggle-l3-regressions.json",
+    "real_resume_receipts": [
+      "../checks/kaggle-l3-real-resume-C-main.json",
+      "../checks/kaggle-l3-real-resume-C-long2x.json"
+    ],
+    "static_check": "../checks/kaggle-l3-static.json",
+    "note": "../notes/l3-plan.md",
+    "remaining_reviewer": [
+      "independent source/CPU/metadata review",
+      "private two-T4 GPU smoke without Secrets",
+      "attach friend Secrets and private production push/UI run"
+    ],
+    "final_inference_files_touched": false,
+    "credential_values_read_or_printed": false,
+    "CPU_resume_verified": {
+      "C-main": {
+        "SHA_verified": true,
+        "steps_bit_exact": 2,
+        "download_removed": true
+      },
+      "C-long2x": {
+        "SHA_verified": true,
+        "steps_bit_exact": 2,
+        "download_removed": true
+      }
+    },
+    "static_passed": true,
+    "L3_regressions_passed": 6,
+    "commit_attempt": {
+      "stage": "git add explicit L3-only list",
+      "succeeded": false,
+      "reason": "sandbox: shared worktree index.lock Operation not permitted",
+      "index_changed_by_this_attempt": false,
+      "other_agent_changes_not_staged": true
+    }
+  },
+  "l3_independent_review": {
+    "date": "2026-10-13",
+    "reviewed_commits": [
+      "584320a",
+      "93ae3bc"
+    ],
+    "review_note": "../notes/l3-review.md",
+    "account": "friend1",
+    "CLI": "2.2.4",
+    "account_selection": "KAGGLE_CONFIG_DIR=~/.kaggle-friend",
+    "private": true,
+    "status": "ready_for_UI_friend_Secrets",
+    "L2_regressions_passed": 34,
+    "L3_regressions_passed": 10,
+    "critical_fix": "L3 partial status for incomplete cooldown/eval/K8; preserved full stable state",
+    "mount_fix": "owner-qualified foreign sources and flat own cache dataset",
+    "source_math_runtime_unchanged": true,
+    "GPU_smoke_iterations": 3,
+    "GPU_smokes": [
+      {
+        "version": 1,
+        "status": "COMPLETE",
+        "passed": true,
+        "wall_seconds": 617.5770475899999,
+        "receipt": "../checks/kaggle-l3-review-gpu-smoke-v1.json"
+      },
+      {
+        "version": 2,
+        "status": "ERROR",
+        "training_started": false,
+        "reason": "Reviewer own-cache mount path assumption; corrected before v3",
+        "receipt": "../checks/kaggle-l3-review-gpu-smoke-v2.json"
+      },
+      {
+        "version": 3,
+        "status": "COMPLETE",
+        "passed": true,
+        "wall_seconds": 602.806563081,
+        "receipt": "../checks/kaggle-l3-review-gpu-smoke-v3.json",
+        "fallback_full_SHA_verified": true
+      }
+    ],
+    "production_push": true,
+    "final_inference_files_touched": false,
+    "credential_values_inspected": false,
+    "temporary_full_fallback_downloads_removed": true,
+    "GPU_smoke_passed": true,
+    "smoke_final_version": 3,
+    "smoke_wall_seconds": 602.806563081,
+    "GPU_smoke_receipt": "../checks/kaggle-l3-review-gpu-smoke-v3.json",
+    "fallback_full_SHA_verified": true,
+    "fallback_receipt": "../checks/kaggle-l3-review-fallback-content.json",
+    "original_inputs_actually_mounted": true,
+    "private_live_ready_verified": true,
+    "private_live_receipt": "../checks/kaggle-l3-review-live-access.json",
+    "production_push_attempts": [
+      {
+        "attempt": 1,
+        "successful_response": false,
+        "error": "BrokenPipe; no version observed"
+      },
+      {
+        "attempt": 2,
+        "status": "successful",
+        "version": 1,
+        "successful_response": true
+      }
+    ],
+    "smoke_models": {
+      "C-main": {
+        "CUDA_checks": [
+          "bit_exact_L1_CUDA_update",
+          "GradScaler_overflow_skip",
+          "partial_backward_nonfinite_loss_skip",
+          "serialized_resume_bit_exact_CUDA",
+          "nonfinite_escalation_full_rollback_LR",
+          "K8_executed_samples_and_greedy256"
+        ],
+        "main_added_updates": 788,
+        "tail_updates": 0,
+        "K8_rows": 36,
+        "K8_samples": 288,
+        "K8_seconds": 11.142292522000048,
+        "greedy256_seconds": [
+          2.8313118690000465,
+          10.634405863999973
+        ],
+        "training_eval_peak_allocated_bytes": 8867699712,
+        "training_eval_peak_reserved_bytes": 10181672960,
+        "longest_row_probe_peak_reserved_bytes": 11630804992,
+        "observed_max_reserved_bytes": 11630804992,
+        "stable_LR": 0.00075,
+        "stable_updates": 127240,
+        "stable_cursor": 16286720
+      },
+      "C-long2x": {
+        "CUDA_checks": [
+          "bit_exact_L1_CUDA_update",
+          "GradScaler_overflow_skip",
+          "partial_backward_nonfinite_loss_skip",
+          "serialized_resume_bit_exact_CUDA",
+          "constant_LR_weighted_fork",
+          "K8_executed_samples_and_greedy256",
+          "healthy_worker_resumed_after_sibling_crash"
+        ],
+        "main_added_updates": 762,
+        "tail_updates": 64,
+        "K8_rows": 36,
+        "K8_samples": 288,
+        "K8_seconds": 10.699961400000007,
+        "greedy256_seconds": [
+          7.770334723000019,
+          2.9025314219999245
+        ],
+        "training_eval_peak_allocated_bytes": 6838474752,
+        "training_eval_peak_reserved_bytes": 9179234304,
+        "longest_row_probe_peak_reserved_bytes": 11630804992,
+        "observed_max_reserved_bytes": 11630804992,
+        "stable_LR": 0.0015,
+        "stable_updates": 124668,
+        "stable_cursor": 9921664
+      }
+    },
+    "output_files_SHA_verified": 90,
+    "production_version": 1,
+    "production_url": "https://www.kaggle.com/code/friend1/nlp-hw02-kaggle-l3",
+    "production_status": "ERROR_expected_Secrets_gate",
+    "production_gate_passed": true,
+    "production_gate_receipt": "../checks/kaggle-l3-review-production-gate.json",
+    "production_metadata_receipt": "../checks/kaggle-l3-review-production-metadata.json",
+    "production_training_started": false,
+    "review_complete": true,
+    "temporary_downloads_removed": true,
+    "small_outputs_retained": "../results/kaggle-runs/nlp-hw02-l3-gpu-smoke",
+    "verdict": "Ready for UI Save & Run All with attached friend1 Secrets; full 11h/live-auth path requires that UI run",
+    "commit_attempt": {
+      "succeeded": false,
+      "stage": "git add explicit L3-only list",
+      "reason": "sandbox: shared Git worktree index.lock Operation not permitted",
+      "index_changed_by_this_attempt": false,
+      "foreign_final_files_not_staged": true
+    }
+  },
+  "independent_l4_review": {
+    "date": "2026-10-14",
+    "reviewed_commit": "089a70c",
+    "account": "friend1",
+    "KAGGLE_CONFIG_DIR": "~/.kaggle-friend",
+    "credential_values_inspected": false,
+    "private_only": true,
+    "review_note": "../notes/l4-review.md",
+    "fixes": [
+      "L4 final K8 must exist and contain all 2048 rows before complete; malformed K8 receipt gives partial"
+    ],
+    "CPU_regressions": {
+      "L2": 34,
+      "L3": 10,
+      "L4": 5,
+      "passed": true
+    },
+    "GPU_smoke_iterations_max": 2,
+    "smoke_pushes": [
+      {
+        "version": 1,
+        "successful_response": true,
+        "timeout_seconds": 1080
+      }
+    ],
+    "smoke_status": "COMPLETE",
+    "smoke_url": "https://www.kaggle.com/code/friend1/nlp-hw02-l4-gpu-smoke/versions?versionNumber=1",
+    "production_pushes": [
+      {
+        "version": 1,
+        "successful_response": true,
+        "private": true,
+        "timeout_seconds": 43200
+      }
+    ],
+    "production_training_started": false,
+    "review_complete": true,
+    "GPU_smoke_passed": true,
+    "smoke_wall_seconds": 612.6952841689999,
+    "smoke_receipt": "../checks/kaggle-l4-review-gpu-smoke-v1.json",
+    "smoke_models": {
+      "C-main": {
+        "CUDA_checks": [
+          "bit_exact_L1_CUDA_update",
+          "GradScaler_overflow_skip",
+          "partial_backward_nonfinite_loss_skip",
+          "serialized_resume_bit_exact_CUDA",
+          "nonfinite_escalation_full_rollback_LR",
+          "K8_executed_samples_and_greedy256"
+        ],
+        "main_added_updates": 808,
+        "tail_updates": 0,
+        "K8_rows": 36,
+        "K8_samples": 288,
+        "K8_seconds": 2.7084437989999515,
+        "greedy256_seconds": [
+          2.6007542849999936,
+          2.7095142370000076
+        ],
+        "training_eval_peak_allocated_bytes": 7593111040,
+        "training_eval_peak_reserved_bytes": 10733223936,
+        "longest_row_probe_peak_reserved_bytes": 11630804992,
+        "observed_max_reserved_bytes": 11630804992,
+        "stable_LR": 0.00075,
+        "stable_updates": 214194,
+        "stable_cursor": 27416832
+      },
+      "C-long2x": {
+        "CUDA_checks": [
+          "bit_exact_L1_CUDA_update",
+          "GradScaler_overflow_skip",
+          "partial_backward_nonfinite_loss_skip",
+          "serialized_resume_bit_exact_CUDA",
+          "constant_LR_weighted_fork",
+          "K8_executed_samples_and_greedy256",
+          "healthy_worker_resumed_after_sibling_crash"
+        ],
+        "main_added_updates": 671,
+        "tail_updates": 64,
+        "K8_rows": 36,
+        "K8_samples": 288,
+        "K8_seconds": 3.0357674460000226,
+        "greedy256_seconds": [
+          7.911773045000018,
+          8.226446161000013
+        ],
+        "training_eval_peak_allocated_bytes": 6548631552,
+        "training_eval_peak_reserved_bytes": 11880366080,
+        "longest_row_probe_peak_reserved_bytes": 11630804992,
+        "observed_max_reserved_bytes": 11880366080,
+        "stable_LR": 0.0015,
+        "stable_updates": 209879,
+        "stable_cursor": 20828672
+      }
+    },
+    "actual_inputs_mounted": true,
+    "fallback_all_360_payload_SHA_verified": true,
+    "output_files_SHA_verified": 90,
+    "large_PT_order_downloaded": false,
+    "source_port_sha256": "21c9354a194ef27c1bbb3c83d48b5a311e22d37a7210488d97c29c5a52f18763",
+    "production_version": 1,
+    "production_url": "https://www.kaggle.com/code/friend1/nlp-hw02-kaggle-l4/versions?versionNumber=1",
+    "production_status": "ERROR_expected_Secrets_gate",
+    "production_gate_passed": true,
+    "production_gate_receipt": "../checks/kaggle-l4-review-production-gate.json",
+    "production_metadata_receipt": "../checks/kaggle-l4-review-production-metadata.json",
+    "private_live_target": "friend1/nlp-hw02-l4-live",
+    "pinned_anchor_source": "friend1/nlp-hw02-l3-live/12",
+    "verdict": "Ready for friend1 UI Save & Run All with attached friend Secrets; hard 37800s; full live/long-session behavior remains unmeasured",
+    "small_outputs_retained": "../results/kaggle-runs/nlp-hw02-l4-gpu-smoke/1",
+    "temporary_full_downloads_created": false,
+    "commit_attempt": {
+      "succeeded": false,
+      "stage": "git add explicit L4-review list",
+      "reason": "sandbox: shared worktree index.lock Operation not permitted",
+      "index_changed": false,
+      "final_inference_files_not_staged": true,
+      "retry_commands": "../notes/l4-review.md#Коммит"
+    }
+  },
+  "p1_preparation": {
+    "status": "independently_reviewed; see p1_review",
+    "decision": "L4 must not run; superseded by P1 per user 2026-10-14",
+    "owner": "friend1",
+    "private": true,
+    "internet": true,
+    "accelerator": "T4x2",
+    "kernel": "friend1/nlp-hw02-kaggle-p1",
+    "live": "friend1/nlp-hw02-p1-live",
+    "source": "friend1/nlp-hw02-l3-live/12",
+    "cache": "thisarivson/nlp-hw02-compact-cache-verified/2",
+    "fallback_cache": "friend1/nlp-hw02-compact-cache-verified",
+    "bundle": "bundles/p1",
+    "smoke_bundle": "bundles/p1_gpu_smoke",
+    "plan": "../notes/p1-plan.md",
+    "anchor_sha256": "48f2ba3fa4ffe6a722b45a084d3ee33a27cc4ed02b72433605c9cb1740f5a80b",
+    "pilot_updates_per_branch": 31372,
+    "pilot_schedule": "1-sqrt to zero; same weighted data cursor/order",
+    "pilot_q": 0.1,
+    "pilot_excluded_per_effective128": 13,
+    "worker_deadline_seconds": 37380,
+    "hard_wall_seconds": 37800,
+    "smoke_hard_wall_seconds": 1020,
+    "GPU_runs": 0,
+    "kernel_pushes": 0,
+    "checks": {
+      "regressions": "../checks/kaggle-p1-regressions.json",
+      "resume": "../checks/kaggle-p1-real-resume-C-long2x.json",
+      "static": "../checks/kaggle-p1-static.json",
+      "scoring": "../checks/reviewer-score-cpu-smoke.json",
+      "live": "../checks/kaggle-p1-live-created.json",
+      "source_access": "../checks/kaggle-p1-source-access.json",
+      "fallback_static": "../checks/kaggle-p1-fallback-static.json",
+      "git": "../checks/kaggle-p1-git.json"
+    },
+    "private_live_version": 1,
+    "private_live_status": "ready: private create + ready.json file listing; status endpoint 403",
+    "regressions": {
+      "l2": 34,
+      "l3": 10,
+      "l4": 5,
+      "p1": 12
+    },
+    "CPU_real_resume_steps_bit_exact": 2,
+    "scorer_smoke_candidates": 128,
+    "scorer_full_vote_replay": {
+      "C-main": 1502,
+      "C-long2x": 1507
+    },
+    "reviewer_order_rows": 9725736,
+    "reviewer_max_encoder_tokens": 381,
+    "git": {
+      "attempted": true,
+      "committed": false,
+      "staged": false,
+      "reason": "Filesystem sandbox denied shared worktree index.lock; git add exited128",
+      "GPU": false,
+      "push": false
+    },
+    "independent_review": "../notes/p1-review.md"
+  },
+  "p1_review": {
+    "status": "complete",
+    "reviewed_commit": "17eec4f",
+    "branch": "codex/nlp-hw2-code-generation",
+    "account": "friend1",
+    "private": true,
+    "review": "../notes/p1-review.md",
+    "fixes": [
+      "effective-batch graph truncation with safe two-pass OOM fallback",
+      "tensor-byte SHA model/optimizer/scaler/all RNG/cursor history start and restores",
+      "finite partial pilot FP16 and finalized receipts",
+      "strict complete reviewer CE and preserved partial status"
+    ],
+    "regression_tests": 17,
+    "regressions_passed": true,
+    "regression_receipt": "../checks/kaggle-p1-regressions.json",
+    "source_port_sha256": "47110a47d2fb2f5cdc8c3665041afa730a51f553c155d6af34758aa47264adee",
+    "smoke_ref": "friend1/nlp-hw02-p1-gpu-smoke/1",
+    "smoke_url": "https://www.kaggle.com/code/friend1/nlp-hw02-p1-gpu-smoke/versions?versionNumber=1",
+    "smoke_status": "COMPLETE",
+    "smoke_iterations": 1,
+    "smoke_wall_seconds": 728.8805783690001,
+    "smoke_backend_log_last_seconds": 754.144675695,
+    "smoke_audit_passed": true,
+    "smoke_audit": "../checks/kaggle-p1-review-gpu-smoke-v1.json",
+    "smoke_phases": [
+      "A64 -> greedy64/old16/test256/K8-36 -> full restore -> B64 -> same eval -> full restore",
+      "NaN selections graph/two-pass; partial backward; GradScaler overflow; bit-exact serialized CUDA resume",
+      "reviewer1750 steps; stable full1582; final FP16 CUDA reload; continued after sibling crash"
+    ],
+    "branches": {
+      "a": {
+        "updates": 64,
+        "K8_rows": 36,
+        "K8_samples": 288,
+        "K8_seconds": 11.07048500999997,
+        "peak_allocated_bytes": 5666275840,
+        "peak_reserved_bytes": 7851737088,
+        "updates_per_second": 2.557097556803482,
+        "greedy256_seconds": 11.52565718599999,
+        "weights_sha256": "48d90396fe6998808557fd2b07df5b0d05980a02595a3f251202fc3b0264aba1"
+      },
+      "b": {
+        "updates": 64,
+        "K8_rows": 36,
+        "K8_samples": 288,
+        "K8_seconds": 10.93623262799997,
+        "peak_allocated_bytes": 8356144128,
+        "peak_reserved_bytes": 11729371136,
+        "updates_per_second": 2.588524231946425,
+        "greedy256_seconds": 3.5353454520000014,
+        "weights_sha256": "f12e1b9840fdc62bf2afe4dc4b6db5bfa71fd0844b6a0fd19c329c5ef8ef1a73"
+      }
+    },
+    "representative_throughput_updates_per_second": {
+      "a": 2.6436623551137286,
+      "b": 2.5870324603564105
+    },
+    "B_over_A_time": 1.021889904987708,
+    "projected_branch_seconds": {
+      "a": 11866.87094867317,
+      "b": 12126.635626241017
+    },
+    "reviewer": {
+      "passed": true,
+      "healthy_worker_completed_after_sibling_crash": true,
+      "updates": 1750,
+      "GPU": true,
+      "stable_reload_verified": true,
+      "stable_updates": 1582,
+      "final_weights_sha256": "20cc0eca184f5ccf67b8d8c4a928256f7625ceacb1dc896ee3a024257a86af69",
+      "scorer_artifact_contract": true,
+      "reloaded_final_CE": {
+        "complete": true,
+        "rows": 64,
+        "tokens": 2952,
+        "CE": 1.6705988855542853,
+        "sum_NLL": 4931.60791015625,
+        "seconds": 0.10317501099984838,
+        "OOM_retries": [],
+        "direction": "question|compact-code; question EOS scored, PAD/BOS excluded"
+      },
+      "peak_allocated_bytes": 12991038464,
+      "peak_reserved_bytes": 13344178176
+    },
+    "starts_bit_exact": true,
+    "data_stream_bit_exact": true,
+    "K8_seed_temperature_order_equal_L3": true,
+    "output_manifest_SHA_verified": 70,
+    "small_outputs": "../results/kaggle-runs/nlp-hw02-p1-gpu-smoke/1",
+    "large_PT_or_cache_downloaded": false,
+    "production_ref": "friend1/nlp-hw02-kaggle-p1/1",
+    "production_url": "https://www.kaggle.com/code/friend1/nlp-hw02-kaggle-p1/versions?versionNumber=1",
+    "production_pushes": 1,
+    "production_status": "ERROR_expected_Secrets_gate",
+    "production_gate_passed": true,
+    "production_gate_receipt": "../checks/kaggle-p1-review-production-gate.json",
+    "production_metadata_receipt": "../checks/kaggle-p1-review-production-metadata.json",
+    "training_started": false,
+    "hard_wall_seconds": 37800,
+    "server_ceiling_seconds": 43200,
+    "quota_before_seconds": 48384.644,
+    "quota_after_seconds": 47601.456,
+    "quota_after_receipt": "../checks/kaggle-p1-review-quota-after.json",
+    "verdict": "Ready for P1 UI Save & Run All from friend1 with attached friend Secrets; full long-session/live behavior remains unmeasured",
+    "commit_attempt": {
+      "attempted": true,
+      "stage": "git add",
+      "succeeded": false,
+      "return_code": 128,
+      "diagnostic": "fatal: Unable to create '<vault>/.git/worktrees/study1/index.lock': Operation not permitted",
+      "index_changed": false,
+      "message": "nlp: independently review P1 and verify friend CUDA pilot smoke",
+      "receipt": "../checks/kaggle-p1-review-git.json",
+      "retry_commands": "../notes/p1-review.md#Коммит"
+    }
+  },
+  "d1_independent_review": {
+    "source_commit": "b590319",
+    "review_note": "../notes/d1-review.md",
+    "regressions": "../checks/kaggle-d1-regressions.json",
+    "static": "../checks/kaggle-d1-static.json",
+    "real_CPU_parity": "../checks/kaggle-d1-real-cpu.json",
+    "smoke_iterations": 2,
+    "smokes": [
+      {
+        "passed": true,
+        "ref": "thisarivson/nlp-hw02-d1-gpu-smoke/1",
+        "session": {
+          "status": "complete",
+          "worker_status": {
+            "C-main": "complete",
+            "C-long2x": "complete"
+          },
+          "reason": "workers completed",
+          "exit_codes": [
+            0,
+            0
+          ],
+          "failed_workers": [],
+          "unreaped_worker_pids": [],
+          "wall_seconds": 168.71763203399996,
+          "hard_shutdown_seconds": 660,
+          "GPU": true,
+          "training": false
+        },
+        "all_receipts_SHA_verified": 49,
+        "CUDA_CE_parity": true,
+        "no_C_main_CE": true,
+        "CE_rows_per_second_per_GPU": [
+          1359.895538168389,
+          1307.9932577427842
+        ],
+        "full_CE_projected_seconds": 3717.8089192844136,
+        "CE_safety": 1.15,
+        "full_CE_conservative_seconds": 4275.480257177075,
+        "generation": {
+          "C-main": {
+            "rows": 4193,
+            "pipeline_seconds": 48.216096233999906,
+            "GPU_seconds": 37.61972609999964,
+            "pipeline_rows_per_second": 86.96266034584687,
+            "GPU_rows_per_second": 111.4574834716843,
+            "reference_reused": 8,
+            "reference_executed": 4185,
+            "numeric": 4163
+          },
+          "C-long2x": {
+            "rows": 4193,
+            "pipeline_seconds": 52.91977300299993,
+            "GPU_seconds": 47.100543338999955,
+            "pipeline_rows_per_second": 79.23314409837522,
+            "GPU_rows_per_second": 89.02232761565901,
+            "reference_reused": 0,
+            "reference_executed": 0,
+            "numeric": 4151
+          }
+        },
+        "pilot_seconds_per_row_by_bin": [
+          0.060767596953123615,
+          0.0792874652031248,
+          0.049909362218748754,
+          0.050556051390625356
+        ],
+        "full_generation_projected_seconds": 25158.35304524654,
+        "generation_safety": 1.6,
+        "full_generation_conservative_seconds": 40253.364872394464,
+        "maximum_bin_quotas": [
+          212296,
+          116650,
+          44545,
+          15538
+        ],
+        "maximum_generation_rows": 389029,
+        "smoke_selected_rows": 4193,
+        "downloaded_bytes": 117997901,
+        "secrets_or_live_required": false,
+        "models_in_output": false,
+        "Kaggle_working_watchdog_probe": null
+      },
+      {
+        "passed": true,
+        "ref": "thisarivson/nlp-hw02-d1-gpu-smoke/2",
+        "session": {
+          "status": "complete",
+          "worker_status": {
+            "C-main": "complete",
+            "C-long2x": "complete"
+          },
+          "reason": "workers completed",
+          "exit_codes": [
+            0,
+            0
+          ],
+          "failed_workers": [],
+          "unreaped_worker_pids": [],
+          "wall_seconds": 197.55068351199998,
+          "hard_shutdown_seconds": 660,
+          "GPU": true,
+          "training": false
+        },
+        "all_receipts_SHA_verified": 37,
+        "CUDA_CE_parity": true,
+        "no_C_main_CE": true,
+        "CE_rows_per_second_per_GPU": [
+          1224.7718098124474,
+          1244.211563637332
+        ],
+        "full_CE_projected_seconds": 3970.428581912466,
+        "CE_safety": 1.15,
+        "full_CE_conservative_seconds": 4565.9928691993355,
+        "generation": {
+          "C-main": {
+            "rows": 5244,
+            "pipeline_seconds": 40.95522311000002,
+            "GPU_seconds": 32.62762286499992,
+            "pipeline_rows_per_second": 128.04227646167004,
+            "GPU_rows_per_second": 160.7227109893227,
+            "reference_reused": 8,
+            "reference_executed": 5236,
+            "numeric": 5207
+          },
+          "C-long2x": {
+            "rows": 5244,
+            "pipeline_seconds": 46.757422753000014,
+            "GPU_seconds": 41.44570066000017,
+            "pipeline_rows_per_second": 112.15331579975799,
+            "GPU_rows_per_second": 126.52699596079114,
+            "reference_reused": 0,
+            "reference_executed": 0,
+            "numeric": 5197
+          }
+        },
+        "pilot_seconds_per_row_by_bin": [
+          0.015340556351562507,
+          0.021853253871093825,
+          0.01467167859374996,
+          0.025895882669856478
+        ],
+        "full_generation_projected_seconds": 6861.84096315723,
+        "generation_safety": 1.6,
+        "full_generation_conservative_seconds": 10978.94554105157,
+        "maximum_bin_quotas": [
+          212296,
+          116650,
+          44545,
+          15538
+        ],
+        "maximum_generation_rows": 389029,
+        "smoke_selected_rows": 5244,
+        "downloaded_bytes": 117985147,
+        "secrets_or_live_required": false,
+        "models_in_output": false,
+        "Kaggle_working_watchdog_probe": {
+          "passed": true,
+          "actual_forced_exit": true,
+          "child_exit_code": 0,
+          "durable_artifact_preserved": true,
+          "same_working_mount": true
+        }
+      }
+    ],
+    "calibration": "../checks/kaggle-d1-review-calibration.json",
+    "production": {
+      "ref": "friend1/nlp-hw02-kaggle-d1",
+      "version": 1,
+      "private": true,
+      "backend_timeout_seconds": 8400,
+      "pushed_at_utc": "2026-10-14T20:53:10.448457+00:00",
+      "url": "https://www.kaggle.com/code/friend1/nlp-hw02-kaggle-d1",
+      "confirmed_status": {
+        "ref": "friend1/nlp-hw02-kaggle-d1/1",
+        "status": "RUNNING",
+        "checked_at_utc": "2026-10-14T20:55:06.193666+00:00"
+      },
+      "metadata": "../checks/kaggle-d1-review-production-metadata.json",
+      "CE_rows": 9725737,
+      "candidate_rows": 389029,
+      "expected_selected_rows_range": [
+        78662,
+        110629
+      ],
+      "actual_selection_pending": true,
+      "loss_stop_seconds": 4680,
+      "generation_stop_seconds": 7200,
+      "worker_deadline_seconds": 7560,
+      "watchdog_seconds": 7800,
+      "backend_seconds": 8400,
+      "minimum_margin_seconds": 600,
+      "require_secrets": false,
+      "live_sync": false,
+      "models_in_output": false,
+      "runtime_source_matches_passed_smoke_v2": true,
+      "backend_upper_ETA_utc": "2026-10-14T23:15:06.193666+00:00",
+      "completion_not_waited": true
+    },
+    "private": true,
+    "no_Kaggle_deletions": true,
+    "credential_files_inspected": false,
+    "friend_quota_before": "../checks/kaggle-d1-review-friend-quota.json",
+    "git": "../checks/kaggle-d1-review-git.json"
+  },
+  "r1_review": {
+    "source_commit": "0fe726c",
+    "review": "../notes/r1-review.md",
+    "private": true,
+    "credential_files_inspected": false,
+    "no_Kaggle_deletions": true,
+    "data": "original C-long2x weighted order; no D1 deletions",
+    "q": 0.1,
+    "main_seconds": 34200,
+    "cooldown_seconds": 1200,
+    "hard_shutdown_seconds": 40800,
+    "smoke_attempts": [
+      {
+        "ref": "thisarivson/nlp-hw02-r1-gpu-smoke",
+        "version": 1,
+        "private": true,
+        "backend_timeout_seconds": 900,
+        "pushed_at_utc": "2026-10-15T08:10:40.498269+00:00",
+        "status": "COMPLETE",
+        "metadata": "../checks/kaggle-r1-review-smoke-metadata.json",
+        "audit": "../checks/kaggle-r1-review-gpu-smoke-v1.json",
+        "wall_seconds": 348.65085805700005
+      }
+    ],
+    "production": {
+      "ref": "friend2/nlp-hw02-kaggle-r1",
+      "version": 1,
+      "private": true,
+      "backend_timeout_seconds": 43200,
+      "pushed_at_utc": "2026-10-15T08:21:21.301132+00:00",
+      "confirmed_status": {
+        "ref": "friend2/nlp-hw02-kaggle-r1/1",
+        "status": "RUNNING",
+        "checked_at_utc": "2026-10-15T08:24:15.454593+00:00"
+      },
+      "metadata": "../checks/kaggle-r1-review-production-metadata.json",
+      "ready_gate": "../checks/kaggle-r1-review-production-ready.json",
+      "source_modules_exactly_match_smoke": true,
+      "main_seconds": 34200,
+      "cooldown_seconds": 1200,
+      "eval_seconds": 3600,
+      "require_secrets": false,
+      "early_anchor_check": "../checks/kaggle-r1-review-production-startup.json",
+      "completion_not_waited": true,
+      "ETA_utc": "2026-10-15 approximately18:20-18:40; hard approximately19:42 from first code cell",
+      "anchor_preflight_passed": true,
+      "live_sync_enabled": false,
+      "first_main_progress": {
+        "1": {
+          "main_updates": 200,
+          "CE": 0.17699961736798286
+        },
+        "0": {
+          "main_updates": 100,
+          "CE": 0.17293128371238708
+        }
+      },
+      "early_anchor_check_passed": true
+    },
+    "live_dataset": "friend2/nlp-hw02-r1-live",
+    "require_secrets": false,
+    "live_with_owner_secrets": true,
+    "CPU_tests": 15,
+    "static_assemblies": 6,
+    "inputs": "../checks/kaggle-r1-review-friend2-inputs.json",
+    "smoke": {
+      "passed": true,
+      "checked_small_files": 92,
+      "wall_seconds": 348.65085805700005,
+      "anchor_preflight_seconds": 27.931249193000042,
+      "input_preflight_seconds": 78.56045634100002,
+      "branches": [
+        {
+          "gpu": 0,
+          "encoder_layers": 12,
+          "seconds_per_step": 0.46410206515624886,
+          "graph_OOM_fallbacks": 0,
+          "AMP_skips": 0,
+          "benchmark_allocated_GiB": 11.460634708404541,
+          "benchmark_reserved_GiB": 13.87890625,
+          "session_reserved_GiB": 14.12109375,
+          "main_updates": 256,
+          "cooldown_updates": 38,
+          "stable_bytes": 871629629,
+          "stable_sha256": "4e049197d3509e2a9a3aab90b20d9e6a93428f87c5f49a8de56809405e9890f4",
+          "stable_preserved": true,
+          "v7": {
+            "passed": true,
+            "encoder_layers": 12,
+            "rows": 4,
+            "logits_shape": [
+              4,
+              16,
+              8195
+            ],
+            "tokens_shape": [
+              4,
+              1,
+              8
+            ]
+          },
+          "K8_rows": 36,
+          "K8_samples": 288
+        },
+        {
+          "gpu": 1,
+          "encoder_layers": 6,
+          "seconds_per_step": 0.35089992187499774,
+          "graph_OOM_fallbacks": 0,
+          "AMP_skips": 0,
+          "benchmark_allocated_GiB": 8.688646793365479,
+          "benchmark_reserved_GiB": 10.505859375,
+          "session_reserved_GiB": 11.75390625,
+          "main_updates": 256,
+          "cooldown_updates": 47,
+          "stable_bytes": 644209683,
+          "stable_sha256": "9c3a703b2708db83032b958133e1860421e7f9dd585c84283feff95cf010c71d",
+          "stable_preserved": true,
+          "v7": {
+            "passed": true,
+            "encoder_layers": 6,
+            "rows": 4,
+            "logits_shape": [
+              4,
+              16,
+              8195
+            ],
+            "tokens_shape": [
+              4,
+              1,
+              8
+            ]
+          },
+          "K8_rows": 36,
+          "K8_samples": 288
+        }
+      ],
+      "deep_base_time_ratio": 1.3226052108429294,
+      "chosen_encoder_layers": 12,
+      "selection_rule": "6->9 after old1/3/5 only if T4 deep/base >1.7",
+      "large_PT_downloaded": false,
+      "require_secrets": false,
+      "live_sync": false,
+      "quality_not_measured": "smoke greedy/K8 cap8; full production uses cap512"
+    },
+    "chosen_encoder_layers": 12,
+    "own_quota_after": "../checks/kaggle-r1-review-own-quota-after.json",
+    "git": "../checks/kaggle-r1-review-git.json",
+    "own_smoke_quota_charged_seconds": 375.7350000000006
+  },
+  "b1_review": {
+    "reviewed_commit": "91188a2",
+    "review_note": "../notes/b1-review.md",
+    "CPU": "../checks/b1-cpu.json",
+    "static": "../checks/b1-static.json",
+    "private_inputs": "../checks/b1-review-inputs.json",
+    "account": "friend2",
+    "auth": "KAGGLE_CONFIG_DIR=~/.kaggle-friend2",
+    "Secrets": false,
+    "live_sync": false,
+    "source_port_sha256": "9c9703751da827b6def744f049be06acf2b87bb655aea99a2d96199ea647c268",
+    "smoke_v1": {
+      "ref": "friend2/nlp-hw02-b1-gpu-smoke/1",
+      "status": "ERROR",
+      "audit": "../checks/b1-review-smoke-v1-failure.json",
+      "reason": "Overflow assertion included warmup group LR; fixed test, production math unchanged"
+    },
+    "smoke_v2": {
+      "ref": "friend2/nlp-hw02-b1-gpu-smoke/2",
+      "status": "COMPLETE",
+      "audit": "../checks/b1-review-gpu-smoke-v2.json",
+      "passed": true,
+      "session_wall_seconds": 464.17716321300003,
+      "small_files_SHA_verified": 64,
+      "manifest_files": 76,
+      "output_bytes": 6711342239,
+      "workers": [
+        {
+          "gpu": 0,
+          "model": "E",
+          "spec": {
+            "d_model": 768,
+            "heads": 12,
+            "encoder_layers": 8,
+            "decoder_layers": 4,
+            "swiglu_dim": 2048,
+            "vocab": 8195
+          },
+          "parameters": 108694019,
+          "micro": 64,
+          "probe_allocated_GiB": 12.294073581695557,
+          "probe_reserved_GiB": 13.39453125,
+          "train_allocated_GiB": 9.754628658294678,
+          "train_reserved_GiB": 11.802734375,
+          "weighted_pairs_per_second": 229.10135532232712,
+          "shape_bench_pairs_per_second": 272.37837472141143,
+          "shape_bench_ratio": 1.1040874532687939,
+          "AMP_skips": 0,
+          "peak_lr_AMP_skips": 0,
+          "stable_bytes": 1304589827,
+          "stable_sha256": "1f3a75cb145d35fc56e2b39e71aa6159bbedcadc47eff9d498ea2fe9edc02408",
+          "CUDA_resume_bit_exact": true,
+          "eval_restore_continuation_bit_exact": true
+        },
+        {
+          "gpu": 1,
+          "model": "W",
+          "spec": {
+            "d_model": 768,
+            "heads": 12,
+            "encoder_layers": 6,
+            "decoder_layers": 6,
+            "swiglu_dim": 2048,
+            "vocab": 8195
+          },
+          "parameters": 113421827,
+          "micro": 32,
+          "probe_allocated_GiB": 7.5123748779296875,
+          "probe_reserved_GiB": 8.19921875,
+          "train_allocated_GiB": 6.399669170379639,
+          "train_reserved_GiB": 7.234375,
+          "weighted_pairs_per_second": 207.9866881337573,
+          "shape_bench_pairs_per_second": 248.04716980865877,
+          "shape_bench_ratio": 1.0812867036122875,
+          "AMP_skips": 0,
+          "peak_lr_AMP_skips": 0,
+          "stable_bytes": 1361337747,
+          "stable_sha256": "64e5fcba6fa5d28929fb8cf022c933e25830da38d37a410b71921acea26cac0b",
+          "CUDA_resume_bit_exact": true,
+          "eval_restore_continuation_bit_exact": true
+        }
+      ],
+      "large_PT_downloaded": false,
+      "quality_gate": false
+    },
+    "smoke_quota_charged_seconds": 852.356,
+    "production": {
+      "ref": "friend2/nlp-hw02-kaggle-b1",
+      "version": 1,
+      "private": true,
+      "backend_timeout_seconds": 40800,
+      "pushed_at_utc": "2026-10-15T20:23:51.453616+00:00",
+      "version_ref": "friend2/nlp-hw02-kaggle-b1/1",
+      "status": "ERROR",
+      "status_checked_at_utc": "2026-10-16T07:52:02.504668+00:00",
+      "url": "https://www.kaggle.com/code/friend2/nlp-hw02-kaggle-b1/versions?versionNumber=1",
+      "ready": "../checks/b1-review-production-ready.json",
+      "metadata": "../checks/b1-review-production-metadata.json",
+      "status_receipt": "../checks/b1-review-production-status.json",
+      "main_seconds": 34200,
+      "assessment_main_marks": [
+        9000,
+        28370,
+        34200
+      ],
+      "cooldown_seconds": 900,
+      "eval_seconds": 600,
+      "hard_wall_seconds": 40800,
+      "peak_lr": 0.001,
+      "main_q": 0,
+      "dropout": 0,
+      "resume": false,
+      "ETA_utc": "2026-10-16T07:00:00+00:00",
+      "ETA_Moscow": "2026-10-16 10:00 MSK approximate",
+      "next": "EV v1 on thisarivson: prepared FP16@28370, final stable cooldown/eval@34200; B2 prepared for independent review",
+      "startup": "../checks/b1-review-production-startup.json",
+      "completion_receipt": "../checks/b1-final-summary.json"
+    },
+    "git": "../checks/b1-review-git.json",
+    "committed": false
+  },
+  "b1_ev": {
+    "ref": "thisarivson/nlp-hw02-b1-ev",
+    "version": 1,
+    "status": "RUNNING",
+    "private": true,
+    "owner": "thisarivson",
+    "url": "https://www.kaggle.com/code/thisarivson/nlp-hw02-b1-ev/versions?versionNumber=1",
+    "pushed_at_utc": "2026-10-16T07:51:59.252528+00:00",
+    "status_checked_at_utc": "2026-10-16T08:10:06.579206+00:00",
+    "ETA_utc": "2026-10-16T08:36:59.252528+00:00",
+    "ETA_Moscow": "2026-10-16 11:36 MSK approximate",
+    "hard_seconds": 2700,
+    "watchdog_seconds": 2680,
+    "worker_seconds": 2640,
+    "GPU": "T4x2",
+    "smoke_runs": 0,
+    "source": "friend2/nlp-hw02-kaggle-b1/1",
+    "input_dataset": "thisarivson/nlp-hw02-b1-ev-inputs/1",
+    "transfer_sha256": "d2de397f80135936084d8913d7e5b906c0ad21c0026c45435b86b33a02866dc6",
+    "remote_SHA_verified": true,
+    "transfer_receipt": "../checks/b1-ev-transfer.json",
+    "push": "../checks/b1-ev-push.json",
+    "status_receipt": "../checks/b1-ev-status.json",
+    "metadata": "../checks/b1-ev-metadata.json",
+    "prepared_FP16_main_mark": 28370,
+    "stable_main_mark": 34200,
+    "cooldown_seconds": 900,
+    "new_main_updates": 0,
+    "splits": [
+      "greedy heldout4k",
+      "greedy old991",
+      "CE"
+    ],
+    "save_cooled_FP16": true,
+    "results": "per-worker ev-results.json + per-example journals",
+    "plan": "../notes/b1-ev-b2-plan.md",
+    "bundle": "bundles/b1_ev"
+  },
+  "b2_preparation": {
+    "status": "CPU_STATIC_READY_FOR_INDEPENDENT_REVIEW",
+    "owner": "friend2",
+    "production_bundle": "bundles/b2_friend2",
+    "smoke_bundle": "bundles/b2_gpu_smoke_friend1",
+    "smoke_owner": "friend1",
+    "GPU_runs": 0,
+    "production_pushes": 0,
+    "smoke_pushes": 0,
+    "private": true,
+    "Secrets": false,
+    "cache_source": "thisarivson/nlp-hw02-compact-cache-verified/2",
+    "inputs": "thisarivson/nlp-hw02-26b-inputs",
+    "reviewer_access": "../checks/b2-smoke-inputs.json",
+    "fresh": true,
+    "model": {
+      "encoder_layers": 6,
+      "decoder_layers": 6,
+      "d_model": 768,
+      "heads": 12,
+      "swiglu_dim": 2048,
+      "parameters": 113426435,
+      "qk_norm": "layernorm"
+    },
+    "peak_LR": [
+      0.001,
+      0.0006
+    ],
+    "warmup_updates": 2000,
+    "z_loss_coefficient": 0.0001,
+    "main_q": 0,
+    "dropout": 0,
+    "main_pair_probe": 3100032,
+    "expected_main_probe_seconds_at_229_pairs_per_second": 13537.257641921396,
+    "main_cap_seconds": 27000,
+    "hard_wall_seconds": 31500,
+    "worker_seconds": 31200,
+    "watchdog_seconds": 31460,
+    "final_eval_reserved": true,
+    "cooldown_seconds": 900,
+    "eval_seconds": 600,
+    "smoke_hard_seconds": 900,
+    "quota_free_seconds": 33568.076,
+    "quota_margin_seconds": 2068.076000000001,
+    "quota_receipt": "../checks/b2-quota.json",
+    "stable_transfer": "b1_transfer.py including emergency receipts; two QK-aware W branches",
+    "inference": "qk_norm model_spec; training/greedy/v7/clean KV normalize K on insertion and Q before SDPA",
+    "CPU": "../checks/b1-ev-b2-cpu.json",
+    "regressions": "../checks/b1-ev-b2-regressions.json",
+    "static": "../checks/b1-ev-b2-static.json",
+    "v7": "../checks/final-inference-v7-cpu.json",
+    "plan": "../notes/b1-ev-b2-plan.md",
+    "next": "B2v1 RUNNING at canonical friend2/nlp-hw02-b2; see b2_review (EV untouched)",
+    "readiness": "../checks/b2-prepared.json",
+    "quota_after_EV": "../checks/b2-quota-after-ev.json",
+    "git": "../checks/b1-ev-b2-git.json",
+    "committed": false,
+    "canonical_production_ref": "friend2/nlp-hw02-b2/1"
+  },
+  "b2_review": {
+    "base_commit": "80ed3d8",
+    "review": "../notes/b2-review.md",
+    "CPU_tests": 48,
+    "independent_regressions": "../checks/b2-review-regressions.json",
+    "smoke": {
+      "ref": "friend1/nlp-hw02-b2-gpu-smoke/1",
+      "status": "COMPLETE",
+      "iterations": 1,
+      "push": "../checks/b2-review-smoke-push-v1.json",
+      "server_SHA": "../checks/b2-review-smoke-metadata-v1.json",
+      "audit": "../checks/b2-review-gpu-smoke-v1.json",
+      "wall_seconds": 427.752755776,
+      "quota_seconds": 459.9449999999997,
+      "large_PT_downloaded": false,
+      "workers": [
+        {
+          "gpu": 0,
+          "model": "W-lr1000",
+          "peak_lr": 0.001,
+          "pairs_per_second": 168.21420018295177,
+          "micro_batch": 32,
+          "memory_probe": {
+            "micro_batch": 32,
+            "attempts": [
+              {
+                "micro_batch": 32,
+                "status": "passed",
+                "peak_reserved_bytes": 10362028032,
+                "peak_allocated_bytes": 9752495616,
+                "Adam_step_verified": true,
+                "probe_seconds": 3.3412416099999973
+              }
+            ]
+          },
+          "main_attempts": 256,
+          "peak_lr_attempts": 16,
+          "AMP_skips": 0,
+          "nonfinite_skips": 0,
+          "NaN_escalations": 0,
+          "peak_allocated_bytes": 8194002944,
+          "peak_reserved_bytes": 12933136384,
+          "sampled_attention_abs_logit_max": 6.092559814453125,
+          "z_loss_range": [
+            0.00838518887758255,
+            0.012660649605095387
+          ],
+          "stable_bytes": 1361473725,
+          "stable_sha256": "623670b45788d5c2d072da332f83a491045373baa573b46c20658528fa39e83d",
+          "CUDA_resume_bit_exact": true,
+          "eval_restore_continuation_bit_exact": true,
+          "v7_QK_generation": {
+            "seconds": 0.9070647419999887,
+            "rows": 32,
+            "cap": 128,
+            "model_spec_qk_norm": "layernorm",
+            "full_180s_gate": false
+          }
+        },
+        {
+          "gpu": 1,
+          "model": "W-lr600",
+          "peak_lr": 0.0006,
+          "pairs_per_second": 165.5259227658082,
+          "micro_batch": 32,
+          "memory_probe": {
+            "micro_batch": 32,
+            "attempts": [
+              {
+                "micro_batch": 32,
+                "status": "passed",
+                "peak_reserved_bytes": 10362028032,
+                "peak_allocated_bytes": 9752495616,
+                "Adam_step_verified": true,
+                "probe_seconds": 3.3404274289999876
+              }
+            ]
+          },
+          "main_attempts": 256,
+          "peak_lr_attempts": 16,
+          "AMP_skips": 0,
+          "nonfinite_skips": 0,
+          "NaN_escalations": 0,
+          "peak_allocated_bytes": 8194002944,
+          "peak_reserved_bytes": 12933136384,
+          "sampled_attention_abs_logit_max": 5.769552707672119,
+          "z_loss_range": [
+            0.008383006323128939,
+            0.011676912195980549
+          ],
+          "stable_bytes": 1361473725,
+          "stable_sha256": "6a6a1bfcca01b81315d1dff2492cde6d0269ac5a0b445194c16bac2490203920",
+          "CUDA_resume_bit_exact": true,
+          "eval_restore_continuation_bit_exact": true,
+          "v7_QK_generation": {
+            "seconds": 0.9353996099999904,
+            "rows": 32,
+            "cap": 128,
+            "model_spec_qk_norm": "layernorm",
+            "full_180s_gate": false
+          }
+        }
+      ]
+    },
+    "production_pushes": 1,
+    "EV_touched": false,
+    "static": "../checks/b2-review-static.json",
+    "findings": [
+      "P1 pair probe failed to reserve end-main branch; fixed and regression tested",
+      "P1 new Kaggle kernel slug follows title, not requested id; builder and push receipt fixed and regression tested"
+    ],
+    "production": {
+      "ref": "friend2/nlp-hw02-b2/1",
+      "status": "RUNNING",
+      "url": "https://www.kaggle.com/code/friend2/nlp-hw02-b2/versions?versionNumber=1",
+      "push": "../checks/b2-review-production-push.json",
+      "status_receipt": "../checks/b2-review-production-status.json",
+      "metadata": "../checks/b2-review-production-metadata.json",
+      "gate": "../checks/b2-review-production-ready.json",
+      "ETA_UTC": "2026-10-16 17:10–17:20",
+      "ETA_Moscow": "2026-10-16 20:10–20:20",
+      "hard_seconds": 31500,
+      "quota_margin_seconds": 2068.076000000001
+    },
+    "git": {
+      "receipt": "../checks/b2-review-git.json",
+      "commit_created": false,
+      "reason": "sandbox denied shared git index.lock"
+    }
+  },
+  "b3_review": {
+    "reviewed_commit": "356c562",
+    "owner": "thisarivson",
+    "private": true,
+    "smoke": {
+      "ref": "thisarivson/nlp-hw02-b3-gpu-smoke",
+      "checked_at_utc": "2026-10-16T18:46:19.708963+00:00",
+      "quota_free_seconds": 3936.95,
+      "requested_ref": "thisarivson/nlp-hw02-b3-gpu-smoke",
+      "version": 1,
+      "private": true,
+      "backend_timeout_seconds": 720,
+      "pushed_at_utc": "2026-10-16T18:46:23.032078+00:00"
+    },
+    "production_pushes": 0,
+    "production_GPU_runs": 0,
+    "production_launch_by": "user after reset",
+    "report": "../notes/b3-review.md",
+    "handoff": "../results/next-b3.json",
+    "smoke_status": "RUNNING; no output available",
+    "smoke_passed": false,
+    "ready": false,
+    "smoke_pushes": 1,
+    "smoke_budget_compliant": false
+  }
+}

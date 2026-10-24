@@ -1,0 +1,178 @@
+{
+  "date": "2026-10-08",
+  "models": [
+    {
+      "model_id": "Salesforce/codet5-small",
+      "revision": "b1ee9570c289f21b5922b9c768a1ce12957bf968",
+      "config_url": "https://huggingface.co/Salesforce/codet5-small/blob/b1ee9570c289f21b5922b9c768a1ce12957bf968/config.json",
+      "config_bytes": 1566,
+      "config_raw_sha256": "c067a6377fc235b103a1577fcb8a114e2885b700198bad22e34f84659d0025ca",
+      "selected_config": {
+        "architectures": [
+          "T5ForConditionalGeneration"
+        ],
+        "model_type": "t5",
+        "d_model": 512,
+        "d_ff": 2048,
+        "d_kv": 64,
+        "num_layers": 6,
+        "num_decoder_layers": 6,
+        "num_heads": 8,
+        "feed_forward_proj": "relu",
+        "vocab_size": 32100,
+        "layer_norm_epsilon": 1e-06
+      },
+      "scope": "Read-only official model configuration; no weights downloaded or remote code executed."
+    },
+    {
+      "model_id": "Salesforce/codet5p-220m",
+      "revision": "2b92f36e2782341a50551759fdba0dd15e821f99",
+      "config_url": "https://huggingface.co/Salesforce/codet5p-220m/blob/2b92f36e2782341a50551759fdba0dd15e821f99/config.json",
+      "config_bytes": 768,
+      "config_raw_sha256": "223473301c42995448a6ac7d12dc5f0f559ca995def89e03d761983e103118e2",
+      "selected_config": {
+        "architectures": [
+          "T5ForConditionalGeneration"
+        ],
+        "model_type": "t5",
+        "d_model": 768,
+        "d_ff": 3072,
+        "d_kv": 64,
+        "num_layers": 12,
+        "num_decoder_layers": 12,
+        "num_heads": 12,
+        "feed_forward_proj": "relu",
+        "is_gated_act": false,
+        "vocab_size": 32100,
+        "layer_norm_epsilon": 1e-06
+      },
+      "scope": "Read-only official model configuration; no weights downloaded or remote code executed."
+    },
+    {
+      "model_id": "microsoft/phi-1",
+      "revision": "d4c0adcb065e84e00ca814e35cba3012ea9841ab",
+      "config_url": "https://huggingface.co/microsoft/phi-1/blob/d4c0adcb065e84e00ca814e35cba3012ea9841ab/config.json",
+      "config_bytes": 734,
+      "config_raw_sha256": "6a6a640160005481d97389210b2134e24d0ef200c5637c70c364162376448f3b",
+      "selected_config": {
+        "architectures": [
+          "PhiForCausalLM"
+        ],
+        "model_type": "phi",
+        "hidden_size": 2048,
+        "intermediate_size": 8192,
+        "num_hidden_layers": 24,
+        "num_attention_heads": 32,
+        "num_key_value_heads": null,
+        "tie_word_embeddings": false,
+        "hidden_act": "gelu_new",
+        "max_position_embeddings": 2048,
+        "vocab_size": 51200,
+        "rope_theta": 10000.0,
+        "partial_rotary_factor": 0.5
+      },
+      "scope": "Read-only official model configuration; no weights downloaded or remote code executed."
+    },
+    {
+      "model_id": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
+      "revision": "ea3f2471cf1b1f0db85067f1ef93848e38e88c25",
+      "config_url": "https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct/blob/ea3f2471cf1b1f0db85067f1ef93848e38e88c25/config.json",
+      "config_bytes": 659,
+      "config_raw_sha256": "b1e58593cd31852f7da5c2fc31ddf6135b9c066c0fd9177a4bbe95717083adff",
+      "selected_config": {
+        "architectures": [
+          "Qwen2ForCausalLM"
+        ],
+        "model_type": "qwen2",
+        "hidden_size": 896,
+        "intermediate_size": 4864,
+        "num_hidden_layers": 24,
+        "num_attention_heads": 14,
+        "num_key_value_heads": 2,
+        "tie_word_embeddings": true,
+        "hidden_act": "silu",
+        "max_position_embeddings": 32768,
+        "vocab_size": 151936,
+        "rope_theta": 1000000.0,
+        "rms_norm_eps": 1e-06
+      },
+      "scope": "Read-only official model configuration; no weights downloaded or remote code executed."
+    },
+    {
+      "model_id": "HuggingFaceTB/SmolLM2-135M",
+      "revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+      "config_url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M/blob/93efa2f097d58c2a74874c7e644dbc9b0cee75a2/config.json",
+      "config_bytes": 704,
+      "config_raw_sha256": "1d556eab73b69c7f11f64c557a2f9c6f440bd4c6b89bb2584a6b498c92603843",
+      "selected_config": {
+        "architectures": [
+          "LlamaForCausalLM"
+        ],
+        "model_type": "llama",
+        "hidden_size": 576,
+        "intermediate_size": 1536,
+        "num_hidden_layers": 30,
+        "num_attention_heads": 9,
+        "num_key_value_heads": 3,
+        "tie_word_embeddings": true,
+        "hidden_act": "silu",
+        "max_position_embeddings": 8192,
+        "vocab_size": 49152,
+        "rope_theta": 100000,
+        "rms_norm_eps": 1e-05
+      },
+      "scope": "Read-only official model configuration; no weights downloaded or remote code executed."
+    },
+    {
+      "model_id": "HuggingFaceTB/SmolLM2-360M",
+      "revision": "f8027fd0eaeea54caa13c31d31b9fdc459c38b49",
+      "config_url": "https://huggingface.co/HuggingFaceTB/SmolLM2-360M/blob/f8027fd0eaeea54caa13c31d31b9fdc459c38b49/config.json",
+      "config_bytes": 689,
+      "config_raw_sha256": "34f7801487078de7e434e19162c497e5cc6ff397080e40e8586627cb68a5168a",
+      "selected_config": {
+        "architectures": [
+          "LlamaForCausalLM"
+        ],
+        "model_type": "llama",
+        "hidden_size": 960,
+        "intermediate_size": 2560,
+        "num_hidden_layers": 32,
+        "num_attention_heads": 15,
+        "num_key_value_heads": 5,
+        "tie_word_embeddings": true,
+        "hidden_act": "silu",
+        "max_position_embeddings": 8192,
+        "vocab_size": 49152,
+        "rope_theta": 100000,
+        "rms_norm_eps": 1e-05
+      },
+      "scope": "Read-only official model configuration; no weights downloaded or remote code executed."
+    },
+    {
+      "model_id": "facebook/MobileLLM-125M",
+      "error": "HTTPError: HTTP Error 401: Unauthorized"
+    },
+    {
+      "model_id": "codelion/sprog-9m",
+      "revision": "625f50d9623b81b3902e8a40de012d7d6ca5d0ab",
+      "config_url": "https://huggingface.co/codelion/sprog-9m/blob/625f50d9623b81b3902e8a40de012d7d6ca5d0ab/config.json",
+      "config_bytes": 383,
+      "config_raw_sha256": "adc5f2631e9fed688916aacd8344951b62861fdd4e668f3ccdc4a2c88203925b",
+      "selected_config": {
+        "model_type": "sprog",
+        "d": 304,
+        "n_heads": 4,
+        "n_layers": 4,
+        "ff": 608,
+        "max_src": 220,
+        "max_tgt": 64,
+        "src_vocab_size": 6000,
+        "tgt_vocab_size": 79,
+        "n_params": 9370000,
+        "inference": "self-consistency (96 samples) + symbolic verifier"
+      },
+      "scope": "Read-only official model configuration; no weights downloaded or remote code executed."
+    }
+  ],
+  "limits": "Config alone does not prove a block implementation or evaluation quality. Missing fields are unspecified, not false; T5 defaults checked separately."
+}

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "checks": [
+    "L1 hard deadline42300s is not clamped to old S2 13200s",
+    "real SIGTERM-resistant child group killed",
+    "real notebook hard fuse exits within deadline and writes partial receipt"
+  ],
+  "real_CUDA_D_state_verified": false
+}
