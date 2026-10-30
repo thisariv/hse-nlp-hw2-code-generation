@@ -6,7 +6,7 @@
 
 | | |
 |---|---|
-| Отчёт | [submission/report/latex/report.pdf](submission/report/latex/report.pdf) |
+| Отчёт (PDF) | [report.pdf](report.pdf); исходник — [submission/report/latex/](submission/report/latex/) |
 | Ноутбук инференса | [submission/inference.ipynb](submission/inference.ipynb) |
 | Веса | Kaggle-датасет [thisarivson/nlp-hw02-final-weights](https://www.kaggle.com/datasets/thisarivson/nlp-hw02-final-weights), версия 4 |
 | Как запустить и проверить | [submission/README.md](submission/README.md) |
@@ -20,7 +20,7 @@
 - **Инференс:** greedy-ответ W и по одному сэмплу каждой модели. Если все четыре программы вернули одно число (≈62% задач) — ответ готов. Иначе ещё по 7 сэмплов C и P1-B и голосование по результату исполнения.
 - **Быстрый декодер:** KV-кеш, уплотнение батча по мере завершения строк, асинхронная проверка конца, исполнение программ на CPU параллельно с генерацией на GPU.
 
-Подробно, со всеми экспериментами и выводами, — в [отчёте](submission/report/latex/report.pdf).
+Подробно, со всеми экспериментами и выводами, — в [отчёте](report.pdf).
 
 ## Быстрый запуск
 
